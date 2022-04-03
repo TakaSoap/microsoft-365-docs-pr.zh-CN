@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c55a91987ffc4823bda61b8b13f38af710181edd
-ms.sourcegitcommit: 27bf284b3bfe334eb98847798734625bd2ffafb1
+ms.openlocfilehash: 2a99dbaf50b582df4203fc9c8e1d04e0a3f6d807
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60792372"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498625"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "60792372"
 **适用于：**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 集成关键功能，统一事件响应流程。 这种统一体验添加了可在企业门户中访问Microsoft 365 Defender功能。
+[Microsoft 365 Defender](microsoft-365-defender.md)集成 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps 和 Microsoft Defender for Identity 的关键功能，统一事件响应流程。 这种统一体验添加了可在企业门户中访问Microsoft 365 Defender功能。
 
 Microsoft 365 Defender具有所需权限的合格客户访问门户时，Microsoft 365 Defender启用。 阅读本文，了解各种先决条件以及如何Microsoft 365 Defender配置。
 
@@ -48,7 +48,7 @@ Microsoft 365 Defender具有所需权限的合格客户访问门户时，Microso
 ### <a name="check-your-role"></a>检查角色
 
 你必须是以下角色之一，以启用Microsoft 365 Defender：
-    
+
 - 全局管理员
 - 安全管理员
 - 安全操作员
@@ -65,19 +65,19 @@ Microsoft 365 Defender具有所需权限的合格客户访问门户时，Microso
 
 Microsoft 365 Defender 聚合已部署的各种受支持服务中的数据。 它将集中处理和存储数据，以识别新的见解，并使集中响应工作流成为可能。 这样做不会影响与集成服务关联的现有部署、设置或数据。
 
-为了获得最佳保护并优化Microsoft 365 Defender，我们建议在你的网络上部署所有适用的受支持服务。 有关详细信息，请阅读 [有关部署受支持的服务的信息](deploy-supported-services.md)。
+为了获得最佳保护和优化Microsoft 365 Defender，我们建议在你的网络上部署所有适用的受支持服务。 有关详细信息， [请阅读有关部署支持的服务的信息](deploy-supported-services.md)。
 
 ## <a name="onboard-to-the-service"></a>载入到服务
-载入Microsoft 365 Defender非常简单。 从导航菜单中，选择任何项目，如事件&**警报**、搜寻、操作中心或威胁分析，以启动载入过程。  
+载入Microsoft 365 Defender非常简单。 从导航菜单中，选择任何项目，如事件&**警报、搜寻**、操作中心或威胁分析，以启动载入过程。 
 
 ### <a name="data-center-location"></a>数据中心位置
 
-Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位置[存储和处理数据](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 如果你没有 Microsoft Defender for Endpoint，则根据活动安全服务的位置自动选择Microsoft 365位置。 所选数据中心位置将显示在屏幕中。
+Microsoft 365 Defender将在 [Microsoft Defender for Endpoint 使用的相同位置存储和处理数据](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 如果你没有 Microsoft Defender for Endpoint，则根据活动安全服务的位置自动选择Microsoft 365位置。 所选数据中心位置将显示在屏幕中。
 
-选择 **"需要帮助？"，Microsoft 365 Defender** 联系 Microsoft 支持部门，以Microsoft 365 Defender不同的数据中心位置进行预配。
+选择 **"需要帮助？"**，Microsoft 365 Defender联系 Microsoft 支持部门，以Microsoft 365 Defender不同的数据中心位置进行预配。
 
 > [!NOTE]
-> 过去，Microsoft Defender for Endpoint 在通过 Azure Defender (欧盟) 数据中心自动预配。 Microsoft 365 Defender将在同一欧盟数据中心为过去以此方式预配了 Defender for Endpoint 的客户自动预配。
+> 过去，通过 Microsoft Defender for Cloud 启用后，Microsoft Defender for Endpoint (欧盟) 数据中心自动预配。 Microsoft 365 Defender在过去以此方式预配了 Defender for Endpoint 的客户，系统将自动在同一欧盟数据中心进行预配。
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 
@@ -89,17 +89,17 @@ Microsoft 365 Defender将在 Microsoft Defender for Endpoint 使用的相同位�
 - [高级搜寻](advanced-hunting-overview.md) 功能
 - 威胁分析
 
-![具有Microsoft 365 Defender功能的门户导航Microsoft 365 Defender的图像。 ](../../media/overview-incident.png)
-*Microsoft 365 Defender事件管理和其他功能的门户*
+:::image type="content" source="../../media/overview-incident.png" alt-text="具有新功能的 Microsoft 365 Defender 门户中的Microsoft 365 Defender窗格" lightbox="../../media/overview-incident.png":::
+*Microsoft 365 Defender事件管理和其他功能创建门户*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>获取 Microsoft Defender for Identity 数据 
-若要启用与Microsoft Cloud App Security集成，你至少需要登录Microsoft Cloud App Security一次。
+若要启用与适用于云应用的 Microsoft Defender 的集成，你至少需要登录到 Microsoft Defender 云应用一次。
 
 ## <a name="get-assistance"></a>获取帮助
 
-若要获取有关打开"打开"的最常见问题的解答，Microsoft 365 Defender常见问题[解答](m365d-enable-faq.md)。
+若要获取有关打开"打开"的最常见问题的解答，Microsoft 365 Defender[常见问题解答](m365d-enable-faq.md)。
 
-Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关资源。 为获得帮助，请选择"需要帮助 **？"，Microsoft 365 Defender** 门户。 联系支持人员时，Microsoft 365 Defender。
+Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关资源。 为获得帮助，请选择"需要帮助 **？"**，Microsoft 365 Defender门户。 联系支持人员时，Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相关主题
 
@@ -109,6 +109,6 @@ Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关�
 - [Microsoft 365 Defender概述](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint 概述](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365 概述](../office-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security 概述](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps 概述](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity 概述](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender for Endpoint 数据存储](../defender-endpoint/data-storage-privacy.md)

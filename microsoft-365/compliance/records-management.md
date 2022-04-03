@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: c7546216a935960e5c4b66b37bb3308d0a69e89e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ce00fdfc6db90b9c65051a31e8768d6cd661072d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324811"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755677"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -83,12 +83,12 @@ ms.locfileid: "63324811"
 |编辑内容|允许 | **阻止** | Allowed | **阻止**|
 |编辑属性（包括重命名）|Allowed |允许 <sup>1</sup> | Allowed | **阻止**|
 |删除|允许 <sup>2</sup> |**阻止** |**阻止**| **阻止**|
-|复制|Allowed |Allowed | 允许| Allowed|
-|在容器 <sup>3</sup> 中移动|Allowed |允许 | Allowed| Allowed|
+|复制|允许 |允许 | Allowed| Allowed|
+|在容器 <sup>3</sup> 中移动|Allowed |允许 | 允许| Allowed|
 |跨容器 <sup>3</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
-|打开/读取|允许 |允许 | Allowed| Allowed|
-|更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
-|删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
+|打开/读取|允许 |Allowed | 允许| Allowed|
+|更改标签|允许 |允许 - 仅容器管理员 | **已阻止**| **已阻止**
+|删除标签|允许 |允许 - 仅容器管理员 | **阻止**| **已阻止**
 
 页脚：
 

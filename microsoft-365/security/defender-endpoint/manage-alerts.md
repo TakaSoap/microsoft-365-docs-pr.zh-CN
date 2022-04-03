@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61896401"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466182"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
@@ -33,13 +33,13 @@ ms.locfileid: "61896401"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)。
 
-Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，并且可以访问警报 **队列中的所有警报**。
+Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上下文信息。 新警报的摘要显示在安全操作仪表板中，你可以访问警报 **队列中的所有警报**。
 
-可以通过在警报队列中选择警报或单个设备的设备页面的警报选项卡来管理警报。 
+可以通过选择警报队列中的警报或单个设备的"设备"页面的"警报"选项卡来管理警报。
 
 在任一位置选择警报将打开警报 **管理窗格**。
 
-![警报管理窗格和警报队列的图像。](images/atp-alerts-selected.png)
+:::image type="content" source="images/atp-alerts-selected.png" alt-text="警报管理窗格和警报队列" lightbox="images/atp-alerts-selected.png":::
 
 ## <a name="link-to-another-incident"></a>链接到其他事件
 
@@ -77,7 +77,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 1. 选择要抑制的警报。 此时将打开警报 **管理** 窗格。
 
-2. 选择 **"创建抑制规则"。**
+2. 选择 **"创建抑制规则"**。
 
     可以使用这些属性创建抑制条件。 在每种条件之间应用 AND 运算符，因此仅在满足所有条件时才进行抑制。
 
@@ -88,7 +88,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
     - URL - 支持通配符
     - 命令行 - 支持通配符
 
-3. 选择 **"触发 IOC"。**
+3. 选择 **"触发 IOC"**。
 
 4. 指定警报的操作和范围。
 
@@ -98,11 +98,11 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 5. 输入规则名称和注释。
 
-6. 单击“保存”。
+6. 单击 **“保存”**。
 
 #### <a name="view-the-list-of-suppression-rules"></a>查看抑制规则列表
 
-1. 在导航窗格中，**选择"设置** \> **抑制"。**
+1. 在导航窗格中，选择"**设置** \> **抑制"**。
 
 2. 抑制规则列表显示组织中用户已创建的所有规则。
 
@@ -110,11 +110,11 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 ## <a name="change-the-status-of-an-alert"></a>更改警报的状态
 
-你可以将警报分类为 (、正在进行或已解决) 调查时更改其状态。  这可帮助你组织和管理团队可以如何响应警报。
+你可以将警报分类为 (、正在进行或已解决) 调查时更改其状态。 这可帮助你组织和管理团队可以如何响应警报。
 
 例如，团队主管可以审阅所有 **新** 警报，并决定将其分配给进行中 **队列** ，以进一步分析。
 
-或者，如果团队领导知道警报是无害的、来自与安全管理员 (无关的设备（例如属于安全管理员) 的设备）或正在通过早期警报处理，则他们可以将警报分配给已解决队列。
+或者，如果团队领导知道警报是无害的、来自与安全管理员) 无关的设备（例如属于安全管理员 () 的设备）或正在通过早期警报处理，则他们可以将警报分配给"已解决"队列。
 
 ## <a name="alert-classification"></a>警报分类
 

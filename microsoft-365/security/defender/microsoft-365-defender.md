@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 15f4d179d3bc5590e014a15622e462932e8dea7c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754636"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498706"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -83,15 +83,15 @@ Microsoft 365 Defender唯一的跨产品层补充了各个服务组件，以：
 
 下面的示例演示了产品门户如何将Microsoft 365 Defender警报关联到单个事件中。
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="事件概述页的示例" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="&quot;事件概述&quot;页" lightbox="../../media/overview-incident.png":::
 
 下面是事件的相关警报列表的示例。
 
-:::image type="content" source="../../media/incident-list.png" alt-text="事件警报列表示例" lightbox="../../media/incident-list.png":::
+:::image type="content" source="../../media/incident-list.png" alt-text="事件警报列表" lightbox="../../media/incident-list.png":::
 
 下面是基于查询的搜索（基于电子邮件和终结点原始数据）的示例。
 
-:::image type="content" source="../../media/advanced-hunting.png" alt-text="高级搜寻和查询示例" lightbox="../../media/advanced-hunting.png":::
+:::image type="content" source="../../media/advanced-hunting.png" alt-text=" 具有查询详细信息的高级搜寻页面" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender跨产品功能包括：
 
@@ -155,11 +155,11 @@ Microsoft 365 Defender合并 Microsoft Defender for Office 365  和 Microsoft De
 
 集中安全信息可创建一个在安全中心内调查安全Microsoft 365。 主要示例是 **快速** 启动事件&**事件** 下的事件Microsoft 365 Defender。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="事件页面中的事件Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="事件门户中的&quot;事件Microsoft 365 Defender页" lightbox="../../media/converged-incidents-2.png.png":::
 
 选择事件名称将显示一个页面，该页演示集中化安全信息的价值。
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="事件摘要页的示例Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="事件门户中事件的&quot;摘要Microsoft 365 Defender页" lightbox="../../media/converged-incident-info-3.png":::
 
 在事件页面顶部，你将看到摘要、警报、设备、用户、邮箱、调查、证据和响应以及 **Graph选项卡。**  选择这些选项卡可获取更多详细信息。 例如，"用户"选项卡显示聚合工作负载 (Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps) 以及一系列源（如本地 Active Directory 域服务 (AD DS) 、Azure AD 和第三方标识提供程序）的用户的信息。 有关详细信息，请参阅 [调查用户](investigate-users.md)。
 
@@ -173,11 +173,11 @@ Microsoft 365 Defender合并 Microsoft Defender for Office 365  和 Microsoft De
 
 #### <a name="unified-settings"></a>统一设置
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="门户的&quot;设置Microsoft 365 Defender页" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/converged-add-role-9.png" alt-text="设置门户中的Microsoft 365 Defender页面" lightbox="../../media/converged-add-role-9.png":::
 
 #### <a name="permissions--roles"></a>角色&权限
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="&quot;&角色&quot;页显示终结点角色&组、角色和设备组" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/converged-roles-5.png" alt-text="&quot;权限&角色&quot;页上显示的终结点&组" lightbox="../../media/converged-roles-5.png":::
 
 使用Microsoft 365 Defender角色或自定义Azure AD配置对全局角色的访问权限。 对于 Defender for Endpoint，请参阅[向用户分配对 Microsoft 365 Defender 的访问权限](/microsoft-365/security/defender-endpoint/assign-portal-access)。 For Defender for Office 365， see [Permissions in the Microsoft 365 合规中心 and Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 

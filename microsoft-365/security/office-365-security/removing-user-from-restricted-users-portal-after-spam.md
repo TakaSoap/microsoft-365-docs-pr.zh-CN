@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941428"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568305"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>在 Microsoft 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -39,11 +39,11 @@ ms.locfileid: "61941428"
 
 如果某用户超过[服务限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[出站垃圾邮件策略](configure-the-outbound-spam-policy.md)中指定的出站发送限制之一，此用户就会被限制发送电子邮件，但仍可以接收电子邮件。
 
-此用户添加到 Microsoft 365 Defender 门户中的“**受限用户**”页面。如果此用户试图发送电子邮件，邮件就会以未送达报告（亦称为“NDR”或“退回邮件”）形式返回，并显示错误代码 [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和以下文本：
+此用户添加到 Microsoft 365 Defender 门户中的“**受限用户**”页面。如果此用户试图发送电子邮件，邮件就会以未送达报告 (亦称为“NDR”或“退回邮件”) 形式返回，并显示错误代码 [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和以下文本:
 
 > “你的邮件无法送达，因为系统认为你不是有效的发件人。 这种情形最常见的原因是怀疑你的电子邮件地址正在发送垃圾邮件，且不再允许它发送电子邮件。  请联系电子邮件管理员获取帮助。 远程服务器返回“550 5.1.8 拒绝访问，错误出站发件人”。
 
-管理员可以在 Microsoft 365 Defender 或 Exchange Online PowerShell 中从“受限的用户”页面删除用户。
+管理员可以在 Microsoft 365 Defender 或 Exchange Online PowerShell 中从 **受限的用户** 页面删除用户。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -93,9 +93,9 @@ ms.locfileid: "61941428"
 > [!IMPORTANT]
 > 必须启用审核日志搜索，这样警报才能正常运行。 有关详细信息，请参阅[启用或禁用审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作**”\>“**策略和规则**”\>“**警报策略**”。
+1. 在 <https://security.microsoft.com> 的 Microsoft 365 Defender 门户中，转到 **电子邮件和协作** \> **策略和规则** \> **警报策略**。 若要直接转到 **警报策略** 页面，请使用 <https://security.microsoft.com/alertpolicies>。
 
-2. 在“**警报策略**”页面上，查找并选择名为“**被限制发送电子邮件的用户**”的警报。 你可以按名称对策略进行排序，或使用“**搜索框**”查找策略。
+2. 在“**警报策略**”页面上，查找并选择名为“**被限制发送电子邮件的用户**”的警报。 你可以按名称对策略进行排序，或使用 **搜索框** 查找策略。
 
 3. 在显示的“**被限制发送电子邮件的用户**”浮出控件中，验证或配置下列设置：
    - **状态**：验证此警报是否已启用![切换打开](../../media/scc-toggle-on.png)。

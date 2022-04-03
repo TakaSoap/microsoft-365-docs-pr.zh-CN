@@ -22,12 +22,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5e1b841c5638bf9228efc844daa58d1d1e170726
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: bf7592055e58f10a3680e6ee712c597780591a47
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754751"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498574"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>在试点环境中Microsoft 365 Defender攻击模拟
 
@@ -195,7 +195,7 @@ To see the Automated Incident and Response feature in action， keep the notepad
 
 3. 模拟攻击的新事件将显示在事件队列中。
 
-   :::image type="content" source="../../media/mtp/fig2.png" alt-text="事件门户中的Microsoft 365 Defender队列" lightbox="../../media/mtp/fig2.png":::
+   :::image type="content" source="../../media/mtp/fig2.png" alt-text="事件队列的示例" lightbox="../../media/mtp/fig2.png":::
 
 #### <a name="investigate-the-attack-as-a-single-incident"></a>将攻击作为单个事件进行调查
 
@@ -226,7 +226,7 @@ Microsoft 365 Defender分析关联，并将不同产品的相关警报和调查�
 > [!NOTE]
 > 我们将仅演练模拟攻击期间生成的一些警报。 根据测试设备上Windows的 Microsoft 365 Defender 版本，你可能会看到按略有不同的顺序显示更多警报。
 
-:::image type="content" source="../../media/mtp/fig6.png" alt-text="报告门户中生成的Microsoft 365 Defender警报" lightbox="../../media/mtp/fig6.png":::
+:::image type="content" source="../../media/mtp/fig6.png" alt-text="生成的警报示例" lightbox="../../media/mtp/fig6.png":::
 
 ##### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint"></a>警报：发现可疑进程注入 (源：Microsoft Defender for Endpoint) 
 
@@ -234,7 +234,7 @@ Microsoft 365 Defender分析关联，并将不同产品的相关警报和调查�
 
 为了允许 SOC 分析师捕获这些高级攻击，Microsoft Defender for Endpoint 中的深度内存传感器为云服务提供了对各种跨进程代码注入技术的前所未有的可见性。 下图显示了在尝试向终结点注入代码时如何检测到 Defender for Endpoint 并 <i>notepad.exe</i>。
 
-:::image type="content" source="../../media/mtp/fig7.png" alt-text="有关在门户中注入潜在恶意代码Microsoft 365 Defender警报" lightbox="../../media/mtp/fig7.png":::
+:::image type="content" source="../../media/mtp/fig7.png" alt-text="用于注入潜在恶意代码的警报示例" lightbox="../../media/mtp/fig7.png":::
 
 ##### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint"></a>警报：在 Source：Microsoft Defender for Endpoint (没有命令行参数的进程运行时观察到的意外) 
 
@@ -251,12 +251,11 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 选择警报进程树中的 IP 地址以查看 IP 地址详细信息页面。
 
-:::image type="content" source="../../media/mtp/fig8.png" alt-text="有关进程在命令行门户中运行但无命令行参数的意外Microsoft 365 Defender警报" lightbox="../../media/mtp/fig8.png":::
+:::image type="content" source="../../media/mtp/fig8.png" alt-text="无命令行参数的进程运行时出现意外行为的示例" lightbox="../../media/mtp/fig8.png":::
 
 下图显示了选中的 IP 地址详细信息页面 (警报进程树中的 IP 地址) 。
 
-:::image type="content" source="../../media/mtp/fig9.png" alt-text="企业门户中的 IP 地址Microsoft 365 Defender页面" lightbox="../../media/mtp/fig9.png":::
-
+:::image type="content" source="../../media/mtp/fig9.png" alt-text="IP 地址详细信息页的示例" lightbox="../../media/mtp/fig9.png":::
 
 ##### <a name="alert-user-and-ip-address-reconnaissance-smb-source-microsoft-defender-for-identity"></a>警报：SMB 用户和 IP 地址重新 (源)  (：Microsoft Defender for Identity) 
 
@@ -264,7 +263,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 在此检测中，当 SMB 会话枚举针对域控制器运行时，将触发警报。
 
-:::image type="content" source="../../media/mtp/fig10.png" alt-text="Microsoft Defender for Identity 警报，用于用户和 IP 地址重新Microsoft 365 Defender门户" lightbox="../../media/mtp/fig10.png":::
+:::image type="content" source="../../media/mtp/fig10.png" alt-text="用户和 IP 地址重新重设的 Microsoft Defender 标识警报示例" lightbox="../../media/mtp/fig10.png":::
 
 #### <a name="review-the-device-timeline-with-microsoft-defender-for-endpoint"></a>使用 Microsoft Defender for Endpoint 查看设备时间线
 
@@ -274,13 +273,13 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 选择 **"时间线** "选项卡以打开设备时间线，并按时间顺序查看在设备上观测到的所有事件和行为，与触发的警报交错。
 
-:::image type="content" source="../../media/mtp/fig11.png" alt-text="应用门户中的设备Microsoft 365 Defender部分" lightbox="../../media/mtp/fig11.png":::
+:::image type="content" source="../../media/mtp/fig11.png" alt-text="具有行为的设备时间线示例" lightbox="../../media/mtp/fig11.png":::
 
 展开一些更有趣的行为可提供有用的详细信息，例如进程树。
 
 例如，向下滚动，直到找到观察到的警报事件 **"可疑进程注入"**。 选择 **powershell.exe以** notepad.exe进程事件，以在侧窗格的"事件实体"图下显示此行为的完整进程树。 如有必要，使用搜索栏进行筛选。
 
-:::image type="content" source="../../media/mtp/fig12.png" alt-text="应用程序门户中选定的 PowerShell 文件创建行为Microsoft 365 Defender树" lightbox="../../media/mtp/fig12.png":::
+:::image type="content" source="../../media/mtp/fig12.png" alt-text="选定 PowerShell 文件创建行为的进程树示例" lightbox="../../media/mtp/fig12.png":::
 
 #### <a name="review-the-user-information-with-microsoft-defender-for-cloud-apps"></a>使用 Microsoft Defender for Cloud Apps 查看用户信息
 
@@ -288,7 +287,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 选择用户名以打开用户配置文件页，可在其中执行进一步调查。 [阅读更多有关调查有风险的用户。](/cloud-app-security/tutorial-ueba#identify)
 
-:::image type="content" source="../../media/mtp/fig13.png" alt-text="应用门户中的&quot;Defender for Cloud Apps&quot;Microsoft 365 Defender页面" lightbox="../../media/mtp/fig13.png":::
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="云应用 Defender 用户页面" lightbox="../../media/mtp/fig13.png":::
 
 #### <a name="automated-investigation-and-remediation"></a>自动调查和修复
 
@@ -299,7 +298,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 在事件门户中导航回Microsoft 365 Defender事件。 " **事件"** 页中的"调查 **"选项卡显示** 由 Microsoft Defender for Identity 和 Microsoft Defender for Endpoint 触发的自动调查。 以下屏幕截图仅显示 Defender for Endpoint 触发的自动调查。 默认情况下，Defender for Endpoint 会自动修正队列中找到的项目，这需要进行修正。
 
-:::image type="content" source="../../media/mtp/fig14.png" alt-text="与应用程序门户中的事件相关的自动Microsoft 365 Defender部分" lightbox="../../media/mtp/fig14.png":::
+:::image type="content" source="../../media/mtp/fig14.png" alt-text="与事件相关的自动调查示例" lightbox="../../media/mtp/fig14.png":::
 
 选择触发调查的警报以打开" **调查详细信息"** 页。 你将看到以下详细信息：
 
@@ -311,7 +310,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 > [!NOTE]
 > 根据时间，自动调查可能仍在运行。 请等待几分钟，等待该过程完成，然后收集并分析证据并查看结果。 刷新 **"调查详细信息** "页，获取最新结果。
 
-:::image type="content" source="../../media/mtp/fig15.png" alt-text="Microsoft 365 Defender门户中的&quot;调查详细信息&quot;页" lightbox="../../media/mtp/fig15.png":::
+:::image type="content" source="../../media/mtp/fig15.png" alt-text="&quot;调查详细信息&quot;页的示例" lightbox="../../media/mtp/fig15.png":::
 
 在自动调查期间，Microsoft Defender for Endpoint 确定了notepad.exe，该流程作为需要修正的项目之一注入。 作为自动修正的一部分，Defender for Endpoint 会自动停止可疑进程注入。
 
@@ -323,7 +322,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 从" **事件"** 页面中，选择" **管理事件"**。 将状态设置为 **"解决事件** "，为分类 **选择"真** 警报"，然后选择" **安全测试** "进行确定。
 
-:::image type="content" source="../../media/mtp/fig16.png" alt-text="能够解决事件门户中的事件的&quot;管理事件&quot;Microsoft 365 Defender面板" lightbox="../../media/mtp/fig16.png":::
+:::image type="content" source="../../media/mtp/fig16.png" alt-text="打开&quot;管理事件&quot;面板的事件页面示例，可在其中单击开关以解决事件" lightbox="../../media/mtp/fig16.png":::
 
 当事件解决时，它将在安全门户和相关门户中Microsoft 365 Defender警报。
 

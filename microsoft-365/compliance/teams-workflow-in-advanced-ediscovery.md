@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 了解如何在网站中保留、收集、查看和导出Microsoft Teams内容Advanced eDiscovery。
-ms.openlocfilehash: 68a255dda7aa9b879c9e608eb99c9575ba691c16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9565beea342fe9587195d632fdc94cdc746faf5e
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716205"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568107"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>Advanced eDiscovery工作流中的内容Microsoft Teams
 
@@ -41,14 +41,13 @@ ms.locfileid: "63716205"
 
 在 Advanced eDiscovery 中管理 Teams 内容的先决条件是了解可在 Advanced eDiscovery 中收集、处理和查看的 Teams 内容的类型，以及该内容在 Microsoft 365 中的存储位置。 下表列出了Teams类型以及存储每个内容类型的位置。
 
-||聊天消息和帖子的位置  |文件和附件的位置 |
-|:---------|:---------|:---------|
-|Teams一对一聊天     |一对一聊天中的消息存储在所有Exchange Online参与者的邮箱中。 |在一对一聊天中共享的文件存储在共享OneDrive for Business的用户帐户中。 |
-|Teams群聊     |群聊中的消息存储在所有Exchange Online的邮箱中。 |在群聊中共享的文件存储在共享OneDrive for Business的用户帐户中。 |
-|Teams 频道     |所有频道消息和帖子都存储在与Exchange Online关联的邮箱中。|频道中共享的文件存储在与团队SharePoint Online 网站中。           |
-|专用频道     |在私人频道中发送的邮件存储在Exchange Online频道所有成员的邮箱中。|私人频道中共享的文件存储在与专用SharePoint关联的专用联机网站中。|
-|共享频道     |共享通道中发送的邮件存储在与共享通道关联的系统邮箱中。<sup>1</sup>|共享频道中共享的文件存储在与共享SharePoint关联的专用联机网站中。|
-||||
+|&nbsp;|聊天消息和帖子的位置|文件和附件的位置|
+|---|---|---|
+|Teams一对一聊天|一对一聊天中的消息存储在所有Exchange Online参与者的邮箱中。|在一对一聊天中共享的文件存储在共享OneDrive for Business的用户帐户中。|
+|Teams群聊|群聊中的消息存储在所有Exchange Online的邮箱中。|在群聊中共享的文件存储在共享OneDrive for Business的用户帐户中。|
+|Teams 频道|所有频道消息和帖子都存储在与Exchange Online关联的邮箱中。|频道中共享的文件存储在与团队SharePoint Online 网站中。|
+|专用频道|在私人频道中发送的邮件存储在Exchange Online频道所有成员的邮箱中。|私人频道中共享的文件存储在与专用SharePoint关联的专用联机网站中。|
+|共享频道|共享通道中发送的邮件存储在与共享通道关联的系统邮箱中。<sup>1</sup>|共享频道中共享的文件存储在与共享SharePoint关联的专用联机网站中。|
 
 > [!NOTE]
 > <sup>1</sup> 若要搜索 (并) 共享频道中发送的邮件，您必须搜索或指定父团队Exchange Online邮箱。
@@ -196,11 +195,10 @@ ms.locfileid: "63716205"
 
 下表介绍了聊天内容的不同类型的Teams如何按系列和对话进行分组。
 
-| Teams内容类型|按系列分组  |按对话分组  |
-|:---------|:---------|:---------|
-|Teams一对一和群聊   | 脚本及其所有附件和提取的项目共享相同的 **FamilyId**。 每个脚本都有唯一 **的 FamilyId**。 |同一对话中所有转录文件及其系列项目共享同一 **ConversationId**。 这包括以下项目：<br/><br/>  - 共享同一 **ConversationId** 的所有脚本的所有提取的项目和附件。 <br/> - 同一聊天对话的所有脚本<br/> - 每个脚本的所有保管人副本<br/> - 来自同一聊天对话的后续集合的脚本 <br/><br/>  对于Teams一对一和群聊对话，您可能有多个脚本文件，每个脚本文件对应于对话中的不同时间范围。 由于这些脚本文件来自与相同参与者的同一对话，因此它们共享相同的 **ConversationId**。|
-|标准、私人和共享频道聊天    | 每个帖子以及所有回复和附件都保存到其自己的脚本中。 此脚本及其所有附件和提取的项目共享相同的 **FamilyId**。         |每个帖子及其附件和提取的项目都有唯一 **的 ConversationId**。 如果有来自同一帖子的后续集合或新回复，则从这些集合生成的增量脚本也将具有相同的 **ConversationId**。|
-||||
+|Teams内容类型|按系列分组|按对话分组|
+|---|---|---|
+|Teams一对一和群聊|脚本及其所有附件和提取的项目共享相同的 **FamilyId**。 每个脚本都有唯一 **的 FamilyId**。|同一对话中所有转录文件及其系列项目共享同一 **ConversationId**。 这包括以下项目： <ul><li>共享同一 **ConversationId** 的所有脚本的所有提取的项目和附件。</li><li>同一聊天对话的所有脚本</li><li>每个脚本的所有保管人副本</li><li>来自同一聊天对话的后续集合的脚本</li></ul> <br/> 对于Teams一对一和群聊对话，您可能有多个脚本文件，每个脚本文件对应于对话中的不同时间范围。 由于这些脚本文件来自与相同参与者的同一对话，因此它们共享相同的 **ConversationId**。|
+|标准、私人和共享频道聊天|每个帖子以及所有回复和附件都保存到其自己的脚本中。 此脚本及其所有附件和提取的项目共享相同的 **FamilyId**。|每个帖子及其附件和提取的项目都有唯一 **的 ConversationId**。 如果有来自同一帖子的后续集合或新回复，则从这些集合生成的增量脚本也将具有相同的 **ConversationId**。|
 
 使用 **审阅** 集的命令栏中的"组"控件，Teams系列或对话分组的内容。
 
@@ -237,11 +235,10 @@ ms.locfileid: "63716205"
 
 - 仅使用日期范围的查询
 
-| Teams内容类型|使用搜索参数的查询  |具有日期范围的查询  |
-|:---------|:---------|:---------|
-|Teams一对一和群聊   |响应项目在响应项目前 12 小时和 12 小时后发布的邮件在单个脚本文件中与响应项目分组在一起。   |24 小时窗口中的邮件在单个脚本文件中进行分组。|
-|标准、专用和共享Teams频道聊天    |每个包含响应项目和所有相应回复的帖子都分组在一个脚本文件中。 |每个包含响应项目和所有相应回复的帖子都分组在一个脚本文件中。|
-||||
+|Teams内容类型|使用搜索参数的查询|具有日期范围的查询|
+|---|---|---|
+|Teams一对一和群聊|响应项目在响应项目前 12 小时和 12 小时后发布的邮件在单个脚本文件中与响应项目分组在一起。|24 小时窗口中的邮件在单个脚本文件中进行分组。|
+|标准、专用和共享Teams频道聊天|每个包含响应项目和所有相应回复的帖子都分组在一个脚本文件中。|每个包含响应项目和所有相应回复的帖子都分组在一个脚本文件中。|
 
 ### <a name="deduplication-of-teams-content"></a>重复数据删除Teams内容
 
@@ -267,19 +264,18 @@ ms.locfileid: "63716205"
 
 下表介绍了内容内容的元数据Teams属性。
 
-|Metadata 属性  |说明  |
-|:---------|:---------|
-|ContainsEditedMessage      | 指示脚本文件是否包含已编辑的邮件。 查看转录文件时，将标识已编辑的消息。|
+|Metadata 属性|说明|
+|---|---|
+|ContainsEditedMessage|指示脚本文件是否包含已编辑的邮件。 查看转录文件时，将标识已编辑的消息。|
 |ConversationId|标识项目关联的对话的 GUID。 同一对话中的脚本文件和附件对此属性的值相同。|
-|对话名称     | 脚本文件或附件关联的对话的名称。 对于Teams 1：1 和群聊，此属性的值是连接会话的所有参与者的 UPN。 例如，`User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`。 Teams频道 (、私人和共享) 聊天使用以下格式作为对话名称：`<Team name>,<Channel name>`。例如，`eDiscovery vNext, General`。          |
-|ConversationType     | 指示团队聊天的类型。 对于Teams 1：1 和群聊，此属性的值为 `Group`。 对于标准、私人和共享频道聊天，值为 `Channel`。|
-|日期 | 脚本文件中第一封邮件的时间戳。|
+|对话名称|脚本文件或附件关联的对话的名称。 对于Teams 1：1 和群聊，此属性的值是连接会话的所有参与者的 UPN。 例如，`User3 <User3@contoso.onmicrosoft.com>,User4 <User4@contoso.onmicrosoft.com>,User2 <User2@contoso.onmicrosoft.com>`。 Teams频道 (、私人和共享) 聊天使用以下格式作为对话名称：`<Team name>,<Channel name>`。例如，`eDiscovery vNext, General`。|
+|ConversationType|指示团队聊天的类型。 对于Teams 1：1 和群聊，此属性的值为 `Group`。 对于标准、私人和共享频道聊天，值为 `Channel`。|
+|Date|脚本文件中第一封邮件的时间戳。|
 |FamilyId|标识聊天对话的脚本文件的 GUID。 附件的此属性的值与包含文件所附加到的邮件的转录文件相同。|
-|FileClass     |指示该类型的内容。 来自Teams项具有值 `Conversation`。 相比之下，Exchange电子邮件具有值 `Email`。|          |
-|MessageKind     | 邮件类型属性。 Teams内容具有值 `microsoftteams , im`。 |
-|收件人     | 在脚本对话中收到消息的所有用户的列表。|
-|TeamsChannelName     | 脚本Teams的频道名称。|
-|||
+|FileClass|指示该类型的内容。 来自Teams项具有值 `Conversation`。 相比之下，Exchange电子邮件具有值 `Email`。|
+|MessageKind|邮件类型属性。 Teams内容具有值 `microsoftteams , im`。|
+|收件人|在脚本对话中收到消息的所有用户的列表。|
+|TeamsChannelName|脚本Teams的频道名称。|
 
 有关元数据属性Advanced eDiscovery的说明，请参阅文档中[的文档元数据Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md)。
 

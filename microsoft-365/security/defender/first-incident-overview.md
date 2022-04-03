@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325931"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499102"
 ---
 # <a name="responding-to-your-first-incident"></a>响应第一个事件
 
@@ -52,7 +52,7 @@ ms.locfileid: "63325931"
 
 ## <a name="next-step"></a>后续步骤
 
-[![准备你的组织和Microsoft 365租户。](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="响应第一个事件页面中的修正选项" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 确保你的组织和租户Microsoft 365[事件处理做好准备](first-incident-prepare.md)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "63325931"
 - [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
 
-第一个事件响应的其他示例：
+第一个事件响应的更多示例：
 
 - [钓鱼电子邮件](first-incident-path-phishing.md)
 - [基于身份的攻击](first-incident-path-identity.md)

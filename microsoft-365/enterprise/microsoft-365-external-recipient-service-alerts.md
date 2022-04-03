@@ -1,7 +1,7 @@
 ---
 title: 外部收件人服务警报
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: 使用外部收件人服务警报监视达到其邮箱配额的保留邮箱。
-ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330810"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567997"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>等待发送给外部收件人的邮件的服务警报，这些邮件Exchange Online监视
 
 服务警报将邮件排队通知管理员到外部收件人的邮件队列Exchange Online。 这些警报可能需要 Microsoft 之外的修正操作，但它们可以向您提供修正所需信息。
 
-这些服务警报显示在Microsoft 365 管理中心。 若要查看这些服务警报，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**HealthService**</a> >  >  运行状况 **Exchange Online** 然后单击"**活动问题"** 选项卡。这些服务警报的名称为"邮件排队等待外部收件人超过阈值"。
+这些服务警报显示在Microsoft 365 管理中心。 若要查看这些服务警报，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  > "运行状况服务运行状况 **Exchange Online** 然后单击"**活动问题"** 选项卡。这些服务警报的名称为"邮件排队等待外部收件人超过阈值"。
 
 ![等待送达给外部收件人的邮件的服务警报显示在Exchange Online仪表板中。](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "63330810"
 > [!NOTE]
 > Microsoft 无法说明第三方供应商提供的每一个 SMTP 错误代码。 因此，管理员可能需要调查特定于其 MTA 或组织使用的日记解决方案的错误代码。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 如果您的组织最近在本地或 Exchange Online中创建或更改了邮件流连接器，请参阅以下文章了解详细信息。
 

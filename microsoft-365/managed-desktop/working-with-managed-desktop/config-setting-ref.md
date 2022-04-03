@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 2005ead772399f26c3537ac8bf36f6b0810b07fb
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 18fc51f37e66cd3212ea1e5af22ed4389d025a05
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63495034"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755095"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>可配置设置参考 - Microsoft 托管桌面
 
@@ -150,6 +150,7 @@ Microsoft 托管桌面包括服务运行所需的一组默认代理例外。 默
 
 - 必须是有效的服务器地址和端口号。
 - URL 必须是有效的 http 站点。
+- 代理例外应限制为最多 2064 个字符。 这包括添加Microsoft 托管桌面地址。
 
 ### <a name="customize-and-deploy-proxies"></a>自定义和部署代理
 

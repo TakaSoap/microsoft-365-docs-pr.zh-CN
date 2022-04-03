@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314209"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498621"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -46,7 +46,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 在"Microsoft 安全分数概述"页中，查看在这些组之间如何拆分分数以及可用分数。 通过基准比较，还可以全面查看总分数、安全分数的历史趋势，以及可采取优先改进措施来提高分数。
 
-![安全分数主页。](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="安全分数门户中的Microsoft 365 Defender主页" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>检查当前分数
 
@@ -62,7 +62,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 如果已包含所有可能的得分视图，此视图的外观将如下所示：
 
-![安全分数，包括计划分数、当前许可证分数和可得分。](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="安全分数，包括计划分数、当前许可证分数和可Microsoft 365 Defender分数" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>采取措施提高分数
 
@@ -76,7 +76,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 当您选择特定的改进操作时，将出现一个整页的飞出图。  
 
-![改进操作飞出示例。](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Microsoft 365 Defender门户中的改进操作" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 若要完成该操作，有几个选项：
 

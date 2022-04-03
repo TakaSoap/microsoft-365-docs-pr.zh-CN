@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3b86a133b5126029378018fdac821d5423b2761
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c31a6e43e66b6e1ffeace75ac2d8419cc764174f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321859"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499124"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>为第一个事件准备安全状态
 
@@ -59,15 +59,15 @@ Microsoft 365 Defender 组件可以显示违反为建立零信任条件访问策
 
 接下来，组织可以使用 Microsoft 安全[](microsoft-secure-score.md)分数Microsoft 365 Defender确定当前安全状态，并考虑建议如何改进它。 分数越高，组织采取的安全建议和改进措施就越高。 安全分数建议可以跨不同产品进行，并允许组织提高分数。 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft 安全中心中的 Microsoft 安全分数示例。":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Microsoft 安全分数门户中的Microsoft 365 Defender页面" lightbox="../../media/first-incident-prepare/first-incident-secure-score.png":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>第 3 步。 评估组织的漏洞暴露
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>步骤 3. 评估组织的漏洞暴露
 
 预防事件有助于简化安全操作工作，以重点关注进行中的关键和重要的安全事件。 软件漏洞通常是攻击的可阻止入口点，可能导致数据盗窃、数据丢失或业务运营中断。 如果没有攻击在进行中，则安全操作必须努力在组织中实现并保持可接受的漏洞暴露级别。[](../defender-endpoint/tvm-exposure-score.md)
 
 若要检查软件修补进度，请访问 Defender for Endpoint [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) 中的"威胁和漏洞管理"页，通过"更多资源"选项卡Microsoft 365 Defender访问此页面。
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft 安全中心中&quot;威胁和漏洞&quot;页的示例。"::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft 365 Defender门户中的&quot;威胁和漏洞&quot;页" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. 了解新出现的威胁
 

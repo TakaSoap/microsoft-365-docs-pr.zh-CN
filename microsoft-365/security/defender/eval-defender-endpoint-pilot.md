@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: adaf1a7798c9e2e7b016a85577c1f62995a7a78e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172051"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755460"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>试用 Microsoft Defender for Endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "62172051"
 
 使用以下步骤为 Microsoft Defender for Endpoint 设置和配置试点。 
 
-![将 Microsoft Defender for Identity 添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="将 Microsoft Defender for Identity 添加到 Microsoft Defender 评估环境的步骤" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
 - 步骤 1. 验证试点组
 - 步骤 2. 试用功能
@@ -64,19 +64,19 @@ ms.locfileid: "62172051"
 ### <a name="run-a-simulation"></a>运行模拟
 Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.windows.com/tutorials) 试点设备上运行的"自己执行"攻击方案。  每个文档都包括操作系统和应用程序要求，以及特定于攻击方案的详细说明。 这些脚本安全、有记录且易于使用。 这些方案将反映适用于终结点的 Defender 功能并演练调查体验。
 
-若要运行任何提供的模拟，你至少需要一 [个已载入的设备](../defender-endpoint/onboard-configure.md)。
+若要运行任何提供的模拟，你至少需要一 [台已载入的设备](../defender-endpoint/onboard-configure.md)。
 
-1. 在 **帮助**  >  **模拟&** 教程中，选择要模拟的可用攻击方案：
+1. 在 **HelpSimulations** >  &教程中，选择要模拟的可用攻击方案：
 
    - **方案 1：文档丢弃后门** - 模拟传递社交工程的诱使文档。 文档启动一个专门设计的后门，该后门为攻击者提供控制。
 
-   - **方案 2：** 无文件攻击中的 PowerShell 脚本 - 模拟依赖于 PowerShell 的无文件攻击，展示攻击面减少和设备学习检测恶意内存活动。
+   - **方案 2** ：无文件攻击中的 PowerShell 脚本 - 模拟依赖于 PowerShell 的无文件攻击，展示攻击面减少和设备学习检测恶意内存活动。
 
    - **方案 3：自动事件响应** - 触发自动调查，自动搜寻并修正泄露项目，从而扩展事件响应容量。
 
 2. 下载并阅读所选方案提供的相应演练文档。
 
-3. 下载模拟文件或复制模拟脚本，方法为导航到帮助模拟  >  **&教程**。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
+3. 下载模拟文件或通过导航到 **HelpSimulations** & > 脚本。 你可以选择在测试设备上下载文件或脚本，但这不是强制性的。
 
 4. 根据演练文档中的指示，在测试设备上运行模拟文件或脚本。
 
@@ -86,6 +86,6 @@ Microsoft Defender for Endpoint 附带了 [可在](https://securitycenter.window
 ## <a name="next-steps"></a>后续步骤
 [评估 Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
-返回到评估 Microsoft [Defender for Endpoint 的概述](eval-defender-endpoint-overview.md)
+返回到评估 [Microsoft Defender for Endpoint 的概述](eval-defender-endpoint-overview.md)
 
 返回到评估和试点[计划概述Microsoft 365 Defender](eval-overview.md)

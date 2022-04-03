@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: 7b675db1e17e7b7609a7a0394e2dffc8f2a74887
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 5ffd04ee0b89c2e920f55c3e6fbefbab4c82983e
+ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909647"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "64481377"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
@@ -60,12 +60,12 @@ ms.locfileid: "62909647"
 
 - 您的组织必须获得终结点 DLP 的许可
 - 您的设备必须运行 Windows 10 x64 内部版本 1809 或更高版本。
-- 设备必须具有反恶意软件客户端（版本为 4.18.2101.9 或更高）。 请通过打开“**Windows 安全中心**”应用，选择“**设置**”图标，然后选择“**关于**”来查看当前版本。
+- 设备必须具有反恶意软件客户端版本 4.18.2202.x 或更高版本。 请通过打开“**Windows 安全中心**”应用，选择“**设置**”图标，然后选择“**关于**”来查看当前版本。
 
 
 ### <a name="permissions"></a>权限
 
-可在 [活动资源管理器](data-classification-activity-explorer.md) 中查看终结点 DLP 中的数据。 有七个角色可向活动资源管理器授予权限，用于访问数据的帐户必须是其中任何一个的成员。
+可在 [活动资源管理器](data-classification-activity-explorer.md) 中查看来自终结点 DLP 的数据。有七个角色可向活动资源管理器授予权限，用于访问数据的帐户必须是其中任何一个的成员。
 
 - 全局管理员
 - 合规性管理员
@@ -108,7 +108,7 @@ ms.locfileid: "62909647"
 
 ### <a name="prepare-infrastructure"></a>准备基础结构
 
-如果要向所有受监视 Windows 10 设备推出 Microsoft 合规性扩展，应从不允许的应用列表中删除 Google Chrome。 有关详细信息，请参阅 [不允许的浏览器](endpoint-dlp-using.md#unallowed-browsers)。 如果只向少数设备推出，则可在不允许的浏览器列表中保留 Chrome。 对于已安装 Microsoft 合规性扩展的计算机，Microsoft 合规性扩展将绕过不允许应用列表的限制。
+如果要向所有受监视 Windows 10 设备推出 Microsoft 合规性扩展，应从不允许的应用列表中删除 Google Chrome。 有关详细信息，请参阅 [不允许的浏览器](dlp-configure-endpoint-settings.md#unallowed-browsers)。 如果只向少数设备推出，则可在不允许的浏览器列表中保留 Chrome。 对于已安装 Microsoft 合规性扩展的计算机，Microsoft 合规性扩展将绕过不允许应用列表的限制。
 
 ### <a name="prepare-your-devices"></a>准备设备
 
@@ -121,40 +121,13 @@ ms.locfileid: "62909647"
 
 这是推荐采用的方法。
 
-1. 登录到要安装 Microsoft 合规性扩展的 Windows 10 计算机，并以管理员身份运行此 PowerShell 脚本。
+1. 导航到“[Microsoft 合规性扩展 - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. 导航到“[Microsoft 合规性扩展 - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
-
-3. 按照 Chrome Web Store 页面上的说明安装扩展。
+2. 按照 Chrome Web Store 页面上的说明安装扩展。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 进行部署
 
 使用此设置方法进行组织范围的部署
-
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>通过 Microsoft Endpoint Manager 启用所需的注册表值
-
-1. 创建具有以下内容的 PowerShell 脚本：
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. 登录 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
-
-3. 导航到“**设备**” > “**脚本**”，并选择“**添加**”。
-
-4. 浏览到系统提示时创建的脚本位置。
-
-5. 使用以下设置：
-    1. 使用登录凭据运行此脚本：否
-    1. 执行脚本签名检查：否
-    1. 在 64 位 PowerShell 主机中运行脚本：是
-
-6. 选择适当的设备组并应用该策略。
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft Endpoint Manager 强制安装步骤
 
@@ -186,39 +159,7 @@ ms.locfileid: "62909647"
 
 ### <a name="deploy-using-group-policy"></a>使用组策略部署
 
-如果不想使用 Microsoft Endpoint Manager，可使用组策略在组织中部署 Microsoft 合规性扩展
-
-1. 设备必须可通过组策略进行管理，并且需要将所有 Chrome ADMX 导入组策略中央存储。 有关详细信息，请参阅 [如何在 Windows 中创建和管理组策略管理模板的中央存储](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
-
-2. 使用下面的方法创建 PowerShell 脚本：
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. 打开“**组策略管理控制台**”并导航到组织单位 (OU)。
-
-4. 右键单击并选择“**在此域中创建 GPO，并在此处链接它**”。 系统提示时，为此组策略对象 (GPO) 分配一个描述性名称，然后完成创建。
-
-5. 右键单击“GPO”，然后选择“**编辑**”。
-
-6. 转到“**计算机配置**” > “**首选项**” > **控制面板设置** > “**已计划任务**”。
-
-7. 通过右键单击，然后选择“**新建任务**” > “**立即任务（至少为 Windows 7）**”来创建新的立即任务。
-
-8. 命名任务并提供说明。
-
-9. 选择相应的帐户以运行立即任务，例如 NT Authority
-
-10. 选择“**以最高权限运行**”。
-
-11. 配置 Windows 10 的策略。
-
-12. 在“**操作**”选项卡中，选择“**启动程序**”。
-
-13. 输入步骤 1 中创建的程序/脚本的路径。
-
-14. 选择“**应用**”。
+如果不想使用 Microsoft Endpoint Manager，可以使用组策略在整个组织中部署 Microsoft 合规性扩展。
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>将 Chrome 扩展添加到 ForceInstall 列表
 

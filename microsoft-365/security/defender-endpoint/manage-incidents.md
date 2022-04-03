@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a84f7ba72acb4caf3e229f0bed4d997e123cc7ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766820"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466204"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-incidents"></a>管理 Microsoft Defender 终结点事件
 
@@ -42,8 +42,7 @@ ms.locfileid: "62766820"
 
 从事件队列中 **选择事件将** 打开"事件管理"窗格，您可以在其中打开事件页面了解详细信息。
 
-
-![事件管理窗格的图像。](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="事件管理窗格" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 你可以为自己分配事件、更改状态和分类、重命名或注释它们以跟踪其进度。
 
@@ -55,8 +54,7 @@ ms.locfileid: "62766820"
 > 在推出自动事件命名之前已存在的事件将保留其名称。
 >
 
-
-![事件详细信息页面的图像。](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="事件详细信息页面" lightbox="images/atp-incident-details-updated.png":::
 
 ## <a name="assign-incidents"></a>分配事件
 如果尚未分配事件，可以选择"分配给 **我** "将事件分配给自己。 执行此操作时，假定所有权不仅限于事件，而且还针对与之关联的所有警报。

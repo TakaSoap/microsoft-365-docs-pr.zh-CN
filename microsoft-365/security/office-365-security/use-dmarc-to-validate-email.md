@@ -18,12 +18,12 @@ ms.collection:
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b166a481bf503ce2d46e79f2cb674861935f4ff
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: cae3f007cc046bfc2afd6bb7322c65fe047816d5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61118343"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465874"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
@@ -43,11 +43,11 @@ ms.locfileid: "61118343"
 
  电子邮件可能包含多个发送方、发件人或地址。这些地址用于不同用途。例如，以下列地址为例：
 
-- **“邮件发件人”地址**：标识发件人，并指定在传送邮件过程中出现任何问题（例如未送达通知）时发送返回通知的地址。 该地址出现在电子邮件的信封部分，而电子邮件应用程序不显示此地址。 有时称其为" 5321.MailFrom 地址"或"反向路径地址"。
+- **“邮件发件人”地址**: 标识发件人，并指定在传送邮件过程中出现任何问题 (例如未送达通知) 时发送返回通知的地址。该地址出现在电子邮件的信封部分，而电子邮件应用程序不显示此地址。有时称其为“5321.MailFrom 地址”或“反向路径地址”。
 
 - **“发件人”地址**：由邮件应用程序显示为发件人地址的地址。此地址标识电子邮件的作者。即，负责撰写邮件的个人或系统的邮箱。有时称其为“5322.From 地址”。
 
-SPF 使用 DNS TXT 记录为给定的域提供获得授权的发送 IP 地址的列表。 通常情况下，仅会针对 5321.MailFrom 地址执行 SPF 检查。 这意味着，使用 SPF 本身时 5322.From 地址未通过身份验证。 这样允许用户接收通过 SPF 检查但具有伪造的 5322.From 发件人地址的邮件。 以下面的 SMTP 脚本为例：
+SPF 使用 DNS TXT 记录为给定的域提供获得授权的发送 IP 地址的列表。通常情况下，仅会针对 5321.MailFrom 地址执行 SPF 检查。这意味着，使用 SPF 本身时 5322.From 地址未通过身份验证。这样允许用户接收通过 SPF 检查但具有伪造的 5322.From 发件人地址的邮件。以下面的 SMTP 脚本为例:
 
 ```console
 S: Helo woodgrovebank.com
@@ -76,7 +76,7 @@ S: .
 
 - 发件人地址 (5322.From)：security@woodgrovebank.com
 
-如果你配置了 SPF，那么接收服务器针对从 phish@phishing.contoso.com 地址发送的邮件执行检查。 如果该邮件来自 phishing.contoso.com 域的有效源，则会通过 SPF 检查。 由于电子邮件客户端仅显示发件人地址，用户可以看到此邮件来自 security@woodgrovebank.com。 单独使用 SPF，永远不会验证 woodgrovebank.com 的有效性。
+如果你配置了 SPF，那么接收服务器针对从 phish@phishing.contoso.com 地址发送的邮件执行检查。如果该邮件来自 phishing.contoso.com 域的有效源，则会通过 SPF 检查。由于电子邮件客户端仅显示发件人地址，用户可以看到此邮件来自 security@woodgrovebank.com。单独使用 SPF，永远不会验证 woodgrovebank.com 的有效性。
 
 使用 DMARC 时，接收服务器还会针对发件人地址执行检查。在上面的示例中，如果正好存在 woodgrovebank.com 的 DMARC TXT 记录，那么针对发件人地址的检查会失败。
 
@@ -94,7 +94,7 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 ## <a name="set-up-dmarc-for-inbound-mail"></a>为入站邮件设置 DMARC
 
-你不必为在 Microsoft 365 中收到的邮件设置 DMARC。 这一切都由你负责。 如果想了解未通过我们的 DMARC 检查时如何处理邮件，请参阅 [Microsoft 365 如何处理未通过 DMARC 检查的入站电子邮件](#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。
+你不必为在 Microsoft 365 中收到的邮件设置 DMARC。我们会处理好。如果你想了解未通过我们的 DMARC 检查时如何处理邮件，请参阅 [Microsoft 365 如何处理未通过 DMARC 检查的入站电子邮件](#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>从 Microsoft 365 中为出站邮件设置 DMARC
 
@@ -112,7 +112,7 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 ### <a name="step-1-identify-valid-sources-of-mail-for-your-domain"></a>步骤 1：为域标识邮件的有效源
 
-如果你已经设置了 SPF，那么你已经通过了本练习。 但是，对于 DMARC，还有其他一些注意事项。 为域标识邮件的源时需要回答以下两个问题:
+如果你已经设置了 SPF，那么你已经通过了本练习。但是，对于 DMARC，还有其他一些注意事项。为域标识邮件的源时需要回答以下两个问题:
 
 - 哪些 IP 地址从我的域发送邮件？
 
@@ -199,7 +199,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
     从请求 DMARC 接收器向你发送关于使用该域时看到的消息的统计信息的子域或域的简单的监视模式记录开始。监视模式记录是将策略设置为无 (p=none) 的 DMARC TXT 记录。许多公司发布了 p=none 的 DMARC TXT 记录，因为他们不确定通过发布更严格的 DMARC 策略可能会丢失多少电子邮件。
 
-    即使在邮件传递基础结构中实现 SPF 或 DKIM 之前，你也可以这样做。 但是，你将无法使用 DMARC 有效地隔离或拒绝邮件，直到你也实现了 SPF 和 DKIM 之后才可以。 当引入 SPF 和 DKIM 时，通过 DMARC 生成的报告将提供通过这些检查和未通过检查的邮件的数量和源。 你可以轻松地查看这些邮件占用了多少合法通信量，并解决所有问题。 还将开始看到即将发送的欺诈邮件的数量以及发送地点。
+    即使在邮件传递基础结构中实现 SPF 或 DKIM 之前，你也可以这样做。但是，你将无法使用 DMARC 有效地隔离或拒绝邮件，直到你也实现了 SPF 和 DKIM 之后才可以。当引入 SPF 和 DKIM 时，通过 DMARC 生成的报告将提供通过这些检查和未通过检查的邮件的数量和源。你可以轻松地查看这些邮件占用了多少合法通信量，并解决所有问题。你还将开始看到将会发送的欺诈邮件的数量以及发送地点。
 
 2. 请求外部邮件系统隔离未通过 DMARC 的邮件
 
@@ -258,7 +258,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 由于它是主 MX，全部或大部分电子邮件将首先被路由到 mail.contoso.com，然后将邮件路由到 EOP。 在某些情况下，你甚至不可能将 EOP 列为 MX 记录，并直接挂接连接器来路由你的电子邮件。 EOP 不必是执行 DMARC 验证的第一个条目。 它只是确保验证，以确定所有本地/非 O365 服务器都将执行 DMARC 检查。  设置 DMARC TXT 记录时，可以对客户的域（而不是服务器）强制执行 DMARC，但是实际上强制执行取决于接收服务器。  如果将 EOP 设置为接收服务器，那么 EOP 强制执行 DMARC。
 
-:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="DMARC 的疑难解答图形，由 Daniel Mande 提供" lightbox="../../media/Tp_DMARCTroublehoot.png":::
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="DMARC 的疑难解答图形" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>详细信息
 

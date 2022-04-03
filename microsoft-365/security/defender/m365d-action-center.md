@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b64cbc55a975ee02bd1bd5d41d30330e8729d4be
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329567"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499058"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -111,7 +111,7 @@ ms.locfileid: "63329567"
 
  (**新建！**) 改进的操作中心现在包括一个 **操作** 源列，告知你每个操作的来源。 下表介绍了可能 **的操作源** 值：
 
-| 操作源值 | 说明 |
+| 操作源值 | Description |
 |:-----|:---|
 | **手动设备操作** | 对设备采取的手动操作。 示例包括 [设备隔离](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) 或 [文件隔离](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
 | **手动电子邮件操作** | 对电子邮件执行手动操作。 示例包括软删除电子邮件 [或修正电子邮件](../office-365-security/remediate-malicious-email-delivered-office-365.md)。 |

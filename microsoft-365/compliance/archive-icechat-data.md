@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器，以将数据从 ICE 聊天工具导入和存档到Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: c340cbb65d7efaa5cbc14ca977879c09b585031a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c29a39c8c398a0d8721931cbcb770aa18d0f3c4b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324881"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568084"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>设置连接器以存档 ICE Chat 数据
 
@@ -121,14 +121,20 @@ ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性�
 
 7. 成功验证连接后，单击"下一 **步"**。
 
-8. 在"**将外部用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射。 可以在此页面上下载用户映射 CSV 文件的副本。 您可以将用户映射添加到文件，然后上载它。
+8. 在 **"定义用户** "页上，指定要导入其数据的用户。
+
+     - **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+     - **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+9. 在"**将外部用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射。 可以在此页面上下载用户映射 CSV 文件的副本。 您可以将用户映射添加到文件，然后上载它。
 
    > [!NOTE]
    > 如前所述，自定义映射文件 CSV 文件包含 ICE Chat imid 和Microsoft 365每个用户的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看每个聊天项的自定义映射文件。 如果找不到与用户的 ICE Chat imid 对应的有效 Microsoft 365 用户，连接器将为聊天项目的 *SenderEmail* 和 *RecipientEmail* 属性中指定的用户将项目导入邮箱。 如果连接器通过自动或自定义用户映射Microsoft 365有效的用户映射，则不导入该项目。
 
-9. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
+10. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
 
-10. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。
+11. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。
 
 ## <a name="set-up-a-connector-using-private-keys"></a>使用私钥设置连接器
 
@@ -196,11 +202,17 @@ ICE 聊天数据存储在用户邮箱中后，可以将 Microsoft 365 合规性�
 
 7. 成功验证连接后，单击"下一 **步"**。
 
-8. 在"**将 ICE 聊天用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射。
+8. 在 **"定义用户** "页上，指定要导入其数据的用户。
+
+     - **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+     - **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+9. 在"**将 ICE 聊天用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射。
 
    > [!NOTE]
    > 如前所述，自定义映射文件 CSV 文件包含 ICE Chat imid 和Microsoft 365每个用户的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看每个聊天项的自定义映射文件。 如果找不到与用户的 ICE Chat imid 对应的有效 Microsoft 365 用户，连接器将为聊天项目的 *SenderEmail* 和 *RecipientEmail* 属性中指定的用户将项目导入邮箱。 如果连接器通过自动或自定义用户映射Microsoft 365有效的用户映射，则不导入该项目。
 
-9. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
+10. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
 
-10. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。
+11. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。

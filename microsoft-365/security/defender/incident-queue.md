@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 38bfde92a2988cd8bdbca770402af96a4b9c5134
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321819"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498728"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 
 在快速启动事件门户时&事件>**事件** 和事件Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">队列</a>。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列的示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="显示事件门户中事件队列Microsoft 365 Defender部分。" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 " **最近的事件和警报** "部分显示过去 24 小时内收到的警报数和创建的事件数的图。
 
@@ -66,13 +66,13 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 
 从默认事件队列中，可以选择"筛选器"以查看"筛选器"窗格，您可从该窗格中指定一组已筛选的事件。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件队列的筛选器窗格示例。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="事件门户中事件队列的&quot;筛选器Microsoft 365 Defender窗格。" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 您还可以通过在事件 **列表上方** 的"筛选器"列表中选择任何筛选器来查看"筛选器"窗格。
 
 此表列出了可用的筛选器名称。
 
-| 筛选器名称 | 说明 |
+| 筛选器名称 | Description |
 |:-------|:-----|
 | 状态 | 选择 **"新建**" **、"正在进行"** 或"已 **解决"**。 |
 | Severity | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 选择 **"高**、**中****、低**"或"**信息"**。 |

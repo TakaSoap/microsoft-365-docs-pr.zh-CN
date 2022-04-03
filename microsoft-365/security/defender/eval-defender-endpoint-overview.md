@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325945"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755103"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>步骤 4. 评估 Microsoft Defender for Endpoint 概述
 
@@ -41,7 +41,7 @@ ms.locfileid: "63325945"
 
 使用以下步骤启用和试用 Microsoft Defender for Endpoint。
 
-![将 Microsoft Defender for Endpoint 添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="将 Microsoft Defender for Endpoint 添加到 Microsoft Defender 评估环境的步骤" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
 下表介绍了图中的步骤。
@@ -50,6 +50,4 @@ ms.locfileid: "63325945"
 |---------|---------|
 | [步骤 1.查看体系结构要求和关键概念](eval-defender-endpoint-architecture.md)    | 了解 Defender for Endpoint 体系结构以及可供你使用的功能。       |
 |[步骤 2.启用评估环境](eval-defender-endpoint-enable-eval.md)     |   按照步骤设置评估环境。      |
-|[步骤 3.设置试点 ](eval-defender-endpoint-pilot.md)    |    验证试点组、运行模拟，并熟悉关键功能和仪表板。     |
-
-
+|[步骤 3.设置试点 ](eval-defender-endpoint-pilot.md)    |    验证试点组、运行模拟，并熟悉关键功能和仪表板。 |

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Azure 信息保护(AIP)统一标记客户端时，请了解使用 Office 应用的内置标记而非 AIP 加载项的优势。
-ms.openlocfilehash: 88849422d295cc7caf2eb39837f7f1bb82b7a378
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318991"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498596"
 ---
 # <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>为什么选择 MIP 内置标记而非 Office 应用的 AIP 加载项
 
@@ -58,7 +58,7 @@ ms.locfileid: "63318991"
 - 加载项不太稳定，因为它们可能会与其他加载项产生冲突，从而导致 Office 应用挂起、崩溃或自动禁用加载项。
 - 作为加载项，它运行速度更慢，且用户可以禁用它来绕过标记要求。
 - 任何 bug 修复都需要重新安装 Azure 信息保护客户端。
-- 用户的标记体验与用户在其其他设备(macOS、iOS、Android)上以及使用 Office 网页版时具有的内置标签略有不同。 这种差异可能会增加培训和支持的成本。
+- 用户的标签体验与用户在其他设备（macOS、iOS、Android）上以及使用 Office 网页版时具有的内置标签略有不同。这种差异可能会增加培训和支持的成本。
 - 已发布新的、[仅受内置标记支持](#features-supported-only-by-built-in-labeling-for-office-apps) 的 Office 标记功能，且会不断扩充该列表。
 
 只有当已将 AIP 加载项部署到用户，且需要时间将其迁移到内置标记时，才使用 Windows Office 应用的 AIP 加载项。 或者，用户需要内置标记不支持的功能。 参考此页上的 [功能奇偶校验信息](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) 以帮助识别这些功能。
@@ -68,10 +68,10 @@ ms.locfileid: "63318991"
 > [!NOTE]
 > 许多新的标记功能都在计划或开发中，因此预计本节中的列表会随时间的推移不断扩充。
 
-一些功能仅受 Office 应用的内置标记支持，AIP 加载项将不支持。 具体包括：
+一些功能仅受 Office 应用的内置标记支持，但 AIP 加载项将不支持。这些功能包括：
 
 - 对于自动和推荐的标记:
-    - 访问智能分类服务，包括 [可训练分类器](classifier-learn-about.md)、[精确数据匹配(EDM)](sit-learn-about-exact-data-match-based-sits.md) 和 [命名实体](named-entities-learn.md)
+    - 访问智能分类服务，包括 [可训练分类器](classifier-learn-about.md)、[精确数据匹配 (EDM)](sit-learn-about-exact-data-match-based-sits.md) 和 [命名实体](named-entities-learn.md)
     - 在用户键入时检测敏感信息
     - 在 Word 中，用户可以查看并删除识别到的的敏感内容
 - 对于允许用户分配权限的标签，可以向用户或组授予不同的权限(读取或更改)
@@ -110,7 +110,7 @@ ms.locfileid: "63318991"
 无论选择哪种方法，更改都将在 Office 应用重新启动时生效。
 
 > [!NOTE]
-> 内置标签需要 Office 应用的订阅版本。 如果你有 Office 的独立版本(有时称为“Office 永久版”)，则我们建议升级到 Microsoft 365 企业应用版，从而受益于 [最新的标记功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
+> 内置标签需要 Office 应用的订阅版本。如果你有 Office 的独立版本（有时称为“Office 永久版”），我们建议升级到 Microsoft 365 企业应用版，以利用 [最新的标签功能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) 的优势。
 
 请记住，当使用此方法禁用 AIP 加载项时，仍然可以使用 AIP 客户端将标记扩展到 Office 应用之外。
 
@@ -118,7 +118,7 @@ ms.locfileid: "63318991"
 
 内置标记现在支持 AIP 加载项支持的多项标记功能。 有关功能、可能需要的最低版本和配置信息的更详细列表，请参阅 [管理 Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)。
 
-更多功能在计划和开发中。 如果你有感兴趣的特定功能，请查看 [Microsoft 365 路线图](https://aka.ms/MIPC/Roadmap) 并考虑加入 [Office 个人预览版中的 Microsoft 信息保护](https://aka.ms/MIP/PreviewRing)。
+更多功能正处于规划和开发阶段。如果你对特定功能感兴趣，请查看 [Microsoft 365 路线图](https://aka.ms/MIPC/Roadmap) 并考虑加入 [Office 个人预览版中的 Microsoft 信息保护](https://aka.ms/MIP/PreviewRing)。
 
 使用以下信息以帮助识别是否正在使用内置标记尚不支持的 AIP 加载项中的功能:
 

@@ -1,7 +1,7 @@
 ---
 title: MRS 服务警报
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 使用邮箱迁移服务警报监视组织中邮箱迁移请求的延迟。
-ms.openlocfilehash: 25c569030bd5da914dc6eb7ec0e58ebadfe4d766
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b4b618bae602c7c06b2d6371e39cc865d0a3407
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937862"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567975"
 ---
-# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>用于监控中 MRS 源延迟的服务Exchange Online警报
+# <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>Exchange Online 监视中 MRS 源延迟的服务警报
 
 邮箱复制服务 (MRS) 源延迟服务警报会通知您租户端 (迁移源) 上的存储限制或处理器使用率高问题，这些问题可能会延迟 Microsoft 365 组织的邮箱迁移。 这些服务警报还包括指向 Microsoft 资源的链接，可帮助你解决这些问题。
 
-这些服务警报显示在Microsoft 365 管理中心。 若要查看这些服务警报，请转到运行状况服务  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**运行状况**</a>Exchange Online  >  然后单击"**活动问题"** 选项卡。
+这些服务警报显示在Microsoft 365 管理中心。 若要查看这些服务警报，请转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  > "运行状况服务运行状况 **Exchange Online** 然后单击"**活动问题"** 选项卡。
 
 ## <a name="what-do-these-service-alerts-indicate"></a>这些服务警报表示什么？
 
@@ -40,23 +40,23 @@ ms.locfileid: "61937862"
 
 下面的列表描述了上一示例中的每个列。
 
-- **BatchName：** 迁移作业的唯一名称。
+- **BatchName**：迁移作业的唯一名称。
 
-- **ExchangeGuid：** 要 (的用户) GUID 的全局唯一标识符。
+- **ExchangeGuid**：要 (的用户) GUID 的全局唯一标识符。
 
 - **RequestGuid**：迁移请求的 GUID。
 
-- **DelayReason：** 延迟迁移的原因。
+- **DelayReason**：延迟迁移的原因。
 
-- **QueueHours：** 迁移已排队等待的持续时间。
+- **QueueHours**：迁移已排队等待的持续时间。
 
-- **DelayInHours：** 迁移延迟的持续时间。
+- **DelayInHours**：迁移延迟的持续时间。
 
-- **SourceServer：** 迁移源自本地服务器。
+- **SourceServer**：迁移源自本地服务器。
 
-- **RemoteDatabaseName：** 迁移源自的数据库名称。
+- **RemoteDatabaseName**：迁移源自的数据库名称。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 有关 MRS 和邮箱迁移详细信息，请参阅以下文章：
 

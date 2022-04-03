@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504735"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755152"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>步骤 1. 创建Microsoft 365 Defender评估环境，实现更高的网络安全
 
@@ -54,15 +54,15 @@ LYou 可以了解此解决方案，Microsoft Defender XDR通过本系列其余�
 2. 从 **导航菜单中选择** "购买服务"。
 3. 向下滚动到"Office 365"**部分，然后选择**"许可证"Office 365 E5"详细信息"按钮。
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The Office 365 section has a Details button to click.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Microsoft 365 Defender门户中的&quot;详细信息&quot;按钮" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 4. 选择 **"开始免费试用链接** "。
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="单击&quot;开始免费试用&quot; (费用为 35 美元) 。":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Microsoft 365 Defender门户中的&quot;开始免费试用&quot;按钮" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
 5. 确认你的请求，然后单击立即 **尝试** 按钮。
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="在&quot;签出，确认订单&quot;面板上有一个&quot;立即试用&quot;按钮 (25 个用户试用一Office 365 E5 25) 。":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Microsoft 365 Defender门户中的&quot;立即Microsoft 365 Defender按钮" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
 ## <a name="go-to-the-next-step"></a>转到下一步
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330211"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499080"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>步骤 5. 开发和测试用例
 
@@ -46,7 +46,7 @@ SOC 应定义用于开发用例的高级别标准和流程，这由 SOC 监督�
 
 与用例开发相关的 SOC 监督活动包括： 
 
-- 要求
+- Requirements
 - 人员配备或培训需求
 - 软件许可证
 - 供应商合同
@@ -56,7 +56,7 @@ SOC 应定义用于开发用例的高级别标准和流程，这由 SOC 监督�
 
 为了加快 Runbook 和 Playbook 的创建过程，请创建用例决策树。 此图显示了一个示例。
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="用例决策流程。" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="用例决策流程" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 定义和批准高级用例标准后，下一步是创建和测试实际用例。 以下各节使用防钓鱼、威胁和漏洞扫描方案作为示例。
 
@@ -64,13 +64,13 @@ SOC 应定义用于开发用例的高级别标准和流程，这由 SOC 监督�
 
 创建用例的第一步是使用情节提要板概述工作流。 下面是威胁智能团队的新网络钓鱼攻击通知高级情节板示例。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="防钓鱼活动用例工作流示例。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="防钓鱼活动用例的工作流" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>调用用例工作流，例如 1
 
 在文章板获得批准后，下一步是调用用例工作流。 下面是防钓鱼活动的示例过程。 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="反网络钓鱼活动的详细用例工作流示例。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="防钓鱼活动的详细用例工作流" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>用例示例 2：威胁和漏洞扫描
 
@@ -78,13 +78,13 @@ SOC 应定义用于开发用例的高级别标准和流程，这由 SOC 监督�
 
 下面是一个有关资产危险和漏洞管理示例。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="示例用例工作流危险和漏洞管理。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="用于工作流的用例危险和漏洞管理" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>调用用例工作流（例如 2）
 
 下面是威胁和漏洞扫描的示例过程。
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="用于工作流的详细用例工作流危险和漏洞管理。" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="用于工作流的详细用例危险和漏洞管理" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>分析用例输出和学到的经验
 
