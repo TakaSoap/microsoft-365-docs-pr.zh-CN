@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: a156b2a4514c3dfa090bcf43285abfbcfaa1f46e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 91cd06188a8337f3d0df0b9c67d7c98e389e4351
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766964"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466732"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>查看 Microsoft Defender for Endpoint 中的警报
 
@@ -53,19 +53,19 @@ Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相
 
 - 已阻止：已避免尝试的可疑操作。 例如，文件未写入磁盘或已执行。
 
-  ![显示威胁已阻止的警报页面。](images/detstat-prevented.png)
+  :::image type="content" source="images/detstat-prevented.png" alt-text="显示威胁防护的页面" lightbox="images/detstat-prevented.png":::
 
 - 已阻止：已执行可疑行为，然后阻止。 例如，进程已执行，但由于它随后呈现了可疑行为，因此进程已终止。
 
-  ![显示威胁已被阻止的警报页面。](images/detstat-blocked.png)
+  :::image type="content" source="images/detstat-blocked.png" alt-text="显示威胁阻止的页面" lightbox="images/detstat-blocked.png":::
 
 - 检测到：检测到攻击，并且可能仍处于活动状态。
 
-  ![显示检测到威胁的警报页面。](images/detstat-detected.png)
+  :::image type="content" source="images/detstat-detected.png" alt-text="显示威胁检测的页面" lightbox="images/detstat-detected.png":::
 
 然后，还可以在警报的详细信息窗格中查看自动调查详细信息，查看已采取的操作，并阅读警报的说明，了解建议的操作。
 
-![详细信息窗格的代码段，其中突出显示了警报说明和自动调查部分。](images/alert-air-and-alert-description.png)
+:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="突出显示警报说明和自动调查部分的详细信息窗格" lightbox="images/alert-air-and-alert-description.png":::
 
 当警报打开时，详细信息窗格中提供的其他信息包括 MITRE 技术、源和其他上下文详细信息。
 
@@ -75,11 +75,11 @@ Microsoft Defender for Endpoint 中的警报页面通过组合与所选警报相
 
 - **对于设备**，详细信息窗格将显示有关设备本身的信息，如域、操作系统和 IP。 Active alerts and the logged on users on that device are also available. 可以通过隔离设备、限制应用执行或运行防病毒扫描来立即采取措施。 或者，你可以收集调查包、启动自动调查，或从设备的角度转到设备页面进行调查。
 
-   ![选择设备时详细信息窗格的代码段。](images/device-page-details.png)
+   :::image type="content" source="images/device-page-details.png" alt-text="选择设备时的详细信息窗格" lightbox="images/device-page-details.png":::
 
 - **对于用户**，详细信息窗格将显示详细的用户信息，如用户的 SAM 名称和 SID，以及此用户执行的登录类型以及任何与该用户相关的警报和事件。 您可以选择" *打开用户页面* "以从该用户的角度继续调查。
 
-   ![选择用户时详细信息窗格的代码段。](images/user-page-details.png)
+   :::image type="content" source="images/user-page-details.png" alt-text="选择用户时的详细信息窗格" lightbox="images/user-page-details.png":::
 
 ## <a name="related-topics"></a>相关主题
 

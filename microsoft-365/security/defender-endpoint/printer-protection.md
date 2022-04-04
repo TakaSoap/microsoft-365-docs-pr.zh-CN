@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 496d9bf729eaaff6cf12e9734ae80eedacf98a63
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9a700cd57b7843625f40289b43acd0e7a7eda45a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806116"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466666"
 ---
 # <a name="device-control-printer-protection"></a>设备控制打印机保护
 
@@ -30,7 +30,7 @@ ms.locfileid: "62806116"
 
 Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过非公司打印机或未批准的 USB 打印机进行打印。
 
-## <a name="licensing"></a>许可
+## <a name="licensing"></a>授权
 
 在开始使用打印机保护之前，应[确认Microsoft 365订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)。 若要访问和使用打印机保护，您必须具有以下各项：
 
@@ -49,11 +49,11 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 - 全局安全管理员
 - 安全管理员
-- 安全读取者
+- 安全信息读取者
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
-确保已Windows 10或Windows 11部署打印机保护以满足这些要求的设备。
+请确保已Windows 10或Windows 11部署打印机保护以满足这些要求的设备。
 
 1. 已安装以下 Windows 更新。
     - For Windows 1809： install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
@@ -94,7 +94,7 @@ Microsoft Defender for Endpoint 设备控制打印机保护会阻止用户通过
 
 CSP 支持字符串，包含 `<enabled/>`：
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="自定义编辑行。":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="&quot;自定义&quot;页" lightbox="../../media/customeditrow.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-intune"></a>方案 2：允许使用 Intune 的特定批准的 USB 打印机
 
@@ -108,7 +108,7 @@ CSP 支持字符串，包含 `<enabled/>`：
 
 通过"ApprovedUsbPrintDevices"属性批准的 USB 打印机的云解决方案提供商支持字符串，示例 `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`：
 
-:::image type="content" source="../../media/editrow.png" alt-text="编辑行。":::
+:::image type="content" source="../../media/editrow.png" alt-text="&quot;编辑行&quot;窗格" lightbox="../../media/editrow.png":::
 
 ## <a name="deploy-policy-via-group-policy"></a>通过组策略部署策略
 
@@ -124,7 +124,7 @@ CSP 支持字符串，包含 `<enabled/>`：
 
   用户配置 \> 管理模板 \> 控制面板 \> 打印机：启用设备控件打印限制
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="启用设备打印限制。":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="&quot;启用设备控制打印限制&quot;窗格" lightbox="../../media/enable-device-ctrl-printing-restrictions.png":::
 
 ### <a name="scenario-2-allow-specific-approved-usb-printers-using-group-policy"></a>方案 2：允许使用组策略的特定批准的 USB 打印机
 
@@ -136,7 +136,7 @@ CSP 支持字符串，包含 `<enabled/>`：
 
   用户配置 \> 管理模板 \> 控制面板 \> 打印机：已批准 USB 连接的打印设备列表
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="批准的 usb 连接打印设备列表。":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="批准的 USB 连接打印设备列表" lightbox="../../media/list-of-approved-connected-print-devices.png":::
 
 ## <a name="view-device-control-printer-protection-data-in-microsoft-defender-for-endpoint-portal"></a>在 Microsoft Defender 终结点门户中查看设备控制打印机保护数据
 
@@ -154,7 +154,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高级搜寻。":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="高级搜寻" lightbox="../../media/device-control-advanced-hunting.png":::
 
  可以使用 PnP 事件查找组织中使用的 USB 打印机：
 
@@ -175,4 +175,4 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高级搜寻":::
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="高级搜寻页面" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::

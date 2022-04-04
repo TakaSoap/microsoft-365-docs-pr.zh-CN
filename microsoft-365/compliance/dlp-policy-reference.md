@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP 策略组件和配置参考
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 4888569318fd24d25368dc1c923a1efced9f4126
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 9b9658db71ea9945cedb746ec688eff5018a4ba4
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675429"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520607"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>数据丢失防护策略参考
 
@@ -104,12 +104,12 @@ DLP 策略可以跨多个位置查找和保护包含敏感信息的项目。
 |位置  |包含/排除范围  |数据状态  |其他先决条件 |
 |---------|---------|---------|---------|
 |Exchange电子邮件联机 |distribution group － 通讯组 | 数据运动| 否 |
-|SharePoint联机网站   |sites       | data-at-rest </br> 数据使用 | 否|
+|SharePoint联机网站   |网站       | data-at-rest </br> 数据使用 | 否|
 |OneDrive for Business 帐户| 帐户或通讯组 |data-at-rest </br> 数据使用|否|
 |Teams 聊天和通道消息     | 帐户或通讯组 |数据运动 </br> 数据使用 |  否       |
 |Microsoft Defender for Cloud Apps   | 云应用实例       |data-at-rest         | - [对非 Microsoft 云应用使用数据丢失防护策略](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|设备  |用户或组         |data-at-rest </br>  数据使用 </br>  数据运动         |- [了解Microsoft 365终结点数据丢失防护](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [终结点数据丢失防护入门](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [配置信息保护的设备代理和 Internet 连接设置](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|本地存储库 (文件共享和SharePoint)     |存储库         | data-at-rest         | - [了解Microsoft 365数据丢失防护本地扫描程序](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [数据丢失防护本地扫描程序入门](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|设备  |用户或组         |data-at-rest </br>  数据使用 </br>  数据运动         |- [了解Microsoft 365终结点数据丢失防护](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [开始终结点数据丢失防护](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [为用户配置设备代理和 internet 信息保护](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|本地存储库 (文件共享和SharePoint)     |存储库         | data-at-rest         | - [了解Microsoft 365数据丢失防护本地扫描程序](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [开始使用数据丢失防护本地扫描程序](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| workspaces | 数据使用 | 否|
 
 如果选择将特定通讯组包含在 Exchange 中，则 DLP 策略的影响范围将仅限于该组的成员。 同样，排除通讯组将把该通讯组的所有成员从策略评估中排除。 可选择将策略的影响范围限定为通讯组列表、动态通讯组和安全组的成员。 一条 DLP 策略可包含不超过 50 个这种包含和排除。
@@ -297,7 +297,7 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
 - 内容包含
 - 请参阅 [可以监视并采取措施的终结点活动](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Microsoft Defender 云应用支持的条件
+##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>支持Microsoft Defender for Cloud Apps条件
 
 - 内容包含
 - 内容从网站Microsoft 365
@@ -332,7 +332,7 @@ SIT 具有预定义的 [**可信度，**](https://www.microsoft.com/videoplayer/
 
 第一个组包含标识和个人的 SIT，第二个组包含识别医疗诊断的 SIT。
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>例外
 
 在规则中，例外定义用于从策略中排除项目的条件。 逻辑上，在包含条件和上下文之后评估的独占条件。 它们告知规则&#8212;当你找到如下所示且正在被用作匹配项的项时，它们告知规则规则，并且策略中的其余操作应该对它执行，***除非... &#8212;*** 
 
@@ -405,7 +405,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 
 - 所有应用
 - 通过定义的受限应用列表
-- Ay a restricted app group (preview) that you define.
+- 一个受限的应用 (定义的) 预览组。
 
 ##### <a name="service-domain-and-browser-activities"></a>服务域和浏览器活动
 
@@ -423,11 +423,11 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 - **远程桌面服务**
 
 
-##### <a name="restricted-app-activities"></a>受限制的应用活动  
+##### <a name="restricted-app-activities"></a>受限应用活动  
 
 以前称为"不允许的应用程序"，在要限制的终结点 DLP 设置中定义应用程序列表。 当用户尝试使用列表上的应用访问 DLP 保护的文件时，您可以`Audit only``Block with override`、 或 `Block` 活动。 如果应用是 **受限应用** 组的成员，则重写在受限应用活动中定义的 DLP 操作。 然后应用在受限应用组中定义的操作。
 
-##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>受限应用组中应用的文件活动 (预览) 
+##### <a name="file-activities-for-apps-in-restricted-app-groups-preview"></a>受限应用组中应用的文件活动（预览）
 
 在终结点 DLP 设置中定义受限制的应用组，然后向策略添加受限制的应用组。 向策略添加受限制的应用组时，必须选择以下选项之一：
 
@@ -439,7 +439,7 @@ location 支持的例外条件与所有包含条件都相同，唯一的区别�
 
 有关详细信息 [，请参阅受限制的应用](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 和应用组。 
 
-#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps 操作
+#### <a name="microsoft-defender-for-cloud-apps-actions"></a>Microsoft Defender for Cloud Apps操作
 
 - 限制对内容的访问或加密Microsoft 365位置
 - 限制第三方应用
@@ -480,7 +480,7 @@ AND
 - 限制对内容的访问或加密Microsoft 365位置
 - 审核或限制设备上Windows活动
 
-如果你选择"设备和适用于云应用的 Microsoft Defender"，则这些操作将可用：
+如果选择"设备和Microsoft Defender for Cloud Apps，则这些操作将可用：
 
 - 限制对内容的访问或加密Microsoft 365位置
 - 审核或限制设备上Windows活动
@@ -531,9 +531,9 @@ for where they are used/expected behavior-->
 
 并自定义电子邮件文本、主题和策略提示文本。
 
-![适用于云应用的 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及 Defender 的用户通知和策略提示配置选项](../media/dlp-user-notification-non-devices.png)
+![用户通知和策略提示配置选项，可用于 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及 Defender for Cloud 应用](../media/dlp-user-notification-non-devices.png)
 
-如果你仅选择了"设备"，你将获得可用于 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及适用于云应用的 Defender 的所有相同选项，以及用于自定义 Windows 10 设备上显示的通知标题和内容的选项。
+如果选择了"仅设备"，你将获得可用于 Exchange、SharePoint、OneDrive、Teams 聊天和频道以及 Defender for Cloud 应用的所有相同选项，以及用于自定义 Windows 10 设备上显示的通知标题和内容的选项。.
 
 ![适用于设备的用户通知和策略提示配置选项](../media/dlp-user-notification-devices.png)  
 
@@ -601,7 +601,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 > The default behavior of a DLP policy, when there is no alert configured, is not to alert or trigger. This applies only to default information types. For custom information types, the system will alert even if there is no action defined in the policy.
 -->
 
-### <a name="user-overrides"></a>用户替代
+### <a name="user-overrides"></a>用户重写
 
 用户覆盖的目的是为用户提供一种以理由绕过 DLP 策略阻止 Exchange、SharePoint、OneDrive 或 Teams 中敏感项目的操作的方法，以便他们可以继续工作。 只有在启用了策略提示Office 365通知服务中的用户时，用户替代才启用，因此用户覆盖与通知和策略提示一起提供。 
 

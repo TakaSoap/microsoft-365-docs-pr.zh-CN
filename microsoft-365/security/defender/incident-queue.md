@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 40178e42737bdfea756db55658aaeb988ad4f19f
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 2d5477122a29c672a947a2022f49da3abeb7003b
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498728"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568535"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定事件优先级Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "64498728"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在产品的整个套件中具有的端到端可见性Microsoft 365 Defender仅可以标识为恶意的活动触发唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
+Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365 Defender在 Microsoft 365 Defender 整个产品套件中具有的端到端可见性时，还会触发有关仅可标识为恶意活动的唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
 
 **事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，以确定优先级并创建明智的网络安全响应决策，这一过程称为事件会审。
 
@@ -72,7 +72,7 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 
 此表列出了可用的筛选器名称。
 
-| 筛选器名称 | Description |
+| 筛选器名称 | 说明 |
 |:-------|:-----|
 | 状态 | 选择 **"新建**" **、"正在进行"** 或"已 **解决"**。 |
 | Severity | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 选择 **"高**、**中****、低**"或"**信息"**。 |
@@ -105,7 +105,7 @@ Microsoft 365 Defender应用相关分析，将不同产品的相关警报和自�
 - 未分配事件
 - 高严重性、未分配事件
 - 分配给我的事件
-- 分配给我以及 Microsoft Defender for Endpoint 的事件
+- 分配给我的事件和分配给Microsoft Defender for Endpoint
 - 具有特定标记的事件
 - 具有特定威胁类别的事件
 - 具有特定关联威胁的事件

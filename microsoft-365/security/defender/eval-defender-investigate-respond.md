@@ -1,5 +1,5 @@
 ---
-title: 步骤 6. 在试点环境中使用Microsoft 365 Defender和响应
+title: 在试点环境中使用Microsoft 365 Defender和响应
 description: 在试验实验室或Microsoft 365 Defender环境中设置攻击模拟，以试用旨在教用户保护设备、标识、数据和应用程序的安全解决方案。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e7dafa34daed763bc0da11e5cd11f80b791db508
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a32b6dc2fafb80905c4cba44b79fc24b7e6a3187
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318713"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568609"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>步骤 6. 在试点环境中使用Microsoft 365 Defender和响应
 
@@ -37,7 +37,7 @@ ms.locfileid: "63318713"
 
 使用以下步骤。
 
-![在评估环境中执行模拟事件Microsoft 365 Defender的步骤。](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="在测试评估环境中执行Microsoft 365 Defender响应的步骤" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
 下表介绍了图中的步骤。
 

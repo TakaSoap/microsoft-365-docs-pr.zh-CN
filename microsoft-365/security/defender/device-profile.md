@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 9838d7f3ffed46c62891822c6e3761e36d49baf5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eec3881d2fdb53bc03e4e730fecaf6f1c78c98c7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60181207"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755852"
 ---
 # <a name="device-profile-page"></a>设备配置文件页
 
@@ -36,7 +36,7 @@ ms.locfileid: "60181207"
 
 配置文件页分为几个广泛的部分。
 
-![设备配置文件页面的图像， (1) 选项卡区域 (2) 边栏和 (3) 操作突出显示为红色。](../../media/mtp-device-profile/hybrid-device-overall.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="设备门户中的&quot;设备Microsoft 365 Defender页" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
 
 边栏 (1) 列出了有关设备的基本详细信息。
 
@@ -48,7 +48,7 @@ ms.locfileid: "60181207"
 
 设备配置文件页的主要内容区域旁边是边栏。
 
-![设备配置文件的边栏选项卡的图像。](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="设备门户中设备配置文件的边栏Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
 
 边栏列出了设备的全名和曝光级别。 它还在小子节中提供了一些可以打开或关闭的重要基本信息，例如：
 
@@ -60,13 +60,13 @@ ms.locfileid: "60181207"
 
 * **设备详细信息** - 域、操作系统、首次看到设备的时间戳、IP 地址、资源。 在 Microsoft Defender for Endpoint 中注册的设备还显示运行状况状态。 在 Microsoft Defender 中注册用于标识的设备将显示 SAM 名称和首次创建设备的时间戳。
 * **网络** 活动 - 第一次和最后一次在网络中看到设备的时间戳。
-* **目录数据** (在 Microsoft *Defender for Identity)* 注册的设备 - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) 标志 [、SNS](/windows/win32/ad/service-principal-names)和组成员身份。
+* **目录数据** (在 *Microsoft Defender for Identity)* 注册的设备 - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) 标志、 [SNS](/windows/win32/ad/service-principal-names) 和组成员身份。
 
 ## <a name="response-actions"></a>响应操作
 
 响应操作提供了一种快速防御和分析威胁的方法。
 
-![设备配置文件的操作栏的图像。](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="设备门户中设备配置文件Microsoft 365 Defender栏" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
 > * [仅在设备](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) 在 Microsoft Defender for Endpoint 中注册时，响应操作才可用。
@@ -75,10 +75,10 @@ ms.locfileid: "60181207"
 设备配置文件页上可用的操作包括：
 
 * **管理标记** - 更新已应用于此设备的自定义标记。
-* **隔离设备** - 将设备与组织的网络隔离，同时将其连接到 Microsoft Defender for Endpoint。 你可以选择允许Outlook、Teams和Skype for Business设备时运行，以用于通信目的。
+* **隔离设备** - 将设备与组织的网络隔离，同时将其连接到 Microsoft Defender for Endpoint。 你可以选择允许Outlook、Teams和Skype for Business隔离时运行，以用于通信目的。
 * **操作中心** - 查看已提交操作的状态。 仅在已选择其他操作时可用。
 * **限制应用执行** - 阻止未由 Microsoft 签名的应用程序运行。
-* **运行防病毒扫描**- 更新Windows Defender 防病毒并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
+* **运行防病毒扫描** - 更新Windows Defender 防病毒并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
 * **收集调查包** - 收集有关设备的信息。 调查完成后，可以下载它。
 * **启动实时响应会话** - 在设备上加载远程 Shell 进行 [深入安全调查](/microsoft-365/security/defender-endpoint/live-response)。
 * **启动自动调查** - [自动调查和修正威胁](../office-365-security/office-365-air.md)。 尽管你可以手动触发自动调查以从此页运行，但某些警报策略[](../../compliance/alert-policies.md#default-alert-policies)会自行触发自动调查。
@@ -92,9 +92,9 @@ ms.locfileid: "60181207"
 
 ### <a name="overview-tab"></a>"概述"选项卡
 
-默认选项卡为 **"概述"。** 它可快速查看有关设备最重要的安全事实。
+默认选项卡为" **概述"**。 它可快速查看有关设备最重要的安全事实。
 
-![设备配置文件的"概述"选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="设备门户中设备配置文件的Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
 
 你可以在此处快速查看设备的活动警报以及任何当前登录的用户。
 
@@ -104,7 +104,7 @@ ms.locfileid: "60181207"
 
 警报 **选项卡** 包含从 Microsoft Defender for Identity 和 Microsoft Defender for Endpoint 在设备上引发警报的列表。
 
-![设备配置文件的警报选项卡图像。](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="设备门户中设备配置文件的警报Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
 您可以自定义显示的项目数，以及每个项目的显示列数。 默认行为是每页列出 30 个项目。
 
@@ -122,9 +122,9 @@ ms.locfileid: "60181207"
 
 图表下方是所选日期范围的事件列表。
 
-![设备配置文件的时间线选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="设备门户中设备配置文件的&quot;Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
 
-可以自定义显示的项目数和列表上的列数。 默认列列出事件时间、活动用户、操作类型、 (处理) 实体，以及事件的其他信息。
+可以自定义显示的项目数和列表上的列数。 默认列列出事件时间、活动用户、操作类型、 (处理) 的实体，以及有关事件的其他信息。
 
 从此列表选择一个项目将打开一个显示"事件实体"图的飞出图，其中显示事件所涉及的父进程和子进程。
 
@@ -136,7 +136,7 @@ ms.locfileid: "60181207"
 
 " **安全建议** "选项卡列出了可采取的保护设备的操作。 选择此列表上的项目将打开一个飞出区，你可以在此获取有关如何应用建议的说明。
 
-![设备配置文件的安全建议选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="Microsoft 365 Defender门户中设备配置文件的安全Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
 
 与前面的选项卡一样，可以自定义每页显示的项目数以及哪些列可见。
 
@@ -146,7 +146,7 @@ ms.locfileid: "60181207"
 
 " **软件清单** "选项卡列出了设备上安装的软件。
 
-![设备配置文件的软件清单选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="设备门户中设备配置文件的&quot;软件Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
 
 默认视图显示软件供应商、已安装的版本号、已知软件漏洞的数量、威胁见解、产品代码和标签。 可以自定义显示的项目数和显示的列数。
 
@@ -158,9 +158,9 @@ ms.locfileid: "60181207"
 
 " **发现的漏洞"** 选项卡列出了可能会影响设备 (C) 的常见漏洞和漏洞。
 
-![设备配置文件的已发现漏洞选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="设备门户中设备配置文件的&quot;发现的漏洞&quot;Microsoft 365 Defender选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
 
-默认视图列出了 CVE 的严重性、常见漏洞分数 (CVS) 、发布 CVE 时与 CVE 相关的软件、上次更新 CVE 的时间，以及与 CVE 关联的威胁。
+默认视图列出了 CVE 的严重性、常见漏洞分数 (CVS) 、与 CVE 相关的软件、发布 CVE 的时间、上次更新 CVE 的时间，以及与 CVE 关联的威胁。
 
 与前面的选项卡一样，可以自定义显示的项目数和可见的列。
 
@@ -168,9 +168,9 @@ ms.locfileid: "60181207"
 
 ### <a name="missing-kbs"></a>缺少 KB
 
-缺少 **的 KB** 选项卡列出了尚未应用于设备的任何 Microsoft 更新。 相关"KBS"是 [描述](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) 这些更新的知识库文章;例如 [，KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762)。
+缺少 **的 KB** 选项卡列出了尚未应用于设备的任何 Microsoft 更新。 相关"KBS"是 [描述](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) 这些更新的知识库文章;例如， [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762)。
 
-![设备配置文件缺少 kbs 选项卡的图像。](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="设备门户中设备配置文件的&quot;缺少MICROSOFT 365 DEFENDER选项卡" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
 默认视图列出了包含更新、操作系统版本、受影响的产品、已解决的 CVEs、KB 编号和标记的公告。
 

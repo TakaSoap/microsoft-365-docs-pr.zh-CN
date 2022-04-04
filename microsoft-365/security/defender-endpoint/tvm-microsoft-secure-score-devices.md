@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97ce614a77b85ae6e22e771a413ae5bce51abce7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1d63e240c0698273807421a4121061630b8f3951
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465765"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499520"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>设备的 Microsoft 安全功能分数
 
@@ -48,19 +48,7 @@ ms.locfileid: "64465765"
 
 选择类别以转到" [**安全建议"页**](tvm-security-recommendation.md) 并查看相关建议。
 
-## <a name="turn-on-the-microsoft-secure-score-connector"></a>打开 Microsoft 安全分数连接器
-
-转发 Microsoft Defender for Endpoint 信号，使 Microsoft 安全分数能够查看设备安全状态。 转发数据的存储和处理位置与 Microsoft 安全分数数据位于同一位置。
-
-更改可能需要几个小时才能反映在仪表板中。
-
-1. 在导航窗格中，**转到"设置** \> **终结点""** \> **常规** \> **高级功能"**
-
-2. 向下滚动到 **Microsoft 安全分数** ，将设置切换为 **"打开"**。
-
-3. 选择“**保存首选项**”。
-
-## <a name="how-it-works"></a>如何工作
+## <a name="how-it-works"></a>运作方式
 
 > [!NOTE]
 > Microsoft 设备安全分数当前支持通过组策略设置的配置。 由于当前部分 Intune 支持，可能通过 Intune 设置的配置可能会显示为错误配置。 如果你的组织使用 Intune 进行安全配置管理，请与 IT 管理员联系以验证实际配置状态。

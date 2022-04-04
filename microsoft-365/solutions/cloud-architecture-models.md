@@ -1,6 +1,6 @@
 ---
 title: Microsoft 云体系结构模型 - 企业资源规划
-description: 通过这些体系结构图和图示了解 Microsoft 云服务，Office 365 Azure 和 Microsoft 云解决方案。
+description: 通过这些体系结构图和图示Office 365 Azure 和 Microsoft 云服务。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,18 +13,28 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cdff93ed308767256df1adf8dcf9ce2f3eb095a4
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900754"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755773"
 ---
-# <a name="microsoft-cloud-for-it-architects-illustrations"></a>适用于 IT 架构师的 Microsoft 云插图
+# <a name="microsoft-cloud-for-it-architects-illustrations"></a>适用于 IT 架构师的 Microsoft 云图示
 
 这些云体系结构海报提供有关 Microsoft 云服务的信息，包括 Microsoft 365、Azure Active Directory (Azure AD) 、Microsoft Intune、Microsoft Dynamics 365 以及混合本地和云解决方案。 
 
 IT 决策者和架构师可以使用这些资源来确定其工作负载的理想解决方案，并做出有关核心基础结构组件（如网络、标识和安全性）的决策。
+
+<a name="zero trust"></a>
+### <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 零信任部署计划
+
+
+此图提供了一个部署计划，用于构建零信任Microsoft 365。 零信任是一种新的安全模型，它假定泄露并验证每个请求，就好像它源自不受控制的网络一样。 无论请求源自何处或它访问哪个资源，零信任模型都指导我们"从不信任，始终验证"。
+
+| 项目 | 说明 |
+|:-----|:-----|
+|[![插图：Microsoft 365零信任部署计划。](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> 2022 年 3 月更新 | 结合本文使用此图示：Microsoft 365[零信任部署计划](../security/Microsoft-365-zero-trust.md) <br/><br/>**相关解决方案指南** <br/> <ul><li>[为用户部署标识Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[推荐的标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[使用 Intune for 管理设备](manage-devices-with-intune-overview.md)</li><li>[评估和试点 Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[部署 Microsoft 信息保护解决方案](../compliance/information-protection-solution.md)</li><li>[为数据隐私法规部署信息保护与Microsoft 365](information-protection-deploy.md)</li></ul>
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>常见攻击和保护组织的 Microsoft 功能
@@ -42,7 +52,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
   
 | 项目 | 说明 |
 |:-----|:-----|
-|[![Microsoft 云标识模型的缩略图。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> 2021 年 11 月更新 | 此模型包含：  <ul> <li> Microsoft 云标识简介 </li><li> Azure AD IDaaS 功能 </li><li>零信任标识和设备访问策略</li><li> 将本地 Active Directory 域服务 (AD DS) 帐户与 Azure AD </li><li> 将目录组件放入 Azure IaaS 中 </li><li> Azure IaaS 中工作负载的 AD DS 选项 </li></ul><br/>  <br/>|
+|[![Microsoft 云标识模型的缩略图。](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf ) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf )  <br/> 2021 年 11 月更新 | 此模型包含：  <ul> <li> Microsoft 云标识简介 </li><li> Azure AD IDaaS 功能 </li><li>零信任标识和设备访问策略</li><li> 将本地 Active Directory 域服务与 (AD DS) 集成Azure AD </li><li> 将目录组件放入 Azure IaaS 中 </li><li> Azure IaaS 中工作负载的 AD DS 选项 </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-it-architects"></a>适用于 IT 架构师的 Microsoft 云安全性

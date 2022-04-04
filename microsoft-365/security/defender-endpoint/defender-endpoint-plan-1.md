@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d7e7f7d7c22da007187db5df8bd773dca798597c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62245047"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466292"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>适用于终结点计划 1 的 Microsoft Defender 概述
 
@@ -33,11 +33,11 @@ ms.locfileid: "62245047"
 Microsoft Defender for Endpoint 是一个企业终结点安全平台，旨在帮助类似你的组织防止、检测、调查和响应高级威胁。 我们很高兴宣布 Defender for Endpoint 现已在两个计划中可用： 
 
 - **Defender for Endpoint Plan 1**，如本文所述;和 
-- **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**， generally available， and formerly known as [Defender for Endpoint](microsoft-defender-endpoint.md).
+- **[适用于终结点计划的 Defender 计划 2](microsoft-defender-endpoint.md)**（通常可用，以前称为 [Defender for Endpoint](microsoft-defender-endpoint.md)）。
 
 下图中的绿色框描述了 Defender for Endpoint Plan 1 中包含的内容：
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 图表":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="适用于终结点计划的 Defender 计划 1 所了解内容" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 使用本指南可：
 
@@ -55,9 +55,9 @@ Microsoft Defender for Endpoint 是一个企业终结点安全平台，旨在帮
 Defender for Endpoint Plan 1 包括以下功能：
 
 - **[下一代保护](#next-generation-protection)** ，包括行业领先的可靠反恶意软件和防病毒保护
-- **[检测到威胁](#manual-response-actions)** 时，安全团队可以对设备或文件执行手动响应操作（如将文件发送到隔离区）
+- **[检测到威胁](#manual-response-actions)** 时，安全团队可以对设备或文件执行手动响应操作，如将文件发送到隔离区
 - **[攻击面减少功能](#attack-surface-reduction)** ，可强化设备、防止零时差攻击，并提供对终结点访问和行为精细的控制
-- **[集中配置和管理与](#centralized-management)** Microsoft 365 Defender 门户，并集成Microsoft Endpoint Manager
+- **[集中配置和管理与](#centralized-management)** Microsoft 365 Defender 门户集成Microsoft Endpoint Manager
 - **[对各种平台的保护](#cross-platform-support)**，包括 Windows、macOS、iOS 和 Android 设备
 
 以下各节提供有关这些功能的更多详细信息。 
@@ -78,8 +78,8 @@ Defender for Endpoint Plan 1 包括以下功能：
 
 | 文件/设备 | 操作 | 说明 |
 |:---|:---|:---|
-| 设备 | 运行防病毒扫描 | 启动防病毒扫描。 如果在设备上检测到任何威胁，则防病毒扫描期间通常会解决这些威胁。 |
-| 设备 | 隔离设备 | 断开设备与组织的网络的连接，同时保留与 Defender for Endpoint 的连接。 此操作使你能够监视设备并根据需要执行进一步操作。 |
+| Device | 运行防病毒扫描 | 启动防病毒扫描。 如果在设备上检测到任何威胁，则防病毒扫描期间通常会解决这些威胁。 |
+| Device | 隔离设备 | 断开设备与组织的网络的连接，同时保留与 Defender for Endpoint 的连接。 此操作使你能够监视设备并根据需要执行进一步操作。 |
 | 文件 | 停止和隔离 |停止进程运行并隔离关联的文件。 |
 | 文件 | 添加用于阻止或允许文件的指示器 | 阻止指示器阻止在设备上读取、写入或执行可移植可执行文件。 <p>允许指示器可防止阻止或修正文件。 |
 
@@ -100,7 +100,7 @@ Defender for Endpoint Plan 1 包括以下功能：
 - [网络防火墙](#network-firewall)
 - [应用程序控制](#application-control)
 
-若要了解有关 Defender for Endpoint 中攻击面减少功能有关详细信息，请参阅 [攻击面减少概述](overview-attack-surface-reduction.md)。
+若要详细了解 Defender for Endpoint 中的攻击面减少功能，请参阅 [攻击面减少概述](overview-attack-surface-reduction.md)。
 
 ### <a name="attack-surface-reduction-rules"></a>攻击面减少规则
 
@@ -118,9 +118,9 @@ Defender for Endpoint Plan 1 包括以下功能：
 
 借助受控文件夹访问权限，你可以获取勒索软件缓解。 受控文件夹访问权限仅允许受信任的应用访问终结点上的受保护文件夹。 根据应用的普遍程度和信誉，将应用添加到受信任的应用列表中。 安全运营团队还可以在受信任的应用列表中添加或删除应用。
 
-若要了解更多信息，请参阅使用受控 [文件夹访问权限保护重要文件夹](controlled-folders.md)。
+若要了解更多信息，请参阅 [使用受控文件夹访问权限保护重要文件夹](controlled-folders.md)。
 
-### <a name="device-control"></a>设备控件
+### <a name="device-control"></a>设备控制
 
 有时，对组织设备的威胁以可移动驱动器（如 USB 驱动器）上的文件的形式出现。 Defender for Endpoint 包括可帮助防止未经授权的外围设备威胁威胁设备的功能。 你可以将 Defender for Endpoint 配置为阻止或允许可移动设备上可移动设备和文件。 
 
@@ -149,13 +149,13 @@ Defender for Endpoint Plan 1 包括以下功能：
 - 保护敏感数据和知识产权
 - 扩展安全投资
 
-若要了解更多信息，请参阅[Windows Defender高级安全防火墙。](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+若要了解更多信息，请参阅[Windows Defender高级安全防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)。
 
 ### <a name="application-control"></a>应用程序控制
 
 应用程序控件通过仅在系统核心Windows内核中运行受信任的应用程序和代码来保护 (终结点) 。 安全团队可以定义考虑应用程序属性的应用程序控制规则，例如其代码签名证书、信誉、启动过程等。 应用程序控件在 Windows 10或更高版本中可用。
 
-若要了解更多信息，请参阅[应用程序控件Windows。](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+若要了解更多信息，请参阅[应用程序控件Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)。
 
 ## <a name="centralized-management"></a>集中管理
 
@@ -165,16 +165,16 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 
 ### <a name="role-based-access-control"></a>基于角色的访问控制
 
-使用基于角色的访问控制 (RBAC) ，安全管理员可以创建角色和组，以授予对 Microsoft 365 Defender 门户 [https://security.microsoft.com](https://security.microsoft.com) () 。 借助 RBAC，你可以精细控制谁可以访问 Defender for Cloud，以及他们可以看到和执行哪些操作。 
+通过使用基于角色的访问控制 (RBAC) ，安全管理员可以创建角色和组，以授予对 Microsoft 365 Defender 门户[https://security.microsoft.com](https://security.microsoft.com) () 。 借助 RBAC，你可以精细控制谁可以访问 Defender for Cloud，以及他们可以看到和执行哪些操作。 
 
 若要了解更多信息，请参阅 [使用基于角色的访问控制管理门户访问](rbac.md)。
 
-### <a name="reporting"></a>报表
+### <a name="reporting"></a>Reporting
 
-通过Microsoft 365 Defender门户 () 可轻松访问有关检测到的威胁和操作的信息 [https://security.microsoft.com](https://security.microsoft.com) ，以应对这些威胁。 
+通过Microsoft 365 Defender门户 ([https://security.microsoft.com](https://security.microsoft.com)) 可轻松访问有关检测到的威胁和操作的信息，以应对这些威胁。 
 
 - **主页** 包含卡片，可一目了然地显示哪些用户或设备处于风险中、检测到的威胁数量以及创建哪些警报/事件。
-- **"事件&警报**"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
+- **"事件&** 警报"部分列出了因触发的警报而创建的任何事件。 当跨设备检测到威胁时，将生成警报和事件。
 - 操作 **中心** 列出了已采取的修正操作。 例如，如果文件被发送到隔离区，或 URL 被阻止，每个操作都列在"历史记录"选项卡上的"操作 **中心** "中。
 - " **报告** "部分包括显示检测到的威胁及其状态的报告。 
 
@@ -184,7 +184,7 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 
 使用 Defender for Endpoint API，可以自动执行工作流，并与组织的自定义解决方案集成。 
 
-若要了解更多信息，请参阅[适用于终结点 API 的 Defender。](management-apis.md) 
+若要了解更多信息，请参阅 [适用于终结点 API 的 Defender](management-apis.md)。 
 
 ## <a name="cross-platform-support"></a>跨平台支持
 
@@ -193,13 +193,13 @@ Defender for Endpoint Plan 1 包含 Microsoft 365 Defender 门户，使安全团
 - Windows 7 (ESU) 
 - Windows 8.1
 - Windows 10版本 1709 或更高版本
-- macOS：11.5 (Big Sur) 、10.15.7 (加泰罗尼亚语) 或 10.14.6 (Mojave) 
+- macOS：11.5 (Big Sur) 、10.15.7 (Catalina) 或 10.14.6 (Mojave) 
 - iOS
 - Android OS
 
 ## <a name="next-steps"></a>后续步骤
 
 - [比较 Microsoft Defender 终结点计划 1 与计划 2](defender-endpoint-plan-1-2.md)
-- [为终结点计划 1 设置和配置 Defender](mde-p1-setup-configuration.md)
+- [设置和配置 Defender for Endpoint 计划 1](mde-p1-setup-configuration.md)
 - [适用于终结点计划 1 的 Defender 入门](mde-plan1-getting-started.md)
 - [管理适用于终结点计划的 Defender 1](mde-p1-maintenance-operations.md)

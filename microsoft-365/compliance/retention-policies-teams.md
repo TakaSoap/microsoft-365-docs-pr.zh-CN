@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: f2b3b5a61eabbffc50da34b14baa20e025b8da0f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63714865"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568513"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -100,7 +100,7 @@ Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道�
 > [!NOTE]
 > 利用电子数据展示工具可搜索存储在邮箱中的邮件（包括隐藏文件夹）。 在消息从 SubstrateHolds 文件夹中永久删除之前，仍然可以使用电子数据展示工具搜索到它们。
 
-当消息从 SubstrateHolds 文件夹中永久删除时，删除操作会传达给后端 Azure 聊天服务，然后该服务将同样的操作转发给 Teams 客户端应用程序。 此通信或缓存的延迟可以解释为什么在短时间内，分配了策略的用户可能仍然在他们的 Teams 应用中看到这些消息，但这些消息的数据在电子数据展示搜索中却没有返回。
+当保留期到期并将消息移动到 SubstrateHolds 文件夹时，删除操作将传达给后端 Azure 聊天服务，然后将相同的操作中继到 Teams 客户端应用。 此通信或缓存中的延迟可以解释用户在一段时间内继续在其 Teams 应用中看到这些消息的原因。
 
 在此方案中，Azure 聊天服务由于保留策略而收到删除命令，会为会话中的所有用户删除 Teams 客户端应用中的相应消息。 其中一些用户可能来自另一个组织，具有保留期较长的保留策略，或者没有为其分配保留策略。 对于这些用户，邮件的副本仍存储在其邮箱中，并仍可以搜索电子数据展示，直到其他保留策略永久删除这些邮件。
 

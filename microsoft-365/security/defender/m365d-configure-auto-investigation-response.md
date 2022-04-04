@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 4ec06a96e345345560a2714fa7e23d91a6f5832f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e38dc36ca85425c033d2b8fd4828043b4043f1a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314205"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499410"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中配置自动调查和响应功能
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender强大的自动[调查和响应功能](m365d-autoir.md)，
 |网络要求|<ul><li>[已启用 Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)</li><li>[已配置的 Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)</li><li>[Microsoft Defender for Identity 集成](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows设备要求|<ul><li>Windows 11</li><li>Windows 10版本 1709 或更高版本 (请参阅 Windows [release information) ](/windows/release-information/)</li><li>配置了以下威胁防护服务：<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender 防病毒](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |保护电子邮件内容和Office文件|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)配置|
-|权限|若要配置自动调查和响应功能<https://portal.azure.com>，必须在 Azure Active Directory () 或 Microsoft 365 管理中心 () 中分配全局管理员或安全管理员<https://admin.microsoft.com>角色。 <p> 若要获取使用自动调查和响应功能（如审阅、批准或拒绝挂起操作）所需的权限，请参阅操作中心任务所需的 [权限](m365d-action-center.md#required-permissions-for-action-center-tasks)。|
+|Permissions|若要配置自动调查和响应功能<https://portal.azure.com>，必须在 Azure Active Directory () 或 Microsoft 365 管理中心 () 中分配全局管理员或安全管理员<https://admin.microsoft.com>角色。 <p> 若要获取使用自动调查和响应功能（如审阅、批准或拒绝挂起操作）所需的权限，请参阅操作中心任务所需的 [权限](m365d-action-center.md#required-permissions-for-action-center-tasks)。|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>查看或更改设备组的自动化级别
@@ -92,7 +92,7 @@ Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>确保Microsoft 365 Defender打开
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="如何确保Microsoft 365 Defender启用。" lightbox="../../media/mtp-enable/mtp-on.png":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="打开导航按钮时Microsoft 365 Defender门户Microsoft 365 Defender导航窗格" lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. 登录到 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>
 

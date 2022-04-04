@@ -324,7 +324,6 @@
 ##### [使用 PowerShell 计划扫描](schedule-antivirus-scans-powershell.md)
 ##### [使用 WMI 计划扫描](schedule-antivirus-scans-wmi.md)
 #### [在 Microsoft Defender 防病毒程序内使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)
-#### [tune 性能Microsoft Defender 防病毒](tune-performance-defender-antivirus.md)
 #### [与其他安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
 #### [查找 Microsoft Defender for Endpoint 的恶意软件检测名称](find-defender-malware-name.md)
 
@@ -364,9 +363,13 @@
 ##### [Windows Server 的排除](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
-#### Microsoft Defender 防病毒软件疑难解答
+#### Microsoft Defender 防病毒的诊断和性能
+##### [设备运行状况和合规性报告](machine-reports.md)
+##### [排查与实时保护相关的性能问题](troubleshoot-performance-issues.md) 
 ##### [解决更新合规性中的 Microsoft Defender 防病毒软件报告问题](troubleshoot-reporting.md)
-##### [解决性能问题](troubleshoot-performance-issues.md)
+##### [tune 性能Microsoft Defender 防病毒](tune-performance-defender-antivirus.md)
+
+#### Microsoft Defender 防病毒软件疑难解答
 ##### [查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus.md)
 ##### [从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -456,7 +459,6 @@
 #### [报告]()
 ##### [Power BI - 如何使用 API - 示例](api-power-bi.md)
 ##### [威胁防护报告](threat-protection-reports.md)
-#### [设备运行状况和合规性报告](machine-reports.md)
 
 ### [高级搜寻]()
 #### [高级搜寻概述](advanced-hunting-overview.md)

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ef0f461bef452336052018a26970bad94400fa71
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6caaddc208e6f73de0f49ff6d419c335848ae439
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168266"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466314"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>获取载入到 Microsoft Defender for Endpoint 的设备
 
@@ -32,7 +32,7 @@ ms.locfileid: "61168266"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)。
 
-每个载入的设备都向传感器添加额外的终结点检测和 (EDR) 响应，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
+每个已载入的设备都向传感器添加额外的终结点检测和 (EDR) ，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
 
 在你可以跟踪和管理设备的载入之前：
 
@@ -41,9 +41,9 @@ ms.locfileid: "61168266"
 
 ## <a name="discover-and-track-unprotected-devices"></a>发现和跟踪未受保护的设备
 
-载入卡通过将已实际载入 Defender for Endpoint 的 Windows 设备数与 Intune 托管的 Windows 设备总数进行比较，提供载入率的简要概述。
+载入卡通过将已实际载入 Defender for Endpoint 的 Windows 设备数与 Intune 管理的 Windows 设备总数进行比较，提供载入率的简要概述。
 
-![设备配置管理 载入卡。](images/secconmgmt_onboarding_card.png)
+:::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="设备配置管理载入卡" lightbox="images/secconmgmt_onboarding_card.png":::
 
 *显示已载入设备与 Intune 托管的设备总数Windows卡片*
 
@@ -56,22 +56,22 @@ Defender for Endpoint 为载入设备提供了Windows[选项](onboard-configure.
 
 从 **载入卡中** ， **选择载入更多设备** 以在 Intune 上创建和分配配置文件。 该链接将你指向 Intune 上的设备合规性页面，该页面提供了载入状态类似的概述。
 
-![Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面。](images/secconmgmt_onboarding_1deviceconfprofile.png)
+:::image type="content" source="images/secconmgmt_onboarding_1deviceconfprofile.png" alt-text="Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面" lightbox="images/secconmgmt_onboarding_1deviceconfprofile.png":::
 
 *Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面*
 
 > [!TIP]
-> 或者，你可以从 **Microsoft Defender ATP** 的所有服务> Intune > Device compliance >导航到 [Microsoft Azure](https://portal.azure.com/)门户中的 Defender for Endpoint 载入合规性页面。
+> 或者，你可以从 **Microsoft Defender ATP** 的所有服务 > Intune > 设备合规性Microsoft Azure中导航到 [Microsoft Azure](https://portal.azure.com/) 门户中的 Defender for Endpoint 载入合规性>页面。
 
 > [!NOTE]
-> 如果你想要查看最新的设备数据，请单击没有 **ATP 传感器的设备列表**。
+> 如果你想要查看最新的设备数据，请单击不带 **ATP 传感器的设备列表**。
 
 从设备合规性页面，专门为部署 Defender for Endpoint 传感器创建配置文件，并将该配置文件分配给你想要载入的设备。 为此，您可以：
 
 - 选择 **"创建设备配置文件"将 ATP 传感器** 配置为从预定义的设备配置文件开始。
 - 从头开始创建设备配置文件。
 
-有关详细信息，请阅读 [有关使用 Intune 设备配置文件](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)将设备载入 Defender for Endpoint 的信息。
+有关详细信息，请阅读 [使用 Intune 设备配置文件将设备载入 Defender for Endpoint](/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile)。
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。
 

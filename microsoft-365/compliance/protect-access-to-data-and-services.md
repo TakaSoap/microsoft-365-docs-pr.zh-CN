@@ -7,7 +7,7 @@ author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 了解如何保护用户和设备访问数据Microsoft 365服务，并防御数据丢失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 121c5b8f1168e9986693fea128aa66626b3e31fe
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+ms.openlocfilehash: 48f483422fda158c02429aec642f60e05b8c933a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62818536"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679579"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
-保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可以应用于环境中的其他 SaaS 应用程序，甚至应用于使用应用程序代理发布的Azure Active Directory应用程序。
+保护对Microsoft 365和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可应用于环境中的其他 SaaS 应用程序，甚至适用于使用应用程序代理发布的Azure Active Directory应用程序。
   
 ## <a name="step-1-review-recommendations"></a>步骤 1：查看建议
 
@@ -55,13 +55,13 @@ MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访�
  这些策略实现以下功能：
 - 多重身份验证
 - 条件访问
-- Intune 应用保护 (应用和数据保护的设备) 
+- Intune 应用 (应用和数据保护功能，适用于) 
 - Intune 设备合规性
-- Azure AD 标识保护
+- Azure AD Identity Protection
 
 实现 Intune 设备合规性需要设备注册。 通过管理设备，可以确保设备正常运行且合规，然后再允许它们访问环境中的资源。 请参阅 [在 Intune 中注册设备以管理](/mem/intune/user-help/enroll-windows-10-device)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：配置SharePoint访问策略
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：SharePoint设备访问策略
 
 Microsoft 建议通过设备访问控制SharePoint敏感和高度管控内容保护网站中的内容。 有关详细信息，请参阅[用于保护网站和文件SharePoint策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
 

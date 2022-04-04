@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: b5bc61de14f54d65e4ce5eb6f7ae78303626c123
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938945"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499564"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -150,7 +150,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 5. 按照提示配置策略设置。
 
-    所看到的策略设置会匹配你选择的标签的范围。 例如，如果选择了仅用于 **文件和电子邮件** 范围，则默认情况下看不到策略设置 **“”将此标签应用到组和网站”** 和 **“要求用户将标签应用到他们的组和网站”**。
+    你看到的策略设置与所选标签的范围匹配。例如，如果选择了仅具有 **文件和电子邮件** 范围的标签，则不会看到 **默认将此标签应用于组和网站**，以及 **要求用户将标签应用于其组和网站** 的策略设置。
 
     有关这些设置的详细信息，请参阅概述信息中的 [标签策略有何用途](sensitivity-labels.md#what-label-policies-can-do) 并使用 UI 中针对单个设置的帮助。
 
@@ -168,20 +168,17 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 此按钮将启动 **创建策略** 配置，可用于编辑所包含的标签和标签设置。 完成配置后，所有更改都将自动复制到所选用户和服务。
 
-对 Windows、macOS、iOS 和 Android 上的 Office 应用使用内置标签时，刷新浏览器时，用户会在 4 个小时内看到新标签，而在 Word、Excel 和 PowerPoint Web 版上，1 小时内就可以看到新标签。但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
-
-其他支持敏感度标签的应用和服务可能会有自己的更新计划，更新频率超过每 24 小时一次，并触发策略更新。 有关详细信息，请参阅它们的文档。 例如，对于 Azure 信息保护统一标签客户端，请参阅 [Azure 信息保护客户端的详细对比](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients)中的 **策略更新** 行。
-
-> [!TIP]
-> 请记住，计时依赖关系有时可能会延迟敏感度标签和标签策略的正常工作。 例如，为应用加密的标签填充新的组和组成员身份更改、网络复制延迟和带宽限制，以及 [Azure 信息保护服务的组成员身份缓存](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection)。
-> 
-> 由于有许多外部依赖项，并且每个依赖项都有自己的计时周期，因此建议先等待 24 小时，然后再针对最近的更改标签和标签策略进行故障排除。
-
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 
 附加标签策略设置可在[安全与合规中心 PowerShell](/powershell/exchange/scc-powershell) 中的[Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet 中使用。
 
 Azure 信息保护统一标记客户端支持许多[高级设置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，包括从其他标签解决方案进行迁移，以及在 Outlook 中弹出警告、证明或阻止发送电子邮件的消息。 有关完整列表，请参阅该客户端管理员指南的 “[适用于标签策略的高级设置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)”。
+
+## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>预计新标签和更改何时生效
+
+对于标签和标签策略设置，允许更改在 24 小时内传播到服务中。 由于有许多外部依赖项，并且每个依赖项都有自己的计时周期，因此建议先等待 24 小时，然后再花时间对最近更改的标签和标签策略进行故障排除。
+
+但是，在某些情况下，标签和标签策略更改的生效速度更快或超过 24 小时。 例如，对于 Word、Excel 和 PowerPoint 网页版的新敏感度标签和已删除的敏感度标签，你可能会看到更新在一小时内复制。 但对于依赖于填充新组和组成员身份更改的配置，或者网络复制延迟和带宽限制，这些更改可能需要 24-48 小时。
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>为灵敏度标签及其策略使用 PowerShell
 

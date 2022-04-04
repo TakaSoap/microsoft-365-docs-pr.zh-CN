@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 11f2c6202d31a3715a73b189648dcef0ade79b0b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7dbe8ca06c142a3e918c90523ee2d4f147734f18
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322865"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466270"
 ---
 # <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>提供有关 Microsoft Defender for Endpoint 客户端分析器工具的反馈
 
@@ -30,8 +30,12 @@ ms.locfileid: "63322865"
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-如果你有有助于我们改进 Microsoft Defender for Endpoint 客户端分析器的反馈或建议，请使用以下链接提交反馈：
+如果你有有助于我们改进 Microsoft Defender for Endpoint 客户端分析器的反馈或建议，请使用以下任一选项提交反馈：
 
-Microsoft 365 Defender门户 (security.microsoft.com) ：
+1. Microsoft 365 Defender门户 (security.microsoft.com) ：
 
-![提供反馈按钮的图像。](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+:::image type="content" source="images/3e2db5015cd4f47436b4765b2303f4f5.png" alt-text="笑脸反馈图标" lightbox="images/3e2db5015cd4f47436b4765b2303f4f5.png":::
+
+2. Microsoft 365 Defender门户 (security.microsoft.com) ：
+
+:::image type="content" source="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="&quot;提供反馈&quot;按钮" lightbox="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::

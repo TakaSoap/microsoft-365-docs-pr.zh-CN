@@ -16,20 +16,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 7a05d2712adb37121b1e625ab5c4774a60af3e81
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 4703867449877a35d6621b76072b9420a0cdbdec
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767204"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520542"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>ASR 规则部署先决条件
 
 ## <a name="before-you-begin"></a>准备工作
 
-攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 使用 ASR (配置攻击面) 规则（Microsoft Defender for Endpoint 中的众多安全功能之一）可以提供帮助。
+攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 使用 ASR (配置攻击面) 规则（Microsoft Defender for Endpoint中的许多安全功能之一）可以提供帮助。
 
 ASR 规则针对某些软件行为，例如：
 
@@ -44,9 +46,9 @@ ASR 规则针对某些软件行为，例如：
 >[!IMPORTANT]
 >本指南提供了图像和示例，可帮助你确定如何配置 ASR 规则;这些图像和示例可能无法反映适用于您的环境的最佳配置选项。
 
-在启动之前，请查看 [攻击面](overview-attack-surface-reduction.md)减少概述和攻击面减少规则 [- 第 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 部分，了解基础信息。 若要了解覆盖范围和潜在影响，请熟悉当前的 ASR 规则集;请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。
+在启动之前，请查看 [攻击面](overview-attack-surface-reduction.md)减少概述和攻击面减少规则 [- 第 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 部分，了解基础信息。 若要了解覆盖范围和潜在影响，请熟悉当前的 ASR 规则集;请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。  在熟悉 ASR 规则集时，请注意每规则 GUID 映射;see： [ASR rules and GUIDs matrix](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
 
-ASR 规则只是 Microsoft Defender for Endpoint 中攻击面减少功能的一项功能。 本文档将详细介绍如何有效地部署 ASR 规则，以阻止高级威胁，如人为操作的勒索软件和其他威胁。  
+ASR 规则只是攻击平台中攻击面减少功能的一Microsoft Defender for Endpoint。 本文档将详细介绍如何有效地部署 ASR 规则，以阻止高级威胁，如人为操作的勒索软件和其他威胁。  
 
 ### <a name="rules-by-category"></a>按类别分类的规则
 
@@ -71,18 +73,18 @@ ASR 规则只是 Microsoft Defender for Endpoint 中攻击面减少功能的一�
 
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM) 
-- Windows 10和Windows 11设备
-- 适用于终结点 E5 或 Windows E5 许可证的 Microsoft Defender
+- Windows 10和 Windows 11 设备
+- Microsoft Defender for Endpoint E5 或 Windows E5 许可证
 
-若要充分利用 ASR 规则和报告，我们建议使用 Microsoft 365 Defender E5 或 Windows E5 许可证和 A5。 了解更多信息 [：Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。
+若要充分利用 ASR 规则和报告，我们建议使用 Microsoft 365 Defender E5 或 Windows E5 许可证和 A5。 了解更多信息[：Microsoft Defender for Endpoint](minimum-requirements.md)。
 
 >[!Note]
 >有多种方法可配置 ASR 规则。 可以使用以下方法配置 ASR 规则：Microsoft Endpoint Manager (MEM) 、PowerShell、组策略、Microsoft System Center Configuration Manager (SCCM) 、MEM OMA-URI。
->如果你使用的基础结构配置与 _上面 (上_ 针对基础结构要求) 列出的基础结构配置不同，你可以在此处了解有关使用其他配置部署攻击面减少规则的信息： [启用攻击](enable-attack-surface-reduction.md)面减少规则。  
+>如果你使用的基础结构配置与上面 (基础结构要求中列出的基础结构配置不同，你可以在此处了解有关使用其他配置部署攻击面减少规则) ：启用[攻击](enable-attack-surface-reduction.md)面减少规则。  
 
 ### <a name="asr-rules-dependencies"></a>ASR 规则依赖项
 
-Microsoft Defender 防病毒必须启用并配置为主要的防病毒解决方案，并且必须位于以下模式下：
+Microsoft Defender 防病毒必须启用并配置为主要的防病毒解决方案，并且必须具有以下模式：
 
 - 主防病毒/反恶意软件解决方案  
 - 状态：活动模式
@@ -92,7 +94,7 @@ Microsoft Defender 防病毒不得在下列任一模式下：
 - 被动
 - 在阻止模式下使用终结点检测和响应 (EDR) 被动模式
 - 有限定期扫描 (LPS) 
-- 关闭
+- 关
 
 请参阅：[云提供的保护和Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)。
 
@@ -105,9 +107,9 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 以下Microsoft Defender 防病毒组件版本必须不超过两个比当前可用版本大的版本：
 
-- **Microsoft Defender 防病毒平台更新版本** - Microsoft Defender 防病毒每月更新一次。
+- **Microsoft Defender 防病毒平台更新版本** - Microsoft Defender 防病毒平台每月更新一次。
 - **Microsoft Defender 防病毒引擎版本** - Microsoft Defender 防病毒引擎每月更新一次。
-- **Microsoft Defender 防病毒智能** - Microsoft 持续更新 Microsoft Defender 安全 (，也称为定义和签名) ，以解决最新威胁，并优化检测逻辑。
+- **Microsoft Defender 防病毒安全** 智能 - Microsoft 持续更新 Microsoft Defender 安全 (，也称为定义和签名) ，以解决最新威胁，并优化检测逻辑。
 
 保持Microsoft Defender 防病毒版本有助于减少 ASR 规则误报结果，并改进Microsoft Defender 防病毒检测功能。 有关当前版本以及如何更新不同组件的详细信息Microsoft Defender 防病毒请访问Microsoft Defender 防病毒[支持](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
@@ -120,10 +122,10 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 与任何可能会影响业务线操作的新、大规模实施一样，在规划和实施时一定有条理。 由于 ASR 规则在阻止恶意软件方面具有强大的功能，因此需要仔细规划和部署这些规则，以确保它们最适合您独特的客户工作流。 若要在环境中工作，您需要仔细规划、测试、实施和操作 ASR 规则。  
 
 > [!div class="mx-imgBorder"]
-> ![ASR 规则部署阶段](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="ASR 规则部署阶段" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
->对于使用非 Microsoft HIPS 并且正在过渡到 Microsoft Defender for Endpoint 攻击面减少规则的客户：Microsoft 建议客户在从审核模式转移到阻止模式之前，并行运行其 HIPS 解决方案及其 ASR 规则部署。 请记住，您必须联系第三方防病毒供应商，获得排除建议。  
+>对于使用非 Microsoft HIPS 并过渡到 Microsoft Defender for Endpoint 攻击面减少规则的客户：Microsoft 建议客户在从审核模式转移到阻止模式之前，并行运行其 HIPS 解决方案及其 ASR 规则部署。 请记住，您必须联系第三方防病毒供应商，获得排除建议。  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
@@ -175,7 +177,7 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 [为部署环境创建Windows](/windows/deployment/update/create-deployment-plan)
 
-[在 Intune 中为分布式 IT (RBAC) 和范围标记使用基于角色的访问控制](/mem/intune/fundamentals/scope-tags)
+[使用基于角色的访问控制 (RBAC) 中分布式 IT 的作用域Intune](/mem/intune/fundamentals/scope-tags)
 
 [在 Microsoft Intune 中分配设备配置文件](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 

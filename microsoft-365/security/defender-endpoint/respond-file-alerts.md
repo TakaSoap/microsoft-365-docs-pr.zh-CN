@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 5c5a457d960f7dd7906c7d26a099d242507fbe86
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400246"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499190"
 ---
 # <a name="take-response-actions-on-a-file"></a>对文件执行响应操作
 
@@ -27,6 +27,8 @@ ms.locfileid: "63400246"
 
 
 **适用于：**
+
+- [Microsoft Defender for Endpoint 计划 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -49,17 +51,12 @@ ms.locfileid: "63400246"
 
 某些操作需要某些权限。 下表介绍了某些权限对 PE 文件和非 PE (可执行文件) 的操作：
 
-<br>
-
-****
-
 |权限|PE 文件|非 PE 文件|
 |---|:---:|:---:|
 |查看数据|X|X|
 |警报调查|&#x2611;|X|
 |实时响应基本|X|X|
 |实时响应高级|&#x2611;|&#x2611;|
-|
 
 有关角色详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
@@ -93,15 +90,15 @@ ms.locfileid: "63400246"
 
 2. 转到顶部栏，然后选择" **停止和隔离文件"**。
 
-   ![停止和隔离文件操作的图像。](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="停止和隔离文件操作" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. 指定原因，然后选择"确认 **"**。
 
-   ![停止和隔离文件模式窗口的图像。](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="停止和隔离文件页" lightbox="images/atp-stop-quarantine.png":::
 
    操作中心显示提交信息：
 
-   ![停止和隔离文件操作中心的图像。](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="停止和隔离文件操作中心" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **提交时间** - 显示提交操作的时间。
    - **Success** - 显示已停止和隔离文件的设备数。
@@ -114,7 +111,7 @@ ms.locfileid: "63400246"
 
 从设备中删除文件时，将显示以下通知：
 
-![设备用户通知的图像。](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="设备上用户的通知" lightbox="images/atp-notification-file.png":::
 
 在设备时间线中，将针对停止和隔离文件的每个设备添加一个新事件。
 
@@ -150,7 +147,7 @@ ms.locfileid: "63400246"
 
 默认情况下，您应该能够下载隔离的文件。
 
-![下载文件操作的图像。](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="下载文件操作" lightbox="images/atp-download-file-action.png":::
 
 ### <a name="download-quarantined-files"></a>下载隔离文件
 
@@ -232,7 +229,7 @@ ms.locfileid: "63400246"
 
 还会显示所有其他相关详细信息，如提交日期/时间、提交用户以及操作是成功还是失败。
 
-![包含信息的操作中心的图像。](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="包含信息的操作中心" lightbox="images/action-center-details.png":::
 
 ## <a name="deep-analysis"></a>深度分析
 
@@ -256,10 +253,10 @@ ms.locfileid: "63400246"
 > [!NOTE]
 > 只能自动收集Windows 10和Windows 11文件。
 
-如果文件未在 Windows 10 设备 (或 Windows 11) 上观测到，则还可以通过 [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) 安全中心门户提交示例，并等待"提交"进行深入分析按钮变为可用。
+如果文件未在 Windows 10 设备 (或 [Windows 11)](https://www.microsoft.com/security/portal/submission/submit.aspx) 上观测到，则还可以通过 Microsoft 365 Defender 门户提交示例，并等待"提交"**进行** 深入分析按钮变为可用。
 
 > [!NOTE]
-> 由于 Microsoft 安全中心门户中的后端处理流，文件提交和 Defender for Endpoint 中深入分析功能的可用性之间最多存在 10 分钟的延迟。
+> 由于 Microsoft 365 Defender 门户中的后端处理流，文件提交和 Defender for Endpoint 中深入分析功能的可用性之间最多存在 10 分钟的延迟。
 
 ### <a name="submit-files-for-deep-analysis"></a>提交文件进行深入分析
 
@@ -271,7 +268,7 @@ ms.locfileid: "63400246"
 
 2. 在文件 **视图的"** 深入分析"选项卡中，选择"提交 **"**。
 
-   ![只能在文件详细信息部分提交 PE 文件。](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="&quot;提交 PE 文件&quot;按钮" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > 仅支持 PE _文件，包括_ _.exe和.dll_ 文件。
@@ -295,7 +292,7 @@ ms.locfileid: "63400246"
 1. 选择要提交进行深入分析的文件。
 2. 选择" **深入分析"** 选项卡。如果之前有任何报告，报告摘要将显示在此选项卡中。
 
-    ![深度分析报告显示多个类别的详细信息。](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="显示跨多个类别的详细信息的深入分析报告" lightbox="images/analysis-results-nothing500.png":::
 
 #### <a name="troubleshoot-deep-analysis"></a>深度分析疑难解答
 

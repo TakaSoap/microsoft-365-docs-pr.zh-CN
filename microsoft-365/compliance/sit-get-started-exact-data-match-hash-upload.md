@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 哈希并上载敏感信息源表，以准确匹配敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e8726b17a3f87d61c8d63be7137ec8e465a5cd9a
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526494"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568469"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>为基于精确数据匹配的敏感信息类型哈希并上传敏感信息源表
 
@@ -51,18 +51,19 @@ ms.locfileid: "63526494"
 ### <a name="best-practices"></a>最佳做法
 
 分离哈希处理和上载敏感数据的过程，以便更轻松地隔离过程中的任何问题。
- 
+
 进入生产后，在大多数情况下，请保持两个步骤分开。 在隔离计算机上执行哈希过程，然后将文件上载到面向 Internet 的计算机，这可确保在计算机中永远不会有由于连接到 Internet 而可能受到威胁的纯文本格式的实际数据。
 
-### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>确保敏感数据表没有格式设置问题。 
+### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>确保敏感数据表没有格式设置问题。
 
-在哈希和上载敏感数据之前，执行搜索以验证是否存在可能导致内容分析问题的特殊字符。 您可以使用带以下语法的 EDM 上载代理验证该表的格式是否适合用于 EDM：
+在哈希和上载敏感数据之前，执行搜索以验证是否存在可能导致内容分析问题的特殊字符。
+您可以使用带以下语法的 EDM 上载代理验证该表的格式是否适合用于 EDM：
 
 ```powershell
-EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
+EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 ```
 
-如果工具指示列数不匹配，则可能是表中值中出现逗号或引号字符，而这些值与列分隔符混淆。 除非它们围绕整个值，否则单引号和双引号可能导致工具对单个列的起始或结束位置进行错误识别。 
+如果工具指示列数不匹配，则可能是表中值中出现逗号或引号字符，而这些值与列分隔符混淆。 除非它们围绕整个值，否则单引号和双引号可能导致工具对单个列的起始或结束位置进行错误识别。
 
 **如果在完整值周围找到单引号或双引号字符**：可以保留它们。
 
@@ -93,7 +94,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 > [!NOTE]
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 
-> [!TIP] 
+> [!TIP]
 >（可选）您可以针对敏感信息源表文件运行验证，以在上载之前通过运行：
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
@@ -121,8 +122,8 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
    `EdmUploadAgent.exe /Authorize`
 
-> [!IMPORTANT]
-> 必须从安装 **EdmUploadAgent** 的文件夹运行它，并指示数据文件的完整路径。 
+   > [!IMPORTANT]
+   > 必须从安装 **EdmUploadAgent** 的文件夹运行它，并指示数据文件的完整路径。
 
 4. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
 
@@ -137,14 +138,15 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    ```dos
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
+
    > [!NOTE]
-> 敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
+   > 敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
+   >
+   > 例如：`EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5`
 
-   示例： **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C：\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
+   如果您的敏感信息表包含一些格式不正确的值，但您希望在忽略无效行的同时导入剩余数据，可以在命令中使用 */AllowedBadLinesPercentage* 参数。 上面的示例指定 5% 阈值。 这意味着，即使多达 5% 的行无效，该工具也将哈希并上载敏感信息表。
 
-如果您的敏感信息表包含一些格式不正确的值，但您希望在忽略无效行的同时导入剩余数据，可以在命令中使用 */AllowedBadLinesPercentage* 参数。 上面的示例指定 5% 阈值。 这意味着，即使多达 5% 的行无效，该工具也将哈希并上载敏感信息表。 
-
-此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
+   此命令将自动将随机生成的 salt 值添加到哈希中，以增强安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt \<saltvalue\>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 6. 运行以下命令，检查“上传”状态：
 
@@ -152,9 +154,9 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
-   示例：**EdmUploadAgent/GetSession/DataStoreName PatientRecords**
+   例如：`EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords`
 
-   在 **ProcessingInProgress** 中查找状态。 每隔几分钟再次检查，直到状态更改为“**已完成**”。 在状态为已完成后，即可使用 EDM 数据。 根据您的敏感信息源表文件的大小，这可能需要几分钟到几个小时。 
+   在 **ProcessingInProgress** 中查找状态。 每隔几分钟再次检查，直到状态更改为“**已完成**”。 在状态为已完成后，即可使用 EDM 数据。 根据您的敏感信息源表文件的大小，这可能需要几分钟到几个小时。
 
 > [!TIP]
 > 如果要在上载的敏感数据可供使用后收到通知，请按照创建准确数据匹配活动的通知 [中的过程操作](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities)。
@@ -181,24 +183,24 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-> [!NOTE]
-> 敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
+   > [!NOTE]
+   > 敏感数据文件的默认格式是逗号分隔的值。 可以通过使用 /ColumnSeparator 参数指示"{Tab}"选项来指定以制表符分隔的文件，或者通过指示"|"选项来指定管道分隔的文件。
 
-
-   如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
+   如果没有指定“**/Salt \<saltvalue\>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
 
    - .EdmHash
    - .EdmSalt
-
 
 2. 以安全的方式将这些文件复制到计算机，以将敏感信息源表文件 (PatientRecords) 租户。
 
 3. 授权 EDM Upload代理，以管理员角色打开命令提示符窗口，切换到 **C：\EDM\Data** 目录，然后运行以下命令：
 
-   `EdmUploadAgent.exe /Authorize`
+   ```dos
+   EdmUploadAgent.exe /Authorize
+   ```
 
-> [!IMPORTANT]
-> 必须从安装 **EdmUploadAgent** 的文件夹运行它，并指示数据文件的完整路径。 
+   > [!IMPORTANT]
+   > 必须从安装 **EdmUploadAgent** 的文件夹运行它，并指示数据文件的完整路径。
 
 4. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
 
@@ -219,6 +221,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetDataStore
    ```
+
    你将看到数据存储区列表以及上次更新时间。
 
 7. 如果要查看所有数据上载到特定存储，在 Windows 命令提示符中运行以下命令，以查看所有数据存储的列表以及更新时间：
@@ -226,8 +229,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
-     
+
 ## <a name="next-step"></a>后续步骤
 
 - [创建基于精确数据匹配的敏感信息类型/规则包](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
-

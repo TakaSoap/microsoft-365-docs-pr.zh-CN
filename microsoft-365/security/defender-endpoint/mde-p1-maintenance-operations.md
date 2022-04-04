@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 69e4df29817675918873e4d13b81bfe5b00b1219
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5217cf3f8b61c4e5bc24dfc205fb78c5bde5a3b5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61942772"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466622"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>管理 Microsoft Defender 终结点计划 1
 
@@ -45,15 +45,15 @@ ms.locfileid: "61942772"
 
 Defender for Endpoint 提供了很多灵活性和配置选项。 您可以调整和微调设置，以满足组织的需求。 例如，可以使用 Microsoft Endpoint Manager、组策略和其他方法来管理终结点安全设置。 
 
-若要了解更多信息，请参阅[管理适用于终结点的 Defender。](manage-mde-post-migration.md)
+若要了解更多信息，请参阅 [管理适用于终结点的 Defender](manage-mde-post-migration.md)。
 
 ## <a name="address-false-positivesnegatives"></a>解决误报/负数
 
 误报是一个被检测为恶意的项目，如文件或进程，即使它不是实际的威胁。 漏报是未检测为威胁的实体，即使实际存在。 任何终结点保护解决方案（包括 Defender for Endpoint）都可能发生误报/负数。 但是，您可以采取一些步骤来解决这些种类的问题并微调您的解决方案，如下图所示：
 
-:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="误报和负面影响过程概述":::
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="误报和负面影响过程概述" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
-如果你在 Defender for Endpoint 中看到误报/负数，请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
+如果你在 Defender for Endpoint 中看到误报/负数，请参阅在 [Microsoft Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

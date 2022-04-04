@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e29ccfc963c0bfc2e730744a131a5c9485c72e42
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 364e83d03da53f5e6ffa8cecda4847e13c38f60e
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449410"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499476"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>了解 Microsoft 365 Defender 中的威胁分析中的分析员Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "63449410"
 
 每个 [威胁分析报告包括](threat-analytics.md) 动态部分和一个称为分析员报告的综合书面 _部分_。 若要访问此部分，请打开关于跟踪的威胁的报告，然后选择"分析 **员报告"** 选项卡。
 
-![威胁分析报告的分析员报告部分的图像。](../../media/threat-analytics/ta_analystreport_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_analystreport_mtp.png" alt-text="威胁分析报告的分析员报告部分" lightbox="../../media/threat-analytics/ta_analystreport_mtp.png":::
 
 _威胁分析报告的分析员报告部分_
 
@@ -50,7 +50,7 @@ _威胁分析报告的分析员报告部分_
 
 分析员报告的每个部分旨在提供可操作的信息。 虽然报告各不相同，但大多数报告包含下表中描述的部分。
 
-| "报告"部分 | 说明 |
+| "报告"部分 | Description |
 |--|--|
 | 执行摘要 | 威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。 |
 | 分析 | 有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面 |

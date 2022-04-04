@@ -1,5 +1,5 @@
 ---
-title: 在网站中创建自定义检测Microsoft 365 Defender
+title: 创建和管理自定义检测规则Microsoft 365 Defender
 description: 了解如何创建和管理基于高级搜寻查询的自定义检测规则
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 规则， 架构， kusto， RBAC， 权限， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807028"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755815"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -42,16 +42,16 @@ ms.locfileid: "62807028"
 
 若要管理自定义检测，需要分配以下角色之一:
 
-- **安全管理员** - [具有此 Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-administrator) 角色的用户可以在 Microsoft 365 Defender门户和其他门户和服务中管理安全设置。
+- **安全管理员** - [具有此 Azure Active Directory](/azure/active-directory/roles/permissions-reference#security-administrator) 角色的用户可以管理 Microsoft 365 Defender 门户和其他门户和服务中的安全设置。
 
-- **安全** 操作员 - 具有此 Azure Active Directory [](/azure/active-directory/roles/permissions-reference#security-operator) 角色的用户可以管理警报，并且具有对安全相关功能的全局只读访问权限，包括 Microsoft 365 Defender 门户中的信息。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的"管理** 安全设置"权限。
+- **安全** 操作员 - 具有此 Azure Active Directory [](/azure/active-directory/roles/permissions-reference#security-operator) 角色的用户可以管理警报，并且对安全相关功能（包括 Microsoft 365 Defender 门户中所有信息）具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的"管理** 安全设置"权限。
 
-如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有对Microsoft 365 Defender的Office，`Email``Identity`您可以使用表而不是表创建自定义检测。  
+如果对特定解决方案具有权限，还可以管理应用于Microsoft 365 Defender解决方案的数据的自定义检测。 例如，如果您仅拥有针对Microsoft 365 Defender的Office，`Email``Identity`您可以使用表而不是表创建自定义检测。  
 
 若要管理所需的权限，全局 **管理员可以** ：
 
 - 在角色 **安全** 管理员 **下分配** 安全管理员Microsoft 365 管理中心 [](https://admin.microsoft.com/)**安全操作员** > **角色**。
-- 在 Microsoft 365 Defender **PermissionsRoles** >  下的 Microsoft 365 Defender 中 [](https://security.microsoft.com/)检查适用于终结点的 **Microsoft Defender 设置** >  **RBAC 设置**。 选择相应的角色以分配 **管理安全设置** 权限。
+- 在 Microsoft 365 Defender **PermissionsRoles** >  下的 设置 中 [](https://security.microsoft.com/)检查适用于终结点的  >  Microsoft Defender 的 **RBAC** **设置**。 选择相应的角色以分配 **管理安全设置** 权限。
 
 > [!NOTE]
 > 若要管理自定义检测，**如果** RBAC 已打开，安全操作员将需要 Microsoft Defender for Endpoint 中的管理安全设置权限。
@@ -141,7 +141,7 @@ DeviceEvents
 选择与要监视检测的频率相匹配的频率。 考虑组织响应警报的能力。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 选择影响的实体。
-确定查询结果中预期要查找主要受影响或受影响的实体的列。 例如，查询可能会返回发件人 `SenderFromAddress` (或) `SenderMailFromAddress` 收件人 () `RecipientEmailAddress` 地址。 识别这些列中哪些代表主要受影响的实体，有助于该服务汇总相关警报、关联事件，并有针对性地执行响应操作。
+确定查询结果中预期要查找主要受影响或受影响的实体的列。 例如，查询可能会返回 `SenderFromAddress` 发件人 (或) `SenderMailFromAddress` 收件人 () `RecipientEmailAddress` 地址。 识别这些列中哪些代表主要受影响的实体，有助于该服务汇总相关警报、关联事件，并有针对性地执行响应操作。
 
 可以为每个实体类型 (邮箱、用户或设备) 选择仅一列。 无法选择查询未返回的列。
 
@@ -203,7 +203,7 @@ DeviceEvents
 
 若要查看有关自定义检测规则的综合信息，请转到 **"智能寻** > 线 **""自定义检测** 规则"，然后选择规则的名称。 然后，可以查看有关规则的常规信息，包括其运行状态和范围的信息。 该页还提供触发的警报和操作的列表。
 
-![自定义检测规则详细信息页。](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="自定义检测规则详细信息页面在 Microsoft 365 Defender门户" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *自定义检测规则详细信息*
 
 还可以从此页对规则执行以下操作:
@@ -216,7 +216,7 @@ DeviceEvents
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看和管理触发的警报
 
-在规则详细信息屏幕中 (**搜索** >  > 自定义检测[规则名称 **]**) ，转到触发的警报，其中列出了规则匹配项生成的警报。 选择警报以查看其详细信息并执行以下操作:
+在规则详细信息屏幕中 (**搜索** >  > 自定义检测 **[规则名称]**) ，转到触发的警报，其中列出了规则匹配项生成的警报。 选择警报以查看其详细信息并执行以下操作:
 
 - 通过设置其状态和分类 (TRUE 或 FALSE 警报) 来管理警报。
 - 将警报链接到事件
@@ -229,7 +229,7 @@ DeviceEvents
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
 
 >[!NOTE]
->本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender](m365d-enable.md)"以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender](advanced-hunting-migrate-from-mde.md)。
+>本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开"Microsoft 365 Defender](m365d-enable.md)，以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤Microsoft 365 Defender Microsoft Defender for Endpoint 中的步骤将高级搜寻[工作流从 Microsoft Defender for Endpoint 移动到其他位置](advanced-hunting-migrate-from-mde.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [自定义检测概述](custom-detections-overview.md)

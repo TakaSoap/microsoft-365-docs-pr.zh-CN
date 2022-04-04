@@ -1,91 +1,97 @@
 ### YamlMime:Landing
-title: 本月查看最多的 20 篇管理员帮助文章
-summary: 上次更新时间：2022 年 1 月 13 日。 想知道哪些帮助文章在管理员中最为受欢迎？ 请查看此集合中的 20 篇查看最多的帮助文章，每月更新一次。
+title: 本月阅读次数最多的前 20 篇管理员帮助文章
+summary: 上次更新时间：2022 年 3 月 23 日。 想知道哪些帮助文章在管理员中最为受欢迎？ 请查看此集合中的 20 篇查看最多的帮助文章，每月更新一次。
 metadata:
-  title: 本月查看最多的 20 篇管理员帮助文章
+  title: 本月阅读次数最多的前 20 篇管理员帮助文章
   description: 查看管理员最热门的 20 篇帮助文章的集合，每月更新一次。
   ms.service: O365-administration
   ms.topic: landing-page
   author: SKjerland
   ms.author: sharik
-  ms.date: 10/01/2021
+  ms.date: 03/22/2022
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 8bc6995e9f3d1aab0125546cb9f52c1790582165
-  ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+  ms.openlocfilehash: 115617fb4291e65b828bb8308afab1765fcab3b6
+  ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/17/2022
-  ms.locfileid: "63526050"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63761513"
 landingContent:
-- title: 信息
+- title: 管理数据和服务
   linkLists:
   - linkListType: overview
     links:
     - text: 关于管理员角色
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/about-admin-roles.md
+    - text: Microsoft 365使用率报告
+      url: activity-reports/activity-reports.md
   - linkListType: video
     links:
     - text: 获取帮助或支持
-      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: get-help-support.md
 - title: 域
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 添加 DNS 记录以连接你的域
-      url: setup/setup-business-basic.md
+      url: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
     - text: 将域添加到 Microsoft 365
-      url: setup/setup-business-standard.md
+      url: setup/add-domain.md
 - title: 安全性
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 设置多重身份验证
-      url: setup/migrate-email-and-contacts-admin.md
+      url: security-and-compliance/set-up-multi-factor-authentication.md
 - title: 帐单和订阅
   linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于注册号码和审查不足的通知
+      url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
     - text: 取消订阅
-      url: setup/setup-business-basic.md
+      url: ../commerce/subscriptions/cancel-your-subscription.md
     - text: 支付订阅费用
-      url: setup/setup-business-standard.md
+      url: ../commerce/billing-and-payments/pay-for-your-subscription.md
     - text: 管理支付方式
-      url: setup/setup-business-standard.md
+      url: ../commerce/billing-and-payments/manage-payment-methods.md
     - text: 查看帐单或发票
-      url: setup/setup-business-standard.md
+      url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
 - title: 电子邮件
   linkLists:
   - linkListType: overview
     links:
     - text: 关于共享邮箱
-      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: email/about-shared-mailboxes.md
   - linkListType: how-to-guide
     links:
     - text: 配置电子邮件转发Microsoft 365
-      url: admin-overview/sign-up-for-office-365.md
+      url: email/configure-email-forwarding.md
     - text: 创建共享邮箱
-      url: admin-overview/sign-up-for-office-365.md
+      url: email/create-a-shared-mailbox.md
     - text: 向其他用户授予邮箱权限
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/give-mailbox-permissions-to-another-user.md
     - text: 更改用户名和电子邮件地址
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/change-a-user-name-and-email-address.md
     - text: 将用户邮箱转换为共享邮箱
-      url: admin-overview/sign-up-for-office-365.md
+      url: email/convert-user-mailbox-to-shared-mailbox.md
 - title: 用户、组和密码
   linkLists:
   - linkListType: overview
     links:
     - text: 比较组
-      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: create-groups/compare-groups.md
   - linkListType: how-to-guide
     links:
     - text: 同时添加用户和分配许可证
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/add-users.md
     - text: 向用户分配许可证
-      url: admin-overview/sign-up-for-office-365.md
+      url: manage/assign-licenses-to-users.md
     - text: 为组织设置密码过期策略
-      url: admin-overview/sign-up-for-office-365.md
+      url: manage/set-password-expiration-policy.md
     - text: 允许用户使用 QR Outlook登录移动应用
-      url: admin-overview/sign-up-for-office-365.md
+      url: manage/use-qr-code-download-outlook.md

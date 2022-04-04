@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解为 Exchange Online 邮箱提供额外存档存储的自动扩展存档。
-ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b55c0504f04f896377c1e1b0a4dccdacdb8bbc37
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328857"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761535"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>了解自动扩展存档
 
@@ -79,6 +79,10 @@ Microsoft 365 中的存档功能（称为 *自动扩展存档*）在存档邮箱
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook 对于访问自动扩展存档中项目的要求
 
 要访问存储在自动扩展存档中的邮件，用户必须使用以下 Outlook 客户端之一：
+
+- 作为 Microsoft 365 企业应用版一部分的 Outlook（以前称为 Office 365 专业增强版）
+
+- 作为 Microsoft 365 商业应用版一部分的 Outlook（以前称为 Office 365 商业版）
 
 - Outlook 2016 或 Outlook 2019 for Windows
 

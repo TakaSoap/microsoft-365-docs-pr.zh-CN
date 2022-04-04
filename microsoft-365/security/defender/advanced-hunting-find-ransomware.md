@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: e90661932880ee146b8b1b81f8412e97d674749d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61220928"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755751"
 ---
 # <a name="hunt-for-ransomware"></a>查寻勒索软件
 
@@ -35,7 +35,7 @@ ms.locfileid: "61220928"
 **适用于：**
 - Microsoft 365 Defender
 
-勒索软件已从影响单个计算机用户的简单商品恶意软件快速演变为严重影响行业和政府机构的企业威胁。 尽管[Microsoft 365 Defender](microsoft-365-defender.md)许多功能可检测和阻止勒索软件及相关入侵活动，但主动检查泄露的迹象有助于保护网络。
+勒索软件已从影响单个计算机用户的简单商品恶意软件快速演变为严重影响行业和政府机构的企业威胁。 尽管[Microsoft 365 Defender](microsoft-365-defender.md)许多功能可检测和阻止勒索软件和相关入侵活动，但主动检查泄露的迹象有助于保护网络。
 
 > [阅读有关人工操作的勒索软件](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
@@ -46,19 +46,19 @@ Microsoft 安全研究人员在由复杂的黑客发起的许多勒索软件活�
 
 | 勒索软件活动 | 常用工具 | Intent |
 |--|--|--|
-| 停止进程 | _taskkill.exe_ _、net stop_ | 确保各种应用程序不会锁定针对加密的文件。 |
+| 停止进程 | _taskkill.exe_、 _net stop_ | 确保各种应用程序不会锁定针对加密的文件。 |
 | 关闭服务 | _sc.exe_ | - 确保各种应用程序不会锁定针对加密的文件。<br>- 阻止安全软件中断加密和其他勒索软件活动。<br>- 停止备份软件创建可恢复副本。  |
-| 删除日志和文件 | _cipher.exe_ _、wevtutil_ _、fsutil.exe_ | 删除取证证据。 |
-| 删除卷影副本  | _vsadmin.exe_ _、wmic.exe_ | 删除可用于恢复加密文件的驱动器卷影副本。 |
+| 删除日志和文件 | _cipher.exe_、 _wevtutil_、 _fsutil.exe_ | 删除取证证据。 |
+| 删除卷影副本  | _vsadmin.exe_、 _wmic.exe_ | 删除可用于恢复加密文件的驱动器卷影副本。 |
 | 删除和停止备份 | _wbadmin.exe_ | 删除现有备份并停止计划的备份任务，以防止加密后恢复。 |
 | 修改启动设置 | _bcdedit.exe_ | 在由加密过程导致的启动失败后关闭警告和自动修复。 |
-| 关闭恢复工具 | _schtasks.exe_ _、regedit.exe_、 | 关闭系统还原和其他系统恢复选项。 |
+| 关闭恢复工具 | _schtasks.exe_、 _regedit.exe_、 | 关闭系统还原和其他系统恢复选项。 |
 
 ## <a name="check-for-individual-signs-of-ransomware-activity"></a>检查勒索软件活动的个别标志
 许多构成勒索软件行为的活动（包括上一节中所述的活动）可能是恶意的。 When using the following queries to locate ransomware， run more than one query to check whether the same devices are exhibiting various signs of possible ransomware activity.
 
 ### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>使用工具停止多个 _taskkill.exe_
-此查询会检查是否尝试使用该实用工具停止至少 10 个单独的 _taskkill.exe_ 进程。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+此查询将检查是否尝试使用该实用工具停止至少 10 个单独的 _taskkill.exe_ 进程。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -81,7 +81,7 @@ DeviceProcessEvents
 | where netStopCount > 10
 ```
 ### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>使用数据删除多个驱动器上 _cipher.exe_
-此查询将检查是否尝试使用cipher.exe删除 _多个驱动器上的数据_。 此活动通常由勒索软件执行，以防止在加密后恢复数据。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
+此查询将检查是否尝试使用cipher.exe删除 _多个驱动器上cipher.exe_。 此活动通常由勒索软件执行，以防止在加密后恢复数据。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -97,7 +97,7 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 ```
 
 ### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>使用 _wevtutil_ 从事件日志中清除取证证据
-此查询使用 wevtutil 检查从事件日志中清除至少 10 个 _日志条目的尝试_。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+此查询会检查使用 wevtutil 从事件日志中清除至少 10 个日志 _条目的尝试_。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -137,7 +137,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### <a name="backup-deletion"></a>备份删除
-此查询标识加密 _wmic.exe_ 删除卷影副本快照的使用。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+此查询标识加密 _wmic.exe_ 删除卷影副本快照的用途。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -153,7 +153,7 @@ ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFile
 - 权衡是否存在这些符号
 - 标识具有较高机会成为勒索软件目标的设备 
 
-运行时，此合并查询将返回已呈现多个攻击信号的设备列表。 还显示了每种类型的勒索软件活动的计数。 若要运行此合并查询，请直接将其复制到[高级搜寻查询编辑器 。](https://security.microsoft.com/advanced-hunting) 
+运行时，此合并查询将返回已呈现多个攻击信号的设备列表。 还显示了每种类型的勒索软件活动的计数。 若要运行此合并查询，请直接将其复制到[高级搜寻查询编辑器。](https://security.microsoft.com/advanced-hunting) 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -230,13 +230,13 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 ### <a name="understand-and-tweak-the-query-results"></a>了解并调整查询结果
 合并查询将返回以下结果：
 
-- **DeviceId** 标识受影响的设备 
-- **TimeStamp**- 第一次在设备上观察到任何勒索软件活动的符号时
-- **特定活动标志**- 显示在多个列中的每个符号的计数，如 _BcdEdit_ 或 _FsUtil_
-- **TotalEvidenceCount** 观测到的符号数
+- **DeviceId**-标识受影响的设备 
+- **TimeStamp** - 第一次在设备上观察到任何勒索软件活动的符号时
+- **特定活动标志** - 显示在多列中的每个符号的计数，如 _BcdEdit_ 或 _FsUtil_
+- **TotalEvidenceCount** - 观察到的符号数
 - **UniqueEvidenceCount** 观测到的符号类型的数量
 
-:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="企业门户中勒索软件活动的合并查询Microsoft 365 Defender示例":::
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="企业门户中勒索软件活动的合并查询Microsoft 365 Defender示例" lightbox="../../media/advanced-hunting-ransomware-query.png":::
 
 *显示受影响的设备和勒索软件活动的各种标志计数的查询结果*
 
@@ -254,7 +254,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)
 
-## <a name="additional-ransomware-resources"></a>其他勒索软件资源
+## <a name="more-ransomware-resources"></a>更多勒索软件资源
 
 来自 Microsoft 的关键信息：
 
@@ -279,7 +279,7 @@ Microsoft Azure：
 - [针对勒索软件攻击的 Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [使用 Azure 和 Microsoft 365 最大化勒索软件复原能力](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [备份和还原计划以防范勒索软件](/security/compass/backup-plan-to-protect-against-ransomware)
-- [使用 26 分钟的视频Microsoft Azure备份 (](https://www.youtube.com/watch?v=VhLOr2_1MCg)保护免受勒索软件) 
+- [使用 Microsoft Azure 备份帮助防范勒索软件](https://www.youtube.com/watch?v=VhLOr2_1MCg)（26 分钟视频）
 - [从系统性标识泄露中恢复](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Microsoft Sentinel 中的高级多阶段攻击检测](/azure/sentinel/fusion#ransomware)
 - [Microsoft Sentinel 中的勒索软件融合检测](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
@@ -290,7 +290,7 @@ Microsoft Defender for Cloud Apps：
 
 Microsoft 安全团队博客文章：
 
-- [防范和从勒索软件中恢复的 3 个步骤（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [2021 年 9 月 (防止和从勒索软件) ](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [抵御人工操作勒索软件的指南：第 1 部分（2021 年 9 月）](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
   有关 Microsoft 检测和响应团队 (DART) 执行勒索软件事件调查的关键步骤。

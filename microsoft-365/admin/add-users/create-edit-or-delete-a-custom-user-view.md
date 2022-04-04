@@ -19,23 +19,23 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器创建、编辑或删除自定义用户Microsoft 365。
-ms.openlocfilehash: 479f6c566cea407e75c6fb14f76db418c127aeb4
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: cf3e286a7d8f0e9b5f9741541974b2125df505ad
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530183"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499586"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>创建、编辑或删除自定义用户视图
 
-如果你是企业版订阅的全局管理员或Microsoft 365管理员，你可以创建自定义用户视图来查看特定用户子集。 这些视图是标准视图集之外。 你可以创建、编辑或删除自定义用户视图，你创建的自定义视图可供所有管理员使用。
+如果你是企业版订阅的全局管理员或Microsoft 365管理员，你可以创建自定义用户视图来查看特定的用户子集。 这些视图是标准视图集之外。 你可以创建、编辑或删除自定义用户视图，你创建的自定义视图可供所有管理员使用。
   
 ## <a name="custom-user-views-in-the-admin-center"></a>管理中心中的自定义用户视图
 
 创建、编辑或删除自定义用户视图时，更改将显示在公司中所有管理员转到"用户"页面时所看到的"筛选器 **"** 列表中。 您最多可以创建 50 个自定义视图。 
 
 > [!TIP]
->  默认情况下，标准用户视图显示在"筛选器"下拉列表中。 标准筛选器包括 **所有用户**、许可用户、来宾用户、允许登录、阻止登录、未授权用户、出错用户、帐单管理员、**全局** 管理员、**支持** 管理员、服务管理员和用户管理 **管理员**。   不能编辑或删除标准视图。 
+>  默认情况下，标准用户视图显示在"筛选器"下拉列表中。 标准筛选器包括 **所有用户**、许可用户、来宾用户、允许登录、阻止登录、未授权的用户、出错的用户、帐单管理员、**全局** 管理员、**支持** 管理员、服务管理员和用户管理 **管理员**。  不能编辑或删除标准视图。 
 
 有关标准视图的一些注意事项： 
 
@@ -63,14 +63,14 @@ ms.locfileid: "61530183"
     
 - **出错的用户** 选中此框可显示可能有设置错误的用户。 
     
-- **未授权用户** 选中此框可查找尚未分配许可证的所有用户。 此视图的结果还可以包括拥有邮箱Exchange但没有许可证的用户。 若要专门跟踪这些用户，请使用筛选器"未授权的用户Exchange **邮箱或存档。** 此视图的结果还可以包括具有存档Exchange但没有许可证的用户。
+- **未授权用户** 选中此框可查找尚未分配许可证的所有用户。 此视图的结果还可以包括拥有邮箱Exchange但没有许可证的用户。 若要专门跟踪这些用户，请使用筛选器"未授权的用户Exchange **邮箱或存档**。 此视图的结果还可以包括具有存档Exchange但没有许可证的用户。
     
 - 具有 Exchange 邮箱或存档的未授权用户 选中此框可显示在 Exchange Online 中创建且具有 Exchange 邮箱但没有分配 Microsoft 365 许可证的用户帐户。 此筛选器的结果包括拥有或分配了存档Exchange用户。 
 
 > [!NOTE]
-> 在 **符合以下条件时，具有Exchange许可证的用户** 筛选器可以正常工作：
-1. 邮箱最近从共享转换为 **用户，** 并且没有许可证。 
-2. 邮箱最近已迁移到Microsoft 365尚未分配许可证。
+> 在 **符合以下条件时，具有Exchange许可证的用户筛选器** 将正常工作：
+1. 邮箱最近从共享转换为 **用户，** 并且没有许可证。
+2. 邮箱最近已迁移到 Microsoft 365但尚未分配许可证。
 3. 邮箱已使用 PowerShell 创建，尚未分配许可证。
 4. 为用户设置使用 New-RemoteMailbox cmdlet 在内部部署中创建的新邮箱。
     
@@ -81,44 +81,44 @@ ms.locfileid: "61530183"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户"。</a>
+1. 在管理中心，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户"</a>。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户"。</a>  
+1. 在管理中心，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户"</a>。  
 
 ::: moniker-end
     
-2. 在"**活动用户"** 页上，选择"**筛选器**"，然后选择"**新建筛选器"。**
+2. 在" **活动用户"** 页上，选择" **筛选器** "，然后选择" **新建筛选器"**。
   
-3. 在"**自定义筛选器**"页上，输入筛选器的名称，选择自定义筛选器的条件，然后选择"添加 **"。** 您的自定义视图现在包含在筛选器的下拉列表中。
+3. 在" **自定义筛选器** "页上，输入筛选器的名称，选择自定义筛选器的条件，然后选择"添加 **"**。 您的自定义视图现在包含在筛选器的下拉列表中。
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>编辑或删除自定义用户视图
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户"。</a>
+1. 在管理中心，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户"</a>。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户"。</a> 
+1. 在管理中心，转到"用户 **""** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户"</a>。 
 
 ::: moniker-end 
     
-2. 在"**活动用户"** 页上，选择"筛选器"，选择要更改的筛选器，然后选择"编辑 **筛选器"。** 
+2. 在"**活动用户"** 页上，选择"筛选器"，选择要更改的筛选器，然后选择"编辑 **筛选器"**。 
     
     > [!TIP]
     > 只能编辑自定义视图。 
   
-3. 在"**自定义筛选器"** 页上，根据需要编辑信息，然后选择"保存 **"。** 或者，若要删除筛选器，请在页面底部选择"删除 **"。** 
+3. 在" **自定义筛选器"** 页上，根据需要编辑信息，然后选择"保存 **"**。 或者，若要删除筛选器，请在页面底部选择"删除 **"**。 
 
 ## <a name="related-content"></a>相关内容
 
-[overview of the Microsoft 365 管理中心] (Overview of the Microsoft 365 管理中心] (../admin-overview/admin-center-overview.md)  (video) \
+[视频Microsoft 365 管理中心 (](../admin-overview/admin-center-overview.md)概述) \
 [关于管理员角色](../add-users/about-admin-roles.md) (视频) \
 [为组织自定义 Microsoft 365 主题](../setup/customize-your-organization-theme.md)（文章）
 

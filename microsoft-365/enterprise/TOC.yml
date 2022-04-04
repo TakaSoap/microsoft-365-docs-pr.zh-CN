@@ -181,15 +181,22 @@
       items:
         - name: Microsoft 365 服务运行状况
           href: microsoft-365-service-health.md
-        - name: Exchange Online 监视
-          href: microsoft-365-exchange-monitoring.md
+        - name: Microsoft 365 监视
+          href: microsoft-365-monitoring.md
           items:
-            - name: 邮箱利用率的服务警报
-              href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: MRS 源延迟的服务警报
-              href: microsoft-365-mrs-source-delays-service-alerts.md
-            - name: 外部收件人排队消息的服务警报
-              href: microsoft-365-external-recipient-service-alerts.md
+            - name: Exchange Online 监视
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: 邮箱利用率的服务警报
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: MRS 源延迟的服务警报
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: 外部收件人排队消息的服务警报
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: Microsoft 365 应用版 监视
+              href: microsoft-365-apps-monitoring.md
+            - name: Microsoft 365 Teams 监视
+              href: microsoft-365-teams-monitoring.md
         - name: 安装指南
           href: setup-guides-for-microsoft-365.md
     - name: 多个租户

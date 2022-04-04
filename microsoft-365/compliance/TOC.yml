@@ -535,8 +535,6 @@
               href: dlp-chrome-get-started.md
             - name: 数据丢失防护警报仪表板入门
               href: dlp-alerts-dashboard-get-started.md
-            - name: Power BI 数据丢失防护策略入门（预览版）
-              href: dlp-powerbi-get-started.md
         - name: 使用 DLP
           items:
             - name: DLP 和 Microsoft Teams

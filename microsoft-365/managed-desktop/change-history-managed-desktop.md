@@ -13,16 +13,31 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 57b4119c1c96132b2f9a5c715cb498f228802fcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c979ace1b5d3f1fa807384c769c5711c9fc2fda7
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329847"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761491"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
-本文列出了本文中新增和更新Microsoft 托管桌面[文章](index.yml)。 "已更新"的文章有重大新增内容或更正，例如拼写错误、样式或格式问题更正等次要修复未列出。 你始终可以查看特定提交历史记录 (通过访问) 上的存储库来查看[GitHub。](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+本文列出了本文中新增和更新Microsoft 托管桌面[文章](index.yml)。 "已更新"的文章有重大新增内容或更正，例如拼写错误、样式或格式问题的更正等次要修复未列出。 你始终可以查看特定提交历史记录 (通过访问) 上的存储库来查看[GitHub。](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="march-2022"></a>2022 年 3 月
+
+新增或已更改的文章 | 说明
+--- | ---
+| [可配置设置参考](working-with-managed-desktop/config-setting-ref.md) | 添加了其他代理要求 |
+| [本地化用户体验](get-started/localization.md) | 向"安装更多语言"部分添加了注释 |
+| [可配置设置参考](working-with-managed-desktop/config-setting-ref.md) | 添加了有关旧边缘的注释 |
+
+## <a name="february-2022"></a>2022 年 2 月
+
+新增或已更改的文章 | 说明
+--- | ---
+| [服务指标报告](working-with-managed-desktop/service-metrics-report.md) | 添加了服务指标报告 |
+| [Microsoft Edge](get-started/edge-browser-app.md) | 更新的文章 |
 
 ## <a name="october-2021"></a>2021 年 10 月
 
@@ -58,7 +73,7 @@ ms.locfileid: "63329847"
 
 新增或已更改的文章 | 说明
 --- | ---
-[设备图像](service-description/device-images.md)| 更新的文章
+[设备映像](service-description/device-images.md)| 更新的文章
 [修复准备情况评估工具发现的问题](get-ready/readiness-assessment-fix.md) | 更新的文章
 [Microsoft 托管桌面角色和责任](intro/roles-and-responsibilities.md) | 更新的文章
 [启用用户支持功能](get-started/enable-support.md) | 新增文章
@@ -120,7 +135,7 @@ ms.locfileid: "63329847"
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
 [使用 Autopilot 和注册状态页的首次运行体验](get-started/esp-first-run.md) | 更新的文章
 [Windows 10 位置服务](get-started/device-location.md) | 新增文章
-[设备图像](service-description/device-images.md) | 新增文章
+[设备映像](service-description/device-images.md) | 新增文章
 [Microsoft 托管桌面支持的区域](service-description/regions-languages.md) | 更新的文章
 [本地化用户体验](get-started/localization.md) | 新增文章
 

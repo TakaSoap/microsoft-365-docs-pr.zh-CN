@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 71e4b3d5f2a8cbf147a9aa50dd849be14047e27d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28b389292ed733318e5796a1be3ed9c11d2df462
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318167"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466600"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允许来宾访问和 B2B 外部用户访问的策略
 
@@ -38,20 +38,20 @@ ms.locfileid: "63318167"
 
 此图显示了在 B2B 来宾和外部用户访问的常见标识和设备访问策略中添加或更新的策略。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="用于保护来宾访问的策略更新摘要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="用于保护来宾访问的策略更新摘要" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 下表列出了创建和更新所需的策略。 常见策略链接到常见标识和设备访问策略文章中的关联 [配置说明](identity-access-policies.md) 。
 
 |保护级别|策略|更多信息|
 |---|---|---|
-|**起始点**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **">包括** 的用户和组>，选择"选择用户 **和** 组"，然后选择"所有 **来宾用户和外部用户"**。</li><li>对于 **">条件>登录"**，保留所有选项未选中状态，以始终对 MFA (多重) 。</li></ul>|
+|**起点**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **">包括** 的用户和组>，选择"选择用户 **和** 组"，然后选择"所有 **来宾用户和外部用户"**。</li><li>对于 **">条件>登录"**，保留所有选项未选中状态，以始终对 MFA (多重) 。</li></ul>|
 ||[当登录风险为中或高 *时需要 MFA*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此策略以排除来宾和外部用户。|
 
 若要在条件访问策略中包括或排除来宾和外部用户，>分配""用户和>排除"，请检查 **"所有** 来宾用户和 **外部用户"**。
 
-![用于排除来宾和外部用户的控件的屏幕捕获。](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="用于排除来宾和外部用户的控件" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>来宾和外部用户访问Microsoft Teams
 
@@ -81,7 +81,7 @@ Microsoft Teams定义以下用户：
 
 ## <a name="next-step"></a>后续步骤
 
-![步骤 4：云应用Microsoft 365 Microsoft Defender for Cloud Apps 的策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="云应用Microsoft 365 Microsoft Defender 云应用策略" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 为：配置条件访问策略：
 

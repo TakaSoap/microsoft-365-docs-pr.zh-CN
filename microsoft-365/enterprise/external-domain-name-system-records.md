@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 规划 Office 365 部署时要使用的外部域名系统记录的引用列表。
-ms.openlocfilehash: 39b6f093c196d8b696a8d36458d2ebc18be2a5f2
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 3ba8345c17446f7f6d2d6b034415288eb994ee79
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401422"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568425"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -48,12 +48,17 @@ ms.locfileid: "61401422"
 ## <a name="external-dns-records-required-for-office-365-core-services"></a>Office 365（核心服务）所需的外部 DNS 记录
 <a name="BKMK_ReqdCore"> </a>
 
-所有 Office 365 客户需要向其外部 DNS 添加两个记录。第一个 CNAME 记录可确保 Office 365 能够指导工作站向适当的标识平台进行身份验证。所需的第二个记录可以证明你拥有你的域名。
+需要 TXT 记录来证明你拥有域，并且是所有客户所必需的。
+
+CNAME 记录仅对使用 [世纪互联运营的 Office 365](/microsoft-365/admin/services-in-china/services-in-china) 的客户有要求。 它确保 Office 365 可以指示工作站使用适当的标识平台进行身份验证。 
+
+
   
-|**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
-|----------|-----------|------------|
-|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。 如果存在此情况且 Office 365 未由世纪互联运营，则自定义域中的用户将收到“*自定义域* 不在系统内”错误，并且无法激活其 Office 365 许可证。 [详细信息](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导** 提供了用于创建此记录的值。  <br/> |
+|**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |**适用对象**|
+|----------|-----------|------------|------------|
+|**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导** 提供了用于创建此记录的值。  <br/> |所有客户|
+|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **请注意** 此 CNAME 仅适用于由世纪互联运营的 Office 365。 如果存在此情况且 Office 365 未由世纪互联运营，则自定义域中的用户将收到“*自定义域* 不在系统内”错误，并且无法激活其 Office 365 许可证。 [详细信息](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet) |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> | 仅世纪互联客户|
+
 
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Office 365 (Exchange Online) 中的电子邮件所需的外部 DNS 记录

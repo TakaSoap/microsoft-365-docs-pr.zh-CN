@@ -18,12 +18,12 @@ description: 管理员可以了解 Exchange Online Protection (EOP) 向邮件添
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8eaf567e4cbceae66a5acd1fa1a45565f15a4804
-ms.sourcegitcommit: e09ced3e3628bf2ccb84d205d9699483cbb4b3b0
+ms.openlocfilehash: 33cebd8cfd0d61b09a5d4976baec9708082c8ca3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "60883997"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679425"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
@@ -60,8 +60,6 @@ ms.locfileid: "60883997"
 > [!NOTE]
 > **X-Forefront-Antispam-Report** 标头包含许多不同的字段和值。 表中未描述的字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
 
-****
-
 |字段|描述|
 |---|---|
 |`ARC`|`ARC` 协议具有以下字段： <ul><li>`AAR`：记录 DMARC 中 **Authentication-results** 标头的内容。</li><li>`AMS`：包括邮件的加密签名。</li><li>`AS`：包括邮件标头的加密签名。此字段包含名为 `"cv="` 的链验证的标记，其中包括值为 **none**、**pass** 或 **fail** 的链验证结果。</li></ul>|
@@ -87,18 +85,14 @@ ms.locfileid: "60883997"
 |`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
 |`SRV:BULK`|邮件被垃圾邮件筛选和批量投诉级别 (BCL) 阈值标识为大量电子邮件。 如果 _MarkAsSpamBulkMail_ 参数为 `On`（默认为开），则将有大量电子邮件标记为垃圾邮件 (SCL 6)。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
 |`X-CustomSpam: [ASFOption]`|邮件与高级垃圾邮件筛选 (ASF) 设置匹配。 若要查看每个 ASF 设置的 X 标头值，请参阅[高级垃圾邮件筛选 (ASF) 设置](advanced-spam-filtering-asf-options.md)。|
-|
 
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft-Antispam 邮件标头字段
 
 下表描述了“**X-Microsoft-Antispam**”邮件头中的有用字段。此标头中的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
 
-****
-
 |字段|描述|
 |---|---|
 |`BCL`|邮件的批量投诉级别 (BCL)。 BCL 越高，大量邮件产生投诉的可能性就越大（因此更有可能是垃圾邮件）。 有关详细信息，请参阅[批量投诉级别 (BCL)](bulk-complaint-level-values.md)。|
-|
 
 ## <a name="authentication-results-message-header"></a>“Authentication-results”邮件头
 
@@ -151,8 +145,6 @@ ms.locfileid: "60883997"
 
 下表描述了每个电子邮件身份验证检查的字段和可能的值。
 
-****
-
 |字段|说明|
 |---|---|
 |`action`|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如： <ul><li>**oreject** 或 **o.reject**：代表覆盖拒绝。在这种情况下，Microsoft 365 将在收到来自 DMARC TXT 记录的策略为 p=reject 的域的邮件，且该邮件未通过 DMARC 检查时使用此操作。Microsoft 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。有关这样配置 Microsoft 365 的原因的详细信息，请参阅 [Microsoft 365 如何处理未通过 DMARC 检查的入站电子邮件](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。  </li><li>**pct.quarantine**：指示未通过 DMARC 的邮件将按少于 100% 的比例以任意方式传递。这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**pct.reject**：指示未通过 DMARC 的邮件将按少于 100% 的比例以任意方式传递。这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**permerror**：DMARC 评估过程中出现的永久性错误，例如，在 DNS 中遇到格式不正确的 DMARC TXT 记录。尝试重新发送此邮件不太可能产生不同的结果。你反而可能需要联系域的所有者，以解决该问题。</li><li>**temperror**：DMARC 评估期间出现的临时错误。你可以请求发件人稍后重新发送邮件，以正确处理电子邮件。</li></ul>|
@@ -164,4 +156,3 @@ ms.locfileid: "60883997"
 |`reason`|复合身份验证通过或失败的原因。 该值是一个 3 位数的代码。 例如： <ul><li>**000**: 邮件未通过显式身份验证 (`compauth=fail`)。例如，邮件未通过 DMARC 验证，采取的操作是隔离或拒绝。</li><li>**001**: 邮件未通过隐式身份验证 (`compauth=fail`)。这意味着发送域未发布电子邮件身份验证记录，或者如果已发布，则意味着它们具有较弱的失败策略 (SPF 软失败或中性，DMARC 策略为 `p=none`)。</li><li>**002**: 组织为发件人/域对设置了明确禁止发送欺骗性电子邮件的策略。此设置由管理员手动设置。</li><li>**010**：邮件未通过 DMARC 验证，并采取了拒绝或隔离操作，而且发送域是组织的接受域之一（这是自我欺骗或组织内欺骗的一部分）之一。</li><li>**1xx** 或 **7xx**：邮件通过了身份验证 (`compauth=pass`)。 最后两位数是 Microsoft 365 使用的内部代码。</li><li>**2xx**：邮件“软”通过隐式身份验证 (`compauth=softpass`)。 最后两位数是 Microsoft 365 使用的内部代码。</li><li>**3xx**：未针对复合身份验证检查邮件 (`compauth=none`)。</li><li>**4xx** 或 **9xx**：邮件规避了复合身份验证 (`compauth=none`)。 最后两位数是 Microsoft 365 使用的内部代码。</li><li>**6xx**：邮件未通过隐式电子邮件身份验证，并采取了拒绝或隔离操作，而且发送域是组织的接受域之一（它是自我欺骗或组织内欺骗的一部分）之一。</li></ul>|
 |`smtp.mailfrom`|`5321.MailFrom` 地址（亦称为“MAIL FROM 地址”、“P1 发件人”或“信封发件人”）的域。 这是用于未送达报告（亦称为“NDR”或“退回邮件”）的电子邮件地址。|
 |`spf`|说明邮件的 SPF 检查结果。可能的值包括： <ul><li>`pass (IP address)`：邮件通过 SPF 检查，且其中包括发件人的 IP 地址。已授权客户端代表发件人的域发送或中继电子邮件。  </li><li>`fail (IP address)`：邮件未通过 SPF 检查，且其中包括发件人的 IP 地址。有时也称其为 _硬失败_。  </li><li>`softfail (reason)`：SPF 记录已将主机指定为不允许发送，但正处于转换状态。</li><li>`neutral`：SPF 记录明确声明它没有断言 IP 地址是否被授权发送。</li><li>`none`：域没有 SPF 记录或者 SPF 记录未计算得到结果。</li><li>`temperror`：发生暂时性错误。 例如，DNS 错误。 相同的检查稍后可能会成功。</li><li>`permerror`：出现永久错误。例如，域的 SPF 记录格式非常不规范。  </li></ul>|
-|
