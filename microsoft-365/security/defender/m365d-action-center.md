@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: e4ac7636b019b0e8c1d00487e95335ede4600d85
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499058"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570032"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -82,7 +82,7 @@ ms.locfileid: "64499058"
 
 可以在操作中心中自定义、排序、筛选和导出数据。
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="操作中心的排序、筛选和自定义功能。" lightbox="../../media/m3d-action-center-columnsfilters.png":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="操作中心的排序、筛选和自定义功能" lightbox="../../media/m3d-action-center-columnsfilters.png":::
 
 - 选择列标题以按升序或降序对项目进行排序。
 - 使用时间段筛选器查看过去一天、一周、30 天或 6 个月的数据。
@@ -111,16 +111,16 @@ ms.locfileid: "64499058"
 
  (**新建！**) 改进的操作中心现在包括一个 **操作** 源列，告知你每个操作的来源。 下表介绍了可能 **的操作源** 值：
 
-| 操作源值 | Description |
+| 操作源值 | 说明 |
 |:-----|:---|
 | **手动设备操作** | 对设备采取的手动操作。 示例包括 [设备隔离](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) 或 [文件隔离](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
 | **手动电子邮件操作** | 对电子邮件执行手动操作。 示例包括软删除电子邮件 [或修正电子邮件](../office-365-security/remediate-malicious-email-delivered-office-365.md)。 |
-| **自动设备操作** | 对实体（如文件或进程）采取的自动操作。 自动操作的示例包括将文件发送到隔离区、停止进程和删除注册表项。  (请参阅 [Microsoft Defender for Endpoint.) ](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
-| **自动电子邮件操作** | 对电子邮件内容（如电子邮件、附件或 URL）采取的自动操作。 自动操作的示例包括软删除电子邮件、阻止 URL 和关闭外部邮件转发。  (请参阅 [Microsoft Defender for Office 365.) ](../office-365-security/air-remediation-actions.md) 中的修正操作 |
+| **自动设备操作** | 对实体（如文件或进程）采取的自动操作。 自动操作的示例包括将文件发送到隔离区、停止进程和删除注册表项。  (请参阅 [Microsoft Defender for Endpoint](../defender-endpoint/manage-auto-investigation.md#remediation-actions).)  |
+| **自动电子邮件操作** | 对电子邮件内容（如电子邮件、附件或 URL）采取的自动操作。 自动操作的示例包括软删除电子邮件、阻止 URL 和关闭外部邮件转发。  (请参阅 [Microsoft Defender for Office 365](../office-365-security/air-remediation-actions.md).) 中的修正操作 |
 | **高级搜寻操作** | 使用高级搜寻对设备或电子邮件 [采取的操作](./advanced-hunting-overview.md)。 |
 | **资源管理器操作** | 使用资源管理器对电子邮件内容 [采取的操作](../office-365-security/threat-explorer.md)。 |
 | **手动实时响应操作** | 使用实时响应对设备 [采取的操作](../defender-endpoint/live-response.md)。 示例包括删除文件、停止进程和删除计划任务。 |
-| **实时响应操作** | 使用 [Microsoft Defender for Endpoint API 对设备采取的操作](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)。 操作示例包括隔离设备、运行防病毒扫描和获取文件信息。 |
+| **实时响应操作** | 使用 API 在设备上[Microsoft Defender for Endpoint操作](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)。 操作示例包括隔离设备、运行防病毒扫描和获取文件信息。 |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>操作中心任务所需的权限
 
@@ -128,8 +128,8 @@ ms.locfileid: "64499058"
 
 |修正操作 |所需角色和权限 |
 |--|----|
-|Microsoft Defender for Endpoint 修正 (设备)  |**安全管理员** 角色分配在 Azure Active Directory (Azure AD)  () [https://portal.azure.com](https://portal.azure.com) 或 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 () <br/>--- 或 ---<br/>**在 Microsoft** Defender for Endpoint 中分配的活动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)<br/>- [使用 Microsoft Defender for Endpoint (创建和管理基于角色的访问控制) ](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365修正 (Office内容和电子邮件)   |**安全管理员** 角色分配在 Azure AD () [https://portal.azure.com](https://portal.azure.com) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>--- 和 --- <br/>**在安全与** 合规中心&分配搜索和清除 () [https://protection.office.com](https://protection.office.com) <br/><br/>**重要** 提示：如果仅在 Office 365  安全与合规中心 & [https://protection.office.com](https://protection.office.com) () 中分配了安全管理员角色，则无法访问操作中心或 Microsoft 365 Defender 功能。 您必须 **在安全管理** 角色或Azure AD分配安全Microsoft 365 管理中心。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint设备 (修正)  |**安全管理员** 角色分配在 Azure Active Directory (Azure AD)  () [https://portal.azure.com](https://portal.azure.com) 或 [https://admin.microsoft.com](https://admin.microsoft.com) Microsoft 365 管理中心 () <br/>--- 或 ---<br/>**在服务器中分配** 的活动修正操作Microsoft Defender for Endpoint <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)<br/>- [创建和管理基于角色的访问控制角色 (Microsoft Defender for Endpoint) ](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365内容和 (Office电子邮件的修正)   |**安全管理员** 角色分配在 Azure AD () [https://portal.azure.com](https://portal.azure.com) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>--- 和 --- <br/>**在安全与** 合规中心&分配搜索和清除 () [https://protection.office.com](https://protection.office.com) <br/><br/>**重要** 提示：如果仅在 Office 365  安全与合规中心 & [https://protection.office.com](https://protection.office.com) () 中分配了安全管理员角色，则无法访问操作中心或 Microsoft 365 Defender 功能。 您必须 **在安全管理** 角色或Azure AD分配安全Microsoft 365 管理中心。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > 在操作中心 **中** 分配了全局管理员角色Azure AD可以批准或拒绝操作中心中任何挂起的操作。 但是，最佳做法是，贵组织应限制分配了全局管理员 **角色的人的数量** 。 对于 **操作中心权限**，我们建议使用上表中列出的安全管理员、活动修正操作和搜索和清除角色。

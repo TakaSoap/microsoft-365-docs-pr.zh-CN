@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 使用 PowerShell for Microsoft 365 管理 Skype for Business Online 策略、每用户策略和会议设置。
-ms.openlocfilehash: 40fc030c957fee2d31c18ea95f1939e3d9f0937b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb546a7e4130509d7acd0021b3cb78df23c1819f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201669"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474463"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online
 
@@ -30,7 +30,10 @@ Skype for Business Online 管理员负责管理策略。 虽然你可以在 Micr
 ## <a name="before-you-start"></a>准备工作
 
 > [!NOTE]
-> Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
+> Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 **Teams PowerShell** 公共版本，则无需安装 Skype for Business Online 连接器。
+
+> [!NOTE]
+> Skype for Business Online 管理员可以通过 PowerShell 管理 **Teams** 和 **Skype for Business Online** 应用策略。
 
 安装 [Teams PowerShell 模块](/microsoftteams/teams-powershell-install)。
 

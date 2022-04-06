@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557933"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683046"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -48,10 +48,6 @@ ms.locfileid: "63557933"
 
 下表介绍了 Microsoft 365 Defender 门户中) EOP) 和 Microsoft Defender for Office 365 报告（已替换、移动或已弃用）。 Exchange Online Protection (
 
-<br>
-
-****
-
 |已弃用的报告和 cmdlet|新报表和 cmdlet|消息中心 ID|日期|
 |---|---|:---:|:---:|
 |**URL 跟踪** <p> Get-URLTrace|[URL 保护报告](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
@@ -62,9 +58,8 @@ ms.locfileid: "63557933"
 |**电子邮件报告中检测到的恶意软件** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[威胁防护状态报告：通过电子邮件恶意软件查看 \> 数据](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|2021 年 6 月|
 |**垃圾邮件检测报告** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[威胁防护状态报告：通过电子邮件垃圾邮件查看 \> 数据](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|2021 年 10 月|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|2022 年 5 月|
-|**Exchange传输规则报告** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange EAC 中的传输规则报告](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> 无 cmdlet|MC316157|2022 年 4 月|
+|**Exchange传输规则报告** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange EAC 中的传输规则报告](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|2022 年 4 月|
 |Get-MailTrafficTopReport|[威胁防护状态报告：通过电子邮件恶意软件查看 \> 数据](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **注意**：Get-MailTrafficTopReport 中的加密报告功能没有替代。|MC315742|2022 年 4 月|
-|
 
 ## <a name="compromised-users-report"></a>遭到入侵的用户报告
 
@@ -199,7 +194,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 图形下方的详细信息表显示了以下信息：
 
 - **方向**
-- **类型**
+- **Type**
 - **24 小时**
 - **3 天**
 - **7 天**
@@ -341,7 +336,7 @@ Defender **for Office 365** 中的邮件延迟报告包含有关组织中遇到�
 
 报告聚合视图允许筛选 90 天，而详细信息视图仅允许筛选 10 天。
 
-To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** \> **& collaboration reports**. 在" **电子邮件&协作** 报告"页上，找到 **"欺骗检测** "，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpoofMailReportV2>。
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** \> **& collaboration reports**. 在" **电子邮件&协作** 报告"页上，找到 **"欺骗检测** "，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpoofMailReport>。
 
 !["电子邮件和协作报告"&欺骗检测小组件。](../../media/spoof-detections-widget.png)
 
@@ -408,7 +403,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 - **提交 ID**
 - **网络消息 ID**
 - **Sender**
-- **名称**
+- **Name**
 - **提交者**
 - **提交原因**：
   - **非垃圾邮件**
@@ -1061,7 +1056,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **组织管理**
 - **安全管理员**
 - **安全信息读取者**
-- **全局读取者**
+- **全局读者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
@@ -1153,7 +1148,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 2. 在 **"报告下载"** 页上，将显示每个可用报告的以下信息：
    - **开始日期**
-   - **名称**
+   - **Name**
    - **报告类型**
    - **上次发送**
    - **方向**

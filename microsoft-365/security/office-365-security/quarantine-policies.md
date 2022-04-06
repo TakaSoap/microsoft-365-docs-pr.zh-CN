@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用隔离策略来控制用户可以对隔离邮件执行哪些操作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0e5f1ea75a24d84f0b6d6b9e003a0123928ac49a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467106"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682826"
 ---
 # <a name="quarantine-policies"></a>隔离策略
 
@@ -104,7 +104,7 @@ ms.locfileid: "64467106"
        - **允许收件人从隔离中释放邮件**
        - **允许收件人请求从隔离区中释放邮件**
      - **选择收件人对隔离邮件** 可以执行的其他操作：选择以下部分值、全部值或下列值之一：
-       - **删除**
+       - **Delete**
        - **预览**
        - **阻止发件人**
 
@@ -195,7 +195,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 |[反垃圾邮件策略](configure-your-spam-filter-policies.md)： <ul><li>**Spam** (_SpamAction_) </li><li>**高可信度垃圾邮件** (_HighConfidenceSpamAction_) </li><li>**Phishing (** _PhishSpamAction_) </li><li>**高可信度网络钓鱼** (_HighConfidencePhishAction_) </li><li>**批量** (_BulkSpamAction_) </li></ul>|是|<ul><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>AdminOnlyAccessPolicy (无法访问) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li></ul>|
 |防钓鱼策略: <ul><li>[](set-up-anti-phishing-policies.md#spoof-settings) _AuthenticationFailAction (欺骗智能_) </li><li>[Defender for Office 365 中的模拟Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<ul><li>**如果邮件被检测为** _TargetedUserProtectionAction (模拟_) </li><li>**如果邮件被检测为** _TargetedDomainProtectionAction (模拟_) </li><li>**如果邮箱智能检测到并模拟** _MailboxIntelligenceProtectionAction (邮箱_) </li></ul></li></ul>|是|<ul><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>模拟保护：<ul><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li></ul></li></ul>|
 |[反恶意软件策略](configure-anti-malware-policies.md)：始终隔离所有检测到的邮件。|是|AdminOnlyAccessPolicy (无法访问) |
-|[保险箱附件保护](safe-attachments.md)： <ul><li>"启用"和"操作"策略保险箱附件 (_隔离为恶意软件__)_</li><li>附件中隔离为恶意软件的文件保险箱[附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>是</li><li>否</li></ul>|<ul><li>AdminOnlyAccessPolicy (无法访问) </li><li>无</li></ul>|
+|[保险箱附件保护](safe-attachments.md)： <ul><li>"启用"和"操作"策略保险箱附件 (_隔离为恶意软件__)_</li><li>附件中隔离为恶意软件的文件保险箱[附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>是</li><li>否</li></ul>|<ul><li>AdminOnlyAccessPolicy (无法访问) </li><li>不适用</li></ul>|
 |[邮件流规则](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (操作) 传输规则： **将** 邮件发送到托管隔离邮箱 (_隔离_) 。|否|不适用|
 
 <sup>\*</sup> 如 [本文前面所述](#full-access-permissions-and-quarantine-notifications)，您的组织可能使用 NotificationEnabledPolicy 而不是 DefaultFullAccessPolicy。 这两个隔离策略之间的唯一区别是隔离通知在 NotificationEnabledPolicy 中打开，在 DefaultFullAccessPolicy 中关闭。
@@ -225,7 +225,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
    **注意**：创建新策略时，空白的"选择隔离策略"值指示已使用该裁定的默认隔离策略。 稍后编辑策略时，空白值将替换为实际的默认隔离策略名称，如上表所述。
 
-   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="反垃圾邮件策略中的隔离策略选择" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
+   ![反垃圾邮件策略中的隔离策略选择。](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 有关创建和修改反垃圾邮件策略的完整说明，请参阅在 [EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -237,7 +237,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>"> [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注意**：
+**注意**:
 
 - _PhishSpamAction_ 和 _HighConfidencePhishAction_ 参数的默认值为 Quarantine，因此在 PowerShell 中创建新的垃圾邮件筛选器策略时，无需使用这些参数。 对于新的或现有的反垃圾邮件策略中的 _SpamAction_、 _HighConfidenceSpamAction_ 和 _BulkSpamAction_ 参数，隔离策略仅在值为 Quarantine 时有效。
 
@@ -305,7 +305,7 @@ EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱
 
    **注意**：创建新策略时，空白的 **"** 应用隔离策略"值指示使用该操作的默认隔离策略。 稍后编辑策略时，空白值将替换为实际的默认隔离策略名称，如上表所述。
 
-   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="防钓鱼策略中的隔离策略选择" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
+   ![防钓鱼策略中的隔离策略选择。](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 以下主题提供了创建和修改反网络钓鱼策略的完整说明：
 
@@ -320,7 +320,7 @@ EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱
 <New-AntiPhishPolicy -Name "<Unique name>" | Set-AntiPhishPolicy -Identity "<Policy name>"> [-EnableSpoofIntelligence $true] [-AuthenticationFailAction Quarantine] [-SpoofQuarantineTag <QuarantineTagName>] [-EnableMailboxIntelligence $true] [-EnableMailboxIntelligenceProtection $true] [-MailboxIntelligenceProtectionAction Quarantine] [-MailboxIntelligenceQuarantineTag <QuarantineTagName>] [-EnableOrganizationDomainsProtection $true] [-EnableTargetedDomainsProtection $true] [-TargetedDomainProtectionAction Quarantine] [-TargetedDomainQuarantineTag <QuarantineTagName>] [-EnableTargetedUserProtection $true] [-TargetedUserProtectionAction Quarantine] [-TargetedUserQuarantineTag <QuarantineTagName>] ...
 ```
 
-**注意**：
+**注意**:
 
 - _需要 Enable\*_ 参数才能启用特定的保护功能。 _EnableMailboxIntelligence_ 和 _EnableSpoofIntelligence_ 参数的默认值为 $true，因此在 PowerShell 中创建新的防钓鱼策略时，无需使用这些参数。 所有其他 _Enable\*_ 参数都需要具有值 $true以便您可以在相应的 Action 参数中设置值 _Quarantine\*_，然后分配隔离策略。 任何 _*\Action_ 参数都没有默认值 Quarantine。
 
@@ -385,7 +385,7 @@ Set-AntiPhishPolicy -Identity "Human Resources" -EnableTargetedDomainsProtection
 <New-AntiMalwarePolicy -Name "<Unique name>" | Set-AntiMalwarePolicy -Identity "<Policy name>"> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注意**：
+**注意**:
 
 - 在创建新的反恶意软件策略时，如果不使用 QuarantineTag 参数创建新的反恶意软件策略，恶意软件检测的默认隔离策略 (AdminOnlyAccessPolicy) 。
 
@@ -445,7 +445,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
-**注意**：
+**注意**:
 
 - _Action 参数_ 值 Block、Replace 或 DynamicDelivery 可能会导致隔离邮件 (值 Allow 不隔离邮件) 。 只有在 _Enable_ 参数的值为 时 _，Action_ 参数的值才有意义`$true`。
 
@@ -493,7 +493,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      以下屏幕截图显示了隔离显示名称中的自定义邮件：
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="隔离通知显示名称自定义发件人地址" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
+     ![自定义发件人显示名称隔离通知中。](../../media/quarantine-tags-esn-customization-display-name.png)
 
    - **免责声明**：将自定义免责声明添加到隔离通知的底部。 您组织的本地化文本 **（免责声明：** ）始终先包含，后跟您指定的文本。
 
@@ -501,19 +501,19 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      以下屏幕截图显示了隔离通知中的自定义免责声明：
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="隔离通知底部的自定义免责声明" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
+     ![隔离通知底部的自定义免责声明。](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
    - **选择语言**：隔离通知已根据收件人的语言设置进行本地化。 您可以为"显示名称"和"免责声明"值指定 **不同语言的****自定义** 文本。
 
      至少从第一种语言框中选择一种语言，**然后单击添加。** 可以通过单击每种语言后的 **"添加"** 来选择多种语言。 部分语言框显示你选择的所有语言：
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="隔离策略的全局隔离通知设置中第二种语言框中选定的语言" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
+     ![隔离策略的全局隔离通知设置中第二种语言框中选定的语言。](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
    - **使用我的公司徽标**：选择此选项可替换隔离通知顶部使用的默认 Microsoft 徽标。 在这样做之前，你需要按照自定义组织的自定义Microsoft 365[主题](../../admin/setup/customize-your-organization-theme.md)中的说明上载自定义徽标。
 
      以下屏幕截图显示了隔离通知中的自定义徽标：
 
-     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="隔离通知中的自定义徽标" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
+     ![隔离通知中的自定义徽标。](../../media/quarantine-tags-esn-customization-logo.png)
 
    - **每两天发送一次最终用户 ()**：选择隔离通知的频率。
 
@@ -581,7 +581,7 @@ Set-QuarantinePolicy -Identity "<QuarantinePolicyName>" [Settings]
 
 ## <a name="remove-quarantine-policies-in-the-microsoft-365-defender-portal"></a>删除 Microsoft 365 Defender 门户中的隔离策略
 
-**注意**：
+**注意**:
 
 - 不能删除名为 AdminOnlyAccessPolicy 或 DefaultFullAccessPolicy 的内置隔离策略。 如果将名为 NotificationEnabledPolicy 的内置策略 ([自定义](#full-access-permissions-and-quarantine-notifications) 隔离策略) 删除它。
 - 在删除隔离策略之前，请验证该策略是否未使用。 例如，在 PowerShell 中运行以下命令：
@@ -648,14 +648,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **从隔离区中删除**
   - **阻止发件人**
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="隔离策略授予用户受限访问权限时隔离邮件详细信息中的可用按钮" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
+  ![隔离策略授予用户受限访问权限时隔离邮件详细信息中的可用按钮。](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
 - **隔离通知**：以下按钮可用：
   - **阻止发件人**
   - **请求释放**
   - **审阅**
 
-  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="隔离策略授予用户受限访问权限时隔离通知中的可用按钮" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
+  ![隔离策略授予用户受限访问权限时隔离通知中的可用按钮。](../../media/quarantine-tags-esn-limited-access.png)
 
 #### <a name="full-access"></a>完全访问权限
 
@@ -668,14 +668,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **从隔离区中删除**
   - **阻止发件人**
 
-  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="隔离策略授予用户完全访问权限时隔离邮件详细信息中的可用按钮" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
+  ![隔离策略授予用户完全访问权限时隔离邮件详细信息中的可用按钮。](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
 - **隔离通知**：以下按钮可用：
   - **阻止发件人**
   - **发布**
   - **审阅**
 
-  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="隔离策略授予用户完全访问权限时隔离通知中的可用按钮" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+  ![隔离策略授予用户完全访问权限时隔离通知中的可用按钮。](../../media/quarantine-tags-esn-full-access.png)
 
 ### <a name="individual-permissions"></a>个人权限
 

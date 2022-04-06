@@ -10,8 +10,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47ee051ab30669241a3283f1fb3f8fe86cf67f65
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: c451266d8cc11fc877f1c6c9f1c214959fe41938
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557822"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683156"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全与合规中心内的权限
 
@@ -63,10 +63,6 @@ ms.locfileid: "63557822"
 > [!NOTE]
 > 若要查看安全 **与** 合规中心&"权限"选项卡，你需要是管理员。具体而言，您需要分配有"角色管理"角色，默认情况下，该角色仅分配给安全与合规中心&管理角色组。 此外， **角色管理** 角色允许用户查看、创建和修改角色组。
 
-<br>
-
-****
-
 |角色组|说明|分配的默认角色|
 |---|---|---|
 |**攻击模拟管理员**|请勿在安全与合规中心内使用此&组。 在角色角色中Azure AD。|攻击模拟器管理员|
@@ -86,7 +82,7 @@ ms.locfileid: "63557822"
 |**内容资源管理器列表查看器**|仅以列表格式查看内容资源管理器中的所有项目。|数据分类列表查看器|
 |**数据调查**|在邮箱、SharePoint Online 网站和OneDrive for Business搜索。|通信 <p> 合规性搜索 <p> Custodian <p> 数据调查管理 <p> 导出 <p> 预览 <p> 审阅 <p> RMS 解密 <p> 搜索和清除|
 |**电子数据展示管理员**|成员可以执行搜索并将邮箱、SharePoint Online 网站和 OneDrive for Business 位置置于保留状态。 成员还可以创建和管理电子数据展示事例、向事例添加和删除成员、创建和编辑与事例关联的内容搜索以及访问 Advanced eDiscovery。 <p> 电子数据展示管理员是电子数据展示管理员角色组的成员，该成员已分配有其他权限。 除了电子数据展示管理员可以执行的任务之外，电子数据展示管理员可以：<ul><li>查看组织的所有电子数据展示事例。</li><li>将其自己添加为任何电子数据展示事例的成员后管理这些事例。</li></ul> <p> 电子数据 &展示管理员与电子数据展示管理员之间的主要区别在于，电子数据展示管理员可以访问安全与合规中心的"电子数据展示事例"页面上列出的所有事例。 电子数据展示管理员只能访问他们创建的事例或他们作为成员的情况。 有关使用户成为电子数据展示管理员的信息，请参阅在安全与合规中心& [电子数据展示权限](../../compliance/assign-ediscovery-permissions.md)。|案例管理 <p> 通信 <p> 合规性搜索 <p> Custodian <p> 导出 <p> Hold <p> 预览 <p> 审阅 <p> RMS 解密|
-|**全局读取者**|成员对报告、警报具有只读访问权限，并且可以看到所有配置和设置。<p> 全局阅读器和安全读者之间的主要区别在于，全局阅读器可以访问 **配置和设置**。|安全信息读取者 <p> 敏感度标签阅读器 <p> 服务保障视图 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报 <p> 仅查看收件人 <p> View-Only记录管理 <p> View-Only保留管理|
+|**全局读者**|成员对报告、警报具有只读访问权限，并且可以看到所有配置和设置。<p> 全局阅读器和安全读者之间的主要区别在于，全局阅读器可以访问 **配置和设置**。|安全信息读取者 <p> 敏感度标签阅读器 <p> 服务保障视图 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only IBM 合规性管理 <p> View-Only管理警报 <p> 仅查看收件人 <p> View-Only记录管理 <p> View-Only保留管理|
 |**信息保护**|完全控制所有信息保护功能，包括敏感度标签及其策略、DLP、所有分类器类型、活动和内容资源管理器以及所有相关报告。|数据分类内容查看器 <p> 信息保护管理员 <p> 信息保护分析师 <p> 信息保护调查员 <p> 信息保护读者|
 |**信息保护管理员**|创建、编辑和删除 DLP 策略、敏感度标签及其策略以及所有分类器类型。 管理终结点 DLP 设置和自动标记策略的模拟模式。|信息保护管理员|
 |**信息保护分析师**|访问和管理 DLP 警报和活动资源管理器。 仅查看 DLP 策略、敏感度标签及其策略以及所有分类器类型。|数据分类列表查看器 <p> 信息保护分析师|
@@ -117,7 +113,6 @@ ms.locfileid: "63557822"
 |**服务保证用户**|成员可以访问安全与合规中心中的服务&部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Microsoft 365。 它还提供有关报告的独立第三方审核Microsoft 365。 有关详细信息，请参阅安全与 [合规](../../compliance/service-assurance.md)中心&保证。|服务保障视图|
 |**主题权限请求管理员**|创建主题权限请求。|案例管理 <p> 主体权限请求管理员 <p> View-Only Case|
 |**监管审核**|成员可以创建和管理用于定义哪类通讯在组织中易受到审查的策略。 有关详细信息，请参阅 [为组织配置通信合规性策略](../../compliance/communication-compliance-configure.md)。|监管审核管理员|
-|
 
 > [!NOTE]
 > <sup>1</sup> 此角色组不会向成员分配搜索 审核日志 或使用可能包含 Exchange 数据的任何报告（如 DLP 或 Defender for Office 365 报告）所需的权限。 若要搜索审核日志或查看所有报告，用户必须分配有Exchange Online。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。 全局管理员可搜索审核日志并查看所有报告，因为它们会自动添加为组织中组织管理角色Exchange Online。 有关详细信息，请参阅在安全与审核日志[中心搜索&搜索。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
@@ -169,10 +164,6 @@ ms.locfileid: "63557822"
 - 主体权限请求管理员
 - 监管审核管理员
 - Tenant AllowBlockList Manager
-
-<br>
-
-****
 
 |Role|说明|默认角色组分配|
 |---|---|---|
@@ -252,4 +243,3 @@ ms.locfileid: "63557822"
 |**仅查看收件人**|查看有关用户和组的信息。|合规管理员 <p> 合规数据管理员 <p> 全局读取者 <p> MailFlow 管理员 <p> 组织管理|
 |**仅查看记录管理**|查看记录管理功能的配置。|合规管理员 <p> 合规数据管理员 <p> <p> 全局读取者 <p> 组织管理|
 |**仅查看保留管理**|查看保留策略、保留标签和保留标签策略的配置。|合规管理员 <p> 合规数据管理员 <p> 全局管理员 <p> 组织管理|
-|

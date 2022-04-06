@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d57097d255b9f64782320dbd380f90b7a98573cb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: df5cbf5297a17dafb80a93ed49c7f7d81bc49d68
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160476"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474346"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>查看并组织 Microsoft Defender for Endpoint 事件队列
 
@@ -47,17 +47,17 @@ ms.locfileid: "61160476"
 - 在页面之间导航
 - 应用筛选器
 
-![事件队列的图像。](images/atp-incident-queue.png)
+:::image type="content" source="images/atp-incident-queue.png" alt-text="事件队列" lightbox="images/atp-incident-queue.png":::
 
 ## <a name="sort-and-filter-the-incidents-queue"></a>对事件队列进行排序和筛选
 可以应用以下筛选器来限制事件列表，并获取更集中的视图。
 
 ### <a name="severity"></a>Severity
 
-事件严重性 | Description
+事件严重性 | 说明
 :---|:---
 高 </br> (红色)  | 通常与高级永久性威胁和 APT (相关的) 。 这些事件表明，由于设备可造成严重损坏，因此存在高风险。
-Medium </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
+中 </br> (橙色)  | 很少在组织中观察到的威胁，例如异常注册表更改、可疑文件的执行和观察到的攻击阶段典型行为。
 低 </br> (黄色)  | 与流行恶意软件和黑客工具关联的威胁，这些威胁不一定表示针对组织的高级威胁。
 信息 </br> (灰色)  | 信息事件可能被视为对网络没有危害，但可以跟踪。
 

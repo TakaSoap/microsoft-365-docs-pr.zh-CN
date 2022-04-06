@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Microsoft 365 组成员将收到组电子邮件，并获取用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
-ms.openlocfilehash: cc70fdf534b7240fd914c42f01b2c89843d1372f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 72da8af8acd0725a5d7509b84f08e4220f7772d4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805828"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594700"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -64,6 +64,8 @@ Microsoft 365 组可以 [配置为Azure Active Directory](/azure/active-director
 如果[管理员启用了](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
 
 Microsoft 365 组不支持与其他Microsoft 365 组或通讯组或安全组进行嵌套。
+
+可将 Microsoft 365 组添加到三个 SharePoint 组（所有者、成员或访问者）之一，以向用户授予网站权限。
 
 ## <a name="distribution-groups"></a>通讯组
 

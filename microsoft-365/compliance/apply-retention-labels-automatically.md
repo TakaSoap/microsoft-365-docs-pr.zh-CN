@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建自动标记保留策略，以便可以自动应用标签以保留所需的内容并删除不需要的内容
-ms.openlocfilehash: d1060bb4330c2dbb23c241cb3095f3b30869b58a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354920"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500429"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -81,7 +81,7 @@ ms.locfileid: "62354920"
     - 如果使用的是信息治理，则导航到：
         - **“解决方案”** > **“信息治理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
-    没有立即在导航窗格中看到解决方案? 首先选择“**全部显示**”。
+    没有立即在导航窗格中看到解决方案？首先选择 **显示所有**。
 
 2. 输入此自动标记策略的名称和说明，然后选择 **下一步**。
 
@@ -151,7 +151,7 @@ SharePoint 和 OneDrive：
 
 ![包含敏感信息类型的策略模板。](../media/sensitive-info-configuration.png)
 
-若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)”。 目前，此方案不支持[了解基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)和[文档指纹](document-fingerprinting.md)。
+若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)”。 目前，此方案不支持[基于确切数据匹配的敏感信息类型](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)和[文档指纹](document-fingerprinting.md)。
 
 选择策略模板后，可添加或删除任意类型的敏感信息，且可更改可信度级别和实例计数。在上一示例屏幕截图中，这些选项已更改，因此保留标签将仅在以下情况时自动应用：
   

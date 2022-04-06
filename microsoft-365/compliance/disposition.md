@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: 2d078eb00ffa6d2dd8279c7e5eb65a8fcfb6fa53
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419179"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594809"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -187,14 +187,16 @@ If you need additional information, visit the helpdesk website (https://support.
   
 - **批准处置**：
     - 当为处置评审的过渡阶段选择此操作（你已配置多个阶段）时：项目将移至下一处置阶段。
-    - 如果对处置评审的最后阶段选择此操作，或者只有一个处置阶段：项目被标记为符合永久删除条件，然后将在 7 天内被永久删除。
+    - 如果对处置评审的最后阶段选择此操作，或者只有一个处置阶段：将此项目标记为符合永久删除条件，然后计时器作业将在 7 天内执行此操作。 要永久删除该项的确切时间取决于工作负载。 有关详细信息，请参阅 [SharePoint 和 OneDrive 的保留工作方式](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive) 和 [Exchange 的保留工作方式](retention-policies-exchange.md#how-retention-works-for-exchange)。
+
 - **重新标记**：
     - 选择此操作时，项目将退出原始标签的处置评审过程。 然后，该项目受新选择的保留标签的保留设置所影响。
+
 - **延期**：
     - 选择此操作后，处置评审将有效暂停，直到延长期结束，然后从第一阶段开始再次触发处置评审。
+
 - **添加审阅者**：
     - 选择此操作后，系统将提示用户指定和添加其他用户以进行审阅。
-    
     > [!NOTE]
     > 此操作不会自动向添加的用户授予[所需权限](#permissions-for-disposition)。 如果他们没有这些权限，则将无法参与处置评审。
 

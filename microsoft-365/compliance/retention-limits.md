@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 4cd8fc5f141f9e039a271e8534e156e4df0582e9
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: 4c175a9e43440c58f74da334a38bc73dae5b76e4
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419123"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595007"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -116,8 +116,16 @@ SharePoint 示例：
 
 对于[内容处置](disposition.md)，有一些需要注意的限制:
 
-- 每个保留标签在每个阶段最多 1000000 个等待处置的项
-
-- 处置证明在项被处置后至多七年内可用，此期间每个保留标签最多 1000000 个项。 
+- 每个租户的最大数量：
     
-如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../admin/get-help-support.md)。
+    - 以下任一处置评审状态下均为 16,000,000 个项目：挂起的处置或批准的处置
+        
+    - 自动处置标记为记录的 16,000,000 个项目（无处置评审）
+
+- 每个保留标签的最大数量：
+    
+    - 每个保留标签在每个阶段最多 1000000 个等待处置的项
+    
+    - 处置证明在项被处置后至多七年内可用，此期间每个保留标签最多 1000000 个项。 
+        
+        如果你需要超过 1000000 个记录项的证明，请联系 [Microsoft 支持](../admin/get-help-support.md)。

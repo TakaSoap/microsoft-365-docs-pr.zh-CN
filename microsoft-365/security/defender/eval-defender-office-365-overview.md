@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0f564d308384cff466f0cd51e0c6a791150a605e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0fece71510237f086e6a6f499a9b6b8b76de2a0e
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320811"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500290"
 ---
-# <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>第 3 步。 启用和试用 Microsoft Defender for Office 365
+# <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>步骤 3. 启用和试用 Microsoft Defender for Office 365
 
 **适用于：**
 - Microsoft 365 Defender
@@ -38,14 +38,13 @@ ms.locfileid: "63320811"
 
 使用以下步骤启用和试用 Microsoft Defender for Office 365。
 
-![将 Microsoft Defender for Office添加到 Defender 评估环境的步骤。](../../media/defender/m365-defender-office-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="将 Microsoft Defender for Office Microsoft Defender 评估环境的步骤" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
 
 下表介绍了图中的步骤。
 
-| |步骤  |说明  |
+| 序列号|步骤  |说明  |
 |---------|---------|---------|
 |1|[查看体系结构要求和关键概念](eval-defender-office-365-architecture.md)    | 了解 Defender for Office 体系结构，并确保Exchange Online环境满足体系结构先决条件。       |
 |2|[启用评估环境](eval-defender-office-365-enable-eval.md)     |   按照步骤设置评估环境。      |
 |3|[设置试点 ](eval-defender-office-365-pilot.md)    |    创建试点组、配置保护并熟悉关键功能和仪表板。     |
-||||
 

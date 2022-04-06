@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何配置门户安全性。
-ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775931"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594743"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>配置Microsoft 365 Lighthouse门户安全性
 
@@ -39,7 +39,7 @@ ms.locfileid: "63775931"
 
 基于角色的访问控制 (RBAC) 基于用户角色授予对资源或信息的访问权限。 对 Lighthouse 中的客户租户数据和设置的访问权限仅限于云解决方案提供商计划云解决方案提供商 (特定) 角色。 若要在 Lighthouse 中设置 RBAC 角色，我们建议使用 GDAP (委派管理员) 为用户实现精细分配。 租户仍 (DAP) 委派管理员权限才能成功载入，但仅 GDAP 客户将很快能够在不依赖 DAP 的情况下载入。 当 DAP 和 GDAP 为客户共存时，GDAP 权限优先。 
 
-若要开始使用 GDAP，请参阅 [设置角色以管理客户租户](m365-lighthouse-set-up-roles.md)。
+若要开始使用 GDAP，请参阅 Microsoft 365 Lighthouse 中[的权限概述](m365-lighthouse-overview-of-permissions.md)。
 
 MSP 技术人员还可通过使用管理员代理或支持人员代理角色通过 DAP (访问) 。
 

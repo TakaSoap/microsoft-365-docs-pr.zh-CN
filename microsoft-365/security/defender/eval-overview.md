@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2502a4781e9844fca8de3113d64ee1836efddabd
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: f7830bb25f2572c43d665d059e0a36bc1fdaa172
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557889"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500774"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>评估和试点 Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender是基于云的统一、入侵前和入侵后企业防御�
 
 在此图中，攻击正在进行。 网络钓鱼电子邮件到达组织中员工的收件箱，该员工在无意中打开电子邮件附件。 这将安装恶意软件，从而导致一系列可能以敏感数据被盗结束的事件链。 但在这种情况下，Defender for Office 365运行。
 
-![如何Microsoft 365 Defender威胁链。](../../media/defender/m365-defender-eval-threat-chain.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="各种攻击尝试" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
 
 在此图中：
 
@@ -93,7 +93,7 @@ Microsoft 365 Defender由这些安全技术共同运行。 无需所有这些组
 
 下图说明了关键组件和集成Microsoft 365 Defender体系结构。 *本系列* 文章中提供了每个 Defender 组件的详细体系结构和用例方案。
 
-![Microsoft 365 Defender高级体系结构。](../../media/defender/m365-defender-eval-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="应用程序门户的Microsoft 365 Defender体系结构" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
 
 在此图中：
 
@@ -116,20 +116,19 @@ Microsoft 365 Defender由这些安全技术共同运行。 无需所有这些组
 
 Microsoft 建议按说明Microsoft 365启用以下组件：
 
-![Microsoft 365 Defender高级评估过程。](../../media/defender/m365-defender-eval-process.png)
+:::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="Microsoft 365 Defender 门户中的Microsoft 365 Defender流程" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
 下表描述了此图。
 
-|步骤|链接|说明|
-|---|---|---|
-|1|[创建评估环境](eval-create-eval-environment.md)|此步骤可确保你拥有适用于你的Microsoft 365 Defender。|
-|2|[启用 Defender for Identity](eval-defender-identity-overview.md)|查看体系结构要求、启用评估，并演练用于识别和修正不同攻击类型的教程。|
-|3|[启用 Defender for Office 365](eval-defender-office-365-overview.md)|确保满足体系结构要求，启用评估，然后创建试点环境。 此组件包括Exchange Online Protection，因此你将在此处实际 *评估这两* 者。|
-|4|[为终结点启用 Defender](eval-defender-endpoint-overview.md)|确保满足体系结构要求，启用评估，然后创建试点环境。|
-|5|[启用 Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)|确保满足体系结构要求，启用评估，然后创建试点环境。|
-|6 |[调查并响应威胁](eval-defender-investigate-respond.md)|模拟攻击并开始使用事件响应功能。|
-|7 |[将试用版提升到生产](eval-defender-promote-to-production.md)|将Microsoft 365组件一个一个地提升为生产。|
-||||
+|  序列号   |步骤  |说明  |
+|------|---------|---------|
+|1     | [创建评估环境](eval-create-eval-environment.md)       |此步骤可确保你拥有适用于你的Microsoft 365 Defender。         |
+|2     | [启用 Defender for Identity](eval-defender-identity-overview.md)        | 查看体系结构要求、启用评估，并演练用于识别和修正不同攻击类型的教程。   |
+|3     | [启用 Defender for Office 365 ](eval-defender-office-365-overview.md)       | 确保满足体系结构要求，启用评估，然后创建试点环境。 此组件包括Exchange Online Protection，因此你将在此处实际 *评估这两* 者。      |
+|4     | [为终结点启用 Defender ](eval-defender-endpoint-overview.md)       | 确保满足体系结构要求，启用评估，然后创建试点环境。         |
+|5     | [启用 Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  确保满足体系结构要求，启用评估，然后创建试点环境。        |
+|6      | [调查并响应威胁](eval-defender-investigate-respond.md)        |   模拟攻击并开始使用事件响应功能。      |
+|7      | [将试用版提升到生产](eval-defender-promote-to-production.md)        | 将Microsoft 365组件一个一个地提升为生产。        |
 
 这是通常推荐的顺序，旨在根据部署和配置功能通常需要多少工作量来快速利用功能的价值。 例如，可以在Office 365 Defender for Endpoint 中注册设备所花费的更少时间配置 Defender for Endpoint。 当然，您应该确定组件优先级以满足业务需求，并可以按不同顺序启用这些组件。
 

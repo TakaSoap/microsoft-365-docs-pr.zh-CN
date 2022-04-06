@@ -21,12 +21,12 @@ ms.custom:
 description: 本主题将指导你完成影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82e96b4b35d5095a6844618125ee49f1dba6ffd6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318517"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682870"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -47,10 +47,6 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 
 Microsoft 365 Defender门户包含用于保护环境的功能。 它还包括可用于监视和采取措施的报告和仪表板。 某些区域具有默认策略配置。 某些区域不包括默认策略或规则。 访问电子邮件和协作策略 **&**\>策略&**策略** \> **"** 下的这些策略，以调整威胁管理设置，实现更安全的环境。
 
-<br>
-
-****
-
 |领域|默认策略？|建议|
 |---|---|---|
 |**防钓鱼**|是|配置默认的防钓鱼策略，如下所述：[在 EOP 和 Defender](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365) 中配置防钓鱼保护设置Office 365。 <p> 详细信息： <ul><li>[Microsoft 365](set-up-anti-phishing-policies.md)</li><li>[Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [模拟见解](impersonation-insight.md)</li><li>[EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)</li><li>[管理租户允许/阻止列表](tenant-allow-block-list.md)。</li></ul>|
@@ -59,7 +55,6 @@ Microsoft 365 Defender门户包含用于保护环境的功能。 它还包括可
 |**保险箱 Microsoft Defender for Office 365**|否|配置链接的全局设置保险箱创建保险箱链接策略，如下所述：在 [Microsoft Defender](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365) 中配置 保险箱 链接设置Office 365。 <p> 详细信息： <ul><li>[推荐保险箱链接设置](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[设置安全链接策略](set-up-safe-links-policies.md)</li><li>[保险箱 Microsoft Defender for Office 365](safe-links.md)</li><li>[在 Microsoft Defender for 保险箱 中配置链接的全局Office 365](configure-global-settings-for-safe-links.md)</li></ul>|
 |**反垃圾邮件 (邮件筛选)**|是|配置默认反垃圾邮件策略，如下所述： [在 EOP 中配置反垃圾邮件保护设置](protect-against-threats.md#part-3---anti-spam-protection-in-eop) <p> 详细信息： <ul><li>[建议的反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[EOP 中的反垃圾邮件保护](anti-spam-protection.md)</li><li>[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)</li></ul>|
 |***电子邮件身份验证***|是|电子邮件身份验证使用 DNS 记录向电子邮件中添加有关邮件源和发件人的可验证信息。 Microsoft 365自动为默认域配置电子邮件 (onmicrosoft.com) ，Microsoft 365管理员还可以为自定义域配置电子邮件身份验证。 使用三种身份验证方法： <ul><li>发件人策略框架 (SPF) 。</li><ul><li>有关设置，请参阅[在 Microsoft 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>域密钥标识的邮件 (DKIM) 。</li><ul><li>请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。</li><li>配置 DKIM 后，在 Microsoft 365 Defender 门户中启用它。</li></ul><li>基于域的邮件身份验证、报告和一致性 (DMARC) 。</li><ul><li>对于 DMARC [设置，使用 DMARC 验证邮件Microsoft 365](use-dmarc-to-validate-email.md)。</li></ul></ul>|
-|
 
 > [!NOTE]
 > 对于 SPF 的非标准部署、混合部署和疑难解答：Microsoft 365如何使用发件人策略框架 [ (SPF) 防止欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)。
@@ -68,31 +63,21 @@ Microsoft 365 Defender门户包含用于保护环境的功能。 它还包括可
 
 访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。
 
-<br>
-
-****
-
 |仪表板|说明|
 |---|---|
 |电子邮件安全报告|这些报告在 Exchange Online Protection 中提供。 有关详细信息，请参阅在电子邮件[门户中查看Microsoft 365 Defender报告](view-email-security-reports.md)。|
 |Defender for Office 365 报告|报告仅在 Defender for Office 365。 有关详细信息，请参阅在 Office 365 门户中查看适用于[Microsoft 365 Defender报告](view-reports-for-mdo.md)。|
 |邮件流报告和见解|这些报告和见解位于 EAC Exchange管理 (中心) 。 有关详细信息，请参阅邮件[流报告和](/exchange/monitoring/mail-flow-reports/mail-flow-reports)[邮件流见解](/exchange/monitoring/mail-flow-insights/mail-flow-insights)。|
 |[威胁资源管理器（或实时检测）](threat-explorer.md)|如果你正在调查或遇到对租户的攻击，请使用资源管理器 (或实时检测) 分析威胁。 资源管理器 (实时检测报告) 显示一段时间的攻击量，并且你可以按威胁系列、攻击者基础结构等分析此数据。 您还可以为"事件"列表标记任何可疑电子邮件。|
-|
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>配置Exchange Online范围内的其他设置
 
 下面是一些建议的其他设置。
 
-<br>
-
-****
-
 |领域|建议|
 |---|---|
 |**邮件流规则** (也称为传输规则) |添加邮件流规则，通过阻止可执行文件类型和包含宏的Office来帮助防范勒索软件。 有关详细信息，请参阅使用[邮件流规则检查邮件Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <p> 请参阅以下其他主题： <ul><li>[防范勒索软件](../../admin/security-and-compliance/secure-your-business-data.md#5-protect-against-ransomware)</li><li>[恶意软件和勒索软件保护Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)</li><li>[从 Office 365 中的勒索软件攻击中Office 365](recover-from-ransomware.md)</li></ul> <p> 创建邮件流规则以防止电子邮件自动转发到外部域。 有关详细信息，请参阅使用安全 [分数缓解客户端外部转发规则](/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。 <p> 详细信息：[邮件流规则 (传输规则) Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**新式验证**|新式验证是使用 MFA 身份验证和 MFA (的先决条件) 。 建议使用 MFA 来保护对云资源（包括电子邮件）的访问。 <p> 请参阅以下主题： <ul><li>[在 Exchange Online 中启用或禁用新式身份验证](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)</li><li>[Skype for Business Online：为租户启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)</li></ul> <p> 默认情况下，为 Office 2016 客户端、SharePoint Online 和 OneDrive for Business 启用新式OneDrive for Business。 <p> 详细信息：[新式验证如何适用于 Office 2013 和 Office 2016 客户端应用](../../enterprise/modern-auth-for-office-2013-and-2016.md)|
-|
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>在管理中心中配置租户SharePoint策略
 
@@ -102,14 +87,9 @@ SharePoint级别配置的工作组网站允许使用匿名访问链接与外部�
 
 若要支持基线保护的目标，请配置租户范围的共享策略，如此处所建议。 与租户范围策略不同，单个网站的共享设置可能更加严格，但不允许。
 
-<br>
-
-****
-
 |领域|包括默认策略|建议|
 |---|---|---|
 |**共享** (SharePoint Online 和 OneDrive for Business) |是|默认情况下启用外部共享。 建议使用这些设置： <ul><li>允许向经过身份验证的外部用户共享和使用匿名访问 (默认设置) 。</li><li>匿名访问链接将在这几天内过期。 如果需要，请输入一个数字，如 30 天。</li><li>默认链接类型 - 选择"内部 (仅组织内部) 。 希望使用匿名链接共享的用户必须从共享菜单中选择此选项。</li></ul> <p> 详细信息： [外部共享概述](/sharepoint/external-sharing-overview)|
-|
 
 SharePoint管理中心OneDrive for Business管理中心包含相同的设置。 任一管理中心中的设置均适用于这两者。
 

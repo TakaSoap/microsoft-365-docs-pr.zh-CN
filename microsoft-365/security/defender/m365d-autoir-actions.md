@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a77a64e2323cc836df9b19694deb5c32ee877fb8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323229"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500796"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -57,7 +57,7 @@ ms.locfileid: "63323229"
 
 3. 在操作中心的"待定 **"** 选项卡上，选择列表中的项目。 将打开其飞出窗格。 下面是一个示例。
 
-   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作的示例。" lightbox="../../media/air-actioncenter-itemselected.png":::
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="批准或拒绝操作的选项" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. 查看飞出窗格中的信息，然后执行以下步骤之一：
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。

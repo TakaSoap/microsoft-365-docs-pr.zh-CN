@@ -16,14 +16,14 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何阻止将来宾添加到特定组
-ms.openlocfilehash: 8a8a62b2a320fe000580651a2577f625a9ce1b90
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 4b9ebc6366934db52c30d51091ac9991ff82d8c3
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61064483"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570054"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止将来宾添加到特定组Microsoft 365或Microsoft Teams团队
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来宾添加到特定组或Microsoft 365组Microsoft Teams组
 
 如果要允许对大多数组和团队进行来宾访问，但希望阻止某些组和团队访问来宾，可以阻止单个组和团队的来宾访问。  (通过阻止来宾访问关联组来阻止来宾访问团队。) 这将阻止添加新来宾，但不删除已加入组或团队的来宾。
 
@@ -31,9 +31,9 @@ ms.locfileid: "61064483"
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 更改组设置
 
-您还可以使用 PowerShell 阻止向各个组添加新来宾。  (请记住，团队的关联网站SharePoint单独的[来宾](/sharepoint/change-external-sharing-site)共享控件 。) 
+您还可以使用 PowerShell 阻止向各个组添加新来宾。  (请记住，团队的关联网站SharePoint单独的[来宾共享控件](/sharepoint/change-external-sharing-site)。) 
 
-必须使用 [PowerShell](/powershell/azure/active-directory/install-adv2) Azure Active Directory预览版Graph (**AzureADPreview**) 更改组级别来宾访问设置：
+必须使用 Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2) 的预览版Graph (**AzureADPreview**) 更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 
@@ -44,7 +44,7 @@ ms.locfileid: "61064483"
 > [!NOTE]
 > 您必须具有全局管理员权限才能运行这些命令。 
 
-运行以下脚本，更改为要阻止来宾访问 */<GroupName/>* 的组的名称。
+运行以下脚本，更改 *\<GroupName\>* 为要阻止来宾访问的组的名称。
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -68,7 +68,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
     
 ![显示来宾组访问已设置为 false 的 PowerShell 窗口屏幕截图。](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
-如果要切换回此设置以允许来宾访问特定组，请运行以下脚本，更改为要允许来宾访问的 ```<GroupName>``` 组的名称。
+如果要切换回此设置以允许 ```<GroupName>``` 来宾访问特定组，请运行以下脚本，更改为要允许来宾访问的组的名称。
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -85,9 +85,9 @@ Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectoryS
 
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>基于其域允许或阻止来宾访问
 
-你可以允许或阻止使用特定域的来宾。 例如，如果您的企业 (Contoso) 与另一个业务 (Fabrikam) 有合作关系，您可以将 Fabrikam 添加到允许列表中，以便您的用户可以将那些来宾添加到其组中。
+你可以允许或阻止使用特定域的来宾。 例如，如果您的企业 (Contoso) 与另一个业务 (Fabrikam) 有合作关系，您可以将 Fabrikam 添加到允许列表中，以便您的用户可以将那些来宾添加到其组。
 
-有关详细信息，请参阅允许或阻止来自特定组织的 [B2B 用户的邀请](/azure/active-directory/b2b/allow-deny-list)。
+有关详细信息，请参阅允许 [或阻止来自特定组织的 B2B 用户的邀请](/azure/active-directory/b2b/allow-deny-list)。
 
 ## <a name="add-guests-to-the-global-address-list"></a>将来宾添加到全局地址列表
 

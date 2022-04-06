@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a2b68e3e85b2c621a002ce762b7ec59ce31c891
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 2bfd7dfd0cf56c8546cd21e5127bc8ef432e1cc5
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712743"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594765"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -65,7 +65,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |-----------|-------:|----|----|--------|----|
 |[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 新建文档                                         | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|<[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 已有文档 | 预览：即将于[当前频道（预览）](https://office.com/insider)中退出 | 预览：即将于[当前频道（预览）](https://office.com/insider)中退出 | 审阅中 | 审阅中 | 推出：[是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|<[将默认标签应用于](sensitivity-labels.md#what-label-policies-can-do) 已有文档 | 预览：即将于[当前频道（预览）](https://office.com/insider)中退出 | 预览：即将于[当前频道（预览）](https://office.com/insider)中退出 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 当前频道：1910+ <br /><br> 每月企业频道：1910+  <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 当前频道：1910+ <br /><br> 每月企业频道：1910+ <br /><br> 半年企业频道：2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 双字节字符集支持的发行说明。
-ms.openlocfilehash: e87e88b63bf44c7ea4154fa24c05c0e8e252a446
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 2de0e67c78ac558f4bdc2648790e49fad86e3178
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111491"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595038"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>双字节字符集支持发行说明
 
@@ -40,10 +40,16 @@ ms.locfileid: "61111491"
 
 - 将字典指定为类型信息的通信合规性策略不会检测 Teams 私人聊天和频道聊天。
 
-- 目前阶段不支持采用以下条件来确保通信合规性（我们计划以后修复这些问题）： 
+- 通信合规性在此阶段不支持以下条件（我们计划在将来修复这些问题）： 
   - “邮件包含其中任意字词”
   - “邮件不包含其中任意字词”
   - “附件包含其中任意字词”
   - “附件包含其中任意字词”
+
+- 数据丢失防护策略可在运行 Catalina 10.15 及更高版本的 macOS 设备（预览版）上强制执行，但以下所述的东亚语言（包括日语）的条件除外。
+  - 不检测全角数字，例如使用内置模板（如日本银行帐号）
+  - 不检测没有分隔符的数字
+  - 对于敏感信息类型，不检测使用半角空格分隔的关键字。 例如：将日语单词设置为敏感信息类型，如果其位于句子中，则不检测字典
+  - 不检测包含英语和日语（東京2020）的单词
 
 相反，建议使用可检测邮件和附件中的模式的关键字字典创建自定义敏感信息类型 (SIT)，并将此自定义 SIT 作为通信合规性策略条件。

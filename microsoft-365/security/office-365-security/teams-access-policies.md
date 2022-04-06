@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ec4aa28c25982ea81662ff26fa19f615d13cd314
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465390"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682892"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>用于保护聊天Teams组和文件的策略建议
 
@@ -49,7 +49,7 @@ ms.locfileid: "64465390"
 
 为了保护用户中的聊天、Teams，下图说明了从通用标识和设备访问策略更新的策略。 对于要更新的每个策略，请确保Teams和依赖服务包含在云应用的分配中。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="策略更新摘要，用于保护对Teams服务的访问" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="用于保护对服务及其依赖Teams的访问的策略更新摘要。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 这些服务是分配云应用时要包括的Teams：
 
@@ -77,7 +77,7 @@ ms.locfileid: "64465390"
 
 为了参考，下图说明了Teams的服务。 有关详细信息和图示，请参阅Microsoft Teams IT 架构师[的 Microsoft 365 相关生产力服务](../../solutions/productivity-illustrations.md)。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="此图Teams依赖SharePoint、OneDrive for Business和Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="显示Teams依赖关系SharePoint、OneDrive for Business和Exchange。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>来宾和外部访问Teams
 
@@ -140,7 +140,7 @@ Teams还允许你在各种位置（如频道或个人聊天）使用应用。 �
 
 ## <a name="next-steps"></a>后续步骤
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="步骤 4：云Microsoft 365策略" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+![步骤 4：云Microsoft 365策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 为：配置条件访问策略：
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解管理员如何设置和使用数据连接器，以将数据从 Instant Bloomberg 聊天工具导入和存档到Microsoft 365。
-ms.openlocfilehash: 14495a219ce73b8d0cd4e937b4feae9aa2210da1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4205c678a6445203e4a057aab3b7c9d2c1acd1d8
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313323"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569966"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
@@ -135,9 +135,15 @@ Instant Bloomberg 数据存储在用户邮箱中后，可以将 Microsoft 365 �
 
     - **SFTP 端口：** Bloomberg SFTP 网站的端口号。 连接器使用此端口连接到 SFTP 站点。
 
-5. 在 **"选择要导入的数据类型"页上** ，选择要从邮件中导入的必需 **数据类型**
+5. 在 **"定义用户** "页上，选择下列选项之一以指定要导入其数据的用户。
 
-6. 在"**将 Instant Bloomberg 用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射
+    - **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+    - **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+6. 在 **"选择要导入的数据类型"页上** ，选择要从邮件中导入的必需 **数据类型**
+
+7. 在"**将 Instant Bloomberg 用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射
 
    > [!NOTE]
    > 连接器将聊天消息项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 **InstantBloomberg** 的新文件夹，项目将导入到该文件夹中。 连接器使用 *CorporateEmailAddress* 属性的值进行连接。 每个聊天消息都包含此属性，并且使用聊天消息每个参与者的电子邮件地址填充该属性。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含 Bloomberg UUID 和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，以查找每个聊天项。 如果找不到与用户的 Bloomberg UUID Microsoft 365有效的连接器，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在聊天项目的Microsoft 365映射文件或 *CorporateEmailAddress* 属性中找不到有效的用户，将不会导入该项。
@@ -215,11 +221,17 @@ Instant Bloomberg 数据存储在用户邮箱中后，可以将 Microsoft 365 �
 
 7. 成功验证连接后，单击"下一 **步"**。
 
-8. 在"**将 Instant Bloomberg 用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射。
+8. 在 **"定义用户** "页上，选择下列选项之一以指定要导入其数据的用户。
+
+    - **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+    - **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+9. 在"**将 Instant Bloomberg 用户映射到Microsoft 365"页上**，启用自动用户映射并按需要提供自定义用户映射。
 
    > [!NOTE]
    > 连接器将聊天消息项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 **InstantBloomberg** 的新文件夹，项目将导入到该文件夹中。 连接器使用 *CorporateEmailAddress* 属性的值进行连接。 每个聊天消息都包含此属性，并且使用聊天消息每个参与者的电子邮件地址填充该属性。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含 Bloomberg UUID 和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，以查找每个聊天项。 如果找不到与用户的 Bloomberg UUID Microsoft 365有效的连接器，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在聊天项目的Microsoft 365映射文件或 *CorporateEmailAddress* 属性中找不到有效的用户，将不会导入该项。
 
-9. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
+10. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
 
-10. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。
+11. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。

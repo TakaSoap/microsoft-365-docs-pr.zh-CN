@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 49d6ee473f84b86f17482c00e254e96b64ec0bf7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 727a35b5d5b34fa567b399fcc81ccb0c05ded106
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166394"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500407"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>评估 Microsoft Defender for Endpoint 
 
@@ -37,7 +37,7 @@ ms.locfileid: "61166394"
 
 [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。
 
-可以通过启动免费试用版评估你的组织的 Microsoft Defender for [Endpoint。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)
+可以通过启动免费试用版来评估你的组织的 Microsoft Defender for [Endpoint](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial)。
 
 还可以按照以下说明评估 Microsoft Defender for Endpoint 中的不同安全功能。
 
@@ -45,7 +45,6 @@ ms.locfileid: "61166394"
 
 这些功能有助于防止攻击和利用感染你的组织。
 
-- [评估攻击面减少](./evaluate-attack-surface-reduction.md)
 - [评估 Exploit Protection](./evaluate-exploit-protection.md)
 - [网络保护功能评估](./evaluate-exploit-protection.md)
 - [受控文件夹访问评估](./evaluate-controlled-folder-access.md)

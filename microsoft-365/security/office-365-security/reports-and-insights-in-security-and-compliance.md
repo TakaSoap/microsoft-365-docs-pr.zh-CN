@@ -19,12 +19,12 @@ description: 了解安全与合规中心提供的智能报告和见解&，以及
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5364733dc6dafb4508ff68447eb0b8af772da359
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7f7171a7f064b9b5ad83dc21e2369cf2700553c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466380"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683244"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -41,7 +41,7 @@ ms.locfileid: "64466380"
 
 安全与合规中心提供的监视功能&智能报告和见解，使合规性和安全管理员能够重点关注高优先级问题，如安全攻击或可疑活动增加。 在仪表板中，智能报表和见解类似于下图：
 
-:::image type="content" source="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png" alt-text="安全与合规中心&报告仪表板" lightbox="../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png":::
+![安全与合规中心中的&仪表板。](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 除了突出显示问题区域外，智能报告和见解还包括用于查看和浏览数据的建议和链接，以及快速操作。 例如，如果组织突然有大量电子邮件被最终用户标记为垃圾邮件，可能会建议你重新访问反垃圾邮件策略，以确保正确的保护级别已到位。
 

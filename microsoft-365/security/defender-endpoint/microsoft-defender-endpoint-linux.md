@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 21296ec7993b0d65e509d51f62ddae8f3415945c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680811"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500708"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ ms.locfileid: "63680811"
 适用于 Linux 的 Microsoft Defender for Endpoint 包括反恶意软件和终结点检测和响应 (EDR) 功能。 
 
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 - 访问 Microsoft 365 Defender 门户
 - 使用系统系统 [管理器的](https://systemd.io/) Linux 分发
@@ -77,7 +77,7 @@ ms.locfileid: "63680811"
 
 ### <a name="system-requirements"></a>系统要求
 
-- 支持 Linux 服务器分发和 x64 (AMD64/EM64T) 版本：
+- 支持 Linux 服务器分发和 x64 (AMD64/EM64T) x86_64版本：
 
   - Red Hat Enterprise Linux 6.7 或更高版本
   - Red Hat Enterprise Linux 7.2 或更高版本
@@ -129,19 +129,50 @@ ms.locfileid: "63680811"
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
+    对于 Red Hat Enterprise Linux 6 和 CentOS 6，受支持的内核版本列表为：
+       - 对于 6.7：2.6.32-573。* 
+       - 对于 6.8：2.6.32-642.* 
+       - 对于 6.9：2.6.32-696.* 
+       - 对于 6.10：2.6.32.754.2.1.el6.x86_64 2.6.32-754.41.2：
 
-    > [!NOTE]
-    > 发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 提供的版本低于本节中列出的版本仅提供技术升级支持。
+ > [!NOTE]
+ > 发布新程序包版本后，仅对前两个版本的支持减少到技术支持。 提供的版本低于本节中列出的版本仅提供技术升级支持。
 
-  - 对于其余受支持的分发，所需的最低内核版本为 3.10.0-327
+  版本列表：
 
-- 事件提供程序机制
-  - Red Hat Enterprise Linux 6 和 CentOS 6：`Talpa`基于内核模块的解决方案
-  - 对于其余受支持的分发： `Fanotify`
-    - 必须 `fanotify` 启用内核选项
+  - 2.6.32-754.2.1.el6.x86_64 
+  - 2.6.32-754.17.1.el6.x86_64
+  - 2.6.32-754.29.1.el6.x86_64
+  - 2.6.32-754.3.5.el6.x86_64 
+  - 2.6.32-754.18.2.el6.x86_64
+  - 2.6.32-754.29.2.el6.x86_64
+  - 2.6.32-754.6.3.el6.x86_64 
+  - 2.6.32-754.22.1.el6.x86_64
+  - 2.6.32-754.30.2.el6.x86_64
+  - 2.6.32-754.9.1.el6.x86_64 
+  - 2.6.32-754.23.1.el6.x86_64
+  - 2.6.32-754.33.1.el6.x86_64
+  - 2.6.32-754.10.1.el6.x86_64
+  - 2.6.32-754.24.2.el6.x86_64
+  - 2.6.32-754.35.1.el6.x86_64
+  - 2.6.32-754.11.1.el6.x86_64
+  - 2.6.32-754.24.3.el6.x86_64
+  - 2.6.32-754.39.1.el6.x86_64
+  - 2.6.32-754.12.1.el6.x86_64
+  - 2.6.32-754.25.1.el6.x86_64
+  - 2.6.32-754.41.2.el6.x86_64
+  - 2.6.32-754.14.2.el6.x86_64
+  - 2.6.32-754.27.1.el6.x86_64
+  - 2.6.32-754.15.3.el6.x86_64
+  - 2.6.32-754.28.1.el6.x86_64       
 
-      > [!CAUTION]
-      > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify`其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
+
+- 最低内核版本 3.10.0-327
+
+- 必须 `fanotify` 启用内核选项
+
+  > [!CAUTION]
+  > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify`其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
 
 - 磁盘空间：1 GB
 
@@ -193,12 +224,10 @@ ms.locfileid: "63680811"
 ****
 
 
-|域列表的电子表格| 说明|
+|域列表的电子表格| Description|
 |---|---|
-|适用于商业客户的 Microsoft Defender 终结点 URL 列表 | 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表| Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
-
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender 终结点 URL 电子表格" lightbox="images/mdatp-urls.png":::|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载 [电子表格](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
+|||
 
 > [!NOTE]
 > 有关更具体的 URL 列表，请参阅 [配置代理和 Internet 连接设置](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。

@@ -1,6 +1,6 @@
 ---
-title: Linux 上的 Microsoft Defender for Endpoint 的新增功能
-description: Linux 上的 Microsoft Defender for Endpoint 的主要更改列表。
+title: Linux 上 Microsoft Defender for Endpoint 的新增功能
+description: Linux 上 Microsoft Defender for Endpoint的主要更改列表。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， whatsnew， release
 ms.prod: m365-security
 ms.mktglfcycl: security
@@ -15,19 +15,24 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 48b278d23cd724cade823d2a6b052b11d02a3a13
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 45b5bbcc1268c1f425b914a3f8279fe8dcc583f2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401086"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569944"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的新增功能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上 Microsoft Defender for Endpoint 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016274-30122022162740"></a>101.62.74 (30.122022.16274.0) 
+
+- 解决了产品在较旧的内核版本上运行时错误地阻止访问大于 2GB 的文件的问题
+- 错误修补程序
 
 ## <a name="1016093-30122012160930"></a>101.60.93 (30.122012.16093.0) 
 
@@ -41,6 +46,7 @@ ms.locfileid: "63401086"
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0) 
 
 - 命令行工具现在支持将隔离的文件还原到最初检测到该文件的位置。 这可以通过 完成 `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`。
+- 从此版本开始，可以按需评估 Linux 的网络保护
 - 错误修补程序
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0) 
@@ -53,7 +59,7 @@ ms.locfileid: "63401086"
 
 ## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0) 
 
-- 添加了检测应用程序使用的易受攻击的 log4j Java的功能。 定期检查计算机以运行具有已加载的 log4j Java进程。 该信息将报告给 Microsoft Defender 终结点后端，并公开在门户的漏洞管理区域中。
+- 添加了检测应用程序使用的易受攻击的 log4j Java的功能。 定期检查计算机以运行具有已加载的 log4j Java进程。 该信息将报告给Microsoft Defender for Endpoint后端，并公开在门户的"漏洞管理"区域中。
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0) 
 
@@ -62,7 +68,7 @@ ms.locfileid: "63401086"
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0) 
 
-- 从此版本开始，我们将为以下部分提供 Microsoft Defender for Endpoint 支持： 
+- 从此版本开始，我们将为以下Microsoft Defender for Endpoint提供一系列支持： 
   - RHEL6.7-6.10 和 CentOS6.7-6.10 版本。
   - Amazon Linux 2
   - Fedora 33 或更高版本
@@ -95,8 +101,8 @@ ms.locfileid: "63401086"
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0) 
 
-- Linux 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [适用于美国政府终结点客户的 Microsoft Defender](gov.md)。
-- 修复了在 LINUX 上使用 Microsoft Defender for Endpoint（在带一个使用有一个使用有一个更新的系统）的系统上导致操作系统挂起的问题
+- Microsoft Defender for Endpoint Linux 上的预览版现在可供美国政府客户预览使用。 有关详细信息，请参阅Microsoft Defender for Endpoint[美国政府客户的信息](gov.md)。
+- 修复了在 LINUX 上Microsoft Defender for Endpoint使用具有一个使用有一个更新的系统导致操作系统挂起的问题
 - 性能改进& Bug 修复
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0) 

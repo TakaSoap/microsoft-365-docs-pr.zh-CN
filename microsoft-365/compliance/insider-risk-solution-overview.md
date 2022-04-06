@@ -1,6 +1,6 @@
 ---
 title: 内部风险解决方案
-description: 了解如何在组织中通过内部风险解决方案帮助最大程度地降低Microsoft 365。
+description: 了解如何通过组织中内部风险解决方案帮助最大程度地降低Microsoft 365。
 keywords: Microsoft 365、内部风险、合规性
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: de4fb39219674c23b35672d6d12a8b124e748866
-ms.sourcegitcommit: 7e59802f251da96ec639fb09534aa96acf5d6ce7
+ms.openlocfilehash: 381b9cafe50f8a9aa3788e17668d642b291d5279
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61072803"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594853"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -36,30 +36,30 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 | ![数据泄漏图标。](../media/ir-risk-data-spillage.png)| 数据泄漏 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | !["违反保密性"图标。](../media/ir-risk-confidentiality-violations.png)| 违反保密规定 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 | ![IP 盗窃图标。](../media/ir-risk-ip-theft.png)| IP 盗窃 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
-| ![工作场所暴力图标。](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![支持](../media/check-mark.png) |  |  |  |
+| ![工作场所暴力图标。](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![受支持](../media/check-mark.png) |  |  |  |
 | ![欺诈/欺诈图标。](../media/ir-risk-fraud.png)| 欺诈 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | ![策略违反图标。](../media/ir-risk-policy-violations.png)| 策略违反 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| ![预览体验成员交易/握手图标。](../media/ir-risk-insider-trading.png)| 内幕交易 | ![支持](../media/check-mark.png) |  |  |  |
+| ![预览体验成员交易/握手图标。](../media/ir-risk-insider-trading.png)| 内幕交易 | ![受支持](../media/check-mark.png) |  |  |  |
 | !["利益冲突"图标。](../media/ir-risk-conflicts-of-interest.png)| 冲突 | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |  |
 | ![敏感数据泄露/设备图标。](../media/ir-risk-sensitive-data-leaks.png)| 敏感数据泄露 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
-| ![工作场所暴力/人员图标。](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![支持](../media/check-mark.png) |  |  |  |
+| ![工作场所暴力/人员图标。](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![受支持](../media/check-mark.png) |  |  |  |
 | ![安全违反图标。](../media/ir-risk-security-violations.png)| 违反安全规定 |  | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |
 | ![违反法规的图标。](../media/ir-risk-regulatory-compliance-violations.png)| 违反法规遵从性 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 
 ## <a name="microsoft-365-insider-risk-solutions"></a>Microsoft 365 内部风险解决方案
 
-若要帮助组织抵御内部风险，请使用Microsoft 365功能。
+若要帮助组织抵御内部风险，请使用Microsoft 365和特性。
 
 ### <a name="communication-compliance"></a>通信合规性
 
-通信合规性通过帮助您检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 通信合规性在下列订阅中可用：
+通信合规性有助于检测、捕获和处理组织中的不当消息，从而最大程度地降低通信风险。 通信合规性在下列订阅中可用：
 
-- Microsoft 365 E5/A5/G5 订阅 (付费版或试用版) 
-- Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
-- Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
+- Microsoft 365 E5/A5/F5/G5 订阅 (付费或试用版) 
+- Microsoft 365 E3/A3/F3/G5 订阅 + Microsoft 365 E5/A5/F5/G5 合规性加载项
+- Microsoft 365 E3/A3/F3/G5 订阅 + Microsoft 365 E5/A5/F5/G5 Insider Risk Management 加载项
 - Office 365 企业版 E5 订阅（付费或试用版本）
 - Office 365 A5 订阅（付费或试用版本）
-- Office 365 企业版 E3 订阅和 Office 365 高级合规版附加设备（不再适用于新订阅）
+- Office 365 企业版 E3 订阅 + Office 365 高级合规版加载项（新订阅已不再可用，请参阅注释）
 
 ### <a name="insider-risk-management"></a>内部风险管理
 
@@ -67,7 +67,7 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 以下订阅中提供内部风险管理：
 
-- Microsoft 365 E5/A5/G5 订阅 (付费版或试用版) 
+- Microsoft 365 E5/A5/G5 订阅 (付费或试用版) 
 - Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
 - Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
 - Office 365 E3 订阅 + 企业移动性和安全性 E3 + Microsoft 365 E5 合规加载项
@@ -80,13 +80,13 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 - Microsoft 365 E5/A5 订阅 (付费或试用版) 
 - Office 365 E5/A5/A3/A1 订阅 (付费或试用版) 
-- Office 365 高级合规版加载项 (不再可用于新订阅) 
+- Office 365 高级合规版加载项 (新订阅不再) 
 - Microsoft 365 E3/A3/A1 订阅 + Microsoft 365 E5/A5 合规性加载项
 - Microsoft 365 E3/A3/A1 订阅 + Microsoft 365 E5/A5 内部风险管理加载项
 
 ### <a name="privileged-access-management"></a>特权访问管理
 
-利用特权访问管理，可以精细地控制特权Exchange Online管理任务Office 365。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
+特权访问管理允许精细地访问控制特权Exchange Online管理任务Office 365。 它可以帮助保护你的组织免受具有永久访问敏感数据或访问关键配置设置权限的现有特权管理账户带来的安全问题。
 
 特权访问管理在下列订阅中可用：
 
@@ -95,9 +95,9 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 - Office 365 企业版 E5 订阅（付费或试用版本）
 - Office 365 A5 订阅（付费或试用版本）
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 合规加载项
-- Microsoft 365 E3订阅 + Microsoft 365 E5信息保护和管理加载项
+- Microsoft 365 E3订阅 + Microsoft 365 E5 信息保护 和管理加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
-- Microsoft 365 A3订阅 + Microsoft 365 A5信息保护和管理加载项
+- Microsoft 365 A3订阅 + Microsoft 365 A5 信息保护和治理加载项
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署Microsoft 365内部风险解决方案
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5cb9f0db07ad29618e0dc9d053f4904a70ca52f6
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 40e14f0bb6e38a6923e5e1d454981d49932f7ea1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449984"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500686"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>威胁分析Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ ms.locfileid: "63449984"
 
 你可以从 Microsoft 365 安全门户导航栏的左上角访问威胁分析，也可以从向组织显示主要威胁的专用仪表板卡访问威胁分析，无论是影响方面还是曝光方面。
 
-![威胁分析仪表板的图像。](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="威胁分析登录页面" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
 高影响威胁具有最大危害的可能性，而高曝光威胁是资产最易受到的威胁。 了解活动或正在进行的市场活动，了解通过威胁分析可采取哪些措施，有助于让安全运营团队做出明智的决策。
 
@@ -79,7 +79,7 @@ _在何处访问威胁分析_
 
 从仪表板中选择威胁以查看该威胁的报告。
 
-![威胁分析仪表板的屏幕截图。](../../media/threat-analytics/ta_dashboard_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="威胁分析仪表板" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 _威胁分析仪表板。还可以选择与你要阅读的威胁分析报告相关的关键字中的"搜索"字段作为关键字键。_
 
@@ -98,7 +98,7 @@ _威胁分析仪表板。还可以选择与你要阅读的威胁分析报告相�
 
 " **概述** "部分提供详细分析员报告的预览。 它还提供了突出显示威胁对组织的影响的图表，以及通过错误配置和未修补的设备暴露的图表。
 
-![威胁分析报告的概述部分的图像。](../../media/threat-analytics/ta_overview_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="威胁分析报告的概述部分" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
 _威胁分析报告的概述部分_
 
@@ -139,15 +139,15 @@ Microsoft 威胁智能团队向每个威胁报告添加了威胁标记：
   - 活动组
 - 威胁标记在威胁分析页面顶部显示。 每个标记下存在可用报告数量的计数器。
 
-  ![威胁标记。](../../media/threat-analytics/ta-threattags-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattags-mtp.png" alt-text="威胁标记" lightbox="../../media/threat-analytics/ta-threattags-mtp.png":::
 
 - 该列表也可以按威胁标记排序：
 
-  ![列表。](../../media/threat-analytics//ta-taglist-mtp.png)
+  :::image type="content" source="../../media/threat-analytics//ta-taglist-mtp.png" alt-text="&quot;威胁标记&quot;部分" lightbox="../../media/threat-analytics//ta-taglist-mtp.png":::
 
 - 筛选器可用于每个威胁标记和报告类型：
 
-  ![筛选器。](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp.png" alt-text="&quot;筛选器&quot;页" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析员报告：从 Microsoft 安全研究人员获取专家见解
 
@@ -157,9 +157,9 @@ Microsoft 威胁智能团队向每个威胁报告添加了威胁标记：
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>相关事件：查看和管理相关事件
 
-" **相关事件** "选项卡提供与跟踪威胁相关的所有事件的列表。 你可以分配事件或管理链接到每个事件的警报。
+" **相关事件** "选项卡提供与跟踪威胁相关的所有事件的列表。 你可以分配事件或管理链接到每个事件的警报。 
 
-![威胁分析报告的相关事件部分的图像。](../../media/threat-analytics/ta_related_incidents_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="威胁分析报告的相关事件部分" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 _威胁分析报告的相关事件部分_
 
@@ -170,7 +170,7 @@ _威胁分析报告的相关事件部分_
 - **影响的设备** - 具有未解析的 Microsoft Defender for Endpoint 警报的终结点。 这些警报通常在看到已知威胁指示器和活动时触发。
 - **影响邮箱** - 已接收已触发 Microsoft Defender 进行安全警报Office 365邮箱。 触发警报的多数消息通常会被阻止，但用户或组织级别的策略可以覆盖筛选器。
 
-![威胁分析报告的影响资产部分的图像。](../../media/threat-analytics/ta_impacted_assets_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="威胁分析报告的&quot;影响的资产&quot;部分" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
 _威胁分析报告的"影响的资产"部分_
 
@@ -180,7 +180,7 @@ Microsoft Defender for Office 365通常阻止具有已知威胁指示器（包�
 
 "**阻止的电子邮件尝试**"选项卡列出了所有在传递之前被阻止或由 Microsoft Defender 发送到垃圾邮件文件夹的电子邮件Office 365。
 
-![威胁分析报告的阻止的电子邮件尝试部分的图像。](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="威胁分析报告的阻止的电子邮件尝试部分" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
 _威胁分析报告的"阻止的电子邮件尝试"部分_
 
@@ -196,9 +196,9 @@ _威胁分析报告的"阻止的电子邮件尝试"部分_
 
 本节中的缓解信息包含来自 [危险和漏洞管理 的数据，](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)其中还提供了报告中各个链接的详细深化信息。
 
-![显示安全配置详细信息的威胁分析报告的缓解部分的图像。](../../media/threat-analytics/ta_mitigations_mtp.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="显示安全配置详细信息的威胁分析报告的缓解部分" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
-![显示漏洞详细信息的威胁分析报告的缓解部分的图像。](../../media/threat-analytics/ta_mitigations_mtp2.png)
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp2.png" alt-text="显示漏洞详细信息的威胁分析报告的缓解部分" lightbox="../../media/threat-analytics/ta_mitigations_mtp2.png":::
 
 _威胁&报告的曝光和缓解部分_
 

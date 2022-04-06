@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 776680db7b2666cc964f82e88cd6af9e6bab7558
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569149"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500246"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中调查事件
 
@@ -66,7 +66,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 信息在这些部分中进行组织。
 
-| 节 | 说明 |
+| 节 | Description |
 |:-------|:-----|
 | 警报和类别 | 有关攻击对击杀链的前进进度的可视化和数值视图。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender与 [MITRE ATT&CK&trade;](https://attack.mitre.org/) 框架一致。 警报时间线显示警报发生的时间顺序，以及每个警报的状态和名称。 |
 | 范围 |  显示受影响设备、用户和邮箱的数量，并按风险级别和调查优先级的顺序列出实体。 |
@@ -82,7 +82,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 - 严重性。
 - 警报中涉及的实体。
-- 警报源 (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud 应用和应用管理加载项) 。
+- 警报源包括 Microsoft Defender for Identity (Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud Apps 和应用管理加载项) 。
 - 链接在一起的原因。
 
 下面是一个示例。
@@ -121,7 +121,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 可以选择设备的选中标记以查看设备、目录数据、活动警报和登录用户的详细信息。 选择设备名称以查看 Defender for Endpoint 设备清单中的设备详细信息。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="设备清单选项相关页面在Microsoft Defender for Endpoint。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Microsoft Defender for Endpoint 中的&quot;设备清单&quot;选项相关页面。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 从设备页面，你可以收集有关设备的其他信息，例如其所有警报、时间线和安全建议。 例如，从"时间线"选项卡中，你可以滚动浏览计算机时间线，并按时间顺序查看计算机上观测到的所有事件和行为，这些事件和行为与所引发警报的交错。
 
@@ -145,7 +145,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="事件门户中事件的&quot;邮箱&quot;Microsoft 365 Defender页。" lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-您可以选择邮箱的选中标记以查看活动警报列表。 Select the mailbox name to see additional mailbox details on the Explorer page for Defender for Office 365.
+您可以选择邮箱的选中标记以查看活动警报列表。 选择邮箱名称，在 Defender for Office 365 的资源管理器页面上查看其他邮箱Office 365。
 
 ## <a name="investigations"></a>调查
 

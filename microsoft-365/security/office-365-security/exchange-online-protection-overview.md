@@ -16,12 +16,12 @@ ms.custom:
 description: 了解Exchange Online Protection (EOP) 如何在独立和混合环境中帮助保护本地电子邮件组织。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb49a24ae378be990efd727450a06889cc50679
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 319b20d548ad83cbf57043909a8dc2ce840db5cd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473356"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682650"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -45,7 +45,7 @@ Exchange Online Protection (EOP) 是基于云的筛选服务，可保护组织�
 
 了解 EOP 如何工作，有助于查看其如何处理传入的电子邮件：
 
-:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="在垃圾邮件或隔离裁定之前，通过连接、反恶意软件、邮件流规则-斜杠-策略筛选和内容筛选从 Internet 或客户反馈传递到 EOP 的电子邮件的图形" lightbox="../../media/tp_emailprocessingineopt3.png":::
+:::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="在垃圾邮件或隔离裁定之前，通过 Connection、Anti-malware、Mailflow Rules-slash-Policy Filtering 和 Content Filtering 从 Internet 或客户反馈传递到 EOP 的电子邮件的图形。":::
 
 1. 传入邮件进入 EOP 时，最初会通过连接筛选，这将检查发件人的信誉。 大多数垃圾邮件此时停止，并遭 EOP 拒绝。 有关详细信息，请参阅[配置连接筛选](configure-the-connection-filter-policy.md)。
 
@@ -73,7 +73,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。 如
 
 有关所有 EOP 订阅计划的要求、重要限制以及功能可用性的信息，请参阅 Exchange Online Protection [服务说明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
-**注意**：
+**注意**:
 
 - EOP 使用多个 URL 阻止列表，帮助检测邮件中的已知恶意链接。
 - EOP 使用已知的大量域列表来发送垃圾邮件。
@@ -82,7 +82,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。 如
 - 有关保护策略的建议值，请参阅 [EOP 和 Microsoft Defender](recommended-settings-for-eop-and-office365.md) 的推荐设置Office 365安全性。
 - 有关配置保护策略的快速说明，请参阅 [防止威胁](protect-against-threats.md)。
 
-|功能|Comments|
+|功能|备注|
 |---|---|
 |**Protection**||
 |反恶意软件|[EOP 中的反恶意软件保护](anti-malware-protection.md) <p> [反恶意软件保护常见问题](anti-malware-protection-faq-eop.yml) <p> [在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
@@ -92,7 +92,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。 如
 |防网络钓鱼|[Microsoft 365](set-up-anti-phishing-policies.md) <p> [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)|
 |防欺骗保护|[EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md) <p> [管理租户允许/阻止列表](tenant-allow-block-list.md)|
 |零时差自动清除 (恶意软件) 垃圾邮件和网络钓鱼邮件的 ZAP 策略|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
-|预设安全策略|[在 EOP 和 Microsoft Defender for Office 365 中预设安全策略](preset-security-policies.md) <p> [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器](configuration-analyzer-for-security-policies.md)|
+|预设安全策略|[在 EOP 和 Microsoft Defender for Office 365](preset-security-policies.md) <p> [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器](configuration-analyzer-for-security-policies.md)|
 |租户允许/阻止列表|[管理租户允许/阻止列表](tenant-allow-block-list.md)|
 |阻止邮件发件人列表|[在 EOP 中创建阻止的发件人列表](create-block-sender-lists-in-office-365.md)|
 |允许邮件发件人列表|[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)|

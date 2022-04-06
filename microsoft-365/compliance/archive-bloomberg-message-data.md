@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 管理员可以设置一个数据连接器，以从 Microsoft 365 中的 Bloomberg Message 电子邮件工具导入和存档Microsoft 365。 这样，您就可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 3897909c185aabad48483db9b42fcf6b552a68a3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5b1f32760542bf9ace2adaa8640571f665ba3ffb
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317831"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569856"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>设置连接器以存档 Bloomberg 邮件数据
 
@@ -145,14 +145,20 @@ ms.locfileid: "63317831"
 
 7. 成功验证连接后，单击"下一 **步"**。
 
-8. 在"**Map Bloomberg Message users to Microsoft 365 users**"页上，启用自动用户映射并按需要提供自定义用户映射。
+8. 在 **"定义用户** "页上，指定要导入其数据的用户。
+
+     - **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+     - **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+9. 在"**Map Bloomberg Message users to Microsoft 365 users**"页上，启用自动用户映射并按需要提供自定义用户映射。
 
    > [!NOTE]
    > 连接器将邮件项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 **BloombergMessage** 的新文件夹，项目将导入到该文件夹中。 连接器使用 *CorporateEmailAddress* 属性的值进行连接。 每个聊天消息都包含此属性，并且使用聊天消息每个参与者的电子邮件地址填充该属性。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含 Bloomberg UUID 和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，针对每个邮件项。 如果找不到与用户的 Bloomberg UUID Microsoft 365有效的连接器，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在邮件项目的Microsoft 365映射文件或 *CorporateEmailAddress* 属性中找不到有效的邮件用户，则不导入该项目。
 
-9. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
+10. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
 
-10. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。
+11. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。
 
 ## <a name="set-up-a-connector-using-private-keys"></a>使用私钥设置连接器
 
@@ -223,14 +229,20 @@ ms.locfileid: "63317831"
 
 7. 成功验证连接后，单击"下一 **步"**。
 
-8. 在"**Map Bloomberg Message users to Microsoft 365 users**"页上，启用自动用户映射并按需要提供自定义用户映射。
+8. 在 **"定义用户** "页上，指定要导入其数据的用户
+
+     - **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+     - **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+9. 在"**Map Bloomberg Message users to Microsoft 365 users**"页上，启用自动用户映射并按需要提供自定义用户映射。
 
    > [!NOTE]
    > 连接器将邮件项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 **BloombergMessage** 的新文件夹，项目将导入到该文件夹中。 连接器使用 *CorporateEmailAddress* 属性的值进行连接。 每个聊天消息都包含此属性，并且使用聊天消息每个参与者的电子邮件地址填充该属性。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含 Bloomberg UUID 和每个用户Microsoft 365相应的邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件，针对每个邮件项。 如果找不到与用户的 Bloomberg UUID Microsoft 365有效的连接器，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在邮件项目的Microsoft 365映射文件或 *CorporateEmailAddress* 属性中找不到有效的邮件用户，则不导入该项目。
 
-9. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
+10. 单击 **"下** 一步"，查看设置，然后单击" **完成** "以创建连接器。
 
-10. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。
+11. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。 单击连接器可显示包含连接器相关信息的飞出页。
 
 ## <a name="known-issues"></a>已知问题
 

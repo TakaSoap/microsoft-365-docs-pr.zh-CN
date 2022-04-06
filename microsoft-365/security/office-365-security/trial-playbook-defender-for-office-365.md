@@ -6,21 +6,21 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
+ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
+ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 解决方案试用版手册。
-ms.openlocfilehash: 6b149f7b3fa218050c37f99f5567fd2658f26bc7
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375048"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683200"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>试用版手册: Microsoft Defender for Office 365
 
@@ -90,7 +90,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 
 ### <a name="use-threat-explorer-to-investigate-malicious-email"></a>使用威胁资源管理器调查恶意电子邮件
 
-Defender for Office 365 使你能够调查使组织中的人员面临风险的活动，并采取措施保护你的组织。 可以使用 [威胁资源管理器或 (实时检测)](threat-explorer.md) 执行此操作。
+使用 Defender for Office 365，你将能够调查使组织中的人员面临风险的活动，并采取措施保护组织。可以使用 [威胁资源浏览器或（实时检测）](threat-explorer.md) 执行此操作。
 
 - [查找已发送的可疑邮件](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): 查找和删除邮件、识别恶意电子邮件发件人的 IP 地址，或启动事件以供进一步调查。
 - [检查传递操作和位置](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): 此检查可让你知道问题电子邮件的位置。
@@ -122,7 +122,7 @@ Defender for Office 365 使你能够调查使组织中的人员面临风险的�
 
 ### <a name="dive-deep-into-data-with-query-based-hunting"></a>通过基于查询的搜寻深入了解数据
 
-使用高级搜寻编写自定义检测规则，主动检查环境中的事件，并查找威胁指示器。 浏览环境中的原始数据。
+使用高级搜寻编写自定义检测规则、主动检查环境中的事件，并查找威胁指示器。浏览环境中的原始数据。
 
 - [生成自定义检测规则](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting)。
 - [访问他人创建的共享查询](../defender/advanced-hunting-shared-queries.md)。
@@ -142,6 +142,6 @@ Defender for Office 365 使你能够调查使组织中的人员面临风险的�
 ## <a name="additional-resources"></a>其他资源
 
 - **交互式指南**: 不熟悉 Defender for Office 365? 查看 [交互式指南](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) 以了解如何入门。
-- **Microsoft 文档**: 获取有关 Defender for Office 365 工作原理以及如何为组织最佳实现它的详细信息。 请访问 [文档](overview.md)。
+- **Microsoft Docs**：获取有关 Defender for Office 365 的工作原理以及如何为组织充分实施的详细信息。请访问 [Docs](overview.md)。
 - **包含的内容**: 有关产品层列出的 Office 365 电子邮件安全功能的完整列表，请查看 [功能矩阵](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability)。
 - **为什么 Defender for Office 365**: [Defender for Office 365 数据表](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) 显示客户选择 Microsoft 的前 10 个原因。

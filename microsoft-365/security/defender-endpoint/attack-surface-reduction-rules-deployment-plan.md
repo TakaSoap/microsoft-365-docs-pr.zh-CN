@@ -11,18 +11,25 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: e76ca3c1efd3ceb1cbb0f80cba4867988da51e1e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683068"
 ---
-
 # <a name="step-1-plan-asr-rules-deployment"></a>步骤 1：规划 ASR 规则部署
 
-当测试攻击面 (ASR) 规则时，从正确的业务部门开始非常重要。 您需要从特定业务部门中的一小组人员开始。 你可以确定特定业务部门中的一些 ASR 冠军，这些冠军可以提供有关 ASR 规则的实际影响，并帮助你调整实现。
+在测试攻击面 (ASR) 规则时，从正确的业务部门开始非常重要。 您需要从特定业务部门中的一小组人员开始。 你可以确定特定业务部门中的一些 ASR 冠军，这些冠军可以提供有关 ASR 规则的实际影响，并帮助你调整实现。
 
 > [!div class="mx-imgBorder"]
 > ![ASR 规则规划步骤](images/asr-rules-planning-steps.png)
@@ -70,7 +77,7 @@ ASR 规则冠军是贵组织的成员，有助于在初步测试和实施阶段�
 ## <a name="ring-deployment"></a>环形部署
 
 对于大型企业，Microsoft 建议在"圈"中部署 ASR 规则。 圈是视觉上表示为像不重叠树圈一样向外延伸的同心圆的设备组。 成功部署最里层的圈后，你可以将下一个圈转换到测试阶段。 对业务部门、ASR 规则冠军、应用和流程进行全面评估对定义圈至关重要。
-在大多数情况下，你的组织将设计部署圈，用于分阶段推出Windows更新。 可以使用现有的圈设计来实现 ASR 规则。
+在大多数情况下，贵组织将设计部署圈，用于分阶段推出Windows更新。 可以使用现有的圈设计来实现 ASR 规则。
 请参阅：[为部署环境创建Windows](/windows/deployment/update/create-deployment-plan)
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题

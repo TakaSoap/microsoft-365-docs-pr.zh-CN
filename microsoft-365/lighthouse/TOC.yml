@@ -12,8 +12,8 @@
   items:
     - name: 配置门户安全性
       href: m365-lighthouse-configure-portal-security.md
-    - name: 设置角色
-      href: m365-lighthouse-set-up-roles.md
+    - name: 权限概述
+      href: m365-lighthouse-overview-of-permissions.md
     - name: 查看审核日志
       href: m365-lighthouse-review-audit-logs.md
 - name: 使用基线保护客户

@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 2b6aac7a02c6c7c5feda041a2b06147c67dfa285
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316529"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594831"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -149,7 +149,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 由于 OneDrive 是 SharePoint 中的网站层次结构，因此组织级别共享设置将直接影响 OneDrive，如同影响其他 SharePoint 网站一样。
 
-**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
+**导航：** SharePoint 管理中心 >“**策略**” > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
 
 ![SharePoint 组织级别共享设置的屏幕截图。](../media/external-sharing.png)
 
@@ -160,7 +160,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="sharepoint-and-onedrive-advanced-sharing-settings"></a>SharePoint 和 OneDrive 高级共享设置
 
-**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
+**导航：** SharePoint 管理中心 >“**策略**” > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
 
 ![SharePoint 组织级别的其他共享设置的屏幕截图。](../media/external-sharing.png)
 
@@ -177,7 +177,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 在 SharePoint 和 OneDrive 中共享文件和文件夹时，系统会向共享收件人发送一个具有该文件或文件夹权限的链接，而不是授予对文件或文件夹本身的直接访问权限。 提供了多种类型的链接，你可以选择在共享文件或文件夹时向用户显示的默认链接类型。 你还可以为“*任何人*”链接设置权限和到期选项。
 
-**导航：**“SharePoint 管理中心”><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
+**导航：** SharePoint 管理中心 >“**策略**” > <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">“**共享**”</a>
 
 ![SharePoint 组织级别文件和文件夹共享设置的屏幕截图。](../media/sharepoint-organization-files-folders-sharing-settings.png)
 

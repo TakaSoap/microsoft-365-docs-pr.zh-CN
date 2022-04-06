@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: b6872fb13ba1a32f081b5fcc82fd590f2c196a6c
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499938"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569548"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>步骤 2. 修正第一个事件
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender分析人员可以手动启动的几个修正操作。 操
 
 ## <a name="actions-on-devices"></a>对设备执行的操作
 
-- 隔离 **设备 - 此** 活动将立即阻止所有网络流量 (Internet 和内部) 以最大限度地减少恶意软件的分布，并允许分析员继续分析，而无需恶意参与者继续攻击。 唯一允许的连接是 Microsoft Defender for Identity 服务云，因此 Microsoft Defender for Identity 可以继续监视设备。 
+- 隔离 **设备 - 此** 活动将立即阻止所有网络流量 (Internet 和内部) 以最大限度地减少恶意软件的分布，并允许分析员继续分析，而无需恶意参与者继续攻击。 唯一允许的连接是Microsoft Defender for Identity服务云，Microsoft Defender for Identity可以继续监视设备。 
 - **限制应用执行** - 若要限制应用程序运行，应用代码完整性策略，该策略只允许文件在由 Microsoft 颁发的证书签名时运行。 这种限制方法有助于防止攻击者控制受到威胁的设备，并执行进一步恶意活动。
 - **运行防病毒扫描** - Microsoft Defender 防病毒扫描可以与其他防病毒解决方案一起运行，无论 Defender 防病毒是否是活动的防病毒解决方案。 如果另一个防病毒供应商产品是主要终结点保护解决方案，可以在被动模式下运行 Defender 防病毒。
 - **启动自动调查** - 可以在设备上启动新的通用自动调查。 当调查正在运行时，从设备生成的其他任何警报都将添加到正在进行的自动调查，直到完成该调查。 此外，如果在其他设备上看到相同的威胁，则这些设备将添加到调查。
@@ -64,11 +64,11 @@ Microsoft 365 Defender分析人员可以手动启动的几个修正操作。 操
 3. 确保恶意文件被隔离SharePoint
 4. 检查哪些终结点受恶意软件影响
 5. 重新生成系统
-6. 检查其他用户的类似的 Microsoft Defender 云应用警报
-7. 在 Microsoft Defender for Endpoint 中创建自定义指示器以阻止 Tor IP 地址
-8. 在 Microsoft Defender for Cloud Apps 中为此类型的警报创建管理操作，如下图所示：
+6. 检查其他用户Microsoft Defender for Cloud Apps类似的警报
+7. 在邮件中创建自定义Microsoft Defender for Endpoint以阻止 Tor IP 地址
+8. 在此类型警报Microsoft Defender for Cloud Apps管理操作，如下图所示：
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender 云应用门户中的管理操作" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="管理门户中的Microsoft Defender for Cloud Apps操作" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 大多数修正操作都可以在 Microsoft 365 Defender 中应用和Microsoft 365 Defender。
 
@@ -90,8 +90,6 @@ Playbook 使用Power Automate创建自定义自动化流程自动化流，以在
 还可以在事后评审 [期间创建操作](first-incident-post.md) 手册，以从已解决的事件中创建修正操作。 
 
 ## <a name="next-step"></a>后续步骤
-
-[![步骤 3：了解如何对事件执行事后评审。](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 了解如何 [对事件执行事后评审](first-incident-post.md)。
 

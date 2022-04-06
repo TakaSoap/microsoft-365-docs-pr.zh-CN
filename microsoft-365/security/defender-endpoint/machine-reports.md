@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint 中的设备运行状况和合规性报告
-description: 使用设备运行状况和合规性报告跟踪Windows 10运行状况状态检测、防病毒状态、操作系统平台和版本
+description: 使用设备运行状况和合规性报告跟踪Windows 10运行状况检测、防病毒状态、操作系统平台和版本
 keywords: 运行状况状态， 防病毒， 操作系统平台， windows 10 版本， 版本， 运行状况， 合规性， 状态
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eaa9d05fd62127949e6a0b40de8d42a79c446d4d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61170502"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474016"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的设备运行状况和合规性报告
 
@@ -36,7 +36,7 @@ ms.locfileid: "61170502"
 
 仪表板分为两个部分：
 
-:::image type="content" alt-text="设备报告的图像。" source="images/device-reports.png" lightbox="images/device-reports.png":::
+:::image type="content" source="images/device-reports.png" alt-text="设备报告" lightbox="images/device-reports.png":::
 
 
 <br>
@@ -46,7 +46,7 @@ ms.locfileid: "61170502"
 |节|说明|
 |---|---|
 |1|设备趋势|
-|2|当前天 (的设备) |
+|2|设备摘要 (当天) |
 |||
 
 ## <a name="device-trends"></a>设备趋势
@@ -77,9 +77,9 @@ ms.locfileid: "61170502"
 报告由显示以下设备属性的卡片所决定：
 
 - **运行状况：** 显示有关设备上传感器状态的信息，提供活动、通信受损、非活动或未看到传感器数据的设备的聚合视图。
-- **活动设备Windows 10状态**：显示设备数量和Microsoft Defender 防病毒。
-- **操作系统** 平台 ：显示存在于您的组织中的操作系统平台的分布。
-- **Windows 10版本**： 显示组织中Windows 10设备及其版本的分布。
+- **活动Windows 10防病毒状态**：显示设备数量和Microsoft Defender 防病毒。
+- **操作系统** 平台：显示组织内部存在的操作系统平台的分布。
+- **Windows 10版本**：显示组织中Windows 10设备及其版本的分布。
 
 ## <a name="filter-data"></a>筛选数据
 
@@ -92,8 +92,8 @@ ms.locfileid: "61170502"
 
 例如，若要显示有关Windows 10传感器运行状况状态的设备的数据：
 
-1. 在 **筛选器>传感器运行状况状态>处于活动状态**。
-2. 然后选择操作系统 **平台> Windows 10。**
+1. 在 **"筛选器>""传感器运行状况">活动"**。
+2. 然后选择操作系统 **平台> Windows 10**。
 3. 选择“**应用**”。
 
 ## <a name="related-topic"></a>相关主题

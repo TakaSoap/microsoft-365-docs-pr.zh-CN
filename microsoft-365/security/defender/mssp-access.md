@@ -1,7 +1,7 @@
 ---
-title: 提供托管安全服务提供程序 (MSSP) 访问权限
-description: 了解从网站Microsoft Defender 安全中心到 Microsoft 365 Defender 门户的更改
-keywords: 入门：Microsoft 365 Defender门户、适用于 Office 365 的 Microsoft Defender、Microsoft Defender for Endpoint、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
+title: 提供托管安全服务提供程序 (MSSP) 访问
+description: 了解从 Microsoft Defender 安全中心 到 Microsoft 365 Defender 门户的更改
+keywords: 入门：Microsoft 365 Defender门户、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171043"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500401"
 ---
-# <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问权限 
+# <a name="provide-managed-security-service-provider-mssp-access"></a>提供托管安全服务提供程序 (MSSP) 访问 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "62171043"
 
 若要实现多租户委派访问解决方案，请执行以下步骤：
 
-1. 通过[Microsoft 365 Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac)门户为 Defender for Endpoint 启用基于角色的访问控制，并与Azure Active Directory (Azure AD) 连接。
+1. 通过 [Microsoft 365 Defender](/windows/security/threat-protection/microsoft-defender-atp/rbac) 门户为 Defender for Endpoint 启用基于角色的访问控制，并与Azure Active Directory (Azure AD) 连接。
 
 2. 配置 [用于访问请求](/azure/active-directory/governance/identity-governance-overview) 和预配的治理访问包。
 
@@ -55,9 +55,9 @@ ms.locfileid: "62171043"
 
 2. 在客户 Defender for Endpoint 中的相应访问级别创建适用于终结点的 Defender Microsoft 365 Defender门户角色和组。
 
-    若要在客户门户Microsoft 365 Defender RBAC，>具有全局管理员或安全管理员权限的用户帐户&组 >**角色**"访问"权限">终结点角色"。
+    若要在客户门户Microsoft 365 Defender RBAC，请通过具有全局管理员或安全管理员权限的用户帐户&组>角色"访问"权限">终结点角色"。
 
-    ![MSSP 访问的图像。](../../media/mssp-access.png)
+    :::image type="content" source="../../media/mssp-access.png" alt-text="应用程序门户中 MSSP 访问Microsoft 365 Defender的详细信息" lightbox="../../media/mssp-access.png":::
 
     然后，创建 RBAC 角色以满足 MSSP SOC 层需求。 通过"分配的用户组"将这些角色链接到已创建的用户组。
 
@@ -69,7 +69,7 @@ ms.locfileid: "62171043"
     - **第 2 层分析员** <br>
       第 1 层功能以及实时 [响应](/windows/security/threat-protection/microsoft-defender-atp/live-response)
 
-    有关详细信息，请参阅使用 [基于角色的访问控制](/windows/security/threat-protection/microsoft-defender-atp/rbac)。
+    有关详细信息，请参阅 [使用基于角色的访问控制](/windows/security/threat-protection/microsoft-defender-atp/rbac)。
 
 ## <a name="configure-governance-access-packages"></a>配置治理访问包
 
@@ -85,9 +85,10 @@ ms.locfileid: "62171043"
 
     为此，在客户 AD 租户中，访问 Identity Governance： Catalogs，并添加新 **目录**。 在我们的示例中，我们将它称为 **MSSP Accesses**。
 
-    ![新目录的图像。](../../media/goverance-catalog.png)
+    :::image type="content" source="../../media/goverance-catalog.png" alt-text="Microsoft 365 Defender门户中的新目录" lightbox="../../media/goverance-catalog.png":::
 
-    有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
+
+    有关详细信息，请参阅 [创建资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
 3. **为 MSSP 资源创建访问包客户AAD：标识治理**
 
@@ -100,15 +101,15 @@ ms.locfileid: "62171043"
     - 只能由 MSSP SOC 租户中的用户请求
     - Access 自动在 365 天后过期
 
-    ![新访问包的图像。](../../media/new-access-package.png)
+    :::image type="content" source="../../media/new-access-package.png" alt-text="应用程序门户中新访问包Microsoft 365 Defender的详细信息" lightbox="../../media/new-access-package.png":::
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
 4. **提供从 Customer AAD：Identity Governance 访问 MSSP 资源的访问请求链接**
 
-    MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，等待 **MSSP 分析员审批者审批**。
+    MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，供 **MSSP 分析员审批者审批**。
 
-    ![访问属性的图像。](../../media/access-properties.png)
+    :::image type="content" source="../../media/access-properties.png" alt-text="访问门户中的Microsoft 365 Defender属性" lightbox="../../media/access-properties.png":::
 
     链接位于每个访问包的概述页面上。
 
@@ -118,7 +119,7 @@ ms.locfileid: "62171043"
 
     访问请求在客户 My Access 中由 MSSP 分析员审批者组的成员进行管理。
 
-    为此，请通过使用：访问客户的 myaccess。 `https://myaccess.microsoft.com/@<Customer Domain>`
+    为此，请通过使用：访问客户的 myaccess `https://myaccess.microsoft.com/@<Customer Domain>`。
 
     例如：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
@@ -129,4 +130,4 @@ ms.locfileid: "62171043"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 
 > [!IMPORTANT]
-> Microsoft Defender for Endpoint 在 Microsoft 365 Defender 门户中的委派访问权限当前允许每个浏览器窗口访问单个租户。
+> Microsoft Defender for Endpoint 在 Microsoft 365 Defender门户中的委派访问权限当前允许每个浏览器窗口访问单个租户。

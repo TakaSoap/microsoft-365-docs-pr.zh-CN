@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9a67b05f089fd25e26f22508cbedb8f4b3ce086a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472982"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595073"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根据文件扩展名和文件夹位置配置和验证排除项
 
@@ -36,10 +36,10 @@ ms.locfileid: "64472982"
 - [进程打开的文件排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒不适用于其他 Microsoft Defender for Endpoint 功能，包括终结点检测和响应 [ (EDR) ](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、攻击面减少 [ (ASR) ](/microsoft-365/security/defender-endpoint/attack-surface-reduction) 规则以及受控文件夹[访问权限。](/microsoft-365/security/defender-endpoint/controlled-folders) 使用本文中所述的方法排除的文件仍可以触发EDR检测。
-> 若要广泛排除文件，请将它们添加到 Microsoft Defender for Endpoint [自定义指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
+> Microsoft Defender 防病毒排除项不适用于其他 Microsoft Defender for Endpoint 功能，包括 [终结点检测和响应 (EDR) ](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、攻击面减少 ([ASR) 规则](/microsoft-365/security/defender-endpoint/attack-surface-reduction)以及受控文件夹[访问权限](/microsoft-365/security/defender-endpoint/controlled-folders)。 使用本文中所述的方法排除的文件仍可以触发EDR检测。
+> 若要广泛排除文件，请将它们添加到Microsoft Defender for Endpoint[指示器](/microsoft-365/security/defender-endpoint/manage-indicators)。
 
-## <a name="before-you-begin"></a>开始之前...
+## <a name="before-you-begin"></a>准备工作
 
 请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md)项，然后再定义排除列表。
 
@@ -52,8 +52,7 @@ ms.locfileid: "64472982"
 >
 > 自动排除项仅适用于Windows Server 2016及更高版本。 这些排除项在 Windows 安全中心和 PowerShell 中不可见。
 
-下表列出了一些基于文件扩展名和文件夹位置的排除示例。 
-<br/><br/>
+下表列出了一些基于文件扩展名和文件夹位置的排除示例。
 
 |排除|示例|排除列表|
 |---|---|---|
@@ -77,7 +76,7 @@ ms.locfileid: "64472982"
 
 - 排除项适用于[计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、按需扫描[](run-scan-microsoft-defender-antivirus.md)和实时[保护](configure-real-time-protection-microsoft-defender-antivirus.md)，但不能跨 Defender for Endpoint。 若要定义跨 Defender for Endpoint 的排除项，请使用 [自定义指示器](manage-indicators.md)。
 
-- 默认情况下，具有管理员权限的用户对 (列表进行的本地更改（包括使用 PowerShell 和 WMI) 所做的更改）将与 (定义的列表合并，并按组策略、Configuration Manager 或 Intune 部署) 。 存在冲突时，组策略列表优先。 此外，使用组策略进行排除列表更改在应用Windows 安全中心[可见](microsoft-defender-security-center-antivirus.md)。
+- 默认情况下，具有管理员权限的用户对列表 (进行的本地更改（包括使用 PowerShell 和 WMI) 所做的更改）将与 (定义的列表合并，) 组策略、Configuration Manager 或 Intune 部署这些列表。 存在组策略列表优先。 此外，使用应用组策略列表更改在应用Windows 安全中心[可见](microsoft-defender-security-center-antivirus.md)。
 
 - 若要允许本地更改覆盖托管部署设置，请 [配置合并本地](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists)和全局定义的排除列表的方式。
 
@@ -85,14 +84,14 @@ ms.locfileid: "64472982"
 
 可以从多种方法中选择，以定义Microsoft Defender 防病毒。
 
-### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Intune 配置文件名、文件夹或文件扩展名排除项
+### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用Intune配置文件名、文件夹或文件扩展名排除项
 
 另请参阅以下文章：
 
 - [在 Microsoft Intune 中配置设备限制设置](/intune/device-restrictions-configure)
-- [Microsoft Defender 防病毒 Intune 中Windows 10设备限制设置](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Microsoft Defender 防病毒中设置Windows 10的设备Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用 Configuration Manager 配置文件名、文件夹或文件扩展名排除项
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>使用Configuration Manager配置文件名、文件夹或文件扩展名排除项
 
 请参阅[如何创建和部署反恶意软件策略：](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)排除设置，了解有关配置当前分支Microsoft Endpoint Manager (的详细信息) 。
 
@@ -103,7 +102,7 @@ ms.locfileid: "64472982"
 
 1. 在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，然后选择 **编辑**。
 
-2. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后选择 **管理模板**。
+2. In the **组策略 Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
 3. 展开树以 **Windows排除** \> **Microsoft Defender 防病毒** \> **组件**。
 
@@ -111,7 +110,7 @@ ms.locfileid: "64472982"
     1. 将选项设置为 **"已启用"**。
     2. 在"选项 **"** 部分下，选择"显示 **"**。
     3. 在"值名称"列下的其自己的 **行中指定每个** 文件夹。
-    4. 如果要指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 
+    4. 如果要指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。
     5. 在 **"值"****列中输入** 0。
 
 5. 选择“**确定**”。
@@ -138,8 +137,6 @@ cmdlet 的格式如下：
 
 下表列出了可在 PowerShell cmdlet `<cmdlet>` 部分使用的 cmdlet：
 
-<br/><br/>
-
 |配置操作|PowerShell cmdlet|
 |:---|:---|
 |创建或覆盖列表|`Set-MpPreference`|
@@ -147,8 +144,6 @@ cmdlet 的格式如下：
 |从列表中删除项目|`Remove-MpPreference`|
 
 下表列出了可在 `<exclusion list>` PowerShell cmdlet 部分使用的值：
-
-<br/><br/>
 
 |排除类型|PowerShell 参数|
 |---|---|
@@ -225,8 +220,6 @@ ExclusionPath
 
 下表列出并描述了系统帐户环境变量。
 
-<br/><br/>
-
 |此系统环境变量...|重定向到此|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -296,14 +289,14 @@ ExclusionPath
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
 - [Windows 安全中心应用](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> 使用组策略进行排除列表 **更改将在**"组策略"[Windows 安全中心列表中。](microsoft-defender-security-center-antivirus.md)
+> 使用应用组策略 **列表更改会显示在** 应用Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。
 >
-> 在组策略Windows 安全中心 **中所做的更改将不会** 显示在组策略列表中。
+> 在应用程序Windows 安全中心 **所做的更改将不会显示在** 组策略列表中。
 
 如果使用 PowerShell，可以通过两种方式检索列表：
 

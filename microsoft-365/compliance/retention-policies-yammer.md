@@ -17,19 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 3759f39a9ef2067d9719d4cf83d73ee7b67ef125
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 48b7f00df2f01d1b84af1962d91551752334c8b1
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241427"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595095"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
->*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-> [!NOTE]
-> 此功能暂处于预览阶段，可能会发生变更。
+>*[Microsoft 365 安全与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Yammer 的信息。
 
@@ -61,11 +58,6 @@ ms.locfileid: "62241427"
 当 @提及用户或通知用户有人答复时，社区邮件的副本也可以存储在用户邮箱的隐藏文件夹中。 尽管这些邮件源自社区邮件，但 Yammer 用户邮件的保留策略通常包括社区邮件的副本。 因此，用户消息不限于私有消息。
 
 这些隐藏的文件夹不是为了供用户或管理员直接访问，而是存储合规性管理员可以使用电子数据展示工具搜索的数据。
-
-> [!IMPORTANT]
-> 由于社区邮件的副本也可以存储在用户邮箱中，因此对 Yammer 用户邮件执行删除操作的保留策略可能导致 Yammer 应用中的用户不再看到原始社区邮件。
-> 
-> 但是，原始邮件的副本在社区组邮箱的隐藏文件夹中仍然可用，并可出于合规目的通过电子数据展示搜索进行访问。
 
 即使它们存储在 Exchange 中，Yammer 消息也仅包含在为 **Yammer 社区消息配置的保留策略中，** 或 **Yammer 用户消息** 位置。
 
@@ -185,7 +177,7 @@ ms.locfileid: "62241427"
 
 ## <a name="limitations"></a>限制
 
-Yammer 保留策略目前处于预览阶段，我们正在不断努力优化保留功能。 在此期间，在对 Yammer 社区邮件和用户邮件使用保留时，需要注意以下几个限制：
+在对 Yammer 社区邮件和用户邮件使用保留时，需要注意以下几个限制：
 
 - 为 **Yammer 用户邮件** 位置选择“**编辑**”时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 

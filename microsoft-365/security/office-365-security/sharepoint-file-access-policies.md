@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f024f9d93b44e6d6a679311af914330f0e3db37c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312931"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682936"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>用于保护网站和SharePoint的策略建议
 
@@ -48,7 +48,7 @@ ms.locfileid: "63312931"
 
 |保护级别|策略|更多信息|
 |---|---|---|
-|**起始点**|[当登录风险为中或高 *时需要 MFA*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将SharePoint包括在云应用的分配中。|
+|**起点**|[当登录风险为中或高 *时需要 MFA*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将SharePoint包括在云应用的分配中。|
 ||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|将SharePoint包括在云应用的分配中。|
 ||[应用 APP 数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保所有推荐的应用都包含在应用列表中。 请务必为 iOS、Android、 (的每个平台更新Windows) 。|
 ||[在应用中使用应用强制SharePoint](#use-app-enforced-restrictions-in-sharepoint)|添加新策略。 这将Azure Active Directory (Azure AD) 使用 SharePoint 中指定的设置。 此策略适用于所有用户，但仅影响对访问策略中包含的SharePoint的访问。|
@@ -57,7 +57,6 @@ ms.locfileid: "63312931"
 ||[SharePoint访问控制策略](#sharepoint-access-control-policies)：允许仅浏览器访问SharePoint非托管设备中的特定网站。|这将阻止编辑和下载文件。 使用 PowerShell 指定网站。|
 |**专用安全**|[*始终* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将SharePoint包括在云应用的分配中。|
 ||[SharePoint访问控制策略](#use-app-enforced-restrictions-in-sharepoint)：阻止从非SharePoint访问特定网站。|使用 PowerShell 指定网站。|
-|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>在应用中使用应用强制SharePoint
 

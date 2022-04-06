@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 9a3e8ab38c807b8cf3ea54bb5a18a5405d0b3c49
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 73597ff3b56189952999993df05f13a0caeacb0c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465346"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683090"
 ---
 # <a name="step-4-operationalize-asr-rules"></a>步骤 4：操作 ASR 规则
 
@@ -44,7 +44,7 @@ ms.locfileid: "64465346"
 搜索功能最强大的功能[之一Microsoft 365 Defender](https://security.microsoft.com)高级搜寻。 如果你不熟悉高级搜寻，请参阅：使用高级搜寻主动 [搜寻威胁](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="高级搜寻门户中的Microsoft 365 Defender页" lightbox="images/asr-defender365-advanced-hunting2.png":::
+> ![Microsoft 365 Defender高级搜寻](images/asr-defender365-advanced-hunting2.png)
 
 高级搜寻是基于查询的 (Kusto 查询语言) 威胁搜寻工具，允许你浏览 Microsoft Defender ATP 终结点检测和响应 (EDR) 从你的所有计算机中收集的最多 30 天的已捕获 (原始) 数据。 通过高级搜寻，你可以主动检查事件，以便找到有趣的指示器和实体。 灵活访问数据有助于无约束搜寻已知威胁和潜在威胁。
 
@@ -55,10 +55,10 @@ ms.locfileid: "64465346"
 前进搜寻门户中显示的 ASR 事件被限制到每小时看到的唯一进程。 ASR 事件的时间是该小时内首次看到该事件的时间。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="搜索门户中的高级搜寻Microsoft 365 Defender命令行" lightbox="images/asr-defender365-advanced-hunting3.png":::
+> ![Microsoft 365 Defender高级搜寻查询命令行](images/asr-defender365-advanced-hunting3.png)
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="高级搜寻查询结果在Microsoft 365 Defender门户" lightbox="images/asr-defender365-advanced-hunting4.png":::
+> ![Microsoft 365 Defender高级搜寻查询结果](images/asr-defender365-advanced-hunting4.png)
 
 以上显示为 AsrLsassCredentialTheft 注册了 187 个事件：
 
@@ -70,10 +70,10 @@ ms.locfileid: "64465346"
 如果您想重点关注 AsrOfficeChildProcess 规则并获取有关实际文件和过程的详细信息，请更改 ActionType 的筛选器，将汇总行替换为对需要字段 (的投影，在这种情况下它们是 DeviceName、FileName、FolderPath 等 ) 。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="搜索门户中的高级搜寻查询Microsoft 365 Defender示例" lightbox="images/asr-defender365-advanced-hunting4b.png":::
+> ![Microsoft 365 Defender高级搜寻查询](images/asr-defender365-advanced-hunting4b.png)
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="高级搜寻查询在搜索门户中Microsoft 365 Defender结果" lightbox="images/asr-defender365-advanced-hunting5b.png":::
+> ![Microsoft 365 Defender高级搜寻查询焦点结果](images/asr-defender365-advanced-hunting5b.png)
 
 高级搜寻的真正好处是，你可以将查询塑造成喜欢的形状。 通过确定查询的定形，你可以查看所发生事情的确切情景，无论你是想要在单台计算机中定位某些内容，还是想要从整个环境中提取见解。
 
