@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d08994d0a69ba1985e69845b3a22abd40c753fd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 574e02c837ce1f2e3639ed562ed52bacc0e67629
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166574"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472212"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>排查 Android 上 Microsoft Defender for Endpoint 的问题
 
@@ -43,7 +43,7 @@ ms.locfileid: "61166574"
 
 **登录失败：意外***错误，请稍后尝试*
 
-:::image type="content" alt-text="登录失败错误意外错误的图像。" source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="登录失败错误 Microsoft Defender 365 门户的登录页中出现意外错误。" lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **消息：**
 
@@ -61,7 +61,7 @@ ms.locfileid: "61166574"
 
 **登录失败：许可证***无效，请联系管理员*
 
-:::image type="content" alt-text="登录失败的图像请联系管理员。" source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="Microsoft Defender 365 门户登录页中的指令联系人详细信息" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **邮件：***许可证无效，请联系管理员*
 
@@ -85,7 +85,7 @@ ms.locfileid: "61166574"
 
 某些用户不会阻止 Defender for Android 终结点检测到的网络钓鱼和有害的 Web 威胁。 以下功能在这些设备上不起作用。
 
-![报告不安全的网站的图像。](images/0c04975c74746a5cdb085e1d9386e713.png)
+:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="网站不安全通知邮件" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **原因：**
 
@@ -93,7 +93,7 @@ ms.locfileid: "61166574"
 
 用户权限："在后台运行时显示弹出窗口"。
 
-![弹出窗口设置的图像。](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="Microsoft Defender 365 门户中的弹出窗口设置窗格" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **解决方案：**
 
@@ -122,46 +122,46 @@ ms.locfileid: "61166574"
 
 2. 搜索并选择电池 **优化**。
 
-   ![搜索并选择"电池电池"。](images/search-battery-optimisation.png)
+   :::image type="content" source="images/search-battery-optimisation.png" alt-text="可在其中搜索并选择&quot;电池百万&quot;的页面" lightbox="images/search-battery-optimisation.png":::
 
-3. 在 **"特殊应用访问"中**，选择 **"电池优化"。**
+3. 在 **"特殊应用访问"中**，选择 **"电池优化"**。
 
-   ![在"特殊应用访问"中，选择"Battery Battery"。](images/special-app-access.png)
+   :::image type="content" source="images/special-app-access.png" alt-text="&quot;特殊应用访问&quot;窗格，可以从中选择&quot;电池&quot;&quot;电池&quot;&quot;" lightbox="images/special-app-access.png":::
 
-4. 将下拉列表更改为显示 **所有应用**。
+4. 更改下拉列表以显示 **所有应用**。
 
-   ![将下拉列表更改为显示"所有应用"的第一步。](images/show-all-apps-2.png)
+   :::image type="content" source="images/show-all-apps-2.png" alt-text="可以从中将值更改为&quot;电池电池&quot;窗格下的所有应用的下拉列表" lightbox="images/show-all-apps-2.png":::
 
-   ![第二步将下拉列表更改为显示"所有应用"。](images/show-all-apps-1.png)
+   :::image type="content" source="images/show-all-apps-1.png" alt-text="下拉框，用于显示&quot;电池&quot;窗格下的&quot;所有应用&quot;选项" lightbox="images/show-all-apps-1.png":::
 
-5. 找到"适用于终结点的 Microsoft Defender"，然后选择 **"不优化"。**
+5. 找到"适用于终结点的 Microsoft Defender"，然后选择 **"不优化"**。
 
-   ![找到"Microsoft Defender for Endpoint"，然后选择"不优化"。](images/select-dont-optimise.png)
+   :::image type="content" source="images/select-dont-optimise.png" alt-text="启用选项 Microsoft Defender 终结点的位置和选择不优化的页面" lightbox="images/select-dont-optimise.png":::
 
-返回到适用于终结点的 Microsoft Defender 载入屏幕，选择"允许"，你将重定向到仪表板屏幕。
+返回到适用于终结点的 Microsoft Defender 载入屏幕，选择" **允许**"，你将重定向到仪表板屏幕。
 
 ## <a name="send-in-app-feedback"></a>发送应用内反馈
 
-如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内 **反馈以及诊断****数据**。 然后，我们团队可以调查日志以提供正确的解决方案。 用户可以按照以下步骤执行相同的操作：
+如果用户面临以上部分中尚未解决的问题，或者无法使用列出的步骤解决问题，则用户可以提供应用内 **反馈和诊断****数据**。 然后，我们团队可以调查日志以提供正确的解决方案。 用户可以按照以下步骤执行相同的操作：
 
 1.  在设备上 **打开 MDE** 应用程序，然后单击左上角的配置文件图标。
 
-    :::image type="content" alt-text="单击配置文件图标。" source="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="Microsoft Defender 终结点门户中的配置文件图标" lightbox="images/select-profile-icon-1.jpg":::
 
 2.  选择"帮助&反馈"。
 
-    :::image type="content" alt-text="选择帮助和反馈。" source="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="可在& Microsoft Defender 终结点门户中选择的&quot;帮助和反馈&quot;选项" lightbox="images/selecthelpandfeedback2.png":::
 
 3.  选择"向 Microsoft 发送反馈"。
 
-    :::image type="content" alt-text="选择&quot;向 Microsoft 发送反馈&quot;。" source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="选择向 Microsoft 发送反馈" source="images/send-feedback-to-microsoft-3.jpg":::
 
 4.  从给定选项中进行选择。 若要报告问题，请选择"我想报告问题"。
 
-    :::image type="content" alt-text="报告问题。" source="images/report-issue-4.jpg":::
+    :::image type="content" source="images/report-issue-4.jpg" alt-text="&quot;我想报告问题&quot;选项" lightbox="images/report-issue-4.jpg":::
 
 5.  提供你所面临的问题的详细信息并检查"发送诊断数据"。 我们建议选中"包括你的电子邮件地址"，以便团队可以使用解决方案或跟进联系你。
 
-    :::image type="content" alt-text="添加详细信息并附加诊断数据。" source="images/finalsubmit5.png":::
+    :::image type="content" source="images/finalsubmit5.png" alt-text="可在其中添加详细信息和附加诊断数据的窗格" lightbox="images/finalsubmit5.png":::
 
 6.  单击"提交"以成功发送反馈。

@@ -1,5 +1,5 @@
 ---
-title: 云保护和示例中的Microsoft Defender 防病毒
+title: 云保护和示例提交Microsoft Defender 防病毒
 description: 了解云提供的保护和Microsoft Defender 防病毒
 keywords: Microsoft Defender 防病毒， 下一代技术， 防病毒示例提交， 下一代 av， 机器学习， 反恶意软件， 安全性， defender， 云， 云保护
 ms.prod: m365-security
@@ -15,14 +15,14 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328129"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470672"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>云保护和示例中的Microsoft Defender 防病毒
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>云保护和示例提交Microsoft Defender 防病毒
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,15 +32,15 @@ Microsoft Defender 防病毒许多智能机制来检测恶意软件。 最强大
 
 如果检测到可疑或恶意文件，将示例发送到云服务进行分析，Microsoft Defender 防病毒阻止该文件。 一旦确定（这很快就会发生）就会被用户释放或Microsoft Defender 防病毒。 
 
-本文概述了云保护和云解决方案中的自动Microsoft Defender 防病毒。 若要了解有关云保护的更多信息，请参阅云[保护和Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)。
+本文提供云保护和自动提交示例的概述，位于 Microsoft Defender 防病毒。 若要了解有关云保护的更多信息，请参阅云[保护和Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)。
 
 ## <a name="how-cloud-protection-and-sample-submission-work-together"></a>云保护和示例提交如何协同工作
 
-若要了解云保护如何与示例提交协同工作，了解 Defender for Endpoint 如何抵御威胁可能会很有帮助。 Microsoft Intelligent Security Graph监视来自大量传感器网络的威胁数据。 Microsoft 层基于云的机器学习模型，这些模型可以基于来自客户端的信号以及智能安全中心中广泛的传感器和数据网络评估Graph。 此方法使 Defender for Endpoint 能够阻止许多之前未发现的威胁。 
+若要了解云保护如何与示例提交协同工作，了解 Defender for Endpoint 如何抵御威胁可能会很有帮助。 Microsoft Intelligent Security Graph监视来自大量传感器网络的威胁数据。 Microsoft 层基于基于云的机器学习模型，这些模型可以基于来自客户端的信号以及智能安全中心中广泛的传感器和数据网络Graph。 此方法使 Defender for Endpoint 能够阻止许多之前未发现的威胁。 
 
 下图描述了云保护和示例提交流程Microsoft Defender 防病毒：
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="云提供的保护流":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="云提供的保护流" lightbox="images/cloud-protection-flow.png":::
 
 Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数首次看到时从未看到过的新威胁：
 
@@ -87,7 +87,7 @@ Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数�
 
 ## <a name="cloud-protection-levels"></a>云保护级别
 
-默认情况下，云保护在 Microsoft Defender 防病毒。 我们建议你保持启用云保护，尽管你可以为组织配置保护级别。 请参阅[为用户指定云提供的Microsoft Defender 防病毒](specify-cloud-protection-level-microsoft-defender-antivirus.md)。
+默认情况下，云保护处于启用状态Microsoft Defender 防病毒。 我们建议你保持启用云保护，尽管你可以为组织配置保护级别。 请参阅[为用户指定云提供的Microsoft Defender 防病毒](specify-cloud-protection-level-microsoft-defender-antivirus.md)。
 
 ## <a name="sample-submission-settings"></a>示例提交设置
 
@@ -97,11 +97,11 @@ Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数�
 - **自动发送所有示例**  
 - **不发送示例**  
 
-有关使用 Intune、Configuration Manager、GPO 或 PowerShell 的配置选项的信息，请参阅在 Microsoft Defender 防病毒 [中启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)。
+有关使用 Intune、Configuration Manager、GPO 或 PowerShell 的配置选项的信息，请参阅在 Microsoft Defender 防病毒 [上启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)。
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>发送到云保护服务的元数据示例
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="描述发送到云保护的元数据示例的图像Microsoft Defender 防病毒":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="发送到云保护的元数据示例Microsoft Defender 防病毒门户" lightbox="images/cloud-protection-metadata-sample.png":::
 
 下表列出了云保护发送进行分析的元数据示例：
 
@@ -120,7 +120,7 @@ Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数�
 - ISO 27001
 - ISO 27018
 - SOC I、II、III
-- 和 PCI
+- PCI
 
 有关详细信息，请参阅以下资源：
 
@@ -130,7 +130,7 @@ Microsoft Defender 防病毒和云保护通过以下方法自动阻止大多数�
 
 ## <a name="other-file-sample-submission-scenarios"></a>其他文件示例提交方案
 
-还有两种方案，其中 Defender for Endpoint 可能会请求与云保护不相关的文件Microsoft Defender 防病毒。 下表介绍了这些方案：
+在另外两种方案中，Defender for Endpoint 可能会请求与云保护不相关的文件Microsoft Defender 防病毒。 下表介绍了这些方案：
 
 | 应用场景 | 说明 |
 |:---|:---|

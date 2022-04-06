@@ -15,12 +15,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7cda1669b4f8441d13f92b09d7390e31f4add529
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683310"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472278"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>建议的适用于 SaaS 应用的 Microsoft Defender for Cloud Apps 策略
 
@@ -47,18 +47,18 @@ Defender for Cloud Apps 还本地与 Microsoft 信息保护 集成，提供实�
 
 为了跨 SaaS 应用集合保护数据，下图说明了在条件访问策略Azure AD可以在 Defender for Cloud Apps 中创建的建议策略。 在此例中，在 Defender for Cloud Apps 中创建的策略将应用于你正在管理的所有 SaaS 应用。 这些控件旨在根据设备是否受管理以及已应用于文件的敏感度标签来应用适当的控件。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="在适用于云应用的 Defender 中管理 SaaS 应用的策略。" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="在适用于云应用的 Defender 中管理 SaaS 应用的策略" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 下表列出了必须在新策略中创建的新条件访问Azure AD。
 
-|保护级别|策略|更多信息|
+|保护级别|Policy|详细信息|
 |---|---|---|
 |所有保护级别|[在 Defender for Cloud Apps 中使用条件访问应用控制](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|这会将你的 IdP (Azure AD) 与 Defender for Cloud Apps 一起使用。|
 ||||
 
 下表列出了上面说明的示例策略，你可以创建这些策略来保护所有 SaaS 应用。 请务必评估自己的业务、安全性和合规性目标，然后创建为环境提供最合适的保护的策略。
 
-|保护级别|策略|
+|保护级别|Policy|
 |---|---|
 |起点|监视来自非托管设备的流量 <p> 向从非托管设备下载文件添加保护|
 |企业|阻止从非托管设备下载标记为敏感或分类的文件 (这将仅提供浏览器) |
@@ -96,7 +96,7 @@ Defender for Cloud Apps 还本地与 Microsoft 信息保护 集成，提供实�
 
 下图和表提供了一些策略示例，可配置这些策略以帮助遵守 GDPR 一般数据保护 (条例) 。 在这些示例中，策略查找特定数据。 根据数据的敏感度，每个策略都配置为采取相应的操作。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="数据丢失防护的适用于云应用的 Defender 策略示例。" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="数据丢失防护的 Defender for Cloud Apps 策略页面" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |保护级别|示例策略|
 |---|---|

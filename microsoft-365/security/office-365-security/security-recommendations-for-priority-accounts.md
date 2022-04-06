@@ -21,12 +21,12 @@ ms.custom: ''
 description: 管理员可以了解如何提升安全设置，并使用报告、警报和调查，以在组织中Microsoft 365帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f27e146df680b36c117816f0a07e45e0345c647a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c997f38e06444aab8ff6de550759959eb8f71d9f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675407"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470760"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中优先帐户安全建议
 
@@ -36,7 +36,7 @@ ms.locfileid: "63675407"
 
 Microsoft 365和 Microsoft Defender for Office 365包含多个关键功能，这些功能可为优先帐户提供额外的安全层。 本文介绍这些功能及其使用方法。
 
-![图标表单中的安全建议摘要。](../../media/security-recommendations-for-priority-users.png)
+:::image type="content" source="../../media/security-recommendations-for-priority-users.png" alt-text="图标表单中的安全建议摘要" lightbox="../../media/security-recommendations-for-priority-users.png":::
 
 |任务|所有Office 365 企业版计划|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|

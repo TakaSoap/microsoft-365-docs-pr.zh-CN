@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c8a96f3dba51de09a7237279b4053b9f4ed9b4a7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937840"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470474"
 ---
-# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP 托管安全 (授予) 访问 (预览) 
+# <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP 托管 (提供程序) 访问 (预览) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,9 +55,9 @@ ms.locfileid: "61937840"
 
 2. 在 Customer Defender for Endpoint 中为相应的访问级别创建适用于终结点的 Defender 角色。
 
-    若要在客户门户Microsoft 365 Defender RBAC，请设置 >全局管理员或安全管理员权限的用户帐户访问 设置 > **Permissions > Roles** 和"Turn on roles"。
+    若要在客户门户Microsoft 365 Defender RBAC，请从具有全局管理员或安全管理员权限的用户帐户访问 设置 > **Permissions > Roles** 和"Turn on roles"。
 
-    ![MSSP 访问的图像。](images/mssp-access.png)
+    :::image type="content" source="images/mssp-access.png" alt-text="MSSP 访问" lightbox="images/mssp-access.png":::
 
     然后，创建 RBAC 角色以满足 MSSP SOC 层需求。 通过"分配的用户组"将这些角色链接到已创建的用户组。
 
@@ -71,7 +71,7 @@ ms.locfileid: "61937840"
 
       第 1 层功能以及实时 [响应](live-response.md)
 
-    有关详细信息，请参阅使用 [基于角色的访问控制](rbac.md)。
+    有关详细信息，请参阅 [使用基于角色的访问控制](rbac.md)。
 
 ## <a name="configure-governance-access-packages"></a>配置治理访问包
 
@@ -87,11 +87,11 @@ ms.locfileid: "61937840"
 
     为此，在客户 AD 租户中，访问 Identity Governance： Catalogs，并添加新 **目录**。 在我们的示例中，我们将它称为 **MSSP Accesses**。
 
-    ![新目录的图像。](images/goverance-catalog.png)
+    :::image type="content" source="images/goverance-catalog.png" alt-text="新目录页面" lightbox="images/goverance-catalog.png":::
 
-    有关详细信息，请参阅创建 [资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
+    有关详细信息，请参阅 [创建资源目录](/azure/active-directory/governance/entitlement-management-catalog-create)。
 
-3. **为 MSSP 资源创建访问包客户AAD：标识管理**
+3. **为 MSSP 资源创建访问包客户AAD：标识治理**
 
     访问包是请求者在审批时将授予的权限和访问权限的集合。
 
@@ -103,16 +103,16 @@ ms.locfileid: "61937840"
     - Access 自动在 365 天后过期
 
     > [!div class="mx-imgBorder"]
-    > ![新访问包的图像。](images/new-access-package.png)
+    > :::image type="content" source="images/new-access-package.png" alt-text="&quot;新建访问包&quot;页" lightbox="images/new-access-package.png":::
 
     有关详细信息，请参阅 [创建新的访问包](/azure/active-directory/governance/entitlement-management-access-package-create)。
 
 4. **提供从 Customer AAD：Identity Governance 访问 MSSP 资源的访问请求链接**
 
-    MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，等待 **MSSP 分析员审批者审批**。
+    MSSP SOC 分析员使用"我的访问门户"链接通过创建的访问包请求访问。 该链接是持久链接，这意味着随着时间的推移，新分析师可能会使用相同的链接。 分析员请求进入一个队列，供 **MSSP 分析员审批者审批**。
 
     > [!div class="mx-imgBorder"]
-    > ![访问属性的图像。](images/access-properties.png)
+    > :::image type="content" source="images/access-properties.png" alt-text="&quot;属性&quot;页" lightbox="images/access-properties.png":::
 
     链接位于每个访问包的概述页面上。
 
@@ -122,13 +122,13 @@ ms.locfileid: "61937840"
 
     访问请求在客户 My Access 中由 MSSP 分析员审批者组的成员进行管理。
 
-    为此，请通过使用：访问客户的 myaccess。 `https://myaccess.microsoft.com/@<Customer Domain>`
+    为此，请通过使用：访问客户的 myaccess `https://myaccess.microsoft.com/@<Customer Domain>`。
 
     例如：`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-    此时，已设置分析员访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：`https://security.microsoft.com/?tid=<CustomerTenantId>`
+    此时，已预配分析师访问权限，并且每个分析师应能够访问客户的Microsoft 365 Defender门户：`https://security.microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>相关主题
 

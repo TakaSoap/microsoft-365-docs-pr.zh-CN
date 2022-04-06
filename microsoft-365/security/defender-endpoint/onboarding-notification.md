@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0208e21394e350c2b5ffffdca6f8e14ebba227c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166766"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476003"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>使用本地载入或载出脚本时创建通知规则
 
@@ -50,47 +50,48 @@ ms.locfileid: "61166766"
 
 ## <a name="create-the-notification-flow"></a>创建通知流
 
-1. 在 [flow.microsoft.com](https://flow.microsoft.com/)中。
+1. 在 [flow.microsoft.com](https://flow.microsoft.com/)。
 
-2. 从空白 **导航到"我的>">计划的新流"。**
+2. 从空白导航到" **我的>">计划的新流"**。
 
-    ![流的图像。](images/new-flow.png)
+   :::image type="content" source="images/new-flow.png" alt-text="流" lightbox="images/new-flow.png":::
+
 
 3. 构建计划流。
    1. 输入流名称。
    2. 指定开始时间和时间。
    3. 指定频率。 例如，每 5 分钟。
 
-    ![通知流的图像。](images/build-flow.png)
+   :::image type="content" source="images/build-flow.png" alt-text="通知流" lightbox="images/build-flow.png":::
 
-4. 选择" +"按钮以添加新操作。 新操作将是向 Defender for Endpoint 安全中心设备发送的 HTTP (API) API。 还可以将其替换为开箱即用"WDATP 连接器" (操作："计算机 - 获取计算机列表") 。
+4. 选择" +"按钮以添加新操作。 新操作将是向 Defender for Endpoint 安全中心设备请求 HTTP () API。 还可以将其替换为开箱即用"WDATP 连接器" (操作："计算机 - 获取计算机列表") 。
 
-    ![定期和添加操作的图像。](images/recurrence-add.png)
+   :::image type="content" source="images/recurrence-add.png" alt-text="重复和添加操作" lightbox="images/recurrence-add.png":::
 
 5. 输入以下 HTTP 字段：
 
    - 方法："GET"作为获取设备列表的值。
-   - URI：输入 `https://api.securitycenter.microsoft.com/api/machines` 。
+   - URI：输入 `https://api.securitycenter.microsoft.com/api/machines`。
    - 身份验证：选择"Active Directory OAuth"。
-   - 租户：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
+   - 租户：登录并https://portal.azure.com导航到Azure Active Directory >**应用注册并** 获取租户 ID 值。
    - 访问群体： `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - 客户端 ID：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取客户端 ID 值。
+   - 客户端 ID：登录并https://portal.azure.com导航到Azure Active Directory >**应用注册并** 获取客户端 ID 值。
    - 凭据类型：选择"机密"。
-   - 密码：登录并导航到Azure Active Directory > https://portal.azure.com **注册并** 获取租户 ID 值。
+   - 密码：登录并导航到https://portal.azure.comAzure Active Directory >**应用注册并** 获取租户 ID 值。
 
-    ![HTTP 条件的图像。](images/http-conditions.png)
+    :::image type="content" source="images/http-conditions.png" alt-text="HTTP 条件" lightbox="images/http-conditions.png":::
 
-6. 通过选择"添加新操作"，然后 **搜索"数据** 操作"并选择"**分析 JSON"添加新步骤**。 
+6. 通过选择"添加新操作"，**然后****搜索"数据** 操作"并选择"**分析 JSON"来添加新步骤**。
 
-    ![数据操作的图像。](images/data-operations.png)
+   :::image type="content" source="images/data-operations.png" alt-text="数据操作条目" lightbox="images/data-operations.png":::
 
 7. 在"内容" **字段中添加** 正文。
 
-    ![分析 JSON 的图像。](images/parse-json.png)
+   :::image type="content" source="images/parse-json.png" alt-text="分析 JSON 部分" lightbox="images/parse-json.png":::
 
 8. 选择" **使用示例有效负载生成架构"** 链接。
 
-    ![使用有效负载分析 json 的图像。](images/parse-json-schema.png)
+   :::image type="content" source="images/parse-json-schema.png" alt-text="具有有效负载的解析 JSON" lightbox="images/parse-json-schema.png":::
 
 9. 复制并粘贴以下 JSON 代码段：
 
@@ -174,27 +175,27 @@ ms.locfileid: "61166766"
 
     ```
 
-10. 从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册，例如：
+10. 从 JSON 调用中提取值，并检查已载入 (的) 是否/已在 SharePoint 列表注册为示例：
 
     - 如果是，则不触发任何通知
-    - 如果否，将在 SharePoint 列表中 (新的已载入) 设备，并且会向 Defender for Endpoint 管理员发送通知
+    - 如果否，将在) 列表中注册新的已载入 (设备SharePoint，并且会向 Defender for Endpoint 管理员发送通知
 
-    ![适用于每个图像的图像。](images/flow-apply.png)
+    :::image type="content" source="images/flow-apply.png" alt-text="将流应用至每个元素" lightbox="images/flow-apply.png":::
 
-    ![适用于每个具有 get 项的图像。](images/apply-to-each.png)
+    :::image type="content" source="images/apply-to-each.png" alt-text="将流应用至 Get items 元素" lightbox="images/apply-to-each.png":::
 
 11. 在 **"条件**"下，添加以下表达式："length (body ('Get_items') ？['value']) "，将条件设置为等于 0。
 
-    ![适用于每个条件的图像。 ](images/apply-to-each-value.png)
-     ![condition1 的图像。 ](images/conditions-2.png)
-     ![condition2 的图像。 ](images/condition3.png)
-     ![发送电子邮件的图像。](images/send-email.png)
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="将流应用至每个条件" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="condition-1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="condition-2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="&quot;发送电子邮件&quot;部分" lightbox="images/send-email.png":::
 
 ## <a name="alert-notification"></a>警报通知
 
 下图是电子邮件通知的一个示例。
 
-![电子邮件通知的图像。](images/alert-notification.png)
+:::image type="content" source="images/alert-notification.png" alt-text="电子邮件通知屏幕" lightbox="images/alert-notification.png":::
 
 ## <a name="tips"></a>提示
 

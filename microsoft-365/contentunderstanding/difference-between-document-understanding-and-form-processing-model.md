@@ -1,5 +1,5 @@
 ---
-title: 文档理解模型和表单处理模型之间的差异
+title: 文档理解和表单处理模型之间的差异
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,21 +12,21 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: 了解文档理解模型和表单处理模型之间的主要差异。
-ms.openlocfilehash: e5de4c55cc8a559ad03d722b1f7235797db76e07
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: 了解文档理解模型与表单处理模型之间的主要区别。
+ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681273"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664626"
 ---
-# <a name="differences-between-document-understanding-and-form-processing-models"></a>文档理解模型和表单处理模型之间的差异 
+# <a name="differences-between-document-understanding-and-form-processing-models"></a>文档理解和表单处理模型之间的差异 
 
-通过了解 Microsoft SharePoint Syntex内容，您可以确定上载到文档库SharePoint文档并进行分类，然后从每个文件中提取相关信息。 例如，当文件上传到 SharePoint 文档库中时，所有被识别为 *采购订单* 的文件都被归类为采购订单，然后在自定义文档库视图中显示。 此外，可从每个文件中提取特定信息（例如， *PO 编号* 和 *总数*），并将其显示为文档库视图中的一列。 
+通过 Microsoft SharePoint Syntex中的内容理解，可以识别并分类上传到SharePoint文档库的文档，然后从每个文件中提取相关信息。 例如，当文件上传到 SharePoint 文档库中时，所有被识别为 *采购订单* 的文件都被归类为采购订单，然后在自定义文档库视图中显示。 此外，可从每个文件中提取特定信息（例如， *PO 编号* 和 *总数*），并将其显示为文档库视图中的一列。 
 
 内容理解使你能够创建 *模型* 来识别和提取所需的信息。 模型在帮助解决搜索、业务流程、合规性等业务问题上具有价值。
 
-您可以使用两种自定义模型类型：
+可以使用两种自定义模型类型：
 
 - [文档理解模型 ](document-understanding-overview.md)
 - [表单处理模型](form-processing-overview.md)
@@ -52,7 +52,7 @@ ms.locfileid: "63681273"
 > [!NOTE]
 > 有关输入文档的详细信息，请参阅 [表单处理模型的要求和限制](/ai-builder/form-processing-model-requirements)。 
 
-表单处理模型在 PowerApps [AI 生成器](/ai-builder/overview)中创建而成，但创建活动是直接从 SharePoint 文档库开始的。 文档库必须启用表单处理模型创建，用户才能为其创建表单处理模型。 管理员可以在内容理解管理员设置中启用表单处理模型创建。 表单处理模型Power Automate流处理上载到文档库的文件。
+表单处理模型在 PowerApps [AI 生成器](/ai-builder/overview)中创建而成，但创建活动是直接从 SharePoint 文档库开始的。 文档库必须启用表单处理模型创建，用户才能为其创建表单处理模型。 管理员可以在内容理解管理员设置中启用表单处理模型创建。 表单处理模型在上传到文档库时使用Power Automate流来处理文件。
 
 创建文档理解模型时，将创建一个新的 [SharePoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) 保存到 SharePoint 内容类型库中。 或者如果需要的话，可使用现有的内容类型来定义模型。
 
@@ -84,7 +84,7 @@ ms.locfileid: "63681273"
 | 支持的区域| 表单处理依赖于 Power Platform。 有关 Power Platform 和 AI Builder 的全球可用性信息，请参阅 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 在所有地区可用。|
 | 交易性成本 | AI 生成器点数。<br>可分批购买 1M 的积分。<br>购买 300 个以上的 SharePoint Syntex 许可证，即可获得 1M 积分。<br>1M 积分可以处理 2000 个文件页。<br>| 不适用 |
 | 容量 | 使用默认的 Power Platform 环境（支持 Dataverse 数据库的自定义环境）。 | 没有容量限制。|
-| 支持的语言| 英语 <br>2022 年晚些时候将：拉丁语字母语言 | 模型在所有拉丁字母语言中均可用。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
+| 支持的语言| 对更多 [73 种语言的语言](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)支持。 | 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
 
 ## <a name="see-also"></a>另请参阅
 

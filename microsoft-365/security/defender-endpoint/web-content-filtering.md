@@ -1,6 +1,6 @@
 ---
 title: Web 内容筛选
-description: 在网站中Microsoft Defender for Endpoint内容筛选，以根据网站的内容类别跟踪和监管对网站的访问。
+description: 使用 Microsoft Defender for Endpoint 中的 Web 内容筛选，根据网站的内容类别跟踪和监管对网站的访问。
 keywords: Web 保护， Web 威胁防护， Web 浏览， 监视， 报告， 卡， 域列表， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 2535845c52285b1ce28fbe142709089778503c09
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634088"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469572"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -34,7 +34,7 @@ ms.locfileid: "64634088"
 > [!TIP]
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)。
 
-Web 内容筛选是 Web [中 Web 保护](web-protection-overview.md)功能的一Microsoft Defender for Endpoint。 它使组织能够根据网站的内容类别跟踪和监管对网站的访问。 许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。
+Web 内容筛选是 Microsoft Defender for Endpoint 中的 [Web](web-protection-overview.md) 保护功能的一部分。 它使组织能够根据网站的内容类别跟踪和监管对网站的访问。 许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。
 
 配置跨设备组的策略以阻止某些类别。 阻止类别会阻止指定设备组内的用户访问与该类别关联的 URL。 对于未阻止的任何类别，将自动审核 URL。 用户无需中断即可访问 URL，并且你将收集访问统计信息以帮助创建更自定义的策略决策。 如果用户正在查看的页面上的元素正在调用阻止的资源，则会看到阻止通知。
 
@@ -44,7 +44,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 - 阻止用户访问被阻止类别的网站，无论他们是在内部浏览还是离开。
 
-- 安全团队可以使用基于角色的访问控制设置中定义的设备Microsoft Defender for Endpoint[向用户组部署策略](/microsoft-365/security/defender-endpoint/rbac)。
+- 安全团队可以使用 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/rbac) 基于角色的访问控制设置中定义的设备组，便捷地将策略部署到用户组。
 
 - 安全团队可以访问位于相同中心位置的 Web 报告，并查看实际块和 Web 使用情况。
 
@@ -52,7 +52,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 或 Microsoft Defender for Endpoint独立许可证。 
+- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或 Microsoft Defender for Endpoint独立许可证。 
 
 - 你有权访问 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
@@ -62,7 +62,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 ## <a name="data-handling"></a>数据处理
 
-数据存储在已选择作为数据处理设置的一Microsoft Defender for Endpoint[区域](data-storage-privacy.md)。 您的数据不会离开该区域中的数据中心。 此外，你的数据不会与任何第三方共享，包括我们的数据提供程序。
+数据存储在已选择作为 [Microsoft Defender for Endpoint 数据处理设置的一部分的区域。](data-storage-privacy.md) 您的数据不会离开该区域中的数据中心。 此外，你的数据不会与任何第三方共享，包括我们的数据提供程序。
 
 ## <a name="turn-on-web-content-filtering"></a>打开 Web 内容筛选
 
@@ -134,7 +134,7 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 **聊天**：主要是基于 Web 的聊天室的网站。
 
-**游戏**：与视频或计算机游戏相关的网站，包括通过托管游戏或联机服务游戏相关信息来提升游戏的网站。
+**游戏**：与视频或计算机游戏相关的网站，包括通过托管联机服务或与游戏有关的信息推广游戏的网站。
 
 **即时消息：** 可用于下载即时消息软件或基于客户端的即时消息的网站。
 
@@ -203,9 +203,9 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 ### <a name="url-category-lookup"></a>URL 类别查找
 
-若要确定网站的类别<https://security.microsoft.com>，可以使用终结点搜索下 Microsoft 365 Defender 门户 () **URL** \> **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
+若要确定网站的类别<https://security.microsoft.com>，可以使用终结点搜索下 Microsoft 365 Defender 门户 () **URL** \> **搜索功能**。 在 URL 搜索结果中，Web 内容筛选类别显示在 **"URL/域详细信息"下**。 管理员也可以直接从此页面就域的类别进行争议，如下图所示。 如果未显示类别结果，则当前未将 URL 分配给现有的 Web 内容筛选类别。
 
-<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
+:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="Web 内容筛选类别查找结果" lightbox="../../media/web-content-filtering-category-lookup.png":::
 
 ## <a name="web-content-filtering-cards-and-details"></a>Web 内容筛选卡和详细信息
 

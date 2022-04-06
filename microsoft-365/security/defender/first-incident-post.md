@@ -1,6 +1,6 @@
 ---
-title: 第 3 步。 对第一个事件执行事后评审
-description: 如何对事件中的第一个事件Microsoft 365 Defender。
+title: 第 3 步。 对第一个事件执行事后审查
+description: 如何在Microsoft 365 Defender中对第一个事件执行评审。
 keywords: 事件, 警报, 调查, 关联, 攻击, 计算机, 设备, 用户, 标识, 标识, 邮箱, 电子邮件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,40 +22,40 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3139cab64a967ed65a16867b53ad57a6913afd2c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d2d137ea2a97bb183187ca83eb12a34ab336bc53
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325889"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64665989"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>第 3 步。 对第一个事件执行事后评审
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>步骤 3. 对第一个事件执行事后审查
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-美国国家标准和技术协会 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须检查事件以从事件中学习，并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
+国家标准与技术研究所 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须审查事件，以从中吸取教训，并改善安全状况或流程。 评估事件处理的不同方面对于准备下一个事件非常重要。
 
-Microsoft 365 Defender组织提供符合 [MITRE ATT 和 CK](https://attack.mitre.org/) Framework 的警报，帮助&活动。 所有 Microsoft Defender 解决方案根据 ATT 和 CK 策略&标记攻击。
+Microsoft 365 Defender可以通过向组织提供与 [MITRE ATT&CK Framework](https://attack.mitre.org/) 一致的警报来帮助执行事后活动。 所有 Microsoft Defender 解决方案都根据 ATT&CK 策略或技术标记攻击。
 
-通过向此行业框架映射警报，你可以：
+通过将警报映射到此行业框架，可以：
 
-- 对安全范围差距进行分析。
-- 确定对手和宣传活动属性。
+- 对安全覆盖范围中的差距进行分析。
+- 确定对手和市场活动归属。
 - 执行趋势分析。
-- 确定攻击方法感知中的技能差异。
-- 创建一Power Automate Playbook，以加快修正速度。
+- 识别攻击方法感知方面的技能差距。
+- 创建Power Automate Playbook，以便更快地进行修正。
 
-事件后审阅活动还可以微调安全配置和安全团队的流程，以简化组织的响应功能。
+事件后评审活动还可能导致优化安全配置和安全团队流程，以简化组织的响应功能。
 
 ## <a name="next-step"></a>后续步骤
 
 请参阅以下其他调查路径：
 
 - [钓鱼电子邮件](first-incident-path-phishing.md)
-- [基于身份的攻击](first-incident-path-identity.md)
+- [基于标识的攻击](first-incident-path-identity.md)
 
 
 ## <a name="see-also"></a>另请参阅

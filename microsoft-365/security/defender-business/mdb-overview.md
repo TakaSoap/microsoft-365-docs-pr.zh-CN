@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Business 概述
-description: 了解 Microsoft Defender for Business，包括设置、入门以及如何使用服务
+title: Microsoft Defender 商业版概述
+description: 了解Microsoft Defender 商业版，包括设置、入门以及如何使用服务
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -18,68 +18,68 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 2cb63e579dee59b3407ed893cf9f9306e83af386
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 0d291f4da7c44a57d12516be364fc36bbb771356
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527108"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664933"
 ---
-# <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender for Business 概述
+# <a name="overview-of-microsoft-defender-for-business"></a>Microsoft Defender 商业版概述
 
 > [!IMPORTANT]
-> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender 商业版从 2022 年 3 月 1 日开始向[Microsoft 365 商业高级版](../../business-premium/index.md)客户推出。 Defender for Business 作为独立订阅处于预览状态，将逐步推出给 [在此处注册](https://aka.ms/mdb-preview) 以请求该订阅的客户和 IT 合作伙伴。 预览版包括 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
+> 本文中的一些信息涉及到预租产品/服务，这些产品/服务在商业发布之前可能会进行重大修改。 Microsoft 不会对此处提供的信息作出明示或暗示的保证。 
 
-Microsoft Defender for Business 是一种新的终结点安全解决方案，专为中小型企业设计 (多达 300 名员工) 。 借助此终结点安全解决方案，可以更好地保护公司设备免受勒索软件、恶意软件、网络钓鱼和其他威胁的侵害。 
+Microsoft Defender 商业版是一种新的终结点安全解决方案，专为) 多达 300 名员工 (中小型企业而设计。 通过此终结点安全解决方案，公司设备可以更好地防范勒索软件、恶意软件、网络钓鱼和其他威胁。 
 
-观看以下视频，详细了解 Defender for Business： <br/><br/>
+观看以下视频，了解有关 Defender for Business 的详细信息： <br/><br/>
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
-本文介绍了 Defender for Business 中包含的内容，并提供了一些链接，可详细了解这些功能。
+本文介绍 Defender for Business 中包含的内容，其中包含有关这些功能和功能的详细信息的链接。
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business 特性和功能。":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender 商业版功能和功能。":::
 
 >
 > **有空吗？**
-> 请参加有关 <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business 的简短调查</a>。 我们非常乐意听取你的宝贵意见！
+> 请对<a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender 商业版进行简短调查</a>。 我们非常乐意听取你的宝贵意见！
 >
 
-借助 Defender for Business，你可以帮助保护你的企业使用的设备和数据：
+借助 Defender for Business，可帮助保护企业使用的设备和数据：
 
-- **Enterprise级安全性**。 Defender for Business 从我们行业领先的 [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) 解决方案中提供了强大的终结点安全性功能，并优化了这些功能，供 IT 管理员支持中小型企业。
+- **Enterprise级安全** 性。 Defender for Business 从行业领先的[Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)解决方案中引入了强大的终结点安全功能，并优化了 IT 管理员支持中小型企业的这些功能。
 
-- **易于使用的安全解决方案**。 Defender for Business 提供了简化体验，可指导你采取操作，并针对终结点的安全性提供建议和见解。 不需要任何专门知识，因为 Defender for Business 提供向导驱动的配置和默认安全策略，旨在帮助你保护公司设备自第一天起。
+- **易于使用的安全解决方案**。 Defender for Business 提供简化的体验，可通过有关终结点安全性的建议和见解指导你采取行动。 无需专业知识，因为 Defender for Business 提供向导驱动的配置和默认安全策略，旨在帮助从第一天起保护公司的设备。
 
-- **环境的灵活性**。 Defender for Business 可以适用于你的业务环境，无论你使用的是Microsoft Intune还是全新使用 Microsoft 云。 Defender for Business 适用于内置于 Windows 的组件，以及适用于 macOS、iOS 和 Android 设备的应用。
+- **环境的灵活性**。 Defender for Business 可以处理你的业务环境，无论你是在使用Microsoft Intune还是你对 Microsoft Cloud 是全新的。 Defender for Business 适用于内置于 Windows 中的组件，以及适用于 macOS、iOS 和 Android 设备的应用。
 
-- **与 Microsoft 365 Lighthouse** 集成。 如果您是使用 MSP 服务的托管服务提供商 (MSP [) ，Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)更多功能可用。 如果你的客户将 Microsoft 365 商业高级版与 Defender for Business 一起使用，你可以查看已载入到 Microsoft 365 Lighthouse 的客户租户中的安全事件和Microsoft 365 Lighthouse。
+- **与Microsoft 365 Lighthouse集成**。 如果你是托管服务提供商 (使用Microsoft 365 Lighthouse的 MSP [) ](../../lighthouse/m365-lighthouse-overview.md)，则可以使用更多功能。 如果客户与 Defender for Business 一起使用Microsoft 365 商业高级版，则可以在加入到Microsoft 365 Lighthouse的客户租户中查看安全事件和警报。
 
 ## <a name="how-to-use-this-guide"></a>如何使用本指南
 
 **本指南旨在**：
 
-- **提供 Defender for Business** 概述，以便了解包含哪些内容及其工作方式
+- **提供 Defender for Business 概述** ，以便了解包含的内容及其工作原理
    - 使用本文作为起点
-   - [比较 Microsoft Defender for Business 中的安全功能与其他计划](compare-mdb-m365-plans.md) 
-   - [了解如何获取 Microsoft Defender for Business](get-defender-business.md)
+   - [将Microsoft Defender 商业版中的安全功能与其他计划进行比较](compare-mdb-m365-plans.md) 
+   - [了解如何获取Microsoft Defender 商业版](get-defender-business.md)
 
-- **演练设置和配置威胁防护功能** 
+- **演练如何设置和配置威胁防护功能** 
    - [了解如何设置和配置 Defender for Business](mdb-setup-configuration.md)
 
-- **帮助你开始使用 Defender for Business**，从 Microsoft 365 Defender门户开始 
+- 从Microsoft 365 Defender门户 **开始，帮助你开始使用 Defender for Business** 
    - [导航Microsoft 365 Defender门户](mdb-get-started.md)
    - [尝试预览方案、教程和模拟](mdb-tutorials.md)
 
-- **提供有关管理设备和安全策略的指南**
+- **提供有关管理设备和安全策略的指导**
    - [管理设备](mdb-manage-devices.md)
    - [查看或编辑安全策略](mdb-view-edit-policies.md)
    - [管理防火墙策略的自定义规则](mdb-custom-rules-firewall.md)  
 
 ## <a name="next-steps"></a>后续步骤
 
-- [详细了解 Microsoft Defender for Business 中的简化配置过程](mdb-simplified-configuration.md)
+- [详细了解Microsoft Defender 商业版中的简化配置过程](mdb-simplified-configuration.md)
 
-- [了解如何获取 Microsoft Defender for Business](get-defender-business.md)
+- [了解如何获取Microsoft Defender 商业版](get-defender-business.md)

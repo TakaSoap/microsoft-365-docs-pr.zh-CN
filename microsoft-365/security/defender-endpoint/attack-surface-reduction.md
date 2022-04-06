@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c09405043caeea57fdad1c241dfcd70e47ccd6f1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680612"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470723"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>攻击面减少规则概述
 
@@ -53,7 +53,7 @@ ms.locfileid: "63680612"
 
 你可以评估攻击面减少规则可能如何影响你的网络，在安全报告中打开该规则的安全[危险和漏洞管理](/windows/security/threat-protection/#tvm)。
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="攻击面减少规则的安全重新成本。":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="ASR 建议" lightbox="images/asrrecommendation.png":::
 
 在建议详细信息窗格中，检查用户影响以确定设备可接受在阻止模式下启用规则的新策略的百分比，而不会对工作效率产生不利影响。
 

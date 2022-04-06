@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c43fdfe746575837e8e5c8f36992f5fa6e2fec96
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679491"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476128"
 ---
 # <a name="evaluate-network-protection"></a>网络保护功能评估
 
@@ -47,7 +47,7 @@ ms.locfileid: "63679491"
 
 在审核模式下启用网络保护，以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现频繁发生的情况。
 
-1. 在 **"开始"菜单中键入 powershell** ， **右键单击** "Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **脚本中键入 powershell**"开始"菜单右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -62,14 +62,14 @@ ms.locfileid: "63679491"
 
     将允许网络连接，并显示测试消息。
     
-    ![显示"已阻止连接：你的 IT 管理员导致 Windows 安全中心阻止此网络连接"的通知示例。 请与 IT 技术支持联系。](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="连接阻止通知" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > 即使站点被网络保护阻止，网络连接也可以成功。 若要了解更多信息，请参阅 [网络保护和 TCP 三向握手](network-protection.md#network-protection-and-the-tcp-three-way-handshake)。
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>在 Windows 事件查看器中查看网络保护事件
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
 
-若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows Defender/操作日志中的事件 ID 1125。 下表列出了所有网络保护事件。
+若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows Defender/Operational 日志中的事件 ID 1125。 下表列出了所有网络保护事件。
 
 | 事件 ID | 提供/源 | 说明 |
 |---|---|---|

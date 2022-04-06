@@ -1,6 +1,6 @@
 ---
 title: 在 Jamf 中设置设备Pro
-description: 了解如何在 MacOS 上为 Microsoft Defender for Endpoint 在 Jamf Pro设置设备组
+description: 了解如何在 macOS 上为 Microsoft Defender for Endpoint 在 Jamf Pro设置设备组
 keywords: device， group， microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3b9d6255320b5d702768614059bb9edff28be3b3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c22a1a68af2722e6b17d155a37632c1f6417b605
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767636"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471750"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf 设备组中设置 macOS 设备组的 Microsoft Defender for Endpoint Pro
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>在 Jamf 设备组中设置 macOS 设备组的 Microsoft Defender for endpoint Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,17 +37,17 @@ ms.locfileid: "62767636"
 
 1. 导航到 **"静态计算机组"**。
 
-2. 选择 **"新建"**。 
+2. 选择 **新建**。 
 
-    ![Jamf Pro1 的图像。](images/jamf-pro-static-group.png)
+   :::image type="content" source="images/jamf-pro-static-group.png" alt-text="Jamf Pro1 页面" lightbox="images/jamf-pro-static-group.png":::
 
-3. 提供显示名称并选择"保存 **"**。
+3. 提供显示名称，然后选择"保存 **"**。
 
-    ![Jamf Pro2 的图像。](images/jamfpro-machine-group.png)
+   :::image type="content" source="images/jamfpro-machine-group.png" alt-text="Jamf Pro2 页面" lightbox="images/jamfpro-machine-group.png":::
 
 4. 现在，你将在静态计算机 **组下看到 Contoso** **的计算机组**。
 
-    ![Jamf Pro3 的图像。](images/contoso-machine-group.png)
+   :::image type="content" source="images/contoso-machine-group.png" alt-text="Jamf Pro3 页面" lightbox="images/contoso-machine-group.png":::
 
 ## <a name="next-step"></a>后续步骤
 - [在 Jamf 中设置 macOS 策略上的 Microsoft Defender for Endpoint Pro](mac-jamfpro-policies.md)

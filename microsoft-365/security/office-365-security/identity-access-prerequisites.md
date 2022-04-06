@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8123b3602569ec1effcbf79cb12d242ab19d960e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680899"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472344"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>实现零信任标识和设备访问策略的先决条件工作
 
 本文介绍了管理员使用推荐的零信任标识和设备访问策略以及使用条件访问必须满足的先决条件。 此外，还讨论为 SSO) 体验的最佳单一登录配置客户端平台 (默认值。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 在使用建议的零信任标识和设备访问策略之前，组织需要满足先决条件。 对于列出的各种标识和身份验证模型，要求是不同的：
 
@@ -41,7 +41,7 @@ ms.locfileid: "63680899"
 
 下表详细介绍了适用于所有标识模型的先决条件功能及其配置（除非已指出）。
 
-|配置|Exceptions|授权|
+|配置|例外|授权|
 |---|:---:|---|
 |[配置 PHS](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  必须启用此功能，以检测泄露的凭据，并针对基于风险的条件访问处理这些凭据。 **注意：** 无论组织是否使用联合身份验证，都需要这样做。|仅限云|Microsoft 365 E3 或 E5|
 |[启用无缝单一登录](/azure/active-directory/connect/active-directory-aadconnect-sso) ，以在用户连接到组织网络的组织设备上时自动登录。|仅云和联合|Microsoft 365 E3 或 E5|
@@ -122,6 +122,6 @@ ms.locfileid: "63680899"
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 2：配置常见的零信任标识和访问条件访问策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![步骤 2：配置常见的零信任标识和访问条件访问策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
 [配置常见的零信任标识和设备访问策略](identity-access-policies.md)

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b0a328ffeee6ee5796cb92f00b8491b257e88a65
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 35b77183ee9ceb00569c956d30debb0dd61e63f7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765728"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471706"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的许可证问题
 
@@ -38,7 +38,7 @@ ms.locfileid: "62765728"
 
 当你在 [macOS 上通过 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) 和 [手动](mac-install-manually.md) 部署测试或概念证明 (PoC) 时，你可能会收到以下错误：
 
-![许可证错误的图像。](images/no-license-found.png)
+:::image type="content" source="images/no-license-found.png" alt-text="许可证错误" lightbox="images/no-license-found.png":::
 
 **消息：** 
 

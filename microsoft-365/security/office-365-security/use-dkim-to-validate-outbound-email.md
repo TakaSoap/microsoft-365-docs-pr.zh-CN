@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25333a1616bb1f4e4e529c17813bdd58f4c768b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fd236ff616ab585909b210c9c1b9a8f12b2e9fe2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312945"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472256"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -89,13 +89,15 @@ DKIM 允许你在邮件头中为出站电子邮件添加数字签名。配置 DK
 
 步骤 1：单击希望在 DKIM 页上配置 DKIM 的域（https://security.microsoft.com/dkimv2 或 https://protection.office.com/dkimv2)。
 
-![已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面。](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="已选择域的 Microsoft 365 Defender 门户中的 DKIM 页面" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 步骤 2：将开关滑动到“**启用**”。 你将看到一个弹出窗口，指出需要添加 CNAME 记录。
 
-![将开关滑动到“已启用”以启用 DKIM。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="带有“创建 DKIM 密钥”按钮的域详细信息浮出控件" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
 步骤 3：复制弹出窗口中显示的 CNAMES
+
+:::image type="content" source="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png" alt-text="“发布 CNAME”弹出窗口，其中包含要复制的两条 CNAME 记录" lightbox="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png":::
 
 步骤 4：将复制的 CNAME 记录发布到 DNS 服务提供程序。
 
@@ -110,7 +112,7 @@ TTL: 3600 (or your provider default)
 
 步骤 5：返回到 DKIM 页以启用 DKIM。
 
-![将开关滑动到“已启用”以启用 DKIM。](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png" alt-text="用于启用 DKIM 的开关" lightbox="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png":::
 
 如果看到 CNAME 记录不存在错误，则可能是由于：
 
@@ -248,7 +250,7 @@ TTL:                3600
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 为自定义域启用 DKIM 签名
 
 > [!IMPORTANT]
-> :::image type="content" source="../../media/dkim.png" alt-text="“此域未保存 DKIM 密钥。”错误。":::
+> :::image type="content" source="../../media/dkim.png" alt-text="没有为该域名保存 DKIM 密钥的错误 " lightbox="../../media/dkim.png":::
 > 如果是第一次配置 DKIM，并看到“没有为该域保存 DKIM 密钥”的错误，请完成下面第 2 步的命令 (例如，`Set-DkimSigningConfig -Identity contoso.com -Enabled $true`) 来查看密钥。
 
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
@@ -408,4 +410,5 @@ Return-Path: <communication@bulkemailprovider.com>
 
 通过 PowerShell 进行密钥轮换：[Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 
 
-[使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)
+[使用 DMARC 验证电子邮件](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+

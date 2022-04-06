@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d67a4ca067f16d74b15a1d7ece5c47d563f1a941
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166514"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471889"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>使用Windows管理器载入设备
 
@@ -49,14 +49,14 @@ ms.locfileid: "61166514"
 对于 Windows Server 2012 R2 和 Windows Server 2016 - 完成载入步骤后，你需要配置和更新System Center Endpoint Protection[客户端](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
-> 在 OOBE 的"开箱即用体验"阶段，Defender [ (OOBE) ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 载入。 确保用户在运行完安装或升级Windows OOBE。
+> 在 OOBE 体验阶段，Defender for Endpoint 不支持 ([载入) ](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) 阶段。 确保用户在运行完安装或升级Windows OOBE。
 >
 > 请注意，在 Configuration Manager 应用程序上创建检测规则可以持续检查设备是否已载入。 应用程序是一种与包和程序不同的对象类型。
-> 如果由于 OO) BE 完成 (任何其他原因 (未载入设备，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
+> 如果由于挂起的 OOBE (任何其他原因) ，设备尚未载入，Configuration Manager 将重试载入设备，直到规则检测到状态更改。
 >
 > 通过创建检测规则检查"OnboardingState"注册表值是否为 (= 1，REG_DWORD) 实现此行为。
 > 此注册表值位于"HKLM\SOFTWARE\Microsoft\Windows高级威胁防护\状态"下。
-有关详细信息，请参阅[Configure Detection Methods in System Center 2012 R2 Configuration Manager。](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
+有关详细信息，请参阅 Configure [Detection Methods in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)。
 
 ### <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
@@ -84,7 +84,7 @@ Value: 0 or 1
 
 如果注册表项不存在，则默认值为 1。
 
-有关合规性System Center Configuration Manager，请参阅[System Center 2012 R2 Configuration Manager 中的合规性设置简介](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
+有关合规性System Center Configuration Manager，请参阅 [System Center 2012 R2 Configuration Manager 中的合规性设置简介](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
 ## <a name="other-recommended-configuration-settings"></a>其他建议的配置设置
 
@@ -120,7 +120,7 @@ Value: 0 or 1
 
 #### <a name="network-protection"></a>网络保护
 
-在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
+在审核或阻止模式下启用网络保护之前，请确保已安装反恶意软件平台更新（可以从支持 [页面获取](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)）。
 
 #### <a name="controlled-folder-access"></a>文件夹限制访问
 
@@ -130,7 +130,7 @@ Value: 0 or 1
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>运行检测测试以验证载入
 
-载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
+载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md) 设备运行检测测试。
 
 ## <a name="offboard-devices-using-configuration-manager"></a>使用 Configuration Manager 的载出设备
 
@@ -141,19 +141,19 @@ Value: 0 or 1
 
 ### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>使用当前分支Microsoft Endpoint Manager载设备
 
-如果使用Microsoft Endpoint Manager分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
+如果使用 Microsoft Endpoint Manager当前分支，请参阅[创建载出配置文件](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)。
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>使用 System Center 2012 R2 Configuration Manager 的载出设备
 
 1. 从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
-    1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **""载出"。**  
+    1. 在导航窗格中，**选择"**\>设置 **终结点设备** \> **管理**\>**""载出"**。  
     1. 选择Windows 10或Windows 11操作系统。
-    1. 在"**部署方法"** 字段中，选择 **"System Center Configuration Manager 2012/2012 R2/1511/1602"。**
-    1. 选择 **"下载** 程序包"，然后保存.zip文件。
+    1. 在"**部署方法"** 字段中，选择"System Center Configuration Manager **2012/2012 R2/1511/1602"**。
+    1. 选择 **下载程序包**，然后保存.zip文件。
 
 2. 将 .zip 文件的内容解压缩到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
-3. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))一文中的步骤部署程序包。
+3. 按照 Package [and Programs in System Center 2012 R2 Configuration Manager 一文](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))中的步骤部署程序包。
 
    选择要将程序包部署到的预定义设备集合。
 
@@ -164,9 +164,9 @@ Value: 0 or 1
 
 如果你使用的是当前分支Microsoft Endpoint Manager，请使用 Configuration Manager 控制台中的内置 Defender for Endpoint 仪表板。 有关详细信息，请参阅 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)。
 
-如果使用的是 System Center 2012 R2 Configuration Manager，则监控由两部分组成：
+如果使用 2012 R2 配置System Center，则监控由两部分组成：
 
-1. 确认配置包已正确部署，并且正在 (或已成功) 网络中设备上运行配置包。
+1. 确认配置包已正确部署，并且正在 (或已成功在) 设备上运行配置包。
 
 2. 检查设备是否符合 Defender for Endpoint 服务 (这可确保设备可以完成载入过程，并可以继续将数据报告给服务) 。
 
@@ -174,15 +174,15 @@ Value: 0 or 1
 
 1. 在 Configuration Manager 控制台中 **，单击导航** 窗格底部的"监视"。
 
-2. 选择 **"概述**"，然后选择"**部署"。**
+2. 选择 **"概述** "，然后选择" **部署"**。
 
 3. 使用程序包名称选择部署。
 
-4. 查看"完成统计信息"和 **"内容** 状态" **下的状态指示器**。
+4. 查看"完成统计信息"和" **内容状态** " **下的状态指示器**。
 
-    如果设备部署失败 (错误、不满足要求或失败状态) ，你可能需要对设备进行故障排除。  有关详细信息，请参阅 Microsoft [Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)。
+    如果设备部署失败 (错误、不满足要求或失败状态) ，你可能需要对设备进行故障排除。 有关详细信息，请参阅 Microsoft [Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)。
 
-    ![显示成功部署（无错误）的 Configuration Manager。](images/sccm-deployment.png)
+    :::image type="content" source="images/sccm-deployment.png" alt-text="显示成功部署（无错误）的 Configuration Manager" lightbox="images/sccm-deployment.png":::
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>检查设备是否符合 Microsoft Defender for Endpoint 服务
 
@@ -198,7 +198,7 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-有关详细信息，请参阅[introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
+有关详细信息，请参阅 introduction [to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))。
 
 ## <a name="related-topics"></a>相关主题
 - [使用组策略载入 Windows 设备](configure-endpoints-gp.md)

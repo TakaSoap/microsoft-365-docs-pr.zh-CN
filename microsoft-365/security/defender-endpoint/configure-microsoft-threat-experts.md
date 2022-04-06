@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 152c0c54138841d9159c7230fc043307979e4546
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324265"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471816"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>配置和管理 Microsoft 威胁专家功能
 
@@ -52,15 +52,15 @@ ms.locfileid: "63324265"
 
 2. 单击“**应用**”。
 
-    ![设置Microsoft 威胁专家的图像。](images/mte-collaboratewithmte.png)
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="Microsoft 威胁专家设置" lightbox="images/mte-collaboratewithmte.png":::
 
 3. 输入你的姓名和电子邮件地址，以便 Microsoft 可以在你的应用程序上返回给你。
 
-    ![应用程序Microsoft 威胁专家的图像。](images/mte-apply.png)
+   :::image type="content" source="images/mte-apply.png" alt-text="&quot;应用程序&quot;页上Microsoft 威胁专家&quot;字段" lightbox="images/mte-apply.png":::
 
 4. 阅读 [隐私声明，](https://privacy.microsoft.com/privacystatement)**完成后单击提交**。 应用程序获得批准后，您将收到欢迎电子邮件。
 
-    ![应用程序Microsoft 威胁专家的图像。](images/mte-applicationconfirmation.png)
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="应用程序Microsoft 威胁专家确认消息" lightbox="images/mte-applicationconfirmation.png":::
 
 接受后，你将收到欢迎电子邮件，并且你将看到"应用"按钮更改为"打开"的切换。 如果你希望将自己从目标攻击通知服务中退出，请滑动切换"关闭"，然后单击页面底部的"保存首选项"。
 
@@ -105,15 +105,15 @@ ms.locfileid: "63324265"
 
 2. 从右上角的菜单中，单击 **" ？"** 图标。 然后，选择 **"咨询威胁专家"**。
 
-    ![菜单Microsoft 威胁专家专家按需提供的图像。](images/mte-eod-menu.png)
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="&quot;Microsoft 威胁专家专家按需&quot;菜单项" lightbox="images/mte-eod-menu.png":::
 
     将打开一个飞出屏幕。 以下屏幕显示你何时使用试用版订阅。
 
-    ![按需Microsoft 威胁专家专家屏幕的图像。](images/mte-eod.png)
+    :::image type="content" source="images/mte-eod.png" alt-text="按需Microsoft 威胁专家专家页面" lightbox="images/mte-eod.png":::
 
     以下屏幕显示你何时使用完整Microsoft 威胁专家专家按需订阅。
 
-    ![按需Microsoft 威胁专家专家完整订阅屏幕的图像。](images/mte-eod-fullsubscription.png)
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="按需Microsoft 威胁专家专家完整订阅页面" lightbox="images/mte-eod-fullsubscription.png":::
 
     " **查询"** 主题字段预填充了指向调查请求的相关页面的链接。 例如，指向发出请求时所访问的事件、警报或设备详细信息页面的链接。
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464318"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472498"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>性能分析器Microsoft Defender 防病毒
 
@@ -29,7 +29,7 @@ ms.locfileid: "62464318"
 
 **什么是Microsoft Defender 防病毒器？**
 
-在某些情况下，你可能需要在扫描特定文件和文件夹Microsoft Defender 防病毒优化文件的性能。 性能分析器是一个 PowerShell 命令行工具，可帮助确定哪些文件、文件扩展名和进程可能导致各个终结点出现性能问题。 此信息可用于更好地评估性能问题和应用修正操作。
+在某些情况下，你可能需要在扫描特定文件和文件夹时Microsoft Defender 防病毒性能。 性能分析器是一个 PowerShell 命令行工具，可帮助确定哪些文件、文件扩展名和进程可能导致各个终结点出现性能问题。 此信息可用于更好地评估性能问题和应用修正操作。
 
 要分析的一些选项包括：
 
@@ -57,7 +57,7 @@ ms.locfileid: "62464318"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅 Microsoft Defender 防病毒 [cmdlet](/powershell/module/defender)。
+    其中 `-RecordTo` 参数指定保存跟踪文件的完整路径位置。 有关 cmdlet 的更多信息，请参阅[Microsoft Defender 防病毒 cmdlet](/powershell/module/defender)。
 
 2. 如果认为进程或服务会影响性能，请通过执行相关任务重现这种情况。
 
@@ -72,9 +72,9 @@ ms.locfileid: "62464318"
 
 ### <a name="performance-tuning-data-and-information"></a>性能优化数据和信息
 
-根据查询，用户将能够查看扫描计数、持续时间 (总/最小值/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
+根据查询，用户将能够查看扫描计数、持续时间 (总/分钟/平均/最大值/中值) 、路径、进程和扫描原因的数据。 下图显示了扫描影响前 10 个文件的简单查询的示例输出。 
 
-:::image type="content" source="images/example-output.png" alt-text="基本 TopFiles 查询的示例输出":::
+:::image type="content" source="images/example-output.png" alt-text="基本 TopFiles 查询的示例输出" lightbox="images/example-output.png":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>其他功能：导出并转换为 CSV 和 JSON
 
@@ -96,7 +96,7 @@ Microsoft Defender 防病毒性能分析器具有以下先决条件：
 
 - 支持Windows版本：Windows 10、Windows 11 和 Windows Server 2016 及以上版本
 - 平台版本：4.18.2108.7+
-- PowerShell 版本：PowerShell 版本 5.1、PowerShell ISE、远程 PowerShell (4.18.2201.10+) 、PowerShell 7.x (4.18.2201.10+) 
+- PowerShell 版本：PowerShell 版本 5.1、PowerShell ISE、远程 PowerShell (4.18.2201.10+) 、PowerShell 7.x (4.18.2201.10) 
 
 ## <a name="powershell-reference"></a>PowerShell 参考
 有两个新的 PowerShell cmdlet 用于优化Microsoft Defender 防病毒： 
@@ -149,7 +149,7 @@ $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
 New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $s
 ```
 
-上述命令根据参数 Session) 的参数 $s 指定在 Server02 (上收集性能记录，并保存到指定路径： **C：\LocalPathOnServer02\trace.etl** on Server02。
+上述命令在 Server02 (上收集由参数 Session) 的参数 $s 指定的性能记录，并保存到指定路径： **C：\LocalPathOnServer02\trace.etl** on Server02。
 
 #### <a name="parameters-new-mpperformancerecording"></a>参数：New-MpPerformanceRecording
 
@@ -213,7 +213,7 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>说明：Get-MpPerformanceReport
-`Get-MpPerformanceReport`此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对扫描产生最大影响的文件路径、文件扩展名和Microsoft Defender 防病毒。
+`Get-MpPerformanceReport`此 cmdlet 分析以前收集的 Microsoft Defender 防病毒 性能记录 ([New-MpPerformanceRecording](#new-mpperformancerecording)) 并报告对 Microsoft Defender 防病毒 扫描产生最大影响的文件路径、文件扩展名和进程。
 
 性能分析器可深入了解可能导致性能降低的有问题的Microsoft Defender 防病毒。 此工具是"AS IS"提供的，并不用于提供有关排除项的建议。 排除项会降低终结点上的保护级别。 应谨慎定义排除项（如果有）。
 

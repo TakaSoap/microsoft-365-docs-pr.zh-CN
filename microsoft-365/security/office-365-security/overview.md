@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31eaa1c2ae44799c15a782d121ad2068eaa40c25
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8ddf81e038b4c055134498ee0a26751b735d786a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681097"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472168"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365安全概述
 
@@ -55,7 +55,7 @@ Office 365 安全基于 EOP 提供的核心保护创建。 EOP 可用于可找�
 
 但是在架构方面，让我们开始将每个部分视为安全的累积层，每层都强调安全性。 更多此类内容：
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP 和 Microsoft Defender for Office 365 以及与其他的关系，重点是服务，其中包括有关电子邮件身份验证的说明。":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP 和 Microsoft Defender Office 365彼此之间的关系，强调服务，包括电子邮件身份验证说明" lightbox="../../media/tp_GraphicEOPATPP1P2_2.png":::
 
 虽然每个服务都强调"保护、检测、调查"和"响应"中的一个目标，但 ***所有** _ 服务可以执行 _ *_任何_** 目标，如保护、检测、调查以及响应。
 

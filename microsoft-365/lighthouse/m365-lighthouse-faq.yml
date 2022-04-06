@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 对于 Managed Service Providers (MSP) using Microsoft 365 Lighthouse，请获取有关 Microsoft 365 Lighthouse 的常见问题 (常见问题) 解答。
-  ms.openlocfilehash: 84339dd1e4dfe57765200dba42b8d8a954a41f49
-  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+  ms.openlocfilehash: 34b47e6a8834502db2a9598a425fa3bca123cdaa
+  ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/04/2022
-  ms.locfileid: "64635034"
+  ms.lasthandoff: 04/05/2022
+  ms.locfileid: "64645193"
 title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
 summary: >
   本文包含有关 (常见问题解答) 常见问题Microsoft 365 Lighthouse。
@@ -32,65 +32,65 @@ summary: >
 sections:
 - name: 已忽略
   questions:
-  - question: 什么是 Microsoft 365 Lighthouse？
+  - question: What is Microsoft 365 Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版、Microsoft 365 E3)  (或Windows 365 商业版。 Lighthouse 通过推荐针对 SMB 定制的安全配置基线并跨所有客户环境提供多租户视图，简化了租户载入过程。 有关详细信息，请参阅[概述Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。
-  - question: Microsoft 365 Lighthouse和 Azure Lighthouse 之间有什么区别？
+      Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+  - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse侧重于Microsoft 365服务，而不是 Azure 服务。 Azure Lighthouse 内置于 Azure 门户 并允许 IT 合作伙伴管理 Azure 的多个租户，Microsoft 365 Lighthouse 是一个独立的门户，可帮助 MSP 管理多个 Microsoft 365 商业高级版、Microsoft 365 E3 或Windows 365 商业版客户租户。 有关此Microsoft 365 Lighthouse，请参阅[概述Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。 有关 Azure Lighthouse 的信息，请参阅 [什么是 Azure Lighthouse？](/azure/lighthouse/overview)
-  - question: 需要多少Microsoft 365 Lighthouse？
+      Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+  - question: How much does Microsoft 365 Lighthouse cost?
     answer: >
-      使用 Lighthouse 管理设备、Microsoft 365 商业高级版、Microsoft 365 E3或Windows 365 商业版设备不会Windows 365 商业版额外费用。 Lighthouse 可供服务于中小型企业的 MSP 使用，他们拥有与云解决方案提供商 (CSP) 关系。 请注意，Lighthouse 当前不支持间接提供商。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
-  - question: 使用解决方案的要求Microsoft 365 Lighthouse？
+      No additional costs are associated with using Lighthouse to manage Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business services and connected devices. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: What are the requirements to use Microsoft 365 Lighthouse?
     answer: >
-      有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
-  - question: 哪些国家和地区Microsoft 365 Lighthouse可用？
+      For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: In which countries and regions is Microsoft 365 Lighthouse available?
     answer: >
-      Lighthouse 在提供Microsoft 365国家/地区可用，中国和美国国家/地区除外。 但是，Lighthouse 中的功能（如设备管理和威胁管理）依赖于 Microsoft Intune，用户管理依赖于 Azure Active Directory (Azure AD) ，Intune 和 Azure AD 可能在某些国家和地区不可用。 有关可用性、Microsoft 365 Azure AD的完整Intune，请参阅[国际可用性](https://www.microsoft.com/microsoft-365/business/international-availability)。
+      Lighthouse is available in all countries where Microsoft 365 is available, except China and Palestinian Authority. However, features in Lighthouse such as device management and threat management rely on Microsoft Intune, and user management relies on Azure Active Directory (Azure AD), and Intune and Azure AD may not be available in certain countries and regions. For a complete list of Microsoft 365, Azure AD, and Intune availability, see [International availability](https://www.microsoft.com/microsoft-365/business/international-availability).
 
 
-      浅色不可用于国家云。
-  - question: 如何实现注册Microsoft 365 Lighthouse？
+      Lighthouse is not available in national clouds.
+  - question: How do I sign up for Microsoft 365 Lighthouse?
     answer: >
-      若要注册 Lighthouse，你需要注册云解决方案提供商计划。 我们当前无法支持间接提供商。 有关如何注册的说明，请参阅注册[Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)。 若要详细了解云解决方案提供商计划，请参阅云解决方案提供商[计划概述](/partner-center/csp-overview)。
-  - question: 我已完成注册，为什么我看不到任何客户租户数据？
+      To sign up for Lighthouse, you'll need to be registered with the CSP program. We're currently unable to support indirect providers. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+  - question: I finished signing up, so why don't I see any customer tenant data?
     answer: >
-      在 Lighthouse 内加载客户租户数据可能需要 48 小时。 如果载入时间已过 48 小时，请联系我们的支持团队寻求帮助。 完成载入后，需要让他们知道，并提供所有相关的屏幕截图和日志。 有关详细信息，请参阅获取[有关 Microsoft 365 Lighthouse 的帮助和支持](m365-lighthouse-get-help-and-support.md)。
-  - question: 为什么我会看到某些客户租户的数据，而不是其他租户的数据？
-    answer: "若要在 Lighthouse 中显示客户租户数据，MSP 必须建立委派访问权限以管理客户租户。 将客户载入 (需要委派) DAP 权限。 我们建议与客户建立粒度委派 (GDAP) ，以实现更安全的委派访问。 有关[建议使用](m365-lighthouse-overview-of-permissions.md) Lighthouse 的委派Microsoft 365 Lighthouse合作伙伴租户角色的其他详细信息，请参阅应用程序权限概述。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先用于这两种模型都适合的客户。 很快，仅具有 GDAP (且没有 DAP) 客户将能够载入 Lighthouse。 有关委派访问权限详细信息，请参阅在合作伙伴中心请求与客户 [建立经销商关系](/partner-center/request-a-relationship-with-a-customer)。 租户还必须至少有一个 Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版 许可证，并且其租户中拥有的许可用户数少于 1000。 有关详细信息，请参阅租户[Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) Microsoft 365 Lighthouse[要求页面概述](m365-lighthouse-tenants-page-overview.md)。  \n"
-  - question: 如果你不想在租户中查看某些租户Microsoft 365 Lighthouse？
+      It can take up to 48 hours for customer tenant data to load within Lighthouse. If it's been more than 48 hours since you completed onboarding, please reach out to our Support team for help. You'll need to let them know when you completed onboarding and provide any relevant screenshots and logs. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: Why do I see data for some customer tenants but not others?
+    answer: "For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for additional details on which delegated and partner tenant roles are recommended to use Lighthouse. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license and no more than 1000 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).  \n"
+  - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
     answer: >
-      如果不想在 Lighthouse 中查看某些租户及其数据，可以停用这些租户。 若要停用租户，请按照以下步骤操作：
+      If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
 
 
-      1. 从 **左侧导航** 窗格中选择"租户"以打开 **"租户"** 页面。
+      1. Select **Tenants** from the left navigation pane to open the **Tenants** page.
 
-      1. 找到要停用的租户，选择租户名称旁边的三个点，然后选择 **"停用租户"**。
+      1. Find the tenant that you want to inactivate, select the three dots next to the tenant name, and then select **Inactivate tenant**.
 
-      1. 在出现的确认消息中，选择 **"确认** "停用租户。
+      1. In the confirmation message that appears, select **Confirm** to inactivate the tenant.
           > [!NOTE]
-          > 停用租户后，在停用完成之前，无法对租户采取措施。 停用可能需要 48 小时才能完成。
+          > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
 
-      若要了解有关租户的信息，请参阅Microsoft 365 Lighthouse[租户页面概述](m365-lighthouse-tenants-page-overview.md)。
-  - question: 如果我Microsoft 365 Lighthouse租户拥有除 Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版 之外的其他订阅，Microsoft 365 商业高级版是否Windows 365 商业版？
+      To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
+  - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business?
     answer: >
-      Lighthouse 可帮助你管理具有 Microsoft 365 商业高级版、Microsoft 365 E3 或Windows 365 商业版许可证的客户租户。 对于没有这些许可证的客户租户中的用户，Lighthouse 功能将受到限制。 例如，如果用户缺少包含 Intune 的许可证，该用户的设备、设备合规性状态和威胁状态将不可用;如果用户缺少包含 Azure AD P1 的许可证，该用户的密码和登录管理将不可用。 有关详细信息，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
-  - question: 如何实现有资格管理客户云电脑Microsoft 365 Lighthouse？
+      Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business licenses in place for their users. For users in customer tenants who don't have these licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
     answer: >
-      如果你满足使用 Lighthouse 的要求，那么你有资格在 Lighthouse 中管理客户云电脑。 有关当前要求的列表，请参阅 Requirements [for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md)。
-  - question: 在哪里可以为客户Windows 365 (云) 许可证？
+      If you meet the requirements to use Lighthouse, then you're qualified to manage customer Cloud PCs in Lighthouse. For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Where can I purchase Windows 365 (Cloud PC) licenses for my customers?
     answer: >
-      可以通过所有Windows 365 Microsoft 商业销售渠道购买许可证。 购买的一个许可证相当于购买一台云电脑。 目前，只能为每个用户分配一台相同 SKU 类型的云电脑，但如果它们具有不同的 SKU 类型，则他们可分配多个云电脑。 若要Windows 365计划和定价，请参阅[Windows 365 云电脑获取适合你的产品/服务](https://www.microsoft.com/windows-365/business/compare-plans-pricing)。
-  - question: 如何实现获得帮助和支持？
+      You can purchase Windows 365 licenses through all available Microsoft commercial sales channels. One license purchased is equivalent to the purchase of one Cloud PC. Currently, each user can be assigned only one Cloud PC of the same SKU type, but they can be assigned multiple Cloud PCs if they are of different SKU types. To compare Windows 365 plans and pricing, see [Get the Windows 365 Cloud PC that’s right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
+  - question: How do I get help and support?
     answer: >
-      In Lighthouse， select the **？** 图标打开帮助 **窗格** 。 你可以在此处访问自助文章或联系支持人员。 有关帮助和支持选项的详细信息，请参阅获取有关[帮助和支持Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md)。
-  - question: 在哪里可以提交反馈和想法？
+      In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here you can access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: Where can I submit feedback and ideas?
     answer: >-
-      您的反馈非常重要，并且对我们非常重要！ 提交反馈的方法有以下几种：
+      Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
 
 
-      - 转到"[Microsoft 365 Lighthouse反馈"页](https://aka.ms/m365lighthouseuservoice)。 你可以开始有关 Lighthouse 和 Windows 365 功能的对话、为其他合作伙伴或 Microsoft 员工发布问题、提供反馈和功能想法等。
+      - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other partners or Microsoft employees, provide feedback and feature ideas, and more.
 
-      - 选择"房间"右上角的"反馈"图标。
+      - Select the Feedback icon in the upper-right corner of Lighthouse.
 
-      - 对在 (的弹出窗口中) 一次不多于一次地响应要求你提供反馈的偶尔事件。
+      - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.

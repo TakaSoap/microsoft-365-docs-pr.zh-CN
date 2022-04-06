@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f228d0ca44589b9c140226c2b39984c717c7d9f8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e2ebdffa171266fdc0ec77047c9fecc5be9e56ba
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766064"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471156"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的警报
 
@@ -52,7 +52,7 @@ ms.locfileid: "62766064"
 > [!NOTE]
 > 警报情景部分可能包含多个警报，与相同执行树相关的其他警报显示在所选警报之前或之后。
 
-![具有焦点的警报和一些扩展卡片的警报情景的示例。](images/alert-story-tree.png)
+:::image type="content" source="images/alert-story-tree.png" alt-text="具有焦点的警报和一些展开的卡片的警报情景" lightbox="images/alert-story-tree.png":::
 
 ## <a name="take-action-from-the-details-pane"></a>从详细信息窗格中采取操作
 
@@ -62,11 +62,11 @@ ms.locfileid: "62766064"
 
 如果将其分类为真正的警报，则还可以选择一个决定，如下图所示。
 
-![详细信息窗格的代码段，其中展开已解决警报和确定下拉列表。](images/alert-details-resolved-true.png)
+:::image type="content" source="images/alert-details-resolved-true.png" alt-text="具有已解决警报的详细信息窗格和展开的确定下拉列表" lightbox="images/alert-details-resolved-true.png":::
 
 如果业务线应用程序遇到错误警报，请创建抑制规则以避免将来出现此类型的警报。
 
-![突出显示抑制规则的详细信息窗格中的操作和分类。](images/alert-false-suppression-rule.png)
+:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="详细信息窗格中突出显示抑制规则的操作和分类" lightbox="images/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > 如果遇到上面未介绍的 🙂 任何问题，请使用按钮提供反馈或打开支持票证。

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何创建包含特定技术和有效负载的自动模拟，这些模拟在 Microsoft Defender for Office 365计划 2 中满足指定条件时启动。
 ms.technology: mdo
-ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e1e71fc5a901612a132d57afd663364f9a10daf4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680943"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472432"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻击模拟培训的模拟自动化
 
@@ -33,7 +33,7 @@ ms.locfileid: "63680943"
 
 2. 在" **模拟自动化"** 选项卡上，选择" ![创建自动化图标"。](../../media/m365-cc-sc-create-icon.png) **创建自动化**。
 
-   ![在攻击门户中攻击模拟培训中的模拟自动化选项卡上创建Microsoft 365 Defender按钮。](../../media/attack-sim-training-sim-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Microsoft 365 Defender门户中攻击模拟培训中的&quot;模拟自动化&quot;选项卡上的&quot;创建模拟Microsoft 365 Defender按钮" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. 将打开创建向导。 本文的其余部分介绍了页面及其包含的设置。
 
@@ -61,7 +61,7 @@ ms.locfileid: "63680943"
 
 如果单击描述 **中的"查看** 详细信息"链接，将打开一个详细信息飞出图，描述该技术以及由该技术所导致模拟的步骤。
 
-![有关凭据获取技术的详细信息，请参阅选择社交工程技术页面。](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="&quot;选择社交工程技术&quot;页上凭据获取技术的详细信息飞出" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 完成后，单击“**下一步**”。
 
@@ -91,7 +91,7 @@ ms.locfileid: "63680943"
   - **低**
   - **中**
   - **高**
-- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值包含:
+- **源**：指示有效负载是在组织中创建的，还是 Microsoft 预先存在的有效负载目录的一部分。 有效值为：
   - **Global**
   - **租户**
   - **全部**
@@ -110,7 +110,7 @@ ms.locfileid: "63680943"
 - " **概述** "选项卡包含有关有效负载的示例和其他详细信息。
 - 模拟 **启动选项卡** 包含 **模拟名称**、单击 **率**、**泄露率****以及操作**。
 
-![Microsoft 365 Defender门户中攻击模拟培训中的有效负载详细信息。](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="Microsoft 365 Defender门户中攻击模拟培训中的有效负载详细信息Microsoft 365 Defender出" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 完成后，单击“**下一步**”。
 
@@ -140,7 +140,7 @@ ms.locfileid: "63680943"
         - 选择 **所有标题**
         - 选择现有的"标题"值。
 
-      ![客户门户中攻击模拟培训中的"目标用户"页面上Microsoft 365 Defender筛选。](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="用户门户中攻击模拟培训中&quot;目标用户&quot;页面上Microsoft 365 Defender筛选" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       确定条件后，受影响的用户将显示在出现的"用户列表"部分，您可以在其中选择部分或所有发现的收件人。
 
@@ -178,7 +178,7 @@ ms.locfileid: "63680943"
       - **模拟结束后 7 天**
   - **无培训**：如果你选择此值，页面上的唯一选项是"下一步"按钮，将你导航到 [**登陆页面**](#landing-page)页面。
 
-![在安全门户中攻击模拟培训中的"培训作业"页面上添加Microsoft 365 Defender培训。](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="在安全门户中攻击模拟培训中的&quot;培训分配&quot;页面上添加Microsoft 365 Defender的选项" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>培训作业
 
@@ -220,7 +220,7 @@ ms.locfileid: "63680943"
 
 如果不想使用所显示的培训，请单击"删除 ![图标"。](../../media/m365-cc-sc-delete-icon.png) **删除**。
 
-![Microsoft 365 Defender门户中攻击模拟培训中的培训Microsoft 365 Defender页面。](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="Microsoft 365 Defender门户中攻击模拟培训中的&quot;培训Microsoft 365 Defender页面" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 完成后，单击“**下一步**”。
 

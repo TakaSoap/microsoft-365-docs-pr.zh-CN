@@ -1,7 +1,7 @@
 ---
 title: Linux 版 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍如何在 Linux 上安装和Microsoft Defender for Endpoint应用程序。
+description: 介绍如何在 Linux 上安装和使用 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2cd00befebba58dcac8411bb9aa9bce60bd02aac
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 33b015c6297e8ddef652400b2fe7168e4966c2a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507134"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471644"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -34,14 +34,14 @@ ms.locfileid: "64507134"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-本主题介绍如何在 Linux 上安装、配置、更新和使用Microsoft Defender for Endpoint应用程序。
+本主题介绍如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上运行其他第三Microsoft Defender for Endpoint保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint [功能。](linux-preferences.md#enforcement-level-for-antivirus-engine)
+> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint [功能。](linux-preferences.md#enforcement-level-for-antivirus-engine)
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux Microsoft Defender for Endpoint安装程序
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint Linux 的新功能包括反恶意软件终结点检测和响应 (EDR) 功能。 
+适用于 Linux 的 Microsoft Defender for Endpoint 包括反恶意软件和终结点检测和响应 (EDR) 功能。 
 
 
 ### <a name="prerequisites"></a>先决条件
@@ -52,17 +52,17 @@ Microsoft Defender for Endpoint Linux 的新功能包括反恶意软件终结点
 - 手动部署时，设备上 (管理权限) 
 
 > [!NOTE]
-> Microsoft Defender for Endpoint Linux 代理上的配置独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint依赖于自己的独立遥测管道。
+> Linux 代理上的 Microsoft Defender for Endpoint 独立于 [OMS 代理](/azure/azure-monitor/agents/agents-overview#log-analytics-agent)。 Microsoft Defender for Endpoint 依赖于自己的独立遥测管道。
 
 
 ### <a name="installation-instructions"></a>安装说明
 
-可以使用多种方法和部署工具在 Linux 上安装和配置Microsoft Defender for Endpoint部署。
+有几种方法和部署工具可用于在 Linux 上安装和配置 Microsoft Defender for Endpoint。
 
 通常，您需要执行以下步骤：
 
-- 确保你有一个Microsoft Defender for Endpoint订阅。
-- 使用Microsoft Defender for Endpoint部署方法之一，在 Linux 上部署此服务器：
+- 确保你拥有适用于终结点的 Microsoft Defender 订阅。
+- 使用下列部署方法之一在 Linux 上部署 Microsoft Defender for Endpoint：
   - 命令行工具：
     - [手动部署](linux-install-manually.md)
   - 第三方管理工具：
@@ -70,14 +70,14 @@ Microsoft Defender for Endpoint Linux 的新功能包括反恶意软件终结点
     - [使用可配置管理工具进行部署](linux-install-with-ansible.md)
     - [使用部署配置管理工具进行部署](linux-deploy-defender-for-endpoint-with-chef.md)
 
-如果遇到任何安装失败，请参阅在 Linux 上的 Microsoft Defender for Endpoint[安装失败疑难解答](linux-support-install.md)。
+如果遇到任何安装失败，请参阅 Linux 上的 [Microsoft Defender for Endpoint 中的安装失败疑难解答](linux-support-install.md)。
 
 > [!NOTE]
-> 不支持在默认安装路径Microsoft Defender for Endpoint任何其他位置安装安装程序。 
+> 不支持在默认安装路径外的其他任何其他位置安装 Microsoft Defender for Endpoint。 
 
 ### <a name="system-requirements"></a>系统要求
 
-- 支持 Linux 服务器分发和 x64 (AMD64/EM64T) x86_64版本：
+- 支持 Linux 服务器分发和 x64 (AMD64/EM64T) 版本：
 
   - Red Hat Enterprise Linux 6.7 或更高版本
   - Red Hat Enterprise Linux 7.2 或更高版本
@@ -176,7 +176,7 @@ Microsoft Defender for Endpoint Linux 的新功能包括反恶意软件终结点
 
 - 磁盘空间：1 GB
 
-- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅在 Linux 上排查安装问题中的"确保守护程序具有可执行Microsoft Defender for Endpoint["](/microsoft-365/security/defender-endpoint/linux-support-install)。
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅在 Linux 上解决 [Microsoft Defender for Endpoint 的](/microsoft-365/security/defender-endpoint/linux-support-install)安装问题中的"确保守护程序具有可执行权限"。
 
 - 核心：最少 2 个，首选 4 个
 
@@ -209,7 +209,7 @@ Microsoft Defender for Endpoint Linux 的新功能包括反恶意软件终结点
 - 必须 (`auditd`) 审核框架。
 
   > [!NOTE]
-  > 添加到 的规则捕获 `/etc/audit/rules.d/` `audit.log` 的系统事件将添加到 (，) 主机审核和上游集合。 Linux 上由 Microsoft Defender for Endpoint添加的事件将用密钥`mdatp`进行标记。
+  > 添加到 的规则捕获 `/etc/audit/rules.d/` `audit.log` 的系统事件将添加到 (，) 主机审核和上游集合。 Linux 上的 Microsoft Defender for Endpoint 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="configuring-exclusions"></a>配置排除项
 
@@ -223,10 +223,11 @@ Microsoft Defender for Endpoint Linux 的新功能包括反恶意软件终结点
 
 ****
 
+
 |域列表的电子表格| 说明|
 |---|---|
-|Microsoft Defender for Endpoint客户的 URL 列表| 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender for Endpoint Gov/GCC/DoD 的 URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender 终结点 URL 电子表格" lightbox="images/mdatp-urls.png":::|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> 在此处下载 [电子表格](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)。|
+|||
 
 > [!NOTE]
 > 有关更具体的 URL 列表，请参阅 [配置代理和 Internet 连接设置](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)。
@@ -243,19 +244,19 @@ Defender for Endpoint 可以使用以下发现方法发现代理服务器：
 >
 > 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以直接将数据从 Linux 上的 Defender for Endpoint 传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
-有关疑难解答步骤，请参阅在 Linux 上解决 Microsoft Defender for Endpoint[连接问题](linux-support-connectivity.md)。
+有关疑难解答步骤，请参阅 [在 Linux 上解决 Microsoft Defender for Endpoint 的云连接问题](linux-support-connectivity.md)。
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux Microsoft Defender for Endpoint更新应用程序
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上更新 Microsoft Defender for Endpoint
 
-Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要在 Linux Microsoft Defender for Endpoint更新，请参阅[在 Linux 上部署 Microsoft Defender for Endpoint 更新](linux-updates.md)。
+Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。 若要在 Linux 上更新 Microsoft Defender for Endpoint，请参阅 [在 Linux 上部署 Microsoft Defender for Endpoint 的更新](linux-updates.md)。
 
 ## <a name="how-to-configure-microsoft-defender-for-endpoint-on-linux"></a>如何配置 Linux 版 Microsoft Defender for Endpoint
 
-有关如何在企业环境中配置产品的指南，可在在 Linux 上设置产品Microsoft Defender for Endpoint[设置首选项](linux-preferences.md)。
+有关如何在企业环境中配置产品的指南，可在在 Linux 上设置 [Microsoft Defender for Endpoint 的首选项中提供](linux-preferences.md)。
 
-## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>可影响Microsoft Defender for Endpoint应用程序
+## <a name="common-applications-to-microsoft-defender-for-endpoint-can-impact"></a>适用于终结点的 Microsoft Defender 的常见应用程序可能会影响
 
-某些应用程序中的高 I/O 工作负载在安装 I/O Microsoft Defender for Endpoint性能问题。 其中包括用于开发人员方案（如 Jenkins 和 Jira）的应用程序，以及数据库工作负荷（如 OracleDB 和 Postgres）。 如果遇到性能下降，请考虑为受信任应用程序设置排除项，并记住[Microsoft Defender 防病毒错误。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) 有关其他指南，请考虑有关第三方应用程序的防病毒排除项的咨询文档。
+安装 Microsoft Defender for Endpoint 时，某些应用程序中的高 I/O 工作负载可能会遇到性能问题。 其中包括用于开发人员方案（如 Jenkins 和 Jira）的应用程序，以及数据库工作负荷（如 OracleDB 和 Postgres）。 如果遇到性能下降，请考虑为受信任应用程序设置排除项，并记住[Microsoft Defender 防病毒错误。](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) 有关其他指南，请考虑有关第三方应用程序的防病毒排除项的咨询文档。
 
 ## <a name="resources"></a>资源
 

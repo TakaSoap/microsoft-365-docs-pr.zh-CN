@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61872425"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472080"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "61872425"
 
 ## <a name="new-deployments"></a>新部署
 
-![部署圈的图像。](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="部署圈" lightbox="images/deployment-rings.png":::
 
 基于圈的方法用于标识要载入的一组终结点，并验证是否满足特定条件，然后再继续将服务部署到更大的设备集。 你可以定义每个圈的退出条件，并确保它们满足，然后再移动到下一个圈。
 
@@ -50,7 +50,7 @@ ms.locfileid: "61872425"
 
 表 1 提供了您可能使用的部署圈的示例。
 
-**表 1：**
+**表 1**：
 
 <br>
 
@@ -98,13 +98,13 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 |**项目**|**说明**|
 |:-----|:-----|
-|[![适用于终结点部署策略的 Microsoft Defender 缩略图。](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="Microsoft Defender for Endpoint 部署策略" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li></ul>
 
 ## <a name="existing-deployments"></a>现有部署
 
 ### <a name="windows-endpoints"></a>Windows终结点
 
-对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划 (**SUVP**) 在修补星期二)  (之前选择多台计算机进行测试。
+对于 Windows 和/或 Windows 服务器，可以使用安全更新验证计划 (**SUVP**) 在修补) 星期二之前选择多台计算机在 (之前进行测试。
 
 有关更多信息，请参阅：
 
@@ -120,7 +120,8 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 Beta 版设备是接收更新和新功能的第一批设备，随后是预览版，最后是当前设备。
 
-![预览体验成员圈的图像。](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="预览体验成员圈" lightbox="images/insider-rings.png":::
+
 
 为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用 Beta 或预览版。
 

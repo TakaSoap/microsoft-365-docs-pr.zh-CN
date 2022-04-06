@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61b275e5e42a10743eee744ab44bce48a25fa2eb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 47c3cb5d680899a28e6467b24ef398a428851a07
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166468"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476150"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 
@@ -41,11 +41,11 @@ ms.locfileid: "61166468"
 
 单击 **导航菜单中** 的"配置管理"以打开"设备配置管理"页。
 
-![安全配置管理页。](images/secconmgmt_main.png)
+:::image type="content" source="images/secconmgmt_main.png" alt-text="&quot;安全配置管理&quot;页" lightbox="images/secconmgmt_main.png":::
 
 *设备配置管理页*
 
-可以通过直接、深层链接到 Microsoft Intune 和<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>门户上的设备管理页面，在组织一级跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化。
+可以通过指向 Microsoft Intune 和 Microsoft 365 Defender 门户上的设备管理页面的直接深层链接，在组织一级跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化。<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>
 
 在执行此操作时，您将受益于：
 
@@ -58,7 +58,7 @@ ms.locfileid: "61166468"
 
 设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关[为设备设置Windows的信息](/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备设置[Windows的信息](/intune/windows-enroll)。
 
 > [!NOTE]
 > 若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [了解如何为设备注册分配许可证](/intune/licenses-assign)。
@@ -77,7 +77,7 @@ ms.locfileid: "61166468"
 - 读取设备合规性策略的权限
 - 读取对组织的权限
 
-![intune 上所需的权限。](images/secconmgmt_intune_permissions.png)
+:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="intune 上所需的权限" lightbox="images/secconmgmt_intune_permissions.png":::
 
 *Intune 上的设备配置权限*
 
@@ -90,6 +90,6 @@ ms.locfileid: "61166468"
 :---|:---
 [将设备载入到 Defender for Endpoint](configure-machines-onboarding.md)|跟踪 Intune 托管设备的载入状态，并通过 Intune 载入更多设备。 
 [提高 Defender for Endpoint 安全基线的合规性](configure-machines-security-baseline.md)|跟踪基线合规性和不符合情况。 将安全基线部署到更多 Intune 托管的设备。
-[优化 ASR 规则部署和检测](configure-machines-asr.md)|查看规则部署，并调整使用影响分析工具在<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender检测</a>。
+[优化 ASR 规则部署和检测](configure-machines-asr.md)|在门户中查看规则部署，然后使用影响分析工具Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">检测</a>。
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-belowfoldlink)。

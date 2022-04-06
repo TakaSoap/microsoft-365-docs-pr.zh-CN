@@ -1,7 +1,7 @@
 ---
 title: 仪表板见解 - 危险和漏洞管理
-description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建其组织的安全恢复能力。
-keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， 适用于设备的 Microsoft 安全分数， 曝光分数
+description: 安全危险和漏洞管理仪表板可帮助 SecOps 和安全管理员应对网络安全威胁，并构建其组织的安全恢复能力。
+keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， Microsoft 设备安全分数， 曝光分数
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 76eedd78e6bc6a95450a50c04d4f85b0de46db8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464299"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472476"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
@@ -36,7 +36,7 @@ ms.locfileid: "62464299"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
-威胁和漏洞管理是 Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括：
+威胁漏洞管理是 Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括：
 
 - 与终结点漏洞相关的实时终结点检测和响应（EDR）见解
 - 事件调查期间有价值的设备漏洞上下文
@@ -45,7 +45,7 @@ ms.locfileid: "62464299"
 可以使用 危险和漏洞管理 门户中的 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">功能</a>：
 
 - 查看设备的曝光分数和 Microsoft 安全分数，以及顶级安全建议、软件漏洞、修正活动和公开的设备
-- 将EDR见解与终结点漏洞关联并处理它们
+- 将EDR与终结点漏洞关联并处理它们
 - 选择修正选项进行会审并跟踪修正任务
 - 选择例外选项并跟踪活动异常
 
@@ -58,7 +58,7 @@ ms.locfileid: "62464299"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="设备的威胁和漏洞管理仪表板。":::
+:::image type="content" source="../../media/tvmdashboard.png" alt-text="设备的威胁和漏洞管理仪表板" lightbox="../../media/tvmdashboard.png":::
 
 <br>
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 57f0687fce422f26b76fc8b98a06ce0566f90f60
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156216"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476062"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -43,17 +43,17 @@ ms.locfileid: "62156216"
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
-在开始使用之前，请参阅 [Linux](microsoft-defender-endpoint-linux.md) 上的主 Defender for Endpoint 页面，了解当前软件版本的先决条件和系统要求说明。
+在开始使用之前，请参阅 [Linux 上的主 Defender for Endpoint](microsoft-defender-endpoint-linux.md) 页面，了解当前软件版本的先决条件和系统要求说明。
 
 此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署操作手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
 
 - ansible 需要安装在至少一台计算机 (Ansible 调用此控件节点) 。
-- 必须在控制节点和将在其上安装 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证配置 SSH。
+- 必须在控制节点和将在其上安装 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证进行配置。
 - 必须在所有托管节点上安装以下软件：
   - 一个
   - python-apt
 
-- 所有托管节点都必须在 或相关文件中以 `/etc/ansible/hosts` 以下格式列出：
+- 所有托管节点都必须在 或相关文件中以以下 `/etc/ansible/hosts` 格式列出：
 
     ```bash
     [servers]
@@ -72,10 +72,10 @@ ms.locfileid: "62156216"
 从应用门户下载Microsoft 365 Defender包：
 
 1. In Microsoft 365 Defender portal， go to **设置 > Endpoints > Device management > Onboarding**.
-2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
+2. 在"第一个"下拉菜单中，选择 **"Linux Server** "作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft 365 Defender门户屏幕截图。](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="下载载入程序包选项" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. 在命令提示符下，验证您是否具有该文件。 提取存档的内容：
 
@@ -98,7 +98,7 @@ ms.locfileid: "62156216"
 
 创建参与游戏手册或任务的子任务或角色文件。
 
-- 创建载入任务 `onboarding_setup.yml` ：
+- 创建载入任务： `onboarding_setup.yml`
 
     ```bash
     - name: Create MDATP directories
@@ -125,18 +125,18 @@ ms.locfileid: "62156216"
       when: not mdatp_onboard.stat.exists
     ```
 
-- 添加适用于终结点的 Defender 存储库和密钥 `add_apt_repo.yml` ：
+- 添加适用于终结点的 Defender 存储库和密钥： `add_apt_repo.yml`
 
-    可以从以下频道之一部署 Linux 上的 Defender for Endpoint (如下表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
+    Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]*) ： *insiders-fast*、 *insiders-slow* 或 *prod*。每个通道对应于 Linux 软件存储库。
 
-    通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员 -快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员- 慢，最后是 *受支持*。
+    通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员 -快* 中的设备是接收更新和新功能的第一批设备，随后是预览体验成员- *慢* ，最后是 *受支持设备*。
 
-    为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员- *快* 或预览体验成员- *慢*。
+    为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员 *-快* 或预览体验成员 *-慢*。
 
     > [!WARNING]
     > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-    记下分发和版本，并确定 其最接近的 `https://packages.microsoft.com/config/[distro]/` 条目。
+    记下分发和版本，并确定 其最接近的条目。`https://packages.microsoft.com/config/[distro]/`
 
     在下列命令中，将 *[distro]* 和 *[version]* 替换为已识别的信息。
 

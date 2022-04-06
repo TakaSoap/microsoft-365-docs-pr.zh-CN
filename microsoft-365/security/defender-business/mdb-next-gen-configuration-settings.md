@@ -1,6 +1,6 @@
 ---
-title: 了解 Microsoft Defender for Business 中的下一代保护配置设置
-description: 了解 Microsoft Defender for Business 中下一代保护的配置设置
+title: 了解Microsoft Defender 商业版中的下一代保护配置设置
+description: 了解Microsoft Defender 商业版中下一代保护的配置设置
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -16,21 +16,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 263d6457c8e913bdd3d8224af71f201156e24b5a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525552"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64666275"
 ---
-# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>了解 Microsoft Defender for Business 中的下一代配置设置
+# <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>了解Microsoft Defender 商业版中的下一代配置设置
 
 > [!IMPORTANT]
-> 从 2022 年 3 [月](../../business-premium/index.md) 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 作为独立订阅的 Defender for Business 在预览版中，将逐步向在此处注册以请求它的客户和 IT 合作伙伴[](https://aka.ms/mdb-preview)推出。 预览 [包括一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
+> Microsoft Defender 商业版从 2022 年 3 月 1 日开始向[Microsoft 365 商业高级版](../../business-premium/index.md)客户推出。 Defender for Business 作为独立订阅处于预览状态，将逐步推出给 [在此处注册](https://aka.ms/mdb-preview) 以请求该订阅的客户和 IT 合作伙伴。 预览版包括 [一组初始方案](mdb-tutorials.md#try-these-preview-scenarios)，我们将定期添加功能。
 > 
-> 本文中的某些信息与预发布产品/服务相关，这些产品/服务在商业发行之前可能会进行重大修改。 Microsoft 对此处提供的信息不做出明示或暗示的担保。 
+> 本文中的一些信息涉及到预租产品/服务，这些产品/服务在商业发布之前可能会进行重大修改。 Microsoft 不会对此处提供的信息作出明示或暗示的保证。 
 
-Defender for Business 中的下一代保护包括强大的防病毒和反恶意软件保护。 默认策略旨在保护设备和用户，而不受工作效率的影响;但是，您也可以自定义策略以满足业务需求。 此外，如果你使用的是Microsoft Endpoint Manager，可以使用它来管理安全策略。
+Defender for Business 中的下一代保护包括强大的防病毒和防恶意软件保护。 默认策略旨在保护设备和用户，而不会妨碍工作效率;但是，还可以根据业务需求自定义策略。 而且，如果使用的是Microsoft Endpoint Manager，则可以使用它来管理安全策略。
 
 **本文介绍**：
 
@@ -44,70 +44,70 @@ Defender for Business 中的下一代保护包括强大的防病毒和反恶意�
 
 下表列出了设置和选项：<br/><br/>
 
-| Setting | 说明 |
+| 设置 | 说明 |
 |:---|:---|
 | **实时保护**  |  |
-| **打开实时保护** | 默认情况下启用实时保护，可查找并阻止恶意软件在设备上运行。 *我们建议保持启用实时保护。*<br/><br/>当实时保护打开时，它将配置以下设置：<br/>- 在 [AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) (启用行为) <br/>- 所有下载的文件和附件都 ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)) <br/>- Microsoft 浏览器中使用的脚本在 [AllowScriptScanning (扫描) ](/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)   |
-| **首次看到时阻止** | 默认情况下启用，在检测的几秒钟内阻止首次看到时阻止恶意软件，增加 (（以秒) 允许提交示例文件进行分析）的时间，并设置检测级别为"高"。 *我们建议将"首次看到时阻止"保持打开。*<br/><br/>当"首次看到时阻止"处于打开时，它会配置以下Microsoft Defender 防病毒： <br/>- 阻止和扫描可疑文件设置为 [CloudBlockLevel](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) (高级) <br/>- 在 [CloudExtendedTimeout](/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) 中，要阻止和检查的文件 (秒数)  <br/><br/>**重要** 提示：如果"首次看到时阻止"处于关闭状态，`CloudBlockLevel``CloudExtendedTimeout`则会影响和Microsoft Defender 防病毒。  |
-| **启用网络保护功能** | 启用后，网络保护可帮助防范网络钓鱼欺诈、攻击托管网站和 Internet 上的恶意内容。 它还可防止用户关闭网络保护。<br/><br/>网络保护可以设置为以下模式之一：<br/>- **阻止 (** 此设置是默认设置，) 阻止用户访问被视为不安全的网站。 *我们建议将网络保护设置为阻止模式。*<br/>- **审核** 模式，允许用户访问可能不安全的网站，并跟踪这些站点之间的网络活动 <br/>- **禁用模式**，此模式阻止用户访问可能不安全的网站，或跟踪这些网站中的网络活动 |
-| **修正**  |  |
-| **在 PUA 应用中对可能不需要 (的操作)** | PUA 可以包括广告软件、捆绑软件，用于安装其他未签名的软件，以及尝试破坏安全功能的恶意软件。 尽管 PUA 不一定是病毒、恶意软件或其他类型的威胁，但 PUA 可能会影响设备性能。<br/><br/>PUA 保护会阻止被检测为 PUA 的项目。 你可以将 PUA 保护设置为以下设置之一： <br/>- **已启用** (此设置是默认) ，可阻止在设备上检测到为 PUA 的项目。 *我们建议保持 PUA 保护启用状态。*<br/>- **审核模式**，对检测为 PUA 的项目不执行任何操作 <br/>- **已** 禁用，不会检测可能是 PUA 的项目或对项目采取操作 |
+| **启用实时保护** | 默认启用的实时保护可定位和阻止恶意软件在设备上运行。 *建议启用实时保护。*<br/><br/>启用实时保护后，它会配置以下设置：<br/>- 在 [AllowBehaviorMonitoring](/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) (启用行为监视) <br/>- 将扫描所有下载的文件和附件 ([AllowIOAVProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)) <br/>- 在 Microsoft 浏览器中使用的脚本将扫描 ([AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning))    |
+| **首次看到时阻止** | 默认情况下，在检测后几秒内阻止第一次看到时阻止恶意软件，增加 (秒) 允许提交示例文件进行分析的时间，并将检测级别设置为"高"。 *建议在首次看到时保持阻止打开。*<br/><br/>当首次看到阻止时，它会为Microsoft Defender 防病毒配置以下设置： <br/>- 阻止和扫描可疑文件设置为高级阻止级别 ([CloudBlockLevel](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)) <br/>- 要阻止和检查的文件的秒数设置为 50 秒 ([CloudExtendedTimeout](/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout))  <br/><br/>**重要** 提示：如果第一次看到时阻止被关闭，则会影响`CloudBlockLevel`和`CloudExtendedTimeout`Microsoft Defender 防病毒。  |
+| **启用网络保护功能** | 启用后，网络保护有助于防范网络钓鱼诈骗、攻击托管网站和 Internet 上的恶意内容。 它还阻止用户关闭网络保护。<br/><br/>网络保护可以设置为以下模式之一：<br/>- 此设置 (**阻止模式** 是默认) ，这会阻止用户访问被视为不安全的站点。 *建议将网络保护设置为"阻止"模式。*<br/>- **审核模式**，允许用户访问可能不安全的站点，并跟踪与此类网站的网络活动 <br/>- **禁用模式**，该模式下界阻止用户访问可能不安全的网站，也无法跟踪与此类网站的网络活动 |
+| **修复**  |  |
+| **对可能不需要的应用 (PUA) 采取的操作** | PUA 可以包括广告软件、捆绑用于安装其他未签名软件的软件，以及试图规避安全功能的规避软件。 虽然 PUA 不一定是病毒、恶意软件或其他类型的威胁，但 PUA 可能会影响设备性能。<br/><br/>PUA 保护阻止检测为 PUA 的项。 可以将 PUA 保护设置为以下设置之一： <br/>- **启用** (此设置是默认) ，它阻止在设备上检测到的作为 PUA 的项目。 *建议保持启用 PUA 保护。*<br/>- **审核模式**，不会对检测为 PUA 的项执行任何操作 <br/>- **已禁** 用，不会检测或对可能是 PUA 的项采取措施 |
 | **扫描**   |  |
-| **计划扫描类型** | 请考虑在设备上运行每周防病毒扫描。 可以从以下扫描类型选项中进行选择： <br/>- **快速扫描** 检查注册表项和启动文件夹等位置，其中可以注册恶意软件以从设备开始。 *我们建议使用 quickscan 选项。* <br/>- **Fullscan** 检查设备上的所有文件和文件夹 <br/>- **已禁用** 意味着不会进行计划扫描。 用户仍可在其自己的设备上运行扫描。  (通常，不建议禁用计划的扫描。)  <br/><br/> [详细了解扫描类型](../defender-endpoint/schedule-antivirus-scans.md)。 |
-| **运行计划扫描的星期数** | 选择要运行的常规每周防病毒扫描的一天。 |
-| **运行计划扫描的一天中的时间** | 选择要运行定期安排的防病毒扫描的时间。 |
-| **使用低性能** | 默认情况下，此设置已关闭。 *建议关闭此设置。* 但是，你可以打开此设置以限制计划扫描期间使用的设备内存和资源。 <br/><br/>**重要** 如果打开 **"使用低性能**"，它将为以下配置Microsoft Defender 防病毒： <br/>- 不会在 [AllowArchiveScanning (扫描存档](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)) <br/>- 为扫描分配较低的 CPU 优先级 ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority))  <br/>- 如果错过完全防病毒扫描，则 [DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) (不会运行任何)  <br/>- 如果错过快速防病毒扫描，则 [DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) (不会运行任何)  <br/>- 将防病毒扫描期间的平均 CPU 负载因数从 [AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) (50%)  |
+| **计划扫描类型** | 请考虑在设备上运行每周防病毒扫描。 可以从以下扫描类型选项中进行选择： <br/>- **快速扫描检查** 位置，例如注册表项和启动文件夹，其中恶意软件可以注册为以设备开头。 *建议使用 quickscan 选项。* <br/>- **Fullscan 检查** 设备上的所有文件和文件夹 <br/>- **禁用** 意味着不会进行计划的扫描。 用户仍然可以在其自己的设备上运行扫描。  (一般情况下，我们不建议禁用计划的扫描。)  <br/><br/> [详细了解扫描类型](../defender-endpoint/schedule-antivirus-scans.md)。 |
+| **运行计划扫描的星期几** | 为要运行的定期每周防病毒扫描选择一天。 |
+| **运行计划扫描的一天中时间** | 选择运行定期计划的防病毒扫描以运行的时间。 |
+| **使用低性能** | 默认情况下，此设置处于关闭状态。 *建议关闭此设置。* 但是，可以启用此设置以限制在计划扫描期间使用的设备内存和资源。 <br/><br/>**重要** 如果打开 **"使用低性能**"，它会为Microsoft Defender 防病毒配置以下设置： <br/>- 存档文件不会扫描 ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)) <br/>- 为扫描分配低 CPU 优先级 ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority))  <br/>- 如果未完成防病毒扫描，则不会在 [DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupfullscan) (运行任何追赶扫描)  <br/>- 如果缺少快速防病毒扫描，则不会在 [DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender#defender-disablecatchupquickscan) (运行任何追赶扫描)  <br/>- 将防病毒扫描期间的平均 CPU 负载因子从 50% 降低到 20%， ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor))  |
 | **用户体验**   |  |
-| **允许用户访问 Windows 安全中心 应用** | 打开此设置以允许用户在设备上Windows 安全中心应用。 用户将无法覆盖在 Microsoft Defender for Business 中配置的设置，但如果需要，他们将能够运行快速扫描，或查看任何检测到的威胁。 |
-| **防病毒排除项** | 排除项是由扫描跳过的进程、文件或Microsoft Defender 防病毒文件夹。 *通常，你无需定义排除项。* Microsoft Defender 防病毒许多基于已知操作系统行为和典型管理文件的自动排除项。<br/><br/>[详细了解排除项](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
-| **进程排除** | 进程排除阻止特定进程打开的文件被特定进程Microsoft Defender 防病毒。 <br/><br/>[了解有关进程排除项更多信息](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
-| **文件扩展名排除项** | 文件扩展名排除阻止特定扩展名的文件被Microsoft Defender 防病毒。<br/><br/>[详细了解文件扩展名排除项](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
-| **文件和文件夹排除项** | 文件和文件夹排除项阻止特定文件夹中的文件被用户扫描Microsoft Defender 防病毒。 <br/><br/>[详细了解文件和文件夹排除项](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
+| **允许用户访问Windows 安全中心应用** | 打开此设置，使用户能够在其设备上打开Windows 安全中心应用。 用户将无法替代你在Microsoft Defender 商业版中配置的设置，但如果需要，他们将能够运行快速扫描，或查看任何检测到的威胁。 |
+| **防病毒排除项** | 排除项是通过Microsoft Defender 防病毒扫描跳过的进程、文件或文件夹。 *一般情况下，不应定义排除项。* Microsoft Defender 防病毒包括许多基于已知操作系统行为和典型管理文件的自动排除项。<br/><br/>[详细了解排除项](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
+| **进程排除** | 进程排除可防止由特定进程打开的文件被Microsoft Defender 防病毒扫描。 <br/><br/>[详细了解进程排除项](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
+| **文件扩展名排除项** | 文件扩展名排除项可防止Microsoft Defender 防病毒扫描具有特定扩展名的文件。<br/><br/>[详细了解文件扩展名排除项](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
+| **文件和文件夹排除项** | 文件和文件夹排除项会阻止特定文件夹中的文件被Microsoft Defender 防病毒扫描。 <br/><br/>[详细了解文件和文件夹排除项](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 
 ## <a name="other-preconfigured-settings-in-defender-for-business"></a>Defender for Business 中的其他预配置设置
 
-在 Defender for Business 中预配置以下安全设置：
+Defender for Business 中预配置了以下安全设置：
 
-- 在 [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) (打开可移动驱动器) 
+- [在 AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) (启用可移动驱动器扫描) 
 
-- 每日快速扫描没有预设的时间 ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)) 
+- 每日快速扫描没有预设时间 ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)) 
 
-- 在运行防病毒扫描之前检查安全智能 ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan)) 
+- 在防病毒扫描 ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan)) 运行之前检查安全智能更新
 
-- 使用 [SignatureUpdateInterval (四](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) 小时进行一次安全) 
+-  ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)) 每四小时进行一次安全智能检查
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>Defender for Business 默认设置和Microsoft Endpoint Manager
 
-下表介绍了为 Defender for Business 预配置的设置，以及这些设置如何与你可能会在 Microsoft Endpoint Manager (或 Microsoft Intune) 中看到Microsoft Intune) 。 如果你使用的是 [Defender for Business](mdb-simplified-configuration.md) 预览版中的简化配置 (预览) ，则无需编辑这些设置。
+下表介绍了为 Defender for Business 预配置的设置，以及这些设置如何与在Microsoft Endpoint Manager (或Microsoft Intune) 中看到的内容相对应。 如果 [在 Defender for Business](mdb-simplified-configuration.md) (预览) 中使用简化的配置过程，则无需编辑这些设置。
 <br/><br/>
 
-| Setting  | 说明  |
+| 设置  | 说明  |
 |---------|---------|
-| [云保护](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | 云保护有时称为云保护或 Microsoft 高级保护服务 (MAPS) ，它适用于 Microsoft Defender 防病毒 和 Microsoft 云，以识别新威胁，有时甚至在单个设备受到影响之前。 默认情况下， [AllowCloudProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) 已打开。 <br/><br/>[详细了解云保护](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
-| [监视传入和传出文件](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | 要监视传入和传出文件， [将 RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) 设置为监视所有文件。         |
-| [扫描网络文件](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 默认情况下， [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) 未启用，并且不会扫描网络文件。 |
-| [扫描电子邮件](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 默认情况下， [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) 未启用，并且不会扫描电子邮件。 |
-| [保留隔离 (0-90) 的天数](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | 默认情况下， [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) 此设置设置为零 (0) 天。 Artifacts隔离邮件不会自动删除。  |
-| [提交示例同意](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 默认情况下， [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) 自动发送安全示例。 安全示例的示例包括`.bat`、`.scr``.dll``.exe`、和不包含个人身份信息的文件 (PII) 。 如果文件确实包含 PII，用户将收到允许示例提交继续的请求。<br/><br/>[详细了解云保护和示例提交](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
-| [扫描可移动驱动器](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | 默认情况下， [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) 配置为扫描可移动驱动器，例如设备上 U 盘驱动器。<br/><br/>[详细了解反恶意软件策略设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
-| [运行每日快速扫描时间](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | 默认情况下， [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) 设置为 2：00 AM。<br/><br/>[详细了解扫描设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。   |
-| [在运行扫描之前检查签名更新](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | 默认情况下， [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) 配置为在运行防病毒/反恶意软件扫描之前检查安全智能更新。<br/><br/>[详细了解扫描设置和安全](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[智能更新](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。   |
-| [每天 (0-24) 检查安全智能更新](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | 默认情况下， [SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) 配置为每四小时检查一次安全智能更新。<br/><br/>[详细了解扫描设置和安全](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[智能更新](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。 |
+| [云保护](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)     | 云保护有时称为云传递的保护或 Microsoft 高级保护服务 (MAPS) ，云保护可与Microsoft Defender 防病毒和 Microsoft 云配合使用来识别新威胁，有时甚至在单个设备受到影响之前。 默认情况下， [AllowCloudProtection](/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) 处于打开状态。 <br/><br/>[详细了解云保护](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)。         |
+| [监视传入和传出文件](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | 为了监视传入和传出文件， [RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) 设置为监视所有文件。         |
+| [扫描网络文件](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 默认情况下，不启用 [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) ，并且不会扫描网络文件。 |
+| [扫描电子邮件](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 默认情况下，不启用 [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) ，并且不会扫描电子邮件。 |
+| [ (0-90) 保留隔离恶意软件的天数](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | 默认情况下， [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) 此设置设置为零 (0) 天。 Artifacts隔离区不会自动删除。  |
+| [提交示例同意](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 默认情况下， [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) 等于自动发送安全示例。 安全示例的示例包括`.bat``.scr``.dll``.exe`不包含个人身份信息 (PII) 的文件。 如果文件确实包含 PII，则用户将收到一个请求，以允许继续提交示例。<br/><br/>[详细了解云保护和示例提交](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [扫描可移动驱动器](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | 默认情况下， [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) 配置为扫描可移动驱动器，例如设备上的 USB 拇指驱动器。<br/><br/>[详细了解反恶意软件策略设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
+| [每天运行快速扫描时间](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | 默认情况下， [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) 设置为凌晨 2：00。<br/><br/>[详细了解扫描设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。   |
+| [在运行扫描之前检查签名更新](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | 默认情况下， [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) 配置为在运行防病毒/反恶意软件扫描之前检查安全智能更新。<br/><br/>[详细了解扫描设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[和安全智能更新](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。   |
+| [) 0-24 小时 (检查安全情报更新的频率](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) | 默认情况下， [SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval) 配置为每四小时检查一次安全智能更新。<br/><br/>[详细了解扫描设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[和安全智能更新](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。 |
 
 
 ## <a name="next-steps"></a>后续步骤
 
-- [在 Microsoft Defender for Business 中查看和管理事件](mdb-view-manage-incidents.md)
+- [在Microsoft Defender 商业版中查看和管理事件](mdb-view-manage-incidents.md)
 
-- [响应和缓解 Microsoft Defender for Business 中的威胁](mdb-respond-mitigate-threats.md)
+- [响应和缓解Microsoft Defender 商业版中的威胁](mdb-respond-mitigate-threats.md)
 
 - [查看操作中心中的修正操作](mdb-review-remediation-actions.md)
 
 
 ## <a name="see-also"></a>另请参阅
 
-- [访问 Microsoft 365 Defender 门户](mdb-get-started.md)
+- [访问Microsoft 365 Defender门户](mdb-get-started.md)
 
-- [在 Microsoft Defender for Business 中管理防火墙设置](mdb-custom-rules-firewall.md)
+- [在Microsoft Defender 商业版中管理防火墙设置](mdb-custom-rules-firewall.md)
 
 - [策略 CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

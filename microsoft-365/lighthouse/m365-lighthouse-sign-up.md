@@ -17,16 +17,16 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，了解如何注册 Microsoft 365 Lighthouse。
-ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326953"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645171"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>注册Microsoft 365 Lighthouse
 
-本文提供有关如何注册 Microsoft 365 Lighthouse。 Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。 
+本文提供有关如何注册 Microsoft 365 Lighthouse。 Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版、Microsoft 365 E3)  (或Windows 365 商业版。 
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -68,4 +68,4 @@ ms.locfileid: "63326953"
 
 [本文Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (概述)    
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章)    
-[Microsoft 365 Lighthouse和 Microsoft Defender for Business (](../security/defender-business/mdb-lighthouse-integration.md)文章) 
+[Microsoft 365 Lighthouse Microsoft Defender 商业版](../security/defender-business/mdb-lighthouse-integration.md) (和) 

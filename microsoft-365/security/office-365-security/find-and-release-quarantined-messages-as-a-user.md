@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 44b1d86d441be5582b8c4b3381a383b2e03417a1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682386"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471530"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -142,7 +142,7 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 
 从列表中选择已隔离邮件时，所显示的详细信息浮出控件中提供了以下信息。
 
-![已隔离邮件的详细信息浮出控件。](../../media/quarantine-user-message-details.png)
+:::image type="content" source="../../media/quarantine-user-message-details.png" alt-text="已隔离邮件的详细信息浮出控件" lightbox="../../media/quarantine-user-message-details.png":::
 
 选择列表中的电子邮件后，可以在“详细信息”浮出控件窗格中看到以下邮件详细信息：
 
@@ -161,7 +161,7 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 > [!NOTE]
 > 要保留在详细信息浮出控件中，但更改正在查看的已隔离邮件，请使用浮出控件顶部的向上和向下箭头。
 >
-> ![已隔离邮件详细信息浮出控件中的向上和向下箭头。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="已隔离邮件详细信息浮出控件中的向上和向下箭头" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
 
@@ -170,7 +170,7 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 
 从列表中选择隔离邮件后，详细信息浮出控件中将提供以下操作：
 
-![隔离邮件详细信息浮出控件中的可用操作。](../../media/quarantine-user-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-details-flyout-actions.png" alt-text="隔离邮件详细信息浮出控件中的可用操作" lightbox="../../media/quarantine-user-message-details-flyout-actions.png":::
 
 - ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放电子邮件**<sup>\*</sup>：将邮件传递到收件箱。
 
@@ -197,7 +197,8 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 > [!NOTE]
 > 在移动设备上，说明文本在操作图标上不可用。
 >
-> ![已隔离邮件的详细信息，其中突出显示了可用操作。](../../media/quarantine-user-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-user-message-details-flyout-mobile-actions.png" alt-text="已隔离邮件的详细信息，其中突出显示了可用操作" lightbox="../../media/quarantine-user-message-details-flyout-mobile-actions.png":::
+
 >
 > 下表汇总了按顺序排列的图标及其相应的说明：
 >
@@ -213,7 +214,7 @@ _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-
 
 当通过单击第一列左侧空白区域来选择列表中的多个已隔离邮件（最多 100 条）时，将显示“**批量操作**”下拉列表，你可以在其中执行以下操作：
 
-![隔离区中邮件的批量操作下拉列表。](../../media/quarantine-user-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="隔离区中邮件的批量操作下拉列表" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
 - ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放邮件**：将邮件传递到收件箱。
 - ![从隔离区中删除图标。](../../media/m365-cc-sc-delete-icon.png) **删除邮件**：在所显示警告中单击“**是**”后，将立即从隔离区中删除该邮件，而不会发送给原始收件人。

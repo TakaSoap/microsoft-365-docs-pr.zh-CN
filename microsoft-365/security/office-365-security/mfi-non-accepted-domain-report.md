@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的"邮件流"仪表板中的"非接受域"报告来监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25a8b1adb882aa83861e936d48534fc0a5f826e4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8f16dfbafa12080058cd1784120e4bc2157e0cff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679667"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470826"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心中的&域报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "63679667"
 
 Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
 
-![安全与合规中心内"邮件流"仪表板中的"非接受&小组件。](../../media/mfi-non-accepted-domain-report-widget.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-widget.png" alt-text="安全与合规中心内&quot;邮件流&quot;仪表板中的&quot;&&quot;小组件" lightbox="../../media/mfi-non-accepted-domain-report-widget.png":::
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>未接受域报告的报告视图
 
@@ -45,7 +45,7 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 
 如果将鼠标悬停在图表中 () 的数据点上，则会看到连接器的邮件总数。
 
-![未接受域报告中的报告视图。](../../media/mfi-non-accepted-domain-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-overview-view.png" alt-text="未接受域报告中的&quot;报告&quot;视图" lightbox="../../media/mfi-non-accepted-domain-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>未接受域报告的详细信息表视图
 
@@ -69,7 +69,7 @@ Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统�
 - **邮件计数**
 - **示例邮件**：可以单击 **"查看示例** 邮件" [以查看受影响邮件](message-trace-scc.md) 示例的邮件跟踪结果。
 
-![在"未接受域"报告中的"详细信息"表视图中选择一行后，详细信息飞出。](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-details-flyout.png" alt-text="The Details flyout after selecting a row in Details table view in the Non-accepted domain report" lightbox="../../media/mfi-non-accepted-domain-report-details-flyout.png":::
 
 若要返回到报告视图，请单击" **查看报告"**。
 

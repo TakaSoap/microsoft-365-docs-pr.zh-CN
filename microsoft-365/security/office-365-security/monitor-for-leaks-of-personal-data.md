@@ -19,12 +19,12 @@ search.appverid:
 description: 了解可用于监视个人数据泄露的三种工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba164fde38be1e8eed53b71ab568124140deaac5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682694"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470848"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -33,7 +33,7 @@ ms.locfileid: "63682694"
 
 有许多工具可用于监视个人数据的使用和传输。本主题介绍了三种十分有用的工具。
 
-![用于监视个人数据的使用和传输的工具。](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="用于监视个人数据的使用和传输的工具" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 在此图中：
 
@@ -62,7 +62,7 @@ DLP 报表位于Microsoft 365 合规中心中。转到 **报表**\>**组织数�
 
 有关详细信息，请参阅[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)。
 
-![显示 DLP 策略匹配项的报告。](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="显示 DLP 策略匹配项的报告" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## <a name="audit-log-and-alert-policies"></a>审核日志和警报策略
 
@@ -98,7 +98,7 @@ Microsoft Defender for Cloud Apps 是一项可为云应用提供深层可见性�
 
 例如，下图说明了有助于符合 GDPR 的两个 Defender for Cloud Apps 策略。
 
-![示例 Microsoft Defender for Cloud Apps 策略。](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="Defender for Cloud Apps 策略" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 如果选择的文件包含预定义的 PII 属性或自定义表达式，并且从选择的 SaaS 应用组织外部共享，那么第一个策略发出警报。
 
@@ -116,7 +116,7 @@ Defender for Cloud Apps 即将推出以下属性类型：
 > [!NOTE]
 > 开始使用 Defender for Cloud Apps 时或在分配标签前，请务必启用“自动扫描文件中是否有 Azure 信息保护分类标签”（位于“常规”设置中）。设置后，Defender for Cloud Apps 在对现有文件进行修改前将不会再次扫描现有文件。
 
-![显示有关警报信息的仪表板。](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="显示有关警报信息的仪表板" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 详细信息：
 

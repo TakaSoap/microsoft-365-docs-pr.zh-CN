@@ -1,7 +1,7 @@
 ---
 title: 曝光分数（以危险和漏洞管理
-description: 公开危险和漏洞管理分数反映了组织对网络安全威胁的易受攻击程度。
-keywords: 曝光分数， Microsoft Defender 终结点曝光分数， Microsoft Defender 终结点电视曝光分数， 组织曝光分数， 电视组织曝光分数， 危险和漏洞管理， Microsoft Defender for Endpoint
+description: 公开危险和漏洞管理分数反映了你的组织对网络安全威胁的侵害程度。
+keywords: 曝光分数， Microsoft Defender 终结点曝光分数， Microsoft Defender 终结点电视曝光分数， 组织曝光分数， 电视组织曝光分数， 危险和漏洞管理， 适用于终结点的 Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f65b48f37d1cf141611af075e55328226db6c6bd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168386"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471574"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
@@ -43,7 +43,7 @@ ms.locfileid: "61168386"
 
 卡片可让你高级查看一段时间的曝光分数趋势。 图表中的任何峰值都直观地指示高网络安全威胁暴露，你可以进一步调查。
 
-![曝光分数卡。](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="曝光记分卡" lightbox="images/tvm_exp_score.png":::
 
 ## <a name="how-it-works"></a>如何工作
 

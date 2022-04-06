@@ -14,12 +14,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理员可以在安全与合规中心的"邮件流"仪表板中了解出站和入站&见解。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5de9c699a12a7c3f282c4e1752eb23c5842a8c5d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679601"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475710"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全与合规中心中的出&和入站邮件流见解
 
@@ -34,7 +34,7 @@ ms.locfileid: "63679601"
 
 小组件在邮件发送到组织或从组织传递邮件时显示用于连接的 TLS 加密。 如果 TLS 由双方提供，则与其他电子邮件服务建立的连接由 TLS 进行加密。 小部件提供上一周邮件流的快照。
 
-![安全与合规中心的"邮件流"仪表板中的"出站和入站&小组件。](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="安全与合规中心内&quot;邮件流&quot;仪表板中的&quot;出站和入站&小组件" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
 小部件中的信息与连接器和 TLS 邮件保护Microsoft 365。 有关详细信息，请参阅以下主题：
 
@@ -46,7 +46,7 @@ ms.locfileid: "63679601"
 
 在小组件上单击"查看详细信息"时，"受 **TLS** (保护的邮件") 显示对进入和离开组织的邮件的 TLS 保护。
 
-![受 TLS (传输) 邮件显示在单击"出站和入站电子邮件"小部件上的"查看详细信息"后出现的飞出。](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="在传输过程中受 TLS (的邮件) 单击&quot;出站和入站电子邮件&quot;小部件上的&quot;查看详细信息&quot;后出现的) 显示" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
 目前，TLS 1.2 是由 TLS 提供的最安全Microsoft 365。 通常，需要知道用于合规性审核的 TLS 加密。 您可能没有与大多数源和目标电子邮件服务器的直接关系 (您不拥有它们，Microsoft) 也没有关系，因此您没有很多选项可以改进这些服务器使用的 TLS 加密。
 

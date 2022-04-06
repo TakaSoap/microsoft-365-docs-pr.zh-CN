@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fa740b483cd1a9591f7d4f7ef1961c5e96d4d44b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 89ed7ae50bf89c28bde81ea02e8905d0056ede53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682231"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470914"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -34,17 +34,18 @@ ms.locfileid: "63682231"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
-    ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
+  :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="列名称中的&quot;标识&quot;选项" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. 选择 **"运行状况问题通知"**。
 
 1. 输入收件人的电子邮件地址。 选择“**添加**”。
 
-    ![输入运行状况问题的电子邮件地址。](../../media/defender-identity/health-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/health-email-recipient.png" alt-text="运行状况问题通知子菜单项" lightbox="../../media/defender-identity/health-email-recipient.png":::
 
 1. 当 Defender for Identity 检测到运行状况问题时，收件人将收到包含详细信息的电子邮件通知。
 
-    ![运行状况问题电子邮件示例。](../../media/defender-identity/health-email.png)
+   :::image type="content" source="../../media/defender-identity/health-email.png" alt-text="运行状况问题电子邮件" lightbox="../../media/defender-identity/health-email.png":::
 
     > [!NOTE]
     > 电子邮件提供了两个链接，用于进一步了解有关该问题的详细信息。 你可以转到 **MDI 运行状况中心或** **M365D 中的新运行状况中心**。
@@ -55,13 +56,13 @@ ms.locfileid: "63682231"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
-    ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="标识选项" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. 选择 **警报通知**。
 
 1. 输入收件人的电子邮件地址。 选择“**添加**”。
 
-    ![输入检测到的警报的电子邮件地址。](../../media/defender-identity/alert-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/alert-email-recipient.png" alt-text="警报通知子菜单项" lightbox="../../media/defender-identity/alert-email-recipient.png":::
 
 ## <a name="syslog-notifications"></a>Syslog 通知
 
@@ -72,17 +73,17 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
-    ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="&quot;名称&quot;列中的&quot;标识&quot;选项" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. 选择 **"Syslog 通知"**。
 
 1. 若要启用 syslog 通知，将 **Syslog 服务** 开关设置为 **打开** 位置。
 
-    ![打开 syslog 服务。](../../media/defender-identity/syslog-service.png)
+   :::image type="content" source="../../media/defender-identity/syslog-service.png" alt-text="可以打开的 Syslog 服务选项" lightbox="../../media/defender-identity/syslog-service.png":::
 
 1. 选择 **"配置服务"**。 将打开一个窗格，您可以在其中输入 syslog 服务的详细信息。
 
-    ![输入 syslog 服务详细信息。](../../media/defender-identity/syslog-sensor.png)
+   :::image type="content" source="../../media/defender-identity/syslog-sensor.png" alt-text="您输入 Syslog 服务详细信息的页面" lightbox="../../media/defender-identity/syslog-sensor.png":::
 
 1. 输入以下详细信息：
 
@@ -93,11 +94,11 @@ Defender for Identity 可通过指定传感器向 Syslog 服务器发送安全�
 
 1. 选择 **"发送测试 SIEM 通知** "，然后验证消息是否在你的 Syslog 基础结构解决方案中收到。
 
-1. 选择“**保存**”。
+1. 选择“保存”。
 
 1. 配置 Syslog 服务后，可以选择向 **Syslog** 服务器发送 (警报或) 运行状况问题。
 
-    ![已配置 Syslog 服务。](../../media/defender-identity/syslog-configured.png)
+   :::image type="content" source="../../media/defender-identity/syslog-configured.png" alt-text="Syslog 服务已配置选项已选中" lightbox="../../media/defender-identity/syslog-configured.png":::
 
 ## <a name="see-also"></a>另请参阅
 

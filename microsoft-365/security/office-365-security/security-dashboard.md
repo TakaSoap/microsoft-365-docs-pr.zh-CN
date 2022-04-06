@@ -19,12 +19,12 @@ ms.custom:
 description: 使用新的安全仪表板查看Office 365防护状态，并查看和操作安全警报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f9706a92cf07f23656e6865fe69f11b04d58544
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4bc9d813732c4c67531aeb47a673111d62bbf417
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680511"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475732"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>安全与合规中心&仪表板
 
@@ -50,7 +50,7 @@ ms.locfileid: "63680511"
 
 通过"威胁管理摘要"小组件，你可以一目了然地了解在过去七年 7 天内，组织如何 (威胁) 保护。
 
-![安全仪表板 - 威胁管理摘要小组件。](../../media/SecDash-ThreatMgmtSummary.png)
+:::image type="content" source="../../media/SecDash-ThreatMgmtSummary.png" alt-text="&quot;安全仪表板 - 威胁管理摘要&quot;小组件" lightbox="../../media/SecDash-ThreatMgmtSummary.png":::
 
 你将在威胁管理摘要中看到的信息取决于你的订阅包括哪些内容。 下表介绍了包括哪些信息用于Office 365 E3 Office 365 E5。
 
@@ -64,7 +64,7 @@ ms.locfileid: "63680511"
 
 "威胁防护状态"小部件通过网络钓鱼和恶意软件的趋势和详细视图显示威胁防护有效性。
 
-![威胁防护状态小组件。](../../media/tpswidget.png)
+:::image type="content" source="../../media/tpswidget.png" alt-text="&quot;威胁防护状态&quot;小组件" lightbox="../../media/tpswidget.png":::
 
 详细信息取决于你的 Microsoft 365 订阅是否Exchange Online Protection[ (](exchange-online-protection-overview.md) EOP) [Microsoft Defender for Office 365](defender-for-office-365.md)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "63680511"
 
 "全球每周威胁检测"小组件显示过去七年 7 天内电子邮件中检测到 (威胁) 数。
 
-!["全球每周威胁检测"小组件。](../../media/globalweeklythreatdetections.png)
+:::image type="content" source="../../media/globalweeklythreatdetections.png" alt-text="&quot;全球每周威胁检测&quot;小组件" lightbox="../../media/globalweeklythreatdetections.png":::
 
 按照下表所述计算指标：
 
@@ -94,13 +94,13 @@ ms.locfileid: "63680511"
 
 "恶意软件"小部件显示过去七年 7 天内恶意软件趋势和恶意软件系列 () 详细信息。
 
-![恶意软件趋势和系列类型。](../../media/malwarewidgetatpe5.png)
+:::image type="content" source="../../media/malwarewidgetatpe5.png" alt-text="恶意软件趋势和系列类型" lightbox="../../media/malwarewidgetatpe5.png":::
 
 ## <a name="insights"></a>见解
 
 Insights应查看的关键问题，还包括要考虑的建议和操作。
 
-![智能见解。](../../media/smartinsights.png)
+:::image type="content" source="../../media/smartinsights.png" alt-text="智能见解" lightbox="../../media/smartinsights.png":::
 
 例如，您可能看到正在传递网络钓鱼电子邮件，因为某些用户已禁用其垃圾邮件选项。 若要详细了解见解如何工作，请参阅安全与合规中心中的& [见解](reports-and-insights-in-security-and-compliance.md)。
 
@@ -114,7 +114,7 @@ Insights应查看的关键问题，还包括要考虑的建议和操作。
 
 安全仪表板底部附近是"趋势 **"部分，** 其中总结了组织的电子邮件流趋势。 报告提供有关分类为垃圾邮件、恶意软件、网络钓鱼尝试和良好电子邮件的电子邮件的信息。 单击磁贴以查看报告中的更多详细信息。
 
-!["趋势"部分总结了组织的电子邮件流趋势。](../../media/trends.png)
+:::image type="content" source="../../media/trends.png" alt-text="&quot;趋势&quot;部分汇总了组织的电子邮件流趋势" lightbox="../../media/trends.png":::
 
 此外，如果你组织的订阅包含[适用于 Office 365 计划 2 的 Defender](office-365-ti.md)，则本部分中还将提供"最近使用的威胁管理警报"报告，使安全团队可以查看高优先级安全警报并采取措施。
 
