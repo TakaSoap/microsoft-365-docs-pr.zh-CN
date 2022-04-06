@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4979ee5f3953ced1073779fdcabb7eb361d4911a
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a511405c2d8fb4753debbadf0744d6277639648b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767372"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475248"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -66,13 +66,13 @@ ms.locfileid: "62767372"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从应用门户下载Microsoft 365 Defender包：
+从门户下载Microsoft 365 Defender包：
 
 1. 在Microsoft 365 Defender门户中，**转到设置** \> **终结点** \> **设备管理** \> **载入"**。
 
 2. 将操作系统设置为 **macOS**，将部署方法设置为移动设备管理 **/Microsoft Intune**。
 
-    ![载入设置屏幕截图。](images/macos-install-with-intune.png)
+   :::image type="content" source="images/macos-install-with-intune.png" alt-text="载入设置页面" lightbox="images/macos-install-with-intune.png":::
 
 3. 选择 **下载载入程序包**。 将其另 _存WindowsDefenderATPOnboardingPackage.zip_ 同一目录。
 
@@ -103,35 +103,35 @@ ms.locfileid: "62767372"
 1. 选择 **PlatformmacOS**=，**配置文件类型**=**Templates**。 **模板名称**=**自定义**。 单击“**创建**”。
 
     > [!div class="mx-imgBorder"]
-    > ![创建自定义配置文件。](images/mdatp-6-systemconfigurationprofiles-1.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="&quot;自定义配置文件创建&quot;页" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
-1. 为配置文件选择名称，例如"Defender for Cloud 或 Endpoint onboarding for macOS"。 点击 **“下一步”**。
+1. 为配置文件选择名称，例如"Defender for Cloud 或 Endpoint onboarding for macOS"。 单击“**下一步**”。
 
     > [!div class="mx-imgBorder"]
-    > ![自定义配置文件 - 名称。](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="&quot;自定义配置文件名称&quot;字段" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. 为配置文件名称选择名称，例如"适用于 macOS 的终结点载入的 Defender"。
 1. 选择部署 [通道](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices)。
-1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入程序包中提取的配置文件作为配置文件。
+1. 选择"intune/WindowsDefenderATPOnboarding.xml从上述载入程序包中提取的"配置文件"作为配置文件。
 
     > [!div class="mx-imgBorder"]
-    > ![从文件导入自定义配置文件的配置。](images/mdatp-6-systemconfigurationprofiles.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles.png" alt-text="从文件导入自定义配置文件的配置" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
 
-1. 点击 **“下一步”**。
+1. 单击“**下一步**”。
 1. 在"分配"选项卡上 **分配** 设备。单击"下一 **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![自定义配置文件 - 分配。](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="自定义配置文件 - 分配" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. 查看和 **创建**。
 1. 打开 **设备** \> **配置文件，** 你可以在那里查看你创建的配置文件。
 
     > [!div class="mx-imgBorder"]
-    > ![自定义配置文件 - 已完成。](images/mdatp-6-systemconfigurationprofiles-3.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="完成自定义配置文件" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 ### <a name="approve-system-extensions"></a>批准系统扩展
 
-MacOS 10.15 或更高版本 (此配置文件) MacOS 10.15。 它将在较旧的 macOS 上被忽略。
+MacOS 10.15 或更高版本 (此) 配置文件。 它将在较旧的 macOS 上被忽略。
 
 1. 选择 **"配置文件"下的** " **创建配置文件"**。
 1. 选择 **PlatformmacOS**=，**配置文件类型**=**Templates**。 **模板名称**=**扩展**。 单击“**创建**”。
@@ -144,7 +144,7 @@ MacOS 10.15 或更高版本 (此配置文件) MacOS 10.15。 它将在较旧的 
     |com.microsoft.wdav.netext|UBF8T346G9|
 
     > [!div class="mx-imgBorder"]
-    > ![系统扩展设置。](images/mac-system-extension-intune2.png)
+    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="系统扩展的设置" lightbox="images/mac-system-extension-intune2.png":::
 
 1. 在" **分配"** 选项卡中，将此配置文件分配给"所有 **&所有用户"**。
 1. 查看并创建此配置文件。
@@ -154,7 +154,7 @@ MacOS 10.15 或更高版本 (此配置文件) MacOS 10.15。 它将在较旧的 
 macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽略。
 
 > [!CAUTION]
-> Apple 芯片 (M1) 设备不支持 KEXT。 在这些设备上安装包含 KEXT 策略的配置文件将失败。
+> Apple 芯片 (M1) 不支持 KEXT。 在这些设备上安装包含 KEXT 策略的配置文件将失败。
 
 1. 选择 **"配置文件"下的** " **创建配置文件"**。
 1. 选择 **PlatformmacOS**=，**配置文件类型**=**Templates**。 **模板名称**=**扩展**。 单击“**创建**”。
@@ -163,7 +163,7 @@ macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽�
 1. 将 **团队标识符设置为** **UBF8T346G9，** 然后单击下一 **步**。
 
     > [!div class="mx-imgBorder"]
-    > ![内核扩展设置。](images/mac-kernel-extension-intune2.png)
+    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="系统扩展的内核设置" lightbox="images/mac-system-extension-intune2.png":::
 
 1. 在" **分配"** 选项卡中，将此配置文件分配给"所有 **&所有用户"**。
 1. 查看并创建此配置文件。
@@ -187,9 +187,9 @@ macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽�
 
 按照上述载入 [blob](#onboarding-blob) 的说明操作，使用"Defender for Endpoint Network Filter"作为配置文件名称，将 **下载的 netfilter.mobileconfig** 用作配置文件名称。
 
-### <a name="notifications"></a>通知
+### <a name="notifications"></a>Notifications
 
-此配置文件用于允许 macOS 和 Microsoft 自动更新上的 Microsoft Defender for Endpoint 在 macOS 10.15 或加泰罗尼亚语或更高版本 (UI) 通知。
+此配置文件用于允许 macOS 和 Microsoft 自动更新上的 Microsoft Defender for Endpoint 在 macOS 10.15 或加泰罗尼亚语或 (UI) 通知。
 
 从 [**我们的 GitHub 下载 notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)。[](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
@@ -200,38 +200,38 @@ macOS 10.15 或 (需要此) 配置文件。 它将在较新的 macOS 上被忽�
 Intune 更改传播到\>注册设备后，你可以看到它们列在监视设备 **状态下**：
 
 > [!div class="mx-imgBorder"]
-> ![监视器中的设备状态视图。](images/mdatp-7-devicestatusblade.png)
+> :::image type="content" source="images/mdatp-7-devicestatusblade.png" alt-text="设备状态的视图" lightbox="images/mdatp-7-devicestatusblade.png":::
 
 ## <a name="publish-application"></a>发布应用程序
 
 此步骤支持将 Microsoft Defender for Endpoint 部署到注册的计算机。
 
-1. 在管理 [Microsoft Endpoint Manager，打开](https://endpoint.microsoft.com/)"**应用"**。
+1. 在管理 [Microsoft Endpoint Manager中，](https://endpoint.microsoft.com/)打开"**应用"**。
 
     > [!div class="mx-imgBorder"]
-    > ![准备创建应用程序。](images/mdatp-8-app-before.png)
+    > :::image type="content" source="images/mdatp-8-app-before.png" alt-text="应用程序的概述页" lightbox="images/mdatp-8-app-before.png":::
 
 1. 选择"按平台> macOS >添加"。
 1. 选择 **"应用类型**=**""macOS**"，单击" **选择"**。
 
     > [!div class="mx-imgBorder"]
-    > ![指定应用程序类型。](images/mdatp-9-app-type.png)
+    > :::image type="content" source="images/mdatp-9-app-type.png" alt-text="特定应用程序类型" lightbox="images/mdatp-9-app-type.png":::
 
 1. 保留默认值，单击"下一 **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![应用程序属性。](images/mdatp-10-properties.png)
+    > :::image type="content" source="images/mdatp-10-properties.png" alt-text="应用程序属性页" lightbox="images/mdatp-10-properties.png":::
 
 1. 添加工作分配，单击"下 **一步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Intune 分配信息屏幕截图。](images/mdatp-11-assignments.png)
+    > :::image type="content" source="images/mdatp-11-assignments.png" alt-text="Intune 分配信息页" lightbox="images/mdatp-11-assignments.png":::
 
 1. 查看和 **创建**。
 1. 你可以按 **平台** \>  \> **macOS** 访问应用，在所有应用程序列表中查看它。
 
     > [!div class="mx-imgBorder"]
-    > ![应用程序列表。](images/mdatp-12-applications.png)
+    > :::image type="content" source="images/mdatp-12-applications.png" alt-text="应用程序列表页" lightbox="images/mdatp-12-applications.png":::
 
 有关详细信息，请参阅使用 [Microsoft Intune.) 将 Microsoft Defender for Endpoint 添加到 macOS](/mem/intune/apps/apps-advanced-threat-protection-macos) 设备
 
@@ -240,16 +240,16 @@ Intune 更改传播到\>注册设备后，你可以看到它们列在监视设�
 
 ## <a name="client-device-setup"></a>客户端设备设置
 
-除了标准安装之外，不需要为 Mac 设备公司门户[预配](/intune-user-help/enroll-your-device-in-intune-macos-cp)。
+无需对 Mac 设备进行除标准安装外的任何特殊公司门户[设置](/intune-user-help/enroll-your-device-in-intune-macos-cp)。
 
 1. 确认设备管理。
 
     > [!div class="mx-imgBorder"]
-    > ![确认设备管理屏幕截图。](images/mdatp-3-confirmdevicemgmt.png)
+    > :::image type="content" source="images/mdatp-3-confirmdevicemgmt.png" alt-text="&quot;确认设备管理&quot;页" lightbox="images/mdatp-3-confirmdevicemgmt.png":::
 
     选择 **"打开系统首选项"**，在列表中找到" **管理配置文件** "，然后选择" **批准..."**。管理配置文件将显示为"已 **验证"**：
 
-    ![管理配置文件屏幕截图。](images/mdatp-4-managementprofile.png)
+    :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="&quot;管理配置文件&quot;页" lightbox="images/mdatp-4-managementprofile.png":::
 
 2. 选择 **"继续** "并完成注册。
 
@@ -258,25 +258,25 @@ Intune 更改传播到\>注册设备后，你可以看到它们列在监视设�
 3. 在 Intune 中，打开 **"管理** \> **设备** \> **""所有设备"**。 你可以在此处查看列出的设备：
 
    > [!div class="mx-imgBorder"]
-   > ![添加设备屏幕截图。](images/mdatp-5-alldevices.png)
+   > :::image type="content" source="images/mdatp-5-alldevices.png" alt-text="&quot;所有设备&quot;页" lightbox="images/mdatp-5-alldevices.png":::
 
 ## <a name="verify-client-device-state"></a>验证客户端设备状态
 
 1. 将配置文件部署到设备后\>，在 Mac 设备上打开 **系统首选项配置文件**。
 
     > [!div class="mx-imgBorder"]
-    > ![系统首选项屏幕截图。](images/mdatp-13-systempreferences.png)
+    > :::image type="content" source="images/mdatp-13-systempreferences.png" alt-text="&quot;系统首选项&quot;页" lightbox="images/mdatp-13-systempreferences.png":::
 
-    ![系统首选项配置文件屏幕截图。](images/mdatp-14-systempreferencesprofiles.png)
+   :::image type="content" source="images/mdatp-14-systempreferencesprofiles.png" alt-text="&quot;系统首选项配置文件&quot;页" lightbox="images/mdatp-14-systempreferencesprofiles.png":::
 
 2. 确认存在并安装了以下配置文件。 管理 **配置文件** 应为 Intune 系统配置文件。 _Wdav-config_ 和 _wdav-kext_ 是在 Intune 中添加的系统配置文件：
 
-    ![配置文件屏幕截图。](images/mdatp-15-managementprofileconfig.png)
+   :::image type="content" source="images/mdatp-15-managementprofileconfig.png" alt-text="&quot;配置文件&quot;页" lightbox="images/mdatp-15-managementprofileconfig.png":::
 
 3. 你还应在右上角看到"适用于终结点的 Microsoft Defender"图标：
 
     > [!div class="mx-imgBorder"]
-    > ![状态栏中的 Microsoft Defender for Endpoint 图标屏幕截图。](images/mdatp-icon-bar.png)
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="状态栏中的 Microsoft Defender for Endpoint 图标" lightbox="images/mdatp-icon-bar.png":::
 
 ## <a name="troubleshooting"></a>疑难解答
 

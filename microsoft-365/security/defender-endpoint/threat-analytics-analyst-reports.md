@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5cd7c8da3b4d22600293959bdcb47a783a8569c3
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 337f9a94b651adffc7360cb88b3d68c9c8167c0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62156221"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468096"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>威胁分析中的分析员报告
 
@@ -33,9 +33,9 @@ ms.locfileid: "62156221"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-每个 [威胁分析报告都](threat-analytics.md) 包括动态部分和一个称为分析员报告的综合 _书面部分_。 若要访问此部分，请打开关于跟踪的威胁的报告，然后选择"分析 **员报告"** 选项卡。
+每个 [威胁分析报告包括](threat-analytics.md) 动态部分和一个称为分析员报告的综合书面 _部分_。 若要访问此部分，请打开关于跟踪的威胁的报告，然后选择"分析 **员报告"** 选项卡。
 
-![威胁分析报告的分析员报告部分的图像。](images/ta-analyst-report-small.png)
+:::image type="content" source="images/ta-analyst-report-small.png" alt-text="威胁分析报告的分析员报告部分" lightbox="images/ta-analyst-report-small.png":::
 
 _威胁分析报告的分析员报告部分_
 
@@ -52,7 +52,7 @@ _威胁分析报告的分析员报告部分_
 |执行摘要|威胁概述，包括首次看到威胁时、其动机、值得注意的事件、主要目标以及不同的工具和技术。 可以使用此信息进一步评估如何在行业、地理位置和网络上下文中确定威胁的优先级。|
 |分析|有关威胁的技术信息，包括攻击的详细信息以及攻击者如何利用新技术或攻击面|
 |MITRE ATT&观察到的 CK 技术|观察技术如何映射到 [MITRE ATT&CK 攻击框架](https://attack.mitre.org/)|
-|[缓解措施](#apply-additional-mitigations)|推荐，可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
+|[缓解](#apply-additional-mitigations)|推荐可以停止或帮助降低威胁的影响。 本部分还包括未作为威胁分析报告的一部分动态跟踪的缓解。|
 |[检测详细信息](#understand-how-each-threat-can-be-detected)|Microsoft 安全解决方案提供的特定和通用检测，可显示与威胁关联的活动或组件。|
 |[高级搜寻](#find-subtle-threat-artifacts-using-advanced-hunting)|[用于主动识别](advanced-hunting-overview.md) 可能的威胁活动的高级搜寻查询。 大多数查询都用于补充检测，尤其是用于找到无法动态评估为恶意的潜在恶意组件或行为。|
 |References|Microsoft 和分析师在报告创建期间引用的第三方出版物。 威胁分析内容基于 Microsoft 研究人员验证的数据。 公开提供的、第三方源的信息会明确标识。|
@@ -70,7 +70,7 @@ _威胁分析报告的分析员报告部分_
 - 向最终用户就网络钓鱼电子邮件和其他威胁矢量进行培训
 - 打开特定 [攻击面减少规则](attack-surface-reduction.md)
 
-虽然可以使用"缓解" **选项卡评估** 针对威胁的安全状态，但这些建议可让你采取其他步骤改善安全状况。 仔细阅读分析员报告中的所有缓解指南，并尽可能应用它们。
+虽然可以使用"缓解 **"选项卡评估** 针对威胁的安全状态，但这些建议可让你采取其他步骤改善安全状况。 仔细阅读分析员报告中的所有缓解指南，并尽可能应用它们。
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>了解如何检测每个威胁
 
@@ -85,7 +85,7 @@ _威胁分析报告的分析员报告部分_
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>终结点检测和响应 (EDR) 警报
 
-EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备将引发警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如防病毒、网络保护、防篡改) 充当强大的信号源。
+EDR Microsoft [Defender for Endpoint 的设备将引发警报](onboard-configure.md)。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号以及其他终结点功能 (例如防病毒、网络保护、防篡改保护) 用作强大的信号源。
 
 与防病毒检测列表一样，某些EDR警报旨在一般标记可能未与跟踪威胁关联的可疑行为。 在这种情况下，报告将清楚地将警报标识为"通用"，并且它并不影响报告中的任何图表。
 
@@ -95,7 +95,7 @@ EDR已载入[Microsoft Defender for Endpoint](onboard-configure.md)的设备将�
 
 [高级搜寻](advanced-hunting-overview.md) 提供基于 Kusto 查询语言的查询接口，可简化威胁活动的细微指示器的定位。 它还允许你显示上下文信息并验证指示器是否已连接到威胁。
 
-分析报告中的高级搜寻查询已经过 Microsoft 分析师审查，可随时在高级搜寻 [查询编辑器中运行](https://security.microsoft.com/advanced-hunting)。 您还可以使用查询创建自定义 [检测规则，](custom-detection-rules.md) 以触发将来匹配项的警报。
+分析员报告中的高级搜寻查询已经过 Microsoft 分析师审查，可随时在高级搜寻 [查询编辑器中运行](https://security.microsoft.com/advanced-hunting)。 您还可以使用查询创建自定义 [检测规则，](custom-detection-rules.md) 以触发将来匹配项的警报。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401283"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475160"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -48,7 +48,7 @@ EOP 中提供了以下反欺骗技术：
 
   EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
 
-  ![EOP 反欺骗检查。](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="EOP 反欺骗检查" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **欺骗智能见解**：查看过去 7 天内内部和外部域中来自发件人的欺骗邮件，并允许或阻止这些发件人。有关详细信息，请参阅 [EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)。
 

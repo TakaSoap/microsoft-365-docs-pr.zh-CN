@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2e14e523c9aa662afc0ee38572f8a19be6f851b5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: d9d418cee35976e621c173b3563b04ee8bdce7ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271798"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595293"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -36,14 +36,14 @@ ms.locfileid: "62271798"
 
 在开始通信合规性入门之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 以及任何加载项。 若要访问和使用通信合规性，组织必须具有以下订阅或加载项之一：
 
-- Microsoft 365 E5/A5/G5 订阅 (付费版或试用版) 
-- Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
-- Microsoft 365 E3/A3/G5 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
+- Microsoft 365 E5/A5/F5/G5 订阅 (付费或试用版) 
+- Microsoft 365 E3/A3/F3/G5 订阅 + Microsoft 365 E5/A5/F5/G5 合规性加载项
+- Microsoft 365 E3/A3/F3/G5 订阅 + Microsoft 365 E5/A5/F5/G5 Insider Risk Management 加载项
 - Office 365 企业版 E5 订阅（付费或试用版本）
 - Office 365 A5 订阅（付费或试用版本）
 - Office 365 企业版 E3 订阅 + Office 365 高级合规版加载项（新订阅已不再可用，请参阅注释）
 
-通信合规性策略中包括的用户必须获得以上许可证之一。
+通信合规性策略中包括的用户必须获得以上许可证之一。 有关订阅和许可详细信息，请参阅Microsoft 365[安全与&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
 > [!IMPORTANT]
 > 通信合规性当前在 Azure 服务依赖项支持的地理区域和国家/地区托管的租户中可用。 若要验证组织是否支持通信合规性，请参阅 [Azure 依赖项可用性（按国家/地区）。](/troubleshoot/azure/general/dependency-availability-by-country)
@@ -68,11 +68,11 @@ ms.locfileid: "62271798"
 > [!IMPORTANT]
 > 配置角色组之后，可能需要长达 30 分钟时间将角色组权限应用到整个组织的已分配用户。
 
-有六个角色组用于配置管理通信合规性功能的初始权限。 若要使 **通信** 合规性作为菜单中的菜单选项Microsoft 365 合规中心并继续这些配置步骤，您必须被分配到以下角色或角色组之一：
+有六个角色组用于配置管理通信合规性功能的初始权限。 若要使 **通信** 合规性作为菜单中的菜单选项Microsoft 365 合规中心并继续这些配置步骤，必须分配给以下角色或角色组之一：
 
 - Azure Active Directory [*全局管理员*](/azure/active-directory/roles/permissions-reference#global-administrator)角色
 - Azure Active Directory [*合规性管理员*](/azure/active-directory/roles/permissions-reference#compliance-administrator)角色
-- Microsoft 365 合规中心 [*组织管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)角色组
+- Microsoft 365 合规中心 [*组织管理角色*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)组
 - Microsoft 365 合规中心 [*合规性管理员*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)角色组
 - *通信合规性* 角色组
 - *通信合规性管理员* 角色组
@@ -85,7 +85,7 @@ ms.locfileid: "62271798"
 - Microsoft 365 合规中心 *合规性管理员*
 
 > [!IMPORTANT]
-> 确保通信合规性或通信合规性管理员角色组 (中始终至少有一个用户，具体取决于你选择) 以便你的通信合规性配置不会进入"零管理员"方案（如果特定用户离开您的组织）。
+> 确保"通信合规性"或"通信合规性管理员"角色组 ( 中始终至少有一个用户，具体取决于选择") "的选项，这样，如果特定用户离开组织，通信合规性配置不会进入"零管理员"方案。
 
 根据希望管理通信合规性策略和警报的方式，需要将用户分配给特定角色组来管理不同的通信合规性功能集。 可以选择将具有不同合规性职责的用户分配给特定的角色组，以管理不同区域的通信合规性功能。 或者可以决定将指定管理员、分析者、调查者和查看者的所有用户账户分配到 *通信合规性* 角色组。 使用单个角色组或多个角色组，以充分符合你的合规性管理要求。
 
@@ -93,8 +93,8 @@ ms.locfileid: "62271798"
 
 | 角色 | 角色权限 |
 |:-----|:-----------------|
-| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 此配置是快速开始使用通信合规性的最简单方法，非常适合不需要为单独的用户组定义单独权限的组织。 以通信合规性管理员角色创建策略的用户的邮箱必须托管在 Exchange Online。|
-| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配给此角色组的用户无法查看邮件警报。 以通信合规性管理员角色创建策略的用户的邮箱必须托管在 Exchange Online。|
+| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 此配置是快速开始使用通信合规性的最简单方法，非常适合不需要为单独的用户组定义单独权限的组织。 作为通信合规性管理员创建策略的用户的邮箱必须托管在 Exchange Online。|
+| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配给此角色组的用户无法查看邮件警报。 作为通信合规性管理员创建策略的用户的邮箱必须托管在 Exchange Online。|
 | **通信合规性分析者** | 使用此组向执行通信合规性分析者操作的用户分配权限。 分配给此角色组的用户可以查看分配为审阅者的策略、查看邮件元数据 (而不是邮件内容) 、升级为其他审阅者或向用户发送通知。 分析员无法解决挂起的警报。 |
 | **通信合规性调查者** | 使用此组向执行通信合规性调查者操作的用户分配权限。 分配到此角色组的用户可以查看消息元数据和内容、升级到其他审阅者、升级到高级 eDiscovery 案例、向用户发送通知、以及解决警报。 |
 | **通信合规性查看者** | 使用此组向管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小组件，并且可以查看所有通信合规性报告。 |
@@ -119,7 +119,7 @@ ms.locfileid: "62271798"
 
 使用此选项将用户分配到特定角色组，以区分组织中不同用户的通信合规性访问和职责。
 
-1. 使用 [Microsoft 365 合规中心 组织中](https://compliance.microsoft.com)管理员帐户的凭据登录Microsoft 365，然后转到"**权限"**</a>。
+1. 使用 [Microsoft 365 合规中心 组织中](https://compliance.microsoft.com)管理员帐户的凭据登录 Microsoft 365，然后转到"**权限"**</a>。
 
 2. 选择链接以查看和管理 Office 365 中的角色。
 
@@ -158,7 +158,7 @@ ms.locfileid: "62271798"
 |受监督用户 <br> 已排除用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> Microsoft 365动态成员身份的组 |
 | 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
 
-在策略中 *分配* 通讯组时，该策略将监视Teams组中每个用户的所有电子邮件和 *聊天* 内容。 在策略中分配 *Microsoft 365* 组时，该策略将监视发送到 Microsoft 365 组的所有电子邮件和 *Teams* 聊天，而不是每个组的成员接收的单个电子邮件和聊天。 建议在通信合规性策略中使用通讯组，以便自动Teams来自每个用户的单个电子邮件和聊天内容。
+在策略中 *分配* 通讯组时，该策略将监视Teams组中每个用户的所有电子邮件和 *聊天* 内容。 在策略中分配 *Microsoft 365* 组时，该策略将监视发送到 Microsoft 365 组的所有电子邮件和 *Teams* 聊天，*而不是每个组的成员接收到的单个电子邮件和聊天。 建议在通信合规性策略中使用通讯组，以便自动Teams来自每个用户的单个电子邮件和聊天内容。
 
 如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。 有关为本地用户启用基于云的存储和 Teams 支持的要求和限制，请参阅搜索本地用户的 Teams 聊天[数据](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
@@ -232,7 +232,7 @@ ms.locfileid: "62271798"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     > [!NOTE]
-    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) 以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义 **策略** > **"** "自定义策略""格式和百分比"，并启用"从图像中提取打印或 **手写** 文本"进行评估。
+    > 如果要启用光学字符识别 [ (OCR)](communication-compliance-policies.md#optical-character-recognition-ocr) 以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义 **policyConditions**  >  和百分比"，并启用"从图像中提取打印或手写文本"进行评估。
 
     如果选择使用策略向导创建自定义策略，将需要：
 
@@ -264,7 +264,7 @@ ms.locfileid: "62271798"
 
 ## <a name="step-6-optional-update-compliance-boundaries-for-communication-compliance-policies"></a>步骤 6 (可选) ：更新通信合规性策略的合规性边界
 
-[](/microsoft-365/compliance/set-up-compliance-boundaries)合规性边界在组织中创建逻辑边界 (如电子数据展示管理员可搜索的用户内容位置 (如邮箱、OneDrive 帐户和 SharePoint 网站) 搜索。
+[](/microsoft-365/compliance/set-up-compliance-boundaries)合规性边界在组织中创建逻辑边界，用于控制用户内容位置 (如电子数据展示管理员可搜索的 (邮箱、OneDrive 帐户和 SharePoint 网站) 搜索。
 
 如果在组织中配置了合规性边界，则必须更新合规性边界以允许某些用户访问支持通信合规性策略的邮箱。 需要允许通信合规性管理员和通信合规性审阅者访问策略管理、调查和修正操作才能正常工作。
 

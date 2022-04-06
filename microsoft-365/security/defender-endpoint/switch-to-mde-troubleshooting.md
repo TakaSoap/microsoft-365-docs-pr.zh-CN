@@ -1,5 +1,5 @@
 ---
-title: 切换到 Microsoft Defender for Endpoint 时的问题疑难解答
+title: 切换到用户时的问题Microsoft Defender for Endpoint
 description: 了解如何在切换到 Microsoft Defender for Endpoint 时解决问题。
 keywords: 迁移， windows defender， 高级终结点保护， 防病毒， 反恶意软件， 被动模式， 主动模式， 疑难解答
 ms.prod: m365-security
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/11/2022
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 180adaff84f4154034d8bda04b6a6cbf6ceadc2e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680445"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507505"
 ---
-# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>切换到 Microsoft Defender for Endpoint 时的问题疑难解答
+# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>切换到用户时的问题Microsoft Defender for Endpoint
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-本文为在从非 Microsoft 终结点保护解决方案切换到 Microsoft Defender for Endpoint 时遇到问题的安全管理员提供了疑难解答信息。
+本文为在从非 Microsoft 终结点保护解决方案切换到安全保护解决方案时遇到问题的安全管理员提供了Microsoft Defender for Endpoint。
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>Microsoft Defender 防病毒服务器上卸载Windows
 
@@ -42,7 +42,7 @@ ms.locfileid: "63680445"
 若要解决此问题，请执行以下步骤：
 
 1. [将 DisableAntiSpyware 注册表项设置为 false](#set-the-disableantispyware-registry-key-to-false)。
-2. [将 Microsoft Defender for Endpoint 添加到排除列表](#add-microsoft-defender-for-endpoint-to-the-exclusion-list)。
+2. [将Microsoft Defender for Endpoint添加到排除列表](#add-microsoft-defender-for-endpoint-to-the-exclusion-list)。
 3. [手动Microsoft Defender 防病毒被动模式。](#set-microsoft-defender-antivirus-to-passive-mode-manually)
 
 ### <a name="set-the-disableantispyware-registry-key-to-false"></a>将 DisableAntiSpyware 注册表项设置为 false
@@ -64,7 +64,7 @@ ms.locfileid: "63680445"
 > [!TIP]
 > 若要了解有关此注册表项的信息，请参阅 [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)。
 
-### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>将 Microsoft Defender for Endpoint 添加到排除列表
+### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>将Microsoft Defender for Endpoint添加到排除列表
 
 Defender for Endpoint 的某些排除项必须在现有的非 Microsoft 终结点保护解决方案中定义。 请确保添加以下排除项：
 
@@ -80,7 +80,7 @@ Defender for Endpoint 的某些排除项必须在现有的非 Microsoft 终结�
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>手动Microsoft Defender 防病毒被动模式
 
-在 Windows Server 2019、Windows Server 版本 1803 或更高版本、Windows Server 2016 或 Windows Server 2012 R2 上，您必须手动将 Microsoft Defender 防病毒 设置为被动模式。 此操作有助于防止在服务器上安装多个防病毒产品导致的问题。 可以使用 PowerShell Microsoft Defender 防病毒组策略或注册表项将用户设置为被动模式。
+在 Windows Server 2019、Windows Server 版本 1803 或更高版本、Windows Server 2016 或 Windows Server 2012 R2 上，您必须手动将 Microsoft Defender 防病毒 设置为被动模式。 此操作有助于防止在服务器上安装多个防病毒产品导致的问题。 可以使用 PowerShell Microsoft Defender 防病毒或注册表项组策略被动模式。
 
 可以通过设置Microsoft Defender 防病毒注册表项来将用户设置为被动模式：
 
@@ -96,6 +96,21 @@ Defender for Endpoint 的某些排除项必须在现有的非 Microsoft 终结�
 > 若要使被动模式在运行 Windows Server 2016 和 Windows Server 2012 R2 的终结点上运行，必须使用载入 Windows 服务器中的[说明载入这些终结点](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
 
 有关详细信息，请参阅 Microsoft Defender 防病毒 [Server Windows。](microsoft-defender-antivirus-on-windows-server.md)
+
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>Microsoft Defender 防病毒似乎卡在被动模式下
+
+如果Microsoft Defender 防病毒卡在被动模式下，请手动按照以下步骤将模式设置为活动模式：
+
+1. 在 Windows设备上，以管理员角色打开注册表编辑器。
+
+2. 转到 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`。
+
+3. 设置或定义名为 **REG_DWORD** `ForceDefenderPassiveMode`项，并设置其值 `0`。
+
+4. 重新启动设备。
+
+> [!IMPORTANT]
+> 如果在执行此过程后仍无法将Microsoft Defender 防病毒模式设置为活动模式，请联系[支持人员](../../admin/get-help-support.md)。
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>我在重新启用Microsoft Defender 防病毒时Windows Server 2016
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 058eaded0e46a4dfe86bd2cdc5624ea0963f34ea
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682364"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474632"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>零信任标识和设备访问配置
 
@@ -39,7 +39,7 @@ ms.locfileid: "63682364"
 
 - 使用最小特权访问
 
-  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。  
+  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。
 
 - 假定泄露
 
@@ -112,7 +112,7 @@ ms.locfileid: "63682364"
 - **Enterprise**：某些客户具有必须在较高级别保护的数据子集，或者他们可能要求在较高级别保护所有数据。 你可以对环境中的所有或特定数据集应用增强Microsoft 365保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。
 - **专用** 安全：如果需要，一些客户具有少量高度机密、构成商业机密或受监管的数据。 Microsoft 提供了一些功能来帮助这些客户满足这些要求，包括对标识和设备添加了保护。
 
-![安全圆锥 - 所有>一些>客户](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="安全圆锥图" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
 
 本指南演示如何针对这些保护级别的标识和设备实施零信任保护。 使用本指南作为组织的最低要求，并调整策略以满足组织的特定要求。
 
@@ -131,7 +131,7 @@ The **Zero Trust identity and device protection for Microsoft 365** architecture
 
 实施任何安全策略需要在安全性和工作效率之间进行选择。 评估每个决策对安全性、功能和易用性的平衡有何影响很有用。
 
-![安全性三重平衡安全性、功能和易用性。](../../media/microsoft-365-policies-configurations/security-triad.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/security-triad.png" alt-text="安全性三元平衡安全性、功能和易用性" lightbox="../../media/microsoft-365-policies-configurations/security-triad.png":::
 
 提供的建议基于以下原则：
 
@@ -160,7 +160,7 @@ Azure AD提供了一整套身份管理功能。 我们建议使用这些功能�
 
 下面是零信任标识和设备访问的组件，包括 Intune 和 Azure AD 对象、设置和子服务。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="零信任标识和设备访问的组件。" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="零信任标识和设备访问的组件" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -226,7 +226,7 @@ Microsoft 建议不要创建适用于所有应用的策略集，因为这可能�
 
 ## <a name="steps-to-configure-zero-trust-identity-and-device-access"></a>配置零信任标识和设备访问的步骤
 
-![配置零信任标识和设备访问的步骤。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png" alt-text="配置零信任标识和设备访问的步骤" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps.png":::
 
 1. 配置先决条件标识功能及其设置。
 2. 配置通用标识和访问条件访问策略。

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b9275eba3e9131de7262155710a1b5d5e6493b20
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a9753cdc818aefdf33411bd237327310dfc512ab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326614"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474727"
 ---
 # <a name="device-inventory"></a>设备清单
 
@@ -34,7 +34,29 @@ ms.locfileid: "63326614"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)。
 
-设备清单可帮助你发现、浏览和调查组织中设备，包括计算机、服务器、移动设备、网络设备和 IoT 设备。 它可以帮助你发现未知设备并识别网络中设备管理差距。
+**"设备"** 列表显示网络中生成警报的设备列表。 默认情况下，队列显示最近 30 天内看到的设备。
+
+一目了然地，你将看到域、风险级别、操作系统平台和其他详细信息，以轻松识别风险最大的设备。
+
+有几种选项可供选择以自定义设备列表视图。 在顶部导航上，你可以：
+
+- 添加或删除列
+- 导出 CSV 格式的整个列表
+- 选择要显示每页的项目数
+- 应用筛选器
+
+在载入过程中， **设备列表** 将随着设备开始报告传感器数据而逐渐填充。 使用此视图在已载入终结点联机时跟踪它们，或下载完整终结点列表作为 CSV 文件进行脱机分析。
+
+> [!NOTE]
+> 如果导出设备列表，它将包含组织的每台设备。 下载可能需要很长时间，具体取决于你的组织规模。 以 CSV 格式导出列表以未筛选的方式显示数据。 CSV 文件将包含组织的所有设备，而不考虑视图本身应用的任何筛选。
+
+:::image type="content" source="images/device-inventory.png" alt-text="设备列表" lightbox="images/device-inventory.png":::
+
+## <a name="sort-and-filter-the-device-list"></a>排序和筛选设备列表
+
+可以应用以下筛选器来限制警报列表并获取更集中的视图。
+
+### <a name="device-name"></a>设备名称
 
 在 Microsoft Defender for Endpoint 载入过程中，载入到 MDE 的设备在开始报告传感器数据时将逐渐填充到设备清单中。 然后，设备清单由通过设备发现过程在网络中发现的设备填充。 设备清单有三个选项卡，按以下三个选项卡列出设备：
 
@@ -98,7 +120,7 @@ ms.locfileid: "63326614"
 **载入状态** </br> | 载入状态指示设备当前是否已载入到 Microsoft Defender for Endpoint。 可以按以下状态进行筛选： </br> - **已载入**：终结点已载入到 Microsoft Defender for Endpoint。  </br> - **可以载入**：终结点已作为受支持的设备在网络中发现，但当前尚未载入。 Microsoft 强烈建议载入这些设备。 </br> - **不支持**：终结点已发现在网络中，但不受 Microsoft Defender for Endpoint 支持。 </br> - **信息** 不足：系统无法确定设备的可支持性。</br></br>  (_计算机和移动设备)_
 **防病毒状态** </br> | 根据防病毒状态是已禁用、未更新还是未知来筛选视图。</br></br>  (_计算机和移动设备)_
 **组** </br> | 根据你感兴趣的组筛选列表。 </br></br>  (_计算机和移动设备)_
-**托管者** </br> | "管理者"指示如何管理设备。 You can filter by:</br>- Microsoft Defender for Endpoint </br> - 移动设备管理 (MDM)  </br>- 未知：这可能是由于运行的是过时的 Windows 版本、SCCM 已就位或其他第三方 MDM。</br></br>  (_计算机和移动设备)_
+**托管者** </br> | "管理者"指示如何管理设备。 You can filter by:</br>- Microsoft Defender for Endpoint </br> - 移动设备管理 (MDM)  </br>- 未知：这可能是由于正在运行过时的 Windows 版本、SCCM 已就位或其他第三方 MDM。</br></br>  (_计算机和移动设备)_
 **设备类型** </br> | 按你感兴趣的设备类型进行筛选。</br></br>  (_IoT 设备)_
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>使用列自定义设备清单视图

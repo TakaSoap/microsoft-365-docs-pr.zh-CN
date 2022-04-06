@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 4d66dad57fa7b045062a0300327b76030c33dfab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346089"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468162"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -64,7 +64,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 > [!WARNING]
 > 在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
 
-### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (RHEL 和) 
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>CentOS、Fedora、Oracle Linux 和 Amazon Linux 2 (的 RHEL 和) 
 
 - 如果 `yum-utils` 尚未安装，请安装：
 
@@ -300,11 +300,11 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 > [!IMPORTANT]
 > 如果错过此步骤，执行的任何命令将显示一条警告消息，指示产品未授权。 此外， `mdatp health` 该命令返回 的值 `false`。
 
-1. 在 Microsoft 365 Defender 门户中，转到"设置 >终结点>**">载入"**。
+1. 在 Microsoft 365 Defender门户中，转到"设置 >终结点>**">载入"**。
 2. 在"第一个"下拉菜单中，选择 **"Linux Server** "作为操作系统。 第二个下拉菜单中，选择" **本地脚本** "作为部署方法。
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
-    ![Microsoft 365 Defender门户屏幕截图。](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="在应用门户中下载Microsoft 365 Defender包" lightbox="images/portal-onboarding-linux.png":::
 
 4. 在命令提示符下，验证您是否具有该文件，然后提取存档的内容：
 

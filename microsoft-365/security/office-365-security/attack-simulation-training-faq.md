@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 计划 2 Office 365培训的常见问题。
+description: 管理员可以了解有关部署注意事项和有关攻击模拟和 Microsoft Defender 中针对 Microsoft 365 E5 计划 2 Office 365培训的常见问题。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60907989"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467788"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
-攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织能够度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
+攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
 
 有关攻击模拟培训入门的信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -37,13 +37,13 @@ ms.locfileid: "60907989"
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google 网页浏览阻止的网络钓鱼保险箱 URL
 
-URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
+URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL**。 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
 
-![Google Chrome 中的欺骗性网站提前警告。](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Google Chrome 中的欺骗性网站提前警告" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 请注意，此问题不会影响Microsoft Edge。
 
-作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的[](https://support.google.com/chrome/a/answer/7532419)本指南允许访问 URL。
+作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的本指南允许访问 URL。 [](https://support.google.com/chrome/a/answer/7532419)
 
 有关 [攻击模拟培训当前](attack-simulation-training-get-started.md) 使用的 URL 列表，请参阅使用攻击模拟培训入门。
 
@@ -57,7 +57,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 尽管我们看到此层中很少客户被阻止，但确实如此。 如果遇到问题，请考虑将以下 URL 配置为绕过安全设备或筛选器所需的扫描：
 
-- 如使用攻击模拟培训入门中所述的模拟[网络钓鱼 URL。](attack-simulation-training-get-started.md)
+- 使用攻击模拟培训入门中所述的模拟 [网络钓鱼 URL](attack-simulation-training-get-started.md)。
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -70,20 +70,20 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 - 来宾用户。
 - 不再在活动状态Azure Active Directory (Azure AD) 。
 
-只有具有有效邮箱的有效非来宾用户才包括在模拟中。 如果使用通讯组或启用邮件的安全组作为目标用户，可以使用[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet 查看和验证通讯组成员。
+只有具有有效邮箱的有效非来宾用户才包括在模拟中。 如果使用通讯组或启用邮件的安全组来面向用户，可以使用 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中的 [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet 查看和验证通讯组成员。
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>攻击模拟培训报告问题
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>攻击模拟培训报告不包含任何活动详细信息
 
-攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证 审核日志搜索是否在你的组织中打开 (默认情况下是否) 。
+攻击模拟培训附带丰富、可操作见解，可让你了解员工的威胁就绪进度。 如果攻击模拟培训报告未填充数据，请验证审核日志搜索是否在你的组织中打开 (默认情况下是否) 。
 
 攻击模拟培训需要审核日志搜索，以便可以捕获、记录和重新读取事件。 关闭审核日志搜索对攻击模拟培训有以下后果：
 
 - 报告数据并非在所有报告中都可用。 报告将显示为空。
 - 由于数据不可用，因此将阻止培训作业。
 
-若要启用搜索审核日志，请参阅打开 [审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+若要打开搜索审核日志，请参阅打开 [审核日志或关闭搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 > [!NOTE]
 > 未向用户分配 E5 许可证也导致了空活动详细信息。 确认至少向活动用户分配了一个 E5 许可证，以确保捕获并记录报告事件。
@@ -96,11 +96,11 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 当模拟状态为 **计划** 时，模拟报告将大部分为空。 在此阶段，模拟引擎将解析目标用户电子邮件地址、展开通讯组、从列表中删除来宾用户等：
 
-![显示计划状态中的模拟的模拟详细信息。](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="显示计划状态中的模拟的模拟详细信息" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 模拟进入正在进行阶段 **后** ，你将注意到信息开始欺骗报告：
 
-![模拟详细信息，显示正在进行中的模拟。](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="显示正在进行中的模拟的模拟详细信息" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 转换到正在进行状态后，可能需要 30 分钟才能更新单个 **模拟** 报告。 报告数据将继续生成，直到模拟达到 **"已完成"** 状态。 报告更新将按照以下间隔发生：
 
@@ -122,12 +122,12 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 - 放弃其凭据的用户。
 - 将邮件报告为网络钓鱼的用户。
 
-如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 它阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
+如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 该规则阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
 - phish@office365.microsoft.com
-- 不 \_ junk@office365.microsoft.com
+- not\_ junk@office365.microsoft.com
 
 ## <a name="other-frequently-asked-questions"></a>其他常见问题
 
@@ -135,9 +135,9 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：目标用户可以使用以下几种选项：
 
-- 包括当前 (用户数少于 40，000 的组织可用的) 。
+- 包括当前 (用户数少于 40，000 的组织) 。
 - 选择特定用户。
-- 从 CSV 文件选择用户 (每行一) 。
+- Select users from a CSV file (one email address per line) .
 - Azure AD基于组的目标。
 
 我们发现，目标用户由组标识的Azure AD通常更易于管理。
@@ -158,15 +158,15 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>问：如何切换到其他语言以用于我的管理门户和培训体验？
 
-答：Microsoft 365或Office 365，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 [for Business 中的显示语言和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
+答：在Microsoft 365或Office 365中，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 请注意，配置更改可能需要 30 分钟才能在所有服务之间同步。
 
 ### <a name="q-can-i-trigger-a-test-simulation-to-understand-what-it-looks-like-prior-to-launching-a-full-fledged-campaign"></a>问：能否触发测试模拟，了解在启动功能齐全的市场活动之前它的外观？
 
-答：可以！ 在 **向导中用于** 创建新模拟的最后一个"审阅模拟"页上，有一个 **"发送测试"选项**。 此选项将向当前登录的用户发送示例网络钓鱼模拟消息。 验证收件箱中的网络钓鱼邮件后，可以提交模拟。
+答：可以！ 在 **向导中用于** 创建新模拟的最后一个"审阅模拟"页上，有一个 **发送测试的选项**。 此选项将向当前登录的用户发送示例网络钓鱼模拟消息。 验证收件箱中的网络钓鱼邮件后，可以提交模拟。
 
-![在"审阅模拟"页上发送测试按钮。](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="&quot;审阅模拟&quot;页上的&quot;发送测试&quot;按钮" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>问：我能否将属于不同租户的用户作为同一模拟市场活动的一部分？
 
@@ -176,7 +176,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 答：区域感知传递使用目标用户邮箱的 TimeZone 属性和"not before"逻辑来确定何时传递邮件。 例如，请考虑以下方案：
 
-- 在 UTC-8 (太平洋时区的上午 7：00) ，管理员创建并计划一个活动，以在当天上午 9：00 开始。
+- 在太平洋时区 (UTC-8) 的上午 7：00，管理员创建并计划一个活动，以在当天上午 9：00 开始。
 - UserA 位于 UTC-5 (东部时区) 。
 - UserB 也位于太平洋时区。
 

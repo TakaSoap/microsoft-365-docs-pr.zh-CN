@@ -1,6 +1,6 @@
 ---
-title: 设置适用于终结点的 Microsoft Defender 部署
-description: 了解如何设置 Microsoft Defender for Endpoint 的部署
+title: 设置Microsoft Defender for Endpoint部署
+description: 了解如何为用户设置Microsoft Defender for Endpoint
 keywords: 部署， 设置， 许可验证， 租户配置， 网络配置
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8e905db8ba5e868a9913c785bd7f9bc0cc67b39a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e1fbfdaa71cc57a7797a2b95c96a56abba4fcc40
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472674"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64506980"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置Microsoft Defender for Endpoint部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "64472674"
 - 网络配置
 
 > [!NOTE]
-> 为了引导您完成典型部署，此方案将仅涉及 Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint](onboard-configure.md)。
+> 为了引导您完成典型部署，此方案将仅涉及 Microsoft Endpoint Configuration Manager。 Defender for Endpoint 支持使用其他载入工具，但不在部署指南中介绍这些方案。 有关详细信息，请参阅[载入设备以Microsoft Defender for Endpoint](onboard-configure.md)。
 
 ## <a name="check-license-state"></a>检查许可证状态
 
@@ -79,24 +79,24 @@ ms.locfileid: "64472674"
 
 ## <a name="tenant-configuration"></a>租户配置
 
-载入 Microsoft Defender for Endpoint 非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
+载入Microsoft Defender for Endpoint非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
 
 从 Web 浏览器中，导航到Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 
 ## <a name="data-center-location"></a>数据中心位置
-Microsoft Defender for Endpoint 将在用户所使用的相同位置存储和处理[Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。 如果Microsoft 365 Defender尚未打开，则载入 Microsoft Defender for Endpoint 也将打开 Microsoft 365 Defender 并且根据活动 Microsoft 365 安全服务的位置自动选择新的数据中心位置。 所选的数据中心位置会显示在屏幕上。
+Microsoft Defender for Endpoint将在用户所使用的相同位置存储和处理[Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。 如果Microsoft 365 Defender尚未打开，则载入 Microsoft Defender for Endpoint 也会打开 Microsoft 365 Defender 并且根据活动数据库的位置自动选择新的Microsoft 365 安全服务。 所选的数据中心位置会显示在屏幕上。
 
 ## <a name="network-configuration"></a>网络配置
 
 如果组织不要求终结点使用代理访问 Internet，请跳过此部分。
 
-Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （WinHTTP） 报告感官数据，并与 Microsoft Defender for Endpoint 服务进行通信。 嵌入的 Microsoft Defender for Endpoint 传感器使用 LocalSystem 帐户在系统上下文中运行。 该感官服务使用 Microsoft Windows HTTP Services （WinHTTP） 与 Microsoft Defender for Endpoint 云服务启用通信。 WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理设置，并且只能使用下列发现方法发现代理服务器：
+Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （WinHTTP） 报告感官数据，并与 Microsoft Defender for Endpoint 服务进行通信。 嵌入式Microsoft Defender for Endpoint传感器使用 LocalSystem 帐户在系统上下文中运行。 该感官服务使用 Microsoft Windows HTTP Services （WinHTTP） 与 Microsoft Defender for Endpoint 云服务启用通信。 WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理设置，并且只能使用下列发现方法发现代理服务器：
 
 - **自动发现方法**：
   - 透明代理
   - Web 代理自动发现协议 (WPAD)
 
-  如果在网络拓扑中实施了透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中用于终结点 URL 排除的 Microsoft Defender 详细信息，请参阅本文档中的代理服务 [URL](production-deployment.md#proxy-service-urls) 部分，了解 URL 允许列表或配置设备代理和 [Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
+  如果在网络拓扑中实施了透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中Microsoft Defender for Endpoint URL 排除项的信息，请参阅本文档中的代理服务 [URL](production-deployment.md#proxy-service-urls) 部分，了解 URL 允许列表或配置设备代理和 [Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 - **手动静态代理配置**：
   - 基于注册表的配置
@@ -106,14 +106,14 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基于注册表的静态代理手动配置代理服务器
 
-配置基于注册表的静态代理，以允许仅 Microsoft Defender for Endpoint 传感器报告诊断数据，并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
+配置基于注册表的静态代理，以仅允许 Microsoft Defender for Endpoint 传感器报告诊断数据并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
 - 管理模板\>Windows组件 \> 数据收集和预览版本\>配置连接的用户体验和遥测服务的已验证代理使用情况
 - 将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并 **\>导航到"管理模板"Windows组件\>数据收集\>** 和预览版配置连接的用户体验和遥测服务的已验证代理用法。
+3. 编辑组策略并导航 **\>到"管理模板Windows组件\>\>** 数据收集和预览版配置连接的用户体验和遥测服务的已验证代理使用情况。
 
    :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="与配置使用策略相关的选项" lightbox="images/atp-gpo-proxy1.png":::
 
@@ -167,7 +167,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 仅在你拥有 Windows 10 版本 1803 或 Windows 11 URL。 例如，`us-v20.events.data.microsoft.com`仅在设备位于 Windows 10 1803 或 Windows 11。
 
-如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
+如果代理或防火墙阻止匿名流量，Microsoft Defender for Endpoint传感器从系统上下文连接时，请确保允许列出的 URL 中的匿名流量。
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。
 
@@ -178,9 +178,9 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 |域列表的电子表格| 说明|
 |---|---|
-|:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URL 电子表格" lightbox="images/mdatp-urls.png":::|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
-|
+|Microsoft Defender for Endpoint客户的 URL 列表| 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint Gov/GCC/DoD 的 URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## <a name="next-step"></a>后续步骤
 
-[![**阶段 3：载入**。](images/onboard.png#lightbox)] <br> [阶段 3：](onboarding.md)载入：将设备载入服务，以便 Microsoft Defender for Endpoint 服务可以从它们获取传感器数据。
+[![**阶段 3：载入**。](images/onboard.png#lightbox)] <br> [阶段 3：](onboarding.md)载入：将设备载入服务，以便Microsoft Defender for Endpoint服务可以从它们获取传感器数据。

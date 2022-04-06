@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解 Microsoft SharePoint Syntex 中的文档理解。
-ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7488fcb44116f030d538b416af1f04b33382519
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322585"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507314"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的文档理解概述
 
@@ -112,7 +112,8 @@ OCR 处理最适用于满足下列要求的文档：
 
 ### <a name="supported-languages"></a>支持的语言
 
-文档理解模型支持以下语言：
+文档理解模型 *支持所有* 基于拉丁语的语言，包括：
+
 - 英语
 - 法语
 - 德语

@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f78194541db8221aad1243966ddee6b6dc071d7d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b8041962ca1a696146f9a5828c66b1a6800c4b01
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317047"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683726"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -77,12 +77,9 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 下表概括了每个计划中包含的内容。
 
-****
-
 |Defender for Office 365 计划 1|Defender for Office 365 计划 2|
 |---|---|
 |配置、保护和检测功能： <ul><li>[安全附件](safe-attachments.md)</li><li>[安全链接](safe-links.md)</li><li>[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 中的防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Defender for Office 365 计划 1 功能 <p> --- + --- <p> 自动化、调查、补救措施和教育功能： <ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟培训](attack-simulation-training.md)</li><li>[使用 Microsoft 365 Defender 中的高级搜寻主动搜寻威胁](../defender/advanced-hunting-overview.md)</li><li>[在 Microsoft 365 Defender 中调查事件](../defender/investigate-incidents.md)</li><li>[在 Microsoft 365 Defender 中调查警报](../defender/investigate-alerts.md)</li></ul>|
-
 
 - Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Microsoft Defender for Office 365 计划 2。
 
@@ -144,10 +141,6 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>使用 Microsoft Defender for Office 365 功能所需权限
 
 要访问 Microsoft Defender for Office 365 功能，你必须分配有适当的角色。下表包含了一些示例：
-
-<br>
-
-****
 
 |角色或角色组|了解详细信息的资源|
 |---|---|

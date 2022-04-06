@@ -14,16 +14,16 @@ metadata:
   ms.reviewer: oogunrinde, sugamar
   manager: dansimp
   ms.custom: asr
-  ms.topic: article
+  ms.topic: faq
   ms.technology: mde
   ms.collection: m365-security-compliance
   ms.date: 1/18/2022
-  ms.openlocfilehash: 7699bc28f91d0d4ded4f94c24bacaffe1c342b65
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: fbdeee9b98a0c9a3309cf0d18436fb8508afc060
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63328703"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63683770"
 title: '攻击面减少常见问题解答 (常见问题) '
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -51,7 +51,7 @@ sections:
   - question: >
       如果我有 E3 许可证，是否支持 ASR？
     answer: >
-      能。 E3 及Windows Enterprise支持 ASR。
+      是。 E3 及Windows Enterprise支持 ASR。
   - question: >
       E5 许可证支持哪些功能？
     answer: >
@@ -120,7 +120,7 @@ sections:
   - question: >
       ASR 是否支持路径中包括系统变量和通配符的文件或文件夹排除项？
     answer: >
-      能。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从 [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) 规则中排除文件和文件夹;有关在排除[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
+      是。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从 [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) 规则中排除文件和文件夹;有关在排除[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
   - question: >
       默认情况下，ASR 规则是否涵盖所有应用程序？
     answer: >

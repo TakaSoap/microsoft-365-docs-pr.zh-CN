@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324167"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475204"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -53,7 +53,7 @@ ms.locfileid: "63324167"
 - 选项卡 (概述、警报、时间线、安全建议、软件清单、发现的漏洞、缺少的) 
 - 卡片 (活动警报、已登录用户、安全评估) 
 
-![设备视图的图像。](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="设备视图" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > 由于产品限制，设备配置文件在确定"上次查看"时间范围时不会考虑所有网络证据 (如设备页面上所见，) 。
@@ -91,13 +91,13 @@ ms.locfileid: "63324167"
 
 " **概述** "选项卡 [显示活动](#cards) 警报、已登录用户和安全评估的卡片。
 
-![设备页面上概述选项卡的图像。](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="设备页面上的&quot;概述&quot;选项卡" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>警报
 
 **警报选项卡** 提供与设备关联的警报列表。 此列表是警报队列的筛选版本，显示[](alerts-queue.md)警报、严重性 (高、中、低、信息) 、队列 (中的状态、新、正在进行、已解决) 、分类 (未设置、false 警报、真警报) 、调查状态、警报类别、解决警报的人和上次活动。 您还可以筛选警报。
 
-![与设备相关的警报的图像。](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="与设备相关的警报选项卡" lightbox="images/alerts-device.png":::
 
 当选择警报左侧的圆圈图标时，将出现一个飞出。 从此面板中，你可以管理警报并查看更多详细信息，如事件编号和相关设备。 可以一次选择多个警报。
 
@@ -118,7 +118,7 @@ ms.locfileid: "63324167"
 > - [5031](/windows/security/threat-protection/auditing/event-5031) - 阻止应用程序接受网络上传入的连接
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - 阻止连接
 
-![包含事件的设备时间线的图像。](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="具有事件的设备时间线" lightbox="images/timeline-device.png":::
 
 一些功能包括：
 
@@ -146,30 +146,30 @@ ms.locfileid: "63324167"
 
 若要进一步检查事件和相关事件，可以通过为相关事件选择"[](advanced-hunting-overview.md)搜寻"来 **快速运行高级搜寻查询**。 查询将返回所选事件以及同一终结点上同时发生的其他事件的列表。
 
-![事件详细信息面板的图像。](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="事件详细信息面板" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>安全性建议
 
 **安全建议** 从 Microsoft Defender 针对终结点的威胁和漏洞& [生成](tvm-dashboard-insights.md) 。 选择建议将显示一个面板，您可以在其中查看相关详细信息，如建议说明和与不实施建议相关的潜在风险。 有关详细信息 [，请参阅安全](tvm-security-recommendation.md) 建议。
 
-![安全建议选项卡的图像。](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="&quot;安全建议&quot;选项卡" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>软件清单
 
 借助 **"软件** 清单"选项卡，可以查看设备上的软件，以及任何漏洞或威胁。 选择软件名称后，您将访问软件详细信息页，您可以在其中查看安全建议、发现的漏洞、已安装的设备以及版本分发。 有关详细信息 [，请参阅](tvm-software-inventory.md) 软件清单
 
-![软件清单选项卡的图像。](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="&quot;软件清单&quot;选项卡" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>发现的漏洞
 
 " **发现的漏洞"** 选项卡显示设备上发现的漏洞的名称、严重性和威胁见解。 选择特定漏洞将显示说明和详细信息。
 
-![已发现漏洞选项卡的图像。](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="&quot;发现的漏洞&quot;选项卡" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>缺少 KB
 " **缺少的 KB** "选项卡列出了设备缺少的安全更新。
 
-![缺少 kbs 选项卡的图像。](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="&quot;缺少的 KB&quot;选项卡" lightbox="images/missing-kbs-device.png":::
 
 ## <a name="cards"></a>卡片
 
@@ -177,7 +177,7 @@ ms.locfileid: "63324167"
 
 **如果已启用 Microsoft** Defender for Identity 功能，并且存在任何活动警报，Azure 高级威胁防护卡片将显示与设备及其风险级别相关的警报的高级概述。 "警报"向下钻取中提供了详细信息。
 
-![活动警报卡片的图像。](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="活动警报卡片" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
 > 你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
@@ -186,7 +186,7 @@ ms.locfileid: "63324167"
 
 **"已登录用户"** 卡片显示过去 30 天内登录的用户数，以及最多且最不频繁的用户。 选择"查看所有用户"链接将打开详细信息窗格，其中显示诸如用户类型、登录类型以及首次看到用户和最后一次看到用户时的信息。 有关详细信息，请参阅调查 [用户实体](investigate-user.md)。
 
-![用户详细信息窗格的图像。](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="用户详细信息窗格" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > "最常见的"用户值仅根据已成功以交互方式登录的用户的证据进行计算。
@@ -196,7 +196,7 @@ ms.locfileid: "63324167"
 
 安全 **评估卡片** 显示总体曝光级别、安全建议、已安装的软件和发现的漏洞。 设备的曝光级别由待定安全建议累积影响决定。
 
-![安全评估卡的图像。](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="安全评估卡" lightbox="images/security-assessments.png":::
 
 ## <a name="related-topics"></a>相关主题
 

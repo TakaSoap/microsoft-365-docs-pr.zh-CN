@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682936"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569988"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>用于保护网站和SharePoint的策略建议
 
-本文介绍如何实施推荐的零信任标识和设备访问策略来保护SharePoint OneDrive for Business。 本指南基于通用 [标识和设备访问策略](identity-access-policies.md)。
+本文介绍如何实施推荐的标识零信任设备访问策略来保护SharePoint OneDrive for Business。 本指南基于通用 [标识和设备访问策略](identity-access-policies.md)。
 
 这些建议基于三种不同的安全层和保护 SharePoint 文件，这些文件可以基于你的需求粒度应用：起始点、企业和 **专用安全**。  你可以了解有关这些安全层以及建议的客户端操作系统（概述中这些建议所引用） [的更多信息](microsoft-365-policies-configurations.md)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "63682936"
 
 若要保护 SharePoint 和 OneDrive 中的文件，下图说明了从通用标识和设备访问策略更新的策略。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="用于保护对应用程序的访问权限的策略更新SharePoint。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="用于保护对应用程序的访问权限的策略更新SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
 如果在创建SharePoint策略时包括了策略，则只需创建新策略。 对于条件访问策略，SharePoint包括OneDrive。
 
@@ -60,7 +60,7 @@ ms.locfileid: "63682936"
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>在应用中使用应用强制SharePoint
 
-如果在 SharePoint 中实现访问控制，则必须在 Azure AD 创建此条件访问策略Azure AD以强制实施在 SharePoint 中配置的策略。 此策略适用于所有用户，但仅影响在使用 PowerShell 创建访问控件时对使用 PowerShell 指定的SharePoint。
+如果在客户端中实现SharePoint，则条件访问策略Azure AD以Azure AD强制实施在 SharePoint 中配置的策略。 默认情况下，此策略适用于所有用户，但仅影响当您在 SharePoint 中创建访问控制时，使用 PowerShell 访问您指定的SharePoint。 还可以将策略的范围确定为特定用户、组或网站。
 
 若要配置此策略，请参阅控制从非托管设备SharePoint或OneDrive访问"中的"阻止或限制对特定网站集或帐户[的访问权限"](/sharepoint/control-access-from-unmanaged-devices)。
 
@@ -79,7 +79,7 @@ Microsoft 建议通过设备访问控制SharePoint企业专用安全内容来保
 
 下图提供了一个示例，SharePoint访问策略如何保护用户对网站的访问。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="设备访问SharePoint如何保护网站的示例。" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="设备访问策略SharePoint网站的示例" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
 为一位用户分配了起点条件访问策略，但可以SharePoint企业或专门的安全保护访问这些网站。
 
@@ -89,7 +89,8 @@ Microsoft 建议通过设备访问控制SharePoint企业专用安全内容来保
 
 ## <a name="next-step"></a>后续步骤
 
-![步骤 4：云Microsoft 365策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="步骤 4 - 云Microsoft 365策略" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+
 
 为：配置条件访问策略：
 

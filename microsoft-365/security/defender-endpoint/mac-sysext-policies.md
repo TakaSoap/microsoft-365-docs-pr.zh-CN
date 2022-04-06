@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53194aac16091b9afd9559b4f372c2d436c198bf
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766829"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474698"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
@@ -36,9 +36,9 @@ ms.locfileid: "62766829"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
-为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS 10.15.4 (macOS) macOS 版本。
+为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) macOS 版本。
 
-如果你通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中在 macOS 上部署了 Microsoft Defender for Endpoint) ，则必须部署新的配置文件。 如果不执行这些步骤，则会导致用户收到运行这些新组件的审批提示。
+如果你已经通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中在 macOS 上部署了 Microsoft Defender for Endpoint) ，则必须部署新的配置文件。 如果不执行这些步骤，则会导致用户收到运行这些新组件的审批提示。
 
 ## <a name="jamf"></a>JAMF
 
@@ -46,7 +46,7 @@ ms.locfileid: "62766829"
 
 若要批准系统扩展，请创建以下有效负载：
 
-1. 在 **"计算机>配置文件"中** ，选择"系统 **>选项"**。
+1. 在 **"计算机>配置文件"中** ，选择" **系统>选项"**。
 2. 从 **"系统扩展类型"****下拉列表中选择**"允许的系统扩展"。
 3. 将 **UBF8T346G9 用于** 团队 ID。
 4. 将以下捆绑包标识符添加到允许 **的系统扩展** 列表中：
@@ -54,7 +54,7 @@ ms.locfileid: "62766829"
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![批准的系统扩展屏幕截图。](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" &quot;已批准的系统扩展&quot;页" lightbox="images/mac-approved-system-extensions.png":::
 
 ### <a name="privacy-preferences-policy-control"></a>隐私首选项策略控制
 
@@ -65,7 +65,7 @@ ms.locfileid: "62766829"
 3. 将代码要求设置为 `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. 将 **应用或服务设置为** **SystemPolicyAllFiles** ，并访问 **"允许"**。
 
-    ![隐私首选项策略控制。](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" &quot;隐私首选项策略控制&quot;菜单项" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
@@ -193,9 +193,9 @@ ms.locfileid: "62766829"
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![系统配置文件屏幕截图。](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" &quot;系统配置文件&quot;页" lightbox="images/mac-system-extension-intune2.png":::
 
-5. 在选项卡 `Assignments` 中，将此配置文件分配给"所有用户 **&所有设备"**。
+5. 在选项卡 `Assignments` 中，将此配置文件分配给"所有用户 **&所有设备**。
 6. 查看并创建此配置文件。
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>创建和部署自定义配置文件
@@ -315,7 +315,7 @@ sysext.xml: OK
 3. 打开配置文件， **然后上传sysext.xml**。 此文件是在上一步骤中创建的。
 4. 选择“**确定**”。
 
-    ![Intune 中的系统扩展屏幕截图。](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" Intune 中的系统扩展页" lightbox="images/mac-system-extension-intune.png":::
 
-5. 在选项卡 `Assignments` 中，将此配置文件分配给"所有用户 **&所有设备"**。
+5. 在选项卡 `Assignments` 中，将此配置文件分配给"所有用户 **&所有设备**。
 6. 查看并创建此配置文件。

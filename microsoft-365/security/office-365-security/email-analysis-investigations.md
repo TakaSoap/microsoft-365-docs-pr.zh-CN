@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5c4d1be31742d21f6e7919a8db4a3d2aff75f66e
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 49a244e948da14e328ab3db64dc495ab6e5d6dd4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775381"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468008"
 ---
 # <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 调查的电子邮件分析
 
@@ -74,7 +74,7 @@ ms.locfileid: "63775381"
 
 现在，在事件的"证据 **和** 响应"选项卡中，基于电子邮件的证据将显示以下信息。
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="证据和响应中的电子邮件分析信息示例。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="证据和响应中的电子邮件分析信息" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 从图中的编号标注：
 
@@ -91,7 +91,7 @@ ms.locfileid: "63775381"
 
 对于事件"实体"选项卡中的电子邮件或电子邮件群集，"已阻止"表示邮箱中没有针对此项目的恶意电子邮件 (邮件或群集) 。 以下是示例。
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="阻止的电子邮件示例。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="阻止的电子邮件。" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 本示例中，电子邮件是恶意电子邮件，但不在邮箱中。
 

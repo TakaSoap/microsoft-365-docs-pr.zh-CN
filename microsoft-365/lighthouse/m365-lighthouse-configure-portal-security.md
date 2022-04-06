@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) 托管服务提供商Microsoft 365 Lighthouse，了解如何配置门户安全性。
-ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 532ce9d6e90ea4d502c6898a105702d525f05a1b
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594743"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632680"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>配置Microsoft 365 Lighthouse门户安全性
 
@@ -39,11 +39,11 @@ ms.locfileid: "64594743"
 
 基于角色的访问控制 (RBAC) 基于用户角色授予对资源或信息的访问权限。 对 Lighthouse 中的客户租户数据和设置的访问权限仅限于云解决方案提供商计划云解决方案提供商 (特定) 角色。 若要在 Lighthouse 中设置 RBAC 角色，我们建议使用 GDAP (委派管理员) 为用户实现精细分配。 租户仍 (DAP) 委派管理员权限才能成功载入，但仅 GDAP 客户将很快能够在不依赖 DAP 的情况下载入。 当 DAP 和 GDAP 为客户共存时，GDAP 权限优先。 
 
-若要开始使用 GDAP，请参阅 Microsoft 365 Lighthouse 中[的权限概述](m365-lighthouse-overview-of-permissions.md)。
+若要设置 GDAP 关系，请参阅获取管理客户服务的精细 [管理员权限](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)。 有关我们建议使用 Lighthouse 的角色详细信息，请参阅 Overview [of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md)。
 
 MSP 技术人员还可通过使用管理员代理或支持人员代理角色通过 DAP (访问) 。
 
-对于 Lighthouse (中的非客户租户相关操作，例如载入、客户停用/重新激活、管理标记、查看日志) ，MSP 技术人员必须在合作伙伴租户中分配有角色。 上一篇文章链接详细介绍了在 Lighthouse 中的角色及其权限。
+对于 Lighthouse (中的非客户租户相关操作，例如载入、客户停用/重新激活、管理标记、查看日志) ，MSP 技术人员必须在合作伙伴租户中分配有角色。 有关[合作伙伴租户角色的更多详细信息，请参阅 Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) 中的权限概述。
 
 ## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>设置Azure AD Privileged Identity Management (PIM) 
 

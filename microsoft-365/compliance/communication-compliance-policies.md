@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 33961088105e838add3634024bb85807a6550eb7
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: d8524715ad0e450671faeaeb0714992e297a02df
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450726"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595165"
 ---
 # <a name="communication-compliance-policies"></a>通信合规性策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "63450726"
 
 ## <a name="policy-templates"></a>策略模板
 
-策略模板是预定义的策略设置，可用于快速创建策略以解决常见的合规性方案。 其中每个模板在条件和范围上都有差异，并且所有模板都使用相同的扫描信号类型。 可以从以下策略模板中选择：
+策略模板是预定义的策略设置，可用于快速创建策略以解决常见的合规性方案。 其中每个模板在条件和范围上都有差异，并且所有模板都使用相同的扫描信号类型。 可以从以下策略模板中进行选择：
 
 |**区域**|**策略模板**|**详细信息**|
 |:-----|:-----|:-----|
@@ -81,6 +81,32 @@ ms.locfileid: "63450726"
 2. 选择 **命令栏** 上的"复制策略命令栏按钮"，或者从策略的操作菜单中选择"复制策略"。
 3. 在 **"复制策略** "窗格中，可以接受"策略名称"字段中策略 **的默认** 名称或重命名策略。 新策略的策略名称不能与现有的活动策略或已停用策略相同。 根据需要 **完成"说明** "字段。
 4. 如果不需要进一步自定义策略，请选择" **复制策略** "以完成此过程。 如果需要更新新策略的配置，请选择"自定义 **策略"**。 这将启动策略向导，以帮助你更新和自定义新策略。
+
+## <a name="user-reported-messages-policy"></a>用户报告的邮件策略
+
+作为分层防御的一部分，可以检测并修正组织中不适当的邮件，同时使用组织中用户报告的邮件来补充Microsoft Teams。 此功能使贵组织的用户能够自行报告不恰当的消息，例如骚扰或威胁语言、共享成人内容以及共享敏感或机密信息，以帮助改善安全合规的工作环境。
+
+默认情况下，在 Teams 管理[](/microsoftteams/manage-teams-in-modern-portal)中心中启用，Teams 邮件中的"报告问题"选项允许贵组织的用户提交不适当的邮件，供策略的通信合规性审阅者审阅。 默认系统策略支持这些消息，该策略支持报告Teams、组和专用聊天中的消息。
+
+![通信合规性报告问题。](../media/communication-compliance-report-a-concern-full-menu.png)
+
+当用户提交聊天Teams查看时，该消息将复制到用户报告的消息策略。 报告的消息最初仍对所有聊天成员可见，并且没有任何通知通知给聊天成员或提交者，指出消息已在频道、私人或群组聊天中报告。 用户不能多次报告同一条消息，并且该消息在策略审阅过程中对包含在聊天会话中的所有用户仍然可见。 
+
+在审查过程中，通信合规性审阅者可以针对邮件执行所有标准[](/microsoft-365/compliance/communication-compliance-investigate-remediate#step-3-decide-on-a-remediation-action)修正操作，包括从聊天中删除Teams操作。 根据消息的修正方式，邮件发件人和收件人将在评论后在Teams看到不同的通知[](/microsoftteams/communication-compliance#act-on-inappropriate-messages-in-microsoft-teams)消息。
+
+![通信合规性用户报告的邮件策略。](../media/communication-compliance-user-reported-messages-policy.png)
+
+用户从Teams中报告的消息是由用户报告的消息策略处理的唯一消息，并且只能修改该策略的分配的审阅者。 所有其他策略属性均不可编辑。 创建策略时，分配给策略的初始审阅者是 *Communication Compliance Admins* 角色组 (的所有成员（如果填充了至少一个用户) 或组织的全局管理员角色组的所有成员）。 策略创建者是来自 *Communication Compliance Admins* 角色组 (（如果填充了至少一个用户) 或您组织的全局管理员角色组中随机选择的用户）中的随机用户。  
+
+管理员应立即为组织分配此策略的自定义审阅者。 这可能包括您的合规部主管、风险部主管或人力资源部门的成员等审阅者。 若要自定义作为用户报告的消息提交的聊天消息的审阅者，请完成以下步骤：
+
+1. 使用[Microsoft 365 合规中心](https://compliance.microsoft.com/)组织中管理员帐户的凭据登录Microsoft 365帐户。
+2. 在 Microsoft 365 合规中心中，转到“**通信合规性**”。
+3. 在" **策略"** 选项卡上，选择 *"用户报告的邮件"* 策略，然后选择"编辑 **"**。
+4. 在" **监视用户报告的邮件"** 窗格中，为策略分配审阅者。 审阅者必须将邮箱托管在Exchange Online。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
+5. 选择“保存”。
+
+若要禁止用户使用"报告Teams"选项报告邮件，请禁用"管理中心"中的"最终用户报告Teams[选项](/microsoftteams/manage-teams-in-modern-portal)。
 
 ## <a name="storage-limit-notification-preview"></a>存储预览 (限制) 
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse帮助排查并解决错误消息和问题。
-ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403668"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632352"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>排查并解决邮件中的问题和Microsoft 365 Lighthouse
 
@@ -53,20 +53,20 @@ ms.locfileid: "64403668"
 
 **原因：** 你的客户租户不符合以下条件：
 
-  - 必须为 Managed Service Provider (MSP) 设置委派的 DAP (MSP) 才能管理客户租户*
-  - 必须至少有一个 Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版许可证
+  - 必须为 Managed Service Provider (MSP) 设置委派访问权限，才能管理客户租户*
+  - 必须至少有一个Microsoft 365 商业高级版、Microsoft 365 E3许可证或Windows 365 商业版许可证
   - 授权用户不能超过 1000 个 
 
 **解决方法：** 下表介绍了需要操作的不同租户状态，并说明了如何解决这些问题。
 
-*将客户 (到) 需要委派的 DAP 管理员权限。 我们还建议与客户建立粒度委派 (GDAP) ，以实现更安全的委派访问。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先用于这两种模型都适合的客户。 很快，仅具有 GDAP (且没有 DAP) 客户将能够载入 Lighthouse。<br><br>
+*将客户 (到) 需要委派的 DAP 管理员权限。 我们还建议与客户建立粒度委派 (GDAP) ，以实现更安全的委派访问。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先用于这两种模型都适合的客户。 很快，仅具有 GDAP (且没有 DAP) 客户将能够载入 Lighthouse。
 
 
 | 状态 | 说明 | 解决方案 |
 |--|--|--|
 | 非活动 | 应 MSP 的请求，租户已离开，不再在 Lighthouse 中进行管理。 | 需要重新激活租户。 在 **"租户"** 页面上，选择三个点 (要) 激活的租户旁边的其他操作，然后选择"激活 **租户"**。 初始客户数据可能需要 24–48 小时才能显示在 Lighthouse 中。 |
 | 不符合 - 未设置 DAP 或 GDAP | 你没有设置租户的 DAP 或 GDAP 管理员权限，这是 Lighthouse 所需的。 | 在 Microsoft 合作伙伴中心设置 DAP 或 GDAP 管理员权限。 |
-| 不符合资格 - 缺少所需的许可证 | 租户缺少所需的许可证。 他们至少需要一个Microsoft 365 商业高级版或Microsoft 365 E3许可证。 | 确保租户至少分配有一Microsoft 365 商业高级版或Microsoft 365 E3许可证。 |
+| 不符合资格 - 缺少所需的许可证 | 租户缺少所需的许可证。 他们需要至少一个Microsoft 365 商业高级版、Microsoft 365 E3或Windows 365 商业版许可证。 | 确保租户至少分配有一Microsoft 365 商业高级版、Microsoft 365 E3或Windows 365 商业版许可证。 |
 | 不符合标准 - 已超出用户计数 | 该租户允许的许可证用户数超过 Lighthouse 允许的最多 1000 个。 | 验证租户拥有的许可用户数是否不超过 1000。 |
 | 不符合资格 - 地理位置检查失败 | 你和客户不在同一地理区域，而该地理区域是 Lighthouse 所要求的。 | 验证客户是否驻留在地理区域。 如果没有，则你无法管理 Lighthouse 中的租户。 |
 | 进程内 | Lighthouse 发现了租户，但仍在载入租户的过程中。 | 允许 Lighthouse 48 小时完成租户载入。 |
@@ -79,7 +79,7 @@ ms.locfileid: "64403668"
 
 **原因：** 你不属于 Azure AD 中正确的安全组，或者你尚未在合作伙伴中心中分配正确的角色才能访问 Lighthouse。
 
-**解决方法：** 请确保具有适当权限的合作伙伴租户中的管理员已分配给 Azure AD 中正确的 GDAP 安全组，并且你在合作伙伴中心中分配了正确的角色。 此外，请记住，Lighthouse 中的某些操作需要你成为全局管理员。若要了解有关 GDAP 角色以及每个角色可以执行哪些操作Microsoft 365 Lighthouse[门户安全性](m365-lighthouse-configure-portal-security.md)。 有关 GDAP 的所有Azure AD角色和权限的详细说明，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。
+**解决方法：** 请确保具有适当权限的合作伙伴租户中的管理员已分配给 Azure AD 中正确的 GDAP 安全组，并且你在合作伙伴中心中分配了正确的角色。 此外，请记住，Lighthouse 中的某些操作需要你成为全局管理员。若要了解有关 GDAP 角色以及每个角色可以执行哪些操作[Microsoft 365 Lighthouse。](m365-lighthouse-overview-of-permissions.md) 有关 GDAP 的所有Azure AD角色和权限的详细说明，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。
 
 对于具有 DAP 关系的客户，合作伙伴管理员将需要将你分配到合作伙伴中心中的管理员代理或支持代理角色。 有关所有合作伙伴中心角色和权限的详细说明，请参阅向用户分配 [角色和权限](/partner-center/permissions-overview)。
 
@@ -87,7 +87,7 @@ ms.locfileid: "64403668"
 
 **原因：** 根据分配给你Azure AD安全组的角色，你拥有有限的 GDAP 访问权限。
 
-**解决方法：** 请确保具有适当权限的合作伙伴租户中的管理员已将你分配到 Azure AD 中正确的 GDAP 安全Azure AD。 此外，请记住，Lighthouse 中的某些操作需要你成为全局管理员。若要了解有关 GDAP 角色以及每个角色可以执行哪些操作Microsoft 365 Lighthouse[门户安全性](m365-lighthouse-configure-portal-security.md)。 有关 GDAP 的所有Azure AD角色和权限的详细说明，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。
+**解决方法：** 请确保具有适当权限的合作伙伴租户中的管理员已将你分配到 Azure AD 中正确的 GDAP 安全Azure AD。 此外，请记住，Lighthouse 中的某些操作需要你成为全局管理员。若要了解有关 GDAP 角色以及每个角色可以执行哪些操作[Microsoft 365 Lighthouse。](m365-lighthouse-overview-of-permissions.md) 有关 GDAP 的所有Azure AD角色和权限的详细说明，请参阅Azure AD[角色](/azure/active-directory/roles/permissions-reference)。
 
 ## <a name="customer-tenant-management"></a>客户租户管理  
 
@@ -107,7 +107,7 @@ ms.locfileid: "64403668"
 
 **原因：** 你未成功完成客户租户Microsoft Intune配置。
 
-**解决方法：** 确认你已完成客户租户内 Intune 的基本配置步骤。 如果在确认客户租户的 Intune 配置已完成后问题仍然存在，请联系支持人员。 有关详细信息，请参阅获取[有关 Microsoft 365 Lighthouse 的帮助和支持](m365-lighthouse-get-help-and-support.md)。
+**解决方法：** 确认你已完成客户租户内Intune配置步骤。 如果问题在确认客户租户Intune配置完成后仍然存在，请联系支持人员。 有关详细信息，请参阅获取[有关 Microsoft 365 Lighthouse 的帮助和支持](m365-lighthouse-get-help-and-support.md)。
 
 ### <a name="cant-access-partner-tenant-data-in-lighthouse"></a>无法访问 Lighthouse 中的合作伙伴租户数据
 
@@ -119,9 +119,9 @@ ms.locfileid: "64403668"
 
 ### <a name="i-dont-see-any-customer-tenant-data-on-the-device-compliance-and-threat-management-pages-of-lighthouse"></a>我在 Lighthouse 的设备合规性和威胁管理页面上看不到任何客户租户数据
 
-**原因 1：** 客户租户尚未完成 Intune 载入。 客户租户数据在 Lighthouse 的设备合规性或威胁管理页面上不可用，直到客户租户完成载入到 Intune。
+**原因 1：** 客户租户尚未完成载入Intune。 客户租户数据在 Lighthouse 的设备合规性或威胁管理页面上不可用，直到客户租户完成载入Intune。
 
-**解决方法：** 验证你尝试查看其数据的客户租户是否已完成载入 Intune。 Intune 中载入完成后，允许设备数据在 4 小时内显示在 Lighthouse 中。
+**解决方法：** 验证你尝试查看其数据的客户租户是否已完成载入Intune。 载入完成后，Intune 4 小时，设备数据显示在 Lighthouse 中。
 
 **原因 2：** 客户租户最近已载入 Lighthouse，数据仍在 Lighthouse 中加载。
 

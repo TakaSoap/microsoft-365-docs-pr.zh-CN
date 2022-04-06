@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: 了解如何规划、注册和运行组织中 SharePoint Syntex试用计划。
-ms.openlocfilehash: c3f081654e7661e5c298bab15da90d8337dfc418
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fc4221b0022aca8a0564c78e64d94028f6483104
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473620"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507090"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>运行 Microsoft SharePoint Syntex
 
@@ -44,7 +44,7 @@ ms.locfileid: "64473620"
     2. 转到" **计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**""购买服务"**</a>。
     3. 向下滚动到“**加载项**”部分。
     4. 在"SharePoint Syntex"磁贴上，选择"详细信息 **"**。
-    5. 选择“**获取免费试用版**”。
+    5. 选择 **"开始免费试用"**。
     6. 若要确认试用版，请按照其余向导步骤操作。
 
 你必须是全局Microsoft 365或帐单管理员才能激活试用版。
@@ -112,4 +112,4 @@ ms.locfileid: "64473620"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft SharePoint Syntex采用：入门](adoption-getstarted.md)
+[Microsoft SharePoint Syntex采用：开始](adoption-getstarted.md)

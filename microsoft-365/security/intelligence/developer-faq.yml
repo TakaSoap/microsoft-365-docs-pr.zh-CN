@@ -1,0 +1,59 @@
+### YamlMime:FAQ
+metadata:
+  title: 软件开发人员常见问题解答
+  ms.reviewer: 
+  description: 本页面提供从软件开发人员收到的常见问题解答
+  keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
+  search.product: eADQiWindows 10XVcnh
+  ms.prod: m365-security
+  ms.mktglfcycl: deploy
+  ms.sitesec: library
+  ms.pagetype: security
+  ms.author: dansimp
+  author: dansimp
+  ms.localizationpriority: medium
+  manager: dansimp
+  audience: ITPro
+  ms.collection: M365-security-compliance
+  ms.topic: faq
+  ms.technology: m365d
+  ms.openlocfilehash: 732361669e667aeab4f6781c8a82e7989ecf5b03
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63683888"
+title: 软件开发人员常见问题解答
+summary: 本页面提供了从软件开发人员收到的常见问题解答。 有关提交恶意软件或检测不正确的文件的一般指南，请阅读提交指南。
+sections:
+- name: 已忽略
+  questions:
+  - question: >
+      Microsoft 是否接受已知列表或误报防护计划的文件？
+    answer: >
+      否。 我们不接受来自软件开发人员的这些请求。 使用受信任的根证书颁发机构颁发的数字证书，以一致的方式对程序文件进行签名，可帮助我们的研究团队快速识别计划的来源，并应用之前获得的知识。 在某些情况下，这可能会导致程序快速添加到已知列表中。 在 中，将数字证书添加到受信任的发布者列表中的频率要低得多。
+  - question: >
+      如何对检测我的程序存在争议？
+    answer: >
+      以软件开发人员文件格式提交文件。 等待你的提交有最终决定。
+
+
+      如果您对我们确定提交内容不满意，请使用提交结果中提供的开发人员联系人表单联系 Microsoft。 如有必要，我们将使用你提供的信息进行进一步调查。
+
+
+      我们鼓励所有软件供应商和开发人员阅读有关 Microsoft 如何在 [PUA ](criteria.md)中识别恶意软件和可能不需要 (应用程序) 。
+  - question: >
+      为什么 Microsoft 要求提供我的计划副本？
+    answer: >
+      提供副本可帮助我们进行分析。 [MAPS Microsoft Active Protection Service (参与者) ](https://www.microsoft.com/msrc/mapp)可能会偶尔收到这些请求。 在我们的系统收到并处理该文件后，请求将停止。
+  - question: >
+      为什么 Microsoft 将我的安装程序分类为软件捆绑程序？
+    answer: >
+      它包含提供分类为不需要的软件的程序的说明。 你可以查看 [我们用于](criteria.md) 检查应用程序是否被视为不需要的行为的条件。
+  - question: >
+      为什么防火墙Windows Defender我的程序？
+    answer: >
+      防火墙块与防火墙Microsoft Defender 防病毒 Microsoft 反恶意软件相关。 [了解Windows Defender防火墙。](/windows/security/windows-firewall/windows-firewall-with-advanced-security.md)
+  - question: >
+      为什么Microsoft Defender SmartScreen程序通常未下载？
+    answer: 这与其他 Microsoft 反Microsoft Defender 防病毒相关。 [了解Microsoft Defender SmartScreen](/windows/security/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

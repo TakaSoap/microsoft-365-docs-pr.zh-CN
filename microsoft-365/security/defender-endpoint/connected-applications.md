@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4dd630dd2b35c2fedc0340cd873ff065b2685b41
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 9e15103f4366d0717af9cec44d516b4b16a7160a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300642"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475556"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的已连接应用程序
 
@@ -40,13 +40,13 @@ ms.locfileid: "61300642"
 
 需要按照以下步骤 [操作，](/microsoft-365/security/defender-endpoint/apis-intro) 将 API 与已连接的应用程序一同使用。
 
-从左侧导航菜单中，**选择"已** 连接&终结点 (下"**合作伙伴) >** **API"。**
+从左侧导航菜单中， **选择"已** 连接&终结点 (**下** "合作伙伴) > **API"**。
 
 ## <a name="view-connected-application-details"></a>查看连接的应用程序详细信息
 
 "已连接的应用程序"页提供有关连接到Azure AD Microsoft Defender for Endpoint 的应用程序的信息。 你可以查看已连接应用程序的使用情况：上次查看时间、过去 24 小时内的请求数以及最近 30 天内的请求趋势。
 
-![已连接应用的图像。](images/connected-apps.png)
+:::image type="content" source="images/connected-apps.png" alt-text="已连接的应用程序" lightbox="images/connected-apps.png":::
  
 ## <a name="edit-reconfigure-or-delete-a-connected-application"></a>编辑、重新配置或删除已连接的应用程序
 

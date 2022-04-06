@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: 了解如何验证 Android Microsoft 365 商业高级版 iOS 设备中的应用保护设置。
-ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b760b49c59d8033e4587cedd67f024f983547179
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313743"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632440"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>验证 Android 或 iOS 设备上的应用保护设置
 
 > [!NOTE]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 此产品/服务为设备提供其他安全功能。 [详细了解 Defender for Business](../../security/defender-business/mdb-overview.md)。
+> Microsoft Defender 商业版 2022 年 3 Microsoft 365 商业高级版 1 开始向客户推出。 此产品/服务为设备提供其他安全功能。 [详细了解 Defender for Business](../../security/defender-business/mdb-overview.md)。
 
 按照以下部分中的说明验证 Android 或 iOS 设备上的应用保护设置。
   
@@ -42,7 +42,7 @@ ms.locfileid: "63313743"
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>检查应用保护设置在用户设备上是否正常工作
 
-在[设置用于 Android 设备的应用配置](app-protection-settings-for-android-and-ios.md)以保护应用后，可按以下步骤验证所选设置是否有效。 
+为 [Android 或 iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) 设备设置应用保护设置以保护应用后，你可以按照以下步骤验证你选择的设置是否有效。 
   
 首先，确保该策略适用于你要验证它的应用。
   
@@ -131,7 +131,7 @@ ms.locfileid: "63313743"
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>检查"应用保护"设置在用户设备上是否正常工作
 
-在[设置 iOS 设备的应用配置](app-protection-settings-for-android-and-ios.md)以保护应用后，可按以下步骤验证所选设置是否有效。 
+在[设置 iOS 设备的应用配置](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)以保护应用后，可按以下步骤验证所选设置是否有效。 
   
 首先，确保该策略适用于你要验证它的应用。
   

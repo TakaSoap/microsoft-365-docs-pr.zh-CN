@@ -13,14 +13,14 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c290ad42702ddcb815880fedfe72d9de73065b8d
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62322477"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683748"
 ---
 # <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问
 
@@ -45,7 +45,7 @@ ms.locfileid: "62322477"
 
 受控文件夹访问权限适用于许多系统文件夹和默认位置，包括文档、图片和 **电影等文件夹**。  可以添加要保护的其他文件夹，但不能删除默认列表中的默认文件夹。
 
-当你不将文件存储在默认 Windows 库中，或者你已更改库的默认位置时，向受控文件夹访问权限添加其他文件夹可能会很有帮助。
+当你没有将文件存储在默认 Windows 库中，或者你已更改库的默认位置时，向受控文件夹访问权限添加其他文件夹可能会很有帮助。
 
 还可以指定网络共享和映射驱动器。 支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "62322477"
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>使用 Windows 安全中心 应用保护其他文件夹
 
-1. 打开Windows 安全中心应用，选择任务栏中的防护图标，或搜索安全"开始"菜单。
+1. 通过在Windows 安全中心中选择防护图标或在安全栏中搜索安全，打开 "开始"菜单。
 
 2. 选择 **病毒&威胁防护**，然后向下滚动到 **勒索软件保护** 部分。
 
@@ -73,7 +73,7 @@ ms.locfileid: "62322477"
 
 3. 在组 **策略管理编辑器中**，转到计算机 **配置策略** \> **管理** \> **模板**。
 
-4. 展开树以 **Windows攻击Microsoft Defender 防病毒** \> **Windows Defender** \> **受控**\>文件夹 **访问权限的组件**。 <br/>**注意**：在旧版 Windows，你可能会看到 **Windows Defender 防病毒而不是****Microsoft Defender 防病毒**。
+4. 展开树以 **Windows攻击Microsoft Defender 防病毒** \> **Windows Defender** \> **受控** \> **文件夹访问权限的组件**。 <br/>**注意**：在旧版 Windows，你可能会看到 **Windows Defender 防病毒而不是****Microsoft Defender 防病毒**。
 
 5. 双击" **已配置的受保护文件夹**"，然后将该选项设置为 **"已启用"**。 选择 **"** 显示"，并指定要保护的每个文件夹。
 
@@ -81,7 +81,7 @@ ms.locfileid: "62322477"
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>使用 PowerShell 保护其他文件夹
 
-1. 在 **"管理**"中"开始"菜单 PowerShell，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理**"中"开始"菜单 PowerShell，右键单击"Windows PowerShell并选择"**以****管理员角色运行"**
 
 2. 键入以下 PowerShell cmdlet `<the folder to be protected>` ，将 替换为文件夹的路径 (例如) `"c:\apps\"` ：
 
@@ -112,9 +112,9 @@ ms.locfileid: "62322477"
 
 ### <a name="use-the-windows-defender-security-app-to-allow-specific-apps"></a>使用 Windows Defender 安全应用允许特定应用
 
-1. 通过Windows 安全中心"安全"的"开始"菜单打开"开始"**菜单**。
+1. 通过Windows 安全中心"安全性"的"开始"菜单打开"开始"**菜单**。
 
-2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后选择管理 **勒索软件保护**。
+2. 选择病毒& **威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 然后选择管理 **勒索软件保护**。
 
 3. 在受控 **文件夹访问权限** 部分下，选择 **允许应用通过受控文件夹访问权限**
 
@@ -128,20 +128,20 @@ ms.locfileid: "62322477"
 
 2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 展开树以 **Windows攻击Microsoft Defender 防病毒** \> **Windows Defender** \> **受控**\>文件夹 **访问权限的组件**。
+3. 展开树以 **Windows攻击Microsoft Defender 防病毒** \> **Windows Defender** \> **受控** \> **文件夹访问权限的组件**。
 
 4. 双击"配置允许 **的应用程序"** 设置，将该选项设置为 **"已启用"**。 选择 **"显示** "并输入每个应用。
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>使用 PowerShell 允许特定应用
 
-1. 在 **"管理**"中"开始"菜单 PowerShell，右 **键单击"** Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"管理**"中"开始"菜单 PowerShell，右键单击"Windows PowerShell并选择"**以****管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessAllowedApplications "<the app that should be allowed, including the path>"
     ```
 
-    例如，若要添加位于 *C：\apps**test.exe* 可执行文件，cmdlet 将如下所示：
+    例如，若要添加位于 *test.exeC：\apps* 中的可执行文件，cmdlet 将如下所示：**
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessAllowedApplications "c:\apps\test.exe"

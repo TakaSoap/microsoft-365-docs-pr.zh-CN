@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的 SMTP 身份验证见解和报表来监视组织中使用已验证的 SMTP (SMTP AUTH) 发送电子邮件的电子邮件发件人。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e21e9fae80880b479070b1920379b925bf7074c7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c2152820e7f3d5dbf04534e5f0b0fec344ecc7b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681119"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474984"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>安全与合规中心中的 SMTP 身份验证客户端见解&报告
 
@@ -35,11 +35,11 @@ ms.locfileid: "63681119"
 
 小部件指示过去 7 天内使用 SMTP 身份验证协议的用户和服务帐户的数量。
 
-![安全与合规中心内"邮件流"仪表板中的"SMTP &小部件。](../../media/mfi-smtp-auth-clients-report-widget.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-widget.png" alt-text="安全与合规中心的&quot;邮件流&quot;仪表板中的&quot;SMTP &&quot;小组件" lightbox="../../media/mfi-smtp-auth-clients-report-widget.png":::
 
 如果单击小部件上的消息数，则 **会出现 SMTP 身份验证客户端** 飞出控件。 该飞出站提供上一周 TLS 使用情况和卷的聚合视图。
 
-![在"邮件流"仪表板中单击"SMTP 身份验证客户端"小组件后，详细信息 flyout。](../../media/mfi-smtp-auth-clients-report-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-details.png" alt-text="单击&quot;邮件流&quot;仪表板中的&quot;SMTP 身份验证客户端&quot;小组件后，&quot;详细信息&quot;飞出控件" lightbox="../../media/mfi-smtp-auth-clients-report-details.png":::
 
 您可以单击 **"SMTP 身份验证客户端报告** "链接以转到 SMTP 身份验证客户端报告，如下一节中所述。
 
@@ -53,11 +53,11 @@ ms.locfileid: "63681119"
 
 - 查看数据 **者**：发送卷：默认情况下，此图显示从"显示数据：默认选择所有发件人域 (域发送的 SMTP 身份验证客户端) 。 可以通过单击"显示其数据"，然后从下拉列表中选择发件人域，将结果筛选到特定的发件人域。 如果您将特定的数据点悬停在 (天) ，将显示消息数。
 
-  ![安全与合规中心内 SMTP 身份验证客户端报告中&卷视图。](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png" alt-text="安全与合规中心内 SMTP 身份验证客户端中的发送&视图" lightbox="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png":::
 
 - **查看数据者：TLS 使用情况**：此图显示选定时段内所有 SMTP 身份验证客户端邮件的 TLS 使用率百分比。 此图允许你识别仍在使用较早版本的 TLS 的用户和系统帐户并采取措施。
 
-  ![安全与合规中心内 SMTP 身份验证客户端报告中的 TLS &视图。](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png" alt-text="安全与合规中心内 SMTP 身份验证客户端报告中的 TLS &视图" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png":::
 
 如果 **单击"筛选器**"，报表视图"开始日期"和"结束日期"来指定 **日期范围**。
 
@@ -88,7 +88,7 @@ ms.locfileid: "63681119"
 
 如果您选择一行，则类似的详细信息将显示在一个飞出内容中：
 
-![SMTP Auth 客户端报告中 TLS 使用视图的详细信息表的"详细信息"飞出。](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png" alt-text="SMTP 身份验证客户端报告中 TLS 使用情况视图的详细信息表的&quot;详细信息&quot;飞出" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png":::
 
 单击 **"请求** 报告"以在电子邮件中接收报告的详细版本。 可以指定接收报告的日期范围和收件人。
 

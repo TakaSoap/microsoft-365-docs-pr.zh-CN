@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3823290e9f239b14e4bf97fe1ae8ef7020561697
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 755a23d7cddbeb2943809681fc90556a2adac25b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314095"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475512"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>在租户允许/阻止列表中添加允许
 
@@ -55,9 +55,7 @@ ms.locfileid: "63314095"
 
 7. 完成后，单击"提交 **"** 按钮。
 
-> [!div class="mx-imgBorder"]
 > ![将恶意软件提交给 Microsoft 进行分析示例。](../../media/admin-submission-allow-messages.png)
-
 ## <a name="add-url-allows-using-the-submissions-portal"></a>添加 URL 允许使用提交门户
 
 允许 url on the **Submissions** page in Microsoft 365 Defender.
@@ -78,7 +76,6 @@ ms.locfileid: "63314095"
 
 > [!div class="mx-imgBorder"]
 > ![提交 URL 进行分析。](../../media/submit-url-for-analysis.png)
-
 ## <a name="add-file-allows-using-the-submissions-portal"></a>添加文件允许使用提交门户
 
 允许提交 **页面上** 的文件Microsoft 365 Defender。

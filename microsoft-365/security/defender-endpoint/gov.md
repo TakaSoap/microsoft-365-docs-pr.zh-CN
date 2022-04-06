@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 77160c44a3f0eda44e68c43c91aeddc169de24e1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681339"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475292"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -152,9 +152,9 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 验证没有拒绝访问这些 URL 的防火墙或网络筛选规则，或专门为它们创建允许规则。
 
-|域列表的电子表格| 说明|
-|---|---|
-| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+域列表的电子表格|说明
+:-----|:-----
+:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URL 电子表格" lightbox="images/mdatp-urls.png":::|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md)。
 

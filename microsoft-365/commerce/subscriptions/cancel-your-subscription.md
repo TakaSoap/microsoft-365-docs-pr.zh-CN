@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中取消 Dynamics 365、Intune、Power Platform 和 Microsoft 365 商业试用版或付费订阅。
-ms.date: 01/20/2022
-ms.openlocfilehash: 82d579cab43b2c1edd7cc3bd898f2397bbd7a435
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 03/31/2022
+ms.openlocfilehash: d6b6c078c5f0d1b44143f3a9cc2d336a0a80fe03
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320083"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595271"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -49,11 +49,11 @@ ms.locfileid: "63320083"
 
 ### <a name="if-you-have-a-billing-profile"></a>如果你有计费对象信息
 
-如果你在订阅开始或续订后的 72 小时内取消，则只能取消并收到按比例计算的信用额度或退款。 如果在此有限时段内取消，按比例计算的信用额度将计入下一张发票，或在下一个计费周期中退款给你。
+如果你在订阅开始或续订后七天内取消，则只能取消并收到按比例计算的信用额度或退款。 如果在此有限时段内取消，按比例计算的信用额度将计入下一张发票，或在下一个计费周期中退款给你。
 
-如果你需要在订阅开始或续订后的 72 小时内取消，请转到本文稍后介绍的[取消订阅步骤](#steps-to-cancel-your-subscription)。
+如果需要在订阅开始或续订后七天内取消，请转到本文稍后介绍的 [取消订阅步骤](#steps-to-cancel-your-subscription)。
 
-如果超过 72 小时，[请关闭定期计费](renew-your-subscription.md)。 这可以防止你再次收取订阅费用，并允许你在剩余的订阅期内继续访问你的产品和服务。
+如果超过七天，则 [禁用定期计费](renew-your-subscription.md)。此设置可防止再次向你收取订阅费用，并允许你在订阅的剩余时间内继续访问你的产品和服务。
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>如果没有计费对象信息
 
@@ -66,7 +66,7 @@ ms.locfileid: "63320083"
 |25 个或更少的许可证  | 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中[使用以下步骤以在线取消](#steps-to-cancel-your-subscription)你的试用版或付费订阅。        |
 |超过 25 个许可证   | 将许可证数量减少为 25 个或更少，然后 [使用以下步骤取消](#steps-to-cancel-your-subscription)。      |
 
-如果无法减少许可证数量，请 [关闭定期计费](renew-your-subscription.md)。 这可以防止你再次收取订阅费用，并允许你在剩余的订阅期内继续访问你的产品和服务。
+如果无法减少许可证数量，则 [禁用定期计费](renew-your-subscription.md)。此设置可防止再次向你收取订阅费用，并允许你在订阅的剩余时间内继续访问你的产品和服务。
 
 如果无法取消订阅，请[联系客户服务](../../admin/get-help-support.md)寻求帮助。
 

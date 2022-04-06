@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62463437"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475336"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 客户服务
 
@@ -40,7 +40,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 - 查找常见问题的解决方案
 - 向 Microsoft 支持团队提交支持案例
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 了解有权打开支持案例的特定角色很重要。
 
@@ -56,11 +56,11 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 1. 单击门户右上方的问号，然后单击"Microsoft 支持"：
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft 支持。":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="Microsoft 支持图标在 Microsoft 365 Defender 门户" lightbox="../../media/contactsupport.png":::
 
 2. 单击需要帮助 **？**  门户右下角Microsoft 365 Defender按钮：
 
-    !["需要帮助"按钮的图像。](images/need-help-option.png)
+   :::image type="content" source="images/need-help-option.png" alt-text="&quot;需要帮助&quot;按钮" lightbox="images/need-help-option.png":::
 
 在小组件中，你将获得两个选项：
 
@@ -71,7 +71,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 此选项包含可能与您可能询问的问题相关的文章。 只需在搜索框中键入问题，就会显示与搜索相关的文章。
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="我们可以如何提供帮助？":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="我们可以如何提供帮助？" lightbox="../../media/contactsupport1.png":::
 
 如果建议的文章不够用，可以打开服务请求。
 
@@ -84,9 +84,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 ### <a name="contact-support"></a>联系支持人员
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="联系支持人员 2。"::: </br>
-
-:::image type="content" source="../../media/contactsupport2.png" alt-text="联系支持人员 2":::
+:::image type="content" source="../../media/contactsupport2.png" alt-text="联系支持人员 2" lightbox="../../media/contactsupport2.png"::: </br>
 
 1. 填写你所面临的问题的标题和说明，以及我们可能会联系你的电话号码和电子邮件地址。
 2.  (可选) 包括最多五个与问题相关的附件，以提供支持案例的其他上下文。

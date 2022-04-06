@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何使用 AI 生成在 Microsoft SharePoint Syntex 中创建表单处理SharePoint Syntex。
-ms.openlocfilehash: d04de2fc71b0b393e560e354253be42053725416
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: a3a3d1fa0e160b96d487a5eeb03c69f9e4fe7fb3
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450768"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507380"
 ---
 # <a name="form-processing-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的表单处理概述
 
@@ -46,6 +46,10 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](/ai-builde
 ### <a name="file-limitations"></a>文件限制
 
 使用表单处理模型时，请确保注意[文件使用的要求和限制](/ai-builder/form-processing-model-requirements)。
+
+### <a name="supported-languages"></a>支持的语言
+
+表单处理支持多种语言的文档。 有关语言列表，请参阅 [表单处理语言支持](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)。
 
 ### <a name="multi-geo-environments"></a>多地理环境
 

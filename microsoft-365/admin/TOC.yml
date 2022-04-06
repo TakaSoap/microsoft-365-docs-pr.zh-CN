@@ -79,8 +79,6 @@
           items:
             - name: 将域用户同步到 Microsoft 365
               href: setup/manage-domain-users.md
-            - name: 启用要进行托管的已加入域的 Windows 10 设备
-              href: setup/manage-windows-devices.md
             - name: 从已加入 Azure AD 的设备访问资源
               href: setup/access-resources.md
     - name: Microsoft 365 管理中心概述
@@ -349,7 +347,7 @@
         - name: 为 Office 2013 启用新式身份验证
           href: security-and-compliance/enable-modern-authentication.md
         - name: 数据保护的先决条件
-          href: security-and-compliance/pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
         - name: 增强威胁防护
           href: security-and-compliance/increase-threat-protection.md
         - name: Microsoft Defender 防病毒 检测到的威胁
@@ -357,7 +355,7 @@
         - name: 查看检测到的威胁并执行操作
           href: security-and-compliance/review-threats-take-action.md
         - name: 设置合规性功能
-          href: security-and-compliance/set-up-compliance.md
+          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: 安全评分
           href: /microsoft-365/security/defender/microsoft-secure-score
         - name: GDPR 合规性指南
@@ -369,37 +367,27 @@
         - name: Microsoft Intune 文档
           href: /mem/intune/
         - name: 查看和编辑策略和设备
-          href: devices/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/view-policies-and-devices.md
         - name: 删除公司数据
-          href: devices/remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
         - name: 将设备重置为出厂设置
           href: devices/reset-devices-to-factory-settings.md
         - name: 将保护功能映射到 Intune 设置
-          href: devices/map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
         - name: 设备状态
           href: devices/device-states.md
         - name: Windows 10 电脑的应用保护设置
           href: devices/protection-settings-for-windows-10-devices.md
-        - name: 设置 Android 和 iOS 的应用保护设置
-          href: devices/app-protection-settings-for-android-and-ios.md
-          items:
-            - name: 验证 Android 或 iOS 上的设置
-              href: devices/validate-settings-on-android-or-ios.md
-        - name: 编辑或创建 Windows 10 电脑的设备保护设置
-          href: devices/protection-settings-for-windows-10-pcs.md
-          items:
-            - name: 验证 Windows 10 PC 上的设置
-              href: devices/validate-settings-on-windows-10-pcs.md
+        - name: 验证 Android 或 iOS 上的设置
+          href: devices/validate-settings-on-android-or-ios.md
+        - name: 验证 Windows 10 PC 上的设置
+          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items:
-            - name: 添加 Autopilot 设备和配置文件
-              href: devices/add-autopilot-devices-and-profile.md
             - name: 创建和编辑 AutoPilot 配置文件
-              href: devices/create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
             - name: 创建和编辑 AutoPilot 设备
               href: devices/create-and-edit-autopilot-devices.md
-            - name: AutoPilot 配置文件设置
-              href: devices/autopilot-profile-settings.md
         - name: 适用于企业的 Microsoft 365 文档
           href: ../enterprise/index.yml
         - name: 基本移动性和安全性

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 85d1400f390d9666c39ef13ffb484d17cad4a4c8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2f3a97da3eff16a639df995d88b9ceda91497f11
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682187"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475402"
 ---
 # <a name="step-2-test-asr-rules"></a>步骤 2：测试 ASR 规则
 
@@ -34,7 +34,8 @@ ms.locfileid: "63682187"
 使用圈 1 开始 (ASR) 部署攻击面减少。
 
 > [!div class="mx-imgBorder"]
-> ![ASR 规则测试步骤](images/asr-rules-testing-steps.png)
+> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="ASR 规则测试步骤" lightbox="images/asr-rules-testing-steps.png":::
+  
 
 ## <a name="step-1-test-asr-rules-using-audit"></a>步骤 1：使用审核测试 ASR 规则
 
@@ -44,20 +45,20 @@ ms.locfileid: "63682187"
 
 可以使用 MEM Microsoft Endpoint Manager (终结点) 配置自定义 ASR 规则。
 
-1. 打开[Microsoft Endpoint Manager管理中心](https://endpoint.microsoft.com/#home)
+1. 打开[Microsoft Endpoint Manager管理中心。](https://endpoint.microsoft.com/#home)
 2. 转到终结点 **安全** > **附加图面减少**。
 3. 选择“创建策略”。
 4. 在 **平台** 中，**Windows 10** 和更高版本，在 **配置文件** 中选择攻击 **面减少规则**。
   
     > [!div class="mx-imgBorder"]
-    > ![配置 ASR 规则配置文件](images/asr-mem-create-profile.png)
+    > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="ASR 规则的配置文件创建页面" lightbox="images/asr-mem-create-profile.png":::
 
 5. 单击“**创建**”。
 6. 在 **"创建配置文件****"窗格的**"基本信息"选项卡的 **"名称**"中，为策略添加名称。 在 **"说明** "中，添加 ASR 规则策略的说明。
 7. 在" **配置设置"** 选项卡的" **攻击面减少** 规则"下，将所有规则设置为 **审核模式**。
 
     > [!div class="mx-imgBorder"]
-    > ![将 ASR 规则设置为审核模式](images/asr-mem-configuration-settings.png)
+    > :::image type="content" source="images/asr-mem-configuration-settings.png" alt-text="将 ASR 规则配置到审核模式" lightbox="images/asr-mem-configuration-settings.png":::
 
     >[!Note]
     >某些 ASR 规则模式列表存在变化;_阻止和__启用_ 提供相同的功能。
@@ -67,12 +68,12 @@ ms.locfileid: "63682187"
 10. Review your settings in the **Review + create** pane. 单击 **"创建** "以应用规则。
 
    > [!div class="mx-imgBorder"]
-   > ![激活 ASR 规则策略](images/asr-mem-review-create.png)
+   > :::image type="content" source="images/asr-mem-review-create.png" alt-text="&quot;创建配置文件&quot;页" lightbox="images/asr-mem-review-create.png":::
 
 适用于 ASR 规则的新攻击面减少策略在终结点安全策略中 **|攻击面减少**。
 
    > [!div class="mx-imgBorder"]
-   > ![列出的 ASR 规则策略](images/asr-mem-my-asr-rules.png)
+   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" 攻击面减少页面" lightbox="images/asr-mem-my-asr-rules.png":::
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>步骤 2：了解安全门户中的攻击面减少规则Microsoft 365 Defender页面
 
@@ -87,7 +88,7 @@ ASR 规则报告页位于 **Microsoft 365 Defender** **portalReportsAttack** >  
 提供检测到的审核和阻止事件的 30 天时间线。
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则检测选项卡](images/asr-defender365-01.png)
+> :::image type="content" source="images/asr-defender365-01.png" alt-text="攻击面减少规则检测选项卡" lightbox="images/asr-defender365-01.png":::
 
 攻击面减少规则窗格基于每个规则提供检测到的事件的概述。
 
@@ -95,12 +96,12 @@ ASR 规则报告页位于 **Microsoft 365 Defender** **portalReportsAttack** >  
 >ASR 规则报告中有一些变化。 Microsoft 正在更新 ASR 规则报告的行为以提供一致的体验。
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则规则检测](images/asr-defender365-01b.png)
+> :::image type="content" source="images/asr-defender365-01b.png" alt-text="攻击面减少规则页" lightbox="images/asr-defender365-01b.png"::: 
 
 单击 **"查看检测** "以打开 **"检测"** 选项卡。
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则检测](images/asr-defender365-reports-detections.png)
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻击面减少规则检测" lightbox="images/asr-defender365-reports-detections.png":::
 
 " **GroupBy** "和" **筛选器** "窗格提供以下选项：
 
@@ -113,45 +114,45 @@ ASR 规则报告页位于 **Microsoft 365 Defender** **portalReportsAttack** >  
 - 源应用
 - Device
 - User
-- Publisher
+- 发布者
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则检测 GroupBy 筛选器](images/asr-defender365-reports-detections.png)
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="攻击面减少规则检测 GroupBy 筛选器" lightbox="images/asr-defender365-reports-detections.png":::
 
 **筛选器** 将 **打开"筛选规则** "页，利用该页，您可以仅将结果范围确定为所选的 ASR 规则：
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则检测筛选规则](images/asr-defender365-filter.png)
+> :::image type="content" source="images/asr-defender365-filter.png" alt-text="攻击面减少规则检测筛选规则" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
 >如果你有 Microsoft Microsoft 365 安全 E5 或 A5、Windows E5 或 A5 许可证，以下链接将打开 Microsoft Defender 365 报告 > 攻击面入侵 > 检测"选项卡。[](https://security.microsoft.com/asr?viewid=detections)
 
 ### <a name="configuration-tab"></a>"配置"选项卡
 
-基于每台计算机列出 – ASR 规则的聚合状态：关闭、审核、阻止。
+基于每台计算机列出 ASR 规则的聚合状态：关闭、审核、阻止。
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则配置选项卡](images/asr-defender365-configurations.png)
+> :::image type="content" source="images/asr-defender365-configurations.png" alt-text="攻击面减少规则配置选项卡及其页面中的条目" lightbox="images/asr-defender365-configurations.png":::
 
-在"配置"选项卡上，可以通过选择要查看其 ASR 规则的设备来检查（基于每个设备）启用哪些 ASR 规则以及在哪个模式下。
+在"配置"选项卡上，通过选择要查看其 ASR 规则的设备，可以按设备检查已启用的 ASR 规则以及启用的模式。
 
 > [!div class="mx-imgBorder"]
-> ![攻击面减少规则已启用和模式](images/asr-defender365-configurations.settings.png)
+> :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="攻击面减少规则已启用和模式" lightbox="images/asr-defender365-configurations.settings.png":::
 
 "**入门"** 链接Microsoft Endpoint Manager管理中心，可在其中为 ASR 创建或修改终结点保护策略：
 
 > [!div class="mx-imgBorder"]
-> ![MEM 中的攻击面减少规则](images/asr-defender365-05b-mem1.png)
+> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="概述页上的 *Endpoint 安全菜单项" lightbox="images/asr-defender365-05b-mem1.png":::
 
 在终结点安全|概述，选择 **攻击面减少**：
 
 > [!div class="mx-imgBorder"]
-> ![MEM 中的攻击面减少](images/asr-defender365-05b-mem2.png)
+> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="MEM 中攻击面的减少" lightbox="images/asr-defender365-05b-mem2.png":::
 
 终结点安全|将打开攻击面减少窗格：
 
 > [!div class="mx-imgBorder"]
-> ![终结点安全管理窗格](images/asr-defender365-05b-mem3.png)
+> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="终结点安全攻击面减少窗格" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
 >如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告 > 攻击面减少 > [配置](https://security.microsoft.com/asr?viewid=configuration)"选项卡。
@@ -164,7 +165,7 @@ ASR 规则报告页位于 **Microsoft 365 Defender** **portalReportsAttack** >  
 > Microsoft Defender 防病毒 AV 排除项受 ASR 规则使用。  请参阅 [配置并验证基于扩展名、名称或位置的排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
 > [!div class="mx-imgBorder"]
-> ![终结点安全 Asr 工具](Images/asr-defender365-06d.png)
+> :::image type="content" source="Images/asr-defender365-06d.png" alt-text="用于排除检测到的文件的窗格" lightbox="Images/asr-defender365-06d.png":::
 
 > [!Note]
 >如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告>攻击面减少>[排除](https://security.microsoft.com/asr?viewid=exclusions)"选项卡。

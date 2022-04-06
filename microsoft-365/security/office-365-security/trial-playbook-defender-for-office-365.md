@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 解决方案试用版手册。
-ms.openlocfilehash: b8a0fedd01a3769f2ccf8952bd9e7bce0974a2f0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 1e943cc36d7a8787a41e16d61b15fe9e2eea129c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683200"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474874"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>试用版手册: Microsoft Defender for Office 365
 
 欢迎使用 Microsoft Defender for Office 365 试用版手册。 本游戏手册将帮助你充分利用你的 90 天免费试用期，教你如何使用 Office 365 的 Defender 保护你的组织。 使用 Microsoft 的建议，你将了解 Office 365 的 Defender 如何帮助你定义保护策略、分析组织面临的威胁以及响应攻击。
 
-![Microsoft Defender for Office 365 所有组件的图形表示形式。](../../media/mdo-trial-playbook-what-is-mdo.png)
+:::image type="content" source="../../media/mdo-trial-playbook-what-is-mdo.png" alt-text="Microsoft Defender for Office 365 所有组件的图形表示形式" lightbox="../../media/mdo-trial-playbook-what-is-mdo.png":::
 
 这些操作是 Microsoft Defender 团队针对要在 90 天试用期内尝试的关键功能建议。
 
@@ -61,7 +61,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 - 使用 [邮件流状态报告](view-email-security-reports.md#mailflow-status-report) 查看阻止威胁的位置。
 - [审查用户查看或系统封锁的链接](view-reports-for-mdo.md#url-protection-report)。
 
-![Microsoft 365 Defender 门户中的电子邮件和协作报告。](../../media/mdo-trial-playbook-reporting.png)
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="Microsoft 365 Defender 门户中的电子邮件和协作报告" lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ## <a name="step-2-intermediate-steps"></a>步骤 2: 中间步骤
 
@@ -75,7 +75,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 
 观看此视频了解更多信息: [在 Microsoft Defender for Office 365 - YouTube 中保护优先账户](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11)。
 
-![Microsoft 365 Defender 门户中的警报。](../../media/mdo-trial-playbook-alerts.png)
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="Microsoft 365 Defender 门户中的警报" lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
 ### <a name="avoid-costly-breaches-by-preventing-user-compromise"></a>防止用户泄露，避免成本高昂的漏洞
 
@@ -84,7 +84,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 - 查看 [泄露的用户警报](address-compromised-users-quickly.md#compromised-user-alerts)。
 - [调查并响应被入侵用户](address-compromised-users-quickly.md)。
 
-![调查遭到入侵的用户。](../../media/mdo-trial-playbook-investigation.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation.png" alt-text="调查遭到入侵的用户" lightbox="../../media/mdo-trial-playbook-investigation.png":::
 
 观看此视频了解更多信息: [在 Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=Pc7y3a-wdR0&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=5) 中检测和响应入侵。
 
@@ -104,7 +104,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 - [可视化攻击的范围](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal)。
 - [跟踪用户与这些消息](campaigns.md#campaign-details) 交互。
 
-![Microsoft 365 Defender 门户中的活动详细信息。](../../media/mdo-trial-playbook-campaign-details.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="Microsoft 365 Defender 门户中的活动详细信息" lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 观看此视频了解更多信息: [在 Microsoft Defender for Office 365 - YouTube 中的活动视图](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14)。
 
@@ -116,7 +116,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 - [查看调查的详细信息和结果](email-analysis-investigations.md)。
 - 通过 [批准](air-remediation-actions.md) 的修正操作来消除威胁。
 
-![调查结果。](../../media/mdo-trial-playbook-investigation-results.png)
+:::image type="content" source="../../media/mdo-trial-playbook-investigation-results.png" alt-text="调查结果" lightbox="../../media/mdo-trial-playbook-investigation-results.png":::
 
 ## <a name="step-3-advanced-content"></a>步骤 3: 高级内容
 
@@ -137,7 +137,7 @@ Defender for Office 365 使用户能够向其安全团队报告消息，并允�
 - [根据模拟结果将训练](attack-simulation-training.md#assign-training) 分配给用户。
 - 在模拟和培训完成中 [跟踪组织的进度](attack-simulation-training-insights.md)。
 
-![Microsoft 365 Defender 门户中的攻击模拟训练见解。](../../media/mdo-trial-playbook-attack-simulation-training-results.png)
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="Microsoft 365 Defender 门户中的攻击模拟训练见解" lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## <a name="additional-resources"></a>其他资源
 

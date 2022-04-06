@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 了解保险箱 Defender for Office 365 中的链接保护，以保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。 发现Teams 保险箱链接，并查看链接保险箱图形。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 28215843f8c8edab4125ba46b483c2d596c78532
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682077"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474544"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱 Microsoft Defender for Office 365
 
@@ -74,7 +74,7 @@ ms.locfileid: "63682077"
 - **设置链接** 保险箱：这些设置仅适用于特定策略中包含的用户，并且策略之间的设置可能不同。 这些设置包括：
 
   - [保险箱电子邮件的链接设置](#safe-links-settings-for-email-messages)
-  - [保险箱链接设置Microsoft Teams](#safe-links-settings-for-microsoft-teams)
+  - [适用于 Microsoft Teams 的安全链接设置](#safe-links-settings-for-microsoft-teams)
   - [链接策略中的"不重写保险箱 URL"](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
 - **全局保险箱链接** 设置：这些设置是全局配置的，而不是在保险箱策略中配置的。 这些设置包括：
@@ -107,18 +107,18 @@ ms.locfileid: "63682077"
   - 单击后，将针对已知恶意 URL 列表和"阻止以下 URL"列表检查 [URL](#block-the-following-urls-list-for-safe-links)。
   - 没有有效信誉的 URL 将在后台异步触发。
 
-- **对指向文件的** 可疑链接应用实时 URL 扫描：启用链接（包括指向可下载内容的电子邮件中的链接）实时扫描。 建议的值已启用。
+- **应用对指向文件的可疑链接和链接的实时 URL 扫描**：启用链接实时扫描，包括电子邮件中指向可下载内容的的链接。 已启用建议值。
   - **等待 URL 扫描完成，然后再传递邮件**：
-    - 已启用：包含 URL 的邮件将一直进行，直到扫描完成。 仅在确认 URL 是安全的之后，才传递邮件。 这是建议的值。
+    - 已启用：包含 URL 的邮件将一直进行，直到扫描完成。 只有在 URL 被确认为安全后，才会传递消息。 这是建议的值。
     - 已禁用：如果 URL 扫描无法完成，无论如何传递邮件。
 
-- **Apply 保险箱 Links to email messages sent within the organization**： Enables or disables 保险箱 Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. 建议的值已启用。
+- **Apply 保险箱 Links to email messages sent within the organization**： Enables or disables 保险箱 Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. 已启用建议值。
 
-- **Do not track user clicks**： Enables or disables storing 保险箱 Links click data for URLs clicked in email messages. 建议的值是保持此设置未选择 (跟踪用户单击) 。
+- **不跟踪用户单击**：启用或禁用存储电子邮件中被单击的 URL 的安全链接单击数据。 建议的值是为了使此设置保持未选中状态（用于跟踪用户单击）。
 
-  目前不支持在内部发件人和内部收件人之间发送的电子邮件中的链接的 URL 单击跟踪。
+  当前不支持对内部发件人和内部收件人之间发送的电子邮件中的链接进行 URL 单击跟踪。
 
-- **不允许用户单击访问原始 URL**：允许或阻止用户通过警告页面 [单击到原始](#warning-pages-from-safe-links) URL。 推荐值已启用。
+- **不允许用户单击访问原始 URL**：允许或阻止用户通过警告页面 [单击到原始](#warning-pages-from-safe-links) URL。 建议值已启用。
 
 - **在通知和警告页面上** 显示组织品牌：此选项在警告页面上显示组织的品牌。 品牌打造可帮助用户识别合法警告，因为默认 Microsoft 警告页面经常被攻击者使用。 有关自定义品牌打造的信息，请参阅[自定义Microsoft 365主题](../../admin/setup/customize-your-organization-theme.md)。
 
@@ -157,9 +157,9 @@ ms.locfileid: "63682077"
 
    - 如果确定 URL 是安全的，将打开网站。
 
-## <a name="safe-links-settings-for-microsoft-teams"></a>保险箱链接设置Microsoft Teams
+## <a name="safe-links-settings-for-microsoft-teams"></a>适用于 Microsoft Teams 的安全链接设置
 
-在链接策略中保险箱或禁用Microsoft Teams链接保险箱保护。 具体来说，使用"选择针对未知或潜在恶意 URL 的操作"**设置Microsoft Teams** 设置。 建议值为 **"打开"**。
+在安全链接策略中为 Microsoft Teams 启用或禁用安全链接保护。 具体来说，使用"选择针对未知或潜在恶意 URL 的操作"**设置Microsoft Teams** 设置。 建议值为 **"打开"**。
 
 > [!NOTE]
 > 当你打开或关闭保险箱链接保护Teams，可能需要 24 小时更改才能生效。
@@ -172,27 +172,27 @@ ms.locfileid: "63682077"
 
 这些设置之前在电子邮件保险箱[链接设置中进行了介绍](#safe-links-settings-for-email-messages)。
 
-为 Microsoft Teams 启用 保险箱 链接保护后，当受保护的用户单击 (单击链接时，将针对已知恶意链接列表检查 Teams 中的 URL) 。 不重写 URL。 如果发现链接是恶意链接，用户将具有以下体验：
+为 Microsoft Teams 启用安全链接保护后，当受保护的用户单击链接（即点即用保护）时，将根据已知恶意链接列表检查 Teams 中的 URL。 不会重写 URL。 如果发现链接是恶意链接，则用户将具有以下体验：
 
 - 如果在对话、群组Teams或频道中单击了链接，则以下屏幕截图中显示的警告页面将显示在默认 Web 浏览器中。
-- 如果从固定选项卡单击了链接，则警告页面将显示在该选项卡Teams界面中。出于安全考虑，禁用在 Web 浏览器中打开链接的选项。
-- 根据配置策略中的"不允许用户单击到原始 **URL** "设置，用户将允许或不允许单击到原始 URL (**继续** (屏幕截图) 中不建议) 。 我们建议您启用"不允许用户单击访问原始 **URL** "设置，以便用户无法单击到原始 URL。
+- 如果链接是从固定选项卡单击的，则警告页面将显示在该选项卡内的 Teams 界面中。出于安全原因，已禁用在 Web 浏览器中打开链接的选项。
+- 根据配置中 **不允许用户单击到原始 URL** 设置所配置的方式，用户将被允许或不被允许单击到原始 URL（在屏幕截图中的 **仍然继续（不推荐）**）。 我们建议您启用"不允许用户单击访问原始 **URL** "设置，以便用户无法单击到原始 URL。
 
-如果发送链接的用户未包含在启用了 Teams 保护的 保险箱 链接策略中，则用户可以随意单击访问其计算机或设备上的原始 URL。
+如果在启用了 Teams 保护的安全链接策略中不包括发送链接的用户，则用户可以自由单击到其计算机或设备上的原始 URL。
 
-![报告保险箱恶意Teams网页的"链接"。](../../media/tp-safe-links-for-teams-malicious.png)
+:::image type="content" source="../../media/tp-safe-links-for-teams-malicious.png" alt-text="适用于 Teams 的安全链接页面举报恶意链接" lightbox="../../media/tp-safe-links-for-teams-malicious.png":::
 
-单击 **警告页面上的"** 返回"按钮将用户返回到其原始上下文或 URL 位置。 但是，再次单击原始链接将导致保险箱链接重新扫描 URL，因此警告页面将重新出现。
+单击警告页上的 **返回** 按钮会将用户返回到其原始上下文或 URL 位置。 但是，再次单击原始链接将导致安全链接重新扫描 URL，因此将重新显示警告页。
 
-### <a name="how-safe-links-works-in-teams"></a>链接保险箱中的工作原理Teams
+### <a name="how-safe-links-works-in-teams"></a>安全链接在 Teams 中的工作原理
 
-在高级别上，下面将保险箱链接保护如何对网站中的 URL Microsoft Teams：
+概括而言，以下是安全链接保护在 Microsoft Teams 中适用于 URL 的方式：
 
-1. 用户启动Teams应用。
+1. 用户启动 Teams 应用。
 
-2. Microsoft 365验证用户组织是否包含适用于 Office 365 的 Microsoft Defender，以及用户是否包含在启用了对 Microsoft Teams 保护的活动 保险箱 链接策略中。
+2. Microsoft 365 验证用户的组织是否包括 Microsoft Defender for Office 365，以及用户是否包含在启用了 Microsoft Teams 保护的活动安全链接策略中。
 
-3. 在用户单击聊天、群聊、频道和选项卡时验证 URL。
+3. 在聊天、群组聊天、频道、选项卡中的用户单击 URL 时进行验证。
 
 ## <a name="safe-links-settings-for-office-365-apps"></a>保险箱应用的链接Office 365设置
 
@@ -260,7 +260,7 @@ ms.locfileid: "63682077"
 
 您可以在全局设置中为"链接"配置保险箱列表。 有关说明， [请参阅配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**:
+**注意**：
 
 - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
 - 阻止以下 **URL 列表** 的限制：
@@ -292,7 +292,7 @@ ms.locfileid: "63682077"
 
 若要将条目添加到新列表或现有链接保险箱，请参阅[创建](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)链接保险箱修改链接保险箱[策略](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**:
+**注意**：
 
 - 以下客户端无法识别"不重写链接"策略中的保险箱 URL 列表。 根据以下客户端中链接扫描的结果，可阻止策略保险箱用户访问 URL：
   - Microsoft Teams
@@ -330,33 +330,33 @@ ms.locfileid: "63682077"
 
 单击的 URL 正由"链接"保险箱扫描。 在再次尝试链接之前，可能需要等待片刻。
 
-!["正在扫描链接"通知](../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="正在扫描链接的通知" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 原始通知页面如下所示：
 
-![原始"正在扫描链接"通知](../../media/04368763-763f-43d6-94a4-a48291d36893.png)
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="正在扫描链接的通知" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### <a name="suspicious-message-warning"></a>可疑邮件警告
 
 单击的 URL 位于类似于其他可疑邮件的电子邮件中。 我们建议您在继续网站之前仔细检查电子邮件。
 
-!["从可疑邮件单击链接"警告](../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
+:::image type="content" source="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png" alt-text="从可疑邮件警告中单击了链接" lightbox="../../media/33f57923-23e3-4b0f-838b-6ad589ba897b.png":::
 
 ### <a name="phishing-attempt-warning"></a>网络钓鱼尝试警告
 
 单击的 URL 位于已标识为网络钓鱼攻击的电子邮件中。 因此，电子邮件中所有 URL 都将被阻止。 建议您不要继续访问该网站。
 
-!["从网络钓鱼邮件中单击链接"警告](../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
+:::image type="content" source="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png" alt-text="显示从网络钓鱼邮件中单击链接的警告" lightbox="../../media/6e544a28-0604-4821-aba6-d5a57bb917e5.png":::
 
 ### <a name="malicious-website-warning"></a>恶意网站警告
 
 单击的 URL 指向已标识为恶意的网站。 建议您不要继续访问该网站。
 
-!["此网站被分类为恶意"警告](../../media/058883c8-23f0-4672-9c1c-66b084796177.png)
+:::image type="content" source="../../media/058883c8-23f0-4672-9c1c-66b084796177.png" alt-text="指出网站被分类为恶意的警告" lightbox="../../media/058883c8-23f0-4672-9c1c-66b084796177.png":::
 
 原始警告页面如下所示：
 
-![原始"此网站已分类为恶意"警告](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
+:::image type="content" source="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png" alt-text="指出网站被归类为恶意网站的原始警告" lightbox="../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png":::
 
 ### <a name="blocked-url-warning"></a>阻止的 URL 警告
 
@@ -364,18 +364,18 @@ ms.locfileid: "63682077"
 
 管理员手动阻止特定 URL 的原因有多种。 如果认为不应阻止网站，请与管理员联系。
 
-!["此网站被管理员阻止"警告](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
+:::image type="content" source="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png" alt-text="指出你的管理员阻止了该网站的警告" lightbox="../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png":::
 
 原始警告页面如下所示：
 
-![原始"已根据组织的 URL 策略阻止此网站"警告](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+:::image type="content" source="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png" alt-text="指出已根据组织的 URL 策略阻止该网站的原始警告" lightbox="../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png":::
 
 ### <a name="error-warning"></a>错误警告
 
 发生了某种错误，无法打开 URL。
 
-!["无法加载您尝试访问的页面"警告](../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
+:::image type="content" source="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png" alt-text="无法加载指出您尝试访问的页面的警告" lightbox="../../media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png":::
 
 原始警告页面如下所示：
 
-![原始"无法加载此网页"警告](../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png)
+:::image type="content" source="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png" alt-text="指出无法加载网页的警告" lightbox="../../media/9aaa4383-2f23-48be-bdaa-8efbcb2acc70.png":::

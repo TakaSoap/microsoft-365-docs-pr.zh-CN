@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender 保险箱设置链接策略Office 365
+title: 在 Microsoft Defender for Office 365 中设置安全链接策略
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: 管理员可以了解如何在 Microsoft Defender for 保险箱 中查看、创建、修改和删除保险箱链接策略和全局Office 365。
+description: 管理员可以了解如何查看、创建、修改和删除保险箱链接策略和全局保险箱链接Microsoft Defender for Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d4cbaccab3eca371114eec92fe1bf89b2c0e353
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7a352391a0acc595463a8363da315e8dda2758c1
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312973"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507222"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 保险箱设置链接策略Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中设置安全链接策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,19 +37,19 @@ ms.locfileid: "63312973"
 > [!IMPORTANT]
 > 本文适用于拥有 [Microsoft Defender for Office 365](defender-for-office-365.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中安全链接的信息，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-保险箱 [Microsoft Defender for Office 365](defender-for-office-365.md) 中的链接提供对邮件流中入站电子邮件的 URL 扫描，以及电子邮件和其他位置中 URL 和链接的单击验证时间。 有关详细信息，请参阅 [microsoft Defender 保险箱中的链接Office 365](safe-links.md)。
+保险箱[中的链接](defender-for-office-365.md)Microsoft Defender for Office 365邮件流中的入站电子邮件的 URL 扫描，以及电子邮件和其他位置中 URL 和链接的单击验证时间。 有关详细信息，请参阅 保险箱 [Links in Microsoft Defender for Office 365](safe-links.md)。
 
-尽管没有默认的 保险箱 链接策略，但内置保护预设安全策略为未在自定义 保险箱 链接策略) 中定义的所有收件人 (提供 保险箱 链接保护。 有关详细信息，请参阅 [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)。
+尽管没有默认的 保险箱 链接策略，但内置保护预设安全策略为未在自定义 保险箱 链接策略) 中定义的所有收件人 (提供 保险箱 链接保护。 有关详细信息，请参阅在 EOP 中预设安全策略[和Microsoft Defender for Office 365](preset-security-policies.md)。
 
 您还可以使用本文中的过程创建适用于保险箱用户、组或域的链接策略。
 
 > [!NOTE]
 >
-> 在链接策略之外配置保险箱 **链接保护保险箱** 全局设置。 有关说明，请参阅[在 Microsoft Defender 中配置保险箱链接的全局Office 365](configure-global-settings-for-safe-links.md)。
+> 在链接策略之外配置保险箱 **链接保护保险箱** 全局设置。 有关说明，请参阅配置 [保险箱 链接的全局Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)。
 >
-> 管理员应考虑链接的不同配置保险箱设置。 可用选项之一是，在"链接"保险箱信息。 此功能使 *安全运营团队* 能够调查潜在用户泄露、采取纠正措施并限制代价高昂的泄露。
+> 管理员应考虑链接的不同配置保险箱设置。 可用选项之一是，在"链接"保险箱信息。 此功能使 SecOps (安全) 调查潜在用户泄露、采取纠正措施并限制代价高昂的泄露。
 
-您可以在 Microsoft 365 Defender 门户或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置 保险箱 链接策略;适用于没有邮箱的组织的独立 EOP PowerShellExchange Online邮箱，但使用 Microsoft Defender Office 365加载项订阅) 。
+可以在 Microsoft 365 Defender 门户或 PowerShell 中配置安全链接策略（在 Exchange Online 中具有邮箱的符合条件的 Microsoft 365 组织：Exchange Online PowerShell；对于没有 Exchange Online 邮箱但使用 Microsoft Defender for Office 365 加载项订阅的组织：独立 EOP PowerShell）。
 
 链接策略的基本保险箱有：
 
@@ -85,7 +85,7 @@ ms.locfileid: "63312973"
 
 - 允许应用新策略或更新策略最多 6 小时。
 
-- [新功能不断添加到 Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 添加新功能时，可能需要对现有"链接"策略保险箱调整。
+- [新功能不断添加到](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)Microsoft Defender for Office 365。 添加新功能时，可能需要对现有"链接"策略保险箱调整。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>使用 Microsoft 365 Defender 门户创建保险箱链接策略
 
@@ -123,8 +123,8 @@ ms.locfileid: "63312973"
        - **等待 URL 扫描完成，然后再传递邮件**：选择此选项可等待实时 URL 扫描完成，然后再传递邮件。
      - **Apply 保险箱 Links to email messages sent within the organization**： Select this option to apply the 保险箱 Links policy to messages between internal senders and internal recipients.
    - **Select the action for unknown or potentially malicious URLS within Microsoft Teams**： Select **On** to enable 保险箱 Links protection for links in Teams. 请注意，此设置最多可能需要 24 小时才能生效。
-   - **Do not track user clicks**： Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
-   - **不允许用户单击** 到原始 URL：选择此选项可阻止用户单击到警告 [页面中的原始 URL](safe-links.md#warning-pages-from-safe-links)。
+   - **跟踪用户单击**：保留选中此选项以启用跟踪用户单击电子邮件中的 URL。
+   - **让用户单击以访问原始 URL**：清除此选项可阻止用户单击到警告 [页面中的原始 URL](safe-links.md#warning-pages-from-safe-links)。
    - **不要重写以下 URL**：允许访问指定 URL，否则，链接保险箱阻止。
 
      在框中，键入您需要的 URL 或值，然后单击"添加 **"**。 根据需要重复执行此步骤（次数不限）。
@@ -254,7 +254,7 @@ ms.locfileid: "63312973"
 若要创建安全链接策略，请使用以下语法：
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -270,11 +270,11 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 - 打开单击的 URL（包括指向文件的单击链接）实时扫描。
 - 等待 URL 扫描完成，然后再传递邮件。
 - 打开内部邮件的 URL 扫描和重写。
-- 跟踪与 保险箱 链接保护相关的用户单击 (我们并不使用 _DoNotTrackUserClicks_ 参数，默认值为 $false，这意味着将跟踪用户单击) 。
+- 跟踪用户单击保险箱链接保护 (我们使用的 _TrackUserClicks_ 参数，默认值为 $true) 。
 - 不允许用户单击访问原始 URL。
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 有关语法和参数的详细信息，请参阅 [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy)。
@@ -468,7 +468,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 有关语法和参数的详细信息，请参阅 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)。
 
-若要验证保险箱是否正在扫描邮件，请检查可用的 Microsoft Defender Office 365报告。 有关详细信息，请参阅查看 Defender [for Office 365](view-reports-for-mdo.md)报告和在 Microsoft 365 Defender [门户中的使用资源管理器](threat-explorer.md)。
+若要验证保险箱是否正在扫描邮件，请检查可用的Microsoft Defender for Office 365报告。 有关详细信息，[请参阅在 Microsoft 365 Defender](view-reports-for-mdo.md) 门户中查看 Defender for Office 365 [报告和使用资源管理器](threat-explorer.md)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 

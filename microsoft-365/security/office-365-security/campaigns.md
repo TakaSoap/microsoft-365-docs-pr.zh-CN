@@ -20,12 +20,12 @@ ms.custom: ''
 description: 了解 Microsoft Defender for Office 365 中的市场活动Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8fad29e82b647d309d3b7046e36bd03b64de81d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682540"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467722"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的市场活动视图
 
@@ -59,7 +59,7 @@ Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反�
 
 Campaign Views is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> **Email & collaboration** \> **Campaigns**， or directly at <https://security.microsoft.com/campaigns>.
 
-![活动门户中的Microsoft 365 Defender概述。](../../media/campaigns-overview.png)
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="活动门户中的Microsoft 365 Defender概述" lightbox="../../media/campaigns-overview.png":::
 
 还可以从：
 
@@ -113,7 +113,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
 
 在" **市场活动"页面** 顶部，有几个筛选器和查询设置可帮助你查找和隔离特定市场活动。
 
-![市场活动筛选器。](../../media/campaign-filters-and-settings.png)
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="市场活动筛选器" lightbox="../../media/campaign-filters-and-settings.png":::
 
 可以执行的最基本筛选是开始日期/时间和结束日期/时间。
 
@@ -151,7 +151,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
   - **市场活动 ID**
   - **ZAP URL 信号**
 
-- **URL**：
+- **URLs**:
   - **URL 域**
   - **URL 域和路径**
   - **URL**
@@ -192,7 +192,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
 - 市场活动流的开始日期/时间和结束数据/时间筛选器，如下一节中所述。
 - 活动活动的交互式时间线：时间线显示活动在整个生命周期中的活动。 你可以将鼠标悬停在图形数据点上方，以查看检测到的邮件数量。
 
-![市场活动信息。](../../media/campaign-details-campaign-info.png)
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="宣传活动信息" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### <a name="campaign-flow"></a>活动流
 
@@ -201,7 +201,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
 > [!TIP]
 > 流程图中显示的信息由日程表中的日期范围筛选器控制，如上一节中所述。
 
-![不包含用户 URL 单击的市场活动详细信息。](../../media/campaign-details-no-recipient-actions.png)
+:::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="不包含用户 URL 单击的市场活动详细信息" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
 如果将鼠标悬停在图表中的水平带区上，则将看到相关邮件的数目（例如来自特定来源 IP 的邮件，使用指定发件人域名的来自来源 IP 的邮件等）。
 
@@ -213,7 +213,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
 
   |值|垃圾邮件筛选器裁定|说明|
   |---|---|---|
-  |**允许**|`SFV:SKN` <p> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为非垃圾邮件和/或跳过筛选。 例如，邮件流规则将邮件标记为"非垃圾邮件 (也称为传输规则) 。 <p> 邮件由于其他原因跳过了垃圾邮件筛选。 例如，发件人和收件人似乎在同一个组织中。|
+  |**Allowed**|`SFV:SKN` <p> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为非垃圾邮件和/或跳过筛选。 例如，邮件流规则将邮件标记为"非垃圾邮件 (也称为传输规则) 。 <p> 邮件由于其他原因跳过了垃圾邮件筛选。 例如，发件人和收件人似乎在同一个组织中。|
   |**已阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|
   |**已检测**|`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
   |**未检测到**|`SFV:NSPM`|邮件被垃圾邮件筛选标记为非垃圾邮件。|
@@ -222,7 +222,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
   |**租户阻止**<sup>\*\*</sup>|`SFV:SKA`|邮件被垃圾邮件筛选阻止，因为反垃圾邮件策略中的设置。 例如，发件人在允许的发件人列表或允许的域列表中。|
   |**用户允许**<sup>\*</sup>|`SFV:SFE`|邮件跳过了垃圾邮件筛选，因为发件人位于用户的"发件人保险箱列表中。|
   |**用户阻止**<sup>\*\*</sup>|`SFV:BLK`|邮件被垃圾邮件筛选阻止，因为发件人位于用户的"阻止的发件人"列表中。|
-  |**ZAP**|不适用|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已送达邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件 [策略中配置操作](configure-your-spam-filter-policies.md)。|
+  |**ZAP**|无|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已送达邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件 [策略中配置操作](configure-your-spam-filter-policies.md)。|
 
   <sup>\*</sup> 查看反垃圾邮件策略，因为允许的邮件可能已被服务阻止。
 
@@ -250,7 +250,7 @@ Campaign Views is available in the Microsoft 365 Defender portal at <https://sec
 
 如果用户单击网络钓鱼邮件的有效负载 URL，操作将显示在活动详细信息视图中图表的 **URL** 单击区域中。
 
-- **允许**
+- **Allowed**
 - **BlockPage**：收件人单击了有效负载 URL，但他们对恶意网站的访问被保险箱 [链接](safe-links.md)策略阻止。
 - **BlockPageOverride**：收件人单击了邮件中的有效负载 URL，保险箱链接尝试将其停止，但允许它们覆盖此阻止。 检查你的[保险箱链接](set-up-safe-links-policies.md)策略，查看为什么允许用户替代"链接保险箱裁定并继续访问恶意网站。
 - **PendingDetonationPage**： 保险箱 Attachments in Microsoft Defender for Office 365 is in the process of opening and investigating the payload URL in a virtual computer environment.

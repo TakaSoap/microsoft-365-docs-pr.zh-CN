@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: 了解Microsoft 365企业版如何帮助你完成一般数据保护条例 （GDPR） 过程。
-ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403626"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632396"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>简化的 GDPR: 适用于小型企业的指南
 
@@ -134,7 +134,7 @@ GDPR 建立数据主体权限，这意味着，对于其个人数据，客户、
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365可提供帮助的功能
 
-可以使用[设置合规性功能](set-up-compliance.md)来帮助保护企业的敏感信息。 合规性管理器可以帮助你立即入门！ 例如，可以设置使用 [GDPR 模板](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)的 [DLP 策略](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)。
+可以使用[设置合规性功能](../../business-premium/m365bp-set-up-compliance.md)来帮助保护企业的敏感信息。 合规性管理器可以帮助你立即入门！ 例如，可以设置使用 [GDPR 模板](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr)的 [DLP 策略](/microsoft-365/compliance/create-a-dlp-policy-from-a-template)。
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>步骤 5：保留有关数据处理活动的文档
 
