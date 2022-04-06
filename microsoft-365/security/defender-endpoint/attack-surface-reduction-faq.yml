@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
-  title: '攻击面减少常见问题解答 (常见问题) '
-  description: 查找有关适用于终结点的 Microsoft Defender 攻击面减少规则的常见问题的解答。
-  keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
+  title: '攻击面减少常见问题解答 (常见问题解答) '
+  description: 查找有关Microsoft Defender for Endpoint攻击面减少规则的常见问题的解答。
+  keywords: 攻击面减少规则， asr， 臀部， 主机入侵预防系统， 保护规则， 反剥削， 反开发， 攻击， 感染预防， microsoft defender for 终结点
   ms.pagetype: security
   ms.prod: m365-security
   ms.mktglfcycl: manage
@@ -18,13 +18,13 @@ metadata:
   ms.technology: mde
   ms.collection: m365-security-compliance
   ms.date: 1/18/2022
-  ms.openlocfilehash: fbdeee9b98a0c9a3309cf0d18436fb8508afc060
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 7c37f4f971ea603be2bf523568c03c84f669951c
+  ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683770"
-title: '攻击面减少常见问题解答 (常见问题) '
+  ms.lasthandoff: 04/06/2022
+  ms.locfileid: "64667155"
+title: '攻击面减少常见问题解答 (常见问题解答) '
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,142 +38,207 @@ sections:
 - name: 已忽略
   questions:
   - question: >
-      攻击面减少是否 (ASR) 部分Windows？
+      Is attack surface reduction (ASR) part of Windows?
     answer: >
-      ASR 最初是作为 Microsoft Defender 防病毒 版本 1709 Windows 10的主要更新引入的一系列攻击防护功能的功能。 Microsoft Defender 防病毒是应用程序本机反恶意软件Windows。 但是，完整的 ASR 功能集仅适用于企业Windows许可证。 另请注意，ASR 规则排除项与规则排除项Microsoft Defender 防病毒分开管理。
+      ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
   - question: >
-      是否需要具有企业许可证才能运行 ASR 规则？
+      Do I need to have an enterprise license to run ASR rules?
     answer: >
-      只有拥有企业许可证才能使用一组完整的 ASR 规则和功能Windows 10或Windows 11。 在没有企业许可证的情况下，可能只能使用有限数量的规则。 如果已Microsoft 365 Business，Microsoft Defender 防病毒设置为主要安全解决方案，并通过 PowerShell 启用规则。 不使用企业许可证的情况下使用 ASR 不受正式支持，你将无法使用 ASR 的全部功能。
+      The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10 or Windows 11. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. Using ASR without an enterprise license isn't officially supported and you won't be able to use the full capabilities of ASR.
 
 
-      若要了解有关许可Windows，请参阅Windows 10[许可](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)并获取适用于 Windows 10 [的批量许可Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
+      To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
-      如果我有 E3 许可证，是否支持 ASR？
+      Is ASR supported if I have an E3 license?
     answer: >
-      是。 E3 及Windows Enterprise支持 ASR。
+      Yes. ASR is supported for Windows Enterprise E3 and above.
   - question: >
-      E5 许可证支持哪些功能？
+      Which features are supported with an E5 license?
     answer: >
-      E3 支持的所有规则也受 E5 支持。
+      All of the rules supported with E3 are also supported with E5.
 
 
-      E5 添加了与 Defender for Endpoint 的更大集成。 使用 E5，可以实时查看警报、微调规则排除项、配置 ASR 规则以及查看事件报告列表。
+      E5 adds greater integration with Defender for Endpoint. With E5, you can view alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
   - question: >
-      当前支持的 ASR 规则是什么？
+      What are the currently supported ASR rules?
     answer: >
-      ASR 当前支持以下所有规则。
+      ASR currently supports all of the rules below.
   - question: >
-      要启用哪些规则？ 全部启用，或者我能否启用单个规则？
+      What rules to enable? All, or can I turn on individual rules?
     answer: >
-      为了帮助您找出最适合您的环境的方式，我们建议您在审核模式下启用 ASR [规则](audit-windows-defender.md)。 通过这种方法，可以确定对组织可能的影响。 例如，业务线应用程序。
+      To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
   - question: >
-      ASR 规则排除如何工作？
-    answer: "对于 ASR 规则，如果添加一个排除项，它将影响每个 ASR 规则。\n\nASR 规则排除项支持通配符、路径和环境变量。 若要详细了解如何在 ASR 规则中使用通配符，请参阅配置和验证基于文件扩展名和文件夹位置 [的排除项](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。\n\n请注意以下有关 ASR 规则排除项 (包括通配符和 env。 变量) ：\n\n- ASR 规则排除项独立于Microsoft Defender 防病毒排除项\n- 通配符不能用于定义驱动器号\n- 如果要排除 \\*多个文件夹，在路径中使用多个 \\ 实例来指示多个嵌套文件夹 (例如 c：\\Folder\\*\\*\\Test) \n- Microsoft Endpoint Configuration Manager *不支持* 通配符 (* 或 ？) \n- 如果要排除包含随机字符的文件 (自动生成文件) ，可以使用\"？\"符号 (例如 C：\\Folder\\fileversion？.docx) \n- 组策略中的 ASR 排除项不支持引号 (引擎将本机处理长路径、空格等，因此无需使用引号) \n- ASR 规则在 NT AUTHORITY\\SYSTEM 帐户下运行，因此环境变量仅限于计算机变量。\n"
-  - question: >
-      我如何知道需要排除哪些内容？
+      How do ASR rules exclusions work?
     answer: >
-      不同的 ASR 规则将具有不同的保护流。 请始终考虑要配置的 ASR 规则如何防范，以及实际执行流程如何平移。
+      For ASR rules, if you add one exclusion, it will affect every ASR rule.
 
 
-      示例：阻止从 **Windows 本地** 安全机构子系统窃取凭据 直接从本地安全颁发机构子系统 (LSASS) 进程读取可能会带来安全风险，因为它可能会公开公司凭据。
+      ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
 
-      此规则可防止不受信任的进程直接访问 LSASS 内存。 每当进程尝试使用 OpenProcess () 函数访问具有 PROCESS_VM_READ 访问权限的 LSASS 时，该规则将专门阻止该访问权限。
+      Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
 
-      :::image type="content" source="images/asrfaq1.png" alt-text="阻止凭据窃取 LSASS":::
+      - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions
 
+      - Wildcards cannot be used to define a drive letter
 
-      看一下上面的示例，如果确实需要为阻止访问权限的进程创建异常，则添加文件名和完整路径将阻止该文件名，并且允许访问 LSASS 进程内存之后。 值 0 表示 ASR 规则将忽略此文件/进程，并且不会阻止/审核它。
+      - If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
 
+      - Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
 
-      :::image type="content" source="images/asrfaq2.png" alt-text="排除文件 asr":::
+      - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
+
+      - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
+
+      - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
   - question: >
-      Microsoft 建议启用哪些规则？
-    answer: "我们建议启用每个可能的规则。 但是，在某些情况下不应启用规则。 例如，如果您使用的是 Microsoft Endpoint Configuration Manager (或 System Center Configuration Manager - SCCM) 来管理终结点，则不建议启用源自 PSExec 和 WMI 命令规则的阻止进程创建。\n\n我们强烈建议您阅读我们的公共文档中提供的每个特定于规则的信息和/或 [警告](/microsoft-365/security/defender-endpoint/attack-surface-reduction)。\n跨多个保护支柱，Office、凭据、脚本、电子邮件等。1709 及更高版本支持所有 ASR 规则（通过 WMI 事件订阅阻止持久性Windows除外）：\n\n* [阻止滥用被攻击的易受攻击的已签名驱动程序](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)\n* [阻止来自电子邮件客户端和 Webmail 的可执行内容](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)\n* [阻止所有Office应用程序创建子进程](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)\n* [阻止Office应用程序创建可执行内容](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)\n* [阻止Office将代码注入其他进程](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)\n* [阻止 JavaScript 或 VBScript 启动下载的可执行内容](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)\n* [阻止执行可能混淆的脚本](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)\n* [阻止从宏调用 Win32 OFFICE](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)\n* [使用高级防护抵御勒索软件](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)\n* [阻止从本地安全Windows](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe) \n* [阻止源自 PSExec 和 WMI 命令的进程创建](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)\n* [阻止从 USB 运行的不受信任的和未签名的进程](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)\n* [阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)\n* [阻止Office应用程序创建子进程](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)\n* [阻止 Adobe Reader 创建子进程](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)\n* [通过 WMI 事件订阅阻止持久性](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)\n"
-  - question: >
-      默认情况下是否启用本地安全机构子系统？
+      How do I know what I need to exclude?
     answer: >
-      攻击面减少 (ASR) 规则"阻止从 Windows 本地安全机构子系统 (lsass.exe) 窃取凭据"的默认状态会从"未配置"更改为"已配置"，默认模式将设置为"阻止"。  所有其他 ASR 规则将保持其默认状态： **未配置**。 规则中已包含其他筛选逻辑，以减少最终用户通知。 客户可以将规则配置为 **审核****、警告** 或 **禁用** 模式，这将覆盖默认模式。 无论规则是在默认状态下配置的，还是手动启用阻止模式，此规则的功能都是相同的。  
+      Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
+
+
+      Example:
+
+      **Block credential stealing from the Windows local security authority subsystem**
+
+      Reading directly from Local Security Authority Subsystem (LSASS) process can be a security risk, since it might expose corporate credentials.
+
+
+      This rule prevents untrusted processes from having direct access to LSASS memory. Whenever a process tries to use the OpenProcess() function to access LSASS, with an access right of PROCESS_VM_READ, the rule will  specifically block that access right.
+
+
+      :::image type="content" source="images/asrfaq1.png" alt-text="block credential stealing LSASS":::
+
+
+      Looking at the above example, if you really had to create an exception for the process that the access right was blocked, adding the filename along with full path would exclude it from being blocked and after allowed to access LSASS process memory. The value of 0 means that ASR rules will ignore this file/process and not block/audit it.
+
+
+      :::image type="content" source="images/asrfaq2.png" alt-text="exclude files asr":::
   - question: >
-      有关 ASR 入门的一些很好建议是什么？
+      What are the rules Microsoft recommends enabling?
     answer: >
-      在启用 ASR 规则之前，在审核模式下运行一小段时间，测试 ASR 规则对组织的影响。 在审核模式下运行规则时，您可以识别可能错误地被阻止的任何业务线应用程序，并排除在 ASR 中。
+      We recommend enabling every possible rule. However, there are some cases where you shouldn't enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you're using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
 
 
-      大型组织应考虑在"圈"中推出 ASR 规则，通过审核和启用范围越来越广的设备子集中的规则。 可以使用 Intune 或组策略管理工具将组织的设备排列到圈中。
+      We highly recommend you that you read each rule-specific information and/or warnings, which are available in our
+
+      [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
+       spanning across multiple pillars of protection, like Office, Credentials, Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 1709 and later:
+
+      * [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+
+      * [Block executable content from email client and webmail](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
+
+      * [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
+
+      * [Block Office applications from creating executable content](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
+
+      * [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
+
+      * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+
+      * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
+
+      * [Block Win32 API calls from Office macro](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
+
+      * [Use advanced protection against ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
+
+      * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
+
+      * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+
+      * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+
+      * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+
+      * [Block Office communication applications from creating child processes](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
+
+      * [Block Adobe Reader from creating child processes](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
+
+      * [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
   - question: >
-      在启用 ASR 规则之前，应在审核模式下测试该规则多久？
+      Is Local security authority subsystem enabled by default?
     answer: >
-      将规则保持审核模式大约 30 天，以获得规则在整个组织中可用后如何运行的良好基线。 在审核期间，您可以标识规则可能阻止的任何业务线应用程序，并配置规则以排除它们。
+      The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
   - question: >
-      我要将第三方安全解决方案切换到 Defender for Endpoint。 是否有一种将规则从另一个安全解决方案导出到 ASR 的"简单"方法？
+      What are some good recommendations for getting started with ASR?
     answer: >
-      在大多数情况下，从 [Defender for Endpoint](/windows/security/threat-protection) 建议的基线建议开始比尝试从另一个安全解决方案导入规则更简单、更好。 然后，使用审核模式、监视和分析等工具配置新解决方案以满足您的独特需求。
+      Test how ASR rules will impact your organization before enabling them by running ASR rules in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
 
 
-      大多数 ASR 规则的默认配置与 Defender for Endpoint 实时保护相结合，可抵御大量攻击和漏洞。
-
-
-      在 Defender for Endpoint 中，可以使用自定义指示器更新防御，以允许和阻止某些软件行为。 ASR 还允许以文件和文件夹排除的形式对规则进行一些自定义。 作为一般规则，最好在一段时间内审核规则，并配置可能被阻止的任何业务线应用程序的排除项。
+      Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
   - question: >
-      ASR 是否支持路径中包括系统变量和通配符的文件或文件夹排除项？
+      How long should I test an ASR rule in audit mode before enabling it?
     answer: >
-      是。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从 [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) 规则中排除文件和文件夹;有关在排除[](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
+      Keep the rule in audit mode for about 30 days to get a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
   - question: >
-      默认情况下，ASR 规则是否涵盖所有应用程序？
+      I'm making the switch from a third-party security solution to Defender for Endpoint. Is there an "easy" way to export rules from another security solution to ASR?
     answer: >
-      这取决于规则。 大多数 ASR 规则涵盖 Microsoft Office 产品和服务的行为，如 Word、Excel、PowerPoint、OneNote 或 Outlook。 某些 ASR 规则（如阻止 *执行可能混淆的* 脚本）在作用域中更为一般。
-  - question: >
-      ASR 是否支持第三方安全解决方案？
-    answer: >
-      ASR 使用Microsoft Defender 防病毒来阻止应用程序。 目前无法将 ASR 配置为使用另一个安全解决方案进行阻止。
-  - question: >
-      我拥有 E5 许可证，并且与 Defender for Endpoint 一起启用了一些 ASR 规则。 ASR 事件是否可能完全未显示在 Defender for Endpoint 的事件时间线中？
-    answer: >
-      只要 ASR 规则在本地触发通知，事件报告也会发送到 Defender for Endpoint 门户。 如果查找事件时遇到问题，可以使用搜索框筛选事件时间线。 还可以从 Defender for Cloud 任务栏中的配置管理图标访问转到攻击面管理来查看 ASR 事件。 攻击面管理页面包含报告检测选项卡，其中包括报告给 Defender for Endpoint 的 ASR 规则事件的完整列表。
-  - question: >
-      我使用 GPO 应用了规则。 现在，当我尝试检查 Microsoft Outlook 中的规则的索引选项时，我收到一条消息，指出"访问被拒绝"。
-    answer: >
-      请尝试直接从索引或索引Windows 10 Windows 11。
+      In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](/windows/security/threat-protection) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs.
 
 
-      1. 选择"**搜索**"任务栏Windows图标。
+      The default configuration for most ASR rules, combined with Defender for Endpoint's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
 
-      1. 在 **搜索框中输入** 索引选项。
+      From within Defender for Endpoint, you can update your defenses with custom indicators, to allow and block certain software behaviors. ASR also allows for some customization of rules, in the form of file and folder exclusions. As a general rule, it is best to audit a rule for a period of time, and configure exclusions for any line-of-business applications that might get blocked.
   - question: >
-      规则使用的条件"除非可执行文件满足普遍程度、年龄或受信任的列表条件，否则阻止可执行文件运行"是否由管理员配置？
+      Does ASR support file or folder exclusions that include system variables and wildcards in the path?
     answer: >
-      否。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
+      Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
   - question: >
-      我启用了 ASR 规则"阻止可执行文件运行，除非它们满足普遍程度、年龄或受信任的列表条件"。 一段时间之后，我更新了一个软件，规则现在阻止了它，即使以前没有更新过。 出错了？
+      Do ASR rules cover all applications by default?
     answer: >
-      此规则依赖于每个具有已知信誉的应用程序，根据受信任应用列表的流行程度、年龄或包含情况进行度量。 阻止或允许应用的规则决定最终由 Microsoft 云保护评估这些条件确定。
-
-
-      通常，云保护可以确定应用程序的新版本与早期版本的相似性，因此无需进行长度重新评估。 但是，在切换版本后（尤其是在进行重大更新后）应用建立信誉可能需要一些时间。 在此期间，您可以将应用程序添加到排除列表，以防止此规则阻止重要应用程序。 如果经常更新和运行新版本的应用程序，可以选择改为在审核模式下运行此规则。
+      It depends on the rule. Most ASR rules cover the behavior of Microsoft Office products and services, such as Word, Excel, PowerPoint, and OneNote, or Outlook. Certain ASR rules, such as *Block execution of potentially obfuscated scripts*, are more general in scope.
   - question: >
-      我最近启用了 ASR 规则"阻止从 Windows 本地安全机构子系统 (lsass.exe) 窃取凭据"，我收到大量通知。 这是怎么回事？
+      Does ASR support third-party security solutions?
     answer: >
-      此规则生成的通知不一定表示恶意活动;但是，此规则仍可用于阻止恶意活动，因为恶意软件通常lsass.exe非法访问帐户。 登录lsass.exe进程将用户凭据存储在内存中。 Windows使用这些凭据验证用户并应用本地安全策略。
-
-
-      因为一天中有许多合法进程将lsass.exe凭据，所以此规则可能非常干扰。 如果已知的合法应用程序导致此规则生成过多通知，您可以将其添加到排除列表。 与其他大部分 ASR 规则相比，大多数其他 ASR 规则将生成相对较少的通知，因为调用 lsass.exe 是许多应用程序正常运行的典型情况。
+      ASR uses Microsoft Defender Antivirus to block applications. It is not possible to configure ASR to use another security solution for blocking at this time.
   - question: >
-      与 LSA 保护一起启用"阻止从 Windows 本地安全机构子系统 (lsass.exe) "这一规则是一个好主意吗？
+      I have an E5 license and enabled some ASR rules in conjunction with Defender for Endpoint. Is it possible for an ASR event to not show up at all in Defender for Endpoint's event timeline?
     answer: >
-      如果还启用了 LSA 保护，则启用此规则 [不会](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) 提供额外的保护。 由于规则保护和 LSA 保护的运行方式都相同，因此同时运行这两个保护都是多余的。 但是，有时你可能无法启用 LSA 保护。 在这种情况下，您可以启用此规则，以针对目标恶意软件lsass.exe。
+      Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Defender for Cloud taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
   - question: >
-      另请参阅
+      I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.
+    answer: >
+      Try opening the indexing options directly from Windows 10 or Windows 11.
+
+
+      1. Select the **Search** icon on the Windows taskbar.
+
+
+      1. Enter **Indexing options** into the search box.
+  - question: >
+      Are the criteria used by the rule, "Block executable files from running unless they meet a prevalence, age, or trusted list criterion," configurable by an admin?
+    answer: >
+      No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up to date with data gathered from around the world. Local admins do not have write access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent the rule from being triggered.
+  - question: >
+      I enabled the ASR rule, 'Block executable files from running unless they meet a prevalence, age, or trusted list criterion'. After some time, I updated a piece of software, and the rule is now blocking it, even though it didn't before. Did something go wrong?
+    answer: >
+      This rule relies upon each application having a known reputation, as measured by prevalence, age, or inclusion on a list of trusted apps. The rule's decision to block or allow an application is ultimately determined by Microsoft cloud protection's assessment of these criteria.
+
+
+      Usually, cloud protection can determine that a new version of an application is similar enough to previous versions that it does not need to be reassessed at length. However, it might take some time for the app to build reputation after switching versions, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with new versions of applications, you may opt instead to run this rule in audit mode.
+  - question: >
+      I recently enabled the ASR rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', and I am getting a large number of notifications. What is going on?
+    answer: >
+      A notification generated by this rule does not necessarily indicate malicious activity; however, this rule is still useful for blocking malicious activity, since malware often targets lsass.exe to gain illicit access to accounts. The lsass.exe process stores user credentials in memory after a user has logged in. Windows uses these credentials to validate users and apply local security policies.
+
+
+      Because many legitimate processes throughout a typical day will be calling on lsass.exe for credentials, this rule can be especially noisy. If a known legitimate application causes this rule to generate an excessive number of notifications, you can add it to the exclusion list. Most other ASR rules will generate a relatively smaller number of notifications, in comparison to this one, since calling on lsass.exe is typical of many applications' normal functioning.
+  - question: >
+      Is it a good idea to enable the rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', alongside LSA protection?
+    answer: >
+      Enabling this rule will not provide additional protection if you have [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
+  - question: >
+      See also
     answer: >-
-      * [攻击面减少概述](attack-surface-reduction.md)
+      * [Attack surface reduction overview](attack-surface-reduction.md)
 
-      * [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+      * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-      * [攻击面减少规则部署步骤 3：实施 ASR 规则](attack-surface-reduction-rules-deployment-implement.md)
+      * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
-      * [启用攻击面减少规则](enable-attack-surface-reduction.md)
+      * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 
-      * [防病毒Microsoft Defender 防病毒/反恶意软件的兼容性](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+      * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
