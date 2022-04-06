@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中为攻击模拟培训创建自定义负载。
 ms.technology: mdo
-ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679755"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468492"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>在 Defender for Office 365 中为攻击模拟培训创建自定义负载
 
@@ -147,7 +147,7 @@ ms.locfileid: "63679755"
       - **插入** 名称：在邮件正文中添加的值为 `${userName}`。
       - **插入** 电子邮件：在邮件正文中添加的值为 `${emailAddress}`。
 
-      ![Microsoft Defender for Office 365 攻击模拟培训中有效负载创建向导中的配置有效负载页面上的电子邮件Office 365。](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="Microsoft Defender for Office 365 攻击模拟培训中的有效负载创建向导中的配置有效负载页面上的电子邮件Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **网络钓鱼链接** 控制：只有在"选择技术"页上选择了"凭据获取"、附件中的链接或"按 **URL**"时，此 **控件才** 可用。 使用此控件插入之前在"网络钓鱼链接" **部分选择的 URL** 。
 
@@ -204,7 +204,7 @@ ms.locfileid: "63679755"
 
   如果您选择电子邮件主题或邮件正文作为指示器的位置，则" **选择** 文本"按钮可用。 单击此按钮可选择您希望指示器显示的邮件主题或邮件正文中的文本。 完成后，单击"选择 **"**。
 
-  ![要添加到攻击模拟培训的有效负载创建向导中的指示器的邮件正文中的所选文本位置。](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="攻击模拟培训中要添加到负载创建向导中的指示器的消息正文中的选定文本位置" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **指示器** 描述：可以接受指示器的默认说明，也可以自定义它。
 
@@ -232,7 +232,7 @@ ms.locfileid: "63679755"
 
 完成后，请单击“**提交**”。 在出现的确认页面上，单击“**完成**”。
 
-![查看攻击门户中攻击模拟培训中的Microsoft 365 Defender页面。](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="Microsoft 365 Defender门户中攻击模拟培训中的&quot;查看有效负载&quot;页" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > 你创建的负载将具有 **Source 属性的值 Tenant**。 创建模拟并选择负载时，请确保不筛选掉源 **值** **Tenant**。

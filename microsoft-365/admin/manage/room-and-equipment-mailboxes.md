@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 38df6be558c3f590e851460f8065712d73dbf4b0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173075"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633252"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 
@@ -63,7 +63,7 @@ ms.locfileid: "60173075"
   
 7. 键入描述用途的消息，然后根据需要附加任意文件。
     
-8. 若要允许其他人联机加入或拨入会议，单击“**Skype 会议**”。
+8. 要允许其他人联机加入或拨入会议，可选择“**Teams 会议**”。
     
 9. 若要确保你邀请的会议室、设备和人员可用，请选择顶部 **日程安排助理** 。然后选择日历中的可用时间。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60173075"
     
    - “**位置**”：建筑物或区域中的房间号或房间所在位置。
     
-   - “**电话号码**”：房间本身的号码。这与使用 Skype for Business 时生成的会议电话号码不同。
+   - “**电话号码**”：房间本身的号码。这与使用 Microsoft Teams 时生成的会议电话号码不同。
     
 4. 选择“**添加**”。
     

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9753cdc818aefdf33411bd237327310dfc512ab
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: d254eee546187311a25a0e6cc433005a26ff57e6
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474727"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632418"
 ---
 # <a name="device-inventory"></a>设备清单
 
@@ -58,7 +58,7 @@ ms.locfileid: "64474727"
 
 ### <a name="device-name"></a>设备名称
 
-在 Microsoft Defender for Endpoint 载入过程中，载入到 MDE 的设备在开始报告传感器数据时将逐渐填充到设备清单中。 然后，设备清单由通过设备发现过程在网络中发现的设备填充。 设备清单有三个选项卡，按以下三个选项卡列出设备：
+在Microsoft Defender for Endpoint载入过程中，载入到 MDE 的设备将随着开始报告传感器数据而逐渐填充到设备清单中。 然后，设备清单由通过设备发现过程在网络中发现的设备填充。 设备清单有三个选项卡，按以下三个选项卡列出设备：
 
 - **计算机和移动设备**：Enterprise工作站 (服务器和移动设备的终结点) 
 - **网络设备**：路由器和交换机等设备
@@ -72,7 +72,7 @@ ms.locfileid: "64474727"
 
 设备清单将在"计算机和移动 **"选项卡上** 打开。一目了然地，你将看到设备名称、域、风险级别、曝光级别、操作系统平台、载入状态、传感器运行状况和其他详细信息，以轻松识别风险最大的设备。
 
-使用 **载入状态** 列按发现的设备以及已载入到 Microsoft Defender for Endpoint 的设备进行排序和筛选。
+使用 **"载入状态"** 列按发现的设备和已载入设备进行排序和Microsoft Defender for Endpoint。
 
 ![包含设备列表的设备列表的图像。](images/device-inventory.png)
 
@@ -109,17 +109,17 @@ ms.locfileid: "64474727"
 筛选器 | 说明
 :---|:---
 **风险级别** </br> | 风险级别根据各种因素（包括设备上活动警报的类型和严重性）反映设备的总体风险评估。 解决活动警报、批准修正活动以及抑制后续警报会降低风险级别。
-**曝光级别** </br> | 曝光级别根据设备挂起的安全建议累积影响反映设备的当前曝光情况。 可能的级别为低、中和高。 低曝光意味着你的设备不太易受利用。 </br> </br> 如果曝光级别显示"无可用数据"，可能有以下原因：</br>- 设备停止报告超过 30 天。 在这种情况下，它被视为非活动状态，并且不会计算曝光。</br>- 设备操作系统不受支持 - 请参阅 [Microsoft Defender for Endpoint 的最低要求](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md)。</br>- 具有过时代理 (不太可能) 。
+**曝光级别** </br> | 曝光级别根据设备挂起的安全建议累积影响反映设备的当前曝光情况。 可能的级别为低、中和高。 低曝光意味着你的设备不太易受利用。 </br> </br> 如果曝光级别显示"无可用数据"，可能有以下原因：</br>- 设备停止报告超过 30 天。 在这种情况下，它被视为非活动状态，并且不会计算曝光。</br>- 设备操作系统不受支持 - 请参阅[设备的最低Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/minimum-requirements)。</br>- 具有过时代理 (不太可能) 。
 **Tags** </br> | 根据已添加到个别设备的分组和标记筛选列表。 请参阅 [创建和管理设备标记](machine-tags.md)。
 **设备值**</br> | 根据设备已标记为"高值"还是"低值"来筛选列表。
 **排除状态** </br> | 根据设备是否已排除筛选列表。 有关详细信息，请参阅排除 [设备](exclude-devices.md)。
 **操作系统平台** </br>| 按你感兴趣的操作系统平台进行筛选 </br></br> (_计算机以及移动和 IoT 设备)_
-**首次看到** </br> | 根据设备在网络中首次显示或 Microsoft Defender for Endpoint 传感器第一次报告时间筛选视图。</br></br> (_计算机以及移动和 IoT 设备)_
+**首次看到** </br> | 根据设备在网络中首次看到或首次由传感器报告时，筛选Microsoft Defender for Endpoint视图。</br></br> (_计算机以及移动和 IoT 设备)_
 **Windows 版本** </br> | 按你Windows调查的版本进行筛选。</br></br>  (_计算机和移动设备)_
-**传感器运行状况** </br> | 针对载入到 Microsoft Defender for Endpoint 的设备，按以下传感器运行状况状态进行筛选：</br> - **活动**：主动向服务报告传感器数据的设备。</br> - **非** 活动：停止发送信号超过 7 天的设备。 </br> - **错误配置：** 与服务通信受损或无法发送传感器数据的设备。 </br> 可以将错误配置的设备进一步分类为： </br>  - 无传感器数据 </br>  - 通信受损 </br>  若要详细了解如何解决错误配置设备上的问题，请参阅修复 [不正常的传感器](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/fix-unhealthy-sensors.md)。</br></br>  (_计算机和移动设备)_
-**载入状态** </br> | 载入状态指示设备当前是否已载入到 Microsoft Defender for Endpoint。 可以按以下状态进行筛选： </br> - **已载入**：终结点已载入到 Microsoft Defender for Endpoint。  </br> - **可以载入**：终结点已作为受支持的设备在网络中发现，但当前尚未载入。 Microsoft 强烈建议载入这些设备。 </br> - **不支持**：终结点已发现在网络中，但不受 Microsoft Defender for Endpoint 支持。 </br> - **信息** 不足：系统无法确定设备的可支持性。</br></br>  (_计算机和移动设备)_
+**传感器运行状况** </br> | 按以下传感器运行状况状态进行筛选，使设备载入Microsoft Defender for Endpoint：</br> - **活动**：主动向服务报告传感器数据的设备。</br> - **非** 活动：停止发送信号超过 7 天的设备。 </br> - **错误配置：** 与服务通信受损或无法发送传感器数据的设备。 </br> 可以将错误配置的设备进一步分类为： </br>  - 无传感器数据 </br>  - 通信受损 </br>  若要详细了解如何解决错误配置设备上的问题，请参阅修复 [不正常的传感器](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors)。</br></br>  (_计算机和移动设备)_
+**载入状态** </br> | 载入状态指示设备当前是否已Microsoft Defender for Endpoint载入。 可以按以下状态进行筛选： </br> - **已** 载入：终结点已载入Microsoft Defender for Endpoint。  </br> - **可以载入**：终结点已作为受支持的设备在网络中发现，但当前尚未载入。 Microsoft 强烈建议载入这些设备。 </br> - **不支持**：终结点已发现在网络中，但不受 Microsoft Defender for Endpoint。 </br> - **信息** 不足：系统无法确定设备的可支持性。</br></br>  (_计算机和移动设备)_
 **防病毒状态** </br> | 根据防病毒状态是已禁用、未更新还是未知来筛选视图。</br></br>  (_计算机和移动设备)_
-**组** </br> | 根据你感兴趣的组筛选列表。 </br></br>  (_计算机和移动设备)_
+**Group** </br> | 根据你感兴趣的组筛选列表。 </br></br>  (_计算机和移动设备)_
 **托管者** </br> | "管理者"指示如何管理设备。 You can filter by:</br>- Microsoft Defender for Endpoint </br> - 移动设备管理 (MDM)  </br>- 未知：这可能是由于正在运行过时的 Windows 版本、SCCM 已就位或其他第三方 MDM。</br></br>  (_计算机和移动设备)_
 **设备类型** </br> | 按你感兴趣的设备类型进行筛选。</br></br>  (_IoT 设备)_
 
@@ -141,4 +141,4 @@ You can add or remove columns from the view and sort the entries by clicking on 
 
 ## <a name="related-articles"></a>相关文章
 
-[调查 Microsoft Defender 终结点设备列表中的设备](investigate-machines.md)
+[调查"设备Microsoft Defender for Endpoint中的设备](investigate-machines.md)

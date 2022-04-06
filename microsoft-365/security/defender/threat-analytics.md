@@ -1,8 +1,8 @@
 ---
-title: 威胁分析Microsoft 365 Defender
+title: Microsoft 365 Defender中的威胁分析
 ms.reviewer: ''
-description: 了解新出现的威胁和攻击技术以及如何阻止它们。 评估其对组织的影响，并评估组织的恢复能力。
-keywords: 威胁分析， 风险评估， Microsoft 365 Defender， M365D， 缓解状态， 安全配置， 适用于 Office 365 的 Microsoft Defender， Office 365 威胁分析的 Microsoft Defender， MDO 威胁分析， 集成的 MDE 和 MDO 威胁分析数据， 威胁分析数据集成， 集成Microsoft 365 Defender威胁分析
+description: 了解新出现的威胁和攻击技术以及如何阻止它们。 评估它们对组织的影响，并评估组织复原能力。
+keywords: 威胁分析、风险评估、Microsoft 365 Defender、M365D、缓解状态、安全配置、Microsoft Defender for Office 365、Microsoft Defender for Office 365 威胁分析、MDO 威胁分析、集成 MDE 和 MDO 威胁分析数据、威胁分析数据集成、集成Microsoft 365 Defender威胁分析
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40e14f0bb6e38a6923e5e1d454981d49932f7ea1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 02d7a1e1d80d7891219c9bcf18076b858f4fb1b8
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500686"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663305"
 ---
-# <a name="threat-analytics-in-microsoft-365-defender"></a>威胁分析Microsoft 365 Defender
+# <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defender中的威胁分析
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,64 +39,64 @@ ms.locfileid: "64500686"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-威胁分析是我们来自专业 Microsoft 安全研究人员的产品内威胁情报解决方案。 它旨在帮助安全团队尽可能高效地应对新出现的威胁，例如：
+威胁分析是 Microsoft 安全专家研究人员提供的产品内威胁情报解决方案。 它旨在帮助安全团队在面对新出现的威胁时尽可能高效，例如：
 
-- 活动威胁参与者及其活动
+- 活动威胁执行组件及其活动
 - 热门和新的攻击技术
-- 关键漏洞
+- 严重漏洞
 - 常见攻击面
 - 流行的恶意软件
 
-观看此简短视频，详细了解威胁分析如何有助于跟踪和阻止最新威胁。
+观看此简短视频，详细了解威胁分析如何帮助你跟踪最新威胁并阻止威胁。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-你可以从 Microsoft 365 安全门户导航栏的左上角访问威胁分析，也可以从向组织显示主要威胁的专用仪表板卡访问威胁分析，无论是影响方面还是曝光方面。
+可以从Microsoft 365安全门户导航栏的左上角或专用仪表板卡片访问威胁分析，该仪表板卡显示对组织的主要威胁（无论是在影响方面还是在暴露方面）。
 
-:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="威胁分析登录页面" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="威胁分析登陆页" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
-高影响威胁具有最大危害的可能性，而高曝光威胁是资产最易受到的威胁。 了解活动或正在进行的市场活动，了解通过威胁分析可采取哪些措施，有助于让安全运营团队做出明智的决策。
+高影响威胁的最大可能造成伤害，而高暴露威胁是资产最容易受到的威胁。 了解活动或正在进行的活动以及了解如何通过威胁分析执行操作有助于为安全运营团队提供明智的决策。
 
-_在何处访问威胁分析_
+_访问威胁分析的位置_
 
-随着更复杂的对手和新威胁的频繁和普遍出现，必须能够快速：
+随着更复杂的对手和新威胁频繁且普遍出现，快速执行以下操作至关重要：
 
-- 识别并应对新出现的威胁
-- 了解你当前是否受到攻击
+- 识别新出现的威胁并做出反应
+- 了解当前是否受到攻击
 - 评估威胁对资产的影响
-- 查看抵御威胁或暴露给威胁的恢复能力
-- 确定可用于停止或包含威胁的缓解、恢复或防护操作
+- 查看抵御或暴露在威胁中的复原能力
+- 确定可以采取的缓解、恢复或防护措施来阻止或包含威胁
 
-每个报告都提供跟踪威胁的分析，并提供有关如何防御该威胁的广泛指南。 它还包含来自你的网络的数据，指示威胁是否处于活动状态以及是否具有适用的保护。
+每份报告都提供跟踪威胁的分析以及有关如何防御该威胁的广泛指导。 它还合并了网络中的数据，指示威胁是否处于活动状态，以及是否已实施适用的保护。
 
 ## <a name="view-the-threat-analytics-dashboard"></a>查看威胁分析仪表板
 
-威胁分析仪表板 (security.microsoft.com/threatanalytics3 [) ](https://security.microsoft.com/threatanalytics3) 突出显示与组织最相关的报告。 它总结了以下各节中的威胁：
+威胁分析仪表板 ([security.microsoft.com/threatanalytics3) ](https://security.microsoft.com/threatanalytics3) 突出显示与组织最相关的报表。 它总结了以下部分中的威胁：
 
-- **最新威胁** - 列出最新发布或更新的威胁报告，以及活动警报和已解决警报数。
-- **高影响威胁** - 列出对组织影响最大的威胁。 本节首先列出活动警报和已解决警报数最高的威胁。
-- **最高曝光** — 首先列出曝光级别最高的威胁。 威胁的曝光级别使用两条信息进行计算：与威胁关联的漏洞程度，以及组织中有多少设备被这些漏洞利用。
+- **最新威胁** - 列出最近发布的或更新的威胁报告，以及活动警报和已解决警报的数量。
+- **影响最大的威胁** - 列出对组织影响最大的威胁。 本部分列出了活动和已解决警报数量最多的威胁。
+- **最高曝光率** - 首先列出风险级别最高的威胁。 威胁的暴露级别是使用两条信息来计算的：与威胁关联的漏洞有多严重，以及组织中有多少设备可能被这些漏洞利用。
 
-从仪表板中选择威胁以查看该威胁的报告。
+从仪表板中选择威胁以查看该威胁的报表。
 
 :::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="威胁分析仪表板" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
-_威胁分析仪表板。还可以选择与你要阅读的威胁分析报告相关的关键字中的"搜索"字段作为关键字键。_
+_威胁分析仪表板。还可以在与要读取的威胁分析报告相关的关键字中选择"搜索"字段作为键。_
 
 ## <a name="view-a-threat-analytics-report"></a>查看威胁分析报告
 
-每个威胁分析报告分几节提供相关信息：
+每个威胁分析报告提供以下几个部分的信息：
 
 - [**概述**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
 - [**分析报告**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**相关事件**](#related-incidents-view-and-manage-related-incidents)
-- [**影响的资产**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
-- [**阻止的电子邮件尝试**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**曝光&缓解**](#exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**受影响的资产**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
+- [**阻止电子邮件尝试**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
+- [**暴露&缓解措施**](#exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
-### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>概述：快速了解威胁、评估其影响并审查防御
+### <a name="overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses"></a>概述：快速了解威胁、评估其影响并查看防御措施
 
-" **概述** "部分提供详细分析员报告的预览。 它还提供了突出显示威胁对组织的影响的图表，以及通过错误配置和未修补的设备暴露的图表。
+" **概述** "部分提供详细分析师报告的预览。 它还提供了图表，其中突出显示了威胁对组织的影响，以及通过配置错误和未修补的设备公开的信息。
 
 :::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="威胁分析报告的概述部分" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
@@ -104,167 +104,167 @@ _威胁分析报告的概述部分_
 
 #### <a name="assess-impact-on-your-organization"></a>评估对组织的影响
 
-每个报告都包括旨在提供有关威胁的组织影响的图表：
+每个报表都包含图表，旨在提供有关威胁对组织的影响的信息：
 
-- **相关事件** -通过以下数据概述了跟踪的威胁对组织的影响：
+- **相关事件** - 使用以下数据概述跟踪的威胁对组织的影响：
   - 活动警报数及其关联的活动事件数
   - 活动事件的严重性
-- **一段时间的警报** 显示一段时间的相关 **活动****警报和已** 解决警报数。 已解决的警报数指示组织响应与威胁关联的警报的有多快。 理想情况下，图表应显示几天内解决的警报。
-- **"受** 影响资源" 显示当前至少具有一个与 (关联的活动警报) 邮箱中的不同设备和电子邮件帐户的数量。 对于收到威胁电子邮件的邮箱，将触发警报。 查看组织级别和用户级别的策略，查看导致发送威胁电子邮件的覆盖。
-- **阻止的电子邮件尝试** - 显示过去七天内在传递前被阻止或传递到垃圾邮件文件夹的电子邮件数量。
+- **随时间推移的警报** - 显示随时间推移的相关 **活动** 警报和 **已解决** 警报数。 已解决的警报数表示组织响应与威胁关联的警报的速度。 理想情况下，图表应显示在几天内解析的警报。
+- **受影响的资产** - 显示当前至少有一个与跟踪威胁关联的活动警报) 邮箱 (不同设备和电子邮件帐户的数量。 对于收到威胁电子邮件的邮箱，将触发警报。 查看组织级和用户级策略，了解导致发送威胁电子邮件的替代。
+- **阻止的电子邮件尝试** - 显示过去七天内在传递前被阻止或传递到垃圾邮件文件夹的电子邮件数。
 
-#### <a name="review-security-resilience-and-posture"></a>查看安全恢复和状态
+#### <a name="review-security-resilience-and-posture"></a>查看安全复原能力和态势
 
-每个报告都包括一些图表，这些图表概述了组织对给定威胁的复原能力：
+每个报表都包含图表，这些图表概述了组织对给定威胁的复原能力：
 
-- **安全配置** 状态 — 显示安全设置错误的设备数量。 应用建议的安全设置以帮助缓解威胁。 如果设备已 **应用** 所有跟踪设置，则被视为安全设备。
-- **漏洞修补状态** 显示易受攻击的设备的数量。 应用安全更新或修补程序以解决威胁利用的漏洞。
+- **安全配置状态** - 显示配置错误的安全设置的设备数。 应用建议的安全设置来帮助缓解威胁。 如果设备已应用 _所有_ 跟踪设置，则它们被视为 **安全** 设备。
+- **漏洞修补状态** - 显示易受攻击设备的数量。 应用安全更新或修补程序来解决受威胁利用的漏洞。
 
-#### <a name="view-reports-per-threat-tags"></a>查看每个威胁标记的报告
+#### <a name="view-reports-per-threat-tags"></a>查看每个威胁标记的报表
 
-你可以根据特定威胁标记或报告类型筛选威胁报告列表 (相关) 报告。
+可以根据特定的威胁标记 (类别) 或报表类型筛选威胁报告列表并查看最相关的报表。
 
-- **威胁** 标记 -帮助你根据特定威胁类别查看最相关的报告。 例如，所有与勒索软件相关的报告。
-- **报告** 类型 - 帮助您根据特定报告类型查看最相关的报告。 例如，涵盖工具和技术的所有报告。
-- **筛选器** - 帮助你高效地查看威胁报告列表，并基于特定威胁标记或报告类型筛选视图。 例如，查看与勒索软件类别相关的所有威胁报告或包含漏洞的威胁报告。
+- **威胁标记** - 帮助你根据特定的威胁类别查看最相关的报表。 例如，与勒索软件相关的所有报告。
+- **报表类型** - 帮助你根据特定的报表类型查看最相关的报表。 例如，涵盖工具和技术的所有报表。
+- **筛选器** - 帮助你高效地查看威胁报告列表，并根据特定的威胁标记或报表类型筛选视图。 例如，查看与勒索软件类别相关的所有威胁报告，或涵盖漏洞的威胁报告。
 
 ##### <a name="how-does-it-work"></a>它的工作原理是什么？
 
-Microsoft 威胁智能团队向每个威胁报告添加了威胁标记：
+Microsoft 威胁情报团队已向每个威胁报告添加了威胁标记：
 
-- 现在，有四个威胁标记可用：
+- 现在有四个威胁标记可用：
   - 勒索软件
   - 网络钓鱼
   - 漏洞
   - 活动组
-- 威胁标记在威胁分析页面顶部显示。 每个标记下存在可用报告数量的计数器。
+- 威胁标记显示在威胁分析页面的顶部。 每个标记下的可用报表数都有计数器。
 
   :::image type="content" source="../../media/threat-analytics/ta-threattags-mtp.png" alt-text="威胁标记" lightbox="../../media/threat-analytics/ta-threattags-mtp.png":::
 
-- 该列表也可以按威胁标记排序：
+- 也可以按威胁标记对列表进行排序：
 
   :::image type="content" source="../../media/threat-analytics//ta-taglist-mtp.png" alt-text="&quot;威胁标记&quot;部分" lightbox="../../media/threat-analytics//ta-taglist-mtp.png":::
 
-- 筛选器可用于每个威胁标记和报告类型：
+- 每个威胁标记和报表类型都提供筛选器：
 
   :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp.png" alt-text="&quot;筛选器&quot;页" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
-### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析员报告：从 Microsoft 安全研究人员获取专家见解
+### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>分析师报告：从 Microsoft 安全研究人员获取专家见解
 
-在" **分析员报告** "部分，通读详细的专家撰写。 大多数报告都提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的策略和技术、详细的建议列表和强大的 [威胁](advanced-hunting-overview.md) 搜寻指南。
+在 **"分析师报告** "部分，阅读详细的专家写入。 大多数报告提供攻击链的详细说明，包括映射到 MITRE ATT&CK 框架的战术和技术、详尽的建议列表和强大的 [威胁搜寻](advanced-hunting-overview.md) 指南。
 
-[详细了解分析员报告](threat-analytics-analyst-reports.md)
+[详细了解分析师报告](threat-analytics-analyst-reports.md)
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>相关事件：查看和管理相关事件
 
-" **相关事件** "选项卡提供与跟踪威胁相关的所有事件的列表。 你可以分配事件或管理链接到每个事件的警报。 
+" **相关事件** "选项卡提供与跟踪的威胁相关的所有事件的列表。 可以分配事件或管理链接到每个事件的警报。 
 
 :::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="威胁分析报告的相关事件部分" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 _威胁分析报告的相关事件部分_
 
-### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>影响的资产：获取受影响设备和邮箱的列表
+### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>受影响的资产：获取受影响的设备和邮箱的列表
 
-如果资产受未解决活动警报的影响，则认为资产受到影响。 " **影响的资产"** 选项卡列出了以下类型的受影响资产：
+如果资产受到当前未解析的警报的影响，则会将其视为受影响。 " **受影响的资产** "选项卡列出了以下受影响的资产类型：
 
-- **影响的设备** - 具有未解析的 Microsoft Defender for Endpoint 警报的终结点。 这些警报通常在看到已知威胁指示器和活动时触发。
-- **影响邮箱** - 已接收已触发 Microsoft Defender 进行安全警报Office 365邮箱。 触发警报的多数消息通常会被阻止，但用户或组织级别的策略可以覆盖筛选器。
+- **受影响的设备** - 未解析的终结点Microsoft Defender for Endpoint警报。 这些警报通常在看到已知的威胁指示器和活动时触发。
+- **受影响的邮箱** - 已收到已触发Microsoft Defender for Office 365警报的电子邮件的邮箱。 虽然触发警报的大多数消息通常会被阻止，但用户或组织级别的策略可以替代筛选器。
 
-:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="威胁分析报告的&quot;影响的资产&quot;部分" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="威胁分析报表中受影响的资产部分" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
-_威胁分析报告的"影响的资产"部分_
+_威胁分析报表中受影响的资产部分_
 
-### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>阻止的电子邮件尝试：查看阻止或垃圾邮件威胁电子邮件
+### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>阻止的电子邮件尝试：查看被阻止或被垃圾的威胁电子邮件
 
-Microsoft Defender for Office 365通常阻止具有已知威胁指示器（包括恶意链接或附件）的电子邮件。 在某些情况下，检查可疑内容的主动筛选机制会改为将威胁电子邮件发送到垃圾邮件文件夹。 在任一情况下，威胁在设备上启动恶意软件代码的可能性都降低了。
+Microsoft Defender for Office 365通常会阻止具有已知威胁指示器的电子邮件，包括恶意链接或附件。 在某些情况下，检查可疑内容的主动筛选机制会将威胁电子邮件发送到垃圾邮件文件夹。 在任一情况下，威胁在设备上启动恶意软件代码的几率都会降低。
 
-"**阻止的电子邮件尝试**"选项卡列出了所有在传递之前被阻止或由 Microsoft Defender 发送到垃圾邮件文件夹的电子邮件Office 365。
+"**阻止的电子邮件尝试**"选项卡列出了在送达之前被阻止或通过Microsoft Defender for Office 365发送到垃圾邮件文件夹的所有电子邮件。
 
-:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="威胁分析报告的阻止的电子邮件尝试部分" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="威胁分析报告的阻止电子邮件尝试部分" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
-_威胁分析报告的"阻止的电子邮件尝试"部分_
+_威胁分析报告的阻止电子邮件尝试部分_
 
-### <a name="exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices"></a>曝光和缓解：查看缓解列表和设备的状态
+### <a name="exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices"></a>曝光和缓解措施：查看缓解措施列表和设备状态
 
-在 **"&** 缓解"部分，查看特定可操作建议的列表，这些建议可帮助你提高组织应对威胁的复原能力。 跟踪的缓解列表包括：
+在" **曝光&缓解** "部分中，查看可帮助你提高组织抵御威胁能力的特定可操作建议列表。 跟踪的缓解措施列表包括：
 
-- **安全更新** - 部署在载入的设备上发现漏洞的受支持软件安全更新
+- **安全更新** - 部署在载入设备上发现的漏洞支持的软件安全更新
 - **支持的安全配置**
   - 云端保护  
-  - PUA 保护 (可能不需要) 应用程序
+  - 可能不需要的应用程序 (PUA) 保护
   - 实时保护
 
-本节中的缓解信息包含来自 [危险和漏洞管理 的数据，](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)其中还提供了报告中各个链接的详细深化信息。
+本部分中的缓解信息包含来自[危险和漏洞管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的数据，其中还提供了报表中各个链接的详细向下钻取信息。
 
-:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="显示安全配置详细信息的威胁分析报告的缓解部分" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="威胁分析报告的缓解部分，其中显示了安全配置详细信息" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
-:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp2.png" alt-text="显示漏洞详细信息的威胁分析报告的缓解部分" lightbox="../../media/threat-analytics/ta_mitigations_mtp2.png":::
+:::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp2.png" alt-text="威胁分析报告的缓解部分，其中显示了漏洞详细信息" lightbox="../../media/threat-analytics/ta_mitigations_mtp2.png":::
 
-_威胁&报告的曝光和缓解部分_
+_威胁分析报告&缓解部分曝光_
 
-## <a name="set-up-email-notifications-for-report-updates"></a>设置报告更新的电子邮件通知
+## <a name="set-up-email-notifications-for-report-updates"></a>设置报表更新的电子邮件通知
 
-你可以设置将向您发送威胁分析报告更新的电子邮件通知。
+可以设置电子邮件通知，以便向你发送有关威胁分析报告的更新。
 
 若要为威胁分析报告设置电子邮件通知，请执行以下步骤：
 
-1. 选择 **设置** 边栏中Microsoft 365 Defender"按钮。 Select **Microsoft 365 Defender** from the list of settings.
+1. 在 **Microsoft 365 Defender** 边栏中选择设置。 从设置列表中选择 **Microsoft 365 Defender**。
  
-![Screenshot with "设置" and "Microsoft 365 Defender" both highlighted in red](../../media/threat-analytics/ta_create_notification_0.png)
+!["设置"和"Microsoft 365 Defender"均以红色突出显示的屏幕截图](../../media/threat-analytics/ta_create_notification_0.png)
 
-2. Choose **Email** **notificationsThreat** >  analytics， and select the button， **+ Create a notification rule**. 将出现一个飞出图。
+2. 选择 **"电子邮件通知** > **"，** 然后选择按钮 **"+ 创建通知规则**"。 将显示浮出控件。
 
-![突出显示为红色"+ 创建通知规则"的屏幕截图](../../media/threat-analytics/ta_create_notification_1.png)
+!["+ 创建通知规则"以红色突出显示的屏幕截图](../../media/threat-analytics/ta_create_notification_1.png)
 
-3. 按照该飞出列表中列出的步骤操作。 首先，为新规则命名。 说明字段是可选的，但名称是必需的。 可以使用说明字段下的复选框打开或关闭规则。
-
-> [!NOTE]
-> 新通知规则的名称和说明字段仅接受英文字母和数字。 它们不接受空格、短划线、下划线或其他任何标点符号。
-
-![命名屏幕的屏幕截图，已填写所有字段，并且选中了"打开规则"复选框](../../media/threat-analytics/ta_create_notification_2.png)
-
-4. 选择要通知的报告类型。 您可以选择更新所有新发布的或更新的报告，也可以选择仅更新具有特定标记或类型的报告。
-
-![通知屏幕的屏幕截图，选中勒索软件标记，并打开类型的下拉菜单](../../media/threat-analytics/ta_create_notification_3.png)
-
-5. 添加至少一个收件人以接收通知电子邮件。 您还可以通过发送测试电子邮件，使用此屏幕检查通知的接收方法。
-
-![收件人屏幕的屏幕截图。 列出了 3 个收件人，并且已发送测试电子邮件，如绿色选中标记所指示](../../media/threat-analytics/ta_create_notification_4.png)
-
-6. 查看新规则。 如果要更改任何内容，请选择每个子节末尾的"编辑"按钮。 审阅完成后，选择"创建 **规则"** 按钮。
-
-![评价屏幕的屏幕截图。 编辑按钮以红色突出显示](../../media/threat-analytics/ta_create_notification_5.png)
-
-7. 恭喜！ 已成功创建新规则。 选择" **完成** "按钮以完成该过程并关闭该飞出控件。
-
-![已创建规则屏幕的屏幕截图。 成功创建的规则将在边栏上显示绿色选中标记，在屏幕主区域中显示一个大绿色选中标记](../../media/threat-analytics/ta_create_notification_6.png)
-
-8. 你的新规则现在将显示在威胁分析电子邮件通知列表中。
-
-![屏幕中电子邮件通知规则列表的设置屏幕截图](../../media/threat-analytics/ta_create_notification_7.png)
-
-## <a name="additional-report-details-and-limitations"></a>其他报告详细信息和限制
+3. 按照浮出控件中列出的步骤进行操作。 首先，为新规则命名。 说明字段是可选的，但需要名称。 可以使用说明字段下的复选框打开或关闭规则。
 
 > [!NOTE]
-> 作为统一安全体验的一部分，威胁分析现在不仅适用于 Microsoft Defender for Endpoint，还适用于适用于 Office E5 许可证持有者的 Microsoft Defender。
+> 新通知规则的名称和说明字段仅接受英文字母和数字。 它们不接受空格、短划线、下划线或任何其他标点。
+
+![命名屏幕的屏幕截图，其中填写了所有字段，并选中了"打开规则"复选框](../../media/threat-analytics/ta_create_notification_2.png)
+
+4. 选择要收到通知的报表类型。 可以选择更新所有新发布的或更新的报表，或者仅更新具有特定标记或类型的报表。
+
+![通知屏幕的屏幕截图，其中选择了勒索软件标记，并打开了类型下拉菜单](../../media/threat-analytics/ta_create_notification_3.png)
+
+5. 添加至少一个收件人以接收通知电子邮件。 还可以通过发送测试电子邮件来使用此屏幕来检查通知的接收方式。
+
+![收件人屏幕的屏幕截图。 列出了 3 个收件人，并且已发送测试电子邮件，如绿色复选标记所示](../../media/threat-analytics/ta_create_notification_4.png)
+
+6. 查看新规则。 如果有任何要更改的内容，请选择每个子节末尾的 **"编辑"** 按钮。 审阅完成后，选择 **"创建规则** "按钮。
+
+!["审阅"屏幕的屏幕截图。 编辑按钮以红色突出显示](../../media/threat-analytics/ta_create_notification_5.png)
+
+7. 恭喜！ 新规则已成功创建。 选择 **"完成"** 按钮以完成该过程并关闭浮出控件。
+
+![规则创建屏幕的屏幕截图。 成功创建的规则将沿侧栏显示绿色复选标记，并在屏幕的主区域中显示一个大的绿色复选](../../media/threat-analytics/ta_create_notification_6.png)
+
+8. 新规则现在将显示在威胁分析电子邮件通知列表中。
+
+![设置屏幕中电子邮件通知规则列表的屏幕截图](../../media/threat-analytics/ta_create_notification_7.png)
+
+## <a name="additional-report-details-and-limitations"></a>其他报表详细信息和限制
+
+> [!NOTE]
+> 作为统一安全体验的一部分，威胁分析现在不仅适用于Microsoft Defender for Endpoint，还适用于适用于 Office E5 许可证持有者的 Microsoft Defender。
 >
-> 如果不使用 Microsoft 365 安全门户 (Microsoft 365 Defender) ，还可以在 Microsoft Defender 安全中心 门户 (适用于终结点) 的 Microsoft Defender 中查看报告详细信息 (，而无需使用 Microsoft Defender for Office) 数据。
+> 如果不使用Microsoft 365安全门户 (Microsoft 365 Defender) ，还可以在Microsoft Defender 安全中心门户中看到没有 Microsoft Defender Office数据) 的报表详细信息 ( (Microsoft Defender for Endpoint) 。
 
-若要访问威胁分析报告，你需要某些角色和权限。 有关详细信息[，请参阅基于角色的访问控制中的Microsoft 365 Defender](custom-roles.md)角色。
+若要访问威胁分析报告，需要某些角色和权限。 有关详细信息，请参阅[基于角色的访问控制中的自定义角色Microsoft 365 Defender](custom-roles.md)。
 
-- 若要查看警报、事件或受影响的资产数据，你需要具有 Microsoft Defender for Office 或 Microsoft Defender for Endpoint 警报数据的权限，或同时拥有这两者的权限。
-- 若要查看阻止的电子邮件尝试，你需要拥有 Microsoft Defender 的权限，才能Office数据。
-- 若要查看缓解，你需要具有在 Microsoft Defender for Endpoint 危险和漏洞管理数据的权限。
+- 若要查看警报、事件或受影响的资产数据，需要拥有 Microsoft Defender 的权限来Office或Microsoft Defender for Endpoint警报数据，或者两者兼有。
+- 若要查看阻止的电子邮件尝试，需要有权访问 Microsoft Defender 以Office搜寻数据。
+- 若要查看缓解措施，需要拥有Microsoft Defender for Endpoint中危险和漏洞管理数据的权限。
 
 查看威胁分析数据时，请记住以下因素：
 
-- 图表仅反映跟踪的缓解。 查看报告概述，了解图表中未显示的其他缓解功能。
-- 缓解不保证完全恢复。 提供的缓解反映了改进恢复能力所需的最佳可能操作。
-- 如果设备尚未将数据传输到服务，则被视为"不可用"。
-- 防病毒相关的统计信息基于Microsoft Defender 防病毒设置。 具有第三方防病毒解决方案的设备可能显示为"公开"。
+- 图表仅反映跟踪的缓解措施。 检查报表概述，了解图表中未显示的其他缓解措施。
+- 缓解措施不能保证完全恢复能力。 提供的缓解措施反映了提高复原能力所需的最佳操作。
+- 如果设备尚未将数据传输到服务，则它们将计为"不可用"。
+- 与防病毒相关的统计信息基于Microsoft Defender 防病毒设置。 具有第三方防病毒解决方案的设备可以显示为"公开"。
 
 ## <a name="related-articles"></a>相关文章
 
-- [使用高级搜寻主动查找威胁](advanced-hunting-overview.md)
-- [了解分析员报告部分](threat-analytics-analyst-reports.md)
-- [评估和解决安全漏洞和曝光](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [通过高级搜寻主动查找威胁](advanced-hunting-overview.md)
+- [了解分析师报告部分](threat-analytics-analyst-reports.md)
+- [评估和解决安全漏洞和暴露问题](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

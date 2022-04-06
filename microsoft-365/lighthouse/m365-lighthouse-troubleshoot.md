@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: 对于托管服务提供商 (使用) ，Microsoft 365 Lighthouse帮助排查并解决错误消息和问题。
-ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632352"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645025"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>排查并解决邮件中的问题和Microsoft 365 Lighthouse
 
@@ -54,7 +54,7 @@ ms.locfileid: "64632352"
 **原因：** 你的客户租户不符合以下条件：
 
   - 必须为 Managed Service Provider (MSP) 设置委派访问权限，才能管理客户租户*
-  - 必须至少有一个Microsoft 365 商业高级版、Microsoft 365 E3许可证或Windows 365 商业版许可证
+  - 必须至少有一个Microsoft 365 商业高级版、Microsoft 365 E3或Windows 365 商业版许可证
   - 授权用户不能超过 1000 个 
 
 **解决方法：** 下表介绍了需要操作的不同租户状态，并说明了如何解决这些问题。
@@ -137,4 +137,4 @@ ms.locfileid: "64632352"
 
 [本文Microsoft 365 Lighthouse (](m365-lighthouse-known-issues.md)已知) \
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) \
-[获取本文中有关 Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (的帮助) 
+[获取本文中有关 Microsoft 365 Lighthouse (](m365-lighthouse-get-help-and-support.md)  的帮助) 

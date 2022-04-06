@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何使用负载自动化 (负载收集) 收集并启动 Microsoft Defender for Office 365 计划 2 中攻击模拟培训的自动模拟。
 ms.technology: mdo
-ms.openlocfilehash: 13215b76646c5358bc9a043b91d3dbd403818684
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526300"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468426"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>攻击模拟培训的有效负载自动化
 
@@ -33,7 +33,7 @@ ms.locfileid: "63526300"
 
 2. 在" **负载自动化"** 选项卡上，选择"创建 ![自动化图标"。](../../media/m365-cc-sc-create-icon.png) **创建自动化**。
 
-   ![在 Microsoft 365 Defender 门户中攻击模拟培训中的"负载自动化"选项卡上创建Microsoft 365 Defender按钮。](../../media/attack-sim-training-payload-automations-create.png)
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Microsoft 365 Defender门户中攻击模拟培训中&quot;负载自动化&quot;选项卡上的&quot;创建Microsoft 365 Defender按钮" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. 将打开创建向导。 本文的其余部分介绍了页面及其包含的设置。
 

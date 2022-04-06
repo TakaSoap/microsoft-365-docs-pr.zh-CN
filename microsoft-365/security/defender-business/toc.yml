@@ -3,37 +3,37 @@
   items:
     - name: 概述
       items:
-        - name: 什么是 Microsoft Defender for Business？
+        - name: 什么是Microsoft Defender 商业版？
           href: mdb-overview.md
         - name: 简化的配置过程
           href: mdb-simplified-configuration.md
-        - name: 比较中小型企业计划
+        - name: 比较面向中小型企业的计划
           href: compare-mdb-m365-plans.md
-        - name: 与 Microsoft 365 Lighthouse
+        - name: 与 Microsoft 365 Lighthouse 集成
           href: mdb-lighthouse-integration.md
-    - name: 开始行动
+    - name: 入门
       items:
-        - name: 获取 Defender for Business
+        - name: 获取 Defender 商业版
           href: get-defender-business.md
         - name: 使用安装向导
           href: mdb-use-wizard.md
-        - name: 开始使用门户
+        - name: 开始门户
           href: mdb-get-started.md
         - name: 查看漏洞管理仪表板
           href: mdb-view-tvm-dashboard.md
-        - name: 尝试教程和模拟
+        - name: 试用教程和模拟
           href: mdb-tutorials.md
-    - name: 设置和配置 Defender for Business
+    - name: 设置和配置 Defender 商业版
       items:
         - name: 设置概述
           href: mdb-setup-configuration.md
-        - name: 步骤 1 - 查看要求
+        - name: 第 1 步 - 查看要求
           href: mdb-requirements.md
-        - name: 步骤 2 - 分配角色和权限
+        - name: 第 2 步 - 分配角色和权限
           href: mdb-roles-permissions.md
-        - name: 步骤 3 - 设置电子邮件通知
+        - name: 第 3 步 - 设置电子邮件通知
           href: mdb-email-notifications.md
-        - name: 步骤 4 - 载入设备
+        - name: 第 4 步 - 载入设备
           href: mdb-onboard-devices.md
         - name: 步骤 5 - 配置安全策略
           href: mdb-configure-security-settings.md
@@ -45,7 +45,7 @@
           href: mdb-respond-mitigate-threats.md
         - name: 查看修正操作
           href: mdb-review-remediation-actions.md
-        - name: 查看和使用报告
+        - name: 查看和使用报表
           href: mdb-reports.md
     - name: 管理安全策略
       items:
@@ -67,13 +67,13 @@
           href: mdb-create-edit-device-groups.md
     - name: 参考信息
       items:
-        - name: 如何获取帮助或联系支持人员
+        - name: 如何获取帮助或联系客户服务
           href: mdb-get-help.md
         - name: 常见问题解答
           href: mdb-faq.yml
         - name: 疑难解答
           href: mdb-troubleshooting.yml
         - name: Microsoft 365 商业高级版
-          href: /microsoft-365/business-premium
+          href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

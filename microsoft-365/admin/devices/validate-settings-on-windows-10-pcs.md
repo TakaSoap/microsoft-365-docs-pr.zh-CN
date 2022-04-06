@@ -27,31 +27,31 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何验证Microsoft 365应用保护设置是否对用户的设备Windows 10生效。
-ms.openlocfilehash: be25acb8414705c48a8763a0530ec2a70565de83
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47c220b36050376d1eddf7d83435f175e00f88cb
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313589"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633274"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>验证电脑的设备Windows 10设置
 
 > [!NOTE]
-> 从 2022 年 3 月 1 Microsoft 365 商业高级版 Microsoft Defender for Business 将推出给客户。 此产品/服务为设备提供其他安全功能。 [详细了解 Defender for Business](../../security/defender-business/mdb-overview.md)。
+> Microsoft Defender 商业版 2022 年 3 Microsoft 365 商业高级版 1 开始向客户推出。 此产品/服务为设备提供其他安全功能。 [详细了解 Defender for Business](../../security/defender-business/mdb-overview.md)。
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>验证Windows 10策略是否设置
 
-设置 [设备策略后](protection-settings-for-windows-10-pcs.md)，策略可能需要几个小时才能在用户的设备上生效。 通过查看用户设备上的各个Windows 设置，可以确认策略是否生效。 由于用户无法修改 Windows 更新和Microsoft Defender 防病毒上的 Windows 10 设置，因此许多选项将灰显。
+设置 [设备策略后](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md)，策略可能需要几个小时才能在用户的设备上生效。 通过查看用户设备上的各个Windows 设置，可以确认策略是否生效。 由于用户无法修改 Windows 更新 Microsoft Defender 防病毒设备上Windows 10设置，因此许多选项将灰显。
   
-1. Go to **设置** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out. 
+1. Go to **设置** \> **Update &amp; security** \> **Windows 更新** \> **Restart options** and confirm that all settings are grayed out. 
     
     ![所有"重启"选项都灰显。](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Go to **设置** \> **Update &amp; security Windows** \> **Update** \> **Advanced options** and confirm that all settings are grayed out. 
+2. Go to **设置** \> **Update &amp; security** \> **Windows 更新** \> **Advanced options** and confirm that all settings are grayed out. 
     
     ![Windows高级更新选项全部灰显。](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Go to **设置** \> **Update security &amp;** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
+3. Go to **设置** \> **Update &amp; security** \> **Windows 更新** \> **Advanced options** \> **Choose how updates are delivered**.
     
     确认你能看到红色 (显示) 某些设置被组织隐藏或管理，并且所有选项都显示为灰色。
     
@@ -65,6 +65,7 @@ ms.locfileid: "63313589"
   
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365文档和资源](/admin)\
-[为 PCsTop](protection-settings-for-windows-10-pcs.md)
- [10 Windows 10设置](../security-and-compliance/secure-your-business-data.md)设备配置，以确保Microsoft 365计划的安全
+[Microsoft 365文档和资源](/admin)
+
+[为 PCsTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ [10 Windows 10设置](../../admin/security-and-compliance/secure-your-business-data.md)设备配置，以确保Microsoft 365计划的安全

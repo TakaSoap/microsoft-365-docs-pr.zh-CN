@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 381b9cafe50f8a9aa3788e17668d642b291d5279
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 351c0842de5bd4483ad594ad628e119b00437aa6
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594853"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638215"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -36,10 +36,10 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 | ![数据泄漏图标。](../media/ir-risk-data-spillage.png)| 数据泄漏 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | !["违反保密性"图标。](../media/ir-risk-confidentiality-violations.png)| 违反保密规定 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 | ![IP 盗窃图标。](../media/ir-risk-ip-theft.png)| IP 盗窃 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
-| ![工作场所暴力图标。](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![工作场所暴力图标。](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![支持](../media/check-mark.png) |  |  |  |
 | ![欺诈/欺诈图标。](../media/ir-risk-fraud.png)| 欺诈 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | ![策略违反图标。](../media/ir-risk-policy-violations.png)| 策略违反 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| ![预览体验成员交易/握手图标。](../media/ir-risk-insider-trading.png)| 内幕交易 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![预览体验成员交易/握手图标。](../media/ir-risk-insider-trading.png)| 内幕交易 | ![支持](../media/check-mark.png) |  |  |  |
 | !["利益冲突"图标。](../media/ir-risk-conflicts-of-interest.png)| 冲突 | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |  |
 | ![敏感数据泄露/设备图标。](../media/ir-risk-sensitive-data-leaks.png)| 敏感数据泄露 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | ![工作场所暴力/人员图标。](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![受支持](../media/check-mark.png) |  |  |  |
@@ -67,9 +67,9 @@ Microsoft 365风险防护功能已设计为内置于我们的内部风险产品�
 
 以下订阅中提供内部风险管理：
 
-- Microsoft 365 E5/A5/G5 订阅 (付费或试用版) 
-- Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
-- Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
+- Microsoft 365 E5/A5/F5/G5 订阅 (付费或试用版) 
+- Microsoft 365 E3/A3/F3/G3 订阅 + Microsoft 365 E5/A5/F5/G5 合规性加载项
+- Microsoft 365 E3/A3/F3/G3 订阅 + Microsoft 365 E5/A5/F5/G5 Insider Risk Management 加载项
 - Office 365 E3 订阅 + 企业移动性和安全性 E3 + Microsoft 365 E5 合规加载项
 
 ### <a name="information-barriers"></a>信息屏障

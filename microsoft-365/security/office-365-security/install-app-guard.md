@@ -16,16 +16,16 @@ ms.collection: M365-security-compliance
 description: 获取基于硬件的最新隔离。 防止当前和新出现的攻击（如攻击或恶意链接）干扰员工工作效率和企业安全。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da61ee2f5e29501e033ad44bc3fdb04ee2c042f0
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1a8f752fd05499c9fec0d0c337c9ffee430f154f
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473312"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638062"
 ---
 # <a name="application-guard-for-office-for-admins"></a>适用于管理员Office应用程序防护
 
-**适用于：** Word、Excel、Microsoft 365 专属 PowerPoint、Windows 10 企业版、Windows 11 Enterprise
+**适用于：** Word、Excel、Microsoft 365 专属 PowerPoint、Windows 10 企业版、Windows 11 企业版
 
 Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助于防止不受信任的文件访问受信任的资源，使企业安全不受新的和新出现的攻击。 本文将指导管理员设置设备，预览适用于Office。 它提供有关在设备上启用应用程序防护的系统要求Office安装步骤的信息。
 
@@ -51,7 +51,7 @@ Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助�
 * Microsoft 365 E5 或 Microsoft 365 E5 安全性
 
 > [!NOTE]
-> Microsoft 365 企业应用版基于设备的许可证的许可证无法访问应用程序防护Office。
+> Microsoft 365 企业应用版计算机激活或基于设备的许可时，用户无法访问应用程序防护Office。
 
 ## <a name="deploy-application-guard-for-office"></a>部署应用程序防护Office
 
@@ -188,13 +188,13 @@ Office支持以下策略，以便你可以配置应用程序防护的Office。 �
 
 ## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>与 Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365
 
-适用于 Office 应用程序防护与 Microsoft Defender for Endpoint 集成，以提供对隔离环境中发生的恶意活动的监视和警报。
+应用程序防护Office集成Microsoft Defender for Endpoint，以提供对隔离环境中发生的恶意活动的监视和警报。
 
-[保险箱 Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) 中的文档是一项使用 Microsoft Defender for Endpoint 扫描在应用程序防护中打开的文档Office。 对于另一层保护，用户无法离开应用程序防护Office直到确定扫描结果。
+[保险箱 Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) 中的文档是一项功能，Microsoft Defender for Endpoint应用程序防护中打开的文档进行Office。 对于另一层保护，用户无法离开应用程序防护Office直到确定扫描结果。
 
-Microsoft Defender for Endpoint 是一个安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 有关此平台的更多详细信息，请参阅 [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要了解有关将设备载入此平台的信息，请参阅 [将设备载入到 Microsoft Defender for Endpoint 服务](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
+Microsoft Defender for Endpoint是一个安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 有关此平台的更多详细信息[，请参阅Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要了解有关将设备载入此平台的信息，请参阅[将设备载入到 Microsoft Defender for Endpoint 服务](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
-还可以将 Microsoft Defender 配置为Office 365 Defender for Endpoint 使用。 有关详细信息，请参阅集成 [Defender for Office 365 Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)。
+还可以配置Microsoft Defender for Office 365 Defender for Endpoint。 有关详细信息，请参阅将Defender for Office 365[与Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="limitations-and-considerations"></a>限制和注意事项
 
@@ -241,5 +241,5 @@ Microsoft Defender for Endpoint 是一个安全平台，旨在帮助企业网络
 * 不受支持的文件类型保护策略的默认设置是阻止打开加密的不受信任的文件类型，或阻止 IRM (信息权限管理) 文件类型。 这包括具有使用加密Microsoft 信息保护或高度机密 (敏感度标签) 。
 * 目前不支持 CSV 和 HTML 文件。
 * 应用程序防护Office NTFS 压缩卷。 如果看到错误"ERROR_VIRTUAL_DISK_LIMITATION"，请尝试解压缩卷。
-* 更新 .NET 可能会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请通过尝试在沙盒中打开或[Windows Defender 应用程序防护Windows错误消息](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)。
+* 更新 .NET 可能会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请[通过尝试打开或](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)打开 Windows Defender 应用程序防护 Windows 沙盒。
 * 有关详细信息[，请参阅常见问题 - Microsoft Defender 应用程序防护。](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

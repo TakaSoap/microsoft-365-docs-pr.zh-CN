@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 246fd5ca880ca2d7e187283d06f19d071f5d7e0e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682011"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468514"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity 传感器运行状况和Microsoft 365 Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "63682011"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
-    ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="&quot;标识&quot;页上的设置选项" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. 选择 **"传感器"** 页，其中显示所有 Defender for Identity 传感器。 对于每个传感器，你将看到其名称、域成员身份、版本号、如果更新应延迟、服务状态、更新状态、运行状况状态、运行状况问题数以及创建传感器的时间。
 
@@ -45,7 +45,7 @@ ms.locfileid: "63682011"
 
     [![传感器筛选器。](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
-    ![已筛选传感器。](../../media/defender-identity/filtered-sensor.png)
+    :::image type="content" source="../../media/defender-identity/filtered-sensor.png" alt-text="Filtered 传感器" lightbox="../../media/defender-identity/filtered-sensor.png":::
 
 1. 如果选择其中一个传感器，将显示一个窗格，其中显示有关该传感器及其运行状况状态的信息。
 
@@ -53,17 +53,18 @@ ms.locfileid: "63682011"
 
 1. 如果您选择任何运行状况问题，您将获得一个包含有关这些问题的更多详细信息的窗格。 如果您选择已关闭的问题，可以从此处重新打开它。
 
-    ![问题详细信息。](../../media/defender-identity/issue-details.png)
+   :::image type="content" source="../../media/defender-identity/issue-details.png" alt-text="问题详细信息" lightbox="../../media/defender-identity/issue-details.png":::
+    
 
 1. 如果选择" **管理传感器"**，将打开一个窗格，您可以在其中配置传感器详细信息。
 
-    ![管理传感器。](../../media/defender-identity/manage-sensor.png)
+   :::image type="content" source="../../media/defender-identity/manage-sensor.png" alt-text="管理传感器选项" lightbox="../../media/defender-identity/manage-sensor.png":::
 
-    ![配置传感器详细信息。](../../media/defender-identity/configure-sensor-details.png)
+   :::image type="content" source="../../media/defender-identity/configure-sensor-details.png" alt-text="配置传感器设置的页面" lightbox="../../media/defender-identity/configure-sensor-details.png":::
 
 1. 在 **"传感器"** 页中，可以通过选择"导出"将传感器列表导出.csv **文件。**
 
-    ![导出传感器列表。](../../media/defender-identity/export-sensors.png)
+   :::image type="content" source="../../media/defender-identity/export-sensors.png" alt-text="传感器的导出列表" lightbox="../../media/defender-identity/export-sensors.png":::
 
 ## <a name="add-a-sensor"></a>添加传感器
 
@@ -71,11 +72,11 @@ ms.locfileid: "63682011"
 
 1. 选择 **"添加传感器"**。
 
-    ![添加传感器。](../../media/defender-identity/add-sensor.png)
+   :::image type="content" source="../../media/defender-identity/add-sensor.png" alt-text="添加传感器选项" lightbox="../../media/defender-identity/add-sensor.png":::
 
 1. 将打开一个窗格，为您提供下载传感器安装程序的按钮和生成的访问密钥。
 
-    ![下载安装程序和访问键。](../../media/defender-identity/installer-access-key.png)
+   :::image type="content" source="../../media/defender-identity/installer-access-key.png" alt-text="用于下载安装程序并重新生成密钥的选项" lightbox="../../media/defender-identity/installer-access-key.png":::
 
 1. 选择 **"下载** 安装程序"以本地保存程序包。 zip 文件包括以下文件：
 

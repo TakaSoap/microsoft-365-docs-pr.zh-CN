@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7ff7a98e8550996068686b5b0805ea3a72cd6ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325315"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468558"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
@@ -42,7 +42,7 @@ ms.locfileid: "63325315"
 > [!TIP]
 > 若要获取有关新漏洞事件的电子邮件，请参阅在 [Microsoft Defender for Endpoint 中配置漏洞电子邮件通知](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>如何工作
 
 组织的每台设备都基于三个重要因素进行评分，以帮助客户在正确的时间专注于正确的内容。
 
@@ -70,7 +70,8 @@ ms.locfileid: "63325315"
 
 在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板，以查看[](tvm-dashboard-insights.md)你的曝光分数与[你的 Microsoft 设备安全分数并排](tvm-microsoft-secure-score-devices.md)显示。[](tvm-exposure-score.md) 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
 
-![顶级安全建议卡片示例，具有四个安全建议。](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="顶级安全建议卡片" lightbox="images/top-security-recommendations350.png":::
+
 
 顶级安全建议列出了根据上一节中提到的重要因素（威胁、被泄露的可能性和价值）确定优先级的改进机会。 选择一个建议将你访问包含更多详细信息的安全建议页面。
 
@@ -83,7 +84,7 @@ ms.locfileid: "63325315"
 > [!NOTE]
 > 威胁漏洞管理显示最多 **30** 天之前使用的设备。 这不同于适用于终结点的 Microsoft Defender 的其余部分，如果设备已使用超过 7 天，则设备处于"非活动"状态。
 
-![安全建议登录页面示例。](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="安全建议登录页面" lightbox="images/tvmsecrec-updated.png":::
 
 ### <a name="icons"></a>图标
 
@@ -97,7 +98,7 @@ ms.locfileid: "63325315"
 
 选择要调查或处理的安全建议。
 
-:::image type="content" alt-text="安全建议飞出页的示例。" source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="安全建议飞出页" lightbox="images/secrec-flyouteolsw.png":::
 
 从飞出菜单，可以选择以下任一选项：
 
@@ -140,7 +141,7 @@ ms.locfileid: "63325315"
 
 选择要创建例外的安全建议，然后选择" **例外选项"**。
 
-![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="安全建议飞出控件中的例外选项按钮" lightbox="images/tvm-exception-options.png":::
 
 填写表单并提交。 若要查看当前 (和过去) 的所有异常，请导航到"威胁 & 漏洞管理"菜单下的 [](tvm-remediation.md)"修正 **"** 页并选择"异常 **"选项卡。** 详细了解如何创建 [异常](tvm-exception.md#create-an-exception)
 
@@ -152,7 +153,7 @@ ms.locfileid: "63325315"
 
 2. 选择要报告的安全建议旁边的三个点，然后选择"报告 **不准确"**。
 
-    ![显示"报告不准确"按钮在安全建议飞出控件中。](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="&quot;报告不准确&quot;按钮" lightbox="images/report-inaccuracy500.png":::
 
 3. 从弹出窗格中，从下拉菜单中选择不准确类别，填写您的电子邮件地址和有关不准确的详细信息。
 

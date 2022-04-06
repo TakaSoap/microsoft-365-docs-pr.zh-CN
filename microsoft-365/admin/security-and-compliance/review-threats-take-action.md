@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何在设备上查看和管理由Microsoft Defender 防病毒检测到Windows 10威胁。
-ms.openlocfilehash: e0e0613ad7805b8c4bde221aa2192c788fb75106
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c836554445f56a9a915885d55a4490c6bb5bd1a9
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324279"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633207"
 ---
 # <a name="review-detected-threats-and-take-action"></a>查看检测到的威胁并执行操作
 
@@ -32,7 +32,7 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 - 网络钓鱼尝试
 - 数据盗窃尝试
 
-作为 IT 专业人员/管理员，你可以查看有关在 Windows 10 [Intune](/mem/intune/enrollment/device-enrollment) 中注册的跨设备的威胁检测Microsoft 365 管理中心。 你将看到摘要信息，例如：
+作为 IT 专业人员/管理员，你可以查看有关在 Windows 10 中注册的跨 Windows 10 设备[Intune威胁Microsoft 365 管理中心](/mem/intune/enrollment/device-enrollment)。 你将看到摘要信息，例如：
 
 - 需要防病毒保护的设备数
 - 多少设备不符合安全策略
@@ -86,7 +86,7 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 
 ## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>管理威胁检测Microsoft Endpoint Manager
 
-可以使用安全Microsoft Endpoint Manager威胁检测。 Windows 10设备必须在 [Intune](/mem/intune/enrollment/windows-enrollment-methods) 中注册 (部分Microsoft Endpoint Manager) 。
+可以使用安全Microsoft Endpoint Manager威胁检测。 Windows 10设备必须[注册到Intune (](/mem/intune/enrollment/windows-enrollment-methods)部分Microsoft Endpoint Manager) 。
 
 1. 转到管理Microsoft Endpoint Manager中心，<a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a>然后登录。
 
@@ -105,7 +105,7 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 | Restart | 强制Windows 10设备在五分钟内重启。<br><br>**重要提示：** 设备所有者或用户不会自动收到重启通知，并且可能会丢失未保存的工作。 |
 | 快速扫描 | 在设备上启动快速防病毒扫描，重点关注可能注册恶意软件的常见位置，例如注册表项和启动Windows已知位置。 结果将发送到[Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
 | 完整扫描 | 在设备上启动完全防病毒扫描，重点关注可能注册恶意软件的常见位置，包括设备上每个文件和文件夹。 结果将发送到[Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
-| 同步 | 需要设备签入 Intune (部分Microsoft Endpoint Manager) 。 当设备进行检查时，设备会收到分配给该设备的任何挂起的操作或策略。 |
+| 同步 | 需要使用设备签入Intune (部分Microsoft Endpoint Manager) 。 当设备进行检查时，设备会收到分配给该设备的任何挂起的操作或策略。 |
 | 更新签名 | 需要设备获取 [防病毒和](https://go.microsoft.com/fwlink/?linkid=2149926) 反恶意软件保护的安全智能更新。 |
 
 > [!TIP]
@@ -117,6 +117,6 @@ Microsoft Defender 防病毒检测并防范以下类型的威胁：
 
 ## <a name="see-also"></a>另请参阅
 
-[保护业务Microsoft 365的十大方法](secure-your-business-data.md)
+[保护业务Microsoft 365的十大方法](../../admin/security-and-compliance/secure-your-business-data.md)
 
-[Microsoft Defender for Business (](../../security/defender-business/mdb-overview.md) Defender for Business 概述从 2022 年 3 月 1 Microsoft 365 商业高级版起向客户推出) 
+[从](../../security/defender-business/mdb-overview.md) 2022 Microsoft Defender 商业版 (2022 年 3 月 1 Microsoft 365 商业高级版，) 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14c759cd243b8da9f338b777e430d4de9f735fc1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 24840353f14024817d61fee31841b257ada206f8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498904"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468602"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows载入 Microsoft Defender for Endpoint 服务
 
@@ -96,8 +96,8 @@ Defender for Endpoint 扩展支持，还包括 Windows Server 操作系统。 �
 
 |服务器版本|AV|EDR|
 |----|----|----|
-|Windows Server 2012 R2 SP1|![能。](images/svg/check-yes.svg)|![能。](images/svg/check-yes.svg)|
-|Windows Server 2016|内置|![能。](images/svg/check-yes.svg)|
+|Windows Server 2012 R2 SP1|![是。](images/svg/check-yes.svg)|![是。](images/svg/check-yes.svg)|
+|Windows Server 2016|内置|![是。](images/svg/check-yes.svg)|
 |Windows Server 2019 或更高版本|内置|内置|
 
 如果之前已使用 MMA 载入服务器，请按照服务器迁移中提供的指南迁移到新[](server-migration.md)解决方案。
@@ -403,8 +403,8 @@ Windows Server 2019 和 Windows Server 2022 到 Microsoft Endpoint Manager的载
 - 卸载 MMA 代理
 - 删除 Defender for Endpoint 工作区配置
 
-> [!NOTE]
-> 如果你运行的是适用于需要 MMA 的 Windows Server 2016 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些载出说明也适用。 有关迁移到新的统一解决方案的说明，请参阅 [Microsoft Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
+>[!NOTE]
+> 如果你运行的是适用于需要 MMA 的 Windows Server 2016 Windows Server 2012 R2 的 Microsoft Defender for Endpoint，则适用于其他 Windows 服务器版本的这些载出说明也适用。 有关迁移到新的未关注解决方案的说明，请参阅 [Microsoft Defender for Endpoint 中的服务器迁移方案](/microsoft-365/security/defender-endpoint/server-migration)。
 
 ## <a name="related-topics"></a>相关主题
 

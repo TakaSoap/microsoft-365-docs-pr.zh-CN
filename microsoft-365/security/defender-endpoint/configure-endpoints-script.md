@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6abd2c26f8557277b4c1b13e5189a42fea9a60f1
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1ea1661a89585d46aa5fc234f6f88be66512c1be
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61943384"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468690"
 ---
 # <a name="onboard-windows-devices-using-a-local-script"></a>使用本地脚本载入 Windows 设备
 
@@ -43,43 +43,43 @@ ms.locfileid: "61943384"
 > 此设置用于评估目的，通常不用于生产部署。 出于此原因，存在对环境的影响问题，因此我们建议将使用本地脚本的部署数限制在 10 个。
 > 如果要按前面所述部署到生产环境，请使用其他部署选项，如组[](configure-endpoints.md)策略或Microsoft Endpoint Configuration Manager。
 
-请查看[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)或[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。 
+请查看 [PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)[Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。 
 
 ## <a name="onboard-devices"></a>载入设备 
 
-1.  打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
+1.  打开 GP 配置包.zip文件 (WindowsDefenderATPOnboardingPackage.zip *)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
 
-    1. 在导航窗格中，选择 **"设置**  >  **终结点**  >  **设备管理**  >  **载入"。**
+    1. 在导航窗格中，**选择"设置** > **EndpointsDevice** >  **managementOnboarding** > "。
 
 
-请查看[PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)或[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 的各种路径。
+请查看 [PDF 或](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)查看部署 Defender for Endpoint 中的各种路径。
 
-1. 打开 GP 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
-    1. 在导航窗格中，**选择"设置** \> **终结点** \> **设备管理** \> **载入"。**
+1. 打开 GP 配置包.zip文件 (WindowsDefenderATPOnboardingPackage.zip *)* 从服务载入向导下载的内容。 还可以从应用门户获取<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender包</a>：
+    1. 在导航窗格中，选择"**设置** \> **终结点设备** \> **管理** \> **载入"**。
     2. 选择Windows 10或Windows 11操作系统。
-    3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
+    3. 在" **部署方法"** 字段中，选择" **本地脚本"**。
     4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将配置包的内容解压缩到设备上要载入 (，例如桌面) 。 你应该有一个名为 *WindowsDefenderATPLocalOnboardingScript.cmd 的文件*。
+2. 将配置包的内容解压缩到你想要载入 (的位置，例如桌面) 。 你应该有一个名为 *WindowsDefenderATPLocalOnboardingScript.cmd 的文件*。
 
 3. 在设备上打开提升的命令行提示符并运行脚本：
    1. 转到“**开始**”并键入“**cmd**”。
    2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-    ![指向"开始"菜单以管理员角色运行"的窗口。](images/run-as-admin.png)
+    :::image type="content" source="images/run-as-admin.png" alt-text="指向&quot;开始&quot;菜单管理员运行&quot;窗口&quot;" lightbox="images/run-as-admin.png":::
 
-4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
+4.  键入脚本文件的位置。 如果将文件复制到桌面，请键入： *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
-5.  按 **Enter 键** 或单击"确定 **"。**
+5.  按 **Enter** 键或单击"确定 **"**。
 
-若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅 Microsoft [Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)。
+若要了解如何手动验证设备是否合规并正确报告传感器数据，请参阅 [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)。
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint 终结点](run-detection-test.md)运行检测测试。
 
 ## <a name="configure-sample-collection-settings"></a>配置示例集合设置
 
-对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 请求提交文件进行深入分析时，是否可以从设备收集示例。
+对于每个设备，你可以设置一个配置值，以指示当通过 Microsoft 365 Defender 提交文件进行深入分析时是否可以从设备收集示例。
 
 可以通过使用 *regedit* 或创建并运行 .reg 文件，在设备上手动配置 *示例共享* 设置。
 
@@ -100,7 +100,7 @@ Value: 0 or 1
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>运行检测测试以验证载入
 
-载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
+载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md) 设备运行检测测试。
 
 ## <a name="offboard-devices-using-a-local-script"></a>使用本地脚本的载出设备
 
@@ -110,22 +110,22 @@ Value: 0 or 1
 > 不得同时在同一设备上部署载入和载出策略，否则将导致不可预知的冲突。
 
 1. 从门户获取Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">包</a>：
-    1. 在导航窗格中，选择 **"设置** \> **终结点** \> **设备管理** \> **""载出"。**
+    1. 在导航窗格中，选择"**设置** \> **终结点设备** \> **管理** \> **""载出"**。
     2. 选择Windows 10或Windows 11操作系统。
-    3. 在"**部署方法"** 字段中，选择"**本地脚本"。**
+    3. 在" **部署方法"** 字段中，选择" **本地脚本"**。
     4. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
+2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 3. 在设备上打开提升的命令行提示符并运行脚本：
    1. 转到“**开始**”并键入“**cmd**”。
    2. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
-        ![指向"开始"菜单以管理员角色运行"的窗口。](images/run-as-admin.png)
+      :::image type="content" source="images/run-as-admin.png" alt-text="The Windows &quot;开始&quot;菜单 pointing to the Run as administrator option" lightbox="images/run-as-admin.png":::
 
-4. 键入脚本文件的位置。 如果将文件复制到桌面，请键入 *：%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
+4. 键入脚本文件的位置。 如果将文件复制到桌面，请键入： *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
-5. 按 **Enter 键** 或单击"确定 **"。**
+5. 按 **Enter** 键或单击"确定 **"**。
 
 > [!IMPORTANT]
 > "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
@@ -139,7 +139,7 @@ Value: 0 or 1
 ### <a name="monitor-devices-using-the-portal"></a>使用门户监视设备
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender门户</a>。
-2. 单击 **"设备清单"。**
+2. 单击 **"设备清单"**。
 3. 验证设备是否显示。
 
 ## <a name="related-topics"></a>相关主题

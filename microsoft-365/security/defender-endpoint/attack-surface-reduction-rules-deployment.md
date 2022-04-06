@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 50b22bc5d1cf81754cc690808d67b6026991e296
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682165"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468834"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>ASR 规则部署先决条件
 
@@ -122,7 +122,7 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 与任何可能会影响业务线操作的新、大规模实施一样，在规划和实施时一定有条理。 由于 ASR 规则在阻止恶意软件方面具有强大的功能，因此需要仔细规划和部署这些规则，以确保它们最适合您独特的客户工作流。 若要在环境中工作，您需要仔细规划、测试、实施和操作 ASR 规则。  
 
 > [!div class="mx-imgBorder"]
-> ![ASR 规则部署阶段](images/asr-rules-deployment-phases.png)
+> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="ASR 规则部署阶段" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
 >对于使用非 Microsoft HIPS 并且正在过渡到 Microsoft Defender for Endpoint 攻击面减少规则的客户：Microsoft 建议客户在从审核模式转移到阻止模式之前，并行运行其 HIPS 解决方案及其 ASR 规则部署。 请记住，您必须联系第三方防病毒供应商，获得排除建议。  

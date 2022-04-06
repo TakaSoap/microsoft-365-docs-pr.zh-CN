@@ -27,18 +27,22 @@ search.appverid:
 - MOE150
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，你可以选择使用自己拥有的域，也可以在注册期间购买一个域。
-ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 791f719f50809f2aa178ca2ab72471aea534e111
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421398"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638018"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>使用新域或现有域设置 Microsoft 365 商业标准版
 
 购买 Microsoft 365 商业标准版时，你可以选择添加自己拥有的域，也可以购买一个域。 查看 [注册 Microsoft 365 商业标准版订阅](../simplified-signup/signup-business-standard.md)。
 
 在本文中，我们将引导你完成添加已拥有的现有域或购买新域的步骤。 如果你在注册时购买了新域，则域已全部设置好，你可以继续[添加用户并分配许可证](#add-users-and-assign-licenses)。
+
+## <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="before-you-begin"></a>开始之前
 

@@ -17,22 +17,22 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: 对于托管服务提供商 (MSP) ，Microsoft 365 Lighthouse如何在一个位置保护和管理客户租户。
-ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494466"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645047"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>概述Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。 
+Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版、Microsoft 365 E3)  (或Windows 365 商业版。 
 
-Lighthouse 通过推荐为 SMB 客户定制的安全配置基线，并跨所有客户环境提供多租户视图，简化了 Microsoft 365 商业高级版 和 Microsoft 365 E3 租户的载入过程。 借助 Lighthouse，MSP 可以扩展其客户的管理，关注最重要的内容，快速查找和调查风险，并采取措施使客户进入健康、安全的状态。
+Lighthouse 通过推荐为 SMB 客户定制的安全配置基线，并跨所有客户环境提供多租户视图，简化了 Microsoft 365 商业高级版、Microsoft 365 E3 和 Windows 365 商业版 租户的载入过程。 借助 Lighthouse，MSP 可以扩展其客户的管理，关注最重要的内容，快速查找和调查风险，并采取措施使客户进入健康、安全的状态。
 
-使用 Lighthouse 管理 Microsoft 365 和连接的设备不会增加任何成本。 Lighthouse 适用于注册 云解决方案提供商 (CSP) 计划，并可以使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅为 SMB 客户提供服务。
+使用 Lighthouse 管理 Microsoft 365 和连接的设备不会增加任何成本。 Lighthouse 适用于注册 云解决方案提供商 (CSP) 计划并拥有 Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版 订阅的 SMB 客户。
 
-Microsoft 云解决方案提供商频道合作伙伴（支持客户使用 Microsoft 365 商业高级版 或 Microsoft 365 E3使用 Lighthouse）。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商或分销商 (交易) 。 
+支持客户使用 Lighthouse Microsoft 365 商业高级版、Microsoft 365 E3 或 Windows 365 商业版 使用 Lighthouse。 这包括云解决方案提供商合作伙伴直接与 Microsoft 交易，以及通过间接提供商或分销商 (交易) 。 
 
 > [!IMPORTANT] 
 > 若要使用 Lighthouse，MSP 及其客户租户必须满足这些要求Microsoft 365 Lighthouse[要求](m365-lighthouse-requirements.md)。     
@@ -68,4 +68,4 @@ Lighthouse 可帮助 MSP 通过Microsoft 365保护和管理连接的服务和连
 [Microsoft 365 Lighthouse文章 (](m365-lighthouse-tenants-page-overview.md)租户页面)    
 [Microsoft 365 Lighthouse设备合规性页面概述 (](m365-lighthouse-device-compliance-page-overview.md)文章)    
 [Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章)    
-[Microsoft Defender for Business](../security/defender-business/index.yml) (链接页) 
+[Microsoft Defender 商业版](../security/defender-business/index.yml) (页面) 

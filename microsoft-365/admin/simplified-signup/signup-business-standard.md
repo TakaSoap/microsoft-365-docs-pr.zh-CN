@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 购买Microsoft 365 商业标准版并设置您的组织。
-ms.openlocfilehash: 596b04f9a5a7dfe515b40766e29b7d19a8eedb54
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: b72a0b2c1024690813ea697978c23b07d9a801d4
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568631"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638040"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>注册 Microsoft 365 商业标准版订阅
 
@@ -36,6 +36,10 @@ ms.locfileid: "64568631"
 
 > [!IMPORTANT]
 > Microsoft 365 商业标准版订阅供商业使用，适用于企业和企业客户。
+
+## <a name="sign-up-for-microsoft-365-for-business"></a>注册Microsoft 365企业
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ## <a name="sign-up-steps"></a>注册步骤
 

@@ -18,12 +18,12 @@ ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e8a1e08242ab3f884115c414f8a1ba80f5f2aa17
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: be29874a087936c7131492bde1a3f541e7d00f43
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507068"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645069"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender 防病毒安全产品的兼容性
 
@@ -89,17 +89,17 @@ Microsoft Defender 防病毒自动安装在运行以下版本的 Windows：
 | Windows 版本   | 防病毒/反恶意软件解决方案  | 已载入 <br/> 适用于终结点的 Defender？ | Microsoft Defender 防病毒状态     |
 |:------|:------|:-------|:-------|
 | Windows 10 <br/> Windows 11| Microsoft Defender 防病毒 | 是  | 主动模式 | 
-| Windows 10 <br/> Windows 11 | Microsoft Defender 防病毒 | 否   | 主动模式 |
+| Windows 10 <br/> Windows 11 | Microsoft Defender 防病毒 | 不支持   | 主动模式 |
 | Windows 10 <br/> Windows 11  | 非 Microsoft 防病毒/反恶意软件解决方案 | 是  | 被动模式 (自动)  |
-| Windows 10 <br/> Windows 11  | 非 Microsoft 防病毒/反恶意软件解决方案 | 否   | 禁用模式 (自动)     |
+| Windows 10 <br/> Windows 11  | 非 Microsoft 防病毒/反恶意软件解决方案 | 不支持   | 禁用模式 (自动)     |
 | Windows Server 2022 <br/> Windows Server 2019 <br/>Windows Server 版本 1803 或更高版本  | Microsoft Defender 防病毒  | 是 |         主动模式  |
-| Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server 版本 1803 或更高版本   | Microsoft Defender 防病毒 | 否  | 主动模式 |
+| Windows Server 2022 <br/> Windows Server 2019 <br/> Windows Server 版本 1803 或更高版本   | Microsoft Defender 防病毒 | 不支持  | 主动模式 |
 | Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server 版本 1803 或更高版本  | 非 Microsoft 防病毒/反恶意软件解决方案 | 是  | Microsoft Defender 防病毒必须设置为被动模式， (手动<sup>) [[2](#fn2)]<sup>  | 
-| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server 版本 1803 或更高版本  | 非 Microsoft 防病毒/反恶意软件解决方案 | 否  | Microsoft Defender 防病毒手动禁用 ([<sup>3]) 禁用[该设置](#fn3)<sup></sup>  |
+| Windows Server 2022 <br/> Windows Server 2019 <p> Windows Server 版本 1803 或更高版本  | 非 Microsoft 防病毒/反恶意软件解决方案 | 不支持  | Microsoft Defender 防病毒手动禁用 ([<sup>3]) 禁用[该设置](#fn3)<sup></sup>  |
 | Windows Server 2016 <br/> Windows Server 2012 R2   | Microsoft Defender 防病毒 | 是 | 主动模式 |
-|Windows Server 2016 <br/> Windows Server 2012 R2  | Microsoft Defender 防病毒 | 否 | 主动模式 |
+|Windows Server 2016 <br/> Windows Server 2012 R2  | Microsoft Defender 防病毒 | 不支持 | 主动模式 |
 | Windows Server 2016 <br/> Windows Server 2012 R2  | 非 Microsoft 防病毒/反恶意软件解决方案 | 是 | Microsoft Defender 防病毒必须设置为被动模式， (手动<sup>) [[2](#fn2)]<sup> |
-|Windows Server 2016 <br/> Windows Server 2012 R2  | 非 Microsoft 防病毒/反恶意软件解决方案 | 否 | Microsoft Defender 防病毒手动禁用 ([<sup>3]) 禁用[该设置](#fn3)<sup> |
+|Windows Server 2016 <br/> Windows Server 2012 R2  | 非 Microsoft 防病毒/反恶意软件解决方案 | 不支持 | Microsoft Defender 防病毒手动禁用 ([<sup>3]) 禁用[该设置](#fn3)<sup> |
 
  (<a id="fn2">2</a>) 在 Windows Server 2019、Windows Server 版本 1803 或更高版本、Windows Server 2016 或 Windows Server 2012 R2 上，安装非 Microsoft 防病毒时，Microsoft Defender 防病毒 不会自动进入被动模式product。 在这种情况下，将Microsoft Defender 防病毒设置为被动模式，以防止在服务器上安装多个防病毒产品导致的问题。 可以使用 PowerShell Microsoft Defender 防病毒或注册表项组策略被动模式。 
 
@@ -161,7 +161,7 @@ Defender for Endpoint 影响Microsoft Defender 防病毒在被动模式下运行
 
  (<a id="fn5">5</a>) 当Microsoft Defender 防病毒处于被动模式时，不会计划扫描。
 
- (<a id="fn6">6</a>) 当Microsoft Defender 防病毒处于被动模式时，它不会修正威胁。 但是，可以通过终结点检测和响应功能在阻止模式下[ (EDR) 威胁。](edr-in-block-mode.md) 在这种情况下，你可能会看到警报，Microsoft Defender 防病毒源，即使Microsoft Defender 防病毒处于被动模式。
+ (<a id="fn6">6</a>) 当Microsoft Defender 防病毒处于被动模式时，它不会修正威胁。 但是，可以在阻止模式下通过终结点检测和[响应 (EDR) 修复威胁](edr-in-block-mode.md)。 在这种情况下，你可能会看到警报，Microsoft Defender 防病毒源，即使Microsoft Defender 防病毒处于被动模式。
 
 > [!NOTE]
 > [Microsoft 365处于](/microsoft-365/compliance/endpoint-dlp-learn-about)主动或被动模式时，Microsoft Defender 防病毒数据丢失防护继续正常运行。

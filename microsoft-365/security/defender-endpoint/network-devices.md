@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560183"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468768"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -36,17 +36,17 @@ ms.locfileid: "61560183"
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)。
 
 > [!NOTE]
-> 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
+> 2021\) 年 4 月 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的见解。 [](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-网络发现功能在 Microsoft 365 Defender 和Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">控制台</a>的设备清单部分提供。
+网络发现功能在 Microsoft 365 Defender 和 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">的</a>"设备清单"部分中提供。
 
-指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 defender 危险和漏洞管理 功能提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
+指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。
 
 发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近在组织中部署的网络设备上发现的漏洞。
 
 ## <a name="approach"></a>方法
 
-由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP 或只读 (对网络设备执行经过身份验证) 。
+由于 Defender for Endpoint 本身没有内置于网络设备中的传感器，因此不会将网络设备作为标准终结点进行管理。 这些类型的设备需要无代理方法，远程扫描将获取设备的必要信息。 根据网络拓扑和特征，已载入 Microsoft Defender for Endpoint 的一台或几台设备使用 SNMP (只读) 执行对网络设备的身份验证扫描。
 
 需要记住两种类型的设备：
 
@@ -72,9 +72,9 @@ ms.locfileid: "61560183"
 
 第一步是选择将执行经过身份验证的网络扫描的设备。
 
-1. 确定终结点载入的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
+1. 确定适用于终结点的 Defender (客户端或) ，该客户端或服务器具有与计划扫描的网络设备的管理端口的网络连接。
 
-2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，防火墙) 。
+2. 必须允许 Defender for Endpoint 评估设备和目标网络设备之间的 SNMP 流量 (例如，通过防火墙) 。
 
 3. 确定将评估哪些网络设备以发现漏洞 (例如：Cisco 交换机或 Palo Alto Networks 防火墙) 。
 
@@ -98,21 +98,21 @@ ms.locfileid: "61560183"
 
 ## <a name="permissions"></a>Permissions
 
-若要配置评估作业，需要以下用户权限选项：在 **Defender 中管理安全设置**。 可以通过访问角色 来设置 \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
+若要配置评估作业，需要以下用户权限选项： **在 Defender 中管理安全设置**。 可以通过访问"角色"设置 \> **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到 **"Microsoft 365安全设置** 终结点"下 (\>  \>  \> **评估作业**) 。
-    1. 在Microsoft 365 Defender门户中，转到"设置 >作业"页。
+1. 转到"**Microsoft 365"设置** \>  \>"网络评估 **"**\>下 (**终结点评估**) 。
+    1. 在"Microsoft 365 Defender"门户中，转到"设置 >作业"页。
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
 
     > [!div class="mx-imgBorder"]
-    > ![下载扫描程序按钮。](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="下载扫描程序按钮" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## <a name="network-scanner-installation--registration"></a>网络扫描程序安装&注册
 
-登录过程可以在指定的评估设备本身或其他任何设备（例如 (，你的个人客户端设备）上) 。
+登录过程可以在指定的评估设备本身或其他任何设备（例如，你的个人客户端设备 (）上) 。
 
 要完成网络扫描程序注册过程，请执行以下操作：
 
@@ -127,18 +127,18 @@ ms.locfileid: "61560183"
 
 ## <a name="configure-a-new-assessment-job"></a>配置新的评估作业
 
-在"评估作业"页的 **设置，** 选择 **"添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
+在"评估作业"页 **的** 设置，选择 **"添加网络评估作业"**。 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
 
 若要防止网络设备清单中的设备重复，请确保跨多个评估设备仅配置每个 IP 地址一次。
 
 > [!div class="mx-imgBorder"]
-> ![添加网络评估作业按钮。](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="&quot;添加网络评估作业&quot;按钮" lightbox="images/assessment-jobs-add.png":::
 
 添加网络评估作业步骤：
 
 1. 选择"评估作业"名称和"评估设备"，其中安装了网络扫描程序。 此设备将定期执行经过身份验证的扫描。
 
-2. 添加要扫描的目标网络设备的 IP 地址 (或部署这些设备的子网) 。
+2. 将要扫描的目标网络设备的 IP 地址添加到 (部署这些设备的子网) 。
 
 3. 添加目标网络设备所需的 SNMP 凭据。
 
@@ -155,24 +155,24 @@ ms.locfileid: "61560183"
 
 如果有多个 IP 地址范围/子网要扫描，则测试扫描结果需要几分钟时间才能显示。 测试扫描最多可用于 1，024 个地址。
 
-显示结果后，你可以选择哪些设备将包含在定期扫描中。 如果跳过查看扫描结果，则所有配置的 IP 地址都将添加到网络评估作业 (无论设备的响应状态如何) 。 也可以导出扫描结果。
+显示结果后，你可以选择哪些设备将包含在定期扫描中。 如果跳过查看扫描结果，所有配置的 IP 地址都将添加到网络评估作业 (无论设备的响应状态如何) 。 也可以导出扫描结果。
 
 ## <a name="device-inventory"></a>设备清单
 
 新发现的设备将显示在"设备清单"页中的"新网络设备"**选项卡** 下。 添加评估作业后最多可能需要两个小时，直到设备更新。
 
 > [!div class="mx-imgBorder"]
-> !["设备清单"中的"网络设备"部分。](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="设备清单中的&quot;网络设备&quot;部分" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="network-scanner-installation-has-failed"></a>网络扫描程序安装失败
 
-验证所需的 URL 是否添加到防火墙设置中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
+验证所需的 URL 是否添加到防火墙设置中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置中所述](configure-proxy-internet.md)。
 
-### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>Microsoft.com/devicelogin 网页未显示
+### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>未 Microsoft.com/devicelogin Web 页
 
-验证所需的 URL 是否添加到防火墙中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置 中所述](configure-proxy-internet.md)。
+验证所需的 URL 是否添加到防火墙中的允许域。 此外，请确保代理设置已配置，如配置 [设备代理和 Internet 连接设置中所述](configure-proxy-internet.md)。
 
 ### <a name="network-devices-are-not-shown-in-the-device-inventory-after-several-hours"></a>几个小时后，网络设备不会显示在设备清单中
 

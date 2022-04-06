@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 05375332df6542cd87e986bba68ef7c6753f8e36
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754211"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637953"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -36,9 +36,9 @@ ms.locfileid: "63754211"
 
 在开始使用内部风险管理之前，你应该确认你的Microsoft 365[订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用内部风险管理，你的组织必须拥有以下订阅或加载项之一：
 
-- Microsoft 365 E5/A5/G5 订阅 (付费或试用版) 
-- Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 合规性加载项
-- Microsoft 365 E3/A3/G3 订阅 + Microsoft 365 E5/A5/G5 内部风险管理加载项
+- Microsoft 365 E5/A5/F5/G5 订阅 (付费或试用版) 
+- Microsoft 365 E3/A3/F3/G3 订阅 + Microsoft 365 E5/A5/F5/G5 合规性加载项
+- Microsoft 365 E3/A3/F3/G3 订阅 + Microsoft 365 E5/A5/F5/G5 Insider Risk Management 加载项
 - Office 365 E3 订阅 + 企业移动性和安全性 E3 + Microsoft 365 E5 合规加载项
 
 必须为包含在内部风险管理策略中的用户分配上述许可证之一。
@@ -221,13 +221,13 @@ DLP 策略在使用下列策略模板时是可选的：
 
 有关 [为组织](import-physical-badging-data.md) 配置物理保护连接器的分步指南，请参阅设置连接器以导入物理保护数据一文。 配置连接器后，返回到这些配置步骤。
 
-### <a name="configure-microsoft-defender-for-endpoint-optional"></a>为终结点配置 Microsoft Defender (可选) 
+### <a name="configure-microsoft-defender-for-endpoint-optional"></a>配置Microsoft Defender for Endpoint (可选) 
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 为了更好地查看组织中安全违规的情况，你可以导入并筛选 Defender for Endpoint 警报，以用于从内部风险管理安全违反策略模板创建的策略中使用的活动。
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 为了更好地查看组织中安全违规的情况，你可以导入并筛选 Defender for Endpoint 警报，以用于从内部风险管理安全违反策略模板创建的策略中使用的活动。
 
-如果你创建违反安全策略，则需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint 以实现 Defender 安全中心中的内部风险管理集成，以导入安全违反警报。 有关要求详细信息，请参阅 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) 的最低要求文章。
+如果你创建违反安全策略，你需要在组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心内进行内部风险管理集成，以导入安全违反警报。 有关要求详细信息，请参阅文章最低[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)要求。
 
-请参阅 [在 Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) 中配置高级功能一文，了解为内部风险管理集成配置 Defender for Endpoint 的分步指南。 配置适用于终结点的 Microsoft Defender 后，返回到这些配置步骤。
+请参阅 [在 Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) 中配置高级功能一文，了解为内部风险管理集成配置 Defender for Endpoint 的分步指南。 配置此配置Microsoft Defender for Endpoint，返回到这些配置步骤。
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>步骤 5 (要求) ：配置内部风险设置
 
@@ -247,7 +247,7 @@ DLP 策略在使用下列策略模板时是可选的：
     - [文件类型排除项](insider-risk-management-settings.md#file-type-exclusions)
     - [用于提升异常活动的分数的最小每日事件数](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [警报音量级别](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft Defender for Endpoint 警报状态](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Microsoft Defender for Endpoint警报状态](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [域设置](insider-risk-management-settings.md#domains)
 6. 在"**导出警报"** 页上，根据需要使用 Office 365 管理 API 导出内部风险警报信息。
 7. 在" **优先级用户组"** 页上，创建优先级用户组，如果未在步骤 3 中创建，则 **添加用户**。

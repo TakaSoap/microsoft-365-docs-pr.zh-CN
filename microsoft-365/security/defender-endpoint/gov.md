@@ -1,6 +1,6 @@
 ---
 title: 面向美国政府客户的Microsoft Defender for Endpoint
-description: 了解 Microsoft Defender for Endpoint for US Government 客户的要求和功能可用
+description: 了解适用于美国政府Microsoft Defender for Endpoint的要求和功能
 keywords: government， gcc， high， requirements， capabilities， defender， Microsoft Defender for Endpoint， endpoint， dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77160c44a3f0eda44e68c43c91aeddc169de24e1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b6c9594112e347439945d3c21f61f9272edb935f
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475292"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507358"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "64475292"
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-美国政府客户 Microsoft Defender for Endpoint 内置于 Azure 美国政府环境中，使用与 Azure 商业中的 Defender for Endpoint 相同的基础技术。
+Microsoft Defender for Endpoint Azure 美国政府环境中构建的适用于美国政府客户的信息，使用与 Azure 商业中的 Defender for Endpoint 相同的基础技术。
 
 此产品适用于 GCC、GCC High 和 DoD 客户，并且基于与商业版本相同的预防、检测、调查和修正。 但是，此产品/服务的功能可用性存在一些差异。
 
@@ -38,7 +38,7 @@ ms.locfileid: "64475292"
 
 ## <a name="licensing-requirements"></a>许可要求
 
-Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft 批量许可优惠之一：
+Microsoft Defender for Endpoint美国政府客户需要以下 Microsoft 批量许可产品/服务之一：
 
 ### <a name="desktop-licensing"></a>桌面许可
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5高GCC|Microsoft 365 G5 for DOD|
 |Microsoft 365 G5 安全GCC|Microsoft 365高GCC G5 安全性|Microsoft 365 DOD 的 G5 安全性|
-|Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint for GCC High|Microsoft Defender for Endpoint for DOD|
+|Microsoft Defender for Endpoint - GCC|Microsoft Defender for Endpoint高GCC|Microsoft Defender for Endpoint DOD|
 |Windows 10 企业版 E5 GCC|Windows 10 企业版 E5 for GCC High|Windows 10 企业版 E5 for DOD|
 |
 
@@ -68,7 +68,7 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 
 ## <a name="portal-urls"></a>门户 URL
 
-以下是美国政府客户的 Microsoft Defender 终结点门户 URL：
+以下是美国政府客户Microsoft Defender for Endpoint门户 URL：
 
 <br />
 
@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 |DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> 如果你是客户GCC从 Microsoft Defender for Endpoint https://transition.security.microsoft.com 商业迁移到 GCC，请使用 访问 Microsoft Defender for Endpoint 商业数据。
+> 如果你是一GCC客户https://transition.security.microsoft.com，并且正在从商业Microsoft Defender for Endpoint，GCC访问你的Microsoft Defender for Endpoint数据。
 
 ## <a name="endpoint-versions"></a>终结点版本
 
@@ -96,17 +96,17 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 OS 版本|GCC|GCC 高|DoD
 :---|:---:|:---:|:---:
 Windows 11|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10版本 21H1 及以上版本|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10，版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10 2004 版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10 1909 版本 1909 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10 1903 版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10 版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10版本 21H1 及以上版本|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10，版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10 2004 版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10 1909 版本 1909 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10 1903 版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10 版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 10，版本 1709|![否。](images/svg/check-no.svg) <br /> 注意：将不受支持|![是](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> 注意： [已弃用](/lifecycle/announcements/revised-end-of-service-windows-10-1709)，请升级|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
 Windows 10版本 1703 及更早版本|![否。](images/svg/check-no.svg) <br /> 注意：将不受支持|![否](images/svg/check-no.svg) <br /> 注意：将不受支持|![否](images/svg/check-no.svg) <br /> 注意：将不受支持
-Windows Server 2022|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2022|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>) |![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2016 (新式) <sup>2</sup>|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 Windows Server 2012 R2 (新式) <sup>2</sup>|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 Windows Server 2016 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
@@ -115,11 +115,11 @@ Windows Server 2008 R2 SP1 (<sup>3) 3</sup>|![是。](images/svg/check-yes.svg)|
 Windows 8.1 企业版 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 8 专业版 (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows 7 SP1 Pro (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Linux|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-macOS|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Android|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
-iOS|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
+Windows 7 SP1 Pro (旧) <sup>3</sup>|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Linux|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+macOS|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Android|![能。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
+iOS|![能。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 |
 
 > [!NOTE]
@@ -139,11 +139,11 @@ iOS|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg
 
 OS 版本|GCC|GCC 高|DoD
 :---|:---:|:---:|:---:
-Windows Server 2022|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows Server 2019|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows Server 2016|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2022|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2019|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2016|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Windows Server 2012 R2|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1|![能。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 |
 
 ## <a name="required-connectivity-settings"></a>所需的连接设置
@@ -152,9 +152,10 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 验证没有拒绝访问这些 URL 的防火墙或网络筛选规则，或专门为它们创建允许规则。
 
-域列表的电子表格|说明
-:-----|:-----
-:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URL 电子表格" lightbox="images/mdatp-urls.png":::|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+|域列表的电子表格| 说明|
+|---|---|
+|Microsoft Defender for Endpoint客户的 URL 列表| 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint Gov/GCC/DoD 的 URL 列表 | Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md)。
 
@@ -196,7 +197,7 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 |Web 内容筛选|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
   
 
-以下为 Android 和 [iOS (上的 Microsoft Defender for Endpoint 的移动威胁防护&已知) ](mtd.md)：
+这些是 Android (Microsoft Defender for Endpoint iOS 设备上移动威胁防护&[已知) ](mtd.md)：
 
 <br />
 

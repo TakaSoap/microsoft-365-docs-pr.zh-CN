@@ -16,12 +16,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的"修复慢邮件流规则"见解来识别和修复无效或损坏的邮件流规则 (也称为) 传输规则。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af6d727f84cdaaed1b7f7558313ac7d080a13c93
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30dda2b890df9f33fbc9af04b5821fb24593a335
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681515"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468382"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>修复安全与合规中心中的&流规则见解
 
@@ -44,7 +44,7 @@ ms.locfileid: "63681515"
 
 可以使用此通知来帮助确定和微调邮件流规则，以帮助减少邮件流延迟。
 
-![修复邮件流仪表板的"推荐使用"区域中的慢邮件流规则见解。](../../media/mfi-fix-slow-mail-flow-rules.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="邮件流仪表板的&quot;建议&quot;区域中的&quot;修复慢邮件流规则&quot;见解" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
 
 单击小 **组件上的** "查看详细信息"时，将显示一个包含详细信息的飞出控件：
 
@@ -53,7 +53,7 @@ ms.locfileid: "63681515"
 - **每封邮件所花费的平均时间**
 - **在邮件上花费的中值时间**：将上半部分与上半部分时间数据分开的中间值。
 
-![详细信息 在单击"修复慢速邮件流规则见解"上的"查看详细信息"后出现的飞出图。](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="单击&quot;修复慢速邮件流规则见解&quot;上的&quot;查看详细信息&quot;后出现的&quot;详细信息&quot;飞出" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
 
 有关邮件流规则中的条件和例外项详细信息，请参阅邮件流规则条件和例外 ([中) Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
