@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 了解如何设置和使用 Microsoft 提供的 Slack 电子数据展示数据连接器，以导入和存档即时消息数据。
-ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7882524bb01a1d28c0f4f7c564472961d04baa07
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525067"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501192"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>设置连接器以存档 Slack 电子数据展示数据 (预览) 
 
@@ -77,7 +77,15 @@ Microsoft 提供的 Slack 电子数据展示数据连接器可帮助你导入和
 
    单击"允许 **"** 后，Slack 页面将关闭，并显示连接器向导中的"将 **Slack Microsoft 365用户** 映射到用户"页面。
 
-## <a name="step-3-map-users-and-select-data-types-to-import"></a>步骤 3：映射用户并选择要导入的数据类型
+## <a name="step-3-specify-the-users-to-import-data-for"></a>步骤 3：指定要导入其数据的用户
+
+选择以下选项之一以指定要导入 Slack 电子数据展示数据的用户。
+
+- **组织中所有用户**。 选择此选项可导入所有用户的数据。
+
+- **仅诉讼保留的用户**。 选择此选项以仅导入其邮箱置于诉讼保留状态的用户的数据。 此选项将数据导入到 LitigationHoldEnabled 属性设置为 True 的用户邮箱。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
+
+## <a name="step-4-map-users-and-select-data-types-to-import"></a>步骤 4：映射用户并选择要导入的数据类型
 
 1. 配置以下一个或两个选项以将 Slack 用户映射到其Microsoft 365邮箱。
 
@@ -103,7 +111,7 @@ Microsoft 提供的 Slack 电子数据展示数据连接器可帮助你导入和
 
 3. 配置要导入的数据类型后，单击"下一步"，查看连接器设置，然后单击 **"完成"** 以创建连接器。
 
-## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>步骤 4：监视 Slack 电子数据展示连接器
+## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>步骤 5：监视 Slack 电子数据展示连接器
 
 创建 Slack 电子数据展示连接器后，可以在"数据展示"视图中查看Microsoft 365 合规中心。
 

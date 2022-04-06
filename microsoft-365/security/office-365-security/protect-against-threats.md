@@ -1,5 +1,5 @@
 ---
-title: 防范 Microsoft Defender for Office 365、反恶意软件、反网络钓鱼、反垃圾邮件、保险箱 链接、保险箱 附件、零时差自动清除 (ZAP) 、MDO 安全配置中的威胁
+title: 在 Microsoft Defender 中抵御威胁Office 365、反恶意软件、反网络钓鱼、反垃圾邮件、保险箱 链接、保险箱 附件、零时差自动清除 (ZAP) 、MDO 安全配置
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5a0be5171a2de07792cd259dc6547046d7c1630
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 280cbd310742ecfe31ac8b565d285f7b464d3e24
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507160"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683836"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -41,7 +41,7 @@ ms.locfileid: "64507160"
 > [!IMPORTANT]
 > **包括了适合每种策略的初步推荐设置；然后，很多选项都可用，你可以调整设置以满足具体的组织需要**。 预留大概 30 分钟以让你的策略或更改在你的数据中心中正常工作。
 >
-> 若要跳过手动配置 Defender for Office 365 中的大多数策略，可以使用"标准"或"严格"级别的预设安全策略。 有关详细信息，请参阅在 EOP 中预设安全策略[和Microsoft Defender for Office 365](preset-security-policies.md)。
+> 若要跳过 Defender for Office 365 中的大多数策略的手动配置，可以使用"标准"或"严格"级别的预设安全策略。 有关详细信息，请参阅 [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)。
 
 ## <a name="requirements"></a>要求
 
@@ -50,7 +50,7 @@ ms.locfileid: "64507160"
 威胁防护功能含在 *所有* Microsoft 或 Office 365 订阅中；然而，一些订阅有高级功能。 下面的表格列出了包含在此文章中的防护功能，以及最低订阅要求。
 
 > [!TIP]
-> 请注意，除了启用审核的说明之外，步骤还启动反恶意软件、反网络钓鱼和反垃圾邮件，这些操作标记为 **EOP Office 365 Exchange Online Protection (的** 一) 。 在一篇Defender for Office 365中，这 (Defender for Office 365 **)** EOP，并基于 EOP。
+> 请注意，除了启用审核的说明之外，步骤还启动反恶意软件、反网络钓鱼和反垃圾邮件，这些操作标记为 **EOP Office 365 Exchange Online Protection (的** 一) 。 在 Defender for Office 365 文章中，这Office 365很奇特，直到你记住 (**Defender for Office 365)** EOP 并基于 EOP 构建。
 
 |防护类型|订阅要求|
 |---|---|
@@ -62,7 +62,7 @@ ms.locfileid: "64507160"
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
-若要Defender for Office 365策略，必须分配有适当的角色。 看看下面的表格，了解可以执行这些操作的角色。
+若要配置 Defender Office 365策略，必须分配有适当的角色。 看看下面的表格，了解可以执行这些操作的角色。
 
 |角色或角色组|在哪里了解更多信息|
 |---|---|
@@ -101,9 +101,9 @@ ms.locfileid: "64507160"
 
 [反钓鱼软件防护](anti-phishing-protection.md)在包含 [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 的订阅中可用。 高级反钓鱼保护在 [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 中可用。
 
-有关反网络钓鱼策略的建议设置详细信息，请参阅 [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) 防钓鱼策略设置和 Microsoft Defender for Office 365 中的反网络钓鱼[策略设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
+有关反网络钓鱼策略的建议设置详细信息，请参阅 [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) 防钓鱼策略设置和 [Microsoft Defender for Office 365 中的反网络钓鱼策略设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
-以下过程介绍如何配置默认的防钓鱼策略。 设置中可用的Defender for Office 365会进行清晰标记。
+以下过程介绍如何配置默认的防钓鱼策略。 设置 Defender 中仅适用于 Office 365的已明确标记。
 
 1. 打开 **网站门户中的**"防钓鱼"Microsoft 365 Defender页面。<https://security.microsoft.com/antiphishing>
 
@@ -139,11 +139,11 @@ ms.locfileid: "64507160"
 
      完成后，单击“**保存**”。
 
-   <sup>\*</sup>此设置仅适用于Defender for Office 365。
+   <sup>\*</sup>此设置仅在 Defender for Office 365。
 
 4. 单击 **"保存"** ，然后单击" **关闭"**
 
-有关配置防钓鱼策略的详细说明，请参阅在 [EOP](configure-anti-phishing-policies-eop.md) 中配置防钓鱼策略和在 Microsoft Defender for Office 365 [中配置防钓鱼策略](configure-mdo-anti-phishing-policies.md)。
+有关配置防钓鱼策略的详细说明，请参阅在 [EOP](configure-anti-phishing-policies-eop.md) 中配置防钓鱼策略和在 [Microsoft Defender](configure-mdo-anti-phishing-policies.md) 中配置防钓鱼策略Office 365。
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>第 3 部分 - EOP 中的反垃圾邮件保护
 
@@ -197,7 +197,7 @@ ms.locfileid: "64507160"
 1. 在 保险箱 **门户** 中打开"Microsoft 365 Defender附件"页。<https://security.microsoft.com/safeattachmentv2>
 
 2. 在"**保险箱"** 页上，单击"全局设置"，然后在出现的飞出页面上配置以下设置：
-   - **打开 Defender for Office 365、** SharePoint、OneDrive 和 Microsoft Teams：![打开此设置 (切换](../../media/scc-toggle-on.png)。) 。
+   - **打开 Defender for Office 365 for SharePoint、OneDrive 和 Microsoft Teams**：![打开此设置 (切换](../../media/scc-toggle-on.png)。) 。
 
      > [!IMPORTANT]
      > **在打开"保险箱附件SharePoint OneDrive** Microsoft Teams，请确认审核日志记录已在你的组织中打开。 此操作通常由在审核日志中分配了审核日志角色Exchange Online。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)！
@@ -230,7 +230,7 @@ ms.locfileid: "64507160"
 
 有关为附件配置保险箱策略和全局设置的保险箱，请参阅下列主题：
 
-- [在保险箱中设置"附件"Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
+- [在 Microsoft Defender 保险箱设置附件策略Office 365](set-up-safe-attachments-policies.md)
 - [为 SharePoint、OneDrive 和 Microsoft Teams 启用安全附件](turn-on-mdo-for-spo-odb-and-teams.md)
 - [Microsoft 365 E5 中的安全文档](safe-docs.md)
 
@@ -255,20 +255,16 @@ ms.locfileid: "64507160"
      - **名称**：输入一些唯一的描述性信息。
      - **说明**：输入可选说明。
    - **用户和域** 页面：因为这是你的第一个策略，你可能想要最大化覆盖范围，请考虑在"域"[](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)框中 **输入接受的** 域。 否则，可以使用"用户 **"** 和" **组"** 框进行更精细的控制。 可以通过选择"排除这些用户、组和域"并输入值 **来指定例外** 。
-   - **Url &单击保护设置** 页面：
-     - **"对电子邮件中的潜在恶意 URL 的操作"** 部分：
-       - **打开：保险箱** 用户单击电子邮件中的链接时，链接将检查已知恶意链接的列表：选择其设置 (打开) 。
-       - **Apply 保险箱 Links to email messages sent within the organization**： Select this setting (turn on) .
-       - **对指向文件的可疑链接应用实时 URL** 扫描：选择此设置 (打开) 。
+   - **"保护设置"** 页：
+     - **选择邮件中未知潜在恶意 URL 的操作**：打开 **此设置**。
+     - **Select the action for unknown or potentially malicious urls within Microsoft Teams**： Turn this setting **On**. 自 2020 年 3 月起，此设置为预览版，仅适用于 Microsoft Teams Technology Adoption Program (TAP) 。
+     - **对指向文件的可疑链接应用实时 URL** 扫描：选择此设置 (打开) 。
        - **等待 URL 扫描完成，然后再传递邮件**：选择此设置 (打开) 。
-       - **不要重写 URL**，请仅通过保险箱链接 API 进行检查：确认未选中此设置 (关闭) 。
-     - **请勿重写电子邮件中的以下 URL**：我们对此设置没有具体的建议。 有关详细信息，请参阅链接策略中的"不要重写[保险箱 URL"](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)列表。
-     - **部分中针对潜在恶意 URL Microsoft Teams** 操作：
-       - ***On： 保险箱 links checks a list of known， malicious links when users click links in Microsoft Teams**： Select this setting (turn on) .
-     - **单击"保护设置"** 部分：
-       - **跟踪用户单击** 次数：验证此设置是否 (启用) 。
-       - **让用户单击以访问原始 URL**：关闭此设置 (未) 。
-       - 在通知和警告页面上显示组织品牌：选择此设置 (将其打开) 只有在按照自定义[组织的 Microsoft 365](../../admin/setup/customize-your-organization-theme.md) 主题中的说明上载公司徽标后，此设置才有意义。
+     - **Apply 保险箱 Links to email messages sent within the organization**： Select this setting (turn on) .
+     - **Do not track user clicks**： Verify this setting is not selected (off) .
+     - **不允许用户单击访问原始 URL**：验证此设置是否 (启用) 。
+     - 在通知和警告页面上显示组织品牌：选择此设置 (将其打开) 只有在按照自定义[组织的 Microsoft 365](../../admin/setup/customize-your-organization-theme.md) 主题中的说明上载公司徽标后，此设置才有意义。
+     - **不要重写以下 URL**：我们对此设置没有具体的建议。 有关详细信息，请参阅链接策略中的"不要重写[保险箱 URL"](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)列表。
    - **通知** 页面：
      - **如何通知用户？** section：（可选）可以选择"使用 **自定义通知文本** "输入要使用自定义的通知文本。 还可以选择"使用 **Microsoft 翻译工具进行自动本地化**"，将自定义通知文本翻译为用户语言。 否则，保留 **"使用默认通知文本"** 为选中状态。
 
@@ -276,8 +272,8 @@ ms.locfileid: "64507160"
 
 有关为链接配置 保险箱 链接策略和全局设置的保险箱，请参阅下列主题：
 
-- [在 Microsoft Defender for Office 365 中设置安全链接策略](set-up-safe-links-policies.md)
-- [配置"链接"保险箱全局Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)
+- [在 Microsoft Defender 保险箱设置链接策略Office 365](set-up-safe-links-policies.md)
+- [在 Microsoft Defender for 保险箱 中配置链接的全局Office 365](configure-global-settings-for-safe-links.md)
 
 ### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>现在为 SharePoint Online 或 OneDrive for Business 中检测到的文件设置警报
 
@@ -316,7 +312,7 @@ ms.locfileid: "64507160"
 > 当你完成配置时，使用这些链接开始工作负载调查：
 >
 > - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
-> - [使用 Microsoft 365 Defender 门户管理邮件中的隔离Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [使用 Microsoft 365 Defender 门户在 Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到恶意文件需采取的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 > - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
 

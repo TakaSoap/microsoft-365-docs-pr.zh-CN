@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51bb4f451329a74417c21db0a64aadae6dccbce6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327527"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500862"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查用户Microsoft 365 Defender
 
@@ -36,11 +36,11 @@ ms.locfileid: "63327527"
 
 事件调查的一部分可能包括用户帐户。 可以从事件和警报事件_ _ \> Users 查看事件门户中事件警报Microsoft 365 Defender标识的用户帐户&**_详细信息_*\>***。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。" lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件门户中事件的&quot;用户Microsoft 365 Defender页。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
 若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="事件的用户帐户摘要窗格示例。" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="事件门户中事件的&quot;用户Microsoft 365 Defender选项卡" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > 用户页面显示Azure Active Directory (Azure AD) 以及组，帮助您了解与用户关联的组和权限。
@@ -51,13 +51,13 @@ ms.locfileid: "63327527"
 
 从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="事件的用户帐户页面示例。" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 Defender门户中的用户帐户的详细信息" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 您还可以通过从"用户"页上的列表中选择用户帐户的名称来 **查看此页面。**
 
 通过选择"组"下的号码，可以看到用户的组 **成员身份**。
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="用户的组成员身份示例。" lightbox="../../media/investigate-users/user-group-membership.png":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="有关客户门户中用户的组成员身份Microsoft 365 Defender信息" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 通过选择"经理 **"** 下的图标，可以看到用户在组织树中位于何处。
 
@@ -76,7 +76,7 @@ ms.locfileid: "63327527"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="事件对用户帐户的操作示例。" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="介绍对用户帐户在事件门户中发生的事件的Microsoft 365 Defender部分" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 ## <a name="view-lateral-movement-paths"></a>查看横向移动路径
 
@@ -86,7 +86,7 @@ ms.locfileid: "63327527"
 
 如果在过去两天内未检测到实体的潜在横向移动路径，则图形不显示。 使用"查看其他日期"选择其他日期，以查看为此实体发现的以前的横向移动路径图。 横向移动路径报告始终可用于提供有关发现的可能的横向移动路径的信息，并可以按时间进行自定义。
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="用户的横向移动路径示例。" lightbox="../../media/investigate-users/lateral-movement-path.png":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="用户门户中用户的横向Microsoft 365 Defender路径" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 有关详细信息，请参阅横向 [移动路径](/defender-for-identity/use-case-lateral-movement-path)。
 

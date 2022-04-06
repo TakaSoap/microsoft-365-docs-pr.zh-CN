@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for 保险箱 的完整链接概述Office 365
+title: 完整保险箱链接概述Microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -25,17 +25,17 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 了解保险箱 Defender for Office 365 中的链接保护，以保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。 发现Teams 保险箱链接，并查看链接保险箱图形。
+description: 了解保险箱链接保护Defender for Office 365保护组织免受网络钓鱼和使用恶意 URL 的其他攻击。 发现Teams 保险箱链接，并查看链接保险箱图形。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28215843f8c8edab4125ba46b483c2d596c78532
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 11c22239a34b731b57a8730ad1bf03d764ebb106
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474544"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507200"
 ---
-# <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱 Microsoft Defender for Office 365
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱链接Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -46,11 +46,11 @@ ms.locfileid: "64474544"
 > [!IMPORTANT]
 > 本文适用于拥有 [Microsoft Defender for Office 365](defender-for-office-365.md)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版 或 Microsoft 365 个人版，并且正在查找有关 Outlook 中的安全链接的信息，请参阅高级 [Outlook.com 安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-保险箱 链接是 [defender for Office 365](defender-for-office-365.md) 中的一项功能，它提供邮件流中入站电子邮件的 URL 扫描和重写，以及电子邮件和其他位置中 URL 和链接的单击验证时间。 保险箱 EOP 电子邮件中的入站电子邮件中执行常规反垃圾邮件[](anti-spam-and-anti-malware-protection.md)和反恶意软件Exchange Online Protection (扫描) 。 安全链接扫描有助于保护组织免受网络钓鱼和其他攻击中使用的恶意链接的攻击。
+保险箱 链接是 [Defender for Office 365](defender-for-office-365.md) 中的一项功能，可提供邮件流中入站电子邮件的 URL 扫描和重写，以及电子邮件和其他位置中 URL 和链接的单击验证时间。 保险箱 EOP 电子邮件中的入站电子邮件中执行常规反垃圾邮件[](anti-spam-and-anti-malware-protection.md)和反恶意软件Exchange Online Protection (扫描) 。 安全链接扫描有助于保护组织免受网络钓鱼和其他攻击中使用的恶意链接的攻击。
 
 在以下位置提供安全链接保护：
 
-- 电子邮件：尽管没有默认的 保险箱 链接策略，但内置保护预设安全策略向未在自定义 保险箱 链接策略) 中定义的所有收件人 (提供 保险箱 (链接保护。 有关详细信息，请参阅 [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)。 还可以创建适用于保险箱用户、组或域的链接链接策略。 有关说明，请参阅在 [Microsoft Defender 保险箱设置链接策略Office 365](set-up-safe-links-policies.md)。
+- 电子邮件：尽管没有默认的 保险箱 链接策略，但内置保护预设安全策略向未在自定义 保险箱 链接策略) 中定义的所有收件人 (提供 保险箱 (链接保护。 有关详细信息，请参阅在 EOP 中预设安全策略[和Microsoft Defender for Office 365](preset-security-policies.md)。 还可以创建适用于保险箱用户、组或域的链接链接策略。 有关说明，请参阅在 Microsoft Defender for Office 365 [中设置保险箱链接策略](set-up-safe-links-policies.md)。
 
   有关电子邮件保险箱链接保护"详细信息，请参阅本文保险箱电子邮件的"链接设置[](#safe-links-settings-for-email-messages)"部分。
   
@@ -63,7 +63,7 @@ ms.locfileid: "64474544"
 
   有关在 Teams 中保险箱链接保护保险箱请参阅本文Microsoft Teams[链接](#safe-links-settings-for-microsoft-teams)设置一节。
 
-- **Office 365 应用**：在受支持的桌面、移动和 Web 应用中提供 Office 365 应用的安全链接保护。 在 **全局** 保险箱策略之外的全局设置中Office 365应用配置链接保险箱保护。 有关说明，请参阅[在 Microsoft Defender 中为 保险箱 链接设置配置全局Office 365](configure-global-settings-for-safe-links.md)。
+- **Office 365 应用**：在受支持的桌面、移动和 Web 应用中提供 Office 365 应用的安全链接保护。 在 **全局** 保险箱策略之外的全局设置中Office 365应用配置链接保险箱保护。 有关说明，请参阅配置 [保险箱 链接设置的全局Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)。
 
   Office 365 应用的安全链接保护应用于组织中获得 Defender for Office 365 许可的所有用户，无论用户是否包含在活动安全链接策略中。
 
@@ -82,7 +82,7 @@ ms.locfileid: "64474544"
   - [保险箱应用的链接Office 365设置](#safe-links-settings-for-office-365-apps)
   - [链接的"阻止以下 URL"保险箱列表](#block-the-following-urls-list-for-safe-links)
 
-下表介绍了 Microsoft 365 Microsoft 365 和 Office 365 组织中包含 Defender for Office 365 (的 保险箱 链接的方案，请注意，) 示例中永远不会出现缺少许可的问题。
+下表介绍了 Microsoft 365 Microsoft 365 Office 365 组织中包含 Defender for Office 365 (的 保险箱 Links 的方案，请注意，) 示例中永远不会出现缺少许可的问题。
 
 |应用场景|结果|
 |---|---|
@@ -100,34 +100,34 @@ ms.locfileid: "64474544"
 
 以下列表保险箱电子邮件的链接策略中的设置：
 
-- **选择邮件中未知潜在恶意 URL 的操作**：启用或禁用保险箱电子邮件中的链接扫描。 建议值为 **"打开"**。 打开此设置会导致以下操作。
-
+- **On： 保险箱 Links 在** 用户单击电子邮件中的链接时检查已知恶意链接的列表：启用或禁用保险箱电子邮件中的链接扫描。 建议的值在 (上) ，并会导致以下操作：
   - 保险箱在 Outlook (C2R) 中启用链接Windows。
   - 当单击邮件中的 URL 时，URL 将被重写保险箱链接保护进行路由。
   - 单击后，将针对已知恶意 URL 列表和"阻止以下 URL"列表检查 [URL](#block-the-following-urls-list-for-safe-links)。
   - 没有有效信誉的 URL 将在后台异步触发。
 
-- **应用对指向文件的可疑链接和链接的实时 URL 扫描**：启用链接实时扫描，包括电子邮件中指向可下载内容的的链接。 已启用建议值。
+  以下设置仅在电子邮件中保险箱链接扫描时可用：
+
+  - **Apply 保险箱 Links to email messages sent within the organization**： Enables or disables 保险箱 Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. 建议的值将 (上) 。
+
+  - **应用对指向文件的可疑链接和链接的实时 URL 扫描**：启用链接实时扫描，包括电子邮件中指向可下载内容的的链接。 建议的值将 (上) 。
+
   - **等待 URL 扫描完成，然后再传递邮件**：
-    - 已启用：包含 URL 的邮件将一直进行，直到扫描完成。 只有在 URL 被确认为安全后，才会传递消息。 这是建议的值。
-    - 已禁用：如果 URL 扫描无法完成，无论如何传递邮件。
+    - 在 (上) ：包含 URL 的邮件将一直进行，直到扫描完成。 只有在 URL 被确认为安全后，才会传递消息。 这是建议的值。
+    - 未选择 (关闭) ：如果 URL 扫描无法完成，无论如何传递邮件。
 
-- **Apply 保险箱 Links to email messages sent within the organization**： Enables or disables 保险箱 Links scanning on messages sent between internal senders and internal recipients within the same Exchange Online organization. 已启用建议值。
+  - **不要重写 URL，请仅通过 SafeLinks API** 进行检查：如果启用此设置，则不进行 URL 换行。 保险箱链接在支持 URL 的客户端单击 URL 时Outlook以独占方式调用。 建议值已禁用。
 
-- **不跟踪用户单击**：启用或禁用存储电子邮件中被单击的 URL 的安全链接单击数据。 建议的值是为了使此设置保持未选中状态（用于跟踪用户单击）。
+- **跟踪用户单击**：启用或禁用保险箱电子邮件中单击 URL 的链接单击数据。 建议的值是保持此设置为选中状态 (用户单击) 。
 
   当前不支持对内部发件人和内部收件人之间发送的电子邮件中的链接进行 URL 单击跟踪。
 
-- **不允许用户单击访问原始 URL**：允许或阻止用户通过警告页面 [单击到原始](#warning-pages-from-safe-links) URL。 建议值已启用。
+- **允许用户单击以访问原始 URL**：允许或阻止用户通过警告页面 [单击到](#warning-pages-from-safe-links) 原始 URL。 建议值已禁用。
 
 - **在通知和警告页面上** 显示组织品牌：此选项在警告页面上显示组织的品牌。 品牌打造可帮助用户识别合法警告，因为默认 Microsoft 警告页面经常被攻击者使用。 有关自定义品牌打造的信息，请参阅[自定义Microsoft 365主题](../../admin/setup/customize-your-organization-theme.md)。
 
-- **不要重写以下 URL**：保留 URL。 保留不需要扫描的安全 URL 的自定义列表。 该列表对于每个链接策略保险箱唯一。 有关"不重写以下 **URL**"列表的信息，请参阅本文稍后的"保险箱 [链接策略"一](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)节中的"不重写以下 URL"列表。
-
   有关链接策略的标准策略和严格策略设置的建议值保险箱，请参阅保险箱[链接策略设置。](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
-- **不要重写 URL，请仅通过 SafeLinks API** 进行检查：如果启用此设置，则不进行 URL 换行。 保险箱链接在支持 URL 的客户端单击 URL 时Outlook以独占方式调用。 建议值已禁用。
-  
 - **收件人** 筛选器：需要指定收件人条件和例外，以确定策略的适用对象。 可以将这些属性用于条件和例外：
   - **收件人为**
   - **收件人域为**
@@ -211,7 +211,7 @@ ms.locfileid: "64474544"
 
 - 用户使用工作或学校帐户登录。 有关详细信息，请参阅登录[Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。
 
-你可以保险箱链接的全局Office 365设置（而不是在链接策略中）为保险箱应用配置链接保险箱保护。 此保护适用于组织中获得 Defender for Office 365 许可的所有用户，无论这些用户是否包含在活动的 保险箱 链接策略中。
+你可以保险箱链接的全局Office 365设置（而不是在链接策略中）为保险箱应用配置链接保险箱保护。 保护适用于组织中获得 Defender for Office 365 许可的所有用户，而不管这些用户是否包含在活动保险箱链接策略中。
 
 以下保险箱链接设置可用于Office 365应用：
 

@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321803"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501258"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -89,13 +89,13 @@ ms.locfileid: "63321803"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="调查页面的示例。" lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Microsoft 365 Defender门户中的调查页面" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>调查详细信息
 
 使用调查详细信息视图可查看过去、当前和挂起的与调查相关的活动。 下面是一个示例。
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="调查详细信息的示例。" lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="调查门户中的调查Microsoft 365 Defender页" lightbox="../../media/mtp-air-investdetails.png":::
 
 在"调查详细信息"视图中，你可以看到"调查 **"图**、警报、设备、标识、关键发现、实体、日志和挂起操作选项卡上的信息，如下表所述。 
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172269"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500818"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender高级搜寻 API
 
@@ -50,19 +50,19 @@ ms.locfileid: "62172269"
 3. 每个租户每分钟最多可以拨打 45 个呼叫。
 4. 如果租户已达到 100%，查询将受到阻止，直到下一个 15 分钟周期。
 5. 如果单个请求运行的时间超过 10 分钟，它将退出并返回错误。
-6. HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 阅读响应正文，了解已达到的限制。 
+6. HTTP `429` 响应代码指示你已按发送的请求数或按分配的运行时间达到配额。 阅读响应正文，了解已达到的限制。 
 
 > [!NOTE]
 > 上面列出的所有配额 (例如，每个租户大小每) 15 个呼叫。 这些配额是最小值。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅访问 Microsoft 365 Defender[保护 API](api-access.md)
+调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅[访问 Microsoft 365 Defender 保护 API](api-access.md)
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-应用程序 | AdvancedHunting.Read.All | 运行高级查询
-委派（工作或学校帐户） | AdvancedHunting.Read | 运行高级查询
+应用程序 | AdvancedQuery.Read.All| 运行高级查询
+委派（工作或学校帐户） | AdvancedQuery.Read | 运行高级查询
 
 >[!Note]
 > 使用用户凭据获取令牌时：
@@ -87,13 +87,13 @@ Content-Type | application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型 | 说明
+参数 | 类型 | Description
 -|-|-
-查询 | Text | 要运行的查询。 **注意：必需**
+查询 | 文本 | 要运行的查询。 **注意：必需**
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应正文中 `200 OK` 返回 和 _QueryResponse_ 对象。
+如果成功，此方法将在响应正文 `200 OK`中返回 和 _QueryResponse_ 对象。
 
 response 对象包含三个顶级属性：
 
@@ -103,7 +103,7 @@ response 对象包含三个顶级属性：
 
 ## <a name="example"></a>示例
 
-在下面的示例中，用户发送下面的查询并接收包含 、 和 的 API 响应 `Stats` `Schema` 对象 `Results` 。
+在下面的示例中，用户发送下面的查询并接收包含 、 和 的 API `Stats``Schema`响应对象`Results`。
 
 ### <a name="query"></a>查询
 

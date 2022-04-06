@@ -15,21 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解从何处访问 Windows Office 部署实验室工具包。
-ms.openlocfilehash: f5b2bad3828ef30da822be102010124ccb26091e
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 3995d8c0d8baf81a9c4ebfa4efdf587f489a8061
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450712"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501170"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows 和 Office 365 部署实验室工具包
 
 Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 或 Windows 11 Enterprise 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、OneDrive、Windows Autopilot 等。 强烈建议准备桌面升级的组织使用本工具包。 作为独立环境，实验室还非常适合探索部署工具更新和测试与部署相关的自动化。
 
-**Windows 10 microsoft Windows 11中心中可免费下载实验室工具包的最新版本和最新版本。**
+**Windows 10 microsoft Windows 11中心中可免费下载部署实验室工具包的最新版本和最新版本。**
 
-[下载 Windows 10 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[下载 Windows 11 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[下载Windows 11部署Office 365工具包的工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)<br>
+[下载Windows 10部署Office 365工具包的工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
@@ -96,10 +96,6 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 - Microsoft Defender 防病毒  
 - Windows Hello 企业版    
 
-## <a name="download-the-lab"></a>下载实验室
-[下载 Windows 10 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
-[下载 Windows 11 和 Office 365 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
-
 > [!NOTE]
 > 请使用宽带 Internet 连接下载此内容，并允许大约 30 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 实验室Windows 10 2022 年 5 月 16 日到期。 实验室Windows 11 2022 年 5 月 6 日到期。 新版本将在过期前发布。
 
@@ -114,7 +110,7 @@ Windows和 Office 365 部署实验室工具包旨在帮助你规划、测试和�
 ## <a name="related-resources"></a>相关资源
 
 - [Microsoft 365 简介](https://www.microsoft.com/microsoft-365/default.aspx)
-- [Office 365 企业版](https://products.office.com/business/office)
+- [Microsoft 365 商业版](https://products.office.com/business/office)
 - [企业移动性 + 安全性简介](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows企业](https://www.microsoft.com/windows/business)
+- [Windows 11企业](https://www.microsoft.com/windows/business)
 
