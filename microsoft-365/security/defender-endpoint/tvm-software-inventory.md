@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cbd4634e779fe2bf853aaf014b59b1e7e1c1928f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325211"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470034"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>软件清单 - 危险和漏洞管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "63325211"
 > [!NOTE]
 > 由于 漏洞管理 使用 CPE 来识别软件和任何漏洞，即使没有 CPE 的软件产品将显示在软件清单页中，危险和漏洞管理 也不会支持它们，并且攻击、公开的设备和漏洞等信息将不可用。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>如何工作
 
 在发现领域，我们正在利用在 Microsoft Defender 中负责检测和漏洞评估的同一组信号，用于终结点检测和 [响应功能](overview-endpoint-detection-response.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "63325211"
 
 默认情况下，该视图按产品代码和 **CPE (筛选) ：可用**。 还可以根据软件中发现的缺点、与其关联的威胁以及软件是否已达到支持终止等标记来筛选列表视图。
 
-:::image type="content" alt-text="软件清单的登陆页面示例。" source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" source="images/tvm-software-inventory.png" alt-text="软件清单登陆页面" lightbox="images/tvm-software-inventory.png":::
 
 选择要调查的软件。 在打开一个飞出面板时，页面上的信息视图会更紧凑。 您可以深入调查并选择"打开软件"页，或者通过选择"报告不准确"来标记 **任何技术不一致情况**。
 
@@ -74,7 +74,7 @@ ms.locfileid: "63325211"
 
 软件清单页中可能& 漏洞管理当前不受威胁威胁支持的软件。 由于它不受支持，因此只有有限的数据可用。 使用"漏洞"部分中的"不可用"选项按不受支持的软件进行筛选。
 
-:::image type="content" alt-text="不支持的软件筛选器。" source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
+:::image type="content" source="images/tvm-unsupported-software-filter.png" alt-text="不受支持的软件筛选器" lightbox="images/tvm-unsupported-software-filter.png":::
 
 下面指示软件不受支持：
 
@@ -97,7 +97,7 @@ ms.locfileid: "63325211"
 
 选择一个软件名称以打开该飞出页面，并查找名为"软件证据"的部分。
 
-:::image type="content" alt-text="软件证据示例Windows 10列表，显示软件证据注册表路径。" source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
+:::image type="content" source="images/tvm-software-evidence.png" alt-text="设备Windows 10的条目" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>软件页
 
@@ -117,7 +117,7 @@ ms.locfileid: "63325211"
   - 安装了软件的设备 (设备名称、域、操作系统等) 。
   - 软件版本列表 (包括安装版本的设备数、发现的漏洞数以及已安装设备的名称) 。
 
-    :::image type="content" alt-text="Visual Studio 2017 的软件示例页，包含软件详细信息、漏洞、公开的设备等。" source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" source="images/tvm-software-page-example.png" alt-text="The Visual Studio 2017 with the software details， weaknesses， exposed devices， and more" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>报告 inaccuracy
 

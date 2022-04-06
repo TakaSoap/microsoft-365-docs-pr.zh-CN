@@ -13,12 +13,12 @@ description: 管理员可以了解如何使用安全与合规中心中的"新用
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681757"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470254"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心&电子邮件见解
 
@@ -35,11 +35,11 @@ ms.locfileid: "63681757"
 
 此见解仅在检测到问题时显示，并且显示在"转发 [报告"页上](view-mail-flow-reports.md#forwarding-report) 。
 
-![新用户转发电子邮件见解。](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="新用户转发电子邮件见解" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 单击小部件时，将出现一个飞出控件，您可以在其中找到有关转发邮件的更多详细信息，包括指向本文稍后所述的转发修改报告[](#forwarding-modifications-report)的链接。
 
-![详细信息 在单击"新用户转发电子邮件见解"后出现的飞出图。](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="单击&quot;新用户转发电子邮件见解&quot;后出现的&quot;详细信息&quot;飞出" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 单击"报告仪表板"或"仪表板"上的"最热门见解&建议"区域中的"查看所有见解"后， (**进入** \> **此详细信息** <https://protection.office.com/insightdashboard>) 。
 
@@ -67,11 +67,11 @@ ms.locfileid: "63681757"
 
 - **显示其数据：新转发用户**：
 
-  ![转发修改报告中的新转发用户视图。](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="&quot;转发修改&quot;报告中的&quot;新建转发用户&quot;视图" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **显示数据：新转发域**：
 
-  ![转发修改报告中的新转发域视图。](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="转发修改报告中的新建转发域视图" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 如果 **单击"筛选器**"，报表视图"开始日期"和"结束日期"来指定 **日期范围**。
 
@@ -109,7 +109,7 @@ ms.locfileid: "63681757"
 - **开始日期**
 - **建议**：你可以从此处单击链接来管理用户Microsoft 365 管理中心。
 
-!["转发修改"报告中"新建转发用户"视图的详细信息表中的"详细信息"飞出。](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="&quot;转发修改&quot;报告中&quot;新建转发用户&quot;视图的详细信息表的&quot;详细信息&quot;飞出" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 若要返回到报告视图，请单击" **查看报告"**。
 

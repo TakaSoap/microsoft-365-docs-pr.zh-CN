@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0b7e9045ecc479c2da382979211caaa46e8a01d1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e31c226037d5d9e945350ba73e1df9abc79571e9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683288"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469990"
 ---
 # <a name="microsoft-defender-for-identity-directory-services-account-in-microsoft-365-defender"></a>Microsoft Defender for Identity Directory Services 帐户Microsoft 365 Defender
 
@@ -34,21 +34,22 @@ ms.locfileid: "63683288"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
-    ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="&quot;标识&quot;页中的设置选项" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. 选择 **"目录服务帐户"**。 你将看到哪些帐户与哪些域关联。
 
-    ![目录服务帐户。](../../media/defender-identity/directory-service-accounts.png)
+   :::image type="content" source="../../media/defender-identity/directory-service-accounts.png" alt-text="&quot;目录服务帐户&quot;菜单项" lightbox="../../media/defender-identity/directory-service-accounts.png":::
 
 1. 如果您选择一个帐户，将打开一个包含该帐户设置的窗格。
 
-    ![帐户设置。](../../media/defender-identity/account-settings.png)
+   :::image type="content" source="../../media/defender-identity/account-settings.png" alt-text="&quot;帐户设置&quot;页" lightbox="../../media/defender-identity/account-settings.png":::
 
 1. 若要添加新的目录服务帐户，**请选择"创建新** 帐户"并填写"**帐户名称**、**域和****密码"**。 还可以选择它是 gMSA (组托管服务帐户) 还是属于 **单标签域**。
 
-    ![新建目录服务帐户。](../../media/defender-identity/new-directory-service-account.png)
+   :::image type="content" source="../../media/defender-identity/new-directory-service-account.png" alt-text="&quot;创建新帐户&quot;选项" lightbox="../../media/defender-identity/new-directory-service-account.png":::
 
-1. 选择“**保存**”。
+1. 选择“保存”。
 
 ## <a name="see-also"></a>另请参阅
 

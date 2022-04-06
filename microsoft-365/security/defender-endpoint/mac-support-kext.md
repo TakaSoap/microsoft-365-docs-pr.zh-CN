@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ba52d9587a2ac530eabeacf8c72336751a1a17d7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 72d1aab8be071b5f4ec66988b35655571625b409
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767564"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477272"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
 
@@ -42,7 +42,7 @@ ms.locfileid: "62767564"
 
 如果在 macOS 上部署/安装 Microsoft Defender for Endpoint 期间未批准内核扩展，应用程序将显示横幅提示你启用它：
 
-   ![RTP 已禁用屏幕截图。](images/mdatp-32-main-app-fix.png)
+:::image type="content" source="images/mdatp-32-main-app-fix.png" alt-text="RTP 已禁用" lightbox="images/mdatp-32-main-app-fix.png":::
 
 还可以运行 ```mdatp health```。 它报告实时保护是否已启用，但不可用。 这表示未批准在设备上运行内核扩展。
 
@@ -67,11 +67,11 @@ real_time_protection_available              : true
 
 ## <a name="manual-deployment"></a>手动部署
 
-如果安装产品后不到 30  \> 分钟，请导航到"系统首选项安全性 **"&隐私**"，其中您必须允许开发人员"Microsoft Corporation"提供系统软件。
+如果安装产品后不到 30  \> 分钟，请导航到"系统首选项安全&**隐私**"，其中您必须允许开发人员"Microsoft Corporation"提供系统软件。
 
 如果未看到此提示，则意味着 30 分钟或更长的时间已过，并且内核扩展尚未获得批准，无法在你的设备上运行：
 
-![提示过期屏幕截图后的安全和隐私窗口。](images/mdatp-33-securityprivacysettings-noprompt.png)
+:::image type="content" source="images/mdatp-33-securityprivacysettings-noprompt.png" alt-text="提示过期后的安全和隐私窗口" lightbox="images/mdatp-33-securityprivacysettings-noprompt.png":::
 
 在这种情况下，您需要执行以下步骤以再次触发审批流程。
 

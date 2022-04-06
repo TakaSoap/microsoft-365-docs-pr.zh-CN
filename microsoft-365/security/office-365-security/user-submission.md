@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 525b761b09a68c3e44443cec7bf718d9eaa4d8d1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9a38943b492e6bdae151a7906d1c8146a649949d
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327205"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634022"
 ---
 # <a name="user-reported-message-settings"></a>用户报告的邮件设置
 
@@ -55,7 +55,7 @@ ms.locfileid: "63327205"
 
 - [](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)创建一个反垃圾邮件策略，其中包括自定义邮箱，其中未选择"启用零时差自动清除 ( (\> ZAP) "的自定义邮箱，其中"垃圾邮件的 ZAP"和"网络钓鱼的 **ZAP**"被) 。
 
-如果你有 Microsoft Defender for Office 365，则还应配置以下设置，以便我们的高级筛选不会影响报告邮件的用户：
+如果已Microsoft Defender for Office 365，您还应配置以下设置，以便我们的高级筛选不会影响报告邮件的用户：
 
 - Create [a 保险箱 Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where 保险箱 Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages section** \> **Off**) .
 
@@ -141,8 +141,8 @@ ms.locfileid: "63327205"
 如果要指定原始附加邮件的报告原因，则发送到自定义邮箱 (的邮件不修改附件) 需要在"主题 (信封标题") 中以下列前缀之一开头：
 
 - 1|或垃圾邮件：
-- 2|或非垃圾邮件
-- 3|或网络钓鱼
+- 2|或非垃圾邮件：
+- 3|或网络钓鱼：
 
 例如：
 

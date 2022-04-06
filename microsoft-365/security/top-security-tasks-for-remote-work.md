@@ -17,18 +17,19 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: 保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 7f5c52eb0768adc4c64251ed7c3f34cccdf9cd57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755054"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469440"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>支持在家工作的安全团队的 12 大任务
 
 如果你与 Microsoft 类似 [，](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) 突然发现自己主要支持在家办公的员工，我们希望帮助你确保你的组织尽可能安全工作。 本文将确定任务的优先级，以帮助安全团队尽快实现最重要的安全功能。
 
-:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="支持在家工作的安全团队的 12 大任务" lightbox="../media/security/security-support-remote-work.png":::
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="支持在家工作需要执行的主要任务" lightbox="../media/security/security-support-remote-work.png":::
+
 
 如果你是使用 Microsoft 业务计划之一的中小型组织，请改为参阅以下资源：
 
@@ -122,9 +123,7 @@ Microsoft Defender for Office 365：
 
 现在，你已配置 Microsoft Defender for Office 365 和 Microsoft Defender for Identity，可以在一个仪表板中查看这些功能的组合信号。 [Microsoft 365 Defender](./defender/microsoft-365-defender.md)跨工作负载将警报、事件、自动调查和响应以及高级搜寻汇集在一起 (Microsoft Defender for Identity、Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Defender for Cloud Apps) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">集成到Microsoft 365 Defender门户</a>。
 
-<!--
-:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
---> 
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="仪表板Microsoft 365 Defender仪表板" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
 配置了一个或多个 Defender 以使用 Office 365服务后，打开 MTP。 新功能不断添加到 MTP;考虑选择接收预览功能。
 

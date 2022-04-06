@@ -13,12 +13,12 @@ description: 管理员可以在安全与合规中心的邮件流仪表板中了�
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4603e7d895c847513a41dc52764070f970a50d15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680151"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476370"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>安全与合规中心中的自动转发&见解
 
@@ -31,7 +31,7 @@ ms.locfileid: "63680151"
 
 安全 &**与** 合规中心的"邮件流 ["](https://protection.office.com)仪表板中的"自动转发邮件"见解显示有关从组织自动转发给外部域中收件人的邮件的信息。[](mail-flow-insights-v2.md)
 
-![安全与合规中心中的"自动转发&小组件。](../../media/mfi-auto-forwarded-messages.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="小部件在安全与合规中心内自动转发&邮件" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## <a name="auto-forwarded-messages-details"></a>自动转发的邮件详细信息
 
@@ -52,7 +52,7 @@ ms.locfileid: "63680151"
   - **上周 (新用户)**
   - 有关更多详细信息 [，请参阅转发修改](mfi-new-users-forwarding-email.md#forwarding-modifications-report) 报告的链接。
 
-![安全与合规中心内"自动转发的邮件"报告&标注。](../../media/mfi-auto-forwarded-messages-details.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="安全与合规中心中的&quot;自动转发&小组件" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## <a name="insights"></a>见解
 

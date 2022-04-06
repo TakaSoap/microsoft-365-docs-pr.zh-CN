@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP) 中查看和管理所有用户的隔离Exchange Online Protection (邮件。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7787943ad16a3ae641b475b01b7e1dd8bb7f51d2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 449886f6272c81f9947fd3e7ea869e565326578f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318209"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469638"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -141,7 +141,7 @@ ms.locfileid: "63318209"
 
 从列表中选择已隔离邮件时，所显示的详细信息浮出控件中提供了以下信息。
 
-![已隔离邮件的详细信息浮出控件。](../../media/quarantine-message-details-flyout.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="隔离邮件的详细信息飞出" lightbox="../../media/quarantine-message-details-flyout.png":::
 
 - **邮件 ID**：邮件的全局唯一标识符。 在邮件 **头的 Message-ID** 头字段中可用。
 - **发件人地址**
@@ -162,13 +162,13 @@ ms.locfileid: "63318209"
 > [!NOTE]
 > 要保留在详细信息浮出控件中，但更改正在查看的已隔离邮件，请使用浮出控件顶部的向上和向下箭头。
 >
-> ![已隔离邮件详细信息浮出控件中的向上和向下箭头。](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="隔离邮件的详细信息飞出中的向上和向下箭头" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>对已隔离电子邮件执行操作
 
 从列表中选择隔离邮件后，详细信息浮出控件中将提供以下操作：
 
-![隔离邮件详细信息浮出控件中的可用操作。](../../media/quarantine-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="隔离邮件的详细信息飞出中的可用操作" lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
 - ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放电子邮件**<sup>\*</sup>：在出现的飞出窗格中，配置以下选项：
   - **将发件人添加到组织的允许列表**：选择此选项可阻止隔离来自发件人的邮件。
@@ -234,7 +234,7 @@ ms.locfileid: "63318209"
 > [!NOTE]
 > 在移动设备上，说明文本在操作图标上不可用。
 >
-> ![已隔离邮件的详细信息，其中突出显示了可用操作。](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="突出显示可用操作的隔离邮件的详细信息" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 >
 > 下表汇总了按顺序排列的图标及其相应的说明：
 >
@@ -253,7 +253,7 @@ ms.locfileid: "63318209"
 
 当通过单击第一列左侧空白区域来选择列表中的多个已隔离邮件（最多 100 条）时，将显示“**批量操作**”下拉列表，你可以在其中执行以下操作：
 
-![隔离区中邮件的批量操作下拉列表。](../../media/quarantine-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="隔离邮件的批量操作下拉列表" lightbox="../../media/quarantine-message-bulk-actions.png":::
 
 - ![释放电子邮件图标。](../../media/m365-cc-sc-check-mark-icon.png) **释放邮件**：将邮件释放给所有收件人。 在出现的"飞出"中，可以选择以下选项，这些选项与释放单个邮件时的选项相同：
   - **将发件人添加到组织的允许列表**
@@ -312,7 +312,7 @@ ms.locfileid: "63318209"
 
 从列表中选择隔离文件时，将在打开的详细信息飞出中提供以下信息：
 
-![隔离文件的详细信息飞出。](../../media/quarantine-file-details-flyout.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="隔离文件的详细信息飞出" lightbox="../../media/quarantine-file-details-flyout.png":::
 
 - **文件名**
 - **文件 URL**：用于定义文件位置的 URL (例如，在 SharePoint Online) 。
@@ -333,13 +333,13 @@ ms.locfileid: "63318209"
 > [!NOTE]
 > 若要保留在详细信息飞出中，但更改要查看的隔离文件，请使用飞出顶部向上和向下箭头。
 >
-> ![隔离文件的详细信息飞出中的向上和向下箭头。](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="隔离文件的详细信息飞出中的向上和向下箭头" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-files"></a>对隔离文件采取措施
 
 从列表中选择隔离文件后，详细信息飞出中会提供以下操作：
 
-![隔离文件的详细信息飞出中的可用操作。](../../media/quarantine-file-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="隔离文件的详细信息飞出中的操作" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
 - ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png) **发布文件**<sup>\*</sup>：在出现的飞出窗格中，打开或关闭向 **Microsoft** 报告文件进行分析，然后单击"发布 **"**。
 - ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png)
@@ -355,7 +355,7 @@ ms.locfileid: "63318209"
 
 当通过单击"主题"列左侧的空白区域选择列表中的多个隔离文件 (最多 100) "时，将显示"批量操作"下拉列表，您可以在其中执行以下操作：
 
-![隔离中的文件的批量操作下拉列表。](../../media/quarantine-file-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="隔离中的文件的批量操作下拉列表" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 - ![发布文件图标。](../../media/m365-cc-sc-check-mark-icon.png) **发布文件**：在出现的飞出窗格中，打开或关闭向 **Microsoft** 报告文件进行分析，然后单击"发布 **"**。
 - ![从隔离图标中删除。](../../media/m365-cc-sc-delete-icon.png) **从隔离区** 删除：在 **出现的警告中** 单击"是"后，将立即删除文件。

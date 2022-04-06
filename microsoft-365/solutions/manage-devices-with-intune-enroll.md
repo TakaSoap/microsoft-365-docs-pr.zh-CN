@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 5810513cd3aa4fccd8ce0100f22c708c53527c42
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
-ms.translationtype: HT
+ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321635"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651270"
 ---
-# <a name="step-2-enroll-devices-into-management-with-intune"></a>步骤 2. 使用 Intune 将设备注册到管理
+# <a name="step-2-enroll-devices-to-intune"></a>步骤 2. 将设备注册到Intune
 
-有多种方法可保护终结点，终结点是通常用于指代组合实体(包括设备、应用和用户标识)的术语。 必须在应用和设备本身上持续、可靠地强制实施安全策略。 将设备注册到管理并向云标识提供者(例如 Azure Active Directory)注册是很好的开始。
+有多种方法可保护终结点，终结点是通常用于指代组合实体(包括设备、应用和用户标识)的术语。 必须在应用和设备本身上持续、可靠地强制实施安全策略。 注册设备以Intune并注册云标识提供者（如Azure Active Directory）是一个很好的开端。
 
 无论设备是个人所有的 BYOD 设备，还是公司所有的完全托管的设备，都最好了解访问组织资源的终结点，从而确保仅允许运行正常且合规的设备。 这包括在终结点上运行的移动和桌面应用的运行状况和可信度。 你希望确保这些应用正常且合规，并防止通过恶意意图或意外方式将企业数据泄漏到使用者应用或服务。
 
 设备注册流程会在用户、设备和 Microsoft Intune 服务之间建立关系。 将 Microsoft Intune 用作独立服务便于使用单个基于 Web 的管理控制台以管理 Windows 电脑、macOS 和最热门的移动设备平台。
 
-本文推荐了使用 Intune 将设备注册到管理的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/mem/intune/fundamentals/deployment-guide-enrollment)。
+本文建议将设备注册到Intune的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/mem/intune/fundamentals/deployment-guide-enrollment)。
 
 ![管理设备的步骤](../media/devices/intune-mdm-steps-1.png#lightbox)
 

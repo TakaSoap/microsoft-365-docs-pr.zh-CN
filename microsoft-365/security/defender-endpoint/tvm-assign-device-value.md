@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ff6d61e02ff923cc9406412c81e9a67799e6880a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166634"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477206"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>分配设备值 - 危险和漏洞管理
 
@@ -59,10 +59,11 @@ ms.locfileid: "61166634"
 
 2. 从 **页面顶部的** 操作栏旁边的三个点中选择设备值。
 
-    ![设备值下拉列表的示例。](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="设备值选项" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. 将显示一个显示当前设备值及其的含义的飞出图。 查看设备的值，然后选择最适合你的设备的值。
-![设备值飞出的示例。](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="&quot;设备值&quot;页" lightbox="images/tvm-device-value-flyout.png":::
 
 ## <a name="how-device-value-impacts-your-exposure-score"></a>设备值如何影响你的曝光分数
 

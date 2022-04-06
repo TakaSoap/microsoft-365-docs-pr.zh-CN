@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c52fac7c5680d8e5f814098410dc2e1993328d2f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681471"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476898"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ iOS 上的 Defender for Endpoint 使用 VPN 来提供此功能。 请注意，�
 1. 关闭"**连接按需"** 以禁用 VPN。
 
     > [!div class="mx-imgBorder"]
-    > ![VPN 配置按需连接。](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="VPN 配置的切换按钮连接按需选项" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
 > 禁用 VPN 后，Web 保护将不可用。 若要重新启用 Web 保护，请在设备上打开 Microsoft Defender for Endpoint 应用，然后单击或点击"启动 **VPN"**。
@@ -121,18 +121,18 @@ iOS 上的 Microsoft Defender for Endpoint 支持应用保护策略方案，并�
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)， go to **DevicesCompliance** ->  **policiesCreate** ->  Policy. 选择"iOS/iPadOS"作为平台，然后单击"创建 **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![创建策略。](images/ios-jb-policy.png)
+    > :::image type="content" source="images/ios-jb-policy.png" alt-text="&quot;创建策略&quot;选项卡" lightbox="images/ios-jb-policy.png":::
 
 2. 指定策略的名称，例如"越狱合规性策略"。
 3. 在合规性设置页中，单击以展开 **"设备运行状况"** 部分，**然后单击"阻止****越狱设备"** 字段。
 
     > [!div class="mx-imgBorder"]
-    > ![策略设置。](images/ios-jb-settings.png)
+    > :::image type="content" source="images/ios-jb-settings.png" alt-text="&quot;合规性设置&quot;选项卡" lightbox="images/ios-jb-settings.png":::
 
-4. 在" **针对不相容** 性的操作"部分，根据你的要求选择操作，然后选择"下一步 **"**。
+4. 在" **针对不符合的操作** "部分，根据你的要求选择操作，然后选择"下一步 **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![策略操作。](images/ios-jb-actions.png)
+    > :::image type="content" source="images/ios-jb-actions.png" alt-text="&quot;针对不相容的操作&quot;选项卡" lightbox="images/ios-jb-actions.png":::
 
 5. 在 **"分配** "部分，选择要为此策略包含的用户组，然后选择"下一步 **"**。
 6. 在" **查看+创建** "部分，验证输入的所有信息是否正确，然后选择"创建 **"**。

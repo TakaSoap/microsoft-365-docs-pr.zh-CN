@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4c922ef443dbe6e4a1b55159f2c27b35926ff886
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681823"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634440"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -43,7 +43,7 @@ ms.locfileid: "63681823"
 网络保护将 [Web 保护中的保护扩展到](web-protection-overview.md) 操作系统级别。 它为其他受支持的浏览器和非浏览器应用程序提供 Edge 中的 Web 保护功能。 此外，网络保护在终结点检测和响应 (ICS) 和阻止泄露 [指示器](overview-endpoint-detection-response.md)。 例如，网络保护 [适用于可用于阻止](manage-indicators.md) 特定域或主机名的自定义指示器。
 
 > [!TIP]
-> 有关网络保护的工作原理，demo.wd.microsoft.com Microsoft Defender for Endpoint [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 测试站点。
+> 请参阅Microsoft Defender for Endpoint测试[站点 demo.wd.microsoft.com 网络](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)保护的工作原理。
 
 > [!NOTE]
 > 位于 demo.wd.microsoft.com 处的 Defender for Endpoint 演示网站已弃用，并将在未来删除。
@@ -68,11 +68,11 @@ ms.locfileid: "63681823"
 
 ## <a name="configuring-network-protection"></a>配置网络保护
 
-若要详细了解如何启用网络保护，请参阅 **[启用网络保护](enable-network-protection.md)**。 使用组策略、PowerShell 或 MDM CSP 在网络中启用和管理网络保护。
+若要详细了解如何启用网络保护，请参阅 **[启用网络保护](enable-network-protection.md)**。 使用 组策略、PowerShell 或 MDM CSP 在网络中启用和管理网络保护。
 
 ## <a name="viewing-network-protection-events"></a>查看网络保护事件
 
-网络保护最适合 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，它为你提供有关 Exploit Protection 事件的详细报告，并作为警报调查方案的一部分 [进行阻止](investigate-alerts.md)。
+网络保护[最适用于Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，它为你提供有关 Exploit Protection 事件的详细报告，并作为警报调查方案的一部分[进行阻止](investigate-alerts.md)。
 
 当网络保护阻止连接时，将显示来自操作中心的通知。 安全运营团队 [可以使用](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) 组织的详细信息和联系信息自定义通知。 此外，可以启用和自定义各个攻击面减少规则，以适合要监视的某些技术。
 
@@ -80,7 +80,7 @@ ms.locfileid: "63681823"
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>查看网络保护门户中的Microsoft 365 Defender事件
 
-Microsoft Defender for Endpoint 提供事件的详细报告和阻止，作为警报调查方案的 [一部分](investigate-alerts.md)。 可以在警报队列中的 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 或通过使用高级搜寻查看[这些详细信息](advanced-hunting-overview.md)。[](review-alerts.md) 如果你使用的是审核 [模式，](audit-windows-defender.md)可以使用高级搜寻来查看网络保护设置在启用后将如何影响你的环境。
+Microsoft Defender for Endpoint在其警报调查方案中提供事件和阻止[的详细报告](investigate-alerts.md)。 可以在警报队列中的 Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 或通过使用高级搜寻查看[这些详细信息](advanced-hunting-overview.md)。[](review-alerts.md) 如果你使用的是审核 [模式，](audit-windows-defender.md)可以使用高级搜寻来查看网络保护设置在启用后将如何影响你的环境。
 
 下面是高级搜寻的示例查询：
 
@@ -89,7 +89,7 @@ DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>查看网络保护中Windows 事件查看器
 
 你可以查看Windows事件日志，以查看网络保护阻止访问恶意 IP 或 (或审核) IP 或域时创建的事件：
 
@@ -142,7 +142,11 @@ DeviceNetworkEvents
 
 1. 使用 ["打开网络保护](enable-network-protection.md) "并按照说明应用策略。
 
-2. 执行以下 PowerShell 命令： `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+2. 执行以下 PowerShell 命令：
+  - `Set-MpPreference -EnableNetworkProtection Enabled`
+  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>网络保护疑难解答
 
@@ -157,5 +161,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>另请参阅
 
 - [评估网络保护](evaluate-network-protection.md) |执行一个快速方案，演示功能的工作方式以及通常会创建哪些事件。
-- [启用网络保护](enable-network-protection.md) |使用组策略、PowerShell 或 MDM CSP 在网络中启用和管理网络保护。
+- [启用网络保护](enable-network-protection.md)|使用 组策略、PowerShell 或 MDM CSP 在网络中启用和管理网络保护。
 - [在攻击区中配置攻击面Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

@@ -14,12 +14,12 @@ description: 通过 Microsoft Defender 中的威胁筛选堆栈跟踪传入邮�
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683814"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469022"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的威胁防护步骤
 
@@ -34,7 +34,7 @@ Microsoft Defender Office 365保护或筛选堆栈可以分为 4 个阶段，如
 
 边缘块设计为自动。 如果误报，将通知发件人并告知发件人如何处理其问题。 来自信誉有限的受信任合作伙伴的连接器可以确保可交付性，或在载入新终结点时可以设置临时替代。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Defender for Office 365筛选的第 1 阶段是边缘保护。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Defender 中的 Phase-1 筛选Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. 网络 **限制** 通过Office 365一组特定基础结构可以提交的消息数，保护基础结构和客户免受拒绝服务 (DOS) 攻击。
 
@@ -52,7 +52,7 @@ Microsoft Defender Office 365保护或筛选堆栈可以分为 4 个阶段，如
 
 发件人智能中的功能对于捕获垃圾邮件、批量、模拟和未经授权的欺骗邮件至关重要，还会成为网络钓鱼检测的因素。 这些功能中的大多数是可单独配置的。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender for Office 365筛选的第 2 阶段是发件人智能。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Defender for Office 365筛选的第 2 阶段是发件人智能" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **帐户具有** 异常行为且与泄露一致时，会引发帐户泄露检测触发器和警报。 在某些情况下，用户帐户将被阻止并阻止发送任何进一步的电子邮件，直到组织的安全运营团队解决该问题为止。
 
@@ -82,7 +82,7 @@ Microsoft Defender Office 365保护或筛选堆栈可以分为 4 个阶段，如
 
 在此阶段，筛选堆栈开始处理邮件的特定内容，包括其超链接和附件。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO 中的筛选阶段 3 是内容筛选。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO 中的 Phase-3 筛选是内容筛选" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **传输** (也称为邮件流规则或 Exchange 传输规则) 当邮件满足同样广泛的条件时，管理员可采取各种操作。 根据已启用的邮件流规则/传输规则评估通过组织传递的所有邮件。
 
@@ -110,7 +110,7 @@ Microsoft Defender Office 365保护或筛选堆栈可以分为 4 个阶段，如
 
 最后一个阶段发生在邮件或文件传递之后，对各种邮箱中的邮件以及显示在客户端（如 Microsoft Teams）中的文件和链接Microsoft Teams。
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365筛选的第 4 阶段是传递后保护。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365 中的 Phase-4 筛选是传递后保护" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
 1. **安全链接** 是 Defender for Office 365 的点击时间保护。 每封邮件中的每个 URL 都打包为指向 Microsoft 保险箱链接服务器。 单击 URL 时，将针对最新信誉检查 URL，然后用户重定向到目标网站。 URL 是异步沙盒，用于更新其信誉。
 
@@ -134,9 +134,9 @@ Microsoft Defender Office 365保护或筛选堆栈可以分为 4 个阶段，如
 
 最终图表 (图表的所有部分一样，) 随着产品的扩大和开发而 *发生变化*。 如果更新后需要 **询问** ，请为此页面添加书签，并使用底部的反馈选项。 对于记录，这是按顺序排列的所有阶段的堆栈：
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender 中筛选的所有阶段Office 365 1 到 4。":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender for Office 365筛选的所有阶段，从 1 到 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 是否需要为 Microsoft Defender 设置Office 365 ***now** _？ 使用此堆栈_now*，通过此 [分步操作](protect-against-threats.md) 开始保护你的组织。
 

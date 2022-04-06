@@ -14,12 +14,12 @@ description: 管理员可以 &了解如何使用安全与合规中心内"邮件�
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 54bff65b29555fe0c94c86141cd7a10a77c36219
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 62da2d9654174bc2572a6d7cbb3acbd638757a6c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679997"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469462"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&队列见解
 
@@ -43,7 +43,8 @@ Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期�
 
 - 警报显示在安全与合规中心的 **"**  \>最近使用警报"仪表板&警报 [](https://protection.office.com) (**或**) <https://protection.office.com/alertsdashboard> 。
 
-  ![安全与合规中心的警报仪表板中的&警报。](../../media/mfi-queued-messages-alert.png)
+  :::image type="content" source="../../media/mfi-queued-messages-alert.png" alt-text="安全与合规中心的警报仪表板中的&警报" lightbox="../../media/mfi-queued-messages-alert.png":::
+
 
 - 管理员将收到一封电子邮件通知，通知基于名为"已延迟邮件"的默认警报 **策略的配置**。 若要为此警报配置通知设置，请参阅下一节。
 
@@ -57,7 +58,7 @@ Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期�
 
 3. 在 **打开的"消息已** 延迟"飞出中，你可以打开或关闭警报并配置通知设置。
 
-   ![邮件已延迟警报策略，详细信息安全&合规中心。](../../media/mfi-queued-messages-alert-policy.png)
+   :::image type="content" source="../../media/mfi-queued-messages-alert-policy.png" alt-text="邮件已延迟警报的详细信息" lightbox="../../media/mfi-queued-messages-alert-policy.png":::
 
    - **状态**：你可以打开或关闭警报。
 
@@ -70,7 +71,7 @@ Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期�
    - **每日通知** 限制：默认值为 **"无限制"**。
    - **阈值**：默认值为 200。
 
-   !["邮件已延迟警报策略"中的通知设置详细介绍安全&中心。](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+     :::image type="content" source="../../media/mfi-queued-messages-alert-policy-notification-settings.png" alt-text="邮件中的通知设置已延迟警报" lightbox="../../media/mfi-queued-messages-alert-policy-notification-settings.png":::
 
 5. 完成后，单击 **"保存并****关闭"**。
 
@@ -78,7 +79,7 @@ Microsoft 365将重试传递 24 小时。 24 小时后，这些邮件将过期�
 
 即使排队的邮件卷未超出阈值并生成警报，您仍可以使用邮件流仪表板中的 **队列** 见解来查看排队时间超过 1 小时 [](mail-flow-insights-v2.md)的邮件，在排队邮件数量变得过大之前采取措施。
 
-![安全与合规中心内"邮件流"仪表板中的"&"小组件。](../../media/mfi-queues-widget.png)
+:::image type="content" source="../../media/mfi-queues-widget.png" alt-text="安全与合规中心内&quot;邮件流&quot;仪表板&&quot;队列&quot;小组件" lightbox="../../media/mfi-queues-widget.png":::
 
 If you click the number of messages on the widget， a **Messages queued** flyout appears with the following information：
 
@@ -91,11 +92,11 @@ If you click the number of messages on the widget， a **Messages queued** flyou
 - **上一个错误**
 - **如何修复**：常见问题和解决方案可用。 If a **Fix it now** link is available， click it to fix the problem. 否则，请单击任何可用链接，了解有关错误和可能的解决方案的详细信息。
 
-![单击邮件流仪表板中的队列见解后的详细信息。](../../media/mfi-queues-details.png)
+:::image type="content" source="../../media/mfi-queues-details.png" alt-text="在邮件流仪表板中单击队列见解后的详细信息" lightbox="../../media/mfi-queues-details.png":::
 
 在邮件已延迟警报的详细信息中单击"查看队列"后，将显示 **相同的飞** 出图。
 
-![安全与合规中心内的邮件已&警报详细信息。](../../media/mfi-queued-messages-alert-details.png)
+:::image type="content" source="../../media/mfi-queued-messages-alert-details.png" alt-text="安全与合规中心内&quot;邮件&quot;&延迟警报" lightbox="../../media/mfi-queued-messages-alert-details.png":::
 
 ## <a name="see-also"></a>另请参阅
 

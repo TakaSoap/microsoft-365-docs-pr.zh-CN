@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595249"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634088"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -52,7 +52,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- 你的订阅包括以下选项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 + Microsoft 365 E5 安全性 加载项或Microsoft Defender for Endpoint独立许可证。 
+- 订阅包括以下各项之一：Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全性、Microsoft 365 E3 或 Microsoft Defender for Endpoint独立许可证。 
 
 - 你有权访问 Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">门户</a>。
 

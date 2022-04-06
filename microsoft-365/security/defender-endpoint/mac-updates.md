@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767624"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469286"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -40,7 +40,7 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 
 若要更新 macOS 上的 Microsoft Defender for Endpoint，使用名为 Microsoft AutoUpdate (MAU) 程序。 默认情况下，MAU 每天自动检查更新，但你可以将更新更改为每周、每月或手动。
 
-![MAU 屏幕截图。](images/MDATP-34-MAU.png)
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
 如果决定使用软件分发工具部署更新，应配置 MAU 以手动检查软件更新。 你可以部署首选项，以配置 MAU 检查组织中 Mac 更新方式和检查时间。
 
@@ -67,7 +67,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 > [!IMPORTANT]
 > 在 Microsoft AutoUpdate 版本 4.29 之前，频道具有不同的名称：
 >
-> - `Beta` 被命名为 `InsiderFast` (Insider Fast) 
+> - `Beta` 已 (`InsiderFast` Insider Fast) 
 > - `Preview` 被命名为 (`External` Insider Slow) 
 > - `Current` 已命名 `Production`
 
@@ -81,7 +81,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|ChannelName|
+|**注册表项**|ChannelName|
 |**数据类型**|String|
 |**可能的值**|Beta <p> 预览 <p> Current|
 |||
@@ -104,7 +104,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|UpdateCheckFrequency|
+|**注册表项**|UpdateCheckFrequency|
 |**数据类型**|整数|
 |**默认值**|720 (分钟) |
 |**Comment**|此值以分钟数设置。|
@@ -121,7 +121,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|HowToCheck|
+|**注册表项**|HowToCheck|
 |**数据类型**|String|
 |**可能的值**|手动 <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|请注意，如果可能，AutomaticDownload 将执行下载并静默安装。|
@@ -138,7 +138,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|EnableCheckForUpdatesButton|
+|**注册表项**|EnableCheckForUpdatesButton|
 |**数据类型**|Boolean|
 |**可能的值**|为 (默认值)  <p> False|
 |||
@@ -154,7 +154,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|DisableInsiderCheckbox|
+|**注册表项**|DisableInsiderCheckbox|
 |**数据类型**|Boolean|
 |**可能的值**|False (默认值)  <p> True|
 |||
@@ -170,7 +170,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |---|---|
 |**域**|`com.microsoft.autoupdate2`|
-|**键**|SendAllTelemetryEnabled|
+|**注册表项**|SendAllTelemetryEnabled|
 |**数据类型**|Boolean|
 |**可能的值**|为 (默认值)  <p> False|
 |||

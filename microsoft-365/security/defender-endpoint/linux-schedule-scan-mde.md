@@ -1,7 +1,7 @@
 ---
-title: '如何使用 Microsoft Defender for Endpoint (Linux) '
-description: 了解如何为 Microsoft Defender for Endpoint (Linux) 安排自动扫描时间，以更好地保护组织的资产。
-keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
+title: 如何使用 Microsoft Defender for Endpoint (Linux) 计划扫描
+description: 了解如何为 Microsoft Defender for Endpoint (Linux) 计划自动扫描时间，以便更好地保护组织的资产。
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， scans， 防病毒， microsoft defender for endpoint (linux) '
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 706284ed0adf49c4da6357b6bb8217d5a14268e1
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467612"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663481"
 ---
-# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
+# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 计划扫描
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-若要运行 Linux 扫描，请参阅支持 [的命令](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
+若要运行 Linux 扫描，请参阅 [支持的命令](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
 
-Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。
+Linux (和 Unix) 具有类似于任务计划程序) 的名为 **crontab** (的工具，以便能够运行计划任务。
 
 ## <a name="pre-requisite"></a>先决条件
 
@@ -53,12 +53,12 @@ sudo crontab -l > /var/tmp/cron_backup_200919.dat
 ```
 
 > [!NOTE]
-> 其中 200919 == YRMMDD
+> 其中200919 == YRMMDD
 
 > [!TIP]
-> 在编辑或删除之前，请执行这一操作。
+> 在编辑或删除之前执行此操作。
 
-若要编辑 crontab，并添加一个新作业作为根用户：
+若要编辑 crontab，并以根用户身份添加新作业：
 
 ```bash
 sudo crontab -e
@@ -84,18 +84,18 @@ CRON_TZ=America/Los_Angeles
 ```
 
 > [!NOTE]
-> 本示例中，我们设置为 00 分钟，即 2 a.m。  (24 小时制的 24 小时制) 、月中的任意一天、任何一个月的星期六。 这意味着它将于星期六的上午 2：00 运行。 太平洋 (UTC -8) 。
+> 在此示例中，我们将其设置为 00 分钟，凌晨 2 点。  (24 小时格式的小时) ，月中的任何一天，任何月份，星期六。 这意味着它将在星期六凌晨2：00运行。 太平洋 (UTC -8) 。
 
 按"Esc"
 
-键入不带`:wq`双引号的""。
+键入"`:wq`"，不带双引号。
 
 > [!NOTE]
-> w == 写入，q == quit
+> w == write， q == quit
 
 若要查看 cron 作业，请键入 `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp 页面" lightbox="../../media/linux-mdatp-1.png":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="Linux mdatp 页" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>检查 cron 作业运行
 
@@ -103,13 +103,13 @@ CRON_TZ=America/Los_Angeles
 sudo grep mdatp /var/log/cron
 ```
 
-#### <a name="to-inspect-the-mdatp_cron_joblog"></a>检查 mdatp_cron_job.log*
+#### <a name="to-inspect-the-mdatp_cron_joblog"></a>检查mdatp_cron_job.log*
 
 ```bash
 sudo nano mdatp_cron_job.log
 ```
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a>对于使用"Ansible"、"用户"或"时形"的
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a>对于使用 Ansible、Chef 或 Puppet 的用户
 
 使用以下命令：
 
@@ -129,7 +129,7 @@ cron resource
 ```
 有关详细信息，请参阅 <https://docs.chef.io/resources/cron/>。
 
-### <a name="to-set-cron-jobs-in-puppet"></a>在"创建"中设置 cron 作业
+### <a name="to-set-cron-jobs-in-puppet"></a>在 Puppet 中设置 cron 作业
 
 ```bash
 Resource Type: cron
@@ -137,7 +137,7 @@ Resource Type: cron
 
 有关详细信息，请参阅 <https://puppet.com/docs/puppet/5.5/types/cron.html>。
 
-使用改进实现自动化：Cron 作业和计划任务
+使用 Puppet 自动执行：Cron 作业和计划任务
 
 有关详细信息，请参阅 [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)。
 
@@ -168,7 +168,7 @@ crontab -l > /var/tmp/cron_backup.dat
 ```
 
 > [!TIP]
-> 在编辑或删除之前，请执行这一操作。
+> 在编辑或删除之前执行此操作。
 
 ### <a name="to-restore-crontab-entries"></a>还原 crontab 条目
 
@@ -176,7 +176,7 @@ crontab -l > /var/tmp/cron_backup.dat
 crontab /var/tmp/cron_backup.dat
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>编辑 crontab 并作为根用户添加新作业
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>编辑 crontab 并以根用户身份添加新作业
 
 ```bash
 sudo crontab -e
@@ -208,9 +208,9 @@ crontab -u username -r
 
 ### <a name="explanation"></a>说明
 
-+—————-分钟 (值：0 - 59)  (特殊字符： 、 - * /)   <br>
-|+————-小时 (值：0 - 23)  (特殊字符： 、 - * /)  <br>
-| |+———-月中的 (值：1 - 31)  (特殊字符： 、 - * / L W C)   <br>
-| | |+——-月 (值：1 - 12)  (特殊字符：，- * / )   <br>
-| | | |+-- 一周中的 (值：0 - 6)  (Sunday=0 或 7)  (特殊字符： 、 - * / L W C)  <br>
-| | | | |*****要执行的命令
++—————-分钟 (值：0 - 59)  (特殊字符：，/ \- \* )   <br>
+|+————-小时 (值：0 - 23)  (特殊字符：， \- \* /)  <br>
+| |+月———-天 (值：1 - 31)  (特殊字符：/ \- \* L W C)   <br>
+| | |+——-月 (值：1 - 12)  (特殊字符： / \- \* )   <br>
+| | | |+- 一周中的一天 (值：0 - 6)  (星期日=0 或 7)  (特殊字符： / \- \* L W C)  <br>
+要执行| | | | |****命令

@@ -20,19 +20,20 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683112"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477338"
 ---
 # <a name="step-3-implement-asr-rules"></a>步骤 3：实现 ASR 规则
 
 实施攻击面减少 (ASR) 规则将第一个测试圈移动到启用的功能状态。
 
 > [!div class="mx-imgBorder"]
-> ![ASR 规则实现步骤](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="实现 ASR 规则的过程" lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>步骤 1：将 ASR 规则从审核转换为阻止
 

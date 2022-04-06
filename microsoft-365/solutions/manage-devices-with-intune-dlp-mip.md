@@ -1,5 +1,5 @@
 ---
-title: 步骤 7. 使用信息保护功能实现数据丢失防护（DLP）
+title: 步骤 7. 使用信息保护功能实现数据丢失防护 (DLP)
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -21,14 +21,14 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: 通过与信息保护和管理团队合作，为组织创建 DLP 策略，实现终结点 DLP。
-ms.openlocfilehash: c38171d790ffd376c7886da0547345cf7e74e36c
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
-ms.translationtype: HT
+ms.openlocfilehash: 605923c377aca77f84861116b38b6ef07f95ca4f
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62202073"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651292"
 ---
-# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>步骤 7. 使用信息保护功能实现数据丢失防护（DLP）
+# <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>步骤 7. 使用信息保护功能实现数据丢失防护 (DLP)
 
 
 如果组织已投入时间了解数据、开发数据敏感度架构和应用架构，则可以使用数据丢失防护（DLP） 策略将此架构的元素扩展到终结点。 
@@ -47,7 +47,7 @@ DLP 策略还指定要将策略应用到的位置，例如 Exchange 电子邮件
 
 ![设备管理员的终结点 DLP 步骤](../media/devices/endpoint-dlp-steps.png#lightbox)
 
-如果已完成 [步骤 2. 将设备注册到管理](manage-devices-with-intune-enroll.md) 和 [步骤 6. 将设备注册到 Defender for Endpoint 以监视设备风险和安全基线的符合性](manage-devices-with-intune-monitor-risk.md)，则已为终结点 DLP 启用设备。 
+如果已完成[步骤 2。将设备注册到Intune](manage-devices-with-intune-enroll.md)和[步骤 6。将设备注册到 Defender for Endpoint 以监视设备风险和安全基线符合性](manage-devices-with-intune-monitor-risk.md)，已为 Endpoint DLP 启用设备。 
 
 
 使用以下步骤与信息保护团队协作。

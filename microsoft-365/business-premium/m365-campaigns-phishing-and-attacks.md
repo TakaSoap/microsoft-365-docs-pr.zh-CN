@@ -24,27 +24,30 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Web 服务抵御网络钓鱼和其他Microsoft 365。
-ms.openlocfilehash: b1a6b5a80b00df010d4733c1b7cb8ce1d16a95d9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 09e72221e23f4f0d1e2f4a5e7dcb81abff46dcf2
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767764"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634242"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>保护自己免受网络钓鱼和其他攻击
 
 Microsoft 365 商业高级版许多防护来抵御攻击，但你可以自己执行一些操作来限制和降低联机攻击的风险。
 
 - **垃圾邮件** 您可能会收到垃圾邮件的原因有很多，并非所有垃圾邮件都是相同的。 但是，通过筛选出垃圾邮件，您可以减少收到的邮件，从而降低攻击的风险。
+
 - **网络钓鱼** 欺诈邮件是看起来合法但试图获取个人信息或窃取你的金钱的电子邮件。
+
 - **欺骗** 欺诈者还可使用一种称为欺骗的技术，使其看起来就像从你自己收到电子邮件一样。 
-- **恶意软件** 是可安装在您的计算机上的恶意软件，通常在单击链接或通过电子邮件打开文档后安装。 当计算机接管 (时，存在各种类型的恶意软件) 例如勒索软件，但你不想拥有其中任何恶意软件。 
+
+- **恶意软件** 是可安装在您的计算机上的恶意软件，通常在单击链接或通过电子邮件打开文档后安装。 计算机接管 (时，存在各种类型的恶意软件 (，例如勒索软件) ，但你不想拥有其中任何恶意软件。 
 
 ## <a name="best-practices"></a>最佳做法
 
 ### <a name="reduce-spam-mail"></a>减少垃圾邮件
 
-请按照 [以下 10 条提示操作，了解如何减少垃圾邮件](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6)。
+请按照 [以下 10 条提示操作，了解如何减少垃圾邮件](https://support.microsoft.com/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6)。
 
 ### <a name="report-it"></a>报告它！
 
@@ -78,5 +81,6 @@ Microsoft 365 商业高级版许多防护来抵御攻击，但你可以自己执
 详细了解如何：
 
 - [与用户一起保证文件和Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f)。
+
 - [在工作中保持安全、私密](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d)。
   

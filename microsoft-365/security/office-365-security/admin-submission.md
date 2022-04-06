@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682628"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477140"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -84,7 +84,7 @@ ms.locfileid: "63682628"
 
 3. 选择"**标记为并通知**"下拉列表，然后选择"**未找到网络钓鱼**\>或垃圾邮件的威胁 **"**。
 
-   :::image type="content" alt-text="从门户发送邮件。" source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="&quot;提交&quot;页" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 报告的邮件将被标记为误报或漏报。 系统会自动从门户向报告邮件的用户发送电子邮件通知。
 
@@ -108,7 +108,7 @@ ms.locfileid: "63682628"
 5. 完成后，请单击“**提交**”。
 
     > [!div class="mx-imgBorder"]
-    > ![新的 URL 提交示例。](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="新 URL 提交过程" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
@@ -125,7 +125,7 @@ ms.locfileid: "63682628"
 4. 完成后，请单击“**提交**”。
 
     > [!div class="mx-imgBorder"]
-    > ![新建电子邮件提交示例。](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="&quot;新建电子邮件&quot;提交过程" lightbox="../../media/submission-url-flyout.png":::
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>将可疑的电子邮件附件提交给 Microsoft
 
@@ -142,7 +142,7 @@ ms.locfileid: "63682628"
 4. 完成后，请单击“**提交**”。
 
     > [!div class="mx-imgBorder"]
-    > ![新附件提交示例。](../../media/submit-email-attachment-for-analysis.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="&quot;新建附件&quot;提交过程" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > 如果恶意软件筛选将邮件附件替换为"恶意软件警报Text.txt文件，则需要从隔离区提交包含原始附件的原始邮件。 有关隔离以及如何释放包含恶意软件误报的邮件详细信息，请参阅以管理员角色管理隔离的邮件 [和文件](manage-quarantined-messages-and-files.md)。
@@ -178,7 +178,7 @@ ms.locfileid: "63682628"
      完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
-     > ![新建 管理员提交的自定义列选项。](../../media/submit-admin-submissios-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="管理员提交的&quot;新自定义&quot;列选项" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - 若要筛选条目，请单击"筛选器 **"**。 以下筛选器可用：
      - **提交日期**：**开始日期和****结束日期**。
@@ -186,7 +186,7 @@ ms.locfileid: "63682628"
      - **网络消息 ID**
      - **Sender**
      - **收件人**
-     - **Name**
+     - **名称**
      - **提交者**
      - **提交原因**
      - **状态**
@@ -195,11 +195,11 @@ ms.locfileid: "63682628"
      完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
-     > ![管理员提交的新筛选器选项。](../../media/submit-admin-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="管理员提交的&quot;新建筛选器&quot;选项" lightbox="../../media/admin-submission-filters.png":::
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
-     - **Type**
+     - **类型**
      - **原因**
      - **状态**
      - **结果**
@@ -263,7 +263,7 @@ ms.locfileid: "63682628"
      完成后，单击“**应用**”。
 
      > [!div class="mx-imgBorder"]
-     > ![用户提交的新筛选器选项。](../../media/submit-user-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="用户提交的&quot;新建筛选器&quot;选项" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
@@ -298,4 +298,4 @@ ms.locfileid: "63682628"
 - **触发调查**
 
 > [!div class="mx-imgBorder"]
-> !["操作"按钮上的"新建选项"。](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="&quot;操作&quot;按钮上的&quot;新建&quot;选项" lightbox="../../media/admin-submission-main-action-button.png":::

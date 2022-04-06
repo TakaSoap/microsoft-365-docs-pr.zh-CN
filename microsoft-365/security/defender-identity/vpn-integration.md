@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 59ab309b4d5cbab971c161ee1b8a4abefe93be69
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a5c45ecda43b32e37f7309b9a2de33810d60bd15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683024"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469154"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender for Identity VPN integration in Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "63683024"
 - 检查点
 - Cisco ASA
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要启用 VPN 集成，请确保设置以下参数：
 
@@ -60,11 +60,11 @@ ms.locfileid: "63683024"
 1. 右键单击服务器名称，然后选择"属性 **"**。
 1. 在" **安全"选项卡** 的" **会计提供程序"下**，选择 **"RADIUS Accounting** "，然后选择" **配置"**。
 
-    ![RADIUS 设置。](../../media/defender-identity/radius-setup.png)
+   :::image type="content" source="../../media/defender-identity/radius-setup.png" alt-text="RADIUS 设置" lightbox="../../media/defender-identity/radius-setup.png":::
 
 1. 在"**添加 RADIUS 服务器**  [!INCLUDE [Product short](includes/product-short.md)]"窗口中，键入具有网络连接的最近传感器 (的服务器) 。 若要获得高可用性，可以将其他 [!INCLUDE [Product short](includes/product-short.md)] 传感器添加为 RADIUS 服务器。 在 **"** 端口"下，确保已配置默认值 1813。 选择 **"更改** "，然后键入包含字母数字字符的新共享密码字符串。 记下新的共享密码字符串，因为稍后需要在配置过程中填写 [!INCLUDE [Product short](includes/product-short.md)] 它。 选中"**发送 RADIUS 帐户开"和"记帐关闭消息**"框，在所有打开的对话框中选择"确定"。
 
-    ![VPN 设置。](../../media/defender-identity/vpn-set-accounting.png)
+   :::image type="content" source="../../media/defender-identity/vpn-set-accounting.png" alt-text="VPN 设置" lightbox="../../media/defender-identity/vpn-set-accounting.png":::
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>在 Defender 中为标识配置 VPN
 
@@ -74,12 +74,12 @@ ms.locfileid: "63683024"
 
 1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
-    ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="&quot;设置&quot;菜单项下的&quot;标识&quot;选项" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. 选择 **VPN**。
 1. 选择 **"启用半径计算**" **，然后键入** 之前在 RRAS VPN 服务器上配置的共享密码。 然后选择“**保存**”。
 
-    ![VPN 集成。](../../media/defender-identity/vpn-integration.png)
+   :::image type="content" source="../../media/defender-identity/vpn-integration.png" alt-text="VPN 集成" lightbox="../../media/defender-identity/vpn-integration.png":::
 
 启用此功能后，所有 Defender for Identity 传感器将在端口 1813 上侦听 RADIUS 记帐事件，并且 VPN 设置已完成。
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 48deec7763981b10daf1d0c16cbef95d0e2dbaeb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681427"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476524"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>调查在邮件中传递的恶意Microsoft 365
 
@@ -84,7 +84,7 @@ ms.locfileid: "63681427"
 
 2. 在"**视图"****菜单中，从**\>下拉列表 **中选择**"所有电子邮件"。
 
-    ![威胁资源管理器视图菜单和电子邮件 - 恶意软件、网络钓鱼、提交和所有电子邮件选项，以及内容 - 恶意软件。](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="&quot;恶意软件&quot;下拉列表" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     *恶意软件视图* 当前为默认视图，并捕获检测到恶意软件威胁的电子邮件。 对于 *网络钓鱼* ，网络钓鱼视图的运行方式相同。
 
@@ -104,11 +104,11 @@ ms.locfileid: "63681427"
 
    高级筛选是搜索功能的一项补充。 收件人、发件人和发件人域筛选器上的布尔  NOT 允许管理员通过排除值进行调查。 此选项为" **等于无选择** "。 此选项允许管理员将不需要的邮箱从调查 (例如，警报邮箱和默认回复邮箱) 中排除，并且对于管理员搜索特定主题 (例如，注意) 其中收件人可以设置为等于无以下项的情况很有用 *：defaultMail@contoso.com*。 这是精确值搜索。
 
-   ![Recipients - "Contains none of" Advanced filter.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="&quot;收件人&quot;窗格" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    将时间筛选器添加到开始日期和结束日期可帮助安全团队快速向下钻取。 允许的最短持续时间为 30 分钟。 如果可以通过时间范围限制来缩小可疑操作 (例如，它发生在 3 小时前) ，这将限制上下文并帮助找到问题所在。
 
-   ![按小时筛选选项可缩小数据安全团队必须处理的数据量，最短期限为 30 分钟。](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="按小时筛选选项" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **威胁资源管理器中的** 字段：威胁资源管理器中公开了许多与安全相关的邮件信息，如传递操作、传递位置、特殊操作、*方向性*、替代和 *URL 威胁*。  它还允许组织的安全团队以更高的确定性进行调查。
 
@@ -188,7 +188,7 @@ ms.locfileid: "63681427"
 
 ## <a name="related-topics"></a>相关主题
 
-[修正在邮件中传递的Office 365](remediate-malicious-email-delivered-office-365.md)
+[修正在 Office 365 中传递的恶意电子邮件](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender for Office 365](office-365-ti.md)
 

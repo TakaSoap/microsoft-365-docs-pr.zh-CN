@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: c88eceadf6c00d165b0ac032fab19596abec49e1
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 17675917a737717c352125d23a32b432e681a77f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525468"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634550"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
@@ -132,7 +132,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 
 | 全球地理位置 | 可以存储客户数据的位置 |
 | --- | --- |
-| 全球地理位置 1 – EMEA（欧洲、中东和非洲） | 奥地利、芬兰、法国、爱尔兰、荷兰 |
+| 全球地理位置 1 – EMEA（欧洲、中东和非洲） | 奥地利、芬兰、法国、爱尔兰、荷兰、瑞典 |
 | 全球地理位置 2 – 亚太地区 | 香港、日本、马来西亚、新加坡、韩国 |
 | 全球地理位置 3 - 美洲 | 巴西、智利、美国 |
 
@@ -145,7 +145,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。�
 | 澳大利亚 | 悉尼、墨尔本 |
 | 巴西 | 里约热内卢、坎皮纳斯 |
 | 加拿大 | 魁北克市、多伦多 |
-| 欧盟 | 奥地利（维也纳）、芬兰（赫尔辛基）、法国（巴黎，马赛）、爱尔兰（都柏林）、荷兰（阿姆斯特丹） |
+| 欧盟 | 奥地利（维也纳）、芬兰（赫尔辛基）、法国（巴黎、马赛）、爱尔兰（都柏林）、荷兰（阿姆斯特丹）、瑞典（耶夫勒、桑德维肯、斯塔凡斯托普） |
 | 法国 | 巴黎、马赛 |
 | 德国 | 法兰克福、柏林 |
 | 印度 | 金奈、孟买、普纳 |

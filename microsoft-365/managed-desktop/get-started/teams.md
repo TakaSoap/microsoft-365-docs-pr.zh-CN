@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 469edf3e8ae856ea6e94bada8ffb9d6c97ba8b66
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322431"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634462"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -27,10 +27,7 @@ ms.locfileid: "63322431"
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune更改
 
-Microsoft 托管桌面向组织添加两个Azure AD应用程序，Microsoft Teams。 它们部署到适用于设备的 64 位或 32 位客户端：  
-
-- 现代工作区 - Teams Machine Wide Installer x64  
-- 现代工作区 - Teams Machine Wide Installer x32
+Microsoft 托管桌面将Microsoft Teams租户：现代工作区 - Teams Machine Wide Installer x64  
 
 ## <a name="updates"></a>更新
 
@@ -40,7 +37,7 @@ Teams从一个单独的更新路径Microsoft 365 企业应用版。 桌面客户
 
 ### <a name="manually-updating-teams"></a>手动更新Teams
 
-单个用户还可以下载更新。 在应用右上方的"配置文件"下拉列表中，选择" **检查更新"**。 如果更新可用，它将在计算机空闲时下载并静默安装。
+单个用户还可以下载更新。 在应用右上方的"配置文件"下拉列表中，选择" **检查更新"**。 如果更新可用，则将在计算机处于空闲状态时下载并以无提示方式安装更新。
 
 ## <a name="delivery-optimization-of-updates"></a>更新的传递优化
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765536"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477294"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -58,9 +58,9 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|deviceControl|
+|**注册表项**|deviceControl|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**备注**|有关字典内容的说明，请参阅以下部分。|
 |
 
 设备控制策略可用于：
@@ -70,9 +70,9 @@ macOS 的设备控件具有以下先决条件：
 
 ### <a name="customize-url-target-for-notifications-raised-by-device-control"></a>自定义由设备控件引发通知的 URL 目标
 
-例如，如果已实施的设备控制策略在设备上强制执行 (例如，对可移动媒体设备的访问权限受限) ，则向用户显示一条通知。
+如果已实施的设备控制策略在设备上强制执行 (例如，对可移动媒体设备的访问权限受限) ，则向用户显示一条通知。
 
-![设备控制通知。](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="设备控制通知" lightbox="images/mac-device-control-notification.png":::
 
 当最终用户单击此通知时，在默认浏览器中打开一个网页。 您可以配置最终用户单击通知时打开的 URL。
 
@@ -83,9 +83,9 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|navigationTarget|
-|**数据类型**|字符串|
-|**Comments**|如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。|
+|**注册表项**|navigationTarget|
+|**数据类型**|String|
+|**备注**|如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。|
 |
 
 ### <a name="allow-or-block-removable-devices"></a>允许或阻止可移动设备
@@ -102,9 +102,9 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|removableMediaPolicy|
+|**注册表项**|removableMediaPolicy|
 |**数据类型**|字典 (嵌套首选项) |
-|**Comments**|有关字典内容的说明，请参阅以下部分。|
+|**备注**|有关字典内容的说明，请参阅以下部分。|
 |
 
 该策略的这一部分是分层的，允许实现最大灵活性并涵盖各种用例。 顶级是供应商，由供应商 ID 标识。 对于每个供应商，都有由产品 ID 标识的产品。 最后，对于每个产品，都有表示特定设备的序列号。
@@ -143,7 +143,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|enforcementLevel|
+|**注册表项**|enforcementLevel|
 |**数据类型**|String|
 |**可能的值**|审核 (默认)  <p> block|
 |
@@ -161,7 +161,7 @@ macOS 的设备控件具有以下先决条件：
   - `execute` - 允许对设备执行操作
 
 > [!NOTE]
-> 如果 `none` 权限级别存在 ，则 `read`忽略其他 (、 `write`或) `execute` 权限。
+> 如果`none`权限级别存在 ，则`read`忽略其他 (、 `write``execute` 或) 权限。
 >
 > 权限 `execute` 仅指执行 Mach-O 二进制文件。 它不包括脚本或其他类型的有效负载的执行。
 
@@ -172,7 +172,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|permission|
+|**注册表项**|permission|
 |**数据类型**|字符串数组|
 |**可能的值**|无 <p> 阅读 <p> 写入 <p> execute|
 |
@@ -192,7 +192,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|供应商|
+|**注册表项**|供应商|
 |**数据类型**|字典 (嵌套首选项) |
 |
 
@@ -205,7 +205,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|permission|
+|**注册表项**|permission|
 |**数据类型**|字符串数组|
 |**可能的值**|与默认 [权限级别相同](#default-permission-level)|
 |
@@ -219,7 +219,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|products|
+|**注册表项**|products|
 |**数据类型**|字典 (嵌套首选项) |
 |
 
@@ -232,7 +232,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|permission|
+|**注册表项**|permission|
 |**数据类型**|字符串数组|
 |**可能的值**|与默认 [权限级别相同](#default-permission-level)|
 |
@@ -248,7 +248,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|serialNumbers|
+|**注册表项**|serialNumbers|
 |**数据类型**|字典 (嵌套首选项) |
 |
 
@@ -261,7 +261,7 @@ macOS 的设备控件具有以下先决条件：
 |节|值|
 |---|---|
 |**域**|`com.microsoft.wdav`|
-|**键**|permission|
+|**注册表项**|permission|
 |**数据类型**|字符串数组|
 |**可能的值**|与默认 [权限级别相同](#default-permission-level)|
 |
@@ -340,19 +340,20 @@ macOS 的设备控件具有以下先决条件：
 1. 插入要查找其标识符的 USB 设备。
 1. 在 macOS 的顶级菜单中，选择" **关于此 Mac"**。
 
-    ![关于此 Mac。](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="&quot;关于此 Mac&quot;页" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. 选择 **"系统报告"**。
 
-    ![系统报告。](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="系统报告" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. 从左侧列中，选择 **USB**。
 
-    ![所有 USB 设备的视图。](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="所有 USB 设备的视图" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. 在 **"USB 设备树**"下，导航到插入的 USB 设备。
 
-    ![USB 设备的详细信息。](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="USB 设备的详细信息" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. 将显示供应商 ID、产品 ID 和序列号。 将供应商 ID 和产品 ID 添加到可移动媒体策略时，必须仅在 之后添加部件 `0x`。 例如，在下图中，供应商 ID 为 ， `1000` 产品 ID 为 `090c`。
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何将敏感度标签应用于 SharePoint Syntex 中的模型。
-ms.openlocfilehash: 189db9314e01a52618890daf6b0e5d4e81317de9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a7e6ea878fd7fceb6b7496dbcfb90a50f3e8ce1e
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681691"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635078"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中向模型应用保留标签
 
@@ -29,7 +29,7 @@ ms.locfileid: "63681691"
 可以通过模型主页上的模型设置将预先存在的敏感度标签应用于模型。 标签必须已经发布，可以在模型设置中进行选择。 标签适用于 Word Office (.docx) 、PowerPoint (.pptx) 和 Excel (.xlsx) 。 
 
 > [!Important]
-> 对于可应用于内容理解模型的保留标签，需要 [在 Microsoft 365 合规中心中创建和发布](../admin/security-and-compliance/set-up-compliance.md)。
+> 若要将敏感度标签应用于文档理解模型，需要在文档Microsoft 365[发布](../compliance/microsoft-365-compliance-center.md)。
 
 ## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>将敏感度标签添加到文档理解模型
 
@@ -76,7 +76,7 @@ ms.locfileid: "63681691"
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../admin/security-and-compliance/set-up-compliance.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-premium/m365bp-set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 

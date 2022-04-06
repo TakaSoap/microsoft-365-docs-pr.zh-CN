@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解为什么以及如何通过 SharePoint 为市场活动或业务创建一个Microsoft 365。
-ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326323"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634374"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>在网站中创建SharePoint
 
@@ -40,9 +40,13 @@ ms.locfileid: "63326323"
 在通信站点中包括以下元素：
 
 1. 将徽标和颜色添加为标题图像和主题。
+
 2. 在主 Web 部件中引导你的策略、消息、重要文档、目录和 **常见问题解答**。
+
 3. 在文本 Web 部件中向团队添加 CEO 或 **候选人声明**。
+
 4. 将事件添加到 **事件 Web 部件，** 以便每个人都可以看到即将发生的内容。
+
 5. 添加用户可以使用或共享到图像库 **Web 部件的照片**。
 
 ![包含活动SharePoint元素空间的"通信"页面关系图。](../media/m365-democracy-comms-site.png)
@@ -58,7 +62,9 @@ ms.locfileid: "63326323"
 ## <a name="set-it-up"></a>设置
 
 1. 登录到 https://Office.com。
+
 2. 在页面的左上角，选择应用启动器图标，然后选择 **SharePoint磁贴。** 如果未看到"网站"磁贴，SharePoint"网站"磁贴或"所有SharePoint不可见。
+
 3. 在"网站"主页SharePoint，单击 **"+ 创建网站**"，然后选择"**通信网站"** 选项。
 
 了解有关[通信网站以及如何](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)在 [SharePoint Online 创建通信网站的所有信息](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。

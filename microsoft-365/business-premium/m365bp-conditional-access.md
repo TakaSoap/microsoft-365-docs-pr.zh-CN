@@ -1,5 +1,5 @@
 ---
-title: 打开 Microsoft 365 商业高级版的安全默认值
+title: 打开安全默认值Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解安全默认值如何通过提供 Microsoft 365 商业高级版预先配置的安全设置来帮助保护组织免受与标识相关的攻击。
-ms.openlocfilehash: dfd0d3edff541d828b70d383641aaf66c93826b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 了解安全默认值如何通过提供预配置的安全设置来帮助组织免受与标识相关的Microsoft 365 商业高级版。
+ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330800"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634660"
 ---
-# <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>打开 Microsoft 365 商业高级版的安全默认值
+# <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>打开安全默认值Microsoft 365 商业高级版
 
 安全默认值通过提供 Microsoft 代表组织管理的预配置安全设置来帮助保护组织免受与标识相关的攻击。 这些设置包括在所有管理员和用户帐户 (MFA) 多重身份验证。 对于大多数组织来说，安全默认值提供了良好的附加登录安全级别。
 
@@ -39,17 +39,17 @@ ms.locfileid: "63330800"
 
 如果你的订阅是在 2019&mdash; 年 10 月 22 日当天或之后创建的，则你可能已经自动启用了安全默认值，你应该检查你的设置以确认。
 
-若要在 Azure AD (Azure Active Directory 中启用) 或检查它们是否已启用：
+若要启用安全默认值Azure Active Directory (Azure AD) 或检查它们是否已启用：
 
-1. 使用安全管理员、条件访问管理员或全局管理员凭据登录 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> 管理中心。
+1. 使用安全管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>条件访问管理员或全局管理员凭据登录服务器。
 
-2. 在左侧窗格中，选择" **全部** 显示"，然后在 **"管理中心**"下，选择 **"Azure Active Directory"**。
+2. 在左侧窗格中，选择"**全部显示**"，然后在"管理中心"**下，选择**"Azure Active Directory **"**。
 
-3. 在 Azure **Active Directory** 管理中心的左侧窗格中，选择 **"Azure Active Directory"**。
+3. 在管理中心左侧窗格中，**Azure Active Directory选择**"Azure Active Directory **"**。
 
 4. 从仪表板的左侧菜单中的"管理" **部分** ，选择"属性 **"**。
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="显示&quot;属性&quot;菜单项位置的 Azure Active Directory 管理中心的屏幕截图。":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="显示&quot;Azure Active Directory&quot;菜单项位置的&quot;管理中心&quot;屏幕截图。":::
 
 5. 在"属性"页 **底部** ，选择" **管理安全性默认值"**。
 
@@ -71,15 +71,19 @@ ms.locfileid: "63330800"
 - Azure Active Directory Premium P1 或 P2
 - Microsoft 365 商业高级版
 - Microsoft 365 E3 或 E5
-- 企业移动性& E3 或 E5
+- Enterprise移动性&安全 E3 或 E5
 
 如果要使用条件访问配置与安全默认值启用的策略等效的策略，请查看以下分步指南：
 
 - [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+
 - [需要 MFA 进行 Azure 管理](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+
 - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+
 - [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - 需要 Azure AD Identity Protection，这是 Azure Active Directory Premium P2 的一部分
+
+- [需要Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - 需要Azure AD Identity Protection，这是 Azure Active Directory Premium P2
 
 若要详细了解条件访问，请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview) 有关创建条件访问策略的信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

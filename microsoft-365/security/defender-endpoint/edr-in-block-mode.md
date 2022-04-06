@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 04/04/2022
+ms.date: 04/01/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: eb40eaee9043e81331eca98c85f1467111cc37e4
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 898d6de45830068ad300a64a3312cff3d5914323
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/04/2022
-ms.locfileid: "64638347"
+ms.locfileid: "64634286"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>阻止模式下的终结点检测和响应 (EDR)。
 
@@ -115,6 +115,10 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>如果我在设备上运行EDR，是否需要在阻止Microsoft Defender 防病毒打开？
 
 在阻止模式下EDR主要目的是修正非 Microsoft 防病毒产品错过的泄露后检测。 在阻止模式下启用EDR在阻止模式下Microsoft Defender 防病毒最小好处，因为实时保护应首先捕获和修正检测。 我们建议在处于EDR运行 Microsoft Defender 防病毒的终结点上启用阻止模式。 EDR [PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) 保护或自动调查和阻止模式下的修正&[自动](automated-investigations.md)修正检测。
+
+- 当Microsoft Defender 防病毒处于被动模式时，EDR模式提供另一层防护以及Microsoft Defender for Endpoint。
+
+- 当Microsoft Defender 防病毒模式时，EDR阻止模式不会提供额外的扫描，但它允许 Microsoft Defender 防病毒 对泄露后的行为或行为EDR自动操作。
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>EDR模式是否会影响用户的防病毒保护？
 

@@ -21,12 +21,12 @@ ms.custom:
 description: 本主题将指导你完成影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94da7316c5e749cf6dcc5e038c185bea4790765f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 96f31d0fb9eb3ef9d6eaec396fdac8fe96b96c3d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682870"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476348"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -125,10 +125,10 @@ SharePoint管理中心OneDrive for Business管理中心包含相同的设置。 
 详细信息：
 
 - [部署 Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
-- [有关 Microsoft Defender for Cloud Apps 详细信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [有关 Microsoft Defender for Cloud Apps 的详细信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
 - [什么是 Defender for Cloud Apps 许可？](/cloud-app-security/what-is-cloud-app-security)
 
-![云应用 Defender 仪表板。](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+:::image type="content" source="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png" alt-text="云应用 Defender 仪表板" lightbox="../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png":::
 
 ## <a name="additional-resources"></a>其他资源
 

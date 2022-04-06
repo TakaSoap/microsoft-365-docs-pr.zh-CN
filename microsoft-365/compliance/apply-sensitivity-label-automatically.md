@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499652"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634616"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -275,18 +275,6 @@ Azure 信息保护统一标记客户端仅支持自动标记内置和自定义�
 模拟模式还允许你在部署前逐步增加自动标记策略的范围。 例如，你可以从一个位置（如 SharePoint 网站）和一个文档库开始。 然后，使用迭代更改，将范围增大到多个网站，然后将其增加到其他位置，如 OneDrive。
 
 最后，可以使用模拟模式来提供运行自动标记策略所需时间的近似值，以帮助计划和安排在没有模拟模式的情况下运行自动标记策略的时间。
-
-#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>已删除 OneDrive 帐户和模拟结果
-
-当删除的 OneDrive 帐户仍处于 [删除过程的保留阶段时](/onedrive/retention-and-deletion#the-onedrive-deletion-process)，预计模拟结果中可能存在显示差异。 例如，员工已离开组织，其经理有权临时访问该用户的 OneDrive 文件。
-
-在此方案中，如果 OneDrive 帐户是由自动标记策略中的 URL 指定的，则模拟结果中将包含已删除 OneDrive 帐户中的匹配文件。
-
-但是，如果 OneDrive 帐户不是由 URL 指定的，而是包含在 **所有** 默认设置中:
-- 在策略中包含 SharePoint 位置时，已删除的 OneDrive 帐户中的匹配文件在模拟结果中显示为 SharePoint 项。
-- 如果策略中不包括 SharePoint 位置，则模拟结果中不包含已删除 OneDrive 帐户中的匹配文件。
-
-在所有情况下，会标记所有匹配的文件，直到永久删除 OneDrive 帐户。 列出的显示差异仅适用于模拟结果。
 
 ### <a name="creating-an-auto-labeling-policy"></a>创建自动标记策略
 

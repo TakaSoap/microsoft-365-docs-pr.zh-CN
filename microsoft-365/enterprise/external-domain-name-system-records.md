@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 规划 Office 365 部署时要使用的外部域名系统记录的引用列表。
-ms.openlocfilehash: 3ba8345c17446f7f6d2d6b034415288eb994ee79
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
-ms.translationtype: HT
+ms.openlocfilehash: d2c73094da0547fbc02a4520d4361941b829619c
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568425"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651336"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -78,7 +78,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
 |----------|-----------|------------|
 |**CNAME** <br/> **(Exchange Online)** <br/> |帮助 Outlook 客户端轻松使用“自动发现”服务连接到 Exchange Online 服务。“自动发现”自动查找正确的 Exchange Server 主机并为用户配置 Outlook。  <br/> |**别名：** Autodiscover  <br/> **目标：** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |将域的传入邮件发送到 Office 365 中的 Exchange Online 服务。  <br/> **注意：** 电子邮件流向 Exchange Online 后，应该删除指向你的旧版系统的 MX 记录。   |**域：** 例如，contoso.com  <br/> **目标电子邮件服务器：**\<MX token\>.mail.protection.outlook.com  <br/> **首选项/优先级：** 低于其他任何 MX 记录（这会确保将邮件传递到 Exchange Online）- 例如，1 或“低”  <br/>  通过以下步骤找到 \<MX token\>：  <br/>  登录到 Office 365，转到“Office 365 管理员”\>“域”。  <br/>  在你的域的“操作”列中，选择修复问题。  <br/>   在“MX 记录”部分中，选择“修复什么?”  <br/>  按照此页面上的说明来更新你的 MX 记录。  <br/> [什么是 MX 优先级？](../admin/setup/domains-faq.yml) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |将域的传入邮件发送到 Office 365 中的 Exchange Online 服务。  <br/> **注意：** 电子邮件流向 Exchange Online 后，应该删除指向你的旧版系统的 MX 记录。   |**域：** 例如，contoso.com  <br/> **目标电子邮件服务器：**\<MX token\>.mail.protection.outlook.com  <br/> **生存时间 (TTL) 值：** 3600 <br/> **首选项/优先级：** 低于其他任何 MX 记录（这会确保将邮件传递到 Exchange Online）- 例如，1 或“低”  <br/>  通过以下步骤找到 \<MX token\>：  <br/>  登录到 Office 365，转到“Office 365 管理员”\>“域”。  <br/>  在你的域的“操作”列中，选择修复问题。  <br/>   在“MX 记录”部分中，选择“修复什么?”  <br/>  按照此页面上的说明来更新你的 MX 记录。  <br/> [什么是 MX 优先级？](../admin/setup/domains-faq.yml) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |有助于防止其他人使用您的域发送垃圾邮件或其他恶意电子邮件。发送方策略框架 (SPF) 通过标识有权从您的域发送电子邮件的服务器来记录工作。  <br/> |[SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **（Exchange 联合身份验证）** <br/> |用于混合部署的 Exchange 联合身份验证。  <br/> |**TXT 记录 1：** 例如，contoso.com 和相关自定义生成的域证明哈希文本（例如，Y96nu89138789315669824）  <br/> **TXT 记录 2：** 例如，exchangedelegation.contoso.com 和相关的自定义生成的域证明哈希文本（例如，Y3259071352452626169）  <br/> |
 |**CNAME** <br/> **（Exchange 联合身份验证）** <br/> |当你的公司使用 Exchange 联合身份验证时，帮助 Outlook 客户端轻松使用“自动发现”服务连接到 Exchange Online 服务。“自动发现”自动查找正确的 Exchange Server 主机并为你的用户配置 Outlook。  <br/> |**别名：** 例如，Autodiscover.service.contoso.com  <br/> **目标：** autodiscover.outlook.com  <br/> |

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02aacefc21f5789d686a8be03cd46f8fb7196322
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 3ae46425999ff36526330f5c19f2660ecad96c23
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62766676"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470100"
 ---
 # <a name="log-in-to-jamf-pro"></a>登录到 Jamf Pro
 
@@ -35,15 +35,15 @@ ms.locfileid: "62766676"
 
 1. 输入你的凭据。
 
-    ![Jamf 仪表板 1 Pro图像。](images/jamf-pro-portal1.png)
+   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="Jamf Pro仪表板1" lightbox="images/jamf-pro-portal1.png":::
 
 2. 选择 **计算机**。
 
-    ![Jamf Pro dashboard2 的图像。](images/jamf-pro-dashboard.png)
+   :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="Jamf Pro仪表板 2" lightbox="images/jamf-pro-dashboard.png":::
 
 3. 你将看到可用的设置。
 
-     ![Jamf 仪表板 3 Pro图像。](images/jamfpro-settings.png)
+   :::image type="content" source="images/jamfpro-settings.png" alt-text="Jamf Pro仪表板3" lightbox="images/jamfpro-settings.png":::
 
 
 ## <a name="next-step"></a>后续步骤

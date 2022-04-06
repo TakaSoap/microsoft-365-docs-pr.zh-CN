@@ -21,14 +21,14 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 4f387ae01af51292667f810176970f3607b489b3
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507112"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634396"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>切换到 Microsoft Defender for Endpoint - 第 3 阶段：载入
 
@@ -70,7 +70,7 @@ ms.locfileid: "64507112"
 
 部署方法因操作系统和首选方法而异。 下表列出了可帮助你载入 Defender for Endpoint 的资源：
 
-|操作系统  |方法  |
+|操作系统  |Methods  |
 |---------|---------|
 |Windows 10或更高版本<br/><br/>Windows Server 2019 或更高版本<br/><br/>Windows Server 版本 1803 或更高版本<br/><br/>Windows Server 2012 R2 和 2016<sup>[[1](#fn1)]<sup>  |   [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md)<br><br/>   [组策略](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/移动设备管理 (Intune) ](configure-endpoints-mdm.md)<br>    [VDI 脚本](configure-endpoints-vdi.md) <br><br> **注意**：本地脚本适用于概念证明，但不应用于生产部署。 对于生产部署，建议使用 组策略、Microsoft Endpoint Configuration Manager 或 Intune。 |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA) ](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) 或 [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **注意**：Microsoft Monitoring Agent现在为 Azure Log Analytics 代理。 若要了解更多信息，请参阅 [Log Analytics 代理概述](/azure/azure-monitor/platform/log-analytics-agent)。  |
@@ -80,15 +80,11 @@ ms.locfileid: "64507112"
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
 
-
  (<a id="fn1">1</a>) Windows Server 2016和 Windows Server 2012 R2 将需要按照载入服务器中的说明Windows[载入](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)。
-
 
 ## <a name="run-a-detection-test"></a>运行检测测试
 
 若要验证载入的设备是否正确连接到 Defender for Endpoint，可以运行检测测试。
-
-<br/><br/>
 
 |操作系统|指南|
 |---|---|
@@ -102,8 +98,6 @@ ms.locfileid: "64507112"
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>确认Microsoft Defender 防病毒终结点处于被动模式
 
 现在终结点已载入到 Defender for Endpoint，下一步是确保Microsoft Defender 防病毒处于被动模式。 您可以使用多种方法之一，如下表所述：
-
-<br/><br/>
 
 |方法|需执行的操作|
 |---|---|
@@ -120,12 +114,12 @@ ms.locfileid: "64507112"
 
 若要在 Windows Microsoft Defender 防病毒 Server、版本 1803 或更高版本、Windows Server 2019 或 Windows Server 2022 上将 Windows 设置为被动模式，请按照以下步骤操作：
 
-1. 打开注册表编辑器，然后导航到：
-
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+1. 打开注册表编辑器，然后导航到 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`。
 
 2. 编辑 (或创建) **ForceDefenderPassiveMode** 的 DWORD 条目，并指定以下设置：
+
    - 将 DWORD 的值设置为 **1**。
+
    - 在 **"基本**"下 **，选择"十六进制"**。
 
 > [!NOTE]
@@ -146,6 +140,7 @@ ms.locfileid: "64507112"
 有两种类型的更新与使Microsoft Defender 防病毒保持最新有关：
 
 - 安全智能更新
+
 - 产品更新
 
 若要获取更新，请按照管理更新和应用Microsoft Defender 防病毒[中的指南。](manage-updates-baselines-microsoft-defender-antivirus.md)
@@ -155,6 +150,7 @@ ms.locfileid: "64507112"
 如果此时你拥有：
 
 - 将组织设备载入到 Defender for Endpoint，
+
 - Microsoft Defender 防病毒并启用，
 
 然后，下一步是卸载非 Microsoft 防病毒、反恶意软件和终结点保护解决方案。 卸载非 Microsoft 解决方案时，Microsoft Defender 防病毒被动模式切换到主动模式。 在大多数情况下，这会自动发生。 
@@ -169,7 +165,9 @@ ms.locfileid: "64507112"
 现在，你已载入 Defender for Endpoint，并且已卸载以前的非 Microsoft 解决方案，下一步是确保 Defender for Endpoint 正常工作。 执行此任务的一个好方法就是访问 Defender for Endpoint 演示方案站点 () [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) 。 尝试该页面上的一个或多个演示方案，包括以下方案：
 
 - 云端保护
+
 - PUA (可能不需要) 
+
 - 网络保护 (NP) 
 
 > [!NOTE]
@@ -180,4 +178,5 @@ ms.locfileid: "64507112"
 **恭喜！** 你已完成到 [Defender for Endpoint 的迁移](switch-to-mde-overview.md#the-migration-process)！
 
 - [访问安全操作仪表板，](security-operations-dashboard.md)Microsoft 365 Defender门户[https://security.microsoft.com](https://security.microsoft.com) () 。
+
 - [管理适用于终结点的 Defender，迁移后](manage-mde-post-migration.md)。

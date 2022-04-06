@@ -17,22 +17,43 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解合规性管理程序中的新增功能以及将提供哪些功能。 阅读更新后的评估、新的评估模板、新操作等。
-ms.openlocfilehash: 48aed2e173231e3945bcdd3de73052de9f970a5b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0f368be06b33f485ff687c998615fb8578845daf
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317649"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634198"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Microsoft 合规性管理器中的新增功能
 
 **本文内容：** 了解合规性管理器中的最近更新。
 
-## <a name="february-2022"></a>2022 年 2 月
+## <a name="march-2022"></a>2022 年 3 月
+
+### <a name="new-templates-available"></a>可用的新模板
+
+合规性管理器已发布以下新评估模板：
+
+**Global**
+- ISO 37301
+- NIST 800-207 - 零信任体系结构
+- SIG 2022
+
+**美国政府**
+- CMMC v2 级别 1
+- CMMC v2 级别 2
+
+**北美**
+- 信息安全管理法案 - 英国加州
+
+查看我们 [评估模板的完整列表](compliance-manager-templates-list.md)。
 
 ### <a name="continuous-compliance-assessment-of-improvement-actions"></a>对改进操作的持续合规性评估
 
 我们正在合规性管理器中添加针对超过 35 个改进操作（之前未在安全分数中涵盖）的自动化测试和证据生成。 通过持续合规性评估，如果这些改进操作与合规性评估相关且你已获得访问相关解决方案的许可，则你可以收到有关已完成的这些改进操作的更新。 持续合规性评估还让用户了解改进措施的评分逻辑，并提供有关为何获得特定分数的见解和证据。 此功能与安全分数Microsoft 365集成一起运行，并且之前配置的任何自动操作将继续正常工作。 详细了解自动 [测试设置](compliance-manager-setup.md#set-up-automated-testing)。
+
+## <a name="february-2022"></a>2022 年 2 月
+
 ### <a name="alerts-and-alert-policies"></a>警报和警报策略
 
 用户现在可以在合规性管理器中设置组织要跟踪的更改的警报。使用简单的设置向导，您可以构建警报策略，以在下列类型的事件发生时创建通知：改进操作分数更改、改进操作分配更改、改进操作中的测试或实现状态更改，以及改进操作的文档选项卡中的文件上载或删除。通过访问合规性 [管理器警报和警报策略了解更多信息](compliance-manager-alert-policies.md)。
@@ -43,17 +64,17 @@ ms.locfileid: "63317649"
 
 ## <a name="november-2021"></a>2021 年 11 月
 
-### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>数据保护基线模板的零信任集成
+### <a name="zero-trust-integration-for-the-data-protection-baseline-template"></a>零信任"基线"模板的集成
 
-零信任是跨数字资产所有层实现安全性的主动集成方法，可明确并持续验证每个事务，声明最小特权，并依赖于智能、高级检测和实时威胁响应。 合规性管理器的数据保护基线模板（包括所有用户）现在集成了 57 个新控件和 36 个针对零信任的新操作，这些新操作在下列控件系列中对齐：
+零信任是一种跨数字资产所有层的安全主动、集成的方法，可明确并持续验证每个事务，声明最小特权，并依赖于智能、高级检测和实时威胁响应。 合规性管理器的数据保护基线模板（包括所有用户）现在集成了 57 个新控件和 36 个新操作，零信任以下控件系列之间保持一致：
 
-- 零信任应用程序
+- 零信任 应用程序
 - 零信任应用开发指南
-- 零信任终结点
+- 零信任 终结点
 - 零信任数据
 - 零信任标识
-- 零信任基础结构
-- 零信任网络
+- 零信任 基础结构
+- 零信任 网络
 - 零信任可见性、自动化和业务流程
 
 ### <a name="new-preview-templates"></a>新的预览模板

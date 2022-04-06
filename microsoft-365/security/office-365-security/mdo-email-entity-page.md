@@ -1,11 +1,11 @@
 ---
-title: Microsoft Defender for Office 365电子邮件实体页面
+title: "\"Microsoft Defender for Office 365电子邮件实体\"页"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 04/01/2022
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: Microsoft Defender for Office 365 E5 P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+description: Microsoft Defender for Office 365 E5、P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
+ms.openlocfilehash: 1b74c4c79d05a4a52434810527c92de801b329f0
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475446"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634814"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -32,7 +32,7 @@ ms.locfileid: "64475446"
 - [使用电子邮件实体页面选项卡](#use-email-entity-page-tabs)
 - [电子邮件实体页面的新增内容](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 E5 管理员和适用于 Office P1 和 P2 的 Defender 管理员使用"电子邮件"实体页面查看 360 **度的电子邮件**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上传递的信息。](threat-explorer-views.md)
+Microsoft Defender for Office 365 E5 管理员Office P1 和 P2 的 Defender 管理员使用"电子邮件"实体页面查看 360 **度的电子邮件**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上传递的信息。](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>访问电子邮件实体页面
 
@@ -88,7 +88,7 @@ Microsoft Defender for Office 365 E5 管理员和适用于 Office P1 和 P2 的 
 
 这些详细信息特定于电子邮件附件和 URL。 用户可以通过进入资源管理器，将检测技术筛选器集应用于文件触发或 URL 触发来查看这些详细信息。 针对文件触发筛选的电子邮件将包含具有触发详细信息的恶意文件，并且筛选出 URL 的电子邮件包含恶意 URL 及其触发详细信息。
 
-用户会看到其电子邮件中发现的已知恶意附件或 URL 的丰富触发详细信息，这些附件或 URL 已针对其特定租户触发。 它将包含触发链、触发摘要、屏幕截图和观察行为详细信息，帮助客户了解附件或 URL 被视为恶意并触发的原因。
+用户会看到其电子邮件中发现的已知恶意附件或 URL 的丰富触发详细信息，这些附件或 URL 已针对其特定租户触发。 它将包括触发链、触发摘要、屏幕截图和观察行为详细信息，帮助客户了解附件或 URL 被视为恶意并触发的原因。
 
 1. *触发链*。 单个文件或 URL 触发可以触发多个爆炸。 爆炸链跟踪触发路径，包括导致裁定的原始恶意文件或 URL，以及受爆炸影响的所有其他文件或 URL。 这些 URL 或附加的文件可能不会直接存在于电子邮件中，但包含该分析对于确定发现文件或 URL 是恶意文件的原因非常重要。  
 
@@ -119,6 +119,14 @@ Microsoft Defender for Office 365 E5 管理员和适用于 Office P1 和 P2 的 
 - *批量投诉级别 (BCL)*：邮件的批量投诉 (BCL) 级别。 BCL 越高，如果电子邮件可能是垃圾邮件或垃圾邮件， () 产生投诉的可能性更大。
 
 - *垃圾邮件可信度 (SCL)*：邮件的 (SCL) 级别。 值越高，邮件是垃圾邮件的可能性就越大。
+
+- *客户端* 类型：指示作为 REST 发送电子邮件的客户端类型。
+
+- *转发*：对于使用 autoforwaridng 的方案，它指示转发用户以及转发类型（如 ETR 或 SMTP 转发）。 
+
+- *通讯* 组列表：如果收件人作为列表成员收到电子邮件，则显示通讯组列表。 如果存在嵌套的通讯组列表，则显示顶级通讯组列表。  
+
+- *To、 Cc*： Indicates the addresses which are listed in To， Cc fields of an email. 这些字段中的信息限制为 5000 个字符。 
 
 - *域名*：是发件人域名。
 

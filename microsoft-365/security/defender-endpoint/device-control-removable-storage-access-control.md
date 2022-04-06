@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/18/2022
-ms.openlocfilehash: def22b83dc5c84a3b222d4e50f2d2dce8d5d36ef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8b17fc31e4a25ad66fdb51114d7931f7d934a226
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682738"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470298"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint 设备控件可移动存储访问控制
 
@@ -62,11 +62,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
 - **4.18.2107 或** 更高版本：为移动设备（如平板电脑) ）添加 Windows 便携设备 (WPD) 支持 (;将 AccountName 添加到高级搜寻中 [](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111 或** 更高版本：通过 PowerShell 添加"启用或禁用可移动 存储 访问控制"、"默认强制"、客户端计算机策略更新时间、文件信息
-
-- **4.18.2201 或** 更高版本：支持通过 OMA-URI 写入允许存储的文件副本
-
-:::image type="content" source="images/powershell.png" alt-text="PowerShell 接口。":::
+:::image type="content" source="images/powershell.png" alt-text="PowerShell 接口" lightbox="images/powershell.png":::
 
 > [!NOTE]
 > 任何Windows 安全中心组件都不需要处于活动状态，因为您可以独立于存储运行可移动Windows 安全中心访问控制。
@@ -94,7 +90,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 | **IncludedIdList** | 组 (策略) 的组。 如果添加了多个组，该策略将应用于所有这些组的任何媒体。|必须在此实例中使用组 ID/GUID。 <p> 以下示例显示 GroupID 的用法： <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | 组 (策略) 的组。 | 必须在此实例中使用组 ID/GUID。 |
 | **条目 ID** | 一个 PolicyRule 可以有多个条目;每个具有唯一 GUID 的条目告知设备控件一个限制。| |
-| **Type** | 定义 IncludedIDList 中可移动存储组的操作。 <p>强制：允许或拒绝 <p>审核：AuditAllowed 或 AuditDenied<p> | 允许<p>拒绝 <p>AuditAllowed：定义允许访问时的通知和事件 <p>AuditDenied：定义拒绝访问时的通知和事件;必须配合拒绝 **条目** 一起工作。<p> 当同一媒体存在冲突类型时，系统将应用策略中的第一个冲突类型。 冲突类型的一个示例是 **"允许"和** " **拒绝"**。 |
+| **类型** | 定义 IncludedIDList 中可移动存储组的操作。 <p>强制：允许或拒绝 <p>审核：AuditAllowed 或 AuditDenied<p> | 允许<p>拒绝 <p>AuditAllowed：定义允许访问时的通知和事件 <p>AuditDenied：定义拒绝访问时的通知和事件;必须配合拒绝 **条目** 一起工作。<p> 当同一媒体存在冲突类型时，系统将应用策略中的第一个冲突类型。 冲突类型的一个示例是 **"允许"和** " **拒绝"**。 |
 | **Sid** | 本地用户 Sid 或用户 Sid 组或 AD 对象的 Sid 定义是否对特定用户或用户组应用此策略;一个条目最多可具有一个 Sid 和一个不带任何 Sid 的条目，这意味着在计算机中应用策略。 |  |
 | **ComputerSid** | 本地计算机 Sid 或计算机 Sid 组或 AD 对象的 Sid 定义是否对特定计算机或计算机组应用此策略;一个条目最多可具有一个 ComputerSid，而一个条目没有任何 ComputerSid 意味着将策略应用到计算机。 如果要将条目应用于特定用户和特定计算机，请同时将 Sid 和 ComputerSid 添加到同一条目中。 |  |
 | **选项** | 定义是否显示通知 |**选择"类型允许"时**： <p>0：无<p>4：对此条目 **禁用 AuditAllowed** **和 AuditDenied** 。 即使 **发生"允许** "且已配置 AuditAllowed 设置，系统也将不会发送事件。 <p>8：捕获文件信息，并拥有文件副本作为写入访问的证据。 <p>16：捕获用于写入访问的文件信息。 <p>**选择"类型拒绝"时**： <p>0：无<p>4：为此 **条目禁用 AuditDenied** 。 即使 **发生阻止** 且已配置 AuditDenied 设置，系统也将不会显示通知。 <p>**选择" **类型 AuditAllowed** "时**： <p>0：无 <p>1：无 <p>2：发送事件<p>3：发送事件 <p> **选择" **类型 AuditDenied** "时**： <p>0：无 <p>1：显示通知 <p>2：发送事件<p>3：显示通知和发送事件 |
@@ -152,7 +148,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
     下图演示了方案 1：阻止对全部但允许特定批准的 USB 的写入和执行 [访问的示例](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)。
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="显示允许在设备上允许特定批准的 USB 的配置设置的屏幕。":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="允许在设备上使用特定批准的 USB 的配置设置" lightbox="images/prevent-write-access-allow-usb.png":::
 
 2. 将所有规则合并到`<PolicyRules>``</PolicyRules>`一个 xml 文件中。
 
@@ -162,7 +158,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
     下图演示了 SID 属性的用法，以及方案 1：阻止对全部但允许特定批准的 USB 的写入和执行 [访问的示例](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs)。
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="显示指示 SID 属性属性使用情况的代码的屏幕。":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="指示 SID 属性属性用法的代码" lightbox="images/usage-sid-property.png":::
 
 3. 在网络共享文件夹中保存规则和组 XML 文件，将网络共享文件夹路径放入组策略设置：**计算机配置** \>  \> 管理模板 **Windows 组件** \> **Microsoft Defender 防病毒** \> **设备控制**："定义 **设备控制策略** 组"和"定义 **设备控制策略规则"**.
 
@@ -170,7 +166,7 @@ Microsoft Defender for Endpoint 设备控制可移动存储访问控制使你能
 
    - 目标计算机必须能够访问网络共享才能拥有策略。 但是，读取策略后，不再需要网络连接，即使在计算机重新启动后也不例外。
 
-    :::image type="content" source="images/device-control.png" alt-text="设备控制屏幕。":::
+    :::image type="content" source="images/device-control.png" alt-text="设备控制屏幕" lightbox="images/device-control.png":::
 
 4. 默认强制：允许你设置默认访问 (，如果) 策略，则允许访问可移动媒体。 例如，仅对 RemovableMediaDevices 具有策略 (Deny 或 Allow) ，但没有针对 CdRomDevices 或 WpdDevices 的任何策略，并且通过此策略设置默认拒绝，将阻止对 CdRomDevices 或 WpdDevices 的读/写/执行访问。
 
@@ -227,7 +223,7 @@ Microsoft Endpoint Manager管理中心 (<https://endpoint.microsoft.com/>) \> **
 
     - 数据类型：String (XML 文件) 
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="STRING 文件的 xml 数据类型。":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="&quot;添加行&quot;页中的&quot;数据类型&quot;字段" lightbox="images/xml-data-type-string.png":::
 
 2. 对于每个策略，还要创建 OMA-URI：
 
@@ -311,30 +307,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-```kusto
-//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
-DeviceEvents
-| where ActionType contains "RemovableStorageFileEvent"
-| extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
-| extend MediaClassName = tostring(parsed.ClassName)
-| extend MediaInstanceId = tostring(parsed.InstanceId)
-| extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
-    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
-    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
-    FileName, FolderPath, FileSize, FileEvidenceLocation,
-    AdditionalFields
-| order by Timestamp desc
-```
-    
-:::image type="content" source="images/block-removable-storage.png" alt-text="描述可移动存储被阻止的屏幕。":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="可移动存储的阻止" lightbox="images/block-removable-storage.png":::
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

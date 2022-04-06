@@ -1,5 +1,5 @@
 ---
-title: 设备图像
+title: 设备映像
 description: 订购新设备或重新使用现有设备时的图像要求
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -12,14 +12,14 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f1d00c12512b70ffd62372aaeae787acf1911573
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 294531305321901dfa704462471d1573b9cb4b88
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330281"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635100"
 ---
-# <a name="device-images"></a>设备图像
+# <a name="device-images"></a>设备映像
 
 无论你是[订购新](#new-devices)设备还是重复使用现有[](#existing-devices)设备，你都有若干选项来确保设备上的图像符合我们的[设备要求](device-requirements.md#check-hardware-requirements)。
 
@@ -28,6 +28,11 @@ ms.locfileid: "63330281"
 当你从批准的制造商订购新设备时[](device-requirements.md#minimum-requirements)，请按照以下步骤操作，以确保它们随正确的映像和软件配置Microsoft 托管桌面设备。
 
 每当计划首次在服务中注册特定设备型号时，都应该测试一个示例以确保它将提供你期望的用户体验。 有关详细信息，请参阅验证 [新设备](/microsoft-365/managed-desktop/get-started/validate-device)。
+
+### <a name="windows-10-pro"></a>Windows 10 专业版
+如果你订购的设备具有Windows 10，请直接与你的 OEM 销售代表合作。 自 2022 年 11 月 1 日起，OEM 只能使用 Windows 10 专业版 降级Windows 11 专业版销售Windows 10 专业版许可证。 有关详细信息，请参阅[Windows 10](/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5)停用日期的支持日期Windows 10版本。
+
+对于有兴趣迁移到 Windows 11 的客户，可以在此处找到有关推荐流程[详细信息](/microsoft-365/managed-desktop/intro/win11-overview)。 
 
 ### <a name="dell"></a>Dell
 

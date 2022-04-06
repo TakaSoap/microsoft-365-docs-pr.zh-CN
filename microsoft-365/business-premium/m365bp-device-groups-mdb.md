@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: a5a0b932e88fb4c4232e4afca8f2307e40088e6b
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 2cc874580dad24e1b3d5349d6075956a9e518704
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526120"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634638"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>设备组中Microsoft 365 商业高级版
 
-Microsoft 365 商业高级版 Microsoft Defender for Business 提供终结点保护。 设备保护策略通过称为设备组的某些集合应用于设备。 
+Microsoft 365 商业高级版通过安全机制提供终结点Microsoft Defender 商业版。 设备保护策略通过称为设备组的某些集合应用于设备。 
 
 **本文介绍**：  
 
@@ -41,7 +41,7 @@ Microsoft 365 商业高级版 Microsoft Defender for Business 提供终结点保
 
 所有设备组（包括默认设备组和定义的任何自定义设备组）都存储在[Azure Active Directory (Azure AD) 。](/azure/active-directory/fundamentals/active-directory-whatis)
 
-## <a name="how-do-i-create-a-new-device-group"></a>如何创建新设备组？
+## <a name="how-do-i-create-a-new-device-group"></a>如何实现创建新设备组？
 
 可以在创建或编辑设备保护策略的过程中创建新的设备组。 
 
@@ -52,10 +52,11 @@ Microsoft 365 商业高级版 Microsoft Defender for Business 提供终结点保
 3. 执行以下操作之一：
 
     1. 选择现有策略，然后选择"编辑 **"**。
+    
     2. 选择 **" + 添加** "以创建新策略。
 
     > [!TIP]
-    > 若要获取有关创建或编辑策略的帮助，请参阅在 [Microsoft Defender for Business 中查看或编辑策略](m365bp-view-edit-create-mdb-policies.md)。
+    > 若要获取有关创建或编辑策略的帮助，请参阅在策略视图中查看或[编辑Microsoft Defender 商业版](m365bp-view-edit-create-mdb-policies.md)。
 
 4. 在" **常规信息"** 步骤中，查看信息，如有必要进行编辑，然后选择"下一步 **"**。
 
@@ -67,7 +68,7 @@ Microsoft 365 商业高级版 Microsoft Defender for Business 提供终结点保
 
 8. 在 **"设备组"** 步骤中，查看策略的设备组列表。 如果需要，请从列表中删除组。 然后选择“**下一步**”。
 
-9. 在" **配置设置"** 页上，根据需要查看和编辑设置，然后选择"下一步 **"**。 有关这些设置详细信息，请参阅 [了解 Microsoft Defender for Business 中的下一代配置设置](../security/defender-business/mdb-next-gen-configuration-settings.md)。
+9. 在" **配置设置"** 页上，根据需要查看和编辑设置，然后选择"下一步 **"**。 有关这些设置详细信息，请参阅了解 Microsoft Defender 商业版 [中的下一代配置设置](../security/defender-business/mdb-next-gen-configuration-settings.md)。
 
 10. 在" **查看策略"步骤** 中，查看所有设置，进行任何所需的编辑，然后选择" **创建** 策略"或" **更新策略"**。
 

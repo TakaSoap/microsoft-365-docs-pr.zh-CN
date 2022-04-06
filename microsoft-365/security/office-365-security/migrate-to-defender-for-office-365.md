@@ -19,12 +19,12 @@ ms.custom: ''
 description: 了解从第三方保护服务或设备（如 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort）迁移到 Microsoft Defender Office 365保护。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af24829f8d3e4186de6e1c537d545515667627b8
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: ba82621e76665ee94d2a182e777ad1d222ef8e56
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682342"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477030"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>从第三方保护服务或设备迁移到 Microsoft Defender for Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "63682342"
 
 - 你已Microsoft 365邮箱，但当前正在使用第三方服务或设备进行电子邮件保护。 来自 Internet 的邮件在传递至 Microsoft 365 组织之前流经保护服务，Microsoft 365 保护尽可能低 (它永远不会完全关闭;例如，始终在) 中强制执行恶意软件保护。
 
-  ![邮件通过第三方保护服务或设备从 Internet 流动，然后再Microsoft 365。](../../media/mdo-migration-before.png)
+  :::image type="content" source="../../media/mdo-migration-before.png" alt-text="邮件通过第三方保护服务或设备从 Internet 流动，然后再Microsoft 365" lightbox="../../media/mdo-migration-before.png":::
 
 - 你超出了 Defender for Office 365 保护调查和考虑阶段。 如果你需要评估 Defender Office 365以确定它是否适合你的组织，我们建议你考虑评估[模式](office-365-evaluation.md)。
 
@@ -45,13 +45,13 @@ ms.locfileid: "63682342"
 
 - 你需要停用现有的第三方保护服务，这意味着你最终需要将电子邮件域的 MX 记录指向Microsoft 365。 完成后，来自 Internet 的邮件将直接流入 Microsoft 365并且将受 Exchange Online Protection (EOP) 和 Defender for Office 365。
 
-  ![现有的保护服务或设备已遭消除，因此邮件会从 Internet 流向 Microsoft 365，并受到来自 Microsoft Defender for Office 365 的完整保护。](../../media/mdo-migration-after.png)
+  :::image type="content" source="../../media/mdo-migration-after.png" alt-text="邮件从 Internet 流向Microsoft 365" lightbox="../../media/mdo-migration-after.png":::
 
 删除现有保护服务以支持 Defender for Office 365是一个大步骤，不应轻松执行，也不应太忙地做出更改。 此迁移指南中的指南将帮助你以有序方式转换保护，尽可能减少用户中断。
 
 下图演示了非常高级的迁移步骤。 本文稍后将介绍迁移过程一节 [列出了](#the-migration-process) 实际步骤。
 
-![从第三方保护解决方案或设备迁移到 Defender for Office 365。](../../media/mdo-migration-overview.png)
+:::image type="content" source="../../media/mdo-migration-overview.png" alt-text="从第三方保护解决方案或设备迁移到 Defender for Office 365" lightbox="../../media/mdo-migration-overview.png":::
 
 ## <a name="why-use-the-steps-in-this-guide"></a>为什么使用本指南中的步骤？
 
@@ -74,7 +74,7 @@ ms.locfileid: "63682342"
 
 从第三方保护服务迁移到 Defender for Office 365的过程分为三个阶段，如下表所述：
 
-![迁移到 Defender for Office 365。](../../media/phase-diagrams/migration-phases.png)
+:::image type="content" source="../../media/phase-diagrams/migration-phases.png" alt-text="迁移到 Defender for Office 365" lightbox="../../media/phase-diagrams/migration-phases.png":::
 
 |阶段|说明|
 |---|---|

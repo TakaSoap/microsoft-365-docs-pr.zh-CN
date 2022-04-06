@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX,NOFOLOW
 description: 管理员可以了解如何创建策略以阻止文档中的活动Office内容
-ms.openlocfilehash: 89f2e51253d3c2fda0140dd7be8bc86b1fda2cf5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 33d53ab14fec1b6cd16b8de95befe8bc8a898e16
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682804"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468912"
 ---
 # <a name="manage-active-content-in-office-documents"></a>管理 Office 文档中的活动内容
 
@@ -35,17 +35,17 @@ Office文档包含活动内容时，可以自动刷新、更新或 _执行这些
 
 更新的信任中心逻辑如下图所示：
 
-:::image type="content" source="../media/office-trust-center-flow.png" alt-text="描述企业门户中信任中心逻辑Microsoft 365 Defender示例" lightbox="../media/office-trust-center-flow.png":::
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="描述企业门户中信任中心逻辑Microsoft 365 Defender流程图" lightbox="../media/office-trust-center-flow.png":::
 
 1. 用户打开一个Office活动内容的文档。
 
 2. 如果文档来自受信任位置，则打开文档时启用活动内容。 如果文档不是来自受信任位置，则继续评估。
 
-3. 这是更新的行为生效的地方：
+3. 更新的行为在此处生效：
    - 以前，如果用户将该文档标识为受信任的文档，则下一个已评估设置。 如果已打开，文档将在启用活动内容后打开。
    - 现在，用户是否将文档标识为受信任文档未在此处 (步骤 8) 。
 
-     这是行为的基本更改：云策略 (步骤 4) 、组策略 (步骤 6) 和本地设置 (step 7) ，然后再考虑用户指定受信任文档。 如果其中任一步骤阻止访问活动内容，并且任何步骤均不允许用户重写，则用户将文档标识为受信任的文档基本上不相关。
+     行为的基本更改如下所述：在用户指定受信任文档之前，先检查云策略 (步骤 4) 、组策略 (步骤 6) 和本地设置 (步骤 7) 。 如果其中任一步骤阻止访问活动内容，并且任何步骤均不允许用户重写，则用户将文档标识为受信任的文档是不相关的。
 
 4. 检查云策略以查看是否允许或阻止此类活动内容。 如果未阻止活动内容，则评估将继续执行步骤 6。
 
@@ -111,17 +111,17 @@ Office文档包含活动内容时，可以自动刷新、更新或 _执行这些
 ****
 |类别|应用|策略名称|安全基线<br>setting (recommended) |使用用户提示进行设置<br>和 替代可用？|
 |---|---|---|---|---|
-|ActiveX|办公室|ActiveX控件初始化|**6**|**对于** 以下值，为"是"： <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
-|ActiveX|办公室|允许活动 X 一次窗体|**仅加载 Outlook 控件**|否|
-|ActiveX|办公室|检查 ActiveX 对象|不是安全基线设置。|否|
-|ActiveX|办公室|禁用所有 ActiveX|不是安全基线设置。|**对于** 以下值，为"是"： <ul><li>**Disabled**</li><li>**未配置**</li></ul>|
-|ActiveX|办公室|在 Forms3 中加载控件|**1**|**对于** 以下值，为"是"： <ul><li>**2**</li><li>**3**</li></ul>|
+|ActiveX|Office|ActiveX控件初始化|**6**|**对于** 以下值，为"是"： <ul><li>**3**</li><li>**4**</li><li>**5**</li><li>**6**</li></ul>|
+|ActiveX|Office|允许活动 X 一次窗体|**仅加载 Outlook 控件**|否|
+|ActiveX|Office|检查 ActiveX 对象|不是安全基线设置。|否|
+|ActiveX|Office|禁用所有 ActiveX|不是安全基线设置。|**对于** 以下值，为"是"： <ul><li>**Disabled**</li><li>**未配置**</li></ul>|
+|ActiveX|Office|在 Forms3 中加载控件|**1**|**对于** 以下值，为"是"： <ul><li>**2**</li><li>**3**</li></ul>|
 |外接程序&可扩展性|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|禁用未签名应用程序加载项的信任栏通知并阻止它们|**Enabled**|**"已** 禁用"值 **为"是"**。|
 |外接程序&可扩展性|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|要求由受信任发布者签署应用程序加载项|**Enabled**|否|
 |外接程序&可扩展性|Excel|不显示自动重新发布警告警告|**Disabled**|否|
 |外接程序&可扩展性|Excel|WEBSERVICE 函数通知设置|**禁用所有宏，并发出通知**|**对于** 以下值，为"是"： <ul><li>**禁用所有宏，并发出通知**</li><li>**Disabled**</li><li>**未配置**</li></ul>|
-|外接程序&可扩展性|办公室|禁止 Office 客户端轮询 SharePoint Server 中的链接|**Disabled**|否|
-|外接程序&可扩展性|办公室|禁用文档和模板中的 UI 扩展|在 Word 中禁止 = True <p> 不允许在 Project = False <p> 不允许在 Excel = True <p> 不允许在 Visio= False <p> 不允许在 PowerPoint = True <p> Access 中禁止访问 = True <p> 不允许在 Outlook = True <p> 不允许在 Publisher = True <p> 在 InfoPath 中不允许 = True|否|
+|外接程序&可扩展性|Office|禁止 Office 客户端轮询 SharePoint Server 中的链接|**Disabled**|否|
+|外接程序&可扩展性|Office|禁用文档和模板中的 UI 扩展|在 Word 中禁止 = True <p> 不允许在 Project = False <p> 不允许在 Excel = True <p> 不允许在 Visio= False <p> 不允许在 PowerPoint = True <p> Access 中禁止访问 = True <p> 不允许在 Outlook = True <p> 不允许在 Publisher = True <p> 在 InfoPath 中不允许 = True|否|
 |外接程序&可扩展性|Outlook|配置访问通讯簿时的 Outlook 对象模型提示|**自动拒绝**|**对于** 以下值，为"是"： <ul><li>**提示用户**</li><li>**根据计算机安全设置提示用户**</li><li>**Disabled**</li><li>**未配置**</li></ul>|
 |外接程序&可扩展性|Outlook|配置Outlook对象模型提示 访问 UserProperty 对象的 Formula 属性时|**自动拒绝**|**对于** 以下值，为"是"： <ul><li>**提示用户**</li><li>**根据计算机安全设置提示用户**</li><li>**Disabled**</li><li>**未配置**</li></ul>|
 |外接程序&可扩展性|Outlook|配置执行“另存为”操作时的 Outlook 对象模型提示|**自动拒绝**|**对于** 以下值，为"是"： <ul><li>**提示用户**</li><li>**根据计算机安全设置提示用户**</li><li>**Disabled**</li><li>**未配置**</li></ul>|
@@ -141,15 +141,15 @@ Office文档包含活动内容时，可以自动刷新、更新或 _执行这些
 |宏|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA 宏通知设置|**禁用无数字签署的所有宏** <p> 和 <p> **要求由受信任的发布者签署宏**|**对于** 以下值，为"是"： <ul><li>**Disabled**</li><li>**未配置**</li></ul>|
 |宏|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|阻止宏在 internet Office文件中运行|**Enabled**|**对于** 以下值，为"是"： <ul><li>**Disabled**</li><li>**未配置**</li></ul>|
 |宏|Excel|扫描 Open XML 工作簿Excel加密的宏|**扫描加密的宏 (默认)**|否|
-|宏|办公室|允许 VBA 按不受信任的 Intranet 位置的路径加载类型库引用|**Disabled**|否|
-|宏|办公室|自动化安全性|**使用应用程序宏安全级别**|否|
-|宏|办公室|对可能引用本地计算机上不安全位置的 VBA 库引用禁用其他安全检查|**Disabled**|否|
-|宏|办公室|宏运行时扫描范围|**启用所有文档**|否|
-|宏|办公室|仅信任使用 V3 签名的 VBA 宏|不是安全基线设置。|否|
+|宏|Office|允许 VBA 按不受信任的 Intranet 位置的路径加载类型库引用|**Disabled**|否|
+|宏|Office|自动化安全性|**使用应用程序宏安全级别**|否|
+|宏|Office|对可能引用本地计算机上不安全位置的 VBA 库引用禁用其他安全检查|**Disabled**|否|
+|宏|Office|宏运行时扫描范围|**启用所有文档**|否|
+|宏|Office|仅信任使用 V3 签名的 VBA 宏|不是安全基线设置。|否|
 |宏|Outlook|Outlook安全模式|**使用Outlook安全组策略**|启用所有 GPO Outlook必需。 <p> 作为依赖关系 (此策略不会阻止活动内容本身) 。|
 |宏|Outlook|宏的安全策略设置|**已签名、禁用未签名的警告**|**对于** 以下值，为"是"： <ul><li>**始终警告**</li><li>**已签名、禁用未签名的警告**</li><li>**Disabled**</li><li>**未配置**</li></ul>|
 |宏|PowerPoint|扫描 Open XML 演示文稿PowerPoint加密的宏|**扫描加密的宏 (默认)**|否|
-|宏|Publisher|Publisher自动化安全级别|**按用户指令(提示)**|否|
+|宏|发布者|Publisher自动化安全级别|**按用户指令(提示)**|否|
 |宏|Word|扫描 Word Open XML 文档中的加密宏|**扫描加密的宏 (默认)**|否|
 |
 
@@ -160,9 +160,9 @@ Office文档包含活动内容时，可以自动刷新、更新或 _执行这些
 ****
 |类别|应用|策略名称|安全基线<br>setting (recommended) |使用用户提示进行设置<br>和 替代可用？|
 |---|---|---|---|---|
-|ActiveX|办公室|限制 ActiveX 安装 |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|否|
-|外接程序&可扩展性|办公室|加载项管理 |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|否|
-|外接程序&可扩展性|办公室|阻止在文档中Office Flash 激活|请参阅 Microsoft 安全指南 ADMX/ADML 文件，了解阻止在应用中对 Flash 进行所有激活的 COM Microsoft 365列表。 企业安全基线的 ADMX/ADML 文件在安全与合规策略[中Toolkit](https://www.microsoft.com/download/details.aspx?id=55319)。|否|
-|Jscript & VBScript|办公室|限制旧版JScript执行Office|**已启用**： <p> 访问：69632 <p> Excel： 69632 <p> OneNote：69632 <p> Outlook： 69632 <p> PowerPoint：69632 <p> Project： 69632 <p> Publisher：69632 <p> Visio： 69632 <p> Word：69632|否|
-|Jscript & VBScript|办公室|脚本化 Window 安全限制 |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|否|
+|ActiveX|Office|限制 ActiveX 安装 |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|否|
+|外接程序&可扩展性|Office|加载项管理 |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|否|
+|外接程序&可扩展性|Office|阻止在文档中Office Flash 激活|请参阅 Microsoft 安全指南 ADMX/ADML 文件，查看 COM 终止位列表，以阻止在应用上对 Flash Microsoft 365激活。 企业安全基线的 ADMX/ADML 文件在安全与合规策略[中Toolkit](https://www.microsoft.com/download/details.aspx?id=55319)。|否|
+|Jscript & VBScript|Office|限制旧版JScript执行Office|**已启用**： <p> 访问：69632 <p> Excel： 69632 <p> OneNote：69632 <p> Outlook： 69632 <p> PowerPoint：69632 <p> Project： 69632 <p> Publisher：69632 <p> Visio： 69632 <p> Word：69632|否|
+|Jscript & VBScript|Office|脚本化 Window 安全限制 |excel.exe = True <p> exprwd.exe = True <p> groove.exe = True <p> msaccess.exe = True <p> mse7.exe = True <p> mspub.exe = True <p> onent.exe = True <p> outlook.exe = True <p> powerpnt.exe = True <p> pptview.exe = True <p> spDesign.exe = True <p> visio.exe = True <p> winproj.exe = True <p> winword.exe = True|否|
 |

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2825bc87750dc9bb130e35f9a4997283e470f869
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322697"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469880"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>用于在 Windows 上进行高级故障排除的数据收集
 
@@ -33,7 +33,7 @@ ms.locfileid: "63322697"
 
 运行"**MDEClientAnalyzer.cmd /？**" 查看可用参数的列表及其说明：
 
-![命令行中的客户端分析器参数的图像。](images/d89a1c04cf8441e4df72005879871bd0.png)
+:::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="MDEClientAnalyzer.cmd 的参数" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
 > 使用任何高级疑难解答参数时，分析器还会调用MpCmdRun.exe[ ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus)以收集Microsoft Defender 防病毒支持日志。
@@ -69,7 +69,7 @@ ms.locfileid: "63322697"
 
 分析器以及上述所有方案标志可通过运行"RemoteMDEClientAnalyzer.cmd"远程启动，"RemoteMDEClientAnalyzer.cmd"也会捆绑到分析工具集：
 
-![包含分析器信息的命令行的图像。](images/57cab9d82d08f672a92bf9e748ac9572.png)
+:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="RemoteMDEClientAnalyzer.cmd 的参数" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >

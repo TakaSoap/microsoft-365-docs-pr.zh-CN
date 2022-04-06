@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解这些安全建议Microsoft 365 商业高级版用户并保护你的数据。
-ms.openlocfilehash: cf0af6aab22c4a025a0c6b907fc3cade397d0dcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f1c327badefcd7f5d7f1728489a8388e7e7925e8
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328465"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635144"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>这些安全建议如何影响用户
 
@@ -42,7 +42,9 @@ ms.locfileid: "63328465"
 所有用户都应了解并使用这些电子邮件实践来帮助确保他们的电子邮件安全：
 
 - 将电子邮件设置为对验证器应用使用多重身份验证。
-- 验证合法电子邮件，并查找 Defender 中高级网络钓鱼的安全Office 365保护。
+
+- 验证合法电子邮件，并查找高级网络钓鱼防护 (Defender for Office 365) 。
+
 - 仅打开安全链接和附件，如保险箱和附件保险箱验证。
 
 详细了解 [多重身份验证、](m365bp-multifactor-authentication.md) 网络钓鱼 [和其他攻击](m365-campaigns-phishing-and-attacks.md)。
@@ -54,7 +56,9 @@ ms.locfileid: "63328465"
 添加到您的环境的所有用户都需要几分钟来设置 [iPhone 和 Android](../business/set-up-mobile-devices.md) 设备，以便安全工作：
 
 - 将设备设置为对验证器应用使用多重身份验证。
+
 - 使用 Microsoft 移动应用，包括Outlook、Word、OneDrive和其他 Microsoft 应用。 iPhone 和 Android 设备上包含的本机邮件应用程序不受支持。 
+
 - 需要 PIN，以便用户解锁其设备。
 
 设置这些设置后，在这些设备（包括邮件）上访问组织数据时，将提示用户使用验证器应用。
@@ -64,6 +68,7 @@ ms.locfileid: "63328465"
 用户使主要工作设备保持最新也很重要：
 
 - 在系统提示时，Office最新版本的桌面应用，并使用这些更新保持最新。
+
 - 随时了解操作系统更新，如Windows更新。
 
 对于[非托管 Windows 10 和 Mac](m365bp-protect-pcs-macs.md) 设备，用户有责任确保启用基本安全功能。

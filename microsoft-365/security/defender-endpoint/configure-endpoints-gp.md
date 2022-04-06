@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 12/07/2021
 ms.technology: mde
-ms.openlocfilehash: 3b20242247e33f8550ce4d153c2f2618c64d7007
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e05927829ec680a303972090dc050514c31cdbc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324335"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468956"
 ---
 # <a name="onboard-windows-devices-using-group-policy"></a>使用组策略载入 Windows 设备 
 
@@ -125,7 +125,7 @@ ms.locfileid: "63324335"
 
 **策略位置：\** Windows Components\Windows Defender ATP
 
-策略|Setting
+Policy|Setting
 ---|---
 Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集合"
 
@@ -133,7 +133,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒
 
-策略|Setting
+Policy|Setting
 ---|---
 配置对可能不需要的应用程序的检测|已启用、阻止
 
@@ -141,7 +141,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒\MAPS
 
-策略|Setting
+Policy|设置
 ---|---
 加入 Microsoft MAPS|已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -150,7 +150,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 **策略位置：\** Windows Components\Microsoft Defender 防病毒\Real-time Protection
 
-策略|Setting
+Policy|设置
 ---|---
 关闭实时保护|Disabled
 打开行为监视|已启用
@@ -163,7 +163,7 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-策略|Setting
+Policy|Setting
 ---|---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -183,9 +183,9 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
    这将仅为审核设置每个设置。
 
-   ![攻击面减少配置的图像。](images/asr-guid.png)
+   :::image type="content" source="images/asr-guid.png" alt-text="攻击面减少配置" lightbox="images/asr-guid.png":::
 
-策略|位置|Setting
+Policy|位置|设置
 ---|---|---
 配置受控文件夹访问权限| \Windows Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Controlled Folder Access| 已启用，审核模式
 
@@ -252,55 +252,53 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 2. 浏览到 **计算机配置** > **策略** > **管理** > 模板 **Windows组件** >  > Microsoft Defender 防病毒 **实时保护**。
 
-    :::image type="content" source="images/realtime-protect.png" alt-text="实时保护。":::
+    :::image type="content" source="images/realtime-protect.png" alt-text="实时保护" lightbox="images/realtime-protect.png":::
 
 1. 在"隔离"文件夹中，配置从"隔离"文件夹中删除项目。
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="删除项目隔离文件夹。":::
+    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="删除项目隔离文件夹" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="配置删除隔离。":::
+    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="配置删除隔离" lightbox="images/config-removal-items-quarantine2.png":::
 
 4. 在"扫描"文件夹中，配置扫描设置。
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="gpo 扫描。":::
+    :::image type="content" source="images/gpo-scans.png" alt-text="gpo 扫描" lightbox="images/gpo-scans.png":::
 
 ### <a name="monitor-all-files-in-real-time-protection"></a>监视实时保护中的所有文件
 
 浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \>  \> Microsoft Defender 防病毒 **实时保护**。
 
- 由于"扫描传入和传出文件"的值 (默认) 为 0，因此"为传入和传出文件和程序活动配置监视"的组策略"双向 (完全访问) "设置将更改为已禁用。
-
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="配置对传入传出文件活动的监视。":::
+:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="配置对传入传出文件活动的监视" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
 
 ### <a name="configure-windows-defender-smartscreen-settings"></a>配置Windows Defender SmartScreen 设置
 
 1. 浏览到 **SmartScreen** \> **资源管理器** \>  \> \>中的计算机Windows **配置** \> Windows Defender模板 **。**
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器。":::
+   :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕资源管理器" lightbox="images/config-windows-def-smartscr-explorer.png":::
  
 2. 浏览到 **计算机配置** > **策略** > **管理** > 模板 **Windows组件** > Windows Defender **SmartScreen** >  **Microsoft Edge**。
 
-    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕边缘。":::
+    :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="配置 Windows Defender 智能屏幕边缘" lightbox="images/config-windows-def-smartscr-explorer.png":::
 
 ### <a name="configure-potentially-unwanted-applications"></a>配置可能不需要的应用程序
 
 浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒**。
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="配置可能不需要的应用。":::
+:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="配置可能不需要的应用" lightbox="images/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="配置可能。":::
+:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="配置可能" lightbox="images/config-potential-unwanted-apps2.png":::
 
 ### <a name="configure-cloud-deliver-protection-and-send-samples-automatically"></a>配置云提供保护并自动发送示例
 
 浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows组件** \> **Microsoft Defender 防病毒** \> **MAPS**。
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="maps。":::
+:::image type="content" source="images/gpo-maps1.png" alt-text="maps" lightbox="images/gpo-maps1.png":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="阻止首次看到。":::
+:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="首次看到时阻止" lightbox="images/gpo-maps-block-atfirst-sight.png":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="加入 Microsoft 地图。":::
+:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="加入 Microsoft 地图" lightbox="images/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="需要进一步分析时发送文件示例。":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="需要进一步分析时发送文件示例" lightbox="images/send-file-sample-further-analysis-require.png":::
 
 > [!NOTE]
 > " **发送所有示例** "选项将提供对二进制文件/脚本/文档的最多分析，这会增加安全状况。
@@ -312,18 +310,18 @@ Enable\Disable Sample 集合|已启用 - 选中"启用计算机上的示例集�
 
 浏览到 **计算机配置** \> **策略** \> **管理模板** \> **Windows安全** \>  \> Microsoft Defender 防病毒 **更新的组件**。
 
-:::image type="content" source="images/signature-update-1.png" alt-text="签名更新。":::
+:::image type="content" source="images/signature-update-1.png" alt-text="签名更新" lightbox="images/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="签名定义更新。":::
+:::image type="content" source="images/signature-update-2.png" alt-text="签名定义更新" lightbox="images/signature-update-2.png":::
 
 ### <a name="configure-cloud-deliver-timeout-and-protection-level"></a>配置云提供超时和保护级别
 
 浏览到 **计算机配置** \> **策略** \> **MpEngine** \> **Windows组件** \> **Microsoft Defender 防病毒**\>模板。
 将云保护级别策略配置为默认Microsoft Defender 防病毒 **阻止策略时**，将禁用该策略。 这是将保护级别设置为 Windows 默认值所需的操作。
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="配置扩展云检查。":::
+:::image type="content" source="images/config-extended-cloud-check.png" alt-text="配置扩展云检查" lightbox="images/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="配置云保护级别。":::
+:::image type="content" source="images/cloud-protection-level.png" alt-text="配置云保护级别" lightbox="images/cloud-protection-level.png":::
 
 ## <a name="related-topics"></a>相关主题
 - [使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备](configure-endpoints-sccm.md)

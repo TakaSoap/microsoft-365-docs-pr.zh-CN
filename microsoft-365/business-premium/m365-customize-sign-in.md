@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 使用隐私和同意通知自定义登录页面，以Microsoft 365。
-ms.openlocfilehash: 003853e0577b2c23fc8240d2b19918c3235eade8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: 使用隐私和同意声明为用户自定义登录Microsoft 365。
+ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767746"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634682"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>使用隐私和同意通知自定义登录页面
 
@@ -42,8 +42,11 @@ ms.locfileid: "62767746"
 可以更新的元素包括：
 
 - **登录页文本** 添加隐私和同意声明的简便位置。
+
 - 登录页背景图像
+
 - 横幅徽标
+
 - 用户名提示
 
 有关隐私和同意通知的示例，请参阅Sing [andIng Computers and Obtaining Electronic Evidence in Criminal Investigations中的](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)附录 A。

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender重要指南
-description: 有关重要指导Microsoft 365 Defender说明。
+description: 有关重要Microsoft 365 Defender指南的说明。
 ms.date: 09/21/2020
 ms.reviewer: ''
 manager: dansimp

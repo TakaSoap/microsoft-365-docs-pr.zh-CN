@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 了解如何与组织外部的人员使用共享频道。
-ms.openlocfilehash: 1e14e83f82574f0ef944db56929fda8aded90d16
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 9fa58be15eab0844fa92d408320902c23f36de93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63715975"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468877"
 ---
 # <a name="collaborate-with-external-participants-in-a-channel"></a>在频道中与外部参与者协作
 
-如果希望允许用户在 [共享频道](/MicrosoftTeams/shared-channels) 中与组织外部的人员协作，则需要为要与之协作的每个组织配置 B2B 直接连接。 （或者，可以 [启用与所有外部组织的共享频道](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)。）
+如果要允许用户在 [共享频道](/MicrosoftTeams/shared-channels) 中与组织外部的人员协作，则需要为要与之协作的每个组织配置 B2B 直接连接。(或者，可以 [与所有外部组织启用共享频道](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)。)
 
 启用与其他组织的共享频道时：
 
@@ -84,7 +84,7 @@ ms.locfileid: "63715975"
 1. 在 [Azure Active Directory](https://aad.portal.azure.com) 中，选择“**外部标识**”，然后选择“**跨租户访问设置（预览）**”。
 1. 选择要修改的组织的入站访问链接。
 1. 在“**B2B 直接连接**”选项卡上，选择“**自定义设置**”。
-1. 在“**外部用户和组**”选项卡上，选择“**允许访问**”和“**所有用户和组**”。
+1. 在“**外部用户和组**”选项卡上，选择“**允许访问**”和“**所有用户和组**”。 (如果要限制对特定用户和组的访问，例如已签署保密协议的用户和组，可以选择 **选择外部用户和组**。)
 1. 在“**应用程序**”选项卡上，选择“**允许访问**”和“**选择应用程序**”。
 1. 选择“**添加 Microsoft 应用程序**”。
 1. 选择“**Office 365**”应用程序，然后选择“**选择**”。

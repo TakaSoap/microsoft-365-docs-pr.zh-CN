@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4425ee0a4ee9abb7c87be7ed45d9f5c94b84cdc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569988"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477008"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>用于保护网站和SharePoint的策略建议
 
-本文介绍如何实施推荐的标识零信任设备访问策略来保护SharePoint OneDrive for Business。 本指南基于通用 [标识和设备访问策略](identity-access-policies.md)。
+本文介绍如何实施推荐的零信任标识和设备访问策略来保护SharePoint OneDrive for Business。 本指南基于通用 [标识和设备访问策略](identity-access-policies.md)。
 
 这些建议基于三种不同的安全层和保护 SharePoint 文件，这些文件可以基于你的需求粒度应用：起始点、企业和 **专用安全**。  你可以了解有关这些安全层以及建议的客户端操作系统（概述中这些建议所引用） [的更多信息](microsoft-365-policies-configurations.md)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "64569988"
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>在应用中使用应用强制SharePoint
 
-如果在客户端中实现SharePoint，则条件访问策略Azure AD以Azure AD强制实施在 SharePoint 中配置的策略。 默认情况下，此策略适用于所有用户，但仅影响当您在 SharePoint 中创建访问控制时，使用 PowerShell 访问您指定的SharePoint。 还可以将策略的范围确定为特定用户、组或网站。
+如果在 SharePoint 中实现访问控制，则必须在 Azure AD 创建此条件访问策略Azure AD以强制实施在 SharePoint 中配置的策略。 此策略适用于所有用户，但仅影响在使用 PowerShell 创建访问控件时对使用 PowerShell 指定的SharePoint。
 
 若要配置此策略，请参阅控制从非托管设备SharePoint或OneDrive访问"中的"阻止或限制对特定网站集或帐户[的访问权限"](/sharepoint/control-access-from-unmanaged-devices)。
 

@@ -19,12 +19,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用配置分析器查找和修复预设安全策略中的"标准保护"和"严格保护"中的设置下面的安全策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0acdf6d300984c00bb1b1b060d3e36562983ebca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 459f44f29b89b2bbca6aa0f6847d0b4636647be6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61876472"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477052"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器
 
@@ -44,7 +44,7 @@ Microsoft 365 Defender门户中的配置分析器提供了一个中心位置，�
   - [反恶意软件策略](configure-anti-malware-policies.md)。
   - [EOP 防钓鱼策略](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Microsoft Defender for Office 365** 策略：这包括具有 Microsoft 365 E5 或 Defender for Office 365 加载项订阅的组织：
+- **适用于 Office 365 策略的 Microsoft Defender**：这包括Microsoft 365 E5或 Defender for Office 365 加载项订阅的组织：
   - Microsoft Defender for Office 365 中的防钓鱼策略，包括：
     - EOP [防钓鱼](set-up-anti-phishing-policies.md#spoof-settings) 策略中可用的相同欺骗设置。
     - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -52,40 +52,40 @@ Microsoft 365 Defender门户中的配置分析器提供了一个中心位置，�
   - [安全链接策略](set-up-safe-links-policies.md)。
   - [安全附件策略](set-up-safe-attachments-policies.md)。
 
-用作基线的标准和严格策略设置值在 EOP 和 Microsoft Defender for [Office 365推荐设置中进行了介绍](recommended-settings-for-eop-and-office365.md)。
+用作基线的标准和严格策略设置值在 [EOP 和 Microsoft Defender](recommended-settings-for-eop-and-office365.md) 的推荐设置中进行了介绍，Office 365安全。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到配置 **分析器页面** ，请使用 <https://security.microsoft.com/configurationAnalyzer> 。
+- 访问 <https://security.microsoft.com> 打开 Microsoft 365 Defender 门户。 若要直接转到配置 **分析器页面** ，请使用 <https://security.microsoft.com/configurationAnalyzer>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 您需在 Microsoft 365 Defender 门户中分配权限，然后才能执行本文中的过程：
-  - 若要使用 **配置分析器** 并更新安全策略，您必须是组织管理或安全 **管理员角色****组** 的成员。
+  - 若要使用 **配置分析器** 并更新安全策略，您必须是组织管理或 **安全****管理员角色** 组的成员。
   - 对于配置分析器的只读访问，需要成为 **全局阅读器** 或 **安全阅读器** 角色组的成员。
 
   有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
   > [!NOTE]
   >
-  > - 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 Microsoft 365 Defender _门户中_ 所需的权限，以及用户对 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到相应的 Azure Active Directory 角色会为用户提供在 _Microsoft 365 Defender 门户中_ 所需的权限，以及用户对 Microsoft 365 中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>使用配置门户中的Microsoft 365 Defender分析器
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>使用配置门户中的Microsoft 365 Defender器
 
-在 Microsoft 365 Defender 门户中，转到"模板策略"部分中的"电子邮件&协作策略 <https://security.microsoft.com>  \> **&规则** \> **威胁策略** 配置 \> **分析** 器"。 若要直接转到配置 **分析器页面** ，请使用 <https://security.microsoft.com/configurationAnalyzer> 。
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>， go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section. 若要直接转到配置 **分析器页面** ，请使用 <https://security.microsoft.com/configurationAnalyzer>。
 
 " **配置分析器** "页包含三个主要选项卡：
 
 - **标准建议**：将现有安全策略与标准建议进行比较。 你可以调整设置值，使它们达到与 Standard 相同的级别。
 - **严格建议**：将现有安全策略与严格建议进行比较。 你可以调整设置值，使它们达到与 Strict 相同的级别。
-- **配置偏移分析和历史记录**：审核和跟踪策略更改。
+- **配置偏移分析和历史记录**：随着时间的推移审核和跟踪策略更改。
 
 ### <a name="standard-recommendations-and-strict-recommendations-tabs-in-the-configuration-analyzer"></a>配置分析器中的标准建议和严格建议选项卡
 
 默认情况下，配置分析器在"标准建议 **"选项卡上** 打开。可以切换到"严格 **建议"** 选项卡。两个选项卡上的设置、布局和操作相同。
 
-![设置配置分析器中的"配置和建议"视图。](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="配置设置中的&quot;配置&quot;视图和建议视图" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
 
 与标准或严格保护相比，选项卡的第一部分显示每种类型的策略中需要改进的设置数。 策略类型为：
 
@@ -105,23 +105,23 @@ Microsoft 365 Defender门户中的配置分析器提供了一个中心位置，�
 - **策略类型**：反垃圾邮件、反网络钓鱼、反恶意软件、保险箱链接或保险箱附件。
 - **当前配置**：设置的当前值。
 - **上次修改日期**: 上次修改策略的日期。
-- **状态**：通常情况下，此值为 **"未启动"。**
+- **状态**：通常，此值 **未启动**。
 
 ### <a name="change-a-policy-setting-to-the-recommended-value"></a>将策略设置更改为建议的值
 
-在配置 **分析** 器的标准保护或严格保护选项卡上，选择表中的行。 将显示以下按钮：
+在配置 **分析****器** 的标准保护或严格保护选项卡上，选择表中的行。 将显示以下按钮：
 
 - **应用建议**
 - **查看策略**
 - **刷新**：
 
-如果您选择一行并单击"应用建议"， (一个确认对话框，并会显示一个) 对话框。 如果单击 **"确定"，** 将发生以下情况：
+如果您选择一行并单击"应用建议"， (一个确认对话框，并会显示一个) 对话框。 如果单击 **"确定"**，将发生以下情况：
 
 - 该设置将更新为建议的值。
-- 只有 **"刷新"** 按钮 ("应用建议"和"查看") 。 
-- 行 **的 Status** 值将更改为 **Complete**。
+- 只有 **"刷新"** 按钮 (**"应用建议**"和"查看"策略) 。
+- 行 **的 Status** 值将更改为 **"完成"**。
 
-如果你选择一行并单击查看策略，你将在 Microsoft 365 Defender 门户中查看受影响的策略的详细信息飞出，可在其中手动更新设置。
+如果你选择一行并单击查看策略，你将在 Microsoft 365 Defender 门户中查看受影响的策略的详细信息飞出，你可以手动更新该设置。
 
 自动或手动更新设置后，单击"刷新"以查看建议数量减少以及从结果中删除更新的行。
 
@@ -134,8 +134,8 @@ Microsoft 365 Defender门户中的配置分析器提供了一个中心位置，�
 - **设置名称**
 - **策略**：受影响策略的名称。
 - **类型**：反垃圾邮件、反网络钓鱼、反恶意软件、保险箱链接或保险箱附件。
-- **配置更改**：设置的旧值和新值
-- **配置偏移**：值 **Increase** 或 **Decrease，** 指示与建议的标准或严格设置相比，设置安全性增加或降低。
+- **配置** 更改：设置的旧值和新值
+- **配置偏移**：值 **Increase** 或 **Decrease** ，指示与建议的 Standard 或 Strict 设置相比，设置安全性增加或降低。
 
 要筛选结果，请单击“**筛选器**”。 在出现 **筛选器** 浮出控件中，可以从以下筛选器中进行选择:
 
@@ -144,8 +144,8 @@ Microsoft 365 Defender门户中的配置分析器提供了一个中心位置，�
 
 完成后，单击“**应用**”。
 
-若要将结果导出到.csv文件，请单击"导出 **"。**
+若要将结果导出到.csv，请单击"导出 **"**。
 
-若要按特定的"修改者 **"、"****设置** 名称"或"**类型**"值筛选结果，请使用"**搜索"** 框。
+若要按特定的"修改 **者"、**"设置名称"或"**类型**"值筛选结果，请使用"**搜索"** 框。
 
-![配置分析器中的配置偏移分析和历史记录视图。](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+:::image type="content" source="../../media/configuration-analyzer-configuration-drift-analysis-view.png" alt-text="配置分析器中的配置偏移分析和历史记录视图" lightbox="../../media/configuration-analyzer-configuration-drift-analysis-view.png":::

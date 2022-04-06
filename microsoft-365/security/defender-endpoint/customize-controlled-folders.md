@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 04e7617825a3e14eac541b296cbed9f4dd95e206
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683748"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469308"
 ---
 # <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问
 
@@ -90,7 +90,7 @@ ms.locfileid: "63683748"
     ```
 3. 对要保护的每个文件夹重复步骤 2。 受保护的文件夹在应用Windows 安全中心可见。
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="显示 cmdlet 的 PowerShell 窗口。":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="显示 cmdlet 的 PowerShell 窗口" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > 用于 `Add-MpPreference` 向列表追加或添加应用，而不是 `Set-MpPreference`。 `Set-MpPreference`使用 cmdlet 将覆盖现有列表。
@@ -120,7 +120,7 @@ ms.locfileid: "63683748"
 
 4. 选择 **添加允许的应用** 并按照提示添加应用。
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="添加允许的应用按钮。":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="&quot;添加允许的应用&quot;按钮" lightbox="images/cfa-allow-app.png":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>使用组策略允许特定应用
 
@@ -149,7 +149,7 @@ ms.locfileid: "63683748"
 
    继续使用 向 `Add-MpPreference -ControlledFolderAccessAllowedApplications` 列表中添加更多应用。 使用此 cmdlet 添加的应用将显示在Windows 安全中心应用中。
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允许应用的 PowerShell cmdlet。":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允许应用程序的 PowerShell cmdlet" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > 用于 `Add-MpPreference` 向列表中追加或添加应用。 `Set-MpPreference`使用 cmdlet 将覆盖现有列表。

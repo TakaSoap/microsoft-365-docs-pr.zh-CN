@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fe3139f12b863b54d336e52939ffbb3057df6b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 81c3a3a6d1d35551eec34d0fe12aba2f1fc6ec5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315997"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469682"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 危险和漏洞管理
 
@@ -53,18 +53,18 @@ ms.locfileid: "63315997"
 
 如果没有影响你的设备或你的设备分数的事件，则不会显示任何事件。
 
-![曝光分数悬停。](images/tvm-event-timeline-exposure-score350.png) 
-![Microsoft 设备安全分数悬停。](images/tvm-event-timeline-device-hover360.png)
+:::image type="content" source="images/tvm-event-timeline-exposure-score350.png" alt-text="曝光分数悬停" lightbox="images/tvm-event-timeline-exposure-score350.png":::
+:::image type="content" source="images/tvm-event-timeline-device-hover360.png" alt-text="Microsoft 设备安全分数悬停" lightbox="images/tvm-event-timeline-device-hover360.png":::
 
 ### <a name="drill-down-to-events-from-that-day"></a>向下钻取到当天的事件
 
 选择 **"显示这一天的所有** 事件"将你访问具有该日期的自定义日期范围的"事件时间线"页。
 
-![事件时间线选择的自定义日期范围。](images/tvm-event-timeline-drilldown.png)
+:::image type="content" source="images/tvm-event-timeline-drilldown.png" alt-text="&quot;事件时间线&quot;页" lightbox="images/tvm-event-timeline-drilldown.png":::
 
 选择 **"自定义** 范围"将日期范围更改为其他自定义范围或预设的时区。
 
-![事件时间线日期范围选项。](images/tvm-event-timeline-dates.png)
+:::image type="content" source="images/tvm-event-timeline-dates.png" alt-text="事件时间线日期范围选项" lightbox="images/tvm-event-timeline-dates.png":::
 
 ## <a name="event-timeline-overview"></a>事件时间线概述
 
@@ -78,7 +78,7 @@ ms.locfileid: "63315997"
 
 页面顶部的两个大数字显示新漏洞和可利用漏洞的数量，而不是事件数。 某些事件可能有多个漏洞，而某些漏洞可以有多个事件。
 
-![事件时间线页面。](images/tvm-event-timeline-overview-mixed-type.png)
+:::image type="content" source="images/tvm-event-timeline-overview-mixed-type.png" alt-text="事件时间线" lightbox="images/tvm-event-timeline-overview-mixed-type.png":::
 
 ### <a name="columns"></a>列数
 
@@ -110,7 +110,7 @@ ms.locfileid: "63315997"
 
 "分数趋势"下方的箭头可帮助你确定此事件是可能会提高还是降低你的组织曝光分数。 曝光分数越高，设备更容易被利用。
 
-![事件时间线飞出。](images/tvm-event-timeline-flyout500.png)
+:::image type="content" source="images/tvm-event-timeline-flyout500.png" alt-text="事件时间线飞出" lightbox="images/tvm-event-timeline-flyout500.png":::
 
 从该页面 **选择"转到相关安全建议** "，查看解决安全建议页中的新 [软件漏洞的建议](tvm-security-recommendation.md)。 阅读安全建议中的说明和漏洞详细信息后，可以提交修正请求，并跟踪修正 [页面中的请求](tvm-remediation.md)。
 
@@ -120,11 +120,11 @@ ms.locfileid: "63315997"
 
 将显示一个完整的页面，其中包含特定软件的所有详细信息。 将鼠标悬停在图形上以查看该特定软件的事件时间线。
 
-![具有事件时间线图的软件页面。](images/tvm-event-timeline-software2.png)
+:::image type="content" source="images/tvm-event-timeline-software2.png" alt-text="具有事件时间线图的软件页面" lightbox="images/tvm-event-timeline-software2.png":::
 
 导航到事件时间线选项卡以查看与该软件相关的所有事件。 还可以查看安全建议、发现的漏洞、已安装的设备以及版本分发。
 
-![具有"事件时间线"选项卡的软件页面。](images/tvm-event-timeline-software-pages.png)
+:::image type="content" source="images/tvm-event-timeline-software-pages.png" alt-text="具有&quot;事件时间线&quot;选项卡的软件页面" lightbox="images/tvm-event-timeline-software-pages.png":::
 
 ## <a name="related-topics"></a>相关主题
 

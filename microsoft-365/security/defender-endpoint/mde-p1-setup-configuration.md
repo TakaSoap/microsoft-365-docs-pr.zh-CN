@@ -1,5 +1,5 @@
 ---
-title: 设置和配置Microsoft Defender for Endpoint计划 1
+title: 为终结点计划 1 设置和配置 Microsoft Defender
 description: 了解如何为终结点计划 1 设置和配置 Defender。 查看要求、规划推出和设置环境。
 search.appverid: MET150
 author: denisebmsft
@@ -16,14 +16,14 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: e2a8f7166e1fa3a05b95b1a48dbf91b30ef34224
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569083"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470364"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>设置和配置Microsoft Defender for Endpoint计划 1
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>为终结点计划 1 设置和配置 Microsoft Defender
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,7 @@ ms.locfileid: "64569083"
 
 ## <a name="the-setup-and-configuration-process"></a>安装和配置过程
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="计划 1 的安装和Microsoft Defender for Endpoint流" lightbox="images/mde-p1-deploymentflow.png":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="适用于 Endpoint Plan 1 的 Microsoft Defender 的安装和部署流" lightbox="images/mde-p1-deploymentflow.png":::
 
 适用于 Endpoint Plan 1 的 Defender 的常规安装和配置过程如下所示： <br/><br/>
 
@@ -53,7 +53,7 @@ ms.locfileid: "64569083"
 
 | 要求 | 说明 |
 |:---|:---|
-| 许可要求 | Defender for Endpoint 计划 1 |
+| 许可要求 | Defender for Endpoint Plan 1 (以前称为 Microsoft Defender for Endpoint Lite) |
 | 浏览器要求 | Microsoft Edge <br/> Internet Explorer版本 11 <br/> Google Chrome |
 | 操作系统 | Windows 10版本 1709 或更高版本 <br/>macOS：11.5 (Big Sur) 、10.15.7 (Catalina) 或 10.14.6 (Mojave)  <br/>iOS <br/>Android OS  |
 | 数据中心版 | 以下数据中心位置之一： <br/>- 欧盟 <br/>- 英国 <br/>- 美国 |
@@ -65,9 +65,9 @@ ms.locfileid: "64569083"
 
 | 方法 | 说明 |
 |:---|:---|
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (包含在Microsoft Endpoint Manager)  | 使用Intune在云本机环境中管理终结点 |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) Configuration Manager[ (](/mem/configmgr/core/understand/introduction)中包含的Microsoft Endpoint Manager)  | 使用 Intune 和 Configuration Manager 管理跨本地和云环境的终结点和工作负载 |
-| [配置管理器](/mem/configmgr/core/understand/introduction) | 使用Configuration Manager Defender for Endpoint 的基于云的功能保护本地终结点 |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (包含在Microsoft Endpoint Manager)  | 使用 Intune 在云本机环境中管理终结点 |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)和 [Configuration Manager](/mem/configmgr/core/understand/introduction) (包含在Microsoft Endpoint Manager)  | 使用 Intune 和 Configuration Manager 管理跨本地和云环境的终结点和工作负载 |
+| [配置管理器](/mem/configmgr/core/understand/introduction) | 使用 Configuration Manager 通过 Defender for Endpoint 的基于云的功能保护本地终结点 |
 | 从应用程序门户下载的本地Microsoft 365 Defender脚本 | 在终结点上使用本地脚本运行试点或载入几台设备 |
 
 若要了解有关部署选项的详细信息，请参阅 [规划 Defender for Endpoint 部署](deployment-strategy.md)。 此外，下载以下海报： 
@@ -77,7 +77,7 @@ ms.locfileid: "64569083"
 **[获取部署海报](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
-> 有关规划部署的更多详细信息，请参阅规划部署Microsoft Defender for Endpoint[部署](deployment-strategy.md)。
+> 有关规划部署的更多详细信息，请参阅规划 [Microsoft Defender for Endpoint 部署](deployment-strategy.md)。
 
 ## <a name="set-up-your-tenant-environment"></a>设置租户环境
 
@@ -102,9 +102,9 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 下表介绍了组织中 Defender for Endpoint 要考虑的关键角色： <br/><br/>
 
-| 角色 | 说明 |
+| Role | 说明 |
 |:---|:---|
-| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，为公司注册Microsoft 365或Microsoft Defender for Endpoint计划 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))  <br/>- Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) <br/>- Microsoft Endpoint Manager管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))   |
+| 全局管理员 (也称为全局管理员)  <br/><br/> *最佳做法是限制全局管理员的数量。* | 全局管理员可以执行所有类型的任务。 默认情况下，为公司注册 Microsoft 365 或 Microsoft Defender for Endpoint Plan 1 的人是全局管理员。 <br/><br/> 全局管理员能够跨所有门户访问/Microsoft 365设置，例如： <br/>- Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))  <br/>- Microsoft 365 Defender门户 () [https://security.microsoft.com](https://security.microsoft.com) <br/>- Microsoft Endpoint Manager管理中心 ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))   |
 | 安全管理员 (也称为安全管理员)  | 安全管理员可以执行安全操作员任务以及以下任务： <br/>- 监视与安全相关的策略 <br/>- 管理安全威胁和警报 <br/>- 查看报告 |
 | 安全操作员 | 安全操作员可以执行安全读者任务以及以下任务： <br/>- 查看有关检测到的威胁的信息 <br/>- 调查和响应检测到的威胁  |
 | 安全读者 | 安全读者可以执行以下任务： <br/>- 查看跨服务的安全Microsoft 365策略 <br/>- 查看安全威胁和警报 <br/>- 查看报告  |
@@ -119,7 +119,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 |终结点操作系统 | 载入方法|
 |---|---|
-| Windows 10 | [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md)  |
+| Windows 10 | [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ 移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md)  |
 | macOS | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
 | iOS |[基于应用](ios-install.md) |
 | Android | [Microsoft Endpoint Manager](android-intune.md) |
@@ -258,7 +258,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 10. 在" **查看 + 创建** "选项卡上，查看策略的设置，然后选择"创建 **"**。 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
 > [!TIP]
-> 有关详细信息，请参阅如何使用 U 盘控制 [USB 设备和其他可移动Microsoft Defender for Endpoint](control-usb-devices-using-intune.md)。
+> 有关详细信息，请参阅如何使用 [Microsoft Defender for Endpoint 控制 USB 设备和其他可移动媒体](control-usb-devices-using-intune.md)。
 
 ### <a name="network-protection"></a>网络保护
 
@@ -293,7 +293,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 8. 在" **查看 + 创建** "选项卡上，查看策略的设置，然后选择"创建 **"**。 该策略将应用于不久后载入到 Defender for Endpoint 的任何终结点。
 
 > [!TIP]
-> 可以使用其他方法（如 Windows PowerShell 或 组策略）启用网络保护。 若要了解更多信息，请参阅 [启用网络保护](enable-network-protection.md)。
+> 可以使用其他方法（如Windows PowerShell组策略）启用网络保护。 若要了解更多信息，请参阅 [启用网络保护](enable-network-protection.md)。
 
 ### <a name="web-protection"></a>Web 保护
 
@@ -311,7 +311,7 @@ Microsoft 建议仅向用户分配执行其任务所需的权限级别。 通过
 
 5. 在" **配置设置"** 选项卡上，展开 **"Web 保护"**，指定下表中的设置，然后选择"下一步 **"**。 <br/><br/>
 
-   | Setting | 建议 |
+   | 设置 | 建议 |
    |:---|:---|
    | **启用网络保护** | 设置为 **已启用**。 阻止用户访问恶意网站或域。 <br/><br/>或者，你可以将网络保护设置为 **审核模式** 以查看它在环境中如何工作。 在审核模式下，网络保护不会阻止用户访问网站或域，但会作为事件跟踪检测。 |
    | **需要 SmartScreen Microsoft Edge 旧版** | 设置为 **"是"**。 帮助保护用户免受潜在网络钓鱼欺诈和恶意软件的攻击。 |
@@ -403,4 +403,4 @@ Windows Defender应用程序控制 (WDAC) 仅允许受信任的应用程序和�
 
 现在，你已完成安装和配置过程，下一步是开始使用 Defender for Endpoint。 
 
-- [开始适用于终结点计划 1 的 Defender](mde-plan1-getting-started.md)
+- [适用于终结点计划 1 的 Defender 入门](mde-plan1-getting-started.md)

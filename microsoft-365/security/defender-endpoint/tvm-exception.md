@@ -1,6 +1,6 @@
 ---
 title: 创建和查看安全建议例外 - 危险和漏洞管理
-description: 在安全报告中创建和监视安全建议危险和漏洞管理。
+description: 创建并监视安全建议在安全危险和漏洞管理。
 keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理 修正， tvm 修正 intune， tvm 修正 sccm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3986d44027824f2ba9ca508567d518cce270450
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00d7afd9daec71a14d4b789d1d6dcfe5eaf07d83
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61160470"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477184"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 危险和漏洞管理
 
@@ -37,53 +37,53 @@ ms.locfileid: "61160470"
 
 当建议此时不相关时，作为修正请求的替代方法，你可以为建议创建例外。 如果你的组织具有设备组，你将能够将异常范围范围缩小到特定设备组。 可以针对所选设备组或过去和现在的所有设备组创建例外。
 
-为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常** "或 **"部分** 异常 (组设置) 。
+为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (组设置) 。
 
 ## <a name="permissions"></a>Permissions
 
-只有具有"异常处理"权限的用户才能管理异常 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
+只有具有"异常处理"权限的用户才能管理例外 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
 
-![异常处理权限的视图。](images/tvm-exception-permissions.png)
+:::image type="content" source="images/tvm-exception-permissions.png" alt-text="异常处理权限" lightbox="images/tvm-exception-permissions.png":::
 
 ## <a name="create-an-exception"></a>创建异常
 
 选择要创建例外的安全建议，然后选择" **异常** 选项"并填写表单。
 
-![显示"异常选项"按钮在安全建议飞出控件中的位置。](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="安全建议飞出控件中的例外选项按钮的位置" lightbox="images/tvm-exception-options.png":::
 
 ### <a name="exception-by-device-group"></a>按设备组分组的异常
 
 将异常应用于所有当前设备组或选择特定设备组。 将来设备组不会包含在异常中。 列表中不会显示已具有异常的设备组。 如果你仅选择某些设备组，建议状态将从"活动"更改为"部分异常"。 如果选择所有设备组，状态将更改为"完全异常"。
 
-![显示设备组下拉列表。](images/tvm-exception-device-group-500.png)
+:::image type="content" source="images/tvm-exception-device-group-500.png" alt-text="&quot;设备组&quot;下拉列表" lightbox="images/tvm-exception-device-group-500.png":::
 
 #### <a name="filtered-views"></a>筛选的视图
 
-如果你已按任意页面的设备组进行筛选危险和漏洞管理，则只有经过筛选的设备组将显示为选项。
+如果你已按任意页面的设备组进行危险和漏洞管理，则只有经过筛选的设备组将显示为选项。
 
 这是要按设备组筛选任意页面的危险和漏洞管理按钮：
 
-![显示所选设备组筛选器。](images/tvm-selected-device-groups.png)
+:::image type="content" source="images/tvm-selected-device-groups.png" alt-text="所选设备组筛选器" lightbox="images/tvm-selected-device-groups.png":::
 
 具有已筛选设备组的异常视图：
 
-![显示筛选的设备组下拉列表。](images/tvm-exception-device-filter500.png)
+:::image type="content" source="images/tvm-exception-device-filter500.png" alt-text="筛选的设备组下拉列表" lightbox="images/tvm-exception-device-filter500.png":::
 
 #### <a name="large-number-of-device-groups"></a>大量设备组
 
-如果你的组织拥有 20 多个设备组，请选择 **已筛选** 设备组选项旁边的"编辑"。
+如果你的组织拥有 20 多个设备组， **请选择已筛选** 设备组选项旁边的"编辑"。
 
-![显示如何编辑大量组。](images/tvm-exception-edit-groups.png)
+:::image type="content" source="images/tvm-exception-edit-groups.png" alt-text="编辑大量组的过程" lightbox="images/tvm-exception-edit-groups.png":::
 
 将出现一个飞出框，可在其中搜索和选择想要包含的设备组。 Select the check mark icon below Search to check/uncheck all.
 
-![显示大型设备组飞出。](images/tvm-exception-device-group-flyout-400.png)
+:::image type="content" source="images/tvm-exception-device-group-flyout-400.png" alt-text="大型设备组飞出" lightbox="images/tvm-exception-device-group-flyout-400.png":::
 
 ### <a name="global-exceptions"></a>全局例外
 
 如果您具有全局管理员权限，您将能够创建和取消全局异常。 它会影响 **组织** 的所有当前和未来设备组，只有具有相似权限的用户才能更改它。 建议状态将从"活动"更改为"完全例外"。
 
-![显示全局例外选项。](images/tvm-exception-global.png)
+:::image type="content" source="images/tvm-exception-global.png" alt-text="全局例外选项" lightbox="images/tvm-exception-global.png":::
 
 需要记住的一些内容：
 
@@ -107,7 +107,7 @@ ms.locfileid: "61160470"
 
  选择例外以打开包含更多详细信息的飞出区。 每个设备组的例外将包含例外范围中每个设备组的列表，你可以导出该列表。 您还可以查看相关建议或取消例外。
 
-![在"修正"页中显示"异常"选项卡。](images/tvm-exception-view.png)
+:::image type="content" source="images/tvm-exception-view.png" alt-text="&quot;修正&quot;页中的&quot;例外&quot;选项卡" lightbox="images/tvm-exception-view.png":::
 
 ## <a name="how-to-cancel-an-exception"></a>如何取消异常
 
@@ -115,25 +115,25 @@ ms.locfileid: "61160470"
 
 若要取消所有设备组或全局例外的异常，请选择"取消 **所有设备组例外"** 按钮。 你只能取消你有权使用的设备组的例外。
 
-![取消按钮。](images/tvm-exception-cancel.png)
+:::image type="content" source="images/tvm-exception-cancel.png" alt-text="&quot;取消&quot;按钮" lightbox="images/tvm-exception-cancel.png":::
 
 ### <a name="cancel-the-exception-for-a-specific-device-group"></a>取消特定设备组的例外
 
-选择特定设备组以取消它的例外。 设备组将显示一个飞出，并且可以选择取消 **异常**。
+选择特定设备组以取消它的例外。 设备组将显示一个飞出，并且可以选择"取消 **异常"**。
 
-![显示如何选择特定设备组。](images/tvm-exception-device-group-hover.png)
+:::image type="content" source="images/tvm-exception-device-group-hover.png" alt-text="选择特定设备组的过程" lightbox="images/tvm-exception-device-group-hover.png":::
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>应用例外后查看影响
 
-在"安全推荐页上，选择"自定义列"，并选中"在异常发生后公开 ("和"在) 后影响 (设备 **) "。**
+在"安全推荐页上，选择"自定义列"**，** 并选中"在异常发生后公开 ("和"在) 后影响 ("复选框 **) 。**
 
-![显示自定义列选项。](images/tvm-after-exceptions.png)
+:::image type="content" source="images/tvm-after-exceptions.png" alt-text="自定义列选项" lightbox="images/tvm-after-exceptions.png":::
 
-公开的设备 (异常后) 列显示应用异常后仍易受漏洞攻击的其余设备。 影响曝光的异常理由包括"第三方控制"和"备用缓解"。 其他理由不会减少设备的曝光，并且它们仍被视为公开。
+"异常 (后公开的) 列显示应用异常后仍易受漏洞攻击的其余设备。 影响曝光的异常理由包括"第三方控制"和"备用缓解"。 其他理由不会减少设备的曝光，并且它们仍被视为公开。
 
 异常 (后的影响) 在应用异常后对曝光分数或安全分数的剩余影响。 影响分数的异常理由包括"第三方控制"和"备用缓解"。 其他理由不会减少设备的曝光，因此曝光分数和安全分数不会更改。
 
-![显示表格中的列。](images/tvm-after-exceptions-table.png)
+:::image type="content" source="images/tvm-after-exceptions-table.png" alt-text="表格中的列" lightbox="images/tvm-after-exceptions-table.png":::
 
 ## <a name="related-topics"></a>相关主题
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint 预发布免责声明
-description: 适用于终结点的 Microsoft Defender 预发布版本的免责声明。
+title: Microsoft Defender for Endpoint预发行免责声明
+description: Microsoft Defender for Endpoint预发布版本的免责声明。
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp

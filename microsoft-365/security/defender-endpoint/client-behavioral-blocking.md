@@ -1,6 +1,6 @@
 ---
 title: 客户端行为阻止
-description: 客户端行为阻止是 Microsoft Defender for Endpoint 中的行为阻止和包含功能的一部分
+description: 客户端行为阻止是 Microsoft Defender for Endpoint 的行为阻止和包含功能的一部分
 keywords: 行为阻止， 快速保护， 客户端行为， Microsoft Defender for Endpoint
 ms.pagetype: security
 author: denisebmsft
@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330225"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470210"
 ---
 # <a name="client-behavioral-blocking"></a>客户端行为阻止
 
@@ -35,7 +35,7 @@ ms.locfileid: "63330225"
 
 客户端行为阻止是 Defender for Endpoint 中行为阻止 [和](behavioral-blocking-containment.md) 包含功能的一个组件。 由于在设备上检测到可疑行为 (也称为客户端或终结点) ，因此 (项目（如文件或应用程序) ）将被自动阻止、检查和修正。
 
-:::image type="content" alt-text="云和客户端保护。" source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="云和客户端保护" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 防病毒保护在与云保护配对时效果最佳。
 

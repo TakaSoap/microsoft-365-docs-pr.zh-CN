@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 4c3b74179294d0b028dd07c3a6f4f28e844237d3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401142"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469924"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -56,9 +56,8 @@ ms.locfileid: "63401142"
    - 1 或 **On**
    - 2 或 **审核** 模式
 
-    :::image type="content" alt-text="网络保护注册表项。" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="网络保护注册表项" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## <a name="enable-network-protection"></a>启用网络保护
 
 使用以下任一方法启用网络保护：
@@ -98,7 +97,7 @@ ms.locfileid: "63401142"
 
 1. 登录到管理Microsoft Endpoint Manager中心 (https://endpoint.microsoft.com)。
 
-2. 转到 **DevicesConfiguration** >  **配置文件** > **创建配置文件**。
+2. 转到“**设备**” > “**配置文件**” > “**创建配置文件**”。
 
 3. 在" **创建配置文件"飞** 出控件中，选择" **平台** "，然后选择" **配置文件类型** 为 **模板"**。
 
@@ -106,7 +105,7 @@ ms.locfileid: "63401142"
 
 4. 转到 **Endpoint** **protectionBasics** > ，为配置文件提供名称，然后选择"下一步 **"**。
 
-5. 在"**配置设置"** 部分，**转到"** > Microsoft Defender 攻击防护 **网络筛选** > **""网络保护** > **""可更新"或**"**审核"**。 选择“**下一步**”。
+5. 在"**配置设置"** 部分，**转到"** > Microsoft Defender 攻击防护 **网络筛选** > **""网络保护** > **""可更新"或**"**审核"**。 选择 **下一步**。
 
 6. 根据组织 **需要****，选择** 适当的 **范围** 标记、分配和适用性规则。 管理员可以设置更多要求。
 

@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 7e55ad6bf1d1cb7d95e43cb23b9c74decc8548df
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049295"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651358"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>步骤 3. 使用 Intune 设置设备的合规性策略
 
-通过将设备注册到管理中，可以实现更高的安全性和对环境中数据的控制。 [第 2 步. 将设备注册到管理](manage-devices-with-intune-enroll.md)详细介绍了如何使用 Intune 和 Autopilot 完成此操作。 本文介绍下一步，即配置设备符合性策略。 
+将设备注册到Intune使你能够实现对环境中数据的更大安全性和控制。 [步骤 2.注册设备以Intune](manage-devices-with-intune-enroll.md)详细介绍如何使用Intune完成此操作。 本文介绍下一步，即配置设备符合性策略。 
 
 ![管理设备的步骤](../media/devices/intune-mdm-step-2.png#lightbox)
 

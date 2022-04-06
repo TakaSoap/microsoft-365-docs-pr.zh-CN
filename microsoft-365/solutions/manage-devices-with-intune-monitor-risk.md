@@ -20,23 +20,25 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f58611f555b022b69211e39f149effef925dde17
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
-ms.translationtype: HT
+ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049127"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651402"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>步骤 6. 监视设备风险和对安全基线的符合性
 
 组织部署 Microsoft Defender for Endpoint 后，可以通过将 Microsoft Intune 与 Defender for Endpoint 集成来获得更深入的见解和设备保护。 对于移动设备，这包括监视设备风险作为访问条件的功能。 对于 Windows 设备，可以监视这些设备对安全基线的符合性。 
+
+注意：部署Microsoft Defender for Endpoint包括载入终结点。 有关为Microsoft 365容量载入设备的详细信息，请参阅[注册设备与载入设备](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)。  
 
 ![Defender for Endpoint 和 Microsoft Intune 集成图示](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 在此图中：
 - Microsoft Defender for Endpoint 大大提高了设备威胁防护的复杂性。 
 - 虽然 Microsoft Intune 允许你设置应用保护策略和管理设备（包括配置更改），但 Defender for Endpoint 会持续监视设备是否存在威胁，并可以采取自动措施来修正攻击。 
-- 可以使用 Intune 将设备载入 Defender for Endpoint。 执行此操作时，还允许这些设备使用 Microsoft 365 终结点数据丢失防护（终结点 DLP）。
+- 可以使用 Intune 将设备载入 Defender for Endpoint。 执行此操作时，还可让这些设备使用Microsoft 365合规性功能，包括终结点数据丢失防护 (DLP) 。
 
 本文包括以下步骤：
 - 将 Microsoft Intune 连接到 Defender for Endpoint

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以了解 Microsoft Defender for Office 365
-ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: f1bb280502908143171cbc7b08df7080d0040df2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683858"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477096"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365试用版
 
@@ -74,7 +74,7 @@ Microsoft Defender for Office 365 试用版是一种在单击几次后免费试�
 
 试用版的许可卡显示以下信息：
 
-![Microsoft Defender for Office 365试用版中的许可卡。](../../media/mdo-trial-licensing-card.png)
+:::image type="content" source="../../media/mdo-trial-licensing-card.png" alt-text="Microsoft Defender for Office 365试用版中的许可卡" lightbox="../../media/mdo-trial-licensing-card.png":::
 
 - **"使用类型"** 部分：
   - **试用**：可供你使用的适用于Office 365 Defender 试用版许可证的数量。
@@ -90,7 +90,7 @@ Microsoft Defender for Office 365 试用版是一种在单击几次后免费试�
     - 您具有范围为特定用户的自定义策略。
   - **完全保护**：受 Office 365 计划 2 功能的 Defender 保护的用户总数 (AIR、威胁资源管理器、攻击模拟培训等) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 若要开始或结束试用版，你需要是 Azure Active Directory 中的全局管理员或安全管理员角色的成员。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -126,7 +126,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 
 还可以在此交互式指南中了解有关 defender for Office 365[功能。](https://aka.ms/MS365D.InteractiveGuide)
 
-![Microsoft Defender for Office 365概念图。](../../media/microsoft-defender-for-office-365.png)
+:::image type="content" source="../../media/microsoft-defender-for-office-365.png" alt-text="Microsoft Defender for Office 365概念图" lightbox="../../media/microsoft-defender-for-office-365.png":::
 
 ### <a name="prevention"></a>保护
 
@@ -167,7 +167,7 @@ Defender for Office 365通过提供全面的功能，帮助组织保护企业的
 
 建议的模板和配置见解帮助客户获得和保持安全。
 
-- [在 EOP 和 Microsoft Defender for Office 365](preset-security-policies.md)
+- [在 EOP 和 Microsoft Defender for Office 365 中预设安全策略](preset-security-policies.md)
 - [EOP 和 Microsoft Defender for Office 365 中的保护策略的配置Office 365](configuration-analyzer-for-security-policies.md)。
 
 ## <a name="give-feedback"></a>提供反馈

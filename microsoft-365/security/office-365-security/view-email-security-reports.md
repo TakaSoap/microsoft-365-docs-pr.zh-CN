@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b3b69b25f74f66a5ea0d8c63600f5eab0e780edb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683046"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477213"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>在电子邮件门户中查看Microsoft 365 Defender报告
 
@@ -48,7 +48,7 @@ ms.locfileid: "63683046"
 
 下表介绍了 Microsoft 365 Defender 门户中) EOP) 和 Microsoft Defender for Office 365 报告（已替换、移动或已弃用）。 Exchange Online Protection (
 
-|已弃用的报告和 cmdlet|新报表和 cmdlet|消息中心 ID|日期|
+|已弃用的报告和 cmdlet|新报表和 cmdlet|消息中心 ID|Date|
 |---|---|:---:|:---:|
 |**URL 跟踪** <p> Get-URLTrace|[URL 保护报告](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
 |**已发送和已接收电子邮件报告** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[威胁防护状态报告](#threat-protection-status-report) <br> [邮件流状态报告](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|2021 年 6 月|
@@ -68,7 +68,7 @@ ms.locfileid: "63683046"
 
 "**遭到入侵的用户**"报告显示最近 7 天内标记为"可疑"或"受限"的用户帐户数量。 其中任一状态的帐户存在问题，甚至受到威胁。 通过频繁使用，可以使用报告来发现可疑或受限帐户的峰值甚至趋势。 有关遭到入侵的用户详细信息，请参阅 [响应遭到入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
-!["电子邮件和协作报告"页上&"遭到入侵的用户"小组件。](../../media/compromised-users-report-widget.png)
+:::image type="content" source="../../media/compromised-users-report-widget.png" alt-text="&quot;电子邮件和协作报告&quot;页上的&quot;遭到入侵&小组件" lightbox="../../media/compromised-users-report-widget.png":::
 
 聚合视图显示过去 90 天的数据，而详细信息视图显示最近 30 天的数据。
 
@@ -96,16 +96,24 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 在" **遭到入侵的用户"** 页上，"创建 ![计划"图标。](../../media/m365-cc-sc-create-icon.png) **[创建计划](#schedule-report)**、请求 ![报告图标。](../../media/m365-cc-sc-download-icon.png) **["请求报告](#request-report)**"和" ![导出"图标。](../../media/m365-cc-sc-download-icon.png) **["](#export-report)** 导出"按钮可用。
 
-!["遭到入侵的用户"报告中的报告视图。](../../media/compromised-users-report-activity-view.png)
+:::image type="content" source="../../media/compromised-users-report-activity-view.png" alt-text="&quot;遭到入侵的用户&quot;报告中的&quot;报告&quot;视图" lightbox="../../media/compromised-users-report-activity-view.png":::
 
 ## <a name="exchange-transport-rule-report"></a>Exchange传输规则报告
 
+"**Exchange传输** 规则"报告显示邮件流规则对组织中 (传输规则) 传入和传出邮件的影响。
+
+To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** \> **& collaboration reports**. 在"**电子邮件&协作报告**"页上，Exchange **传输规则"**，然后单击"**查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/ETRRuleReport>。
+
+:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="&quot;Exchange协作报告&quot;页上的&quot;&传输规则&quot;小组件" lightbox="../../media/transport-rule-report-widget.png":::
+
+在"**Exchange** 规则报告"页上，以下各节介绍了可用的图表和数据。
 > [!NOTE]
 > 当前 **Exchange** EAC 中提供了传输规则报告。 有关详细信息，请参阅Exchange [EAC 中的传输规则报告](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)。
 
+
 ### <a name="chart-breakdown-by-direction"></a>按方向细分图表
 
-![传输规则Exchange中传输规则Exchange视图。](../../media/transport-rule-report-etr-direction-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="传输规则报告中Exchange传输规则Exchange方向视图" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
 
 如果选择" **按方向细分图表"**，则以下图表可用：
 
@@ -135,7 +143,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 ### <a name="chart-breakdown-by-severity"></a>按严重性分类的图表
 
-![传输规则Exchange中传输规则Exchange严重性视图。](../../media/transport-rule-report-etr-severity-view.png)
+:::image type="content" source="../../media/transport-rule-report-etr-severity-view.png" alt-text="传输规则报告中Exchange传输规则Exchange严重性视图" lightbox="../../media/transport-rule-report-etr-severity-view.png":::
 
 如果选择" **按严重性划分的** 图表细分"，则以下图表可用：
 
@@ -175,11 +183,11 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>， go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. 在" **电子邮件&协作报告** "页上，找到 **"邮件流状态摘要** "，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/mailflowStatusReport>。
 
-!["电子邮件和协作报告"页上的"邮件流&摘要"小组件。](../../media/mail-flow-status-report-widget.png)
+:::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="&quot;电子邮件和协作报告&quot;页上的&quot;邮件流&摘要&quot;小组件" lightbox="../../media/mail-flow-status-report-widget.png":::
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>邮件流状态报告的类型视图
 
-![在"邮件流状态"报告中键入视图。](../../media/mail-flow-status-report-type-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-type-view.png" alt-text="邮件流状态报告中的&quot;类型&quot;视图" lightbox="../../media/mail-flow-status-report-type-view.png":::
 
 在" **邮件流状态报告** "页上 **，默认情况下选择** "类型"选项卡。 该图表显示指定日期范围的以下信息：
 
@@ -194,7 +202,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 图形下方的详细信息表显示了以下信息：
 
 - **方向**
-- **Type**
+- **类型**
 - **24 小时**
 - **3 天**
 - **7 天**
@@ -226,7 +234,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>邮件流状态报告的方向视图
 
-![邮件流状态报告中的方向视图。](../../media/mail-flow-status-report-direction-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-direction-view.png" alt-text="邮件流状态报告中的方向视图" lightbox="../../media/mail-flow-status-report-direction-view.png":::
 
 如果单击" **方向"** 选项卡，图表将显示指定日期范围的以下信息：
 
@@ -260,7 +268,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 邮件 **流** 视图显示 Microsoft 的电子邮件威胁防护功能如何筛选组织中传入和传出的电子邮件。 此视图使用水平流程图 (称为 _Sankey_ 图表) ，提供有关电子邮件总数以及配置的威胁防护功能（包括边缘保护、反恶意软件、反网络钓鱼、反垃圾邮件和反欺骗）对此计数有何影响的详细信息。
 
-![邮件流状态报告中的邮件流视图。](../../media/mail-flow-status-report-mailflow-view.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view.png" alt-text="邮件流状态报告中的&quot;邮件流&quot;视图" lightbox="../../media/mail-flow-status-report-mailflow-view.png":::
 
 聚合视图和详细信息表视图允许筛选 90 天。
 
@@ -286,7 +294,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 <sup>\*</sup> 如果单击此元素，图表将展开以显示更多详细信息。 有关扩展节点中每个元素的说明，请参阅 [检测技术](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies)。
 
-![邮件流状态报告中邮件流视图中的网络钓鱼阻止详细信息。](../../media/mail-flow-status-report-mailflow-view-details.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-details.png" alt-text="邮件流状态报告中邮件流视图中的网络钓鱼阻止详细信息" lightbox="../../media/mail-flow-status-report-mailflow-view-details.png":::
 
 图表下面的详细信息表显示了以下信息：
 
@@ -312,7 +320,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 返回到"**邮件流状态报告**"页，您可以单击"显示趋势"以查看出现的"**邮件流** 趋势"飞出区中的趋势图。
 
-![邮件流状态报告中邮件流视图中的邮件流趋势飞出。](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
+:::image type="content" source="../../media/mail-flow-status-report-mailflow-view-show-trends.png" alt-text="邮件流状态报告中&quot;邮件流&quot;视图中的&quot;邮件流趋势&quot;飞出" lightbox="../../media/mail-flow-status-report-mailflow-view-show-trends.png":::
 
 在" **邮件流状态报告"** 页上，"导出 !["图标。](../../media/m365-cc-sc-download-icon.png) **"** 导出"按钮可用。
 
@@ -338,7 +346,7 @@ Defender **for Office 365** 中的邮件延迟报告包含有关组织中遇到�
 
 To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** \> **& collaboration reports**. 在" **电子邮件&协作** 报告"页上，找到 **"欺骗检测** "，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/SpoofMailReport>。
 
-!["电子邮件和协作报告"&欺骗检测小组件。](../../media/spoof-detections-widget.png)
+:::image type="content" source="../../media/spoof-detections-widget.png" alt-text="&quot;电子邮件和协作报告&quot;页上的&quot;欺骗&小组件" lightbox="../../media/spoof-detections-widget.png":::
 
 该图表显示以下信息：
 
@@ -361,7 +369,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
   - **其他**
 - **欺骗类型**：**内部和外部** 
 
-![电子邮件门户中的欺骗邮件Microsoft 365 Defender页面。](../../media/spoof-detections-report-page.png)
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="电子邮件门户中的&quot;欺骗邮件Microsoft 365 Defender页" lightbox="../../media/spoof-detections-report-page.png":::
 
 图形下方的详细信息表显示了以下信息：
 
@@ -386,7 +394,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>， go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. 在" **电子邮件&协作报告** "页上，找到 **"提交"** ，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/adminSubmissionReport>。 若要转到管理 [门户中的管理员Microsoft 365 Defender，](admin-submission.md)请单击"**转到提交"**。 管理员将能够查看最近 30 天的报告。
 
-!["电子邮件和协作报告"&"提交"小组件。](../../media/submissions-report-widget.png)
+:::image type="content" source="../../media/submissions-report-widget.png" alt-text="&quot;电子邮件和协作报告&quot;&&quot;提交&quot;小组件" lightbox="../../media/submissions-report-widget.png":::
 
 该图表显示以下信息：
 
@@ -403,7 +411,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 - **提交 ID**
 - **网络消息 ID**
 - **Sender**
-- **Name**
+- **名称**
 - **提交者**
 - **提交原因**：
   - **非垃圾邮件**
@@ -418,13 +426,13 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 在 **"提交"** 页上， **["导出"](#export-report)** 按钮可用。
 
-![Microsoft 365 Defender门户中的"提交Microsoft 365 Defender页面。](../../media/submissions-report-page.png)
+:::image type="content" source="../../media/submissions-report-page.png" alt-text="Microsoft 365 Defender门户中的&quot;提交Microsoft 365 Defender页" lightbox="../../media/submissions-report-page.png":::
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
 威胁 **防护状态报告** 在 EOP 和 Defender for Office 365中提供;但是，报告包含不同的数据。 例如，EOP 客户可以查看有关电子邮件中检测到的恶意软件的信息，但不能查看有关 [保险箱 Attachments](mdo-for-spo-odb-and-teams.md) 检测到的恶意文件的信息SharePoint、OneDrive和Microsoft Teams。
 
-该报告提供包含恶意内容的电子邮件数量，如反恶意软件引擎阻止的文件或网站地址 (URL) 、零时差自动清除 [ (ZAP) ](zero-hour-auto-purge.md)以及针对 Office 365 功能（如 [保险箱 链接](safe-links.md)、[保险箱](safe-attachments.md) 附件和防钓鱼策略中的模拟保护功能）的 Defender。[](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 您可以使用此信息来确定趋势或确定组织策略是否需要调整。
+该报告提供包含恶意内容的电子邮件数量，如反恶意软件引擎阻止的文件或网站地址 (URL) 、零时差自动清除 [ (ZAP) ](zero-hour-auto-purge.md)以及针对 Office 365 功能（如 [保险箱 链接](safe-links.md)、[保险箱](safe-attachments.md) 附件和防钓鱼策略中的模拟保护功能）的 Defender。[](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 可以使用此信息来确定趋势或确定是否需要调整组织策略。
 
 **注意**：如果邮件发送给五个收件人，则我们将邮件计为五个不同邮件，而不是一封邮件，了解这一点很重要。
 
@@ -433,7 +441,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - Defender for Office 365：<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP： <https://security.microsoft.com/reports/TPSAggregateReport>
 
-!["电子邮件和协作报告"页面上的威胁&小组件。](../../media/threat-protection-status-report-widget.png)
+:::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="&quot;电子邮件和协作报告&quot;页面上的&quot;威胁&小组件" lightbox="../../media/threat-protection-status-report-widget.png":::
 
 默认情况下，图表显示过去 7 天的数据。 如果 **单击"****威胁** 防护状态报告"页上的"筛选器"，可以选择 90 天的日期范围 (试用版订阅可能限制为 30) 。 详细信息表允许筛选 30 天。
 
@@ -441,7 +449,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ### <a name="view-data-by-overview"></a>按概述查看数据
 
-![威胁防护状态报告中的概述视图。](../../media/threat-protection-status-report-overview-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-overview-view.png" alt-text="威胁防护状态报告中的概述视图" lightbox="../../media/threat-protection-status-report-overview-view.png":::
 
 在 **"按概述查看数据"** 视图中，图表中显示了以下检测信息：
 
@@ -480,7 +488,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 ### <a name="view-data-by-email--phish-and-chart-breakdown-by-detection-technology"></a>通过电子邮件钓鱼查看数据 \> ，按检测技术查看图表细目
 
-![威胁防护状态报告中的网络钓鱼电子邮件的检测技术视图。](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-detection-tech-view.png" alt-text="威胁防护状态报告中网络钓鱼电子邮件的检测技术视图" lightbox="../../media/threat-protection-status-report-phishing-detection-tech-view.png":::
 
 > [!NOTE]
 > 从 2021 年 5 月开始，电子邮件中的网络钓鱼检测已更新 **为包括包含** 网络钓鱼 URL 的邮件附件。 此更改可能会将某些 **\>** 检测卷从"通过电子邮件恶意软件查看"视图转移到"通过电子邮件 **查看\>** 数据""钓鱼邮件"视图。 换句话说，带有钓鱼 URL 的邮件附件（传统上被标识为恶意软件）现在可能会被标识为网络钓鱼。
@@ -547,7 +555,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 
 ### <a name="view-data-by-email--spam-and-chart-breakdown-by-detection-technology"></a>通过检测技术按电子邮件 \> 垃圾邮件和图表细分查看数据
 
-![威胁防护状态报告中垃圾邮件的检测技术视图。](../../media/threat-protection-status-report-spam-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-spam-detection-tech-view.png" alt-text="威胁防护状态报告中垃圾邮件的检测技术视图" lightbox="../../media/threat-protection-status-report-spam-detection-tech-view.png":::
 
 在" **按电子邮件查看数据 \> "** 和"按检测技术查看图表细分 **"** 视图中，图表中显示了以下信息：
 
@@ -598,7 +606,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 
 ### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a>按电子邮件恶意软件查看 \> 数据，按检测技术查看图表细目
 
-![威胁防护状态报告中恶意软件的检测技术视图。](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-malware-detection-tech-view.png" alt-text="威胁防护状态报告中恶意软件的检测技术视图" lightbox="../../media/threat-protection-status-report-malware-detection-tech-view.png":::
 
 > [!NOTE]
 > 从 2021 年 5 月开始，电子邮件中的恶意软件检测已更新为在邮件附件 **中包括** 有害的 URL。 此更改可能会将一些 **\>** 检测卷从"通过电子邮件查看电子邮件"视图转移到"通过电子邮件 **恶意软件查看数据\>"** 视图。 换句话说，在传统上被标识为网络钓鱼的邮件附件中，有害的 URL 现在可能会标识为恶意软件。
@@ -654,7 +662,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 
 ### <a name="chart-breakdown-by-policy-type"></a>按策略类型分类的图表
 
-![威胁防护状态报告中网络钓鱼电子邮件、垃圾邮件或恶意软件电子邮件的策略类型视图。](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-policy-type-view.png" alt-text="威胁防护状态报告中钓鱼电子邮件、垃圾邮件或恶意软件电子邮件的策略类型视图" lightbox="../../media/threat-protection-status-report-phishing-policy-type-view.png":::
 
 In the **View data by Email \> Phish**， **View data by Email \> Spam**， or **View data by Email \> Malware** views， selecting **Chart breakdown by Policy type** shows the following information in the chart：
 
@@ -724,7 +732,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 ### <a name="chart-breakdown-by-delivery-status"></a>按传递状态分类的图表
 
-![威胁防护状态报告中的网络钓鱼电子邮件和恶意软件电子邮件的传递状态视图。](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-phishing-delivery-status-view.png" alt-text="威胁防护状态报告中网络钓鱼电子邮件和恶意软件电子邮件的传递状态视图" lightbox="../../media/threat-protection-status-report-phishing-delivery-status-view.png":::
 
 In the **View data by Email \> Phish**， **View data by Email \> Spam**， or **View data by Email \> Malware** views， selecting **Chart breakdown by Delivery status** shows the following information in the chart：
 
@@ -797,7 +805,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 ### <a name="view-data-by-content--malware"></a>按内容恶意软件查看 \> 数据
 
-![威胁防护状态报告中的内容恶意软件视图。](../../media/threat-protection-status-report-content-malware-view.png)
+:::image type="content" source="../../media/threat-protection-status-report-content-malware-view.png" alt-text="威胁防护状态报告中的内容恶意软件视图" lightbox="../../media/threat-protection-status-report-content-malware-view.png":::
 
 在 **"按内容恶意软件查看\>** 数据"视图中，以下信息显示在 Microsoft Defender for Office 365图表中：
 
@@ -809,7 +817,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 - **UTC (日期)**
 - **附件的文件名**
-- **工作负载**
+- **Workload**
 - **检测技术**
 - **文件大小**
 - **上次修改用户**
@@ -826,7 +834,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-reason"></a>按系统覆盖和按原因的图表细分查看数据
 
-![威胁防护状态报告中按原因视图的邮件替代和图表细分。](../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png" alt-text="威胁防护状态报告中的&quot;邮件替代&quot;和&quot;按原因分类的图表&quot;视图" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-reason.png":::
 
 在" **按系统覆盖查看数据"和** "按原因 **查看** 图表细分"视图中，图表中将显示以下替代原因信息：
 
@@ -872,7 +880,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 ### <a name="view-data-by-system-override-and-chart-breakdown-by-delivery-location"></a>按"系统替代"和"图表细分"按传递位置查看数据
 
-![威胁防护状态报告中的邮件替代和按传递位置视图的图表细分。](../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png)
+:::image type="content" source="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png" alt-text="威胁防护状态报告中的&quot;邮件替代&quot;和&quot;按送达位置分类的图表&quot;视图" lightbox="../../media/threat-protection-status-report-system-override-view-breakdown-by-delivery-location.png":::
 
 在"**按系统覆盖查看** 数据"和"按传递位置查看图表细分"视图中，图表中显示了以下替代原因信息：
 
@@ -933,7 +941,7 @@ In the **View data by Email \> Phish**， **View data by Email \> Spam**， or *
 
 To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** \> **& collaboration reports**. 在" **电子邮件&协作报告** "页上，找到 **"热门恶意软件** "，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/TopMalware>。
 
-!["电子邮件和协作报告"页面上&恶意软件小组件。](../../media/top-malware-report-widget.png)
+:::image type="content" source="../../media/top-malware-report-widget.png" alt-text="&quot;电子邮件和协作报告&quot;页面上&恶意软件&quot;小组件" lightbox="../../media/top-malware-report-widget.png":::
 
 当您将鼠标悬停在饼图中的一个浮点上时，可以看到某种恶意软件的名称，以及检测到具有该恶意软件的邮件数。
 
@@ -946,7 +954,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 在" **热门恶意软件"** 页面上，"创建 ![计划"图标。](../../media/m365-cc-sc-create-icon.png) **[创建日程安排和](#schedule-report)**![导出图标。](../../media/m365-cc-sc-download-icon.png) **["](#export-report)** 导出"按钮可用。
 
-![热门恶意软件报表视图。](../../media/top-malware-report-view.png)
+:::image type="content" source="../../media/top-malware-report-view.png" alt-text="热门恶意软件报表视图" lightbox="../../media/top-malware-report-view.png":::
 
 ## <a name="top-senders-and-recipients-report"></a>首要发件人和收件人报告
 
@@ -959,7 +967,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 - Defender for Office 365：<https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP： <https://security.microsoft.com/reports/TopSenderRecipient>
 
-!["报告"仪表板中的"顶部发件人和收件人"小组件。](../../media/top-senders-and-recipients-widget.png)
+:::image type="content" source="../../media/top-senders-and-recipients-widget.png" alt-text="&quot;报告&quot;仪表板中的&quot;热门发件人和收件人&quot;小组件" lightbox="../../media/top-senders-and-recipients-widget.png":::
 
 将鼠标悬停在饼图中的一个浮点上时，可以看到发件人或收件人的邮件数。
 
@@ -985,7 +993,7 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 在" **主要发件人和收件人"页上** ，"导出 !["图标。](../../media/m365-cc-sc-download-icon.png) **"** 导出"按钮可用。
 
-![在"热门发件人和收件人"报告中显示"热门邮件发件人"视图的数据。](../../media/top-senders-and-recipients-report-view.png)
+:::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="&quot;顶部发件人和收件人&quot;报告中的&quot;显示热门邮件发件人的数据&quot;视图" lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
 ## <a name="url-protection-report"></a>URL 保护报告
 
@@ -1000,7 +1008,7 @@ URL **保护报告** 仅在 Microsoft Defender for Office 365。 有关详细信
 
 To view the report in the Microsoft 365 Defender portal， go to **Reports** \> **Email & Email** \> **& collaboration reports**. 在" **电子邮件&协作报告** "页上，找到 **"用户报告的邮件** "，然后单击" **查看详细信息"**。 若要直接转到报告，请打开 <https://security.microsoft.com/reports/userSubmissionReport>。 若要转到管理 [门户中的管理员Microsoft 365 Defender，](admin-submission.md)请单击"**转到提交"**。
 
-!["电子邮件和协作报告"页上&"用户报告的邮件"小组件。](../../media/user-reported-messages-widget.png)
+:::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="&quot;电子邮件和协作报告&quot;页上的用户&小组件" lightbox="../../media/user-reported-messages-widget.png":::
 
 通过单击"筛选器"，并选择出现的一个或多个以下值，可以筛选图表和详细信息表：
 
@@ -1027,7 +1035,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 - **重新扫描结果**
 - **网络钓鱼模拟**
 
-![用户报告的邮件报告。](../../media/user-reported-messages-report.png)
+:::image type="content" source="../../media/user-reported-messages-report.png" alt-text="用户报告的邮件报告" lightbox="../../media/user-reported-messages-report.png":::
 
 图形下方的详细信息表显示了以下信息：
 
@@ -1055,8 +1063,8 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 - **组织管理**
 - **安全管理员**
-- **安全信息读取者**
-- **全局读者**
+- **安全读者**
+- **全局读取者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 
@@ -1148,7 +1156,7 @@ To view the report in the Microsoft 365 Defender portal， go to **Reports** \> 
 
 2. 在 **"报告下载"** 页上，将显示每个可用报告的以下信息：
    - **开始日期**
-   - **Name**
+   - **名称**
    - **报告类型**
    - **上次发送**
    - **方向**

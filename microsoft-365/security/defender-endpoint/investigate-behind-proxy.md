@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934197"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469792"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
@@ -58,17 +58,17 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 
 当网络保护打开时，你将看到，在设备的时间线上，IP 地址将一直表示代理，而真实目标地址将显示。
 
-![设备时间线上的网络事件的图像。](images/atp-proxy-investigation.png)
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="设备时间线上的网络事件" lightbox="images/atp-proxy-investigation.png":::
 
 网络保护层触发的其他事件现在甚至可以在代理后面显示真实域名。
 
 事件的信息：
 
-![单个网络事件的图像。](images/atp-proxy-investigation-event.png)
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="单个网络事件的 URL" lightbox="images/atp-proxy-investigation-event.png":::
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>使用高级搜寻搜寻连接事件
 
-所有新的连接事件都可供你通过高级搜寻进行搜寻。 由于这些事件是连接事件，因此可在操作类型下的 DeviceNetworkEvents 表 `ConnecionSuccess` 下找到它们。
+所有新的连接事件都可供你通过高级搜寻进行搜寻。 由于这些事件是连接事件，因此可在操作类型下的 DeviceNetworkEvents `ConnecionSuccess` 表下找到它们。
 
 使用此简单查询将显示所有相关事件：
 
@@ -78,7 +78,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![高级搜寻查询的图像。](images/atp-proxy-investigation-ah.png)
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="高级搜寻查询" lightbox="images/atp-proxy-investigation-ah.png":::
 
 还可以筛选掉与与代理本身连接相关的事件。
 
