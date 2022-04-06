@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525802"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680811"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 版 Microsoft Defender for Endpoint
 
@@ -41,7 +41,10 @@ ms.locfileid: "63525802"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+适用于 Linux 的 Microsoft Defender for Endpoint 包括反恶意软件和终结点检测和响应 (EDR) 功能。 
+
+
+### <a name="prerequisites"></a>必备条件
 
 - 访问 Microsoft 365 Defender 门户
 - 使用系统系统 [管理器的](https://systemd.io/) Linux 分发

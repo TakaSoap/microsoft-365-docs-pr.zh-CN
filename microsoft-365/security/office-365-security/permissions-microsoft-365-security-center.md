@@ -16,15 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以了解如何在 Microsoft 365 Defender 门户中管理与安全相关的所有任务的权限。
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 629cb9e4ab275d1af6f218df4f6e1b0e60dee201
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180849"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681713"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的权限
 
@@ -52,13 +53,13 @@ Microsoft 365 Defender 门户中的权限以基于角色的访问控制 (RBAC) �
 
 **角色组** 是一组允许人们在 Microsoft 365 Defender 门户中完成工作的角色。
 
-Microsoft 365 Defender 门户包括适用于最常见任务的默认角色组以及需要分配的功能。我们一般建议只需将单个用户作为 **成员** 添加到默认角色组中。
+Microsoft 365 Defender 门户>包括适用于最常见任务的默认角色组以及需要分配的功能。我们一般建议只需将单个用户作为 **成员** 添加到默认角色组中。
 
 ![显示角色组与角色和成员之间关系的图表。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的角色和角色组
 
-Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类型的角色和角色组：
+Microsoft 365 Defender 门户中的 <https://security.microsoft.com/securitypermissions> 处的“**权限和角色**”页面提供了以下类型的角色和角色组：
 
 - **Azure AD 角色**：可以查看角色和分配的用户，但无法在 Microsoft 365 Defender 门户中直接管理它们。 Azure AD 角色是为 **所有** Microsoft 365 服务分配权限的中心角色。
 
@@ -68,17 +69,13 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的 Azure AD 角色
 
-转到 **电子邮件和协作角色** \> **权限和角色** \> **Azure AD 角色** \> **角色** （或直接发送到 <https://security.microsoft.com/aadpermissions>），你将看到本部分中介绍的 Azure AD 角色。
+在 <https://security.microsoft.com> 处打开 Microsoft 365 Defender 门户并转到 **电子邮件和协作角色** \> **权限和角色** \> **Azure AD 角色** \> **角色**（或直接 <https://security.microsoft.com/aadpermissions>）时，你将看到本节中介绍的 Azure AD 角色。
 
 选择某个角色时，会显示一个包含角色说明和用户分配的详细信息飞出。 但是要管理这些分配，您需要在详细信息弹出按钮中单击 **管理 Azure AD 中的成员**。
 
 ![链接以管理 Azure Active Directory 中的权限。](../../media/permissions-manage-in-azure-ad-link.png)
 
 有关详细信息，请参阅[查看和分配 Azure Active Directory 中的管理员角色](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)。
-
-<br>
-
-****
 
 |角色|说明|
 |---|---|
@@ -91,19 +88,18 @@ Microsoft 365 Defender 门户中的“**权限和角色**”提供了以下类�
 |**全局读取者**|只读版本的 **全局管理员** 角色。 查看 Microsoft 365 中所有设置和管理信息。 有关详细信息，请参阅 [全局信息读取者](/azure/active-directory/roles/permissions-reference#global-reader)。|
 |**攻击模拟管理员**|创建和管理 [攻击模拟](attack-simulation-training.md) 创建、启动/计划模拟以及查看模拟结果的所有方面。有关详细信息，请参阅 [攻击模拟管理员](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator)。|
 |**攻击有效负载作者**|创建攻击负载，但不真正开始或计划其目标。 有关详细信息，请参阅[攻击有效负载作者](/azure/active-directory/roles/permissions-reference#attack-payload-author)。|
-|
 
 ### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的电子邮件和协作角色
 
-转到 **电子邮件和协作角色** \> **权限和角色** \> **电子邮件和协作角色** \> **角色** （或直接发送到 <https://security.microsoft.com/emailandcollabpermissions>），你将看到安全与合规中心中可用的相同角色组。
+在 <https://security.microsoft.com> 处打开 Microsoft 365 Defender 门户并转到 **电子邮件和协作角色** \> **权限和角色** \> **电子邮件和协作角色** \> **角色**（或直接 <https://security.microsoft.com/emailandcollabpermissions>）时，你将看到安全与合规中心中可用的相同的角色组。
 
 有关这些角色组的完整信息，请参阅 [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 
 #### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>在 Microsoft 365 Defender 门户中修改电子邮件和协作角色成员资格
 
-1. 在 Microsoft 365 Defender 门户中，转到“**电子邮件和协作角色**”\>“**权限和角色**”\>“**电子邮件和协作角色**”\>“**角色**”。
+1. 在 <https://security.microsoft.com> 处的 Microsoft 365 Defender 门户中，转到 **电子邮件和协作角色** \> **权限和角色** \> **邮件和协作角色** \> **角色**。若要直接转到 **权限** 页，请使用 <https://security.microsoft.com/emailandcollabpermissions>。
 
-2. 在打开的 **权限** 页面中，从列表中选择要修改的角色组。 你可以单击列标题“**名称**”以按名称对列表进行排序，也可以单击“**搜索**”![搜索图标](../../media/m365-cc-sc-search-icon.png)。 以查找角色组。
+2. 在 **权限** 页面中，从列表中选择要修改的角色组。 你可以单击列标题“**名称**”以按名称对列表进行排序，也可以单击“**搜索**”![搜索图标](../../media/m365-cc-sc-search-icon.png)。 以查找角色组。
 
 3. 在显示的角色组详细信息飞出中，单击 **成员** 部分中的 **编辑**。
 

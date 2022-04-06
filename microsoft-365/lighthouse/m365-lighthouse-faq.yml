@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: 对于 Managed Service Providers (MSP) using Microsoft 365 Lighthouse，请获取有关 Microsoft 365 Lighthouse 的常见问题 (常见问题) 解答。
-  ms.openlocfilehash: 24edebe8ef0a04c3256937195252fd5421599558
-  ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+  ms.openlocfilehash: 4dcd34b00aed7a28edb2e8ad9b2519940c90fcef
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/24/2022
-  ms.locfileid: "63775425"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680767"
 title: 'Microsoft 365 Lighthouse常见问题解答 (常见问题) '
 summary: >
   本文包含有关 (常见问题解答) 常见问题Microsoft 365 Lighthouse。
@@ -32,7 +32,7 @@ summary: >
 sections:
 - name: 已忽略
   questions:
-  - question: 什么是 Microsoft 365 Lighthouse？
+  - question: 什么是Microsoft 365 Lighthouse？
     answer: >
       Microsoft 365 Lighthouse 是一个管理门户，可帮助托管服务提供商 (MSP) 为使用 Microsoft 365 商业高级版 或 Microsoft 365 E3 的中小型商业 (SMB) 客户大规模保护和管理设备、数据和用户。  Lighthouse 通过推荐针对 SMB 定制的安全配置基线并跨所有客户环境提供多租户视图，简化了租户载入过程。 有关详细信息，请参阅[概述Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。
   - question: Microsoft 365 Lighthouse和 Azure Lighthouse 之间有什么区别？
@@ -57,7 +57,7 @@ sections:
     answer: >
       在 Lighthouse 内加载客户租户数据可能需要 48 小时。 如果载入时间已过 48 小时，请联系我们的支持团队寻求帮助。 完成载入后，需要让他们知道，并提供所有相关的屏幕截图和日志。 有关详细信息，请参阅获取[有关 Microsoft 365 Lighthouse 的帮助和支持](m365-lighthouse-get-help-and-support.md)。
   - question: 为什么我会看到某些客户租户的数据，而不是其他租户的数据？
-    answer: "若要在 Lighthouse 中显示客户租户数据，MSP 必须建立委派访问权限以管理客户租户。 将客户载入 (需要委派) DAP 权限。 我们建议与客户建立粒度委派 (GDAP) ，以实现更安全的委派访问。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先用于这两种模型都适合的客户。 很快，仅具有 GDAP (且没有 DAP) 客户将能够载入 Lighthouse。 有关委派访问权限详细信息，请参阅在合作伙伴中心请求与客户 [建立经销商关系](/partner-center/request-a-relationship-with-a-customer)。 租户还必须至少拥有一个 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅，并且其租户中的许可用户数少于 1000。 有关详细信息，请参阅租户[Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) Microsoft 365 Lighthouse[要求页面概述](m365-lighthouse-tenants-page-overview.md)。          \n"
+    answer: "\n若要使客户租户数据显示在 Lighthouse 中，MSP 必须通过合作伙伴中心与客户建立委派管理员权限 (DAP) 或细化委派管理员权限 () 。 有关详细信息，请参阅在合作伙伴 [中心请求与客户建立经销商关系](/partner-center/request-a-relationship-with-a-customer)。 租户还必须至少拥有一个 Microsoft 365 商业高级版 或 Microsoft 365 E3 订阅，并且其租户中的许可用户数少于 1000。 有关详细信息，请参阅租户[Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) Microsoft 365 Lighthouse[要求页面概述](m365-lighthouse-tenants-page-overview.md)。\n"
   - question: 如果你不想在租户中查看某些租户Microsoft 365 Lighthouse？
     answer: >
       如果不想在 Lighthouse 中查看某些租户及其数据，可以停用这些租户。 若要停用租户，请按照以下步骤操作：

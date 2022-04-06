@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11927ccd5b132a0ecb3e1a42ddc4622bd5b0d9af
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62327259"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472872"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -43,7 +43,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 你可以完全访问该平台的强大功能，如自动调查、高级搜寻和威胁分析，从而可以测试 Defender for Endpoint 提供的全面保护堆栈。
 
-你可以添加预配置为具有最新操作系统版本和正确安全组件的 Windows 10、Windows 11、Windows Server 2019、Windows Server 2016 和 Linux (Ubuntu) 设备，以及安装 Office 2019 Standard。
+你可以添加预配置为已安装最新操作系统版本和正确安全组件的 Windows 10、Windows 11、Windows Server 2019、Windows Server 2016 和 Linux (Ubuntu) 设备，以及安装 Office 2019 Standard。
 
 还可以安装威胁模拟器。 Defender for Endpoint 已与行业领先的威胁模拟平台合作，帮助你测试 Defender for Endpoint 功能，而无需离开门户。
 
@@ -80,24 +80,24 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 ## <a name="setup-the-evaluation-lab"></a>设置评估实验室
 
-1. 在导航窗格中，选择评估 **&评估实验室"，**\>然后选择"**设置实验室"**。
+1. 在导航窗格中，选择评估 **&评估实验室"**\>，然后选择"**设置实验室"**。
 
-    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="评估实验室欢迎页面的图像。":::
+   :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="评估实验室欢迎页面" lightbox="../../media/evaluationtutormenu.png":::
 
 2. 根据你的评估需求，你可以选择设置一个在较长时间内具有较少设备的环境，或者选择在较短的一段时间设置更多设备。 选择首选实验室配置，然后选择"下一 **步"**。
 
-    ![实验室配置选项的图像。](images/lab-creation-page.png)
+    :::image type="content" source="images/lab-creation-page.png" alt-text="实验室配置选项" lightbox="images/lab-creation-page.png":::
 
 3.  (可选) 你可以选择在实验室中安装威胁模拟器。
 
-    ![安装模拟器代理的图像。](images/install-agent.png)
+    :::image type="content" source="images/install-agent.png" alt-text="安装模拟器代理页" lightbox="images/install-agent.png":::
 
    > [!IMPORTANT]
    > 首先需要接受并同意条款和信息共享声明。
 
 4. 选择你要使用的威胁模拟代理并输入详细信息。 还可以选择稍后安装威胁模拟器。 如果你选择在实验室设置期间安装威胁模拟代理，你将享受在添加的设备上方便地安装这些代理的好处。
 
-    ![摘要页的图像。](images/lab-setup-summary.png)
+   :::image type="content" source="images/lab-setup-summary.png" alt-text="摘要页" lightbox="images/lab-setup-summary.png":::
 
 5. 查看摘要并选择"设置 **实验室"**。
 
@@ -105,13 +105,13 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 ## <a name="add-devices"></a>添加设备
 
-当你将设备添加到你的环境时，Defender for Endpoint 会设置具有连接详细信息的配置良好的设备。 你可以向 Ubuntu Windows 10 Windows 10 Windows 11 Windows Server 2019、Windows Server 2016 和 Linux (添加) 。
+当你将设备添加到你的环境时，Defender for Endpoint 会设置具有连接详细信息的配置良好的设备。 可以在 Ubuntu Windows 10 Windows 10、Windows 11、Windows Server 2019、Windows Server 2016 和 Linux (Ubuntu) 。
 
 设备将配置最新版本的操作系统和 Office 2019 Standard 以及其他应用（如 Java、Python 和 SysIntenals）。
 
 如果你在实验室设置期间选择添加威胁模拟器，所有设备都将在添加的设备上安装威胁模拟器代理。
 
-设备将自动载入到你的租户，同时Windows启用推荐的安全组件并进入审核模式，无需你付出任何努力。
+设备将自动载入到你的租户，同时Windows启用推荐的安全组件，并进入审核模式，无需任何努力。
 
 在测试设备中预配置以下安全组件：
 
@@ -125,7 +125,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Microsoft Defender 防病毒在审核模式下 (，将打开) 。 如果Microsoft Defender 防病毒阻止运行模拟，可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅 [配置始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
+> Microsoft Defender 防病毒不在审核 (审核模式下，将打开) 。 如果Microsoft Defender 防病毒阻止你运行你的模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅 [配置始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 自动调查设置将取决于租户设置。 默认情况下，它将配置为半自动化。 有关详细信息，请参阅 [自动调查概述](automated-investigations.md)。
 
@@ -134,7 +134,9 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 1. 从仪表板中，选择" **添加设备"**。
 
-2. 选择要添加的设备类型。 你可以选择将 Windows 10、Windows 11、Windows Server 2019、Windows Server 2016 和 Linux (Ubuntu) 。 
+2. 选择要添加的设备类型。 你可以选择将 Windows 10、Windows 11、Windows Server 2019、Windows Server 2016 和 Linux (Ubuntu) 。
+
+   :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="带设备选项的实验室设置" lightbox="../../media/add-machine-optionsnew.png":::
 
    > [!NOTE]
    > 如果设备创建过程出现问题，你将收到通知，并且需要提交新请求。 如果设备创建失败，将不会计入允许的总体配额。
@@ -144,13 +146,14 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
    > [!NOTE]
    > 密码只显示一次。 请务必保存它供以后使用。
 
-    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="添加有连接详细信息的设备的图像。":::
+    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="添加连接详细信息的设备" lightbox="../../media/add-machine-eval-lab-new.png":::
 
 4. 设备设置开始。 这最多可能需要 30 分钟。
 
 5. 通过选择"设备"选项卡，查看测试设备的状态、风险和曝光级别以及模拟器 **安装** 的状态。
 
-    !["设备"选项卡的图像。](images/machines-tab.png)
+   :::image type="content" source="images/machines-tab.png" alt-text="&quot;设备&quot;选项卡" lightbox="images/machines-tab.png":::
+    
 
    > [!TIP]
    > 在 **模拟器状态** 列中，你可以将鼠标悬停在信息图标上，了解代理的安装状态。
@@ -162,7 +165,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 1. 在评估实验室仪表板中，选择 **"请求更多设备"**。
 
-   ![请求更多设备的图像。](images/request-more-devices.png)
+   :::image type="content" source="images/request-more-devices.png" alt-text="请求更多设备选项" lightbox="images/request-more-devices.png":::
 
 2. 选择配置。
 3. 提交请求。
@@ -194,13 +197,12 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 > [!NOTE]
 > 与测试设备的连接使用 RDP 完成。 请确保防火墙设置允许 RDP 连接。
 
-1. 连接你的设备，通过选择"安全"来运行攻击 **连接**。
+1. 连接你的设备，然后通过选择"安全"来运行攻击 **连接**。
 
-    ![测试设备的连接按钮的图像。](images/test-machine-table.png)
+    :::image type="content" source="images/test-machine-table.png" alt-text="测试连接的&quot;设置&quot;按钮" lightbox="images/test-machine-table.png":::
 
 
-2. For **Windows devices**： save the RDP file and launch it by selecting **连接**.<br> 
-    ![远程桌面连接的图像。](images/remote-connection.png)
+   :::image type="content" source="images/remote-connection.png" alt-text="远程桌面连接屏幕" lightbox="images/remote-connection.png":::
 
     对于 **Linux 设备**：你需要使用本地 SSH 客户端和所提供的命令。 
 
@@ -208,13 +210,13 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
     > [!NOTE]
     > 如果在初始设置期间没有保存密码的副本，则可以通过从菜单中选择"重置密码 **"来重置** 密码：
     >
-    > ![重置密码的图像。](images/reset-password-test-machine.png)
+    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="&quot;重置密码&quot;选项" lightbox="images/reset-password-test-machine.png":::
     >
     > 设备会更改其状态为"正在执行密码重置"，然后你将在数分钟内看到新密码。
 
 3. 输入在设备创建步骤期间显示的密码。
 
-   ![用于输入凭据的窗口的图像。](images/enter-password.png)
+   :::image type="content" source="images/enter-password.png" alt-text="您输入凭据的屏幕" lightbox="images/enter-password.png":::
 
 4. 在设备上运行自己动手攻击模拟。
 
@@ -235,7 +237,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 2. 选择威胁模拟器。
 
-    ![威胁模拟器选择的图像。](images/select-simulator.png)
+   :::image type="content" source="images/select-simulator.png" alt-text="威胁模拟器选择" lightbox="images/select-simulator.png":::
 
 3. 选择模拟或浏览模拟库以浏览可用的模拟。
 
@@ -249,7 +251,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 6. 通过选择"模拟"选项卡查看 **模拟** 的进度。查看模拟状态、活动警报和其他详细信息。
 
-    ![模拟选项卡的图像。](images/simulations-tab.png)
+   :::image type="content" source="images/simulations-tab.png" alt-text="&quot;模拟&quot;选项卡" lightbox="images/simulations-tab.png":::
 
 运行模拟后，我们鼓励你演练实验室进度栏，并探索 **Microsoft Defender for Endpoint 触发了自动调查和修正**。 查看功能收集和分析的证据。
 
@@ -265,21 +267,21 @@ Microsoft Defender for Endpoint 已与各种威胁模拟平台合作，让你可
 
 你可以方便地从目录运行任何可用的模拟。
 
-![模拟目录的图像。](images/simulations-catalog.png)
+:::image type="content" source="images/simulations-catalog.png" alt-text="模拟目录" lightbox="images/simulations-catalog.png":::
 
 每个模拟都附带对攻击方案的深入描述和参考，如使用的 MITRE 攻击技术和运行的高级搜寻查询示例。
 
 **示例：**
 
-![模拟描述详细信息 1 的图像。](images/simulation-details-aiq.png)
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="持久性方法的模拟描述详细信息窗格示例" lightbox="images/simulation-details-aiq.png":::
 
-![模拟描述详细信息 2 的图像。](images/simulation-details-sb.png)
+:::image type="content" source="images/simulation-details-sb.png" alt-text="APT29 的模拟说明详细信息" lightbox="images/simulation-details-sb.png":::
 
 ## <a name="evaluation-report"></a>评估报告
 
 实验室报告汇总了在设备上进行的模拟的结果。
 
-![评估报告的图像。](images/eval-report.png)
+:::image type="content" source="images/eval-report.png" alt-text="评估报告" lightbox="images/eval-report.png":::
 
 一目了然，你可以快速看到：
 
@@ -296,4 +298,4 @@ Microsoft Defender for Endpoint 已与各种威胁模拟平台合作，让你可
 
 通过选择"提供反馈"，告诉我们 **您的想法**。
 
-![提供反馈的图像。](images/send-us-feedback-eval-lab.png)
+:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="反馈页面" lightbox="images/send-us-feedback-eval-lab.png":::

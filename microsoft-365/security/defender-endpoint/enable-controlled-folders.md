@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b62ff851cbee58cf3b29a2b4dde6fb1b6107dd85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327639"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472806"
 ---
 # <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
@@ -77,7 +77,7 @@ ms.locfileid: "63327639"
 
 3. 选择 **平台**、选择 **Windows 10** 和更高版本，然后选择配置文件 **攻击面减少规则创建**\>。
 
-4. 命名策略并添加说明。 选择“**下一步**”。
+4. 命名策略并添加说明。 选择 **下一步**。
 
 5. 向下滚动到底部，选择" **启用文件夹保护** "下拉列表，然后选择"启用 **"**。
 
@@ -130,7 +130,7 @@ ms.locfileid: "63327639"
    - **仅阻止磁盘修改** - 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 可以在 Microsoft 应用程序和服务 \> \> 日志中找到这些日志Windows \> Windows Defender \> ID \> 1123。
    - **仅** 审核磁盘修改 - 仅在应用程序和服务日志 **Microsoft** \>  \> Windows Windows Defender Operational **ID 1124**) 下的 Windows ( \> 事件日志中记录写入受保护磁盘 **扇区** \> \>的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
 
-      ![在下拉列表中选择的组策略选项启用和审核模式的屏幕截图。](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="已选择组策略选项&quot;启用&quot;和&quot;审核模式&quot;" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
 > 若要完全启用受控文件夹访问权限，必须将组策略选项设置为 **已启用**，然后选择选项下拉菜单中的阻止。

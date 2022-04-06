@@ -7,7 +7,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/20/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 71be198b6ad96b6131680c41130a2debfd89693c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 18b243a0fea9cb4864a0375740c4ebadcc44d6c3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60210337"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681647"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -43,7 +43,7 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
 
 ## <a name="base-configuration"></a>基本配置
 
-首先，为企业版 Microsoft 365[测试环境](/microsoft-365-enterprise/)。 可以创建两种不同类型的基本配置：
+首先，为企业版Microsoft 365[环境](/microsoft-365-enterprise/)。 可以创建两种不同类型的基本配置：
 
 - [轻型基本](lightweight-base-configuration-microsoft-365-enterprise.md)配置 - 当你要配置和演示Microsoft 365云环境中企业特性和功能（不包括任何本地组件）时，可使用此配置。
 
@@ -69,7 +69,7 @@ TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学
 
 - [Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md)
   
-   启用和测试 Azure AD 无缝单一登录 (AD DS) 实现无缝 SSO 登录。
+   使用 AD DS Azure AD启用和测试 (SSO) 无缝单一登录。
 
 - [多重身份验证](multi-factor-authentication-microsoft-365-test-environment.md)
   

@@ -19,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312007"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680899"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>实现零信任标识和设备访问策略的先决条件工作
 
 本文介绍了管理员使用推荐的零信任标识和设备访问策略以及使用条件访问必须满足的先决条件。 此外，还讨论为 SSO) 体验的最佳单一登录配置客户端平台 (默认值。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 在使用建议的零信任标识和设备访问策略之前，组织需要满足先决条件。 对于列出的各种标识和身份验证模型，要求是不同的：
 
@@ -54,7 +54,6 @@ ms.locfileid: "63312007"
 |[启用Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD Identity Protection，可以检测影响组织标识的潜在漏洞，将自动修正策略配置为低、中、高登录风险和用户风险。||Microsoft 365 E5或Microsoft 365 E3 E5 安全附加设备|
 |**为 Exchange Online** [和](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) [Skype for Business Online 启用新式验证](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)。 新式验证是使用 MFA 的先决条件。 默认情况下，为 Office 2016 和 2019 客户端、SharePoint和 OneDrive for Business 启用新式OneDrive for Business。||Microsoft 365 E3 或 E5|
 |[为用户启用连续](microsoft-365-continuous-access-evaluation.md)访问Azure AD。 连续访问评估会主动终止活动用户会话，并近实时强制执行租户策略更改。||Microsoft 365 E3 或 E5|
-|
 
 ## <a name="recommended-client-configurations"></a>推荐的客户端配置
 
@@ -87,7 +86,6 @@ ms.locfileid: "63312007"
 |**Android**|Outlook for Android|[最新版本](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 和 2016|
 |**Linux**|不支持||
-|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>保护文档时推荐使用的客户端平台
 
@@ -95,13 +93,12 @@ ms.locfileid: "63312007"
 
 |平台|Word/Excel/PowerPoint|OneNote|OneDrive 应用|SharePoint 应用|[OneDrive 同步客户端](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
-|Windows 11 或 Windows 10|支持|支持|不适用|不适用|支持|
-|Windows 8.1|支持|支持|不适用|不适用|支持|
+|Windows 11 或 Windows 10|支持|支持|不适用|不适用|受支持|
+|Windows 8.1|支持|支持|不适用|不适用|受支持|
 |Android|支持|支持|支持|支持|不适用|
 |iOS|支持|支持|支持|支持|不适用|
 |macOS|支持|支持|不适用|不适用|不支持|
 |Linux|不支持|不支持|不支持|不支持|不支持|
-|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 客户端支持
 

@@ -21,12 +21,12 @@ ms.custom:
 description: 了解 Microsoft Defender for Office 365 计划中的威胁调查和响应功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce7541010999b87e49880446594a79593a16a30a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 91a366b8169c783671145b73f66b0fde93b5fffe
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312959"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680656"
 ---
 # <a name="threat-investigation-and-response"></a>威胁调查和响应
 
@@ -113,18 +113,13 @@ Microsoft Defender for Office 365使用基于角色的访问控制。 权限通�
 > - [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)
 > - [Azure AD内置角色](/azure/active-directory/roles/permissions-reference)
 
-<br>
-
-****
-
 |活动|角色和权限|
 |---|---|
-|使用威胁&漏洞管理仪表板 (或新 [安全仪表板](security-dashboard.md) <p> 查看有关最近威胁或当前威胁的信息|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或Microsoft 365 管理中心 () <https://admin.microsoft.com> 。|
-|使用 [资源管理器 (实时检测功能) ](threat-explorer.md) 分析威胁|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或Microsoft 365 管理中心 () <https://admin.microsoft.com> 。|
-|查看事件 (也称为调查)  <p> 向事件添加电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或Microsoft 365 管理中心 () <https://admin.microsoft.com> 。|
+|使用威胁&漏洞管理仪表板 (或新 [安全仪表板](security-dashboard.md) <p> 查看有关最近威胁或当前威胁的信息|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全信息读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或Microsoft 365 管理中心 () <https://admin.microsoft.com> 。|
+|使用 [资源管理器 (实时检测功能) ](threat-explorer.md) 分析威胁|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全信息读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或Microsoft 365 管理中心 () <https://admin.microsoft.com> 。|
+|查看事件 (也称为调查)  <p> 向事件添加电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全信息读取者**</li></ul> <p> 这些角色可以在角色分配Azure Active Directory () <https://portal.azure.com> 或Microsoft 365 管理中心 () <https://admin.microsoft.com> 。|
 |在事件中触发电子邮件操作 <p> 查找并删除可疑电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员** 以及 **搜索和清除** 角色</li></ul> <p> 全局 **管理员****和安全管理员** 角色可以分配给全局管理员Azure Active Directory () <https://portal.azure.com> 或<https://admin.microsoft.com>Microsoft 365 管理中心 () 。 <p> 必须在 **Microsoft** 36 Defender 门户和 Microsoft 36 Defender  &电子邮件和协作角色中分配搜索和清除 () <https://security.microsoft.com> 。|
 |将 Microsoft Defender for Office 365 计划 2 与 Microsoft Defender for Endpoint 集成 <p> 将 Microsoft Defender for Office 365 计划 2 与 SIEM 服务器集成|全局 **管理员或** 安全管理员角色在 Azure Active Directory () 或 <https://portal.azure.com> <https://admin.microsoft.com> Microsoft 365 管理中心 () 。 <p> --- **加号** --- <p> 在其他应用程序（如 (或 SIEM Microsoft Defender 安全中心）中分配的适当) [](/windows/security/threat-protection/microsoft-defender-atp/user-roles)。|
-|
 
 ## <a name="next-steps"></a>后续步骤
 

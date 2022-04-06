@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323649"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472982"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>根据文件扩展名和文件夹位置配置和验证排除项
 
@@ -334,7 +334,7 @@ Get-MpPreference
 
 在下面的示例中，突出显示了列表中包含的 `ExclusionExtension` 项：
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference 的 PowerShell 输出。":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="Get-MpPreference 的 PowerShell 输出" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 有关详细信息，请参阅[使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender for Cloud cmdlet](/powershell/module/defender/)。
 
@@ -350,7 +350,7 @@ $WDAVprefs.ExclusionPath
 
 在下面的示例中，列表将拆分为每次使用 cmdlet 的新 `Add-MpPreference` 行：
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="仅显示排除列表中的条目的 PowerShell 输出。":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="仅显示排除列表中的条目的 PowerShell 输出" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 有关详细信息，请参阅[使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender for Cloud cmdlet](/powershell/module/defender/)。
 

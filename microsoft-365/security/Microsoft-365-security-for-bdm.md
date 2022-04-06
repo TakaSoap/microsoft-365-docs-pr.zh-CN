@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-ms.openlocfilehash: 59b74fdc13cc21f0266e0f110935f76656827f65
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 67943bc533c55961a2ceabbe89a0fe41c231ff71
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755182"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473180"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 BDM (业务决策者的安全) 
 
@@ -32,7 +32,7 @@ ms.locfileid: "63755182"
 
 Microsoft 在租户中提供了安全分数工具，可基于常规活动自动分析安全状态、分配分数并提供安全改进建议。 在采取本文建议的操作之前，请记下当前的分数和建议。 本文中建议的操作将提高分数。 目标不是获得最大分数，而是注意以不会对用户工作效率造成负面影响的方式保护环境的机会。 请参阅 [Microsoft 安全分数](defender/microsoft-secure-score.md)。
 
-:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="在安全分数门户中提供业务环境保护措施的安全Microsoft 365 Defender示例" lightbox="../media/security/security-for-bdms-overview.png":::
+:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="降低业务风险的步骤" lightbox="../media/security/security-for-bdms-overview.png":::
 
 还有一点在我们开始之前。 . . 请确保打开 [审核日志](../compliance/search-the-audit-log-in-security-and-compliance.md)。 在需要调查事件或泄露时，稍后将需要此数据。
 
@@ -48,7 +48,7 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 |Configure and use Privileged Access Workstations (PAW) to administer services. 不要使用相同的工作站浏览 Internet 并检查与管理帐户不相关的电子邮件。|  !![绿色选中标记。](../media/green-check-mark.png)|![绿色选中标记。](../media/green-check-mark.png)::: |
 
 下图说明了这些功能。
-:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="用于保护特权帐户的工具提供的功能示例" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="用于保护特权帐户的建议功能" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
 
 其他建议：
 
@@ -81,7 +81,8 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 |**阻止来自不合作的国家/地区的连接**。 创建一Azure AD条件访问策略，以阻止来自这些国家/地区的任何连接，从而有效地在租户周围创建地理防火墙。| |![绿色选中标记。](../media/green-check-mark.png)|
 
 下图说明了这些功能。
-:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="防止不同类型的威胁的工具提供的各种功能示例" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="针对已知威胁的推荐功能" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
+
 
 ## <a name="protect-against-unknown-threats"></a>防范未知威胁
 
@@ -95,6 +96,7 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 下图说明了这些功能。
 :::image type="content" source="../media/m365-security-bdm-illustrations-unknown-threats.png" alt-text="防止未知威胁的工具提供的功能示例" lightbox="../media/m365-security-bdm-illustrations-unknown-threats.png":::
+
 
 其他建议：
 
@@ -122,8 +124,8 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 |**使用 [AIP 扫描](/azure/information-protection/deploy-aip-scanner) 程序跨服务器和文件共享标识和分类信息**。 使用 AIP 报告工具查看结果并采取适当的措施。|         |![绿色选中标记。](../media/green-check-mark.png)|
 
 下图说明了这些功能。
-![防止泄露的建议功能。](../media/m365-security-bdm-illustrations-assume-breach.png)
-:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="工具提供的防止泄露功能示例" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="建议用于抵御未知威胁的功能" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+
 
 ## <a name="continuous-monitoring-and-auditing"></a>持续监视和审核
 
@@ -141,7 +143,9 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 |使用 **Microsoft Defender for Cloud** 监视混合和云工作负载中的威胁。 Microsoft Defender for Cloud 包括一层免费功能和一个基于资源小时或交易付费的标准功能层。|         |         |
 
 下图说明了这些功能。
-:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="用于启用威胁防护和检测的工具提供的功能示例" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="建议用于持续监视和审核的功能" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
+
 
 建议执行的建议监视操作：
 

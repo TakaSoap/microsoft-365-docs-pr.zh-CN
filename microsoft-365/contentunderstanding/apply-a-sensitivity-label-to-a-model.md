@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解如何将敏感度标签应用于 SharePoint Syntex 中的模型。
-ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 189db9314e01a52618890daf6b0e5d4e81317de9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521110"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681691"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中向模型应用保留标签
 
@@ -26,7 +26,7 @@ ms.locfileid: "61521110"
 
 敏感度标签使你可以对模型标识的文档应用加密。 例如，您希望模型不仅识别任何包含上载到文档库的银行帐户编号或信用卡号的财务文档，还希望应用使用加密设置配置的敏感度标签，以限制可以访问该内容的人及其使用方式。 SharePoint Syntex 模型遵循 [标签顺序](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) 规则，也不会覆盖用户手动应用于文件的现有标签。 
 
-可以通过模型主页上的模型设置将预先存在的敏感度标签应用于模型。 标签必须已经发布，可以在模型设置中进行选择。
+可以通过模型主页上的模型设置将预先存在的敏感度标签应用于模型。 标签必须已经发布，可以在模型设置中进行选择。 标签适用于 Word Office (.docx) 、PowerPoint (.pptx) 和 Excel (.xlsx) 。 
 
 > [!Important]
 > 对于可应用于内容理解模型的保留标签，需要 [在 Microsoft 365 合规中心中创建和发布](../admin/security-and-compliance/set-up-compliance.md)。

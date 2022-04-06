@@ -13,12 +13,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ff727f95dd62c205cee7e9606cb024a5ea88bda
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: ccef3ec748983db89b6ceca9b8092eafbef0d899
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074650"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472608"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint 设备控制设备安装
 
@@ -32,11 +32,11 @@ ms.locfileid: "62074650"
 - 允许用户安装特定设备，但阻止其他设备。
 
 > [!NOTE]
-> 若要查找设备安装和可移动存储访问控制的区别，请参阅 Microsoft Defender [for Endpoint Device Control Removable 存储 Protection。](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true)
+> 若要了解设备安装和可移动存储访问控制的区别，请参阅 [Microsoft Defender for Endpoint Device Control Removable 存储 Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true)。
 
 |Privilege|权限|
 |---|---|
-|访问|设备安装 |
+|Access|设备安装 |
 |操作模式|允许、阻止 |
 |云解决方案提供商支持|是|
 |GPO 支持|是|
@@ -45,7 +45,7 @@ ms.locfileid: "62074650"
 
 ## <a name="prepare-your-endpoints"></a>准备终结点
 
-在 Windows 10 Windows 11 Server 2022 Windows设备上部署设备安装。
+在 Windows 10 Server 2022 Windows 11设备上部署Windows安装。
 
 ## <a name="device-properties"></a>设备属性
 
@@ -56,13 +56,13 @@ ms.locfileid: "62074650"
 - 兼容 ID
 - 设备类
 - "可移动设备"设备类型：某些设备可分类为可移动设备。 如果设备所连接的设备的驱动程序指示设备是可移动的，则认为该设备是可移动的。 例如，USB 设备被设备连接到的 USB 集线器的驱动程序报告为可移动。
-有关详细信息，请参阅设备[安装Windows。](/windows/client-management/manage-device-installation-with-group-policy)
+有关详细信息，请参阅 Windows [中的设备安装](/windows/client-management/manage-device-installation-with-group-policy)。
 
 ## <a name="policies"></a>策略
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-ids"></a>允许安装与这些设备任何一个匹配的设备
 
-此策略设置允许你为允许安装即插即用Windows设备指定即插即用硬件 ID 和兼容 ID 的列表。 此策略设置仅在启用"跨所有设备匹配条件应用设备安装策略的分层评估顺序"策略设置时使用。
+此策略设置允许你为允许安装的设备指定即插即用硬件WINDOWS兼容 ID 的列表。 此策略设置仅在启用"跨所有设备匹配条件应用设备安装策略的分层评估顺序"策略设置时使用。
 
 当启用此策略设置以及"跨所有设备匹配条件允许和阻止设备安装策略的分层评估顺序"策略设置时，Windows 将允许安装或更新其即插即用硬件 ID 或兼容 ID 显示在你创建列表中的任何设备，除非层次结构中相同或更高层的另一个策略设置专门阻止该安装， 如以下策略设置：
 
@@ -72,13 +72,13 @@ ms.locfileid: "62074650"
 如果未通过此 **策略设置** 启用"跨所有设备匹配条件允许和阻止设备安装策略"的"应用分层评估顺序"策略设置，则专门阻止安装的其他策略设置将优先。
 
 > [!NOTE]
-> 对于受支持的目标 Windows 10 版本和 Windows 11，"阻止安装未由其他策略设置描述的设备安装"策略设置已替换为"跨所有设备匹配条件允许和阻止设备安装策略"的"应用分层评估顺序"Windows 11。 建议尽可能在所有设备匹配 **条件** 策略设置中对"允许"和"阻止设备安装策略"使用应用分层评估顺序。
+> 对于受支持的目标 Windows 10 版本和 Windows 11，"阻止由其他策略设置描述的设备安装"策略设置已替换为"跨所有设备匹配条件允许和阻止设备安装策略"的"应用分层评估顺序"Windows 11。 建议尽可能在所有设备匹配 **条件** 策略设置中对"允许"和"阻止设备安装策略"使用应用分层评估顺序。
 
 ### <a name="allow-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>允许安装与这些设备实例任何一个匹配的设备
 
 此策略设置允许你为允许安装的设备指定即插即Windows设备实例 ID 的列表。 此策略设置仅在启用"跨所有设备匹配条件应用设备安装策略的分层评估顺序"策略设置时使用。
 
-当启用此策略设置以及"跨所有设备匹配条件应用设备安装策略的分层评估顺序"策略设置时，Windows 将允许安装或更新其即插即用设备实例 ID 显示在你创建的列表中的任何设备，除非层次结构中相同或更高层的另一个策略设置专门阻止该安装， 如以下策略设置：
+当此策略设置与"跨所有设备匹配条件允许和阻止设备安装策略应用分层评估顺序"策略设置一起启用时，Windows 将允许安装或更新其即插即用设备实例 ID 显示在你创建的列表中的任何设备，除非层次结构中相同或更高层的另一个策略设置专门阻止该安装， 如以下策略设置：
 
 - 阻止安装与这些设备实例 ID 匹配的设备
 
@@ -137,7 +137,7 @@ ms.locfileid: "62074650"
 
 ### <a name="prevent-installation-of-devices-that-match-any-of-these-device-instance-ids"></a>阻止安装与这些设备实例 ID 匹配的设备
 
-此策略设置允许你为阻止安装的设备指定Windows即插即用设备实例 ID 的列表。 此策略设置优先于任何其他允许Windows安装设备的策略设置。
+此策略设置允许你为阻止其安装的设备指定Windows即插即用设备实例 ID 的列表。 此策略设置优先于任何其他允许Windows安装设备的策略设置。
 
 如果启用此策略设置，Windows将阻止安装设备实例 ID 显示在你创建的列表中的设备。 如果在远程桌面服务器上启用此策略设置，则策略设置将影响指定设备从远程桌面客户端重定向到远程桌面服务器。
 
@@ -145,7 +145,7 @@ ms.locfileid: "62074650"
 
 ### <a name="prevent-installation-of-devices-using-drivers-that-match-these-device-setup-classes"></a>阻止使用与这些设备设置类匹配的驱动程序安装设备
 
-此策略设置允许你为阻止安装 (的驱动程序包) 设备设置类全局唯一标识符 Windows GUID 列表。 默认情况下，此策略设置优先于任何其他允许Windows安装设备的策略设置。
+此策略设置允许你为阻止安装Windows的驱动程序包 (设备设置类全局唯一标识符) GUID 列表。 默认情况下，此策略设置优先于任何其他允许Windows安装设备的策略设置。
 
 > [!NOTE]
 > 若要为适用设备启用"允许安装与这些设备的任何设备 **ID** 匹配的设备"和"允许安装与这些设备实例 **IDs** 匹配的设备"策略设置来取代此策略设置，请启用"允许"和"阻止跨所有设备匹配条件的设备安装策略"评估的分层评估顺序策略设置。
@@ -159,11 +159,11 @@ ms.locfileid: "62074650"
 此策略设置允许你阻止Windows移动设备。 如果设备所连接的设备的驱动程序指示设备是可移动的，则认为该设备是可移动的。 例如，通用串行总线 (USB) 设备被设备连接到的 USB 集线器的驱动程序报告为可移动。 默认情况下，此策略设置优先于任何其他允许Windows安装设备的策略设置。
 
 > [!NOTE]
-> 若要启用"允许使用与这些设备设置类匹配的驱动程序安装设备"、"允许安装与这些设备的任何 **ID** 匹配的设备"和"允许安装与这些设备实例 **IDs** 策略设置匹配的设备"策略设置来取代适用于适用设备的此策略设置，请启用"允许"和"阻止跨所有设备匹配条件的设备安装策略"策略设置的"应用分层评估顺序"。
+> 若要启用"允许使用与这些设备设置类匹配的驱动程序安装设备"、"允许安装与这些设备的任何 **ID** 匹配的设备"和"允许安装与这些设备实例 **IDs** 策略设置匹配的设备以取代适用于适用设备的此策略设置"，请启用"允许"和"阻止跨所有设备匹配条件的设备安装策略"策略设置的"应用分层评估顺序"。
 
-如果启用此策略设置，Windows安装可移动设备，并且现有可移动设备无法更新其驱动程序。 如果在远程桌面服务器上启用此策略设置，该策略设置将影响从远程桌面客户端到远程桌面服务器的可移动设备的重定向。
+如果启用此策略设置，Windows无法安装可移动设备，并且现有可移动设备无法更新其驱动程序。 如果在远程桌面服务器上启用此策略设置，该策略设置将影响从远程桌面客户端到远程桌面服务器的可移动设备的重定向。
 
-如果禁用或不配置此策略设置，Windows其他策略设置允许或阻止的可移动设备安装和更新驱动程序包。
+如果禁用或不配置此策略设置，Windows其他策略设置允许或阻止的设备安装和更新可移动设备的驱动程序包。
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>常见的可移动存储访问控制方案
 
@@ -183,7 +183,7 @@ ms.locfileid: "62074650"
 
 #### <a name="licensing"></a>授权
 
-在开始使用设备安装之前，你应该确认你的Microsoft 365[订阅](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用设备安装，你必须具有Microsoft 365 E3。
+在开始使用设备安装之前，你应该确认你的Microsoft 365[订阅](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)。 若要访问和使用设备安装，你必须拥有Microsoft 365 E3。
 
 #### <a name="permission"></a>权限
 
@@ -200,35 +200,37 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 1. 配置 **使用与这些设备设置类匹配的驱动程序阻止安装设备**。
 
     - Open Endpoint security > Attack surface reduction > Create Policy > Platform： Windows 10 (and later) & Profile： Device control.
-
-      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="编辑配置文件":::
-
+    
+      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="&quot;编辑配置文件&quot;页" lightbox="../../media/devicepolicy-editprofile.png":::
+    
 2. 插入 USB、设备，你将看到以下错误消息：
 
-      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="错误消息":::
+      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="错误消息" lightbox="../../media/devicepolicy-errormsg.png":::
 
-3. 启用 **应用跨所有设备匹配条件的允许和阻止设备安装策略的分层评估顺序**。
+3. 针对 **"允许"和"阻止** 设备安装策略"跨所有设备匹配条件启用应用分层评估顺序。
 
-    - **现在仅支持 OMA-URI：>** 配置文件>创建配置文件>平台：Windows 10 (及更高版本) &配置文件：自定义
+    - **现在仅支持 OMA-URI**：>配置文件>创建配置文件>平台：Windows 10 (及更高版本) &配置文件：自定义
+    
+      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="&quot;编辑行&quot;页" lightbox="../../media/devicepolicy-editrow.png":::
 
-      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="编辑行":::
-
-4. 启用和添加允许的 USB 实例 ID – 允许安装与这些设备 ID 匹配 **的设备**。
+4. 启用和添加允许的 USB 实例 ID – 允许安装与这些设备 **ID 匹配的设备**。
 
     - 更新步骤 1 设备控件配置文件
+    
+      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="&quot;设备控制&quot;页中的标识符" lightbox="../../media/devicepolicy-devicecontrol.png":::
+       
+    添加 PCI\CC_0C03;PCI\CC_0C0330;PCI\VEN_8086;PNP0CA1;PNP0CA1&HOST; USB\ROOT_HUB30;USB\ROOT_HUB20;USB\USB20_HUB以上屏幕捕获的原因是，仅启用单个硬件 ID 以启用单个 USB U 盘是不够的。 你必须确保不会阻止目标设备之前的所有 USB 设备 (允许) 设备。 你可以打开设备管理器，将视图更改为"通过连接的设备"以查看设备在 PnP 树中的安装方式。 在我们的案例中，必须允许以下设备，以便也可以允许目标 U 盘： 
 
-      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
-
-    添加 PCI\CC_0C03;PCI\CC_0C0330;PCI\VEN_8086;PNP0CA1;PNP0CA1 &HOST; USB\ROOT_HUB30;USB\ROOT_HUB20;上述USB20_HUB上的 USB\U 盘是因为它不足以仅启用单个硬件 ID 来启用单个 USB U 盘。 你必须确保不会阻止目标设备之前的所有 USB 设备 (允许) 设备。 你可以打开设备管理器，将视图更改为"通过连接的设备"以查看设备在 PnP 树中的安装方式。 在我们的案例中，必须允许以下设备，以便也可以允许目标 U 盘：
+    添加 PCI\CC_0C03;PCI\CC_0C0330;PCI\VEN_8086;PNP0CA1;PNP0CA1&HOST; USB\ROOT_HUB30;USB\ROOT_HUB20;USB\USB20_HUB以上屏幕捕获的原因是，仅启用单个硬件 ID 以启用单个 USB U 盘是不够的。 你必须确保不会阻止目标设备之前的所有 USB 设备 (允许) 设备。 你可以打开设备管理器，将视图更改为"通过连接的设备"以查看设备在 PnP 树中的安装方式。 在我们的案例中，必须允许以下设备，以便也可以允许目标 U 盘：
 
     - "Intel (R) USB 3.0 eXtensible 主机控制器 – 1.0 (Microsoft) " -> PCI\CC_0C03
-    - "USB Root Hub (USB 3.0) " -> USB\ROOT_HUB30
+    - "USB 根集线器 (USB 3.0) " -> USB\ROOT_HUB30
     - "通用 USB 集线器"-> USB\USB20_HUB
 
-    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="设备控件":::
+    :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="&quot;设备管理器&quot;页中的&quot;查看&quot;菜单项" lightbox="../../media/devicepolicy-devicemgr.png":::
 
     > [!NOTE]
-    > 系统中的某些设备具有多个连接层来定义在系统上的安装。 USB U 盘是此类设备。 因此，当在系统上查找阻止或允许它们时，了解每台设备的连接路径非常重要。 系统通常使用一些通用设备 ID，可以在此类情况下为生成"允许列表"提供良好的开始。 下面是一个示例 (并不是所有 USB 都一样;你需要了解你想要通过设备管理器管理的设备 PnP 树) ：
+    > 系统中的某些设备具有多个连接层来定义在系统上的安装。 USB U 盘是此类设备。 因此，当在系统上查找阻止或允许它们时，了解每台设备的连接路径非常重要。 系统通常使用一些通用设备 ID，可以在此类情况下为生成"允许列表"提供良好的开始。 下面是一个示例 (所有 USB 并不总是一样;你需要了解要通过设备管理器管理的设备 PnP 树) ：
     >
     > PCI\CC_0C03;PCI\CC_0C0330;PCI\VEN_8086;PNP0CA1;PNP0CA1&HOST (for Host Controllers) / USB\ROOT_HUB30;USB\ROOT_HUB20 (U 盘的 USB 根) / USB\USB20_HUB (通用 USB 集线器) /
     >
@@ -238,7 +240,7 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
 5. 再次插入允许的 USB。 你将看到它现在允许并且可用。
 
-    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="删除驱动器":::
+    :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="&quot;删除驱动器详细信息&quot;页" lightbox="../../media/devicepolicy-removedrive.png":::
 
 #### <a name="deploying-and-managing-policy-via-group-policy"></a>通过组策略部署和管理策略
 
@@ -246,15 +248,15 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
 #### <a name="licensing"></a>授权
 
-若要访问和使用设备安装，必须拥有 Windows E3。
+若要访问和使用设备安装，你必须拥有 Windows E3。
 
 #### <a name="deploying-policy"></a>部署策略
 
-你可以在此处找到部署详细信息：使用组策略管理设备安装 - (Windows 10) [- Windows 客户端](/windows/client-management/manage-device-installation-with-group-policy)。
+你可以在此处找到部署详细信息：使用组策略策略管理设备 (Windows 10) [- Windows客户端](/windows/client-management/manage-device-installation-with-group-policy)。
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 存储设备控件可移动访问控件数据
 
-安全[Microsoft 365显示](https://sip.security.microsoft.com/homepage)设备控制设备安装阻止的可移动存储。 若要访问Microsoft 365安全性，您必须具有以下订阅：
+安全[Microsoft 365门户](https://sip.security.microsoft.com/homepage)显示设备控制设备安装阻止的可移动存储。 若要访问Microsoft 365安全性，您必须具有以下订阅：
 
 - Microsoft 365 E5 报告
 
@@ -270,7 +272,7 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-:::image type="content" source="../../media/block-removable-storage2.png" alt-text="阻止存储":::
+:::image type="content" source="../../media/block-removable-storage2.png" alt-text="阻止存储" lightbox="../../media/block-removable-storage2.png":::
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -289,4 +291,5 @@ DeviceRegistryEvents
 
 仅启用单个硬件 ID 以启用单个 USB U 盘是不够的。 确保不会阻止目标设备之前的所有 USB 设备 (允许) 设备。
 
-:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="设备安装常见问题解答":::
+:::image type="content" source="../../media/devicemgrscrnshot.png" alt-text="设备安装常见问题解答" lightbox="../../media/devicemgrscrnshot.png":::
+

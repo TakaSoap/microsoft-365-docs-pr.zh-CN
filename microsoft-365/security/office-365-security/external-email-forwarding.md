@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -15,12 +16,12 @@ ms.custom:
 description: 本文涵盖的主题包括外部电子邮件转发、自动转发、5.7.520 拒绝访问邮件、禁用外部转发、"您的管理员已禁用外部转发"邮件以及出站反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 228bb4402fd67ba8e56dd84b270c64977667ff2d
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401016"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681405"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>控制邮件中的自动外部电子邮件Microsoft 365
 
@@ -65,16 +66,11 @@ ms.locfileid: "63401016"
 
 当一个设置允许外部转发，而另一个设置阻止外部转发时，该块通常优先。 下表中描述了示例：
 
-<br>
-
-****
-
 |应用场景|结果|
 |---|---|
 |<ul><li>配置远程域设置以允许自动转发。</li><li>出站垃圾邮件筛选器策略中的自动转发设置为"关闭 **"**。</li></ul>|自动转发给受影响域中收件人的邮件将被阻止。|
 |<ul><li>配置远程域设置以允许自动转发。</li><li>出站垃圾邮件筛选策略中的自动转发设置为自动 **- 系统控制**。</li></ul>|自动转发给受影响域中收件人的邮件将被阻止。 <p> 如前面所述， **自动 - 系统控制** 用于表示 **"** 开"，但设置已随着时间的推移而更改为在所有组织中都为 **"关闭** "。 <p> 为绝对清楚起见，您应将出站垃圾邮件筛选器策略配置为 **"开** "或" **关"**。|
 |<ul><li>出站垃圾邮件筛选器策略中的自动转发设置为 **"开"**</li><li>您可以使用邮件流规则或远程域来阻止自动转发的电子邮件。</li></ul>|邮件流规则或远程域阻止将自动转发给受影响的收件人的邮件。|
-|
 
 您可以使用此行为 (例如，) 出站垃圾邮件筛选器策略中允许自动转发，但使用远程域控制用户可以将邮件转发到的外部域。
 

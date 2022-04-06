@@ -19,12 +19,12 @@ description: 在系统自动调查期间Microsoft 365，您可以查看结果和
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314079"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680789"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>自动调查的详细信息和Microsoft 365
 
@@ -41,10 +41,6 @@ ms.locfileid: "63314079"
 
 调查状态指示分析和操作的进度。 在调查运行时，状态会发生变化，以指示是否已发现威胁，以及是否已批准操作。
 
-<br>
-
-****
-
 |状态|说明|
 |---|---|
 |**即将开始**|已触发调查并等待开始运行。|
@@ -58,7 +54,6 @@ ms.locfileid: "63314079"
 |**失败**|至少有一个调查分析器遇到了无法正确完成的问题。 <p> **注意** 如果在修正操作获得批准后调查失败，则修正操作可能仍成功。 查看调查详细信息。|
 |**按限制排队**|正在队列中进行调查。 其他调查完成后，将开始排队调查。 限制有助于避免服务性能不佳。  <p> **提示**：挂起的操作可以限制可以运行的新调查数量。 确保批准 [或拒绝 (挂起) 操作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)。|
 |**已终止限制**|如果队列中的调查时间太长，将停止。 <p> **提示**：你可以 [从威胁资源管理器开始调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
-|
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 

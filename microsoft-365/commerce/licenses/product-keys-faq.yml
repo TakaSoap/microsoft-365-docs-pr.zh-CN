@@ -7,21 +7,21 @@ metadata:
   ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
   description: 产品密钥常见问题
-  ms.openlocfilehash: 277c4f624ad9b19a62e0af65e2547e29e4294e6d
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: da5e623e2e8bf318217dfb26224037fa81ac4270
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63316319"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680489"
 title: 产品密钥常见问题
 summary: ''
 sections:
-- name: 常规
+- name: 一般信息
   questions:
   - question: >
       什么是产品密钥？
@@ -73,7 +73,7 @@ sections:
   - question: >
       什么是批量激活？
     answer: >
-      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件，并支持批量激活。 有关详细信息，请参阅：
+      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件，并支持批量激活。 有关更多信息，请参阅：
         - [用于管理批量激活Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
         - [批量激活Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 
@@ -182,7 +182,7 @@ sections:
   - question: >
       我能否使用批量许可证密钥来行使我的重新映像权限？
     answer: >
-      能。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，如果从批量许可介质制作的副本与原始许可产品相同，客户可以使用其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，您可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心请求 [密钥](https://licensingapps.microsoft.com/product-activation)。
+      是。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，如果从批量许可介质制作的副本与原始许可产品相同，客户可以使用其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，您可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心请求 [密钥](https://licensingapps.microsoft.com/product-activation)。
 
 
       > [!NOTE]

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84893d7f015ec354bc27ac706c00e864705a42e5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55a620343aa7cda05def64acc9027925aaa96a1e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165662"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472586"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威胁防护报告
 
@@ -36,7 +36,7 @@ ms.locfileid: "61165662"
 
 仪表板分为两个部分：
 
-![威胁防护报告的图像。](images/threat-protection-reports.png)
+:::image type="content" source="images/threat-protection-reports.png" alt-text="威胁防护报告" lightbox="images/threat-protection-reports.png":::
 
 节|说明
 ---|---
@@ -58,7 +58,7 @@ ms.locfileid: "61165662"
 
 虽然警报趋势显示趋势警报信息，但警报摘要显示范围为当天的警报信息。
 
- 警报摘要允许您向下钻取到应用了相应筛选器的特定警报队列。 例如，单击"检测EDR"卡片中的"警报"栏，将进入警报队列，其中仅显示从检测结果EDR警报。
+ 警报摘要允许您向下钻取到应用了相应筛选器的特定警报队列。 例如，单击"检测EDR"卡片中的"警报"栏将打开警报队列，其中仅显示从检测结果EDR警报。
 
 > [!NOTE]
 > 摘要部分反映的数据的范围为当前日期之前的 180 天。 例如，如果今天的日期为 2019 年 11 月 5 日，则摘要部分的数据将反映从 2019 年 5 月 5 日到 2019 年 11 月 5 日的数字。
@@ -71,8 +71,8 @@ ms.locfileid: "61165662"
 
 - **检测源**：显示有关传感器和检测技术的信息，这些传感器和检测技术提供 Microsoft Defender for Endpoint 用于触发警报的数据。
 - **威胁类别**：显示触发警报的威胁或攻击活动类型，指示安全操作可能重点关注的区域。
-- **严重性**：显示警报的严重性级别，指示威胁对组织的潜在共同影响以及解决这些威胁所需的响应级别。
-- **状态**：显示警报的解析状态，指示手动警报响应的效率以及自动修正 (如果已启用) 。
+- **严重性**：显示警报的严重性级别，指示威胁对组织造成共同的潜在影响以及应对威胁所需的响应级别。
+- **状态**：显示警报的解析状态，指示手动警报响应的效率以及自动修正 (（如果启用) ）。
 - 分类 **&** 确定：显示如何在解决时对警报进行分类，是将它们分类为实际威胁 (真正的警报) 还是错误检测 (错误警报) 。 这些卡片还显示已解决警报的确定，提供其他见解，如找到的实际威胁类型或错误检测到的合法活动。
 
 ## <a name="filter-data"></a>筛选数据
@@ -84,7 +84,7 @@ ms.locfileid: "61165662"
 
 例如，若要显示有关高严重性警报的数据，请仅：
 
-1. 在 **"事件&警报** 筛选器 \>  \> **">严重性"下，** 选择"高 **"。**
+1. 在 **"事件&警报** \> **筛选器**\>"**>严重性"下，** 选择"**高"**。
 2. 确保已取消选择"严重性 **"下的** 所有其他选项。
 3. 选择“**应用**”。
 

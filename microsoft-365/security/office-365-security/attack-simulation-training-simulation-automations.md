@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解如何创建包含特定技术和有效负载的自动模拟，这些模拟在 Microsoft Defender for Office 365计划 2 中满足指定条件时启动。
 ms.technology: mdo
-ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526174"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680943"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻击模拟培训的模拟自动化
 
@@ -230,15 +230,10 @@ ms.locfileid: "63526174"
 
 - **选择登陆页面首选项**：可用值取决于您在"选择有效负载"页上 [](#select-payloads)之前的选择，如下表所述：
 
-  <br>
-
-  ****
-
   |"选择有效负载"页上的"选择"|"选择登陆页面首选项"的可用值|
   |---|---|
   |手动选择|使用 Microsoft 默认登录页面 <p> 创建你自己的登陆页面 <p> 使用自定义 URL <p> **注意**：**如果之前** 在"选择社交工程技术"页上选择了"恶意软件附件"或"链接到恶意软件"，则"使用自定义 URL"[值](#select-one-or-more-social-engineering-techniques)不可用。|
   |Randomize|使用 Microsoft 默认登录页面|
-  |
 
   以下 **列表介绍了可用的选择** 登陆页面首选项值及其关联设置：
 

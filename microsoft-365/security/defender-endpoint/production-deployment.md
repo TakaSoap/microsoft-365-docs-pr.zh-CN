@@ -12,14 +12,19 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365solution-endpointprotect
-  - m365solution-scenario
+- M365-security-compliance
+- m365solution-endpointprotect
+- m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
+ms.openlocfilehash: 8e905db8ba5e868a9913c785bd7f9bc0cc67b39a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472674"
 ---
-
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置适用于终结点的 Microsoft Defender 部署
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,7 +38,7 @@ ms.technology: mde
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
-|[![部署阶段 - 准备。](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | ![部署阶段 - 设置](images/phase-diagrams/setup.png)<br>阶段 2：设置 | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：开始使用](onboarding.md)|
+|[![部署阶段 - 准备。](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | ![部署阶段 - 设置](images/phase-diagrams/setup.png#lightbox)<br>阶段 2：设置 | [![部署阶段 - 载入](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[阶段 3：开始使用](onboarding.md)|
 |---|---|---|
 ||*你在这里！*||
 
@@ -54,23 +59,23 @@ ms.technology: mde
 
 1. 若要查看许可证，请转到 Microsoft Azure **门户** 并导航到"Microsoft Azure [门户许可证"部分](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)。
 
-   ![Azure 许可页面的图像。](images/atp-licensing-azure-portal.png)
+   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="Azure 许可页面" lightbox="images/atp-licensing-azure-portal.png":::
 
 1. 或者，在管理中心中，导航到" **帐单"** \> **"订阅"**。
 
     在屏幕上，你将看到所有预配的许可证及其当前 **状态**。
 
-    ![帐单许可证的图像。](images/atp-billing-subscriptions.png)
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="帐单许可证页面" lightbox="images/atp-billing-subscriptions.png":::
 
 ## <a name="cloud-service-provider-validation"></a>云服务提供商验证
 
 若要获取向公司预配哪些许可证的访问权限，并检查许可证的状态，请转到管理中心。
 
-1. 在合作伙伴 **门户中，** 选择"管理服务 **> Office 365**"。
+1. 从合作伙伴 **门户中，** 选择"**管理服务> Office 365**"。
 
 2. 单击"**合作伙伴门户**"链接将打开"代表管理员"选项，并授予你客户管理中心的访问权限。
 
-   ![O365 管理门户的图像。](images/atp-O365-admin-portal-customer.png)
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="管理Office 365门户" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>租户配置
 
@@ -103,20 +108,20 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 配置基于注册表的静态代理，以允许仅 Microsoft Defender for Endpoint 传感器报告诊断数据，并与 Microsoft Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- 管理模板\>Windows组件 \> 数据收集和预览版\>配置连接的用户体验和遥测服务的已验证代理用法
+- 管理模板\>Windows组件 \> 数据收集和预览版本\>配置连接的用户体验和遥测服务的已验证代理使用情况
 - 将其设置为" **已启用"，** 然后选择 **"禁用经过身份验证的代理用法"**
 
 1. 打开组策略管理控制台。
 2. 根据组织实践创建策略或编辑现有策略。
-3. 编辑组策略并导航 **\>到"管理模板"Windows组件\>数据收集\>** 和预览版配置连接的用户体验和遥测服务的已验证代理用法。
+3. 编辑组策略并 **\>导航到"管理模板"Windows组件\>数据收集\>** 和预览版配置连接的用户体验和遥测服务的已验证代理用法。
 
-   ![组策略配置的图像。](images/atp-gpo-proxy1.png)
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="与配置使用策略相关的选项" lightbox="images/atp-gpo-proxy1.png":::
 
 4. 选择“**已启用**”。
 5. 选择 **"禁用经过身份验证的代理用法"**。
 6. 导航到 **管理模板\>Windows组件 \> 数据收集和预览版本 \> 配置连接的用户体验和遥测**。
 
-    ![组策略配置设置的图像。](images/atp-gpo-proxy2.png)
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="与连接用户体验和遥测的配置相关的选项" lightbox="images/atp-gpo-proxy2.png":::
 
 7. 选择“**已启用**”。
 8. 输入 **代理服务器名称**。
@@ -156,11 +161,11 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 ### <a name="proxy-configuration-for-down-level-devices"></a>低级别设备的代理配置
 
-Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的 Windows Server 2016 Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
+Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2 以及 Windows Server 2016 之前的 Windows 服务器 CB 1803。 这些操作系统将代理配置为 Microsoft 管理代理的一部分，以处理从终结点到 Azure 的通信。 请参阅 Microsoft 管理代理快速部署指南，了解如何在这些设备上配置代理。
 
 ### <a name="proxy-service-urls"></a>代理服务 URL
 
-仅在你拥有版本 1803 或 Windows 10 1803 或 Windows 11 URL。 例如，`us-v20.events.data.microsoft.com`仅在设备位于 Windows 10版本 1803 或 Windows 11。
+仅在你拥有 Windows 10 版本 1803 或 Windows 11 URL。 例如，`us-v20.events.data.microsoft.com`仅在设备位于 Windows 10 1803 或 Windows 11。
 
 如果代理或防火墙阻止匿名流量，因为 Microsoft Defender for Endpoint 传感器从系统上下文连接，请确保允许列出的 URL 中的匿名流量。
 
@@ -173,10 +178,9 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 |域列表的电子表格| 说明|
 |---|---|
-|适用于商业客户的 Microsoft Defender 终结点 URL 列表 | 服务位置、地理位置和商业客户操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Gov/GCC/DoD 客户的 Microsoft Defender 终结点 URL 列表| Gov/GCC/DoD 客户的服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URL 电子表格" lightbox="images/mdatp-urls.png":::|服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <p> [在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 ## <a name="next-step"></a>后续步骤
 
-![**阶段 3：载入**。](images/onboard.png) <br> [阶段 3：](onboarding.md)载入：将设备载入服务，以便 Microsoft Defender for Endpoint 服务可以从它们获取传感器数据。
+[![**阶段 3：载入**。](images/onboard.png#lightbox)] <br> [阶段 3：](onboarding.md)载入：将设备载入服务，以便 Microsoft Defender for Endpoint 服务可以从它们获取传感器数据。

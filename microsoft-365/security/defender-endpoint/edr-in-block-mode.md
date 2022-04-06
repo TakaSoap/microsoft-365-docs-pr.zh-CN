@@ -15,15 +15,15 @@ ms.custom:
 - next-gen
 - edr
 - admindeeplinkDEFENDER
-ms.date: 03/16/2022
+ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 6c3df0efe5c565497803ecdd84716ec70e590afd
-ms.sourcegitcommit: b67385243fb56ad20f2a6f1c40be46f5691c1c2a
+ms.openlocfilehash: 151fb8de088531b9a9f053fc2b5d3c433055e21f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527822"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473114"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>阻止模式下的终结点检测和响应 (EDR)。
 
@@ -41,13 +41,14 @@ ms.locfileid: "63527822"
 > EDR阻止模式时，不会提供启用实时Microsoft Defender 防病毒时可用的所有保护。 依赖于要成为Microsoft Defender 防病毒防病毒解决方案的所有功能将不起作用，包括以下关键示例：
 >
 > - 实时保护（包括访问时扫描）在处于被动Microsoft Defender 防病毒时不可用。 若要详细了解实时保护策略设置，请参阅启用 **[和配置Microsoft Defender 防病毒始终启用保护](configure-real-time-protection-microsoft-defender-antivirus.md)**。
+>
 > - 网络 **[保护和](network-protection.md)** 攻击面减少 **[规则](attack-surface-reduction.md)** 等功能仅在网络Microsoft Defender 防病毒模式运行时可用。
 >
 > 预计非 Microsoft 防病毒解决方案会提供这些功能。
 
 EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mgt.md)。 如果组织的安全团队尚未启用EDR，你[](tvm-security-recommendation.md)组织的安全团队将获取一个安全建议，以在阻止模式下启用它。
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="建议在阻止EDR启用此模式。":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="在阻止模式下打开EDR的建议" lightbox="images/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
 > 若要获得最佳保护，请确保部署 **[适用于 Endpoint 基线的 Microsoft Defender](configure-machines-security-baseline.md)**。
@@ -58,13 +59,13 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 
 下图显示了一个不需要的软件的实例，这些软件在阻止模式下EDR阻止：
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR阻止模式时检测到某些内容。":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="在阻止模式下EDR进行检测" lightbox="images/edr-in-block-mode-detection.png":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>启用EDR阻止模式
 
 > [!IMPORTANT]
-> 从平台版本 4.18.2202.X 开始，你现在可以在阻止模式下设置 EDR 以使用 Intune CSP 面向特定设备组。 你可以继续在 EDR 门户的阻止模式租户范围内设置<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender设置。</a> 请注意，EDR模式主要用于在被动模式下运行 MDAV 的设备， (第三方 AV 处于活动状态) 。 
+> 从平台版本 4.18.2202.X 开始，你现在可以在阻止模式下设置 EDR 以使用 Intune CSP 面向特定设备组。 你可以继续在 EDR 门户的阻止模式租户范围内设置<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender设置。</a> EDR在被动模式下运行 Microsoft Defender 防病毒 的设备主要推荐使用 (在设备上安装并激活非 Microsoft 防病毒解决方案) 。 
 
 > [!TIP]
 > 在以[阻止模式](#requirements-for-edr-in-block-mode)打开应用前，EDR满足要求。
@@ -72,7 +73,9 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 ### <a name="security-portal"></a>安全门户 
 
 1. 转到"Microsoft 365 Defender门户 () [https://security.microsoft.com/](https://security.microsoft.com/) 并登录。
+
 2. 选择 **设置** \> **终结点常规** \>  \> **高级功能"**。
+
 3. 向下滚动，然后在块模式下EDR **启用。**
 
 ### <a name="intune"></a>Intune
@@ -84,26 +87,37 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 
 ## <a name="requirements-for-edr-in-block-mode"></a>阻止模式下EDR要求
 
+下表列出了在阻止模式下EDR要求：
+
 |要求|详细信息|
 |---|---|
-|权限|您必须在服务器中分配全局管理员或安全[管理员Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。|
-|操作系统|设备必须运行以下版本之一Windows： <br/>- Windows 10 (所有) <br/>- Windows Server 版本 1803 或更高版本<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (仅在Microsoft Defender 防病毒处于活动状态时) |
-|Microsoft Defender for Endpoint|设备必须载入到适用于终结点的 Defender。 请参阅 [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。|
+|Permissions|您必须在服务器中分配全局管理员或安全[管理员Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。|
+|操作系统|设备必须运行以下版本之一Windows： <br/>- Windows 11 <br/>- Windows 10 (所有) <br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>- Windows Server 版本 1803 或更高版本<br/>- Windows Server 2016 Windows Server 2012统一 (解决方案部署 R2) <sup>[[1](#fn1)]</sup> [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview)  |
+|Microsoft Defender for Endpoint|设备必须载入到适用于终结点的 Defender。 另请参阅以下文章： <br/>- [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)<br/>- [载入设备和配置适用于终结点功能的 Microsoft Defender](onboard-configure.md)<br/>- [将Windows载入 Defender for Endpoint 服务](configure-server-endpoints.md)<br/>- [新式Windows Server 2012预览版中新增了 R2 和 2016 (R2 和 2016) ](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
 |Microsoft Defender 防病毒|设备必须已安装Microsoft Defender 防病毒在主动模式或被动模式下运行。 [确认Microsoft Defender 防病毒处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。|
 |云端保护|Microsoft Defender 防病毒配置云保护，以启用[云保护](enable-cloud-protection-microsoft-defender-antivirus.md)。|
 |Microsoft Defender 防病毒平台|设备必须是最新的。 若要确认，使用 PowerShell 以管理员角色运行 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet。 在 **AMProductVersion** 行中，应该会看到 **4.18.2001.10** 或更上方。 <p> 要了解详细信息，请参阅 [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。|
 |Microsoft Defender 防病毒引擎|设备必须是最新的。 若要确认，使用 PowerShell 以管理员角色运行 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet。 在 **AMEngineVersion** 行中，应该会看到 **1.1.16700.2** 或更上方。 <p> 要了解详细信息，请参阅 [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。|
+
+ (<a id="fn1">1</a>) 请参阅 [R2 EDR R2](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2) 上是否支持阻止Windows Server 2016 Windows Server 2012模式？
 
 > [!IMPORTANT]
 > 若要获取最佳保护值，请确保防病毒解决方案配置为接收定期更新和基本功能，并且已配置 [排除项](configure-exclusions-microsoft-defender-antivirus.md)。 EDR模式配置遵守为用户定义的排除Microsoft Defender 防病毒，但不包括为 Microsoft Defender for Endpoint 定义的指示器。[](manage-indicators.md)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
+### <a name="can-i-specify-exclusions-for-edr-in-block-mode"></a>能否在阻止模式下为EDR排除项？
+
+在获得误报后，可以在提交文件提交Microsoft 安全智能[分析](https://www.microsoft.com/en-us/wdsi/filesubmission)。
+
+还可以为自定义项定义Microsoft Defender 防病毒。 请参阅[配置并验证扫描的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)。
+
 ### <a name="do-i-need-to-turn-edr-in-block-mode-on-if-i-have-microsoft-defender-antivirus-running-on-devices"></a>如果我在设备上运行EDR，是否需要在阻止Microsoft Defender 防病毒打开？
 
 在阻止模式下EDR主要目的是修正非 Microsoft 防病毒产品错过的泄露后检测。 但是，我们建议保持EDR模式处于打开状态，Microsoft Defender 防病毒被动模式还是主动模式运行。
 
 - 当Microsoft Defender 防病毒处于被动模式时，EDR模式中的用户与 Microsoft Defender for Endpoint 一起提供另一层防御。
+
 - 当Microsoft Defender 防病毒模式时，EDR阻止模式不会提供额外的扫描，但它允许 Microsoft Defender 防病毒 对泄露后的行为或行为EDR自动操作。
 
 ### <a name="will-edr-in-block-mode-affect-a-users-antivirus-protection"></a>EDR模式是否会影响用户的防病毒保护？
@@ -131,9 +145,7 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
 
 若要确认Microsoft Defender 防病毒处于主动或被动模式，可以在运行命令提示符或 PowerShell 的设备上Windows。
 
-<br/><br/>
-
-|方法|Procedure|
+|Method|Procedure|
 |---|---|
 |PowerShell|1. 选择"开始"菜单，开始键入 `PowerShell`，然后在Windows PowerShell中打开" "。<br/><br/>2. 键入 `Get-MpComputerStatus`。<br/><br/>3. 在结果列表中，在 **AMRunningMode** 行中查找下列值之一：<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。|
 |命令提示符|1. 选择"开始"菜单，开始键入 `Command Prompt`，然后在Windows打开命令提示符。<br/><br/>2. 键入 `sc query windefend`。<br/><br/>3. 在结果列表中的 **"状态** "行中，确认服务正在运行。 |
@@ -151,20 +163,21 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
    > [!TIP]
    > 如果Microsoft Defender 防病毒处于活动状态，你将看到 而不是 `Normal` `EDR Block Mode`。 若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。
 
-### <a name="is-edr-in-block-mode-supported-on-windows-server-2016"></a>EDR上是否支持阻止Windows Server 2016？
+### <a name="is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2"></a>R2 EDR R2 上是否支持Windows Server 2016 Windows Server 2012模式？
 
 如果Microsoft Defender 防病毒模式或被动模式EDR，则以下版本的 Windows 支持阻止模式下的Windows：
 
+- Windows 11
 - Windows 10 (所有) 
 - Windows Server 版本 1803 或更高版本 
 - Windows Server 2022
 - Windows Server 2019 
-- Windows Server 2016
-- Windows Server 2012 R2
-- Windows 11
+- Windows Server 2016 Windows Server 2012统一 ([解决方案来部署](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) R2) 
 
->[!NOTE]
->Windows Server 2016和 Windows Server 2012 R2 将需要按照[载入 Windows 服务器](configure-server-endpoints.md)中的说明载入，此功能将正常工作。 
+使用适用于 [R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) 和 Windows Server 2016 Windows Server 2012 的新统一客户端解决方案，EDR被动模式或主动模式下运行客户端。
+
+> [!NOTE]
+> Windows Server 2016 Windows Server 2012 R2 必须按照[载入 Windows 服务器中的](configure-server-endpoints.md)说明载入 R2，此功能将正常工作。 
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>在阻止模式下禁用EDR需要的时间？
 
@@ -173,4 +186,5 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
 ## <a name="see-also"></a>另请参阅
 
 - [Tech Community博客：在EDR模式下进行介绍：停止其跟踪中的攻击](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
+
 - [行为阻止和控制](behavioral-blocking-containment.md)

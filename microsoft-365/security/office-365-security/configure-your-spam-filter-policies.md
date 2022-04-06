@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ac240f402d230362cb33ea818e62c1e0629eb39
-ms.sourcegitcommit: 966344e1aa442a4d10a0fb05f56badd38c833bb2
+ms.openlocfilehash: 8550d55553b1c406fa21ce362e201a8bbe3d5aea
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2022
-ms.locfileid: "62909743"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681295"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -48,7 +48,7 @@ ms.locfileid: "62909743"
 在 Microsoft 365 Defender 门户中管理反垃圾邮件策略时，这两个要素之间的区别并不明显：
 
 - 在创建反垃圾邮件策略时，实际上是同时创建了垃圾邮件筛选规则和关联的垃圾邮件筛选策略，并对二者使用相同的名称。
-- 如果你修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。 其他所有设置会修改关联的垃圾邮件筛选策略。
+- 如果你修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。其他所有设置会修改关联的垃圾邮件筛选策略。
 - 如果你删除反垃圾邮件策略，垃圾邮件筛选规则和关联的垃圾邮件筛选策略也会随之删除。
 
 在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本文后面的[使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置反垃圾邮件策略](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies)部分。
@@ -80,8 +80,8 @@ ms.locfileid: "62909743"
 
 - 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-- 无法完全关闭垃圾邮件筛选，但可以使用邮件流规则（也称为传输规则）绕过对传入邮件的大多数垃圾邮件筛选（例如，如果在传递到Microsoft 365之前通过第三方保护服务或设备路由电子邮件）。 有关详细信息，请参阅[使用邮件流规则设置邮件中的垃圾邮件可信度 （SCL）](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
-  - 仍会筛选高可信度钓鱼邮件。 EOP 中的其他功能不受影响（例如，始终扫描邮件以查找恶意软件）。
+- 无法完全关闭垃圾邮件筛选，但可以使用邮件流规则（也称为传输规则）绕过对传入邮件的大多数垃圾邮件筛选（例如，如果在传递到Microsoft 365之前通过第三方保护服务或设备路由电子邮件）。有关详细信息，请参阅[使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
+  - 仍会筛选高可信度钓鱼邮件。EOP 中的其他功能不受影响（例如，始终扫描邮件以查找恶意软件）。
   - 如果需要绕过 SecOps 邮箱或网络钓鱼模拟的垃圾邮件筛选，请不要使用邮件流规则。 有关详细信息，请参阅 [配置将第三方网络钓鱼模拟传递给用户和未筛选邮件到 SecOps 邮箱](configure-advanced-delivery.md)。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>使用 Microsoft 365 Defender 门户创建反垃圾邮件策略
@@ -148,10 +148,6 @@ ms.locfileid: "62909743"
      - 复选标记 ( ![复选标记。](../../media/checkmark.png)）表示操作可以执行（并不是所有操作都适用于所有裁定）。
      - 复选标记后面的星号 (<sup>\*</sup>) 表示垃圾邮件筛选裁定对应的默认操作。
 
-     <br>
-
-     ****
-
      |操作|垃圾邮件|高<br>置信<br>垃圾邮件 (spam)|网络钓鱼|高<br>置信<br>仿冒|批量邮件|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**将邮件移动到“垃圾邮件”文件夹**：邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1</sup>|![复选标记。](../../media/checkmark.png)<sup>\*</sup>|![复选标记。](../../media/checkmark.png)<sup>\*</sup>|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|
@@ -161,7 +157,6 @@ ms.locfileid: "62909743"
      |**删除邮件**：无提示删除整个邮件，包括所有附件。|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)||![复选标记](../../media/checkmark.png)|
      |**隔离邮件**：将邮件发送到隔离，而不是目标收件人。 <p> 稍后将在 **“隔离”** 框中指定所需的邮件隔离时长。 <p> 在出现的“**选择策略** 框中指定 [隔离策略](quarantine-policies.md)，以将其应用于垃圾邮件筛选器裁定的隔离邮件。有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。<sup>3</sup>|![复选标记。](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)<sup>\*</sup>|![复选标记](../../media/checkmark.png)|
      |**无操作**|||||![复选标记](../../media/checkmark.png)|
-     |
 
      > <sup>1</sup> EOP 现在使用自己的邮件流传递代理将邮件路由到垃圾邮件文件夹，而不是使用垃圾邮件规则。 **Set-MailboxJunkEmailConfiguration** cmdlet 上的 _Enabled_ 参数不再对邮件流有任何影响。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
      >
@@ -200,7 +195,7 @@ ms.locfileid: "62909743"
      - **为垃圾邮件启用 ZAP**：默认情况下，为垃圾邮件检测启用 ZAP，但可通过清除复选框来禁用它。
 
    > [!NOTE]
-   > 最终用户垃圾邮件通知已替换为隔离策略中的 _隔离通知_。 隔离通知包含有关所有受支持保护功能（不仅仅是反垃圾邮件策略和反网络钓鱼策略裁定）的隔离邮件的信息。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
+   > 最终用户垃圾邮件通知已替换为隔离策略中的 _隔离通知_。隔离通知包含有关所有受支持保护功能（而不仅仅是反垃圾邮件策略和反钓鱼策略裁定）的隔离邮件的信息。有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 
    完成后，单击“**下一步**”。
 

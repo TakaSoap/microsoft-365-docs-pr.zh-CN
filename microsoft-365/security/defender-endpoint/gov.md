@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450558"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681339"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -118,8 +118,8 @@ Windows 7 SP1 Enterprise (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|
 Windows 7 SP1 Pro (旧) <sup>3</sup>|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 Linux|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
 macOS|![是。](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)
-Android|![否。](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
-iOS|![否。](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中
+Android|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
+iOS|![是。](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版|![是](images/svg/check-yes.svg) <br /> 公共预览版
 |
 
 > [!NOTE]
@@ -194,3 +194,23 @@ Windows Server 2008 R2 SP1|![是。](images/svg/check-yes.svg)|![是](images/svg
 |网络发现|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
 |报告：设备控制、设备运行状况、防火墙|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
 |Web 内容筛选|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
+  
+
+以下为 Android 和 [iOS (上的 Microsoft Defender for Endpoint 的移动威胁防护&已知) ](mtd.md)：
+
+<br />
+
+****
+
+|功能名称|GCC|GCC 高|DoD|
+|---|:---:|:---:|:---:|
+|Web 保护 (防钓鱼和自定义指示器) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
+|仅 Android (恶意软件防护) |![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
+|越狱检测 (仅 iOS) |![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
+|条件访问/条件启动|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
+|对 MAM 的支持|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
+|隐私控制|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|![是](images/svg/check-yes.svg)|
+|TVM (威胁和漏洞) |![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
+|Web 内容筛选|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|![否](images/svg/check-no.svg) 开发中|
+  
+

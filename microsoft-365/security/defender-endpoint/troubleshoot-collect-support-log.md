@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: a0d0f470a2af18dab298ba3a1af642362590da4c
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 138b532e7786a3d142c3cbbe68f668a4b0e05591
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401156"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472564"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>使用实时响应收集 Microsoft Defender for Endpoint 中的支持日志
 
@@ -43,15 +43,15 @@ ms.locfileid: "63401156"
 
 3. 选择 **Upload文件到库"**。
 
-    ![上载文件的图像。](images/upload-file.png)
+   :::image type="content" source="images/upload-file.png" alt-text="上载文件" lightbox="images/upload-file.png":::
 
 4. 选择 **"选择文件"**。
 
-    ![选择文件 button1 的图像。](images/choose-file.png)
+   :::image type="content" source="images/choose-file.png" alt-text="选择文件按钮-1" lightbox="images/choose-file.png":::
 
 5. 选择下载的名为 MDELiveAnalyzer.ps1 文件，然后单击"确认 **"**
 
-   ![选择文件 button2 的图像。](images/analyzer-file.png)
+   :::image type="content" source="images/analyzer-file.png" alt-text="选择文件按钮-2" lightbox="images/analyzer-file.png":::
 
 6. 仍在 LiveResponse 会话中时，请使用下面的命令运行分析器并收集结果文件：
 

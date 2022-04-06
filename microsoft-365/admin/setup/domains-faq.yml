@@ -7,7 +7,7 @@ metadata:
   author: efrene
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection:
@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: 通过查找常见问题 (解答，了解有关使用 onmicrosoft) 传输域和转移域内容。
-  ms.openlocfilehash: 6b99f8d2d6b976add06dea9382a22d0e1a0a2b6c
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 77aecfc77e65939c799e67a3a5cb2f83f357237f
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63328549"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680589"
 title: 关于域的常见问题解答
 summary: "\n\n本文包含有关域中域的常见问题Microsoft 365。\n\n如果找不到你问题的答案，请留下评论告知我们，我们会将其添加到列表中。\n"
 sections:
@@ -50,7 +50,7 @@ sections:
   - question: 如何设置或更改域中的默认Microsoft 365？
     answer: "必须至少具有一个已添加到域的自定义域Microsoft 365才能选择默认域。\n\n::: moniker range=\"o365-worldwide\"\n\n1. 在管理中心，转到“**设置**”\\>“<a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">域</a>”页面。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. 在管理中心，转到“**设置**”>“<a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">域</a>”页面。\n\n::: moniker-end\n    \n2. 在 **\"域** \"页面上，选择要设置为新电子邮件地址的默认值的域。 \n    \n3. 选择“**设为默认值**”。\n    \n::: moniker range=\"o365-worldwide\"\n\n不能更改初始  *.onmicrosoft.com*  的名称。 \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n不能更改初始  *.partner.onmschina.cn*  的名称。 \n\n::: moniker-end\n\n> [!NOTE]\n> 更改默认域不会影响用户凭据或用户对应用程序或服务的访问权限。 更改用户关联的域将影响邮件、联机存储和登录凭据。\n"
   - question: 我能否将自定义子域或多个域添加到Microsoft 365？
-    answer: "::: moniker range=\"o365-worldwide\"\n\n能。 若要添加子域，必须在注册机构的网站中管理自己的 DNS 设置。 如果允许 Microsoft 使用 NS 记录管理 DNS 设置，或者从 Microsoft 购买了域，则不能添加子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n可以！ 若要添加子域，必须在注册机构的网站中管理自己的 DNS 设置。 如果允许世纪银行使用 NS 记录管理 DNS 设置，则不能添加子域。\n\n::: moniker-end\n\n通常，你最多可以将 900 个域添加到你的Microsoft 365订阅。\n  \n例如，可以将域添加到 contoso.com 和 contosomarketing.com `www.contoso.com`，然后添加子域 、 `www.partners.contoso.com`、 `www.marketing.partners.contoso.com`等。\n  \n添加子域时，将基于正在验证的父域自动验证该子域。\n  \n当您向 Microsoft 365 添加多个域时，您可以托管任何服务 (如电子邮件) 您添加的任何域上的电子邮件服务。  *当您将电子邮件更改为 Microsoft 365，通过更新域的 MX 记录，发送到该域的所有电子邮件都将开始Microsoft 365。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> 如果您向 contoso.com 订阅添加了Microsoft 365域，则还可以将子域 xyz.contoso.com 组织Microsoft 365组织。 添加子域时，系统会提示你在 DNS 托管提供程序中添加 TXT 记录。\n::: moniker-end\n"
+    answer: "::: moniker range=\"o365-worldwide\"\n\n是。 若要添加子域，必须在注册机构的网站中管理自己的 DNS 设置。 如果允许 Microsoft 使用 NS 记录管理 DNS 设置，或者从 Microsoft 购买了域，则不能添加子域。\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n可以！ 若要添加子域，必须在注册机构的网站中管理自己的 DNS 设置。 如果允许世纪银行使用 NS 记录管理 DNS 设置，则不能添加子域。\n\n::: moniker-end\n\n通常，你最多可以将 900 个域添加到你的Microsoft 365订阅。\n  \n例如，可以将域添加到 contoso.com 和 contosomarketing.com `www.contoso.com`，然后添加子域 、 `www.partners.contoso.com`、 `www.marketing.partners.contoso.com`等。\n  \n添加子域时，将基于正在验证的父域自动验证该子域。\n  \n当您向 Microsoft 365 添加多个域时，您可以托管任何服务 (如电子邮件) 您添加的任何域上的电子邮件服务。  *当您将电子邮件更改为 Microsoft 365，通过更新域的 MX 记录，发送到该域的所有电子邮件都将开始Microsoft 365。* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> 如果您向 contoso.com 订阅添加了Microsoft 365域，则还可以将子域 xyz.contoso.com 组织Microsoft 365组织。 添加子域时，系统会提示你在 DNS 托管提供程序中添加 TXT 记录。\n::: moniker-end\n"
   - question: 如何将域从 Microsoft 365转移到另一台主机？
     answer: >
       有关转移域的过程，请参阅 [将域从 Microsoft 转移到另一台主机](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md)。

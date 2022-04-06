@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 查找指向文章的链接，其中的信息可帮助你设置Microsoft 365，包括网络连接概述和终结点列表。
-ms.openlocfilehash: c21a7a09e43957c806bca9dd64d425fcef2415fc
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566623"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680833"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>为用户设置Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云不同于针对到本地数据中心的流量和中央 Internet 连接优化的传统网络。 
+载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云与针对到本地数据中心的流量和中央 Internet 连接进行了优化的传统网络不同。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 

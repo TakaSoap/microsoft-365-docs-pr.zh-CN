@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 7c300a6d66ae67d481b61a0a35101a0472031266
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3cd45506601202a4a1bd5a400eeb51a0e07cecc0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327681"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473026"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>访问操作中心以查看修正操作
 
@@ -40,7 +40,7 @@ ms.locfileid: "63327681"
 
 我们很高兴宣布新的统一操作中心 () [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ！
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Microsoft 365 Defender中的操作中心。":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Microsoft 365 Defender门户中的&quot;操作Microsoft 365 Defender页" lightbox="images/mde-action-center-unified.png":::
 
 下表将新的统一操作中心与以前的操作中心进行比较。
 
@@ -48,7 +48,7 @@ ms.locfileid: "63327681"
 |---------|---------|
 |在一个位置列出设备和电子邮件的挂起和已完成操作 <br/> ([Microsoft Defender for Endpoint 以及](microsoft-defender-endpoint.md) [Microsoft Defender for Office 365) ](/microsoft-365/security/office-365-security/office-365-atp)|列出设备的挂起和已完成操作 <br/>  ([Microsoft Defender for Endpoint) ](microsoft-defender-endpoint.md)   |
 |位于：<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |位于：<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| 在"<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender门户中，</a>选择"**操作中心"**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航到 Microsoft 365 Defender 门户中的操作中心。"::: | 在"Microsoft 365 Defender门户中，选择"**自动调查** > **""操作中心"**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="从操作门户导航到Microsoft 365 Defender中心。":::  |
+| 在"<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender门户中，</a>选择"**操作中心"**。 <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="导航门户中操作中心的Microsoft 365 Defender窗格" lightbox="images/action-center-nav-new.png"::: | 在"Microsoft 365 Defender门户中，选择"**自动调查** > **""操作中心"**。 <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="导航窗格在导航门户中的操作中心的Microsoft 365 Defender版本" lightbox="images/action-center-nav-old.png":::  |
 
 统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365。 它定义所有修正操作的共同语言，并提供统一的调查体验。
 
@@ -77,7 +77,7 @@ ms.locfileid: "63327681"
 
 可以在操作中心中自定义、排序、筛选和导出数据。
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="操作中心中的列和筛选器。":::
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="具有列和筛选器的操作中心" lightbox="images/new-action-center-columnsfilters.png":::
 
 - 选择列标题以按升序或降序对项目进行排序。
 - 使用时间段筛选器查看过去一天、一周、30 天或 6 个月的数据。

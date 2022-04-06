@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9045c9a425b78f46d39ebb63664b693bf40252c4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 926d23cb4e9abcecd9d34e976dee60851471613b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314375"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472916"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 - 不支持：终结点已发现在网络中，但不受 Microsoft Defender for Endpoint 支持。
 - 信息不足：系统无法确定设备的可支持性。 在网络中更多设备上启用标准发现可以丰富发现的属性。
 
-![设备清单仪表板的图像。](images/device-discovery-inventory.png)
+:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="设备清单仪表板" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > 你始终可以应用筛选器以从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。
@@ -111,14 +111,15 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 设备上以及网络中发现的其他非托管设备的漏洞和风险是"安全 推荐"下当前 TVM 流的一部分，在门户的实体页面中表示。
 搜索与"SSH"相关的安全建议，以查找与非托管和托管设备相关的 SSH 漏洞。
 
-![安全建议仪表板的图像。](images/1156c82ffadd356ce329d1cf551e806c.png)
+:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="安全建议仪表板" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>在发现的设备上使用高级搜寻
 
 可以使用高级搜寻查询了解发现的设备的可见性。
 在 DeviceInfo 表中查找有关发现的终结点的详细信息，或在 DeviceNetworkInfo 表中查找有关这些设备的网络相关信息。
 
-![高级搜寻使用的图像。](images/f48ba1779eddee9872f167453c24e5c9.png)
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="可在其中使用查询的高级搜寻页面" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 设备发现将适用于终结点载入设备的 Microsoft Defender 用作网络数据源，将活动属性化为未载入的设备。 这意味着，如果 Microsoft Defender for Endpoint 已载入设备与非载入设备通信，则未载入的设备上的活动可以在时间线上和通过高级搜寻 DeviceNetworkEvents 表看到。
 

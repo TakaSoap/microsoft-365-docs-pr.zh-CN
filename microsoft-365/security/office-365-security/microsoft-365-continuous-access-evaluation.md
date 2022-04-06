@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 255618508559e989a356ab404429bc4d87bfe2c6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e265fd09fa7442b24868ad7f001701ef567e32bd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324531"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681559"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>连续访问评估Microsoft 365
 
@@ -76,18 +76,13 @@ Microsoft 正在努力开发其他 Microsoft 365 服务和客户端，以支持�
 
 以下Microsoft 365服务当前通过侦听来自用户的事件来支持连续访问Azure AD。
 
-<br>
-
-****
-
 |强制类型|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**关键事件：**||||
 |用户吊销|支持|支持|支持|
 |用户风险|支持|不支持|不支持|
 |**条件访问策略评估：**||||
-|IP 地址位置策略|支持|支持\*|支持|
-|
+|IP 地址位置策略|受支持|支持\*|受支持|
 
 \*SharePoint Office Web 浏览器访问支持通过启用严格模式来实施即时 IP 策略。 如果没有严格模式，访问令牌生存期为 1 小时。
 
@@ -101,7 +96,7 @@ Microsoft 365 的启用连续访问评估的客户端支持声明质询，当启
 
 - Outlook
 - Teams
-- Office\*
+- 办公室\*
 - SharePoint
 - OneDrive
 

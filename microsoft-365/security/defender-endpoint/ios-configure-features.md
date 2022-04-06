@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326071"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681471"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -143,6 +143,24 @@ iOS 上的 Microsoft Defender for Endpoint 支持应用保护策略方案，并�
 
 > [!NOTE]
 > iOS 上的 Defender for Endpoint 仅支持为 IP 地址和 URL/域创建自定义指示器。
+
+## <a name="configure-option-to-send-in-app-feedback"></a>配置选项以发送应用内反馈 
+
+客户现在可以在 Defender for Endpoint 应用中配置向 Microsoft 发送反馈数据的能力。 反馈数据可帮助 Microsoft 改进产品并解决问题。
+
+> [!NOTE]
+> 对于美国政府云客户，反馈数据收集 **默认处于禁用** 状态。 
+
+使用以下步骤配置向 Microsoft 发送反馈数据的选项：
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **AppsApp** >  **configuration** **policiesAddManaged** >  >  **devices**.
+1. 为策略命名"Platform **> iOS/iPadOS"**，选择配置文件类型。
+1. 选择 **Microsoft Defender for Endpoint** 作为目标应用。
+1. 在设置页面中，选择"使用配置设计器"，将 **DefenderSendFeedback** 添加为密钥和值类型，作为 **布尔值类型**
+   - 若要删除最终用户提供反馈的能力，请将其值设置为 `false` ，并将此策略分配给用户。 默认情况下，此值设置为 `true`。 对于美国政府客户，默认值设置为"false"。
+   - 对于将密钥设置为 `true`的用户，可选择在应用" (菜单"> 帮助&反馈> Microsoft) 
+1. 单击 **"** 下一步"，并将此配置文件分配给目标设备/用户。
+
 
 ## <a name="report-unsafe-site"></a>报告不安全网站
 

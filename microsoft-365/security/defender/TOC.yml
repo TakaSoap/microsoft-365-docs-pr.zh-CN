@@ -422,6 +422,61 @@
                   href: ../defender-endpoint/troubleshoot-siem.md
             - name: 了解威胁智能概念
               href: ../defender-endpoint/threat-indicator-concepts.md
+        - name: 安全智能
+          items:
+            - name: 安全扫描程序下载
+              href: ../intelligence/safety-scanner-download.md
+            - name: 了解恶意软件和其他威胁
+              href: ../intelligence/understanding-malware.md
+              items:
+                - name: 防止恶意软件感染
+                  href: ../intelligence/prevent-malware-infection.md
+                - name: 恶意软件名称
+                  href: ../intelligence/malware-naming.md
+                - name: 硬币矿工
+                  href: ../intelligence/coinminer-malware.md
+                - name: 攻击和攻击工具包
+                  href: ../intelligence/exploits-malware.md
+                - name: 无文件威胁
+                  href: ../intelligence/fileless-threats.md
+                - name: 宏恶意软件
+                  href: ../intelligence/macro-malware.md
+                - name: 网络钓鱼
+                  href: ../intelligence/phishing.md
+                - name: 勒索软件
+                  href: /security/compass/human-operated-ransomware
+                - name: Rootkit
+                  href: ../intelligence/rootkits-malware.md
+                - name: 供应链攻击
+                  href: ../intelligence/supply-chain-malware.md
+                - name: 技术支持诈骗
+                  href: ../intelligence/support-scams.md
+                - name: 木马
+                  href: ../intelligence/trojans-malware.md
+                - name: 不需要的软件
+                  href: ../intelligence/unwanted-software.md
+                - name: 蠕虫
+                  href: ../intelligence/worms-malware.md
+            - name: Microsoft 如何识别恶意软件和 PUA
+              href: ../intelligence/criteria.md
+            - name: 提交文件以供分析
+              href: ../intelligence/submission-guide.md
+            - name: 行业协作计划
+              href: ../intelligence/cybersecurity-industry-partners.md
+            - name: 病毒信息联盟
+              href: ../intelligence/virus-information-alliance-criteria.md
+            - name: Microsoft 病毒防御计划
+              href: ../intelligence/virus-initiative-criteria.md
+            - name: 协调式恶意软件清除
+              href: ../intelligence/coordinated-malware-eradication.md
+            - name: Microsoft Bug 赏金计划
+              href: ../intelligence/microsoft-bug-bounty-program.md
+            - name: 面向开发人员的信息
+              items:
+                - name: 软件开发人员常见问题解答
+                  href: ../intelligence/developer-faq.yml
+                - name: 软件开发人员资源
+                  href: ../intelligence/developer-resources.md
     - name: Microsoft 365 Defender 文档
       items:
         - name: Defender for Office 365

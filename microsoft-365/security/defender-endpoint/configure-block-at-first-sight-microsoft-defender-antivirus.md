@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807376"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473224"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -50,7 +50,7 @@ ms.locfileid: "62807376"
 
 Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、智能、实时的保护。
 
-![Microsoft Defender AV 引擎列表。](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Microsoft Defender AV 引擎列表。" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > 若要了解更多信息，请参阅[（博客）了解 Microsoft Defender for Endpoint 下一代保护的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
@@ -83,7 +83,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
    - **云扫描文件的时长拓展**：50
    - **在提交示例之前提示用户**：在不提示的情况下发送所有数据
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="首次看到 Intune 配置时阻止。":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune 配置首次看到时阻止" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. 保存设置。
 
@@ -108,7 +108,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
    - **云端保护等级**：高
    - **Microsoft Defender 防病毒扩展超时（以秒数表示）：50**
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Endpoint Manager 中的“首次看到时阻止”。":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Microsoft Endpoint Manager 门户中的“首次看到时阻止”设置" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. 应用 Windows Defender 防病毒的用户配置到组，例如“**所有用户**”、“**所有设备**”或“**所有用户和设备**”。
 
@@ -138,7 +138,7 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
 
 2. 选择“**病毒和威胁防护**”，然后在“**病毒和威胁防护设置**”下选择“**管理设置**”。
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows 安全应用中病毒和威胁防护设置标签的屏幕截图":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Windows 安全应用中的病毒和威胁防护设置标签" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. 确认 **云端保护** 和 **自动提交样本** 已开启。
 

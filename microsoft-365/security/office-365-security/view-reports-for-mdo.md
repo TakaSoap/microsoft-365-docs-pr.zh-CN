@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb48e432d20067f3c6ca1913349152154c57e81
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63557828"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680965"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>在 Office 365 门户中查看 Defender for Microsoft 365 Defender 报告
 
@@ -211,22 +211,13 @@ URL **保护报告提供** 检测到的威胁的摘要和趋势视图，以及�
 
 除了本文中所述的报告之外，还有其他一些报告可用，如下表所述：
 
-<br>
-
-****
-
 |报告|主题|
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1) |[威胁资源管理器（和实时检测）](threat-explorer.md)|
 |不需要 Defender for Office 365|[在电子邮件门户中查看Microsoft 365 Defender报告](view-email-security-reports.md)|
 |EAC 管理中心Exchange中的 (流) |[新管理中心中的Exchange报告](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 PowerShell 报告 cmdlet：
-
-<br>
-
-****
 
 |报告|主题|
 |---|---|
@@ -237,7 +228,6 @@ PowerShell 报告 cmdlet：
 |遭到入侵的用户|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |邮件流状态|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |欺骗用户|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Defender for Office 365报告需要哪些权限？
 
@@ -246,7 +236,7 @@ PowerShell 报告 cmdlet：
 - **组织管理**
 - **安全管理员**
 - **安全信息读取者**
-- **全局读取者**
+- **全局读者**
 
 有关详细信息，请参阅 [Microsoft 365 Defender 门户中的权限](permissions-microsoft-365-security-center.md)。
 

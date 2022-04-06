@@ -18,12 +18,12 @@ ms.custom:
 description: 管理员可以了解在 EOP 服务中允许入站邮件的可用Exchange Online Protection (首选) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1edcbba31075e9880b8ea2034f4ffde50bb71e9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 0370b72ccf29469bd88679d589d715d8897c921f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465720"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681669"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
@@ -101,8 +101,7 @@ ms.locfileid: "64465720"
 
       当邮件由于邮件流 `SFV:SKN` 规则而跳过垃圾邮件筛选时，值值将标记在 **X-Forefront-Antispam-Report** 标头中。 如果邮件来自 IP 允许列表上的源，则也会添加 `IPV:CAL` 值。 这些值可以帮助你进行疑难解答。
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="EAC 中用于绕过垃圾邮件筛选的邮件流规则设置" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
-
+![EAC 中用于绕过垃圾邮件筛选的邮件流规则设置。](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>使用Outlook 保险箱发件人
 
@@ -117,7 +116,7 @@ ms.locfileid: "64465720"
 
 如果您无法按前面所述使用邮件流规则，则下一个最佳选项是向连接筛选器策略中的 IP 允许列表添加源电子邮件服务器。 有关详细信息，请参阅在 [EOP 中配置连接筛选](configure-the-connection-filter-policy.md)。
 
-**注意**：
+**注意**:
 
 - 将允许的 IP 地址数保持在最少，这一点很重要，因此尽可能避免使用整个 IP 地址范围。
 - 请勿使用属于使用者服务（例如， (或共享 outlook.com) IP 地址范围。
