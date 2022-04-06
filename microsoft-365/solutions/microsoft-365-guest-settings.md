@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 9cb6eb52c523bba624af5f830c3c34c4edaf86b8
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
-ms.translationtype: HT
+ms.openlocfilehash: 4c472fb20a85c0f00f7623cc63c4d33556b511e2
+ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594831"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64687225"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -54,6 +54,37 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 |协作限制|允许向任何域发送邀请|此设置允许你为共享指定允许或阻止的域列表。 如果指定了允许的域，则只能将共享邀请发送到这些域。 如果指定了拒绝的域，则不能将共享邀请发送到这些域。 <p> 此设置会影响 Microsoft 365 共享体验，例如 Teams 和 SharePoint。 你可以通过使用 SharePoint 或 Teams 中的域筛选功能来更精确地允许或阻止域。|
 
 这些设置会影响邀请用户加入目录的方式。 它们不会影响与目录中已有的来宾进行共享。
+
+### <a name="cross-tenant-access-settings"></a>跨租户访问设置
+
+**导航：**[Azure Active Directory管理中心](https://aad.portal.azure.com)> Azure Active Directory >"默认设置"选项卡>跨租户访问设置 >>外部标识
+
+默认设置适用于除具有组织特定设置的所有外部Azure AD组织。 可以在"**组织设置**"选项卡上配置特定组织的设置。 (B2B 协作) 和 [B2B 直接连接用户Azure AD](/azure/active-directory/external-identities/b2b-direct-connect-overview)有单独的设置。
+
+![Azure Active Directory跨租户访问设置页的屏幕截图。](../media/azure-ad-cross-tenant-default-settings.png)
+
+**入站访问设置**
+
+入站访问设置控制来自外部Azure AD组织的用户是否可以访问组织中的资源。
+
+| 设置 | 默认值 | 说明 |
+|:-----|:-----|:-----|
+|B2B 协作 - 外部用户和组|全部允许|确定可以向其他Azure AD组织中的人员授予以来宾身份访问组织中资源的权限。|
+|B2B 协作 - 应用程序|所有允许的|确定可向组织中来宾授予访问权限的应用。|
+|B2B 直接连接 - 外部用户和组|全部阻止|确定是否可以通过 B2B 直接连接向其他Azure AD组织中的人员授予对组织中资源的访问权限。|
+|B2B 直接连接 - 应用程序|全部阻止|确定可向组织中 B2B 直接连接用户授予其访问权限的应用。|
+|信任设置|Disabled|确定当来自这些组织的人访问你的资源时，条件访问策略是否会接受来自其他Azure AD组织的声明。|
+
+**出站访问设置**
+
+出站访问设置控制用户是否可以访问外部组织中的资源。
+
+| 设置 | 默认值 | 说明 |
+|:-----|:-----|:-----|
+|B2B 协作 - 外部用户和组|全部允许|确定可以授予组织中哪些用户以来宾身份访问其他Azure AD组织中的资源。|
+|B2B 协作 - 应用程序|所有允许的|确定用户可以作为来宾访问的其他Azure AD组织中的应用。|
+|B2B 直接连接 - 外部用户和组|全部阻止|确定可以通过 B2B 直接连接授予组织中哪些用户对其他Azure AD组织中的资源的访问权限。|
+|B2B 直接连接 - 应用程序|全部阻止|确定可以通过 B2B 直接连接向用户授予访问权限的其他Azure AD组织中的应用。|
 
 ## <a name="microsoft-365"></a>Microsoft 365
 
@@ -98,7 +129,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
-|在 Teams 中允许访客访问|关闭|打开或关闭整个 Teams 的来宾访问。 更改后，此设置可能需要 24 小时才能生效。|
+|在 Teams 中允许访客访问|打开|打开或关闭整个 Teams 的来宾访问。 更改后，此设置可能需要 24 小时才能生效。|
 
 ### <a name="guest-calling"></a>来宾呼叫
 
