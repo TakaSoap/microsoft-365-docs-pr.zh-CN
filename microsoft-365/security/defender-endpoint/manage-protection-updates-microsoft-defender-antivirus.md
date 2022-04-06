@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2ebb60d3cd5514d003991d26c5070b05e89fb37
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 69c211e02b5bea12431e17bf2256405f96977b53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354620"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467392"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>管理 Microsoft Defender 防病毒软件保护更新源
 
@@ -42,7 +42,7 @@ ms.locfileid: "62354620"
 本文介绍如何指定从何处下载更新 (这也称为回退) 。 请参阅[管理Microsoft Defender 防病毒](manage-updates-baselines-microsoft-defender-antivirus.md)更新和应用基线主题，大致了解更新如何工作以及如何配置更新的其他方面 (如计划更新) 。
 
 > [!IMPORTANT]
-> Microsoft Defender 防病毒安全更新通过 Windows Update 提供，从 2019 年 10 月 21 日（星期一）开始，所有安全智能更新都将由 SHA-2 专门签名。 必须更新设备以支持 SHA-2，才能更新安全智能。 若要了解更多信息，请参阅[适用于 Windows 和 WSUS 的 2019 SHA-2 代码签名支持要求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
+> Microsoft Defender 防病毒安全更新通过 Windows Update 提供，并且从 2019 年 10 月 21 日星期一开始，所有安全智能更新都将由 SHA-2 专门签名。 必须更新设备以支持 SHA-2，才能更新安全智能。 若要了解更多信息，请参阅 [2019 SHA-2 Code Signing Support requirement for Windows and WSUS（ 2019 SHA-2 代码签名支持要求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)）。
 
 <a id="fallback-order"></a>
 
@@ -65,16 +65,16 @@ ms.locfileid: "62354620"
 - [网络文件共享](#unc-share)
 - [Microsoft 反恶意软件Microsoft Defender 防病毒 Microsoft 反恶意软件的安全智能](https://www.microsoft.com/wdsi/defenderupdates)<sup>更新 [[2](#fn1)]<sup></sup>
 
- (<a id="fn1">1</a>) Intune 内部定义更新服务器 - 如果使用 SCCM/SUP 获取 Microsoft Defender 防病毒 的定义更新，并且需要在客户端设备上被阻止时访问 Windows Update，你可以转换到共同管理，将终结点保护工作负载卸载到 Intune。 在 Intune 中配置的反恶意软件策略中，有一个"内部定义更新服务器"选项，可以配置为使用本地 WSUS 作为更新源。 这可以帮助您控制批准企业使用的官方 WU 服务器中的哪些更新，还有助于代理网络流量并将其保存到官方 Windows UPdates 网络。
+ (<a id="fn1">1</a>) Intune 内部定义更新服务器 - 如果你使用 SCCM/SUP 获取 Microsoft Defender 防病毒 的定义更新，并且需要在客户端设备上访问阻止的 Windows Update，你可以转换到共同管理，将终结点保护工作负载卸载到 Intune。 在 Intune 中配置的反恶意软件策略中，有一个"内部定义更新服务器"选项，可以配置为使用本地 WSUS 作为更新源。 这可以帮助您控制批准企业使用的官方 WU 服务器中的哪些更新，还有助于代理网络流量并将其保存到 UPdates Windows UPdates 网络。
 
- (<a id="fn1">2</a>) 策略和注册表中可能Microsoft 恶意软件防护中心 (MMPC) 名称中列出。
+ (<a id="fn1">2</a>) 你的策略和注册表中可能Microsoft 恶意软件防护中心 (MMPC) 名称中列出。
 
 为了确保最佳保护级别，Microsoft 更新允许快速发布，这意味着频繁进行较小的下载。 Windows服务器更新服务、Microsoft Endpoint Configuration Manager 和 Microsoft 安全智能更新源提供频率较少的更新。 因此，增量可能会更大，从而导致下载量更大。
 
 > [!IMPORTANT]
 > 如果在 Windows Server Update Service 或 Microsoft Update 之后将 [Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx) 安全智能页面更新设置为回退源，则仅在认为当前更新过期时，才从安全智能更新下载更新。  (默认情况下，这是连续七天无法从 Windows Server Update Service 或 Microsoft Update Services 应用更新) 。
 > 但是， [你可以设置保护报告为过期前的天数](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)。<p>
-> 从 2019 年 10 月 21 日星期一开始，安全智能更新将专门签署 SHA-2。 必须更新设备以支持 SHA-2，才能获取最新的安全智能更新。 若要了解更多信息，请参阅[适用于 Windows 和 WSUS 的 2019 SHA-2 代码签名支持要求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
+> 从 2019 年 10 月 21 日星期一开始，安全智能更新将专门签署 SHA-2。 必须更新设备以支持 SHA-2，才能获取最新的安全智能更新。 若要了解更多信息，请参阅 [2019 SHA-2 Code Signing Support requirement for Windows and WSUS（ 2019 SHA-2 代码签名支持要求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)）。
 
 每个源都有一些典型方案，这些方案取决于网络的配置方式，以及发布更新的频繁情况，如下表所述：
 
@@ -83,15 +83,15 @@ ms.locfileid: "62354620"
 |位置|示例应用场景|
 |---|---|
 |Windows 服务器更新服务|使用 Windows 服务器更新服务管理网络更新。|
-|Microsoft Update|希望终结点直接连接到 Microsoft 更新。 这可用于不定期连接到企业网络的终结点，或者如果您没有使用 Windows 更新服务来管理更新。|
-|文件共享|你拥有未连接 Internet 的设备 (虚拟机) 。 可以使用连接 Internet 的 VM 主机将更新下载到网络共享，VM 可从该共享获取更新。 请参阅 [VDI 部署指南](deployment-vdi-microsoft-defender-antivirus.md) ，了解如何在虚拟桌面基础结构和 VDI (中使用) 文件共享。|
+|Microsoft Update|希望终结点直接连接到 Microsoft 更新。 这可用于不定期连接到企业网络的终结点，或者如果您没有使用 Windows Server Update Service 管理更新。|
+|文件共享|你拥有未连接 Internet 的设备 (VM) 。 可以使用连接 Internet 的 VM 主机将更新下载到网络共享，VM 可从该共享获取更新。 请参阅 [VDI 部署指南](deployment-vdi-microsoft-defender-antivirus.md) ，了解如何在虚拟桌面基础结构和 VDI (中使用) 文件共享。|
 |Microsoft Endpoint Manager|你正在使用Microsoft Endpoint Manager更新终结点。|
-|安全智能更新Microsoft Defender 防病毒 Microsoft 反恶意软件 (以前称为 MMPC) |[确保你的设备已更新以支持 SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender 防病毒安全更新通过 Windows Update 提供，从 2019 年 10 月 21 日（星期一）开始，将专门签署 SHA-2。 <br/>下载最新的保护更新，因为最近感染或有助于为 [VDI](deployment-vdi-microsoft-defender-antivirus.md) 部署预配强大的基本映像。 此选项通常只用作最终回退源，而不是主源。 只有在指定的天数内无法从 Windows 服务器更新服务或 Microsoft Update 下载更新时，才使用[。](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
+|安全智能更新Microsoft Defender 防病毒 Microsoft 反恶意软件 (以前称为 MMPC) |[确保你的设备已更新以支持 SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。 Microsoft Defender 防病毒安全更新通过 Windows Update 提供，从 2019 年 10 月 21 日（星期一）开始，将专门签署 SHA-2。 <br/>下载最新的保护更新，因为最近感染或有助于为 [VDI](deployment-vdi-microsoft-defender-antivirus.md) 部署预配强大的基本映像。 此选项通常只用作最终回退源，而不是主源。 只有在指定的天数内无法从 Windows 服务器更新服务或 Microsoft Update 下载更新时，才能使用[。](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
 
 可以管理更新源与组策略、Microsoft Endpoint Configuration Manager、PowerShell cmdlet 和 WMI 一同使用的顺序。
 
 > [!IMPORTANT]
-> 如果将 Windows 服务器更新服务设置为下载位置，则必须批准更新，而不考虑用于指定位置的管理工具。 可以使用服务器更新服务设置自动审批Windows，当更新每天至少到达一次时，该规则可能会很有用。 若要了解更多信息，请参阅[同步独立 Windows Server Update Service 中的终结点保护更新](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
+> 如果将 Windows 服务器更新服务设置为下载位置，则必须批准更新，而不考虑用于指定位置的管理工具。 可以使用服务器更新服务设置自动审批Windows，当更新每天至少到达一次时，该规则可能会很有用。 若要了解更多信息，请参阅[在独立服务器更新服务中Windows终结点保护更新](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)。
 
 本文中的过程首先介绍如何设置顺序，然后介绍如何设置文件共享选项（如果已启用此选项）。
 
@@ -103,21 +103,21 @@ ms.locfileid: "62354620"
 
 3. 单击 **"策略** "， **然后单击"管理模板"**。
 
-4. 展开树以 **Windows签名** \> **Windows Defender** \> **的组件并** 配置以下设置：
+4. 展开树以 **Windows签名** \> **Windows Defender** \> **组件并** 配置以下设置：
 
    1. 双击" **定义用于下载安全智能更新** 的源的顺序"设置，并设置该选项为 **"已启用"**。
 
    2. 输入源的顺序，用单个管道分隔，例如： `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`，如以下屏幕截图所示。
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="列出源顺序的组策略设置。":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="列出源顺序的组策略设置" lightbox="../../media/wdav-order-update-sources.png":::
 
-   3. 选择“确定”。 这将设置保护更新源的顺序。
+   3. 选择“**确定**”。 这将设置保护更新源的顺序。
 
    4. 双击"定义 **文件共享以下载安全智能** 更新"设置，将该选项设置为 **"已启用"**。
 
    5. 指定文件共享源。 如果有多个源，则按使用顺序输入每个源，用单个管道分隔。 使用 [标准 UNC](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 表示法表示路径，例如： `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`。 如果未输入任何路径，则 VM 下载更新时将跳过此源。
 
-   6. 单击“**确定**”。 这将在定义源的顺序...组策略设置中引用该源时设置文件共享的顺序。
+   6. 单击“确定”。 这将在定义源的顺序...组策略设置中引用该源时设置文件共享的顺序。
 
 > [!NOTE]
 > 对于 Windows 10 版本 1703（包括 1809）来说，策略路径是 **Windows Components > Microsoft Defender 防病毒 > Signature Updates** For Windows 10， version 1903， the policy path is **Windows Components >Microsoft Defender 防病毒 >安全智能更新**
@@ -161,7 +161,7 @@ SignatureDefinitionUpdateFileSharesSource
 
 ## <a name="what-if-were-using-a-third-party-vendor"></a>如果我们使用的是第三方供应商，该做什么？
 
-本文介绍如何配置和管理 Microsoft Defender 防病毒。 但是，第三方供应商可用于执行这些任务。
+本文介绍如何配置和管理更新程序Microsoft Defender 防病毒。 但是，第三方供应商可用于执行这些任务。
 
 例如，假定 Contoso 已雇用 Fabrikam 来管理其安全解决方案，其中包括Microsoft Defender 防病毒。 Fabrikam 通常Windows [Management Instrumentation](./use-wmi-microsoft-defender-antivirus.md)、[PowerShell cmdlet](./use-powershell-cmdlets-microsoft-defender-antivirus.md) 或 Windows [命令行](./command-line-arguments-microsoft-defender-antivirus.md)来部署修补程序和更新。
 
@@ -188,7 +188,7 @@ SignatureDefinitionUpdateFileSharesSource
     MD C:\Temp\TempSigs\x86
     ```
 
-3. 从脚本下载 PowerShell [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)。
+3. 从以下版本下载 PowerShell [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)。
 
 4. 单击 **"手动下载"**。
 
@@ -246,7 +246,7 @@ SignatureDefinitionUpdateFileSharesSource
    > [!NOTE]
    > 创建计划任务后，可以在"任务计划程序"下的""下找到这些任务 `Microsoft\Windows\Windows Defender`。
 
-9. 手动运行每个任务并验证`mpam-d.exe``mpam-fe.exe``nis_full.exe`以下文件夹中 (、、) ， (您可能选择了不同的) ：
+9. 手动运行每个任务并`mpam-d.exe``mpam-fe.exe``nis_full.exe`验证以下文件夹中 (、、) ， (选择了不同的) ：
 
    - `C:\Temp\TempSigs\x86`
    - `C:\Temp\TempSigs\x64`
@@ -266,7 +266,7 @@ SignatureDefinitionUpdateFileSharesSource
     > [!NOTE]
     > 问题还可能是由于执行策略。
 
-10. 创建一个指向 (`C:\Temp\TempSigs` 的共享，例如) `\\server\updates` 。
+10. 创建一个指向 `C:\Temp\TempSigs` (的共享，例如) `\\server\updates` 。
 
     > [!NOTE]
     > 经过身份验证的用户至少必须具有"读取"访问权限。 此要求还适用于域计算机、共享和 NTFS (安全) 。

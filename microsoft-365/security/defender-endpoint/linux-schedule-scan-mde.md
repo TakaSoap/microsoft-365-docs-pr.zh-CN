@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302489"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467612"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
 
@@ -29,7 +29,7 @@ ms.locfileid: "61302489"
 
 若要运行 Linux 扫描，请参阅支持 [的命令](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)。
 
-Linux (和 Unix) 具有一个称为 **crontab** (的工具，) 任务计划程序工具可用于运行计划任务。
+Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。
 
 ## <a name="pre-requisite"></a>先决条件
 
@@ -88,14 +88,14 @@ CRON_TZ=America/Los_Angeles
 
 按"Esc"
 
-键入不带 `:wq` 双引号的" "。
+键入不带`:wq`双引号的""。
 
 > [!NOTE]
 > w == 写入，q == quit
 
 若要查看 cron 作业，请键入 `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp。":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp 页面" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>检查 cron 作业运行
 

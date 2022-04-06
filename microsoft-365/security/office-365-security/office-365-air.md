@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 70a5eba3eb78878cc1f15bdd711a3331e9af870a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e9cd2388d3551ccc0c180d20a92ec0c513472797
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680877"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473664"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for (AIR) 的自动调查和Office 365
 
@@ -122,7 +122,7 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 
 如果你已在 Microsoft Defender for Office 365 中使用 AIR 功能，你将在改进的 Microsoft 365 Defender [门户中看到一些更改](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)。
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心。":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心" lightbox="../../media/m3d-action-center-unified.png":::
 
 新的和改进的 <https://security.microsoft.com> Microsoft 365 Defender 门户将 [Microsoft Defender for Office 365](defender-for-office-365.md) 和 [Microsoft Defender for Endpoint 中的 AIR 功能汇集在一起](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。
 
@@ -138,7 +138,7 @@ Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意�
 
 下表列出了 Microsoft Defender for Office 365 中的 AIR 即将Office 365。
 
-|项目|更改了哪些方面？|
+|Item|更改了哪些方面？|
 |---|---|
 |**"调查"** 页|更新 **后的调查** 页面更符合 [你在 Microsoft Defender for Endpoint 中看到的内容](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 你将看到一些与新的统一调查视图一致的常规格式和 **样式** 设置更改。 例如，调查图具有更统一的格式。|
 |**"用户"** 选项卡|" **用户"** 选项卡现在是" **邮箱"** 选项卡。有关用户的详细信息列在"邮箱" **选项卡** 上。|

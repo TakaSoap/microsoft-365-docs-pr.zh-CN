@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 6b29bb45820c0fc74443f14fd2c6866bc026e969
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213965"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467282"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中打开预览体验
 
@@ -37,12 +37,12 @@ ms.locfileid: "62213965"
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，选择 **"设置** \> **终结点** \> **高级功能"。**
+1. 在导航窗格中，选择"**设置** \> **终结点** \> **高级功能"**。
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="设置和预览体验图像。":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="设置和预览体验" lightbox="../../media/atp-preview-features-new.png":::
 
 
-2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
+2. 在" **开"和** "关 **"之间切换设置** ，然后选择 **"保存首选项"**。
 
 ## <a name="related-topics"></a>相关主题
 - [更新 Microsoft Defender for Endpoint 中的常规设置](data-retention-settings.md)

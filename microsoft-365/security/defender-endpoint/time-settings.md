@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4353bbfc0ce11c4a767ca599ecb23a1ab4f77a56
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: adf693bded45dcb44abd8d1e7892e5edc7b65585
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213964"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467150"
 ---
 # <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender时区设置
 
@@ -32,7 +32,8 @@ ms.locfileid: "62213964"
 
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)。
 
-使用时区 **菜单时区** ![ 设置图标 1。](images/atp-time-zone.png) 配置时区并查看许可证信息。
+使用 **时区菜单** 配置时区并查看许可证信息。
+:::image type="content" source="images/atp-time-zone.png" alt-text="时区设置-1" lightbox="images/atp-time-zone.png":::
 
 ## <a name="time-zone-settings"></a>时区设置
 
@@ -42,13 +43,15 @@ ms.locfileid: "62213964"
 
 Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间。
 
-你的当前时区设置显示在 Microsoft Defender 设置中。 You can change the displayed time zone in the **Time zone** menu Under 设置 > **Security center**.
+你的当前时区设置显示在 Microsoft Defender for Endpoint 菜单中。 可以在"时区"菜单中更改显示的 **时区** 。
+
+:::image type="content" source="images/atp-time-zone-menu.png" alt-text="时区设置-2" lightbox="images/atp-time-zone-menu.png":::
 
 ### <a name="utc-time-zone"></a>UTC 时区
 
 默认情况下，Microsoft Defender for Endpoint 使用 UTC 时间。
 
-将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
+将 Microsoft Defender for Endpoint 时区设置为 UTC 将显示所有用户的所有 (、事件和其他) UTC 格式的时间戳。 这可以帮助在全球不同位置工作的安全分析师在调查事件时使用相同的时间戳。
 
 ### <a name="local-time-zone"></a>本地时区
 
@@ -64,9 +67,10 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 
 设置时区：
 
-1. 单击 **"设置** 门户 [时区Microsoft 365 Defender](https://security.microsoft.com/) ![ 图标3 中的"设置"菜单 ](images/atp-time-zone.png) 。
-2. 选择 **"安全中心"。**
-3. 选择 **时区，** 将时区设置为 UTC 或本地时区。
+1. 单击 **时区** 菜单。
+   :::image type="content" source="images/atp-time-zone.png" alt-text="时区设置-3" lightbox="images/atp-time-zone.png":::
+1. 选择 **时区 UTC** 指示器。
+1. 选择 **时区 UTC** 或本地时区，例如 -7：00。
 
 ### <a name="regional-settings"></a>区域设置
 
@@ -99,4 +103,4 @@ IE 和 Microsoft Edge使用"控制面板"中"时钟、语言和地区"选项中�
 
 ##### <a name="decimal-symbol-used-in-numbers"></a>数字中使用的小数符号
 
-使用的小数符号始终是一个点，即使在"区域设置"中的"数字 **"格式** 设置中选择了 **逗号** 。 例如，15，5K 显示为 15.5K。
+使用的小数符号始终是一个点，即使在"区域设置"中的" **数字"格式** 设置中选择了 **逗号** 。 例如，15，5K 显示为 15.5K。

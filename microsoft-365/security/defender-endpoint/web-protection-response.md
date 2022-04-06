@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中响应 Web 威胁
-description: 响应与恶意和不需要的网站相关的警报。 了解 Web 威胁防护如何通过最终用户的 Web 浏览器和通知Windows通知
+description: 响应与恶意和不需要的网站相关的警报。 了解 Web 威胁防护如何通过最终用户的 Web 浏览器和通知通知Windows通知
 keywords: Web 保护， Web 威胁防护， Web 浏览， 警报， 响应， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器， 通知， 最终用户， Windows 通知， 阻止页面，
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cefeb36b43b0c59663935b0dd3a0155e80e44f33
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3a7202c6e522441ecbbfd738d3533a242c966f8c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168854"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467524"
 ---
 # <a name="respond-to-web-threats"></a>响应 web 威胁
 
@@ -38,7 +38,7 @@ ms.locfileid: "61168854"
 
 Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 活动生成以下警报：
 
-- **网络保护阻止的** 可疑连接：当在阻止模式下网络保护停止尝试访问自定义指示器列表中的恶意网站或网站时，将生成 *此* 警报
+- **网络保护阻止的** 可疑连接：当在阻止模式下网络保护停止尝试访问自定义指示器列表中的恶意网站或网站时，将 *生成此* 警报
 - **网络保护检测到的** 可疑连接：当网络保护在仅审核模式下检测到尝试访问自定义指示器列表中的恶意网站或网站时 *，将生成此* 警报
 
 每个警报都提供以下信息：
@@ -48,10 +48,10 @@ Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 
 - 自定义指示器列表中的恶意 URL 或 URL
 - 针对响应器的建议操作
 
-![与 Web 威胁防护相关的警报的图像。](images/wtp-alert.png)
+:::image type="content" source="images/wtp-alert.png" alt-text="与 Web 威胁防护相关的警报" lightbox="images/wtp-alert.png":::
 
 > [!NOTE]
-> 为了减少警报量，Microsoft Defender for Endpoint 每天将同一设备上同一域的 Web 威胁检测合并为单个警报。 仅生成一个警报，并计入 [Web 保护报告](web-protection-monitoring.md)。
+> 为了减少警报量，Microsoft Defender for Endpoint 每天将同一设备上同一域的 Web 威胁检测合并为单个警报。 仅生成一个警报并计入 [Web 保护报告](web-protection-monitoring.md)。
 
 ## <a name="inspect-website-details"></a>检查网站详细信息
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 
 - 与网站相关的事件和警报
 - 在组织的活动中查看网站频率
 
-    ![域或 URL 实体详细信息页面的图像。](images/wtp-website-details.png)
+  :::image type="content" source="images/wtp-website-details.png" alt-text="域或 URL 实体详细信息页" lightbox="images/wtp-website-details.png":::
 
 [详细了解 URL 或域实体页面](investigate-domain.md)
 
@@ -71,14 +71,15 @@ Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 
 
 [了解有关设备实体页面的信息](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>为最终用户Windows Web 浏览器和通知
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>向最终用户Windows Web 浏览器和通知
 
-借助适用于终结点的 Microsoft Defender 中的 Web 保护，将阻止最终用户使用 Microsoft Edge浏览器访问恶意或不需要的网站。 由于阻止是由网络 [保护执行的](network-protection.md)，因此他们将从 Web 浏览器看到一个常规错误。 他们还将看到来自用户Windows。
+借助 Microsoft Defender for Endpoint 中的 Web 保护，最终用户将阻止其使用 Microsoft Edge或其他浏览器访问恶意或不需要的网站。 由于阻止由网络 [保护执行](network-protection.md)，因此他们将看到来自 Web 浏览器的一般错误。 他们还将看到来自用户Windows。
 
-![显示 403 Microsoft Edge 403 错误和错误通知Windows图像。 ](images/wtp-browser-blocking-page.png)
-*Web 威胁在Microsoft Edge*
+:::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="The Microsoft Edge showing a 403 error， and the Windows notification" lightbox="images/wtp-browser-blocking-page.png":::
 
-![Chrome Web 浏览器的图像，显示安全连接警告和Windows通知。 ](images/wtp-chrome-browser-blocking-page.png)
+*Web 威胁在 Microsoft Edge*
+
+:::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="Chrome Web 浏览器显示安全连接警告和Windows通知" lightbox="images/wtp-chrome-browser-blocking-page.png":::
 *在 Chrome 上阻止的 Web 威胁*
 
 ## <a name="related-topics"></a>相关主题

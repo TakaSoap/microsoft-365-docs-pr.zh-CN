@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 36df54090e80de180ffa16f41641daa6b6966eb9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2a12a4198b91ab6ec91e0b49b9de3647e25d0be0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681317"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473840"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>常见的零信任标识和设备访问策略
 
@@ -76,7 +76,7 @@ Here's a one-page PDF summary:
 
 下面是要求 MFA 的组分配和排除的示例。
 
-![MFA 策略的组分配和排除示例。](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png" alt-text="MFA 策略的示例组分配和排除项" lightbox="../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png":::
 
 以下是结果：
 
@@ -94,7 +94,7 @@ Here's a one-page PDF summary:
 
 作为这些建议Azure AD创建的所有组都必须创建为Microsoft 365组。 这一点对于在保护文档和文档安全时部署Microsoft Teams SharePoint。
 
-![创建组Microsoft 365的示例。](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="创建Microsoft 365组" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>基于登录风险要求 MFA
 
@@ -111,7 +111,7 @@ Here's a one-page PDF summary:
 
 在" **分配"** 部分：
 
-|设置|属性|值|注意|
+|Setting|属性|值|注意|
 |---|---|---|---|
 |用户和组|包括|**Select users and groups > Users and groups**： Select specific groups containing targeted user accounts.|从包含试点用户帐户的组开始。|
 ||排除|**用户和组**：选择条件访问例外组;服务帐户 (应用标识) 。|应根据需要临时修改成员身份。|
@@ -123,7 +123,7 @@ Here's a one-page PDF summary:
 
 根据目标保护级别应用风险级别设置。
 
-|保护级别|所需的风险级别值|操作|
+|保护级别|所需的风险级别值|Action|
 |---|---|---|
 |起点|高、中|检查两者。|
 |企业|高、中、低|检查全部三者。|
@@ -131,7 +131,7 @@ Here's a one-page PDF summary:
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|操作|
+|设置|属性|值|Action|
 |---|---|---|---|
 |授予|**Grant access**||选择|
 |||**需要多重身份验证**|支票|
@@ -160,7 +160,7 @@ Here's a one-page PDF summary:
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|操作|
+|设置|属性|值|Action|
 |---|---|---|---|
 |授予|**阻止访问**||选择|
 ||**需要所有已选控件**||选择|
@@ -181,14 +181,14 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在" **分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Users|包括|**所有用户**|选择|
 |用户风险|**High**||选择|
 
 在"第二 **个工作分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Access|**允许访问**||选择|
 |||**需要更改密码**|支票|
@@ -215,7 +215,7 @@ APP 数据保护框架分为三个不同的配置级别，每个级别基于上�
 
 使用零信任标识和设备访问配置[](microsoft-365-policies-configurations.md)中概述的原则，起始点和 Enterprise 保护层与级别 2 企业增强数据保护设置紧密映射。 专用安全保护层与级别 3 企业高数据保护设置紧密映射。
 
-|保护级别|应用保护策略|更多信息|
+|保护级别|应用保护策略|详细信息|
 |---|---|---|
 |起点|[第 2 级增强数据保护](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|级别 2 中强制执行的策略设置包括为级别 1 建议的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。|
 |企业|[第 2 级增强数据保护](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|级别 2 中强制执行的策略设置包括为级别 1 建议的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。|
@@ -300,7 +300,7 @@ iOS/iPadOS 安全配置框架分为几个不同的配置方案，为个人拥有
 
 使用零信任标识和设备访问配置[](microsoft-365-policies-configurations.md)中概述的原则，起始点Enterprise保护层与级别 2 增强的安全设置紧密映射。 专用安全保护层紧密映射到级别 3 高安全设置。
 
-|保护级别  |设备策略 |更多信息  |
+|保护级别  |设备策略 |详细信息  |
 |---------|---------|---------|
 |起点     |增强的安全性（级别 2）         |级别 2 中强制执行的策略设置包括为级别 1 建议的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
 |企业     |增强的安全性（级别 2）         |级别 2 中强制执行的策略设置包括为级别 1 建议的所有策略设置，并且仅添加或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。         |
@@ -332,7 +332,7 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 对于 Android Enterprise工作配置文件设备：
 
-|保护级别  |设备策略 |更多信息  |
+|保护级别  |设备策略 |详细信息  |
 |---------|---------|---------|
 |起点     |工作配置文件：基本安全 (级别 1)       |不适用         |
 |企业     |工作配置文件：基本安全 (级别 1)          |不适用         |
@@ -348,7 +348,7 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 有关 **设备运行状况> Windows证明服务评估规则**，请参阅此表。
 
-|属性|值|操作|
+|属性|值|Action|
 |---|---|---|
 |需要 BitLocker|需要|选择|
 |要求在设备上启用安全启动|需要|选择|
@@ -360,7 +360,7 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 有关 **系统安全性**，请参阅此表。
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Password|需要密码才可解锁移动设备|需要|选择|
 ||简单密码|阻止|选择|
@@ -381,9 +381,9 @@ Android Enterprise安全配置框架分为几个不同的配置方案，为工�
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
-|Microsoft Defender for Endpoint 规则Microsoft Endpoint Manager管理中心|[要求设备处于计算机风险分数或处于计算机风险分数之下](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|选择|
+|Microsoft Defender for Endpoint 规则Microsoft Endpoint Manager管理中心|[要求设备处于计算机风险分数或处于计算机风险分数之下](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|选择|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)
@@ -442,6 +442,6 @@ To require compliant PCs:
 
 ## <a name="next-step"></a>后续步骤
 
-[![步骤 3：来宾和外部用户的策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![步骤 3：来宾和外部用户的策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
 
 [了解针对来宾用户和外部用户的策略建议](identity-access-policies-guest-access.md)

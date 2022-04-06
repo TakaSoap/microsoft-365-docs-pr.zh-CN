@@ -1,6 +1,6 @@
 ---
 title: 在 Windows 上运行客户端分析器
-description: 了解如何在 Windows 运行 Microsoft Defender for Endpoint Client Analyzer。
+description: 了解如何在终结点客户端分析器上运行 microsoft Defender Windows。
 keywords: 客户端分析器， 传感器疑难解答， 分析器， mdeanalyzer， windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62281527"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467128"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
@@ -55,23 +55,23 @@ ms.locfileid: "62281527"
 > [!NOTE]
 > 在 Windows 10/11、Windows Server 2019/2022 或安装了新式统一解决方案的 Windows Server 2012R2/2016 [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。
 >
-> 在 Windows 8.1、Windows Server 2016 或任何之前的操作系统版本（其中 Microsoft Monitoring Agent (MMA) `MDEClientAnalyzerPreviousVersion.exe` 用于载入）上，客户端分析器脚本会调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时调用Microsoft Monitoring Agent网络`TestCloudConnection.exe`数据通道 URL 的连接工具。
+> 在 Windows 8.1、Windows Server 2016 或任何之前的操作系统版本（其中 Microsoft Monitoring Agent (MMA) `MDEClientAnalyzerPreviousVersion.exe` 用于载入）上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时调用Microsoft Monitoring Agent网络`TestCloudConnection.exe`数据通道 URL 的连接工具。
 
 
 分析工具中包含的所有 PowerShell 脚本和模块都由 Microsoft 签名。
 如果文件已经过任何修改，则分析器应退出，并出现以下错误：
 
-![客户端分析器错误的图像](images/sigerror.png)
+:::image type="content" source="images/sigerror.png" alt-text="客户端分析器错误" lightbox="images/sigerror.png":::
 
 
 如果显示此错误，则issuerInfo.txt输出将包含有关发生此错误的原因和受影响的文件的详细信息：
 
-![颁发者信息的图像](images/issuerinfo.png)
+:::image type="content" source="images/issuerinfo.png" alt-text="颁发者信息" lightbox="images/issuerinfo.png":::
 
 
 修改MDEClientAnalyzer.ps1后的示例内容：
 
-![修改后的 ps1 文件的图像](images/modified-ps1.png)
+:::image type="content" source="images/modified-ps1.png" alt-text="修改后的 ps1 文件" lightbox="images/modified-ps1.png":::
 
 
 
@@ -82,7 +82,7 @@ ms.locfileid: "62281527"
 >
 > - 运行分析器的窗口的版本。
 > - 计算机上事件日志通道的可用性。
-> - 如果计算机尚未EDR， (感知的启动状态将) 。
+> - 如果计算机尚未载入EDR， (感知的启动状态将) 。
 > - 如果分析器命令使用了高级疑难解答参数。
 
 默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项目。
@@ -156,7 +156,7 @@ ms.locfileid: "62281527"
 
   - OperationsManager.evtx
 
-    说明：导出Microsoft Monitoring Agent事件日志
+    说明：导出 Microsoft Monitoring Agent 事件日志
 
 
 

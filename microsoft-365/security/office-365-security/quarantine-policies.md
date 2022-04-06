@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用隔离策略来控制用户可以对隔离邮件执行哪些操作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f015951fec4ea8fb9d433c8b48ccb26cd9e1222
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321287"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467106"
 ---
 # <a name="quarantine-policies"></a>隔离策略
 
@@ -42,10 +42,6 @@ ms.locfileid: "63321287"
 
 下表介绍了预设权限组中包含的各个隔离策略权限：
 
-<br>
-
-****
-
 |权限|无访问权限|受限访问|完全访问权限|
 |---|:---:|:---:|:---:|
 |**阻止发件人 (** _PermissionToBlockSender_) ||![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
@@ -53,11 +49,8 @@ ms.locfileid: "63321287"
 |**预览** (_PermissionToPreview_) ||![复选标记。](../../media/checkmark.png)|![复选标记。](../../media/checkmark.png)|
 |**允许收件人使用** _PermissionToRelease_ (将邮件从隔离) |||![复选标记。](../../media/checkmark.png)|
 |**允许收件人请求从隔离区** 释放的邮件 (_PermissionToRequestRelease_) ||![复选标记](../../media/checkmark.png)||
-|
 
 下表介绍了默认隔离策略及其关联权限组以及是否启用隔离通知：
-
-<br>
 
 |默认隔离策略|使用的权限组|启用隔离通知？|
 |---|---|---|
@@ -151,10 +144,6 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进�
 
 下表介绍了各个权限的必需顺序和值：
 
-<br>
-
-****
-
 |权限|十进制值|二进制值|
 |---|:---:|:---:|
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
@@ -165,7 +154,6 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进�
 |PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
-|
 
 <sup>\*</sup>值 0 不会在隔离邮件的详细信息中隐藏"查看邮件头"按钮， (该按钮始终) 。
 
@@ -174,10 +162,6 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进�
 <sup>\*\*\*</sup> 不要将两个值都设置为 1。 将一个设置为 1，另一个设置为 0，或同时设置为 0。
 
 对于"受限访问权限"，所需的值为：
-
-<br>
-
-****
 
 |权限|受限访问|
 |---|:--:|
@@ -191,7 +175,6 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进�
 |PermissionToDelete|1|
 |二进制值|00011011|
 |使用的小数值|27|
-|
 
 本示例创建名为 LimitedAccess 的新隔离策略，并启用隔离通知，该策略分配"受限"访问权限，如上表所述。
 
@@ -207,10 +190,6 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
 在 _隔离_ 电子邮件的支持保护功能中，可以将隔离策略分配给可用的隔离操作。 下表介绍了隔离邮件的功能和隔离策略的可用性：
 
-<br>
-
-****
-
 |功能|支持隔离策略？|使用的默认隔离策略|
 |---|:---:|---|
 |[反垃圾邮件策略](configure-your-spam-filter-policies.md)： <ul><li>**Spam** (_SpamAction_) </li><li>**高可信度垃圾邮件** (_HighConfidenceSpamAction_) </li><li>**Phishing (** _PhishSpamAction_) </li><li>**高可信度网络钓鱼** (_HighConfidencePhishAction_) </li><li>**批量** (_BulkSpamAction_) </li></ul>|是|<ul><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li><li>AdminOnlyAccessPolicy (无法访问) </li><li>DefaultFullAccessPolicy (<sup>\*</sup> 完全访问权限) </li></ul>|
@@ -218,7 +197,6 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 |[反恶意软件策略](configure-anti-malware-policies.md)：始终隔离所有检测到的邮件。|是|AdminOnlyAccessPolicy (无法访问) |
 |[保险箱附件保护](safe-attachments.md)： <ul><li>"启用"和"操作"策略保险箱附件 (_隔离为恶意软件__)_</li><li>附件中隔离为恶意软件的文件保险箱[附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>是</li><li>否</li></ul>|<ul><li>AdminOnlyAccessPolicy (无法访问) </li><li>无</li></ul>|
 |[邮件流规则](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (操作) 传输规则： **将** 邮件发送到托管隔离邮箱 (_隔离_) 。|否|不适用|
-|
 
 <sup>\*</sup> 如 [本文前面所述](#full-access-permissions-and-quarantine-notifications)，您的组织可能使用 NotificationEnabledPolicy 而不是 DefaultFullAccessPolicy。 这两个隔离策略之间的唯一区别是隔离通知在 NotificationEnabledPolicy 中打开，在 DefaultFullAccessPolicy 中关闭。
 
@@ -247,7 +225,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
    **注意**：创建新策略时，空白的"选择隔离策略"值指示已使用该裁定的默认隔离策略。 稍后编辑策略时，空白值将替换为实际的默认隔离策略名称，如上表所述。
 
-   ![反垃圾邮件策略中的隔离策略选择。](../../media/quarantine-tags-in-anti-spam-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="反垃圾邮件策略中的隔离策略选择" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
 
 有关创建和修改反垃圾邮件策略的完整说明，请参阅在 [EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -327,7 +305,7 @@ EOP 和 Defender for Office 365。 用户模拟保护、域模拟保护和邮箱
 
    **注意**：创建新策略时，空白的 **"** 应用隔离策略"值指示使用该操作的默认隔离策略。 稍后编辑策略时，空白值将替换为实际的默认隔离策略名称，如上表所述。
 
-   ![防钓鱼策略中的隔离策略选择。](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="防钓鱼策略中的隔离策略选择" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
 以下主题提供了创建和修改反网络钓鱼策略的完整说明：
 
@@ -515,7 +493,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      以下屏幕截图显示了隔离显示名称中的自定义邮件：
 
-     ![自定义发件人显示名称隔离通知中。](../../media/quarantine-tags-esn-customization-display-name.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="隔离通知显示名称自定义发件人地址" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
    - **免责声明**：将自定义免责声明添加到隔离通知的底部。 您组织的本地化文本 **（免责声明：** ）始终先包含，后跟您指定的文本。
 
@@ -523,19 +501,19 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      以下屏幕截图显示了隔离通知中的自定义免责声明：
 
-     ![隔离通知底部的自定义免责声明。](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="隔离通知底部的自定义免责声明" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
    - **选择语言**：隔离通知已根据收件人的语言设置进行本地化。 您可以为"显示名称"和"免责声明"值指定 **不同语言的****自定义** 文本。
 
      至少从第一种语言框中选择一种语言，**然后单击添加。** 可以通过单击每种语言后的 **"添加"** 来选择多种语言。 部分语言框显示你选择的所有语言：
 
-     ![隔离策略的全局隔离通知设置中第二种语言框中选定的语言。](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="隔离策略的全局隔离通知设置中第二种语言框中选定的语言" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
    - **使用我的公司徽标**：选择此选项可替换隔离通知顶部使用的默认 Microsoft 徽标。 在这样做之前，你需要按照自定义组织的自定义Microsoft 365[主题](../../admin/setup/customize-your-organization-theme.md)中的说明上载自定义徽标。
 
      以下屏幕截图显示了隔离通知中的自定义徽标：
 
-     ![隔离通知中的自定义徽标。](../../media/quarantine-tags-esn-customization-logo.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="隔离通知中的自定义徽标" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
    - **每两天发送一次最终用户 ()**：选择隔离通知的频率。
 
@@ -670,14 +648,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **从隔离区中删除**
   - **阻止发件人**
 
-  ![隔离策略授予用户受限访问权限时隔离邮件详细信息中的可用按钮。](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="隔离策略授予用户受限访问权限时隔离邮件详细信息中的可用按钮" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
 
 - **隔离通知**：以下按钮可用：
   - **阻止发件人**
   - **请求释放**
   - **审阅**
 
-  ![隔离策略授予用户受限访问权限时隔离通知中的可用按钮。](../../media/quarantine-tags-esn-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="隔离策略授予用户受限访问权限时隔离通知中的可用按钮" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
 
 #### <a name="full-access"></a>完全访问权限
 
@@ -690,14 +668,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **从隔离区中删除**
   - **阻止发件人**
 
-  ![隔离策略授予用户完全访问权限时隔离邮件详细信息中的可用按钮。](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="隔离策略授予用户完全访问权限时隔离邮件详细信息中的可用按钮" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
 
 - **隔离通知**：以下按钮可用：
   - **阻止发件人**
   - **发布**
   - **审阅**
 
-  ![隔离策略授予用户完全访问权限时隔离通知中的可用按钮。](../../media/quarantine-tags-esn-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="隔离策略授予用户完全访问权限时隔离通知中的可用按钮" lightbox="../../media/quarantine-tags-esn-full-access.png":::
 
 ### <a name="individual-permissions"></a>个人权限
 

@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何集成 Azure PIM，以便向用户授予即时、限时访问权限以在 Microsoft Defender for Office 365 中执行已提升特权任务，从而降低数据风险。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3be90ff1113e25ea418aaf1a25b12574b3bbbe1f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c45edc7ab7f90c98baecd15565508bc9a49f39a8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61939473"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473400"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) 以及将其与 Microsoft Defender for Office 365 配合使用的原因
@@ -58,7 +58,7 @@ Privileged Identity Management (PIM) 为 Azure 功能，设置后，用户便可
 > [!NOTE]
 > 有关 Privileged Identity Management 的快速回顾，请参阅 [此视频](https://www.youtube.com/watch?v=VQMAg0sa_lE)。
 
-:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="请确保在 Privileged Access Management 中审查安全信息读取者角色的设置。此处，你将看到 PIM 激活的最长持续时间为 8 小时。":::
+:::image type="content" source="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png" alt-text="角色设置详细信息 - 安全读取器页" lightbox="../../media/pim-mdo-role-setting-details-for-security-reader-show-8-hr-duration.png":::
 
 ***步骤 2***：为其他任务创建所需的第二个(已提升)权限组并分配资格。
 
@@ -99,7 +99,7 @@ Privileged Identity Management (PIM) 为 Azure 功能，设置后，用户便可
 3. 如果你尝试使用威胁资源管理器清除电子邮件，则会收到错误提示，指出需要其他权限。
 4. 第二次 PIM 到已提升角色。在短暂延迟后，现在应该能够清除电子邮件，且不会出现问题。
 
-   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="如果我们通过安全信息读取者 PIM 角色添加的用户 (Alex)尝试删除可疑电子邮件，则其将收到一条消息，指出‘你需要‘搜索并清除’角色才可对此电子邮件执行操作。请联系管理员以获取角色分配或将此电子邮件添加到事件。":::
+   :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="“电子邮件”选项卡下的“操作”窗格" lightbox="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG":::
 
 管理角色和权限（如“搜索并清除角色”）的永久分配不适用于零信任安全计划，但如你所见，PIM 可用于授予对所需工具集的实时访问权限。
 

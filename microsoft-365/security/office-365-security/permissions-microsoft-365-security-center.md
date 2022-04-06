@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd76eed421f4d926a956508961dc44a643dbb125
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681713"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467084"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的权限
 
@@ -55,7 +55,7 @@ Microsoft 365 Defender 门户中的权限以基于角色的访问控制 (RBAC) �
 
 Microsoft 365 Defender 门户>包括适用于最常见任务的默认角色组以及需要分配的功能。我们一般建议只需将单个用户作为 **成员** 添加到默认角色组中。
 
-![显示角色组与角色和成员之间关系的图表。](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="角色组与其角色和成员的关系" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的角色和角色组
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender 门户中的 <https://security.microsoft.com/securityperm
 
 - **电子邮件和协作角色**：这些角色组与安全与合规中心中可用的角色组相同，但可以直接在 Microsoft 365 Defender 门户中管理它们。 在此处分配的权限特定于 Microsoft 365 Defender 门户、Microsoft 365 合规中心和安全与合规性中心，不包括其他 Microsoft 365 工作负载所需的所有权限。
 
-![Microsoft 365 Defender 门户中的权限和角色页面。](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="Microsoft 365 Defender 门户中的权限和角色页面" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender 门户中的 Azure AD 角色
 
@@ -73,7 +73,7 @@ Microsoft 365 Defender 门户中的 <https://security.microsoft.com/securityperm
 
 选择某个角色时，会显示一个包含角色说明和用户分配的详细信息飞出。 但是要管理这些分配，您需要在详细信息弹出按钮中单击 **管理 Azure AD 中的成员**。
 
-![链接以管理 Azure Active Directory 中的权限。](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="管理 Azure Active Directory 中的权限的链接" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 有关详细信息，请参阅[查看和分配 Azure Active Directory 中的管理员角色](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)。
 

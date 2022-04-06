@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b4b47b5cd5b7f345d21f2fa60deec736d931c62f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682430"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473422"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -39,7 +39,7 @@ ms.locfileid: "63682430"
 
 为了保护电子邮件，下图说明了从通用标识和设备访问策略更新的策略。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="用于保护对应用程序的访问权限的策略更新Exchange。" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="用于保护对 Microsoft 服务的访问权限的策略更新Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 请注意添加用于阻止 ActiveSync Exchange Online的新策略。 这将强制使用移动Outlook。
 
@@ -108,7 +108,7 @@ Exchange ActiveSync可用于同步桌面和移动设备上的消息和日历数�
 
 ## <a name="next-steps"></a>后续步骤
 
-![步骤 4：云Microsoft 365策略。](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="云应用Microsoft 365策略" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 为：配置条件访问策略：
 

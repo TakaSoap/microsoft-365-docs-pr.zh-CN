@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex 中的预SharePoint Syntex
+title: Microsoft SharePoint Syntex 中的预内置模型SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -8,15 +8,20 @@ audience: admin
 ms.topic: article
 ms.customer: intro-overview
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解 Microsoft SharePoint Syntex 中的预SharePoint Syntex。
+ms.openlocfilehash: 1146e4947392ce0e0848632e55f22e5b8b8d2d91
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569039"
 ---
-
-# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的预SharePoint Syntex
+# <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 中的预内置模型SharePoint Syntex
 
 除了文档[了解模型和](document-understanding-overview.md)[表单处理模型](form-processing-overview.md)之外，SharePoint Syntex还提供预构建的模型以自动提取信息。
 
@@ -28,9 +33,11 @@ description: 了解 Microsoft SharePoint Syntex 中的预SharePoint Syntex。
 
 发布模型后，请使用内容中心将其应用到你有权访问的任何 SharePoint 文档库。  
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
-- 支持的文件格式：JPEG、PNG、BMP、TIFF 和 PDF (嵌入或扫描的文本) 。
+- 支持的文件格式：JPEG、PNG、BMP、TIFF 和 PDF (嵌入或扫描) 。
+
+- 支持的语言：目前仅支持来自美国英文发票。 支持来自澳大利亚、加拿大、英国美国英国和印度英语销售收据。
 
 - 嵌入文本的 PDF 最好消除字符提取和位置错误的可能性。
 
@@ -48,7 +55,7 @@ description: 了解 Microsoft SharePoint Syntex 中的预SharePoint Syntex。
 
 请注意基于文本的文件Microsoft Office OCR 扫描的文件 (PDF、图像或 TIFF 文件) ：
 
-- Office：在针对文档库中的文件运行时， (截断 64，000 个字符) 。
+- Office：针对文档库中的文件运行时， (截断 64，000 个字符) 。
 
 - OCR 扫描的文件：存在 20 个页面限制。  
 

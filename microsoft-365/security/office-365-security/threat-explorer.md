@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b3ff79ead1e337bb78772109e57d34836d0f4ec9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 29a00c20333c27fcd8138063f31316241b784572
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681603"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467018"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -41,7 +41,7 @@ ms.locfileid: "63681603"
 
 资源管理器或实时检测可帮助安全运营团队高效地调查和响应威胁。 报告类似于下图：
 
-![转到威胁管理 \> 资源管理器。](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="安全与合规门户中的&quot;资源管理器&项" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 通过此报告，您可以：
 
@@ -61,10 +61,10 @@ ms.locfileid: "63681603"
 查看单个警报时，警报 ID 在 URL 中可用;示例为 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`。
 
 > [!div class="mx-imgBorder"]
-> ![筛选警报 ID。](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="警报 ID 筛选" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![警报 ID（详细信息）飞出。](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="详细信息中的警报 ID 飞出" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>将资源管理器 (和实时检测) 试用租户的数据保留和搜索限制从 7 天扩展到 30 天
 
@@ -89,7 +89,7 @@ ms.locfileid: "63681603"
 **电子邮件网格** 中的"标记"列包含已应用于发件人或收件人邮箱的所有标记。 默认情况下，优先显示优先帐户等系统标记。
 
 > [!div class="mx-imgBorder"]
-> ![电子邮件网格视图中的筛选器标记。](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="电子邮件网格视图中的 Filter 标记" lightbox="../../media/tags-grid.png":::
 
 #### <a name="filtering"></a>筛选
 
@@ -98,7 +98,7 @@ ms.locfileid: "63681603"
 [![筛选器标记。](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![不是筛选器标记。](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="未筛选的标记" lightbox="../../media/tags-filter-not.png":::
 
 #### <a name="email-detail-flyout"></a>电子邮件详细信息飞出
 
@@ -106,14 +106,14 @@ ms.locfileid: "63681603"
 有关发件人和收件人的单个标记的信息还扩展到导出的 CSV 数据，您可以在两个单独的列中查看这些详细信息。
 
 > [!div class="mx-imgBorder"]
-> ![电子邮件详细信息标记。](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="&quot;电子邮件详细信息&quot;标记" lightbox="../../media/tags-flyout.png":::
 
 URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼或所有电子邮件视图，然后转到 **URL** 或 **URL 单击** 选项卡。选择单个 URL 飞出视图有关该 URL 的单击的其他详细信息，包括与该单击关联的标记。
 
 ### <a name="updated-timeline-view"></a>更新的时间线视图
 
 > [!div class="mx-imgBorder"]
-> ![URL 标记。](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="URL 标记" lightbox="../../media/tags-urls.png":::
 >
 观看[此视频](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)了解更多信息。
 
@@ -137,12 +137,12 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 现在，可以在"电子邮件"飞出"详细信息"选项卡上看到 URL **的特定** 威胁。威胁可能是 *恶意软件、**网络钓鱼*、*垃圾邮件* 或 *无*) 
 
 > [!div class="mx-imgBorder"]
-> ![URL 威胁。](../../media/URL_Threats.png)
+> :::image type="content" source="../../media/URL_Threats.png" alt-text="URL 威胁" lightbox="../../media/URL_Threats.png":::
 
 ### <a name="updated-timeline-view-upcoming"></a>更新了日程表视图 (即将推出的) 
 
 > [!div class="mx-imgBorder"]
-> ![更新了时间线视图。](../../media/Email_Timeline.png)
+> :::image type="content" source="../../media/Email_Timeline.png" alt-text="更新的时间线视图" lightbox="../../media/Email_Timeline.png":::
 
 时间线视图标识所有传递和传递后事件。 它包括有关在这些事件的子集时确定的威胁的信息。 时间线视图还提供了有关对项目执行 (操作（如 ZAP 或手动修正) ）的信息，以及该操作的结果。 时间线视图信息包括：
 
@@ -159,7 +159,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 **原始送达** 位置将提供有关电子邮件最初送达位置的更多信息。 **最新送达位置** 将说明电子邮件在系统操作（如 *ZAP* ）或管理员操作（如 *移动到已删除项目）之后登录的位置*。 最新送达位置旨在告知管理员邮件的上次已知位置传递后或任何系统/管理员操作。 它不包括对电子邮件的任何最终用户操作。 例如，如果用户删除了邮件或将邮件移动到 archive/pst，则邮件"传递"位置将不会更新。 但是，如果系统操作更新了位置 (例如 ZAP 导致电子邮件移动到隔离邮箱) ，则最新送达位置将显示为"隔离"。
 
 > [!div class="mx-imgBorder"]
-> ![更新了送达位置。](../../media/Updated_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Delivery_Location.png" alt-text="更新的传递位置" lightbox="../../media/Updated_Delivery_Location.png":::
 
 > [!NOTE]
 > 在某些情况下，传递位置 **和****传递操作** 可能显示为"未知"：
@@ -169,7 +169,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 > - **如果已尝试** 执行管理/系统操作（ (ZAP) ，但未找到邮件，则最新的送达位置可能未知。 通常，该操作发生在用户移动或删除邮件之后。 在这种情况下，请验证 **日程表视图中的"结果/** 详细信息"列。 查找"用户移动或删除的邮件"语句。
 
 > [!div class="mx-imgBorder"]
-> ![时间线的传递位置。](../../media/Updated_Timeline_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Timeline_Delivery_Location.png" alt-text="时间线的传递位置" lightbox="../../media/Updated_Timeline_Delivery_Location.png":::
 
 ### <a name="additional-actions"></a>其他操作
 
@@ -179,7 +179,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 > 作为挂起更改的一部分，当前在"传递操作"筛选器中显示"由 ZAP 删除"值将消失。 你将有一种方法通过"其他操作"通过 ZAP 尝试搜索 **所有电子邮件**。
 
 > [!div class="mx-imgBorder"]
-> ![资源管理器中的其他操作。](../../media/Additional_Actions.png)
+> :::image type="content" source="../../media/Additional_Actions.png" alt-text="资源管理器中的其他操作" lightbox="../../media/Additional_Actions.png":::
 
 ### <a name="system-overrides"></a>系统覆盖
 
@@ -198,7 +198,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 [![资源管理器中的系统覆盖。](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![系统替代资源管理器中的网格。](../../media/System_Overrides_Grid.png)
+> :::image type="content" source="../../media/System_Overrides_Grid.png" alt-text="资源管理器中的系统替代网格" lightbox="../../media/System_Overrides_Grid.png":::
 
 ### <a name="improvements-for-the-url-and-clicks-experience"></a>URL 和单击体验的改进
 
@@ -236,14 +236,14 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 > 按用户标记进行筛选和排序目前处于公共预览阶段。 此功能在商业发行之前可能会进行重大修改。 Microsoft 对提供的信息不做出明示或暗示的担保。
 
 > [!div class="mx-imgBorder"]
-> ![资源管理器中的标记列。](../../media/threat-explorer-tags.png)
+> :::image type="content" source="../../media/threat-explorer-tags.png" alt-text="资源管理器中的标记列" lightbox="../../media/threat-explorer-tags.png":::
 
 ### <a name="timezone-improvements"></a>时区改进
 
 你将在门户和导出的数据中查看电子邮件记录的时区。 它将在电子邮件网格、详细信息飞出控件、电子邮件时间线和类似电子邮件等体验中可见，因此电子邮件结果集清晰。
 
 > [!div class="mx-imgBorder"]
-> ![在资源管理器中查看时区。](../../media/TimezoneImprovements.png)
+> :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="在资源管理器中查看时区" lightbox="../../media/TimezoneImprovements.png":::
 
 ### <a name="update-in-the-refresh-process"></a>刷新过程中的更新
 
@@ -252,21 +252,21 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 从体验的角度来看，用户可以从筛选器集和日期) 应用和删除不同的筛选器 (范围，并选择"刷新"按钮以在定义查询后筛选结果。 屏幕上现在也强调刷新按钮。 我们还更新了相关工具提示和产品内文档。
 
 > [!div class="mx-imgBorder"]
-> ![选择"刷新"筛选结果。](../../media/ManualRefresh.png)
+> :::image type="content" source="../../media/ManualRefresh.png" alt-text="用于筛选结果的&quot;刷新&quot;按钮" lightbox="../../media/ManualRefresh.png":::
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>要添加到筛选器的图表深化
 
 现在，你可以绘制图例值图表以将它们添加为筛选器。 选择" **刷新"** 按钮以筛选结果。
 
 > [!div class="mx-imgBorder"]
-> ![向下钻取图表以筛选。](../../media/ChartDrilldown.png)
+> :::image type="content" source="../../media/ChartDrilldown.png" alt-text="向下钻取图表以筛选" lightbox="../../media/ChartDrilldown.png":::
 
 ### <a name="in-product-information-updates"></a>产品内信息更新
 
 现在可在产品内获得其他详细信息，例如网格内搜索结果的总数 (请参阅下面的) 。 我们改进了标签、错误消息和工具提示，以提供有关筛选器、搜索体验和搜索结果集。
 
 > [!div class="mx-imgBorder"]
-> ![查看产品内信息。](../../media/ProductInfo.png)
+> :::image type="content" source="../../media/ProductInfo.png" alt-text="要查看的产品内信息" lightbox="../../media/ProductInfo.png":::
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>威胁资源管理器中的扩展功能
 
@@ -277,7 +277,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 你将能够导出目标用户列表（最多 3，000 个）以及每个电子邮件视图的脱机分析尝试次数。 此外，选择尝试次数 (例如，在图像下) 中尝试 13 次将在威胁资源管理器中打开筛选视图，以便你可以查看有关该用户的电子邮件和威胁的更多详细信息。
 
 > [!div class="mx-imgBorder"]
-> ![主要目标用户。](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="目标最重的用户" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### <a name="exchange-transport-rules"></a>Exchange传输规则
 
@@ -298,7 +298,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 > 在电子邮件网格、"详细信息"飞出控件和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange传输规则。](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="传输Exchange规则" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>入站连接器
 
@@ -307,7 +307,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 连接器的搜索本质上是"包含"的，这意味着部分关键字搜索也应正常工作。 在主网格视图、"详细信息"飞出控件和导出的 CSV 中，连接器以名称/GUID 格式显示，如下所示：
 
 > [!div class="mx-imgBorder"]
-> ![连接器详细信息。](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="连接器详细信息" lightbox="../../media/Connector_Details.png":::
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测中的新功能
 
@@ -345,7 +345,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 5. Select the **Subject** of any message under **Email** **tabDetails** >  tab to see additional impersonation information about the user or domain， and the *Detected location*.
 
-    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="显示检测位置和检测到的威胁的受保护用户的&quot;威胁资源管理器&quot;详细信息窗格 (冒充用户或) 。":::
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="显示检测位置和检测到的威胁的受保护用户的&quot;威胁资源管理器&quot;详细信息窗格 (冒充用户或) " lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
 > 在步骤 3 或 5  >  中，如果分别选择"检测技术"并选择"模拟域"或"模拟用户"，则"电子邮件"选项卡"详细信息"选项卡中有关用户或域的信息，并且"检测到的位置"将只显示在与"反网络钓鱼策略"页中列出的用户或域相关的邮件上。
@@ -412,7 +412,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 > 当您通过资源管理器或关联的第三方工具搜索 ID 时，网络消息 ID 将单击映射回特定邮件。 此类搜索可标识与单击结果关联的电子邮件。 通过关联网络消息 ID，可以更快速、更强大的分析。
 
 > [!div class="mx-imgBorder"]
-> ![在资源管理器中单击选项卡。](../../media/tp_ExportClickResultAndNetworkID.png)
+> :::image type="content" source="../../media/tp_ExportClickResultAndNetworkID.png" alt-text="资源管理器中的&quot;单击&quot;选项卡" lightbox="../../media/tp_ExportClickResultAndNetworkID.png":::
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看通过电子邮件技术检测到的恶意软件
 
@@ -423,19 +423,19 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 2. 在" **视图"** 菜单中，选择" **电子邮件恶意软件** \> **"**。
 
    > [!div class="mx-imgBorder"]
-   > ![资源管理器的视图菜单。](../../media/ExplorerViewEmailMalwareMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="资源管理器的&quot;视图&quot;菜单" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
 
 3. 单击 **"发件人**"，然后选择" **基本** \> **检测技术"**。
 
    你的检测技术现在用作报告的筛选器。
 
    > [!div class="mx-imgBorder"]
-   > ![恶意软件检测技术。](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTech.png" alt-text="恶意软件检测技术" lightbox="../../media/ExplorerEmailMalwareDetectionTech.png":::
 
 4. 选择一个选项。 然后选择" **刷新"** 按钮以应用该筛选器。
 
    > [!div class="mx-imgBorder"]
-   > ![选定的检测技术。](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTechATP.png" alt-text="所选检测技术" lightbox="../../media/ExplorerEmailMalwareDetectionTechATP.png":::
 
 报告将刷新，以使用所选的技术选项显示电子邮件中检测到的恶意软件的结果。 在这里，你可以进行进一步分析。
 
@@ -450,14 +450,14 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 2. 在" **视图"** 菜单中，选择" **电子邮件钓鱼** \> **邮件"**。
 
    > [!div class="mx-imgBorder"]
-   > ![网络钓鱼上下文中资源管理器的"查看"菜单。](../../media/ExplorerViewEmailPhishMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="网络钓鱼上下文中资源管理器的&quot;视图&quot;菜单" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. 单击 **"发件人**"，然后选择" **URL""** \> **单击裁定"**。
 
 4. 选择一个或多个选项（如"阻止"和"覆盖阻止"选项），然后选择与应用该筛选器的选项位于同一行上的"刷新"按钮。  (请勿刷新浏览器窗口。) 
 
    > [!div class="mx-imgBorder"]
-   > ![URL 和单击裁定。](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > :::image type="content" source="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png" alt-text="URL 和单击裁定" lightbox="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png":::
 
    报告将刷新，以在报告下的"URL"选项卡上显示两个不同的 URL 表：
 
@@ -468,7 +468,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
    这两个 URL 表按传递操作和位置显示网络钓鱼电子邮件中的顶部 URL。 这些表显示了尽管出现警告仍被阻止或访问的 URL 单击，因此你可以看到向用户显示哪些潜在的错误链接以及用户点击了哪些链接。 在这里，你可以进行进一步分析。 例如，在图表下方，可以看到在组织环境中被阻止的电子邮件中的顶部 URL。
 
    > [!div class="mx-imgBorder"]
-   > ![被阻止的浏览器 URL。](../../media/ExplorerPhishClickVerdictURLs.png)
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="被阻止的资源管理器 URL" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    选择 URL 以查看更多详细信息。
 
@@ -497,14 +497,14 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 2. 在" **视图"** 菜单中，选择 **"电子邮件** \> **提交"**。
 
    > [!div class="mx-imgBorder"]
-   > ![电子邮件资源管理器的"查看"菜单。](../../media/explorer-view-menu-email-user-reported.png)
+   > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="电子邮件资源管理器的&quot;视图&quot;菜单" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
 
 3. 单击 **"发件人**"，然后选择" **基本** \> **报告类型"**。
 
 4. 选择一个选项（如 **钓鱼** 邮件）然后选择"刷新 **"** 按钮。
 
    > [!div class="mx-imgBorder"]
-   > ![用户报告的网络钓鱼。](../../media/EmailUserReportedReportType.png)
+   > :::image type="content" source="../../media/EmailUserReportedReportType.png" alt-text="用户报告的网络钓鱼" lightbox="../../media/EmailUserReportedReportType.png":::
 
 报告将刷新以显示有关组织中人员报告为网络钓鱼尝试的电子邮件的数据。 可以使用此信息进行进一步分析，如有必要，在 [Microsoft Defender](configure-mdo-anti-phishing-policies.md) 中调整反网络钓鱼策略Office 365。
 

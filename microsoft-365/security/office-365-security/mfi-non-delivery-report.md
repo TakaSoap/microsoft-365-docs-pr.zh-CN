@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未送达详细信息"报告来监视未送达报告 (也称为"未送达报告"中最常遇到的错误代码或退回组织中发件人的邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73d48b831f42deca83b6b1b62fde09cd6c44562e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bc408f6bb28b11e77c49755b888c44e0ea4d9f57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679623"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473730"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>安全与合规中心&未送达报告
 
@@ -33,7 +33,7 @@ ms.locfileid: "63679623"
 
 安全与合规中心内"邮件[](mail-flow-insights-v2.md)流"仪表板中的"未送达报告"显示未送达报告 (也称为"未送达报告"或"退回邮件) "中遇到的错误代码（对于组织用户）。 [&](https://protection.office.com) 此报告显示了 NDR 的详细信息，因此您可以解决电子邮件传递问题。
 
-![安全与合规中心的"邮件流"仪表板中的"未送达&小组件。](../../media/mfi-non-delivery-report-widget.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="安全与合规中心内&quot;邮件流&quot;仪表板中的&quot;未送达&小组件" lightbox="../../media/mfi-non-delivery-report-widget.png":::
 
 ## <a name="report-view-for-the-non-delivery-report"></a>未送达报告的报告视图
 
@@ -43,7 +43,7 @@ ms.locfileid: "63679623"
 
 如果将鼠标悬停在图表中 (特定) 显示的错误代码，你将看到该错误的消息总数。
 
-![未接受域报告中的报告视图。](../../media/mfi-non-delivery-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="未接受域报告中的&quot;报告&quot;视图" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-delivery-report"></a>未送达报告的详细信息表视图
 
@@ -65,7 +65,8 @@ ms.locfileid: "63679623"
 - **Count**
 - **示例邮件**：可以单击 **"查看示例** 邮件" [以查看受影响邮件](message-trace-scc.md) 示例的邮件跟踪结果。
 
-![在未送达报告中的"详细信息"表视图中选择一行后，详细信息飞出。](../../media/mfi-non-delivery-report-details-flyout.png)
+
+:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="The Details flyout after selecting a row in Details table view in the Non-delivery report" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 
 ## <a name="related-topics"></a>相关主题
 

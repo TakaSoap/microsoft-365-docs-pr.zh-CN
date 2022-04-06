@@ -1,6 +1,6 @@
 ---
 title: 查看扫描Microsoft Defender 防病毒结果
-description: 使用应用、Microsoft Endpoint Configuration Manager或Microsoft Intune查看Windows 安全中心结果
+description: 使用应用、应用Microsoft Endpoint Configuration Manager、Microsoft Intune或Windows 安全中心扫描结果
 keywords: 扫描结果， 修正， 完全扫描， 快速扫描
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 79c435618f03a8bdbd69638c66b728597cd63cab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8727baa9bb1935a1186907ca5f3d9d4f82dad6d4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165986"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473642"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
@@ -32,7 +32,7 @@ ms.locfileid: "61165986"
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-在Microsoft Defender 防病毒扫描完成后，无论是按需扫描还是计划扫描，将[](run-scan-microsoft-defender-antivirus.md)记录结果，并且[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)您可以查看结果。 
+完成Microsoft Defender 防病毒扫描后，无论是按需扫描还是计划扫描，结果将[](run-scan-microsoft-defender-antivirus.md)进行记录，您可以查看[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)结果。 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>使用 Configuration Manager 查看扫描结果
@@ -47,7 +47,7 @@ ms.locfileid: "61165986"
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell cmdlet 和输出的屏幕截图。":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="PowerShell cmdlet 和输出" lightbox="../../media/wdav-get-mpthreatdetection.png":::
 
 你可以指定 `-ThreatID` 将输出限制为只显示特定威胁的检测。
 
@@ -57,9 +57,9 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 代码。":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell 代码" lightbox="../../media/wdav-get-mpthreat.png":::
 
-请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和 Defender 防病毒[cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md) 配置和运行 Microsoft Defender 防病毒 和 [Defender 防病毒 cmdlet](/powershell/module/defender/)，了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>使用 Windows Management Instruction (WMI) 查看扫描结果
 

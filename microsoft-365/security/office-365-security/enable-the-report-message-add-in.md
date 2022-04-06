@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何为用户、单个用户或整个组织启用 Outlook 和 Outlook 网页版 报告网络钓鱼外接程序。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc4c03a0ed1f0a03d96776c841203c9131c3067c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 758ee81852d9037ce39cbfdc6f2c2d6ad795aff2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63468876"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466799"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>启用报告邮件或举报网络钓鱼加载项
 
@@ -93,7 +93,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 2. 单击 **"立即获取"**。
 
-   ![报告消息 - 现在获取。](../../media/ReportMessageGETITNOW.png)
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="&quot;获取它&quot;报告消息" lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. 在出现的对话框中，查看使用条款和隐私策略，然后单击"继续 **"**。
 
@@ -104,7 +104,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 - 在Outlook中，图标如下所示：
 
     > [!div class="mx-imgBorder"]
-    > ![Report Message add-in icon for Outlook.](../../media/OutlookReportMessageIcon.png)
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="&quot;报告邮件&quot;外接程序图标的Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - 在Outlook 网页版中，图标如下所示：
 
@@ -119,19 +119,20 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 1. 在 [Microsoft 365 管理中心中](https://admin.microsoft.com/AdminPortal/Home?#/homepage)，转到"**设置** \> **集成应用"**。 单击 **"获取应用"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 管理中心集成应用](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="集成Microsoft 365 管理中心应用程序" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+
 
 2. 在 **出现的Microsoft 365 应用版** 页中，单击"搜索"**框中，输入**"**报告** 邮件"，然后单击"**搜索搜索**!["图标。](../../media/search-icon.png) 在结果列表中，查找并选择"报告 **邮件"**。 
 
 3. 应用程序详细信息页面将打开。 选择 **"现在获取"**。 
 
     > [!div class="mx-imgBorder"]
-    > ![报告邮件外接程序](../../media/microsoft-365-admin-center-report-message.png)  
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="报告邮件外接程序" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
 4. 完成基本配置文件信息，然后单击"继续 **"**。 
 
     > [!div class="mx-imgBorder"]
-    > ![报告邮件外接程序配置文件设置](../../media/microsoft-365-admin-center-profile-info.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="报告邮件外接程序配置文件设置" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
 
 5. 将 **打开"部署新应用** "飞出。 配置以下设置。 单击 **"下** 一步"转到下一页以完成设置。 
 
@@ -144,13 +145,13 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
      - **接受权限请求**：在进入下一页之前，请仔细阅读应用程序权限和功能。
 
         > [!div class="mx-imgBorder"]
-        > ![应用权限](../../media/microsoft-365-admin-center-deploy-new-app.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="&quot;接受权限请求&quot;页" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
      - **完成部署**：查看并完成外接程序的部署。 
      - **部署已完成**：选择 **"完成** "以完成设置。 
 
         > [!div class="mx-imgBorder"]
-        > ![部署完成](../../media/microsoft-365-admin-center-deployment-complete.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="部署已完成的通知消息" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>编辑报告邮件外接程序的设置
 
@@ -159,7 +160,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 2. 在出现的飞出控件中，选择 **"编辑用户"** 以编辑用户设置。
 
     > [!div class="mx-imgBorder"]
-    > !["报告消息"飞出](../../media/microsoft-365-admin-center-report-message-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="&quot;报告消息&quot;飞出" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
 3. 若要删除外接程序，请选择同一个飞出内容 **中的"操作****"下的**"删除应用"。 
 
@@ -194,7 +195,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 1. 在 [Microsoft 365 管理中心中](https://admin.microsoft.com/AdminPortal/Home?#/homepage)，转到"**设置** \> **集成应用"**。 单击 **"获取应用"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft 365 管理中心集成应用](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="集成Microsoft 365 管理中心应用程序" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
 2. 在出现的 **Microsoft 365 应用版** 页中，单击"搜索"**框中，输入**"**报告** 网络钓鱼"，然后单击"搜索 **搜索"**![图标](../../media/search-icon.png)。 在结果列表中，查找并选择"报告 **网络钓鱼"**。 
  
@@ -211,6 +212,6 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 2. 在出现的飞出控件中，选择 **"编辑用户"** 以编辑用户设置。
 
     > [!div class="mx-imgBorder"]
-    > ![报告网络钓鱼飞出](../../media/microsoft-365-admin-center-report-phishing-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="报告网络钓鱼飞出" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. 若要删除外接程序，请选择同一个飞出内容 **中的"操作****"下的**"删除应用"。 

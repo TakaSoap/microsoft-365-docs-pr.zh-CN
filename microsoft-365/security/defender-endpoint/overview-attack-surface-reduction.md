@@ -15,14 +15,16 @@ audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection:
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 78fdd5c6c02990943874807c285f8e5eb60ad6ad
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9c489d28467582e0f95f3fde7440ff43022c44e1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807580"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682033"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>了解并使用攻击面减少功能
 
@@ -51,7 +53,7 @@ ms.locfileid: "62807580"
 
    1. 查看 Windows 中的基本策略。 请参阅 [示例基本策略](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)。
    2. 请参阅Windows Defender[控件设计指南](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)。
-   3. 请参阅使用 [WDAC Windows Defender部署 (应用程序) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
+   3. 请参阅使用 [WDAC Windows Defender部署 (控制) 策略](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)。
 
 3. [启用受控文件夹访问权限](enable-controlled-folders.md)。
 
@@ -89,7 +91,7 @@ ms.locfileid: "62807580"
 
 这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
 
-若要查找审核的条目，  \>请转到"Microsoft 应用程序和服务 **"** \> Windows **Windows Defender** \> \> **操作"**。
+若要查找审核的条目，  \>  \>请转到"Microsoft 应用程序和服务"Windows **Windows Defender** \> \> **操作"**。
 
 使用 Defender for Endpoint 获取每个事件的更多详细信息。 这些详细信息对于调查攻击面减少规则尤其有用。 使用 Defender for Endpoint 控制台，你可以调查作为警报时间线和调查方案的 [一部分的问题](investigate-alerts.md)。
 
@@ -99,7 +101,7 @@ ms.locfileid: "62807580"
 > 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 确认这些功能是否正常工作并查看它们如何工作。
 
 > [!NOTE]
-> 位于 Demo.wd.microsoft.com 的 Defender for Endpoint 演示网站已弃用，并且将在未来删除。
+> 位于 demo.wd.microsoft.com 处的 Defender for Endpoint 演示网站已弃用，并将在未来删除。
 
 | 审核选项 | 如何启用审核模式 | 如何查看事件 |
 |---|---|---|
@@ -147,7 +149,7 @@ ms.locfileid: "62807580"
 
 #### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **事件查看器** 中键入"开始"菜单，然后打开Windows **事件查看器**。
+1. 在 **事件查看器** 中键入"开始"菜单并打开Windows **事件查看器**。
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
@@ -220,7 +222,7 @@ ms.locfileid: "62807580"
 可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
+2. 展开 **"Microsoft** >服务日志> Windows然后转到下表中的"提供程序 **/源**"下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画。](images/event-viewer.gif)
@@ -256,7 +258,7 @@ ms.locfileid: "62807580"
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |23|ROP SimExec 审核|
 |漏洞保护|Security-Mitigations (内核模式/用户模式) |24|ROP SimExec 强制|
 |漏洞保护|WER-诊断|5|CFG 阻止|
-|漏洞保护|Win32K (Operational) |260|不受信任的字体|
+|漏洞保护|Win32K (操作) |260|不受信任的字体|
 |网络保护|Windows Defender (操作) |5007|更改设置时的事件|
 |网络保护|Windows Defender (操作) |1125|在审核模式下触发网络保护时的事件|
 |网络保护|Windows Defender (操作) |1126|在阻止模式下触发网络保护时的事件|
@@ -282,7 +284,7 @@ ms.locfileid: "62807580"
 |:---|:---|
 | [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 使用容器隔离Microsoft Edge帮助防范恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。 |
-| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (需要Microsoft Defender 防病毒)  |
+| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件 (需要Microsoft Defender 防病毒)  |
 | [网络保护功能](network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒)  |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |

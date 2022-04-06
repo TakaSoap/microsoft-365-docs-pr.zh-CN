@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498621"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569419"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -38,11 +38,11 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 为了帮助您更快找到所需的信息，Microsoft 改进操作分为多个组：
 
 - 标识 (Azure Active Directory角色&帐户) 
-- Device (Microsoft Defender for Endpoint，称为 ["适用于设备的 Microsoft](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 安全分数) 
-- 应用 (和云应用，包括 Office 365 和 Microsoft Defender for Cloud Apps) 
+- 设备 (Microsoft Defender for Endpoint，称为[设备安全分数) ](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)
+- 应用 (电子邮件和云应用，包括Office 365和Microsoft Defender for Cloud Apps) 
 
 >[!NOTE]
->在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，这使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
+>在 Microsoft 安全分数的最近版本中，发布了一个改进的记分模型，这使得 Microsoft 安全分数暂时与 Identity Secure Score 和 图形 API。 [查看详细信息](microsoft-secure-score-whats-new.md)
 
 在"Microsoft 安全分数概述"页中，查看在这些组之间如何拆分分数以及可用分数。 通过基准比较，还可以全面查看总分数、安全分数的历史趋势，以及可采取优先改进措施来提高分数。
 
@@ -80,9 +80,9 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 若要完成该操作，有几个选项：
 
-- 选择 **"** 管理"转到配置屏幕并做出更改。 然后，你将获得操作有价值的点，在飞出时可见。点通常需要大约 24 小时才能更新。
+- 选择 **"管理Microsoft 365 Defender** 转到配置屏幕并做出更改。 然后，你将获得操作有价值的点，在飞出区中可见。 点通常需要大约 24 小时才能更新。
 
-- 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams或 Microsoft Planner。
+- 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams或Microsoft Planner。
 
 添加 **备注** 以跟踪要注释的进度或其他任何内容。 如果向改进操作 **添加** 自己的标记，可以按这些标记进行筛选。
 

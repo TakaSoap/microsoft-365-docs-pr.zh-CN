@@ -1,5 +1,5 @@
 ---
-title: 调查事件Microsoft 365 Defender
+title: 在 Microsoft 365 Defender 中调查事件
 description: 调查与设备、用户和邮箱相关的事件。
 keywords: 事件， 事件， 分析， 响应， 计算机， 设备， 用户， 标识， 邮件， 电子邮件， 邮箱， 调查， 图形， 证据
 ms.prod: m365-security
@@ -23,14 +23,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 0bab6d8aa8aaef29b67ed8460f2d48e65cd24aa1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314317"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569149"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>调查事件Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中调查事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -48,11 +48,11 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 你可以从选中标记列中选择事件开始。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="从选中标记列中选择事件的示例。" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="选择事件门户中的Microsoft 365 Defender事件" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
 当你这样做时，将打开一个摘要窗格，其中包含有关事件的关键信息，如严重性、分配到该事件的人以及事件的 [MITRE ATT&CK&trade;](https://attack.mitre.org/) 类别。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="事件的摘要窗格示例。" lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="显示事件门户中事件的摘要详细信息Microsoft 365 Defender窗格。" lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 可以从此处选择"打开 **事件页面"**。 这将打开事件的主页，你将在此找到警报、设备、用户、调查和证据的更多摘要信息和选项卡。
 
@@ -62,7 +62,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 通过 **"摘要** "页面，您可以快速查看有关事件的顶部注意事项。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="事件门户中事件的&quot;摘要&quot;Microsoft 365 Defender示例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="事件门户中事件的Microsoft 365 Defender信息" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 信息在这些部分中进行组织。
 
@@ -82,12 +82,12 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 - 严重性。
 - 警报中涉及的实体。
-- 警报源包括 Microsoft Defender for Identity (Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud Apps 和应用管理加载项) 。
+- 警报源 (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud 应用和应用管理加载项) 。
 - 链接在一起的原因。
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="事件的警报页面示例。" lightbox="../../media/investigate-incidents/incident-alerts.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="事件门户中事件的警报Microsoft 365 Defender窗格" lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
 默认情况下，警报按时间顺序排序，以便你可以查看攻击如何随着时间的推移而播放。 在事件内选择警报时，Microsoft 365 Defender显示特定于整体事件上下文的警报信息。 
 
@@ -95,7 +95,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="事件内的警报详细信息页面示例。" lightbox="../../media/investigate-incidents/incident-alert-example.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="事件门户中事件内警报Microsoft 365 Defender详细信息。" lightbox="../../media/investigate-incidents/incident-alert-example.png":::
 
 事件警报页面包含以下部分：
 
@@ -117,11 +117,11 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 " **设备** "选项卡列出了与事件相关的所有设备。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="事件的&quot;设备&quot;页面示例。" lightbox="../../media/investigate-incidents/incident-devices.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="事件门户中事件的&quot;设备&quot;Microsoft 365 Defender页" lightbox="../../media/investigate-incidents/incident-devices.png":::
 
 可以选择设备的选中标记以查看设备、目录数据、活动警报和登录用户的详细信息。 选择设备名称以查看 Defender for Endpoint 设备清单中的设备详细信息。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="适用于终结点的 Defender 的设备页面示例。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="设备清单选项相关页面在Microsoft Defender for Endpoint。" lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 从设备页面，你可以收集有关设备的其他信息，例如其所有警报、时间线和安全建议。 例如，从"时间线"选项卡中，你可以滚动浏览计算机时间线，并按时间顺序查看计算机上观测到的所有事件和行为，这些事件和行为与所引发警报的交错。
 
@@ -132,7 +132,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 " **用户** "选项卡列出了标识为事件的一部分或与事件相关的所有用户。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例。" lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="用户门户中的Microsoft 365 Defender页。" lightbox="../../media/investigate-incidents/incident-users.png":::
 
 可以选择用户的选中标记以查看用户帐户威胁、曝光和联系信息的详细信息。 选择用户名以查看其他用户帐户详细信息。
 
@@ -143,15 +143,15 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 " **邮箱** "选项卡列出了标识为事件的一部分或与事件相关的所有邮箱。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="事件的&quot;邮箱&quot;页面示例。" lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="事件门户中事件的&quot;邮箱&quot;Microsoft 365 Defender页。" lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-您可以选择邮箱的选中标记以查看活动警报列表。 选择邮箱名称，在 Defender for Office 365 的资源管理器页面上查看其他邮箱Office 365。
+您可以选择邮箱的选中标记以查看活动警报列表。 Select the mailbox name to see additional mailbox details on the Explorer page for Defender for Office 365.
 
 ## <a name="investigations"></a>调查
 
 "**调查**"选项卡列出了此事件中的 [](m365d-autoir.md)警报触发的所有自动调查。 自动调查将执行修正操作或等待分析员批准操作，具体取决于如何将自动调查配置为在 Defender for Endpoint 和 Defender for Office 365 中运行。
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的调查页面示例。" lightbox="../../media/investigate-incidents/incident-investigations.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件门户中事件的&quot;调查&quot;Microsoft 365 Defender页" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
 选择调查以导航到其详细信息页，了解有关调查和修正状态的完整信息。 如果有作为调查的一部分等待审批的任何操作，它们将显示在"挂起的操作 **历史记录"** 选项卡中。采取操作作为事件修正的一部分。
 
@@ -169,7 +169,7 @@ Microsoft 365 Defender将来自设备、用户和邮箱的所有用户的相关�
 
 " **证据和响应** "选项卡显示事件警报中所有受支持的事件和可疑实体。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件的证据和响应页面示例。" lightbox="../../media/investigate-incidents/incident-evidence.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件门户中事件的证据和Microsoft 365 Defender页面" lightbox="../../media/investigate-incidents/incident-evidence.png":::
 
 Microsoft 365 Defender自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、进程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
 
@@ -184,16 +184,16 @@ the **Graph** tab shows the full scope of the attack， how the attack spread th
 1. 在警报和节点随着时间的一段时间发生时在图形上播放它们，以了解攻击的时间顺序。
 
 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="在页面上播放警报和节点Graph示例":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="在活动页面上播放警报Graph节点":::
  
 
 2. 打开实体窗格，以便查看实体详细信息并处理修正操作，例如删除文件或隔离设备。
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="页面实体窗格Graph示例" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="企业门户中Graph页面上的实体Microsoft 365 Defender窗格" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. 根据警报相关的实体突出显示警报。
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="活动页面上警报突出显示Graph示例" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="通知页上的警报Graph突出显示" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 261cb8af0f1fbb4c118aca649945f66015f1d25c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ca4c3e4992e9beb10e9369aede9d5ad8b9d73709
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322769"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466974"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -39,7 +39,7 @@ ms.locfileid: "63322769"
 
 在 [规划主题](deployment-strategy.md) 中，提供了多种方法将设备载入服务。 本主题介绍云本机体系结构。
 
-![云本机体系结构的图像。](images/cloud-native-architecture.png)
+:::image type="content" source="images/cloud-native-architecture.png" alt-text="云本机体系结构" lightbox="images/cloud-native-architecture.png":::
 *环境体系结构关系图*
 
 尽管 Defender for Endpoint 支持载入各种终结点和工具，但本文并未涵盖它们。 有关使用其他受支持的部署工具和方法进行常规载入的信息，请参阅 [载入概述](onboarding.md)。
@@ -90,12 +90,12 @@ ms.locfileid: "63322769"
 2. 打开 **">组"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal1 的图像。](images/66f724598d9c3319cba27f79dd4617a4.png)
+    > :::image type="content" source="images/66f724598d9c3319cba27f79dd4617a4.png" alt-text="Microsoft Endpoint Manager门户1" lightbox="images/66f724598d9c3319cba27f79dd4617a4.png":::
 
 3. 输入详细信息并创建新组。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal2 的图像。](images/b1e0206d675ad07db218b63cd9b9abc3.png)
+    > :::image type="content" source="images/b1e0206d675ad07db218b63cd9b9abc3.png" alt-text="Microsoft Endpoint Manager portal2" lightbox="images/b1e0206d675ad07db218b63cd9b9abc3.png":::
 
 4. 添加测试用户或设备。
 
@@ -106,7 +106,7 @@ ms.locfileid: "63322769"
 7. 查找测试用户或设备并选择它。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal3 的图像。](images/149cbfdf221cdbde8159d0ab72644cd0.png)
+    > :::image type="content" source="images/149cbfdf221cdbde8159d0ab72644cd0.png" alt-text="Microsoft Endpoint Manager门户3" lightbox="images/149cbfdf221cdbde8159d0ab72644cd0.png":::
 
 8. 你的测试组现在具有要测试的成员。
 
@@ -130,46 +130,46 @@ ms.locfileid: "63322769"
 2. 导航到 **终结点安全>终结点检测和响应**。 单击" **创建配置文件"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal4 的图像。](images/58dcd48811147feb4ddc17212b7fe840.png)
+    > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="Microsoft Endpoint Manager portal4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
 
 3. 在 **"平台"下，Windows 10和更高版本、配置文件 - 终结点检测和响应>创建"**。
 
 4. 输入名称和说明，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal5 的图像。](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
+    > :::image type="content" source="images/a5b2d23bdd50b160fef4afd25dda28d4.png" alt-text="Microsoft Endpoint Manager门户5" lightbox="images/a5b2d23bdd50b160fef4afd25dda28d4.png":::
 
 5. 按要求选择设置，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal6 的图像。](images/cea7e288b5d42a9baf1aef0754ade910.png)
+    > :::image type="content" source="images/cea7e288b5d42a9baf1aef0754ade910.png" alt-text="Microsoft Endpoint Manager portal6" lightbox="images/cea7e288b5d42a9baf1aef0754ade910.png":::
 
     > [!NOTE]
     > 在此实例中，已自动填充，因为 Defender for Endpoint 已与 Intune 集成。 有关集成详细信息，请参阅 [在 Intune 中启用 Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)。
     >
     > 下图是 Microsoft Defender for Endpoint 未与 Intune 集成时将看到的示例：
     >
-    > ![Microsoft Endpoint Manager portal7 的图像。](images/2466460812371ffae2d19a10c347d6f4.png)
+    > :::image type="content" source="images/2466460812371ffae2d19a10c347d6f4.png" alt-text="Microsoft Endpoint Manager门户7" lightbox="images/2466460812371ffae2d19a10c347d6f4.png":::
 
 6. 如有必要，添加范围标记，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal8 的图像。](images/ef844f52ec2c0d737ce793f68b5e8408.png)
+    > :::image type="content" source="images/ef844f52ec2c0d737ce793f68b5e8408.png" alt-text="Microsoft Endpoint Manager门户8" lightbox="images/ef844f52ec2c0d737ce793f68b5e8408.png":::
 
 7. 通过单击"选择要包含的 **组** "并选择你的组来添加测试组，然后选择"下一步  **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal9 的图像。](images/fc3525e20752da026ec9f46ab4fec64f.png)
+    > :::image type="content" source="images/fc3525e20752da026ec9f46ab4fec64f.png" alt-text="Microsoft Endpoint Manager门户9" lightbox="images/fc3525e20752da026ec9f46ab4fec64f.png":::
 
 8. 查看并接受，然后选择"创建  **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal10 的图像。](images/289172dbd7bd34d55d24810d9d4d8158.png)
+    > :::image type="content" source="images/289172dbd7bd34d55d24810d9d4d8158.png" alt-text="Microsoft Endpoint Manager portal10" lightbox="images/289172dbd7bd34d55d24810d9d4d8158.png":::
 
 9. 可以查看已完成的策略。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal11 的图像。](images/5a568b6878be8243ea2b9d82d41ed297.png)
+    > :::image type="content" source="images/5a568b6878be8243ea2b9d82d41ed297.png" alt-text="Microsoft Endpoint Manager portal11" lightbox="images/5a568b6878be8243ea2b9d82d41ed297.png":::
 
 ### <a name="next-generation-protection"></a>下一代保护
 
@@ -178,39 +178,39 @@ ms.locfileid: "63322769"
 2. 导航到 **"创建策略>终结点>终结点安全"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal12 的图像。](images/6b728d6e0d71108d768e368b416ff8ba.png)
+    > :::image type="content" source="images/6b728d6e0d71108d768e368b416ff8ba.png" alt-text="Microsoft Endpoint Manager portal12" lightbox="images/6b728d6e0d71108d768e368b416ff8ba.png":::
 
 3. 选择 **"平台 - Windows 10和更高版本 - Windows配置文件 - Microsoft Defender 防病毒 >创建"**。
 
 4. 输入名称和说明，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal13 的图像。](images/a7d738dd4509d65407b7d12beaa3e917.png)
+    > :::image type="content" source="images/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="Microsoft Endpoint Manager portal13" lightbox="images/a7d738dd4509d65407b7d12beaa3e917.png":::
 
 5. 在"**配置设置"页** 中：设置云保护Microsoft Defender 防病毒 (排除项、Real-Time保护和修正) 。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal14 的图像。](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
+    > :::image type="content" source="images/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="Microsoft Endpoint Manager portal14" lightbox="images/3840b1576d6f79a1d72eb14760ef5e8c.png":::
 
 6. 如有必要，添加范围标记，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal15 的图像。](images/2055e4f9b9141525c0eb681e7ba19381.png)
+    > :::image type="content" source="images/2055e4f9b9141525c0eb681e7ba19381.png" alt-text="Microsoft Endpoint Manager门户15" lightbox="images/2055e4f9b9141525c0eb681e7ba19381.png":::
 
 7. 选择要包含的组，分配给测试组，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal16 的图像。](images/48318a51adee06bff3908e8ad4944dc9.png)
+    > :::image type="content" source="images/48318a51adee06bff3908e8ad4944dc9.png" alt-text="Microsoft Endpoint Manager portal16" lightbox="images/48318a51adee06bff3908e8ad4944dc9.png":::
 
 8. 查看并创建，然后选择"创建  **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal17 的图像。](images/dfdadab79112d61bd3693d957084b0ec.png)
+    > :::image type="content" source="images/dfdadab79112d61bd3693d957084b0ec.png" alt-text="Microsoft Endpoint Manager门户17" lightbox="images/dfdadab79112d61bd3693d957084b0ec.png":::
 
 9. 你将看到你创建的配置策略。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal18 的图像。](images/38180219e632d6e4ec7bd25a46398da8.png)
+    > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="Microsoft Endpoint Manager门户18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
 
 ### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>攻击面减少 - 攻击面减少规则
 
@@ -223,12 +223,12 @@ ms.locfileid: "63322769"
 4. 选择 **平台 - Windows 10和更高版本 - 配置文件 - 攻击面减少规则>创建**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal19 的图像。](images/522d9bb4288dc9c1a957392b51384fdd.png)
+    > :::image type="content" source="images/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="Microsoft Endpoint Manager门户19" lightbox="images/522d9bb4288dc9c1a957392b51384fdd.png":::
 
 5. 输入名称和说明，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal20 的图像。](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
+    > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="Microsoft Endpoint Manager portal20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
 6. 在" **配置设置"页**：设置攻击面减少规则需要的配置，然后选择"下一步  **"**。
 
@@ -238,27 +238,27 @@ ms.locfileid: "63322769"
     > 有关详细信息，请参阅攻击 [面减少规则](attack-surface-reduction.md)。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal21 的图像。](images/dd0c00efe615a64a4a368f54257777d0.png)
+    > :::image type="content" source="images/dd0c00efe615a64a4a368f54257777d0.png" alt-text="Microsoft Endpoint Manager portal21" lightbox="images/dd0c00efe615a64a4a368f54257777d0.png":::
 
 7. 根据需要添加范围标记，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal22 的图像。](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="Microsoft Endpoint Manager portal22" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
 8. 选择要包含并分配给测试组的组，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal23 的图像。](images/45cefc8e4e474321b4d47b4626346597.png)
+    > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="Microsoft Endpoint Manager portal23" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
 
 9. 查看详细信息，然后选择"创建  **"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal24 的图像。](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
+    > :::image type="content" source="images/2c2e87c5fedc87eba17be0cdeffdb17f.png" alt-text="Microsoft Endpoint Manager门户24" lightbox="images/2c2e87c5fedc87eba17be0cdeffdb17f.png":::
 
 10. 查看策略。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal25 的图像。](images/7a631d17cc42500dacad4e995823ffef.png)
+    > :::image type="content" source="images/7a631d17cc42500dacad4e995823ffef.png" alt-text="Microsoft Endpoint Manager portal25" lightbox="images/7a631d17cc42500dacad4e995823ffef.png":::
 
 ### <a name="attack-surface-reduction---web-protection"></a>攻击面减少 - Web 保护
 
@@ -271,12 +271,12 @@ ms.locfileid: "63322769"
 4. 选择 **"Windows 10"和"稍后 - Web >创建"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal26 的图像。](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
+    > :::image type="content" source="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="Microsoft Endpoint Manager portal26" lightbox="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
 
 5. 输入名称和说明，然后选择"下一  **步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal27 的图像。](images/5be573a60cd4fa56a86a6668b62dd808.png)
+    > :::image type="content" source="images/5be573a60cd4fa56a86a6668b62dd808.png" alt-text="Microsoft Endpoint Manager门户27" lightbox="images/5be573a60cd4fa56a86a6668b62dd808.png":::
 
 6. 在" **配置设置"页**：设置 Web 保护需要的配置，然后选择"下一步  **"**。
 
@@ -286,27 +286,27 @@ ms.locfileid: "63322769"
     > 有关详细信息，请参阅 [Web 保护](web-protection-overview.md)。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal28 的图像。](images/6104aa33a56fab750cf30ecabef9f5b6.png)
+    > :::image type="content" source="images/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="Microsoft Endpoint Manager门户28" lightbox="images/6104aa33a56fab750cf30ecabef9f5b6.png":::
 
 7. 根据需要 **在 Next 中添加>标记**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal29 的图像。](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="Microsoft Endpoint Manager门户29" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
 8. 选择 **"分配到测试组">下一步"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal30 的图像。](images/45cefc8e4e474321b4d47b4626346597.png)
+    > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="Microsoft Endpoint Manager门户30" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
 
 9. 选择 **"审阅"和">创建"**。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal31 的图像。](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > :::image type="content" source="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png" alt-text="Microsoft Endpoint Manager portal31" lightbox="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png":::
 
 10. 查看策略。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager portal32 的图像。](images/e74f6f6c150d017a286e6ed3dffb7757.png)
+    > :::image type="content" source="images/e74f6f6c150d017a286e6ed3dffb7757.png" alt-text="Microsoft Endpoint Manager portal32" lightbox="images/e74f6f6c150d017a286e6ed3dffb7757.png":::
 
 ## <a name="validate-configuration-settings"></a>验证配置设置
 
@@ -321,7 +321,7 @@ ms.locfileid: "63322769"
 1. 打开 MEM 门户并导航到相关策略，如上述步骤所示。 以下示例显示了下一代保护设置。
 
     > [!div class="mx-imgBorder"]
-    > [![Microsoft Endpoint Manager portal33 的图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Microsoft Endpoint Manager portal33 的图像。](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox) 
 
 2. 选择 **配置策略** 以查看策略状态。
 
@@ -368,7 +368,7 @@ ms.locfileid: "63322769"
 1. 在测试设备上应用策略之前，你应该能够手动管理设置，如下所示。
 
     > [!div class="mx-imgBorder"]
-    > ![设置第 1 页的图像。](images/88efb4c3710493a53f2840c3eac3e3d3.png)
+    > :::image type="content" source="images/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="设置页面-1" lightbox="images/88efb4c3710493a53f2840c3eac3e3d3.png":::
 
 2. 应用策略后，你将无法手动管理设置。
 
@@ -376,7 +376,7 @@ ms.locfileid: "63322769"
     > 在下图中 **，"启用云保护** "和 **"** 启用实时保护"将显示为托管保护。
 
     > [!div class="mx-imgBorder"]
-    > ![设置第 2 页的图像。](images/9341428b2d3164ca63d7d4eaa5cff642.png)
+    > :::image type="content" source="images/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="设置页面 2" lightbox="images/9341428b2d3164ca63d7d4eaa5cff642.png":::
 
 ### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>确认攻击面减少 - 攻击面减少规则
 
@@ -390,13 +390,13 @@ ms.locfileid: "63322769"
     >
     > AttackSurfaceReductionRules_Ids：
 
-    ![命令行 1 的图像。](images/cb0260d4b2636814e37eee427211fe71.png)
+    :::image type="content" source="images/cb0260d4b2636814e37eee427211fe71.png" alt-text="命令行 1" lightbox="images/cb0260d4b2636814e37eee427211fe71.png":::
 
 3. 在测试设备上应用该策略后，打开 PowerShell Windows键入 `Get-MpPreference`。
 
 4. 这应该会以以下行作为响应，内容如下所示：
 
-    ![命令行 2 的图像。](images/619fb877791b1fc8bc7dfae1a579043d.png)
+   :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="命令行 2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>确认攻击面减少 - Web 保护
 
@@ -404,10 +404,10 @@ ms.locfileid: "63322769"
 
 2. 这应该会以 0 作为响应，如下所示。
 
-    ![命令行 3 的图像。](images/196a8e194ac99d84221f405d0f684f8c.png)
+   :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="命令行 3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
 
 3. 应用策略后，打开 PowerShell Windows键入 `(Get-MpPreference).EnableNetworkProtection`。
 
 4. 这应该会以 1 作为响应，如下所示。
 
-    ![命令行 4 的图像。](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)
+   :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="命令行 4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::

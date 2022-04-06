@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 了解保险箱 Defender for Office 365 中的链接保护，以保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。 发现Teams 保险箱链接，并查看链接保险箱图形。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320321"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682077"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱 Microsoft Defender for Office 365
 
@@ -84,10 +84,6 @@ ms.locfileid: "63320321"
 
 下表介绍了 Microsoft 365 Microsoft 365 和 Office 365 组织中包含 Defender for Office 365 (的 保险箱 链接的方案，请注意，) 示例中永远不会出现缺少许可的问题。
 
-<br>
-
-****
-
 |应用场景|结果|
 |---|---|
 |表示是市场营销部门的成员。 保险箱针对 Office 365 应用的链接保护在 保险箱 链接的全局设置中打开，并且存在适用于市场营销部门成员的 保险箱 链接策略。 在电子邮件PowerPoint打开一个演示文稿，然后单击演示文稿中的 URL。|百分之百受链接保险箱保护。 <p> 该链接策略中包含 保险箱，保险箱应用的链接Office 365保护已打开。 <p> 有关在 Office 365 应用中使用 保险箱 链接保护Office 365，请参阅本文稍后介绍的 保险箱 [Office 365 应用](#safe-links-settings-for-office-365-apps)的链接设置部分。|
@@ -95,7 +91,6 @@ ms.locfileid: "63320321"
 |在 Pat 的组织中，管理员尚未创建任何保险箱链接策略，保险箱应用的链接Office 365保护已打开。 Pat 打开 Word 文档并单击该文件中的 URL。|Pat 不受链接保险箱保护。 <p> 尽管保险箱应用的链接保护Office 365全局打开，但 Pat 未包含在任何活动的 保险箱 Links 策略中，因此无法应用保护。|
 |In Lee's organization， `https://tailspintoys.com` is configured in the **Block the following URLs** list in the global settings for 保险箱 Links. 一保险箱包含 Lee 的"链接"策略已存在。 Lee 收到一封包含 URL 的电子邮件 `https://tailspintoys.com/aboutus/trythispage`。 Lee 单击 URL。|可能为 Lee 自动阻止 URL;这取决于列表中的 URL 条目和所使用的电子邮件客户端 Lee。 有关详细信息，请参阅本文稍后的"阻止以下 URL["保险箱链接](#block-the-following-urls-list-for-safe-links)"部分。|
 |Jamie 和 Julia 都负责 contoso.com。 在很长一段时间之前，管理员保险箱适用于 Jamie 和 Julia 的链接策略。 Jamie 向 Julia 发送了一封电子邮件，但不知道该电子邮件包含恶意 URL。|如果适用于 julia 的 保险箱 链接策略保险箱配置为应用于内部收件人之间的邮件，则 Julia 受"链接"保护。 有关详细信息，请参阅本文保险箱电子邮件[](#safe-links-settings-for-email-messages)的链接设置部分。|
-|
 
 ## <a name="safe-links-settings-for-email-messages"></a>保险箱电子邮件的链接设置
 
@@ -265,7 +260,7 @@ ms.locfileid: "63320321"
 
 您可以在全局设置中为"链接"配置保险箱列表。 有关说明， [请参阅配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal)。
 
-**注意**：
+**注意**:
 
 - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
 - 阻止以下 **URL 列表** 的限制：
@@ -281,17 +276,12 @@ ms.locfileid: "63320321"
 
 下表介绍了您可以输入的值及其结果的示例：
 
-<br>
-
-****
-
 |值|结果|
 |---|---|
 |`contoso.com` <p> 或 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com`、 `https://sub.contoso.com`和 `https://contoso.com/abc` 被阻止。|
 |`https://contoso.com/a`|阻止 `https://contoso.com/a` 但不阻止其他子路径（如 `https://contoso.com/a/b`）。|
 |`https://contoso.com/a*`|块 `https://contoso.com/a` 和其他子路径（如 `https://contoso.com/a/b`）。|
 |`https://toys.contoso.com*`|阻止此示例中 (`toys` 子域) 但允许单击其他域 URL， (或 `https://contoso.com`) `https://home.contoso.com` 。|
-|
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>链接策略中的"不重写保险箱 URL"
 
@@ -302,7 +292,7 @@ ms.locfileid: "63320321"
 
 若要将条目添加到新列表或现有链接保险箱，请参阅[创建](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)链接保险箱修改链接保险箱[策略](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)。
 
-**注意**：
+**注意**:
 
 - 以下客户端无法识别"不重写链接"策略中的保险箱 URL 列表。 根据以下客户端中链接扫描的结果，可阻止策略保险箱用户访问 URL：
   - Microsoft Teams
@@ -323,17 +313,12 @@ ms.locfileid: "63320321"
 
 下表介绍了您可以输入的值及其结果的示例：
 
-<br>
-
-****
-
 |值|结果|
 |---|---|
 |`contoso.com`|允许访问 `https://contoso.com` 子域或路径，但不能访问子域或路径。|
 |`*.contoso.com/*`|允许访问域、子域和路径 (例如、`https://www.contoso.com``https://www.contoso.com``https://maps.contoso.com`或) 。`https://www.contoso.com/a` <p> 此条目本质上优于 ， `*contoso.com*`因为它不允许潜在的欺诈网站，如 `https://www.falsecontoso.com` 或 `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|允许访问 `https://contoso.com/a`，但不允许访问子路径（如 ） `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|允许访问 `https://contoso.com/a` 和子路径，如 `https://contoso.com/a/b`|
-|
 
 ## <a name="warning-pages-from-safe-links"></a>链接中的保险箱页
 

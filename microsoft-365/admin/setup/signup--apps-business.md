@@ -14,20 +14,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 注册Microsoft 365 商业应用版。
-ms.openlocfilehash: 4b0dab60a8deaa5b8e2b945877906bfc6331f044
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: f174cf24f3b546bc53f7b2cb588eacf0b964c8e9
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61421566"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569105"
 ---
 # <a name="sign-up-for-a-microsoft-365-apps-for-business-subscription"></a>注册 Microsoft 365 商业应用版 订阅
 
 想要注册订阅Microsoft 365 商业应用版？
 
 有两种方法可以开始：
-- **[购买](https://go.microsoft.com/fwlink/?linkid=2181424)Microsoft 365 商业应用版并完成自己的设置**。 若要购买[Microsoft 365 商业应用版，请按照以下步骤操作](#sign-up-steps)。
-- **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅获取Microsoft 365 [商业。](../../business/get-microsoft-365-business.md)
+
+- **[购买](https://go.microsoft.com/fwlink/?linkid=2181424)Microsoft 365 商业应用版并完成自己的设置**。 若要购买Microsoft 365 商业应用版[，请按照以下步骤操作](#sign-up-steps)。
+- **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅获取 Microsoft 365 [Business](../../business/get-microsoft-365-business.md)。
 
 **需要不同的内容？** 可以执行下列操作：
 
@@ -41,16 +42,16 @@ ms.locfileid: "61421566"
 若要注册并购买Microsoft 365 商业应用版，请完成以下步骤。
 
 > [!IMPORTANT]
-> 注册 Microsoft 365 商业版的人员（通常是业务所有者）自动成为组织的技术管理员。 如果希望帮助管理 Microsoft 365 服务，可以将其他人添加为管理员。 有关详细信息， [请查看分配](../add-users/assign-admin-roles.md) 管理员角色。
+> 注册 Microsoft 365 商业版的人员（通常是业务所有者）自动成为组织的技术管理员。 如果希望帮助管理 Microsoft 365 服务，可以将其他人添加为管理员。 有关详细信息，请参阅[分配管理员角色](../add-users/assign-admin-roles.md)。
 
-1. On the [For business page，](https://go.microsoft.com/fwlink/?linkid=2181424)see what's included in Microsoft 365. 在Microsoft 365 商业应用版下，选择立即 **购买**。
-2. 在 **"你已选择Microsoft 365 商业应用版** 页面上，输入你已使用的电子邮件地址。 这可以是您希望 Microsoft 在设置期间用于与您通信的任何地址。 这也是我们会将帐单和续订相关信息发送给你的地址。 然后选择"**设置帐户"。**
+1. On the [For business page](https://go.microsoft.com/fwlink/?linkid=2181424)， see what's included in Microsoft 365. 在Microsoft 365 商业应用版下，选择立即 **购买**。
+2. 在 **"你已选择Microsoft 365 商业应用版** 页上，输入你已使用的电子邮件地址。 这可以是您希望 Microsoft 在设置期间用于与您通信的任何地址。 这也是我们会将帐单和续订相关信息发送给你的地址。 然后选择" **设置帐户"**。
 3. 输入你的姓名、公司电话号码、公司规模、公司名称和位置。 选择 **下一步**。
 
-> [!NOTE]
-> 我们在管理中心显示你的公司名称。 这是管理用户Microsoft 365许可证和其他功能和服务的地方。 我们还将该网站包括在任何内部SharePoint URL 中。
+   > [!NOTE]
+   > 我们在管理中心显示你的公司名称。 这是管理用户Microsoft 365许可证和其他功能和服务的地方。 我们还将该网站包括在任何内部SharePoint URL 中。
 
-4. 帮助我们确保这是您。 输入可用于联系你的号码，然后选择"**发送验证码"。** 你将收到一条文本。 输入代码，然后选择"验证 **"。**
+4. 帮助我们确保这是您。 输入可用于联系你的号码，然后选择" **发送验证码"**。 你将收到一条文本。 输入代码，然后选择"验证 **"**。
 
 5. 确定如何登录Microsoft 365。 可以使用 [当前个人电子邮件登录](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account) ，或者 [通过添加](#option-2-add-a-domain) 域创建新帐户。
 
@@ -66,11 +67,11 @@ ms.locfileid: "61421566"
 
 下表概述了每个选择。
 
-||**选项 1** – 使用 Outlook、Hotmail、Yahoo、Gmail 或其他电子邮件帐户登录|**选项 2** – 添加业务域 |
-|:-----|:-----|:-----|
-|可用的应用和服务  <br/> |使用 Word、Excel、PowerPoint、OneDrive、Teams、Access。 这组应用最适合那些不需要立即使用品牌电子邮件的小型企业，或者已经使用来自其他提供商的品牌电子邮件并且不打算切换为使用 Microsoft Exchange。  你将使用现有Outlook帐户进行 (，outlook.com Hotmail、Yahoo、Gmail 或其他) 。  <br/> |使用 Word、Excel、PowerPoint、OneDrive、Teams、Access。 选项 2 还允许您访问各种附加服务：预订约会计划和会议录制。 <br/> |
-|所需知识  <br/> |让我们在没有技术知识的情况下开始吧。  <br/> |需要你购买域，或拥有一个域。  你可能需要技术知识来证明域的所有权。 <br/> |
-|数据处理  <br/> |根据 [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) 服务协议补充条款提供，最适合需要一些远程工作和协作工具且熟悉 Microsoft 根据 Microsoft 隐私声明充当数据控制 [者的企业](https://go.microsoft.com/fwlink/?LinkId=521839)。 使用此选项的服务的订阅者在附加域之前将无法访问个人的用户内容或数据。 订阅者应基于其需求评估数据所有权和知识产权注意事项。 例如，如果您与其他用户协作处理其帐户中存储的文档，他们可能会选择使这些文档无法访问您。 因此，您应相应地评估数据所有权和知识产权注意事项。  用户可能会单独选择不将简化 Sign-Up 帐户中的文档转移到你的域帐户订阅，即使在你邀请他们这样做之后。 这意味着，即使以后添加域帐户，也可能无法访问他们的文档  <br/> |根据[Microsoft Online 订阅](https://go.microsoft.com/fwlink/p/?linkid=2180430)协议提供，最适合需要 Microsoft 充当 Microsoft 数据保护附录下的数据处理者且需要[](https://go.microsoft.com/fwlink/p/?linkid=2180314)我们整套远程工作和协作工具的企业。 在受监管的行业或寻求更多控制权的订阅者，无论是员工使用服务还是 Microsoft 处理相关数据，都应选择选项 2，并附加一个域，然后根据域帐户企业级协议进行注册。 <br/> |
+|&nbsp;|**选项 1** – 使用 Outlook、Hotmail、Yahoo、Gmail 或其他电子邮件帐户登录|**选项 2** – 添加业务域 |
+|---|---|---|
+|可用的应用和服务|使用 Word、Excel、PowerPoint、OneDrive、Teams Access。 这组应用最适合那些不需要立即使用品牌电子邮件的小型企业，或者已经使用来自其他提供商的品牌电子邮件并且不打算切换为使用 Microsoft Exchange。 将现有电子邮件帐户Outlook， (Hotmail、Yahoo、Gmail 或其他 outlook.com 帐户) 。|使用 Word、Excel、PowerPoint、OneDrive、Teams Access。 选项 2 还允许您访问各种附加服务：Bookings计划和会议录制。|
+|所需知识|让我们在没有技术知识的情况下开始吧。|需要你购买域，或拥有一个域。 你可能需要技术知识来证明域的所有权。|
+|数据处理|根据 [Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2180702) 服务协议补充条款提供，最适合需要一些远程工作和协作工具且熟悉 Microsoft 根据 Microsoft 隐私声明充当数据控制 [者的企业](https://go.microsoft.com/fwlink/?LinkId=521839)。 使用此选项的服务的订阅者在附加域之前将无法访问个人的用户内容或数据。 订阅者应基于其需求评估数据所有权和知识产权注意事项。 例如，如果您与其他用户协作处理其帐户中存储的文档，他们可能会选择使这些文档无法访问您。 因此，您应相应地评估数据所有权和知识产权注意事项。 此外，用户可能会选择不将简化 Sign-Up 帐户中的文档转移到你的域帐户订阅，即使在你邀请他们这样做之后。 这意味着，即使以后添加域帐户，也可能无法访问他们的文档|根据 [Microsoft Online 订阅](https://go.microsoft.com/fwlink/p/?linkid=2180430)协议提供，最适合需要 Microsoft 充当 Microsoft 数据保护附录下的数据处理者且需要我们整套远程工作和协作工具的企业[](https://go.microsoft.com/fwlink/p/?linkid=2180314)。 在受监管的行业或寻求更多控制权的订阅者，无论是员工使用服务还是 Microsoft 处理相关数据，都应选择选项 2，并附加一个域，然后根据域帐户企业级协议进行注册。|
 
 使用这三个因素可确定两个选项中的哪一个最适合你的业务需求。
 
@@ -82,28 +83,26 @@ ms.locfileid: "61421566"
 
 1. 下一页上创建密码，然后选择" **创建帐户"** 继续。 下一页，阅读我们如何处理你的数据，并选择是否希望 Microsoft 合作伙伴联系你。 选择 **下一步**。
 
-2. 选择组织Microsoft 365 商业应用版许可证数量，然后选择"**添加** 付款方式"，然后继续查看"下订单 **"。**
+2. 选择组织Microsoft 365 商业应用版许可证数量，然后选择"**添加** 付款方式"，然后继续签出以 **下订单**。
 
-3. 在 **"确认详细信息** "页面上，我们将提供有关订阅的一些详细信息。 现在，你可以转到Microsoft 365 管理中心添加用户、安装Office应用、邀请团队使用 Microsoft 365 等。 我们还将向您发送一封电子邮件，包含有关Microsoft 365 商业标准版。
+3. 在 **"确认详细信息** "页面上，我们将提供有关订阅的一些详细信息。 现在，你可以转到Microsoft 365 管理中心添加用户、Office应用、邀请团队使用 Microsoft 365等。 我们还将向您发送一封电子邮件，包含有关Microsoft 365 商业标准版。
 
-请记住，此选项不提供品牌电子邮件、其他用户使用服务的管理员控制或行业特定的合规性支持。  订阅者对此选项下其他用户 (用户) 或文档的任何访问权限或控制权。 如果你未选择选项 **2，** 用户可能会选择不OneDrive存储中创建的数据（例如，OneDrive已升级的企业级域帐户）。
+请记住，此选项不提供品牌电子邮件、其他用户使用服务的管理员控制或行业特定的合规性支持。 订阅者对其他用户的订阅者没有任何访问权限或控制权 (此选项) 使用情况或文档。 如果您不选择选项 **2**，用户可能会选择不OneDrive存储中创建的数据（例如，OneDrive升级的企业级域帐户）。
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
 你随时都可以添加业务域，以访问应用版企业版订阅的其余部分功能，包括：
 
-- 预订约会安排和会议录制
+- Bookings约会计划和会议录制
 - 与用户共享的OneDrive
 
 按照以下步骤完成[你的订阅Microsoft 365 商业应用版](setup-apps-for-business.md)设置。 还可以 [在准备就绪时](../setup/add-domain.md) 添加域。
 
 ### <a name="option-2-add-a-domain"></a>选项 2：添加域
 
-若要了解如何购买或添加域，[请参阅设置](../setup/setup-business-standard.md)Microsoft 365 商业标准版。
+若要了解如何购买或添加域，[请参阅设置Microsoft 365 商业标准版](../setup/setup-business-standard.md)。
 
 ### <a name="next-steps"></a>后续步骤
-
-
 
 ## <a name="terms-of-service-update-for-simplified-sign-up-mode"></a>简化的升级模式的服务Sign-Up条款
 
@@ -111,11 +110,11 @@ ms.locfileid: "61421566"
 
 如果之前使用简化注册模式在 2021 年 10 月购买不含业务域的业务订阅，可能需要接受新的服务条款，以不间断地使用 Microsoft Office 应用。 你可能会收到电子邮件，或在登录管理中心时会看到应用内Microsoft 365提示。
 
-简化Sign-Up最近更新了使用条款，特别是它们阐明了多用户业务订阅的许可和数据所有权。 若要持续服务你的企业订阅，你可以访问 Microsoft 365 管理中心并继续使用简化的注册 **(** 并同意使用更新的 Microsoft 服务协议补充条款) ，或者访问管理中心并添加域 **(并使用** Enterprise 级 Microsoft Online Services 协议) 。 若要帮助你选择这两种模式中哪一种最符合你的需求，请参阅本文顶部的表格。
+简化Sign-Up最近更新了使用条款，特别是它们阐明了多用户业务订阅的许可和数据所有权。 若要持续服务你的企业订阅，你可以访问 Microsoft 365 管理中心并继续使用简化的 **注册 (并同意** 使用更新的 Microsoft 服务协议补充条款) ，或者访问管理中心并添加 **域 (并使用** Enterprise 级 Microsoft Online Services 协议) 。 若要帮助你选择这两种模式中哪一种最符合你的需求，请参阅本文顶部的表格。
 
-如果你选择不接受条款，你的订阅将不会自动续订，并且在当前订阅合约结束时，你将失去对 Office 的访问权限。  你的OneDrive数据将保留 90 天，供你复制，然后被删除。
+如果你选择不接受条款，你的订阅将不会自动续订，并且在当前订阅合同结束时，你将失去对 Office 的访问权限。 你的OneDrive数据将保留 90 天，供你复制，然后被删除。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 ### <a name="is-there-a-benefit-to-paying-monthly-vs-annually"></a>与按年支付相比，是否有好处？
 
@@ -127,11 +126,11 @@ ms.locfileid: "61421566"
 
 ### <a name="how-does-recurring-billing-work"></a>定期计费如何工作？
 
-“定期计费”处于打开状态时，订阅将每年都在你的订阅之日继续计费。 如果你的订阅处于活动状态，你可以在管理中心中将其关闭或重新打开。 有关详细信息，请 [打开或关闭定期计费](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。
+“定期计费”处于打开状态时，订阅将每年都在你的订阅之日继续计费。 如果你的订阅处于活动状态，你可以在管理中心中将其关闭或重新打开。 有关详细信息， [请打开或关闭定期计费](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。
 
 ### <a name="what-do-i-do-if-i-want-to-change-my-business-name"></a>如果要更改公司名称，该怎么办？
 
-请与可帮助你更改公司名称的小型企业支持专家联系。 有关详细信息，请 [获取支持](../../business-video/get-help-support.md)。
+请与可帮助你更改公司名称的小型企业支持专家联系。 有关详细信息，请 [通过获取支持](../../business-video/get-help-support.md)。
 
 ## <a name="related-articles"></a>相关文章
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365
+title: 自动调查和响应在Microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-defender-office365
 keywords: 自动事件响应， 调查， 修正， 威胁防护
 ms.date: 01/29/2021
-description: 了解 Microsoft Defender for Office 365 中的自动调查和响应功能Office 365
+description: 了解自动调查和响应功能如何Microsoft Defender for Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee046815f681b327fbcceaedf9033af9bfa5e109
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41ba3bcf31725cd5a9fb8b25bc22b6c8bb591363
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329511"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569259"
 ---
-# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>自动调查和响应在Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "63329511"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-触发安全警报时，由安全运营团队来调查这些警报，并采取措施来保护你的组织。 有时，安全运营团队可能会因触发的警报数量而感到不知所措。 Microsoft Defender for (AIR) 功能的自动调查和响应Office 365可以提供帮助。
+触发安全警报时，由安全运营团队来调查这些警报，并采取措施来保护你的组织。 有时，安全运营团队可能会因触发的警报数量而感到不知所措。 自动调查和响应 (AIR) 功能Microsoft Defender for Office 365可以提供帮助。
 
 AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调查流程，以响应当今存在的已知威胁。 适当的修正操作等待审批，使安全运营团队能够响应检测到的威胁。
 
@@ -66,10 +66,10 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 接下来，执行多个威胁调查和搜寻步骤：
 
 - 类似的电子邮件通过电子邮件群集搜索进行标识。
-- 信号与其他平台（如 [Microsoft Defender for Endpoint）共享](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
+- 信号与其他平台（如 Microsoft Defender for Endpoint）[共享](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
 - 确定任何用户是否点击了可疑电子邮件中任何恶意链接。
-- 在 Microsoft Defender for Exchange Online Protection ([EOP](exchange-online-protection-overview.md) ([检查](defender-for-office-365.md)Office 365检查用户是否报告了任何其他类似消息。
-- 检查用户是否遭到入侵。 此检查利用跨 Office 365[、Microsoft Defender for Cloud Apps](/cloud-app-security) 和 Azure Active Directory 的信号，关联任何相关的[](/azure/active-directory)用户活动异常。
+- 在 [EOP](exchange-online-protection-overview.md) 和 Exchange Online Protection (中 (Microsoft Defender for Office 365检查用户是否报告了任何其他类似消息[](defender-for-office-365.md)。
+- 检查用户是否遭到入侵。 此检查利用跨[Office 365、Microsoft Defender for Cloud Apps](/cloud-app-security)和Azure Active Directory信号，关联任何相关的用户活动[](/azure/active-directory)异常。
 
 在搜寻阶段，将风险和威胁分配给各种搜寻步骤。
 
@@ -77,25 +77,26 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>示例：安全管理员从威胁资源管理器触发调查
 
-除了由警报触发的自动调查之外，组织的安全运营团队还可以从威胁资源管理器中的视图触发 [自动调查](threat-explorer.md)。  此调查还会创建警报，Microsoft 365 Defender事件和外部 SIEM 工具查看此调查已触发。
+除了由警报触发的自动调查之外，组织的安全运营团队还可以从威胁资源管理器中的视图触发 [自动调查](threat-explorer.md)。 此调查还会创建警报，Microsoft 365 Defender事件和外部 SIEM 工具可以看到已触发此调查。
 
 例如，假设您使用的是资源管理器 **中的"恶意软件** "视图。 使用图表下方的选项卡，选择" **电子邮件"** 选项卡。如果在列表中选择一个或多个项目，则 **+ 操作** 按钮将激活。
 
-![包含选定邮件的资源管理器。](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="包含选定邮件的资源管理器" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
+
 
 使用" **操作"** 菜单，可以选择"触发 **调查"**。
 
-![所选邮件的操作菜单。](../../media/explorer-malwareview-selectedemails-actions.jpg)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="所选邮件的&quot;操作&quot;菜单" lightbox="../../media/explorer-malwareview-selectedemails-actions.jpg":::
 
 与警报触发的手册类似，从资源管理器中的视图触发的自动调查包括根调查、识别和关联威胁的步骤，以及缓解这些威胁的建议操作。
 
 ## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>示例：安全运营团队使用 Office 365 活动 API 将 AIR 与 SIEM 集成
 
-Microsoft Defender for Office 365 AIR 功能包括&[安全](air-view-investigation-results.md)运营团队可用于监视和解决威胁的报告和详细信息。 但您也可以将 AIR 功能与其他解决方案集成。 示例包括 SIEM (安全) 、案例管理系统或自定义报告解决方案。 通过使用管理活动 API，Office 365[集成](/office/office-365-management-api/office-365-management-activity-api-reference)。
+报告中的 AIR 功能Microsoft Defender for Office 365[报告&](air-view-investigation-results.md)安全运营团队可用于监视和解决威胁的详细信息。 但您也可以将 AIR 功能与其他解决方案集成。 示例包括 SIEM (安全) 、案例管理系统或自定义报告解决方案。 通过使用管理活动 API，Office 365[集成](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
-例如，最近，组织为安全运营团队设置了一种方法，用于查看 AIR 已处理的用户报告的网络钓鱼警报。 他们的解决方案将相关警报与组织的 SIEM 服务器及其案例管理系统集成在一起。 该解决方案大大减少了误报数量，以便其安全运营团队可以将时间和精力集中在实际威胁上。 若要了解有关此自定义解决方案Community，请参阅 Tech [Community 博客：使用 Microsoft Defender for Office 365 和 O365 管理 API 提高 SOC 的有效性](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
+例如，最近，组织为安全运营团队设置了一种方法，用于查看 AIR 已处理的用户报告的网络钓鱼警报。 他们的解决方案将相关警报与组织的 SIEM 服务器及其案例管理系统集成在一起。 该解决方案大大减少了误报数量，以便其安全运营团队可以将时间和精力集中在实际威胁上。 若要了解有关此自定义解决方案Community，请参阅 [Tech Community 博客：使用 O365 管理 API 提高 SOC Microsoft Defender for Office 365的有效性](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [使用 AIR 入门](office-365-air.md)
+- [开始 AIR](office-365-air.md)
 - [查看挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)

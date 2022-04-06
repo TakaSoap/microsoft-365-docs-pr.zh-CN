@@ -8,12 +8,13 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 936b14ceaa5f80e9371e776727bbb5304c60590d
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: f55cb36d9960fef2da977a2c50ebab5a9e0e9122
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60963175"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682011"
 ---
 # <a name="microsoft-defender-for-identity-sensor-health-and-settings-in-microsoft-365-defender"></a>Microsoft Defender for Identity 传感器运行状况和Microsoft 365 Defender
 
@@ -22,14 +23,14 @@ ms.locfileid: "60963175"
 - Microsoft 365 Defender
 - Defender for Identity
 
-本文介绍如何配置和监视[Microsoft Defender for Identity](/defender-for-identity)传感器Microsoft 365 Defender。 [](/microsoft-365/security/defender/overview-security-center)
+本文介绍如何配置和监视 [Microsoft Defender for Identity](/defender-for-identity) 传感器，[Microsoft 365 Defender。](/microsoft-365/security/defender/overview-security-center)
 
 >[!IMPORTANT]
 >作为与用户Microsoft 365 Defender的一部分，一些选项和详细信息从他们在 Defender for Identity 门户中的位置发生了更改。 请阅读下面的详细信息，了解在哪里可以找到熟悉的新功能和新功能。
 
 ## <a name="view-defender-for-identity-sensor-settings-and-status"></a>查看 Defender for Identity 传感器设置和状态
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender，</a>go to **设置** and then **Identities**.
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>中，转到"**设置**"和"**标识"**。
 
     ![转到"设置"，然后转到"标识"。](../../media/defender-identity/settings-identities.png)
 
@@ -40,7 +41,7 @@ ms.locfileid: "60963175"
     >[!NOTE]
     >在 Defender for Identity 门户中，传感器设置和运行状况信息位于单独的位置。 请注意，Microsoft 365 Defender它们现在在同一页面上。
 
-1. 如果选择" **筛选器"，** 可以选择哪些筛选器可用。 然后，对于每个筛选器，你可以选择要显示的传感器。
+1. 如果选择" **筛选器"**，可以选择哪些筛选器可用。 然后，对于每个筛选器，你可以选择要显示的传感器。
 
     [![传感器筛选器。](../../media/defender-identity/sensor-filters.png)](../../media/defender-identity/sensor-filters.png#lightbox)
 
@@ -54,7 +55,7 @@ ms.locfileid: "60963175"
 
     ![问题详细信息。](../../media/defender-identity/issue-details.png)
 
-1. 如果选择" **管理传感器"，** 将打开一个窗格，可在其中配置传感器详细信息。
+1. 如果选择" **管理传感器"**，将打开一个窗格，您可以在其中配置传感器详细信息。
 
     ![管理传感器。](../../media/defender-identity/manage-sensor.png)
 
@@ -68,7 +69,7 @@ ms.locfileid: "60963175"
 
 在 **"传感器"** 页面中，可以添加新的传感器。
 
-1. 选择 **"添加传感器"。**
+1. 选择 **"添加传感器"**。
 
     ![添加传感器。](../../media/defender-identity/add-sensor.png)
 
@@ -82,7 +83,7 @@ ms.locfileid: "60963175"
 
     - 包含连接到 Defender for Identity 云服务所需信息的配置设置文件
 
-1. 复制 **访问键**。 Defender for Identity 传感器需要访问密钥才能连接到 Defender for Identity 实例。 访问密钥是一个一次密码，用于传感器部署，之后所有通信都使用证书进行身份验证和 TLS 加密执行。 如果需要 **重新生成新的访问键** ，请使用"重新生成密钥"按钮。 它不会影响以前部署的任何传感器，因为它仅用于传感器的初始注册。
+1. 复制 **Access 键**。 Defender for Identity 传感器需要访问密钥才能连接到 Defender for Identity 实例。 访问密钥是一个一次密码，用于传感器部署，之后所有通信都使用证书进行身份验证和 TLS 加密执行。 如果需要 **重新生成新的访问键** ，请使用"重新生成密钥"按钮。 它不会影响以前部署的任何传感器，因为它仅用于传感器的初始注册。
 
 1. 将程序包复制到要安装 Defender for Identity 传感器的专用服务器或域控制器。
 
