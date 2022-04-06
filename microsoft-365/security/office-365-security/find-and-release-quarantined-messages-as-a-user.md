@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61873485"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682386"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -39,10 +39,6 @@ ms.locfileid: "61873485"
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。有关详细信息，请参与 [在 EOP 中隔离](quarantine-email-messages.md)。
 
 作为普通用户(非管理员)，下表描述了作为已隔离邮件的收件人可用的 **默认** 功能:
-
-<br>
-
-****
 
 |隔离原因：|查看|发布|删除|
 |---|:---:|:---:|:---:|
@@ -64,7 +60,6 @@ ms.locfileid: "61873485"
 |将恶意文件隔离为恶意软件的 SharePoint、OneDrive 以及 Microsoft Teams 的安全附件。||||
 |**邮件流规则(传输规则)**||||
 |隔离电子邮件的邮件流规则。||||
-|
 
 _隔离策略_ 根据在 [受支持功能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) 中隔离邮件的原因定义允许用户对已隔离邮件执行的操作。 默认的隔离策略会强制执行上表中所述的历史功能。 管理员可以创建并应用自定义隔离策略，这些策略为受支持功能中的用户定义限制少或多的功能。 有关详细信息，请参阅 [隔离策略](quarantine-policies.md)。
 

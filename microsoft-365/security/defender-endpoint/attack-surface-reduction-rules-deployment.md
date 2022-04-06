@@ -20,18 +20,18 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 4703867449877a35d6621b76072b9420a0cdbdec
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520542"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682165"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>ASR 规则部署先决条件
 
 ## <a name="before-you-begin"></a>准备工作
 
-攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 使用 ASR (配置攻击面) 规则（Microsoft Defender for Endpoint中的许多安全功能之一）可以提供帮助。
+攻击面是组织易受网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能破坏组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而让攻击者减少攻击方法。 配置攻击面减少 (ASR) 规则（Microsoft Defender for Endpoint 中的众多安全功能之一）可以提供帮助。
 
 ASR 规则针对某些软件行为，例如：
 
@@ -46,9 +46,9 @@ ASR 规则针对某些软件行为，例如：
 >[!IMPORTANT]
 >本指南提供了图像和示例，可帮助你确定如何配置 ASR 规则;这些图像和示例可能无法反映适用于您的环境的最佳配置选项。
 
-在启动之前，请查看 [攻击面](overview-attack-surface-reduction.md)减少概述和攻击面减少规则 [- 第 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 部分，了解基础信息。 若要了解覆盖范围和潜在影响，请熟悉当前的 ASR 规则集;请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。  在熟悉 ASR 规则集时，请注意每规则 GUID 映射;see： [ASR rules and GUIDs matrix](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+在启动之前，请查看 [攻击面](overview-attack-surface-reduction.md)减少概述和攻击面减少规则 [- 第 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 部分，了解基础信息。 若要了解覆盖范围和潜在影响，请熟悉当前的 ASR 规则集;请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。
 
-ASR 规则只是攻击平台中攻击面减少功能的一Microsoft Defender for Endpoint。 本文档将详细介绍如何有效地部署 ASR 规则，以阻止高级威胁，如人为操作的勒索软件和其他威胁。  
+ASR 规则只是 Microsoft Defender for Endpoint 中攻击面减少功能的一项功能。 本文档将详细介绍如何有效地部署 ASR 规则，以阻止高级威胁，如人为操作的勒索软件和其他威胁。  
 
 ### <a name="rules-by-category"></a>按类别分类的规则
 
@@ -74,9 +74,9 @@ ASR 规则只是攻击平台中攻击面减少功能的一Microsoft Defender for
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM) 
 - Windows 10和 Windows 11 设备
-- Microsoft Defender for Endpoint E5 或 Windows E5 许可证
+- 适用于终结点 E5 或 Windows E5 的 Microsoft Defender 许可证
 
-若要充分利用 ASR 规则和报告，我们建议使用 Microsoft 365 Defender E5 或 Windows E5 许可证和 A5。 了解更多信息[：Microsoft Defender for Endpoint](minimum-requirements.md)。
+若要充分利用 ASR 规则和报告，我们建议使用 Microsoft 365 Defender E5 或 Windows E5 许可证和 A5。 了解更多信息 [：Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)。
 
 >[!Note]
 >有多种方法可配置 ASR 规则。 可以使用以下方法配置 ASR 规则：Microsoft Endpoint Manager (MEM) 、PowerShell、组策略、Microsoft System Center Configuration Manager (SCCM) 、MEM OMA-URI。
@@ -94,7 +94,7 @@ Microsoft Defender 防病毒不得在下列任一模式下：
 - 被动
 - 在阻止模式下使用终结点检测和响应 (EDR) 被动模式
 - 有限定期扫描 (LPS) 
-- 关
+- 关闭
 
 请参阅：[云提供的保护和Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)。
 
@@ -122,10 +122,10 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 与任何可能会影响业务线操作的新、大规模实施一样，在规划和实施时一定有条理。 由于 ASR 规则在阻止恶意软件方面具有强大的功能，因此需要仔细规划和部署这些规则，以确保它们最适合您独特的客户工作流。 若要在环境中工作，您需要仔细规划、测试、实施和操作 ASR 规则。  
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="ASR 规则部署阶段" lightbox="images/asr-rules-deployment-phases.png":::
+> ![ASR 规则部署阶段](images/asr-rules-deployment-phases.png)
 
 >[!Note]
->对于使用非 Microsoft HIPS 并过渡到 Microsoft Defender for Endpoint 攻击面减少规则的客户：Microsoft 建议客户在从审核模式转移到阻止模式之前，并行运行其 HIPS 解决方案及其 ASR 规则部署。 请记住，您必须联系第三方防病毒供应商，获得排除建议。  
+>对于使用非 Microsoft HIPS 并且正在过渡到 Microsoft Defender for Endpoint 攻击面减少规则的客户：Microsoft 建议客户在从审核模式转移到阻止模式之前，并行运行其 HIPS 解决方案及其 ASR 规则部署。 请记住，您必须联系第三方防病毒供应商，获得排除建议。  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
@@ -177,7 +177,7 @@ Microsoft Defender 防病毒 Microsoft 云服务无缝工作。 这些云保护�
 
 [为部署环境创建Windows](/windows/deployment/update/create-deployment-plan)
 
-[使用基于角色的访问控制 (RBAC) 中分布式 IT 的作用域Intune](/mem/intune/fundamentals/scope-tags)
+[在 Intune 中为分布式 IT 使用基于角色 (RBAC) 和范围标记](/mem/intune/fundamentals/scope-tags)
 
 [在 Microsoft Intune 中分配设备配置文件](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 

@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理员可以了解如何使用 Microsoft 365 Defender 门户中的提交门户向 Microsoft 提交可疑电子邮件、可疑钓鱼邮件、垃圾邮件以及其他可能有害的邮件、URL 和电子邮件附件，以重新扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323993"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682628"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用提交门户将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft
 
@@ -51,10 +51,10 @@ ms.locfileid: "63323993"
 
 - 访问 <https://security.microsoft.com/> 打开 Microsoft 365 Defender 门户。 若要直接转到 **提交页面，** 请使用 <https://security.microsoft.com/reportsubmission>。
 
-- 若要向 Microsoft 提交邮件和文件，你需要是以下角色组之一的成员：
+- 若要将邮件和文件提交到 Microsoft，你需要具有以下角色之一：
   - **安全管理员****或安全** 读者Microsoft 365 Defender [门户](permissions-microsoft-365-security-center.md)。
   
-    请注意，查看自定义邮箱的用户提交需要此角色组的 [成员身份，如](#view-user-submissions-to-microsoft) 本文稍后所述。
+    请注意，查看自定义邮箱的用户提交需要这些角色之 [一，如](#view-user-submissions-to-microsoft) 本文稍后所述。
 
 - 如果邮件在邮箱中仍然可用，并且用户或其他管理员未清除，则管理员可以提交 30 天的邮件。
 
@@ -186,7 +186,7 @@ ms.locfileid: "63323993"
      - **网络消息 ID**
      - **Sender**
      - **收件人**
-     - **名称**
+     - **Name**
      - **提交者**
      - **提交原因**
      - **状态**
@@ -199,7 +199,7 @@ ms.locfileid: "63323993"
 
    - 若要对条目进行分组 **，请单击"** 分组"，然后从下拉列表中选择下列值之一：
      - **无**
-     - **类型**
+     - **Type**
      - **原因**
      - **状态**
      - **结果**

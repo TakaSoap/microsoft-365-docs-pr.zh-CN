@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318601"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682474"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自动调查和响应功能中报告误报/负面影响
 
@@ -68,15 +68,10 @@ ms.locfileid: "63318601"
 
 借助威胁资源管理器，安全运营团队可以查找受操作影响的电子邮件，并可能撤消该操作。
 
-<br>
-
-****
-
-|应用场景|撤消选项|了解详细信息|
+|应用场景|撤消选项|了解更多信息|
 |---|---|---|
 |电子邮件已路由到用户的"垃圾邮件"文件夹|<ul><li>将邮件移动到用户的"已删除邮件"文件夹</li><li>将邮件移动到用户的收件箱</li><li>删除邮件</li></ul>|[查找并调查在邮件中传递的恶意Office 365](investigate-malicious-email-that-was-delivered.md)|
 |已隔离电子邮件或文件|<ul><li>释放电子邮件或文件</li><li> 删除电子邮件或文件</li></ul>|[以管理员角色管理隔离邮件](manage-quarantined-messages-and-files.md)|
-|
 
 ### <a name="undo-an-action-in-the-action-center"></a>撤消操作中心中的操作
 

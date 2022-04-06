@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321315"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499938"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>步骤 2. 修正第一个事件
 
@@ -68,7 +68,7 @@ Microsoft 365 Defender分析人员可以手动启动的几个修正操作。 操
 7. 在 Microsoft Defender for Endpoint 中创建自定义指示器以阻止 Tor IP 地址
 8. 在 Microsoft Defender for Cloud Apps 中为此类型的警报创建管理操作，如下图所示：
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender for Cloud Apps 门户中的管理操作示例。":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Microsoft Defender 云应用门户中的管理操作" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 大多数修正操作都可以在 Microsoft 365 Defender 中应用和Microsoft 365 Defender。
 
@@ -85,7 +85,7 @@ Playbook 使用Power Automate创建自定义自动化流程自动化流，以在
 
 下面是一个示例。
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="自定义自定义Power Automate自动化流的示例。"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="自定义Power Automate自动化流程" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 还可以在事后评审 [期间创建操作](first-incident-post.md) 手册，以从已解决的事件中创建修正操作。 
 

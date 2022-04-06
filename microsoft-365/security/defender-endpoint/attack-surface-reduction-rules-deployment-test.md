@@ -11,36 +11,43 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: 'oogunrinde, sugamar'
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
+ms.openlocfilehash: 85d1400f390d9666c39ef13ffb484d17cad4a4c8
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682187"
 ---
-
 # <a name="step-2-test-asr-rules"></a>步骤 2：测试 ASR 规则
 
 测试攻击面 (ASR) 规则可帮助你在启用任何规则之前确定规则是否将妨碍业务线操作。 通过从一个小型的受控组开始，可以限制在整个组织中扩展部署时的潜在工作中断。
 
-开始使用圈 1 (ASR) 部署攻击面减少。
+使用圈 1 开始 (ASR) 部署攻击面减少。
 
 > [!div class="mx-imgBorder"]
 > ![ASR 规则测试步骤](images/asr-rules-testing-steps.png)
 
 ## <a name="step-1-test-asr-rules-using-audit"></a>步骤 1：使用审核测试 ASR 规则
 
-首先打开 ASR 规则，将规则设置为审核，从圈 1 中的冠军用户或设备开始测试阶段。 通常，建议在审核策略中 (所有规则) 以便可以确定在测试阶段触发哪些规则。 请注意，设置为"审核"的规则通常不会影响应用该规则的一个或多个实体的功能，但会为评估生成记录的事件;对最终用户没有影响。
+首先打开 ASR 规则，将规则设置为审核，从圈 1 中的冠军用户或设备开始测试阶段。 通常，建议在审核策略中 (所有) ，以便可以确定在测试阶段触发的规则。 请注意，设置为"审核"的规则通常不会影响应用该规则的一个或多个实体的功能，但会为评估生成记录的事件;对最终用户没有影响。
 
 ### <a name="configure-asr-rules-using-mem"></a>使用 MEM 配置 ASR 规则
 
-You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure custom ASR rules.
+可以使用 MEM Microsoft Endpoint Manager (终结点) 配置自定义 ASR 规则。
 
 1. 打开[Microsoft Endpoint Manager管理中心](https://endpoint.microsoft.com/#home)
 2. 转到终结点 **安全** > **附加图面减少**。
 3. 选择“创建策略”。
-4. 在 **平台** 中，**Windows 10** 和更高版本，在 **配置文件** 中选择 **攻击面减少规则**。
+4. 在 **平台** 中，**Windows 10** 和更高版本，在 **配置文件** 中选择攻击 **面减少规则**。
   
     > [!div class="mx-imgBorder"]
     > ![配置 ASR 规则配置文件](images/asr-mem-create-profile.png)
@@ -69,7 +76,7 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>步骤 2：了解安全门户中的攻击面减少规则Microsoft 365 Defender页面
 
-ASR 规则报告页位于 Microsoft 365 Defender **portalReportsAttack** >  >  **图面减少规则中**。 此页面包含三个选项卡：
+ASR 规则报告页位于 **Microsoft 365 Defender** **portalReportsAttack** >  >  **图面减少规则中**。 此页面包含三个选项卡：
 
 - Detections
 - 配置
@@ -117,7 +124,7 @@ ASR 规则报告页位于 Microsoft 365 Defender **portalReportsAttack** >  >  *
 > ![攻击面减少规则检测筛选规则](images/asr-defender365-filter.png)
 
 >[!Note]
->如果你拥有 Microsoft Microsoft 365 安全 E5 或 A5、Windows E5 或 A5 许可证，以下链接将打开 Microsoft Defender 365 报告 > [攻击](https://security.microsoft.com/asr?viewid=detections)面减少 > 检测"选项卡。
+>如果你有 Microsoft Microsoft 365 安全 E5 或 A5、Windows E5 或 A5 许可证，以下链接将打开 Microsoft Defender 365 报告 > 攻击面入侵 > 检测"选项卡。[](https://security.microsoft.com/asr?viewid=detections)
 
 ### <a name="configuration-tab"></a>"配置"选项卡
 
@@ -131,7 +138,7 @@ ASR 规则报告页位于 Microsoft 365 Defender **portalReportsAttack** >  >  *
 > [!div class="mx-imgBorder"]
 > ![攻击面减少规则已启用和模式](images/asr-defender365-configurations.settings.png)
 
-"**入门**"链接将Microsoft Endpoint Manager管理中心，可在其中为 ASR 创建或修改终结点保护策略：
+"**入门"** 链接Microsoft Endpoint Manager管理中心，可在其中为 ASR 创建或修改终结点保护策略：
 
 > [!div class="mx-imgBorder"]
 > ![MEM 中的攻击面减少规则](images/asr-defender365-05b-mem1.png)
@@ -147,20 +154,20 @@ ASR 规则报告页位于 Microsoft 365 Defender **portalReportsAttack** >  >  *
 > ![终结点安全管理窗格](images/asr-defender365-05b-mem3.png)
 
 >[!Note]
->如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告>攻击面减少 > [配置](https://security.microsoft.com/asr?viewid=configuration)"选项卡。
+>如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告 > 攻击面减少 > [配置](https://security.microsoft.com/asr?viewid=configuration)"选项卡。
 
 ### <a name="add-exclusions"></a>添加排除项
 
-此选项卡提供了一种方法来选择检测到的实体 (例如，误报) 排除。 添加排除项后，报告会提供预期影响的摘要。
+此选项卡提供了一种方法，用于选择检测到 (，例如，误报) 排除。 添加排除项后，报告会提供预期影响的摘要。
 
 >[!Note]
-> Microsoft Defender 防病毒 ASR 规则遵守 AV 排除项。  请参阅 [配置并验证基于扩展名、名称或位置的排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+> Microsoft Defender 防病毒 AV 排除项受 ASR 规则使用。  请参阅 [配置并验证基于扩展名、名称或位置的排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
 > [!div class="mx-imgBorder"]
 > ![终结点安全 Asr 工具](Images/asr-defender365-06d.png)
 
 > [!Note]
->如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告 > 攻击面减少 > [排除](https://security.microsoft.com/asr?viewid=exclusions)"选项卡。
+>如果你有 Microsoft Defender 365 E5 (或 Windows E5？) 许可证，此链接将打开 Microsoft Defender 365 报告>攻击面减少>[排除](https://security.microsoft.com/asr?viewid=exclusions)"选项卡。
 
 ### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>使用 PowerShell 作为启用 ASR 规则的替代方法
 
@@ -185,7 +192,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 您还可以使用组策略、Intune 或移动设备管理 (MDM) 配置服务提供程序 (CSP) 配置和部署设置。 在主要的攻击 [面减少规则文章中了解更多信息](attack-surface-reduction.md) 。
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>使用Windows查看事件查看器"作为攻击面减少规则报告页面（在 Microsoft 365 Defender 门户中）的替代方法
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>使用Windows事件查看器查看作为攻击面减少规则报告页面的替代方法，在 Microsoft 365 Defender 门户
 
 若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows Defender/Operational 日志中的事件 ID 1121。 下表列出了所有网络保护事件。
 

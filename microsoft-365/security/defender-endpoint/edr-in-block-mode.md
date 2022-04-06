@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 151fb8de088531b9a9f053fc2b5d3c433055e21f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6e6bf499ab348d05cba237fa69b205cb495dccb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473114"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681053"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>阻止模式下的终结点检测和响应 (EDR)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "64473114"
 
 EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mgt.md)。 如果组织的安全团队尚未启用EDR，你[](tvm-security-recommendation.md)组织的安全团队将获取一个安全建议，以在阻止模式下启用它。
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="在阻止模式下打开EDR的建议" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="建议在阻止EDR启用此模式。":::
 
 > [!TIP]
 > 若要获得最佳保护，请确保部署 **[适用于 Endpoint 基线的 Microsoft Defender](configure-machines-security-baseline.md)**。
@@ -59,7 +59,7 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 
 下图显示了一个不需要的软件的实例，这些软件在阻止模式下EDR阻止：
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="在阻止模式下EDR进行检测" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="EDR阻止模式时检测到某些内容。":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>启用EDR阻止模式
@@ -91,7 +91,7 @@ EDR模式中的应用与威胁威胁[& 漏洞管理](next-gen-threat-and-vuln-mg
 
 |要求|详细信息|
 |---|---|
-|Permissions|您必须在服务器中分配全局管理员或安全[管理员Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。|
+|权限|您必须在服务器中分配全局管理员或安全[管理员Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) 有关详细信息，请参阅 [基本权限](basic-permissions.md)。|
 |操作系统|设备必须运行以下版本之一Windows： <br/>- Windows 11 <br/>- Windows 10 (所有) <br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>- Windows Server 版本 1803 或更高版本<br/>- Windows Server 2016 Windows Server 2012统一 (解决方案部署 R2) <sup>[[1](#fn1)]</sup> [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview)  |
 |Microsoft Defender for Endpoint|设备必须载入到适用于终结点的 Defender。 另请参阅以下文章： <br/>- [Microsoft Defender for Endpoint 的最低要求](minimum-requirements.md)<br/>- [载入设备和配置适用于终结点功能的 Microsoft Defender](onboard-configure.md)<br/>- [将Windows载入 Defender for Endpoint 服务](configure-server-endpoints.md)<br/>- [新式Windows Server 2012预览版中新增了 R2 和 2016 (R2 和 2016) ](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
 |Microsoft Defender 防病毒|设备必须已安装Microsoft Defender 防病毒在主动模式或被动模式下运行。 [确认Microsoft Defender 防病毒处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。|
@@ -145,7 +145,7 @@ EDR模式访问不会影响在用户设备上运行的第三方防病毒保护�
 
 若要确认Microsoft Defender 防病毒处于主动或被动模式，可以在运行命令提示符或 PowerShell 的设备上Windows。
 
-|Method|Procedure|
+|方法|Procedure|
 |---|---|
 |PowerShell|1. 选择"开始"菜单，开始键入 `PowerShell`，然后在Windows PowerShell中打开" "。<br/><br/>2. 键入 `Get-MpComputerStatus`。<br/><br/>3. 在结果列表中，在 **AMRunningMode** 行中查找下列值之一：<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>若要了解更多信息，请参阅 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)。|
 |命令提示符|1. 选择"开始"菜单，开始键入 `Command Prompt`，然后在Windows打开命令提示符。<br/><br/>2. 键入 `sc query windefend`。<br/><br/>3. 在结果列表中的 **"状态** "行中，确认服务正在运行。 |

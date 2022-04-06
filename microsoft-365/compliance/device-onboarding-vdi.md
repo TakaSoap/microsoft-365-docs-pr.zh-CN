@@ -14,18 +14,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft 365 终结点数据丢失防护服务。
-ms.openlocfilehash: 6ac13edde066319a5174234450dac67c29209b1b
-ms.sourcegitcommit: 8eca41cd21280ffcb1f50cafce7a934e5544f302
+ms.openlocfilehash: 00804c93022f21715e3604eeb45c22caa4745f91
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60950817"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682143"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>载入非永久性虚拟桌面基础结构设备
 
 **适用于：**
 
-- [Microsoft 365 DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365终结点数据丢失防护 （DLP）](./endpoint-dlp-learn-about.md)
 - [内部风险管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 - 虚拟桌面基础结构 (VDI) 设备
@@ -35,7 +35,7 @@ ms.locfileid: "60950817"
 
 ## <a name="onboard-vdi-devices"></a>载入 VDI 设备
 
-Microsoft 365 VDI (会话载入) 非永久性虚拟桌面基础结构。
+Microsoft 365 VDI 会话载入支持 (虚拟) 基础结构。
 
 > [!NOTE]
 > 若要载入非永久性 VDI 会话，VDI 设备必须位于 Windows 10 1809 或更高版本上。
@@ -56,15 +56,15 @@ VDI 设备可以在合规性Microsoft 365显示为：
 > [!WARNING]
 > 对于资源配置较低的环境，VDI 启动过程可能会减慢设备载入过程。
 
-1. 从 Microsoft 合规性中心获取.zip VDI *(DeviceCompliancePackage.zip)*[文件](https://compliance.microsoft.com)。
+1. 从 Microsoft 合规性中心.zip VDI (DeviceCompliancePackage.zip *)* [文件包](https://compliance.microsoft.com)。
 
-2. 在导航窗格中，选择 **"设置**  >  **载入**  >  **"。**
+2. 在导航窗格中，选择 **设置** > **Device onboardingOnboarding** > 。
 
-3. 在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
+3. 在 **"部署方法"** 字段中，选择"非永久性终结点的 **VDI 载入脚本"**。
 
 4. 单击 **下载程序包** 并保存.zip文件。
 
-5. 将文件从 DeviceCompliancePackage 文件夹中从 .zip 文件复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。
+5. 将文件从 DeviceCompliancePackage 文件夹中从 .zip 文件复制到 `golden` 路径 下的映像中 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`。
 
 6. 如果未针对每台设备实现单个条目，请复制 DeviceComplianceOnboardingScript.cmd。
 
@@ -73,7 +73,7 @@ VDI 设备可以在合规性Microsoft 365显示为：
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-8. 打开本地组策略编辑器窗口并 **导航到计算机** 配置  >  **Windows 设置**  >  **脚本**  >  **启动**。
+8. 打开"本地组策略编辑器"窗口并导航到"**计算机** > 配置 **Windows 设置** > **ScriptsStartup** > **"**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -82,11 +82,11 @@ VDI 设备可以在合规性Microsoft 365显示为：
 
    **对于每台设备的单个条目**
 
-   选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。
+   选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1`。
 
    **对于每台设备的多个条目**：
 
-   选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `DeviceComplianceOnboardingScript.cmd` 。
+   选择"**脚本**"选项卡，**然后单击"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `DeviceComplianceOnboardingScript.cmd`。
 
 10. 测试解决方案：
     1. 创建具有一台设备的池。
@@ -100,9 +100,9 @@ VDI 设备可以在合规性Microsoft 365显示为：
 
 12. 通过输入设备名称并选择设备作为搜索类型 **来** 使用搜索函数。
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>使用 VDI 映像更新非永久性 () 基础结构
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>使用 VDI 映像更新 (虚拟) 基础结构
 
-作为最佳实践，我们建议使用脱机维护工具修补黄金/主映像。
+作为最佳实践，我们建议使用脱机维护工具修补黄金映像。
 
 例如，可以使用以下命令在映像保持脱机时安装更新：
 
@@ -120,7 +120,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 如果脱机服务不是非永久性 VDI 环境的可行选项，应执行以下步骤以确保一致性和传感器运行状况：
 
-1. 启动主映像进行联机维护或修补后，运行载出脚本以关闭Microsoft 365传感器。 有关详细信息，请参阅使用本地 [脚本的载出设备](device-onboarding-script.md#offboard-devices-using-a-local-script)。
+1. 启动黄金映像进行联机服务或修补后，运行一个载出脚本以关闭Microsoft 365传感器。 有关详细信息，请参阅使用本地 [脚本的载出设备](device-onboarding-script.md#offboard-devices-using-a-local-script)。
 
 2. 在 CMD 窗口中运行以下命令，确保传感器已停止：
 
@@ -130,7 +130,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 3. 根据需要为映像提供服务。
 
-4. 使用可下载的 PsExec.exe (运行以下命令，以清理传感器自启动后可能 https://download.sysinternals.com/files/PSTools.zip) 累积的网络文件夹内容：
+4. 使用可下载的 https://download.sysinternals.com/files/PSTools.zip) PsExec.exe (运行以下命令，以清理传感器自启动后可能累积的网络文件夹内容：
 
     ```console
     PsExec.exe -s cmd.exe
@@ -140,12 +140,12 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
     exit
     ```
 
-5. 像平常一样重新密封黄金/主图像。
+5. 像平常一样重新密封黄金图像。
 
 ## <a name="related-topics"></a>相关主题
 
 - [使用Windows 10组Windows 11载入和加入设备](device-onboarding-gp.md)
-- [使用 Windows 10 Windows 11载入设备和 Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [使用Windows 10管理工具载入 Windows 11 和移动设备](device-onboarding-mdm.md)
-- [使用Windows 10 Windows 11脚本载入设备和设备](device-onboarding-script.md)
+- [使用 Windows 10 Windows 11载入设备Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [使用移动设备管理工具载入 Windows 10 和 Windows 11 设备](device-onboarding-mdm.md)
+- [使用本地脚本载入 Windows 10 和 Windows 11 设备](device-onboarding-script.md)
 - [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

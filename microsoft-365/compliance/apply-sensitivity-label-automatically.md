@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 166905abb1dc08bcf9fe34e80c3ff3f44813501b
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63449802"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499652"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -201,7 +201,7 @@ Azure 信息保护统一标记客户端仅支持自动标记内置和自定义�
 
 下面的示例展示了 Azure 信息保护统一标记客户端在你配置条件以将标签作为建议操作应用时提供的提示，以及自定义策略提示。可以选择在策略提示中显示什么文本。
 
-![关于应用建议标签的提示。](../media/Sensitivity-label-Prompt-for-required-label.png)
+![关于应用建议标签的提示。](../media/Sensitivity-label-prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>何时应用自动标签或建议标签
 

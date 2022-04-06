@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 ms.technology: mdo
-ms.openlocfilehash: c8bf111acd41ede8a493672234de4e4a33ccd105
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 7e8fbeab380ceac3531e2a288fb5e8fb5f43e166
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775843"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682364"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>零信任标识和设备访问配置
 
@@ -39,7 +39,7 @@ ms.locfileid: "63775843"
 
 - 使用最小特权访问
 
-  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。
+  使用 JIT/JEA (实时和 Just-Enough-Access) 、基于风险的自适应策略和数据保护来限制用户访问。  
 
 - 假定泄露
 

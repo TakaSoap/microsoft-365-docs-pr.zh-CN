@@ -13,12 +13,13 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4db5851edcbb4daa2a0be1fa36770b7bb2d4b94
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 080a61b0ed20843d5962f1901b8d8fece73d8f4b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371168"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681031"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -47,7 +48,7 @@ ms.locfileid: "61371168"
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-可以通过在服务中心内启动新服务请求Microsoft 365 管理中心或通过电话调用，从 Microsoft 获取帮助。 Premier Support 订阅者具有额外的支持选项。
+可以通过在服务器内启动新服务请求Microsoft 365 管理中心或通过电话调用，从 Microsoft 获得帮助。 Premier Support 订阅者具有额外的支持选项。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
@@ -67,7 +68,7 @@ ms.locfileid: "61371168"
 
 1. 登录到Microsoft 365 管理中心。
 
-2. 有关一般产品问题，请转到 **支持** \> **人员询问客户支持** \> **致电技术支持** 人员。
+2. 有关常规产品问题， **请转到支持** \> **人员请求客户支持呼叫** \> **技术支持**。
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 
@@ -76,8 +77,6 @@ ms.locfileid: "61371168"
 ## <a name="support-telephone-numbers"></a>支持电话号码
 
 Microsoft 针对全球产品支持提供本地或免费电话号码。 很多支持中心都可以在工作时间提供本地语言支持，或者全天候提供英文支持。 如果您未看到下面列出的位置，请使用如上所述的虚拟代理查找您的本地支持电话号码。
-
-****
 
 |国家或地区|预购买和帐单问题|技术支持问题|
 |---|---|---|
@@ -89,7 +88,6 @@ Microsoft 针对全球产品支持提供本地或免费电话号码。 很多支
 |西班牙|免费电话：900 814 197 <br> 本地：912 718 160|相同|
 |英国|免费电话：0800 032 6417 <br> 本地：0203 450 6455|相同|
 |美国|免费电话：1-877-913-2707|免费电话：1-800-865-9408|
-|
 
 ## <a name="for-more-information-about-eop-documentation"></a>有关 EOP 文件的详细信息
 

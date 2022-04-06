@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 8a8de691ff08b50b56c34ed9e779cc97d48c5fcd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755822"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682209"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>通过管理Microsoft 威胁专家配置和管理Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "63755822"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!IMPORTANT]
 > 在应用之前，请务必与 Microsoft 技术服务提供商和帐户团队讨论 Microsoft 威胁专家 - 目标攻击通知托管威胁搜寻服务的资格要求。
@@ -52,15 +52,15 @@ ms.locfileid: "63755822"
 
 2. 选择“**应用**”。
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Microsoft 威胁专家门户中的&quot;Microsoft 365 Defender设置&quot;页" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    ![设置Microsoft 威胁专家的图像。](../../media/mte/mte-collaboratewithmte.png)
 
 3. 输入你的姓名和电子邮件地址，以便 Microsoft 可以就你的应用程序联系你。
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Microsoft 威胁专家门户中的&quot;Microsoft 365 Defender应用程序&quot;页" lightbox="../../media/mte/mte-apply.png":::
-  
+    ![应用程序Microsoft 威胁专家的图像。](../../media/mte/mte-apply.png)
+
 4. 阅读 [隐私声明，](https://privacy.microsoft.com/en-us/privacystatement)**然后在完成后选择** 提交。 应用程序获得批准后，您将收到欢迎电子邮件。
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Microsoft 威胁专家门户中的应用程序Microsoft 365 Defender确认" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    ![应用程序Microsoft 威胁专家的图像。](../../media/mte/mte-applicationconfirmation.png)
 
 5. 收到欢迎电子邮件后，将自动开始接收目标攻击通知。
 
@@ -105,13 +105,13 @@ ms.locfileid: "63755822"
 
 2. 从顶部菜单中， **选择？咨询威胁专家**。
 
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Microsoft 威胁专家门户中菜单中的按需专家Microsoft 365 Defender专家" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+    ![菜单Microsoft 威胁专家专家按需提供的图像。](../../media/mte/incidents-action-mte-highlighted.png)
 
     将打开一个飞出屏幕。
 
     标头将指示你是使用试用版订阅，还是使用完整的 Microsoft 威胁专家 - 专家按需订阅。
 
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="Microsoft 威胁专家门户中的按需专家试用订阅Microsoft 365 Defender屏幕" lightbox="../../media/mte/mte-trial.png":::
+    ![Microsoft 威胁专家专家按需试用订阅屏幕的图像。](../../media/mte/mte-trial.png)
 
     " **调查** "主题字段已经填充了指向请求相关页面的链接。
 

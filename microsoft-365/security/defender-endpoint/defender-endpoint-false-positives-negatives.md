@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 160108e123f5ba38a7c7af8c36ebb17431e860ad
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 214aafec22e26e5c69b40021eecb185a8dbfcbb2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472960"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681625"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for Endpoint 中的误报/漏报
 
@@ -40,7 +40,7 @@ ms.locfileid: "64472960"
 
 在终结点保护解决方案中，误报是一个实体（如文件或进程）被检测并标识为恶意实体，即使实体实际上不是威胁。 漏报是未检测为威胁的实体，即使它实际上是恶意实体。 任何威胁防护解决方案（包括 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)）都可能发生误报/负面影响。
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="Microsoft Defender 终结点门户中的误报和负面影响的定义" lightbox="images/false-positives-overview.png":::
+![Defender for Endpoint 中的误报和负数的定义。](images/false-positives-overview.png)
 
 幸运的是，可以采取措施来解决并减少此类问题。 如果你在邮件中看到误报/负Microsoft 365 Defender，你的安全操作[](/microsoft-365/security/defender/microsoft-365-defender)可以通过以下过程采取一些措施解决这些问题：
 
@@ -52,7 +52,7 @@ ms.locfileid: "64472960"
 
 执行本文所述任务后，如果仍有误报/负值问题，可以获取帮助。 请参阅 [是否仍然需要帮助？](#still-need-help)
 
-:::image type="content" source="images/false-positives-step-diagram.png" alt-text="解决误报和负面影响的步骤" lightbox="images/false-positives-step-diagram.png":::
+![解决误报和负面影响的步骤。](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > 本文旨在指导使用 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) 的安全操作员和安全管理员。
@@ -162,7 +162,7 @@ ms.locfileid: "64472960"
 ### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离中删除文件
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="隔离文件" lightbox="images/autoir-quarantine-file-1.png":::
+> ![隔离文件。](images/autoir-quarantine-file-1.png)
 
 1. 在门户的左侧 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">导航窗格中，</a>Microsoft 365 Defender操作 **中心"**。
 
@@ -257,7 +257,7 @@ ms.locfileid: "64472960"
 - [IP 地址、URL 和域](#indicators-for-ip-addresses-urls-or-domains)
 - [应用程序证书](#indicators-for-application-certificates)
 
-:::image type="content" source="images/false-positives-indicators.png" alt-text="指示器类型" lightbox="images/false-positives-indicators.png":::
+![指示器类型关系图。](images/false-positives-indicators.png)
 
 #### <a name="indicators-for-files"></a>文件指示器
 

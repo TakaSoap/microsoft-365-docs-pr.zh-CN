@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b708d7aa993bdcd74b6fe00f633e3f7933ff04b8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321735"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682430"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -55,7 +55,6 @@ ms.locfileid: "63321735"
 |企业|[登录风险低、中或高 *时需要 MFA*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将Exchange Online包括在云应用的分配中|
 ||[要求兼容电脑 *和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|将Exchange Online包括在云应用列表中|
 |**专用安全**|[*始终* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|将Exchange Online包括在云应用的分配中|
-|
 
 ## <a name="block-activesync-clients"></a>阻止 ActiveSync 客户端
 

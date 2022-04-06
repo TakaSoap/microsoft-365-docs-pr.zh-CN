@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 233c9993c8cd5978bcdfcbb54db8b9688c3ac056
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320869"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500026"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>事件响应和Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创
 
 选择事件名称将显示事件摘要，并提供对包含其他信息的选项卡的访问权限。 下面是一个示例。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="事件门户中事件的&quot;摘要&quot;Microsoft 365 Defender示例" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="事件门户中事件的&quot;摘要Microsoft 365 Defender页" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 事件的其他选项卡包括：
 
@@ -113,7 +113,7 @@ Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创
 
 下面是一个使用 Microsoft 365 Defender 门户响应 Microsoft 365 事件的示例工作流。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="事件响应工作流的示例Microsoft 365。" lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="网站门户的事件响应工作流Microsoft 365 Defender示例。" lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 在持续进行的基础上，确定事件队列中的最高优先级事件以进行分析和解决，并为响应做好准备。 此操作包括以下步骤：
 
@@ -153,7 +153,7 @@ Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创
 
 下面是使用 SecOps (安全) 示例Microsoft 365 Defender。
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="安全操作示例Microsoft 365 Defender。" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="安全操作示例Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 日常任务可能包括：
 
@@ -215,10 +215,10 @@ Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创
     - **在电子邮件中包含组织名称** - 选择是否希望组织名称显示在电子邮件通知中。
     - **包括特定于租户的门户链接** - 选择是否要在电子邮件通知中添加包含租户 ID 的链接，以便访问特定的 Microsoft 365 租户。
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件电子邮件通知的通知设置。" lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="事件门户中事件电子邮件通知的&quot;通知Microsoft 365 Defender页。" lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
-5. 选择“**下一步**”。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择" **发送测试电子邮件"**。 
-6. 选择“**下一步**”。 在" **复查规则** "页上，查看规则的设置，然后选择"创建 **规则"**。 收件人将开始根据设置通过电子邮件接收事件通知。
+5. 选择 **下一步**。 在 **"收件人"** 页上，添加将接收事件通知的电子邮件地址。 键入 **每个** 新电子邮件地址后，选择"添加"。 若要测试通知并确保收件人在收件箱中收到通知，请选择" **发送测试电子邮件"**。 
+6. 选择 **下一步**。 在" **复查规则** "页上，查看规则的设置，然后选择"创建 **规则"**。 收件人将开始根据设置通过电子邮件接收事件通知。
 
 若要编辑现有规则，请从规则列表中选择它。 在具有规则名称的窗格中，选择"编辑规则"，在"基本信息"、"通知设置"和"**收件人"页上进行更改**。
 
@@ -254,7 +254,7 @@ Microsoft 365 服务和应用将在检测到可疑或恶意事件或活动时创
 
 请根据安全团队角色遵循此表。
 
-| Role | 步骤 |
+| 角色 | 步骤 |
 |:-------|:-----|
 | 第 1 层 (事件响应)  | 从事件门户的"事件 **"页开始** Microsoft 365 Defender队列。 从这里您可以： <ul><li> 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 </li><li> [管理事件](manage-incidents.md)，其中包括根据事件管理工作流重命名、分配、分类和添加标记和注释。 </li></ul> |
 | 第 2 层 (或分析员)  | <ol><li> 从 [事件](investigate-incidents.md)门户的"事件 **"页Microsoft 365 Defender** 事件。 </li><li> 请参阅 [这些事件响应手册，](/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。 </li></ol> |

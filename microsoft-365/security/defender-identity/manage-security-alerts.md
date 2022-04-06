@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 3023dc05550aeee5a9d47bb7561eb221c6d1c588
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 59695ba5940bfa062e681ced172844f80ece045d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465808"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682320"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Defender for Identity security alerts in Microsoft 365 Defender
 
@@ -42,21 +42,21 @@ Defender for Identity 警报在本机集成到具有<a href="https://go.microsof
 
 In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>， go to **Incidents & alerts** and then to **Alerts**.
 
-:::image type="content" source="../../media/defender-identity/incidents-alerts.png" alt-text="&quot;警报&quot;菜单项" lightbox="../../media/defender-identity/incidents-alerts.png":::
+![转到"事件和警报"，然后转到"警报"。](../../media/defender-identity/incidents-alerts.png)
 
 To see alerts from Defender for Identity， on the top-right select **Filter**， and then under **Service sources** select **Microsoft Defender for Identity**， and select **Apply**：
 
-:::image type="content" source="../../media/defender-identity/filter-defender-for-identity.png" alt-text="Defender for Identity 事件的筛选器" lightbox="../../media/defender-identity/filter-defender-for-identity.png":::
+![筛选 Defender for Identity 事件。](../../media/defender-identity/filter-defender-for-identity.png)
 
 警报随信息显示在以下列中：**警报** 名称、标签、严重性、调查状态、**状态**、**类别**、检测源、**影响的资产**、第一个活动和最后一个 **活动**。 
 
-:::image type="content" source="../../media/defender-identity/filtered-alerts.png" alt-text="Defender for Identity 事件" lightbox="../../media/defender-identity/filtered-alerts.png":::
+![Defender for Identity 事件。](../../media/defender-identity/filtered-alerts.png)
 
 ## <a name="manage-alerts"></a>管理警报
 
 如果单击 **其中一** 个警报的警报名称，你将转到包含警报详细信息的页面。 在左窗格中，你将看到"发生了什么 **"的摘要**：
 
-:::image type="content" source="../../media/defender-identity/what-happened.png" alt-text="&quot;发生了什么&quot;窗格" lightbox="../../media/defender-identity/what-happened.png":::
+![警报中发生了什么。](../../media/defender-identity/what-happened.png)
 
 "**发生的情况"** 框上方是警报的 **"** 帐户"、**目标主机****和源主机** 的按钮。 对于其他警报，你可能会看到按钮，了解有关其他主机、帐户、IP 地址、域和安全组的详细信息。 选择其中任何一个，获取有关所涉及的实体的更多详细信息。
 
@@ -64,19 +64,19 @@ To see alerts from Defender for Identity， on the top-right select **Filter**�
 
 - **对此警报进行分类** - 你可以在此处指定此警报为 **True 警报或** **False 警报**
 
-    :::image type="content" source="../../media/defender-identity/classify-alert.png" alt-text="可在其中对警报进行分类的页面" lightbox="../../media/defender-identity/classify-alert.png":::
+    ![对警报进行分类。](../../media/defender-identity/classify-alert.png)
 
 - **警报状态** - 在 **"设置** 分类"中，可以将警报分类为 **True** 或 **False**。 在 **"分配到"** 中，可以将警报分配给自己，也可以取消分配。
 
-    :::image type="content" source="../../media/defender-identity/alert-state.png" alt-text="警报状态窗格" lightbox="../../media/defender-identity/alert-state.png":::
+    ![警报状态。](../../media/defender-identity/alert-state.png)
 
 - 警报 **详细信息 - 在** 警报详细信息下，可以找到有关特定警报的详细信息，按照有关警报类型的文档链接，查看与警报关联的事件，查看链接到此警报类型的任何自动调查，并查看受到影响的设备和用户。
 
-   :::image type="content" source="../../media/defender-identity/alert-details.png" alt-text="警报详细信息页面" lightbox="../../media/defender-identity/alert-details.png":::
+    ![警报详细信息。](../../media/defender-identity/alert-details.png)
 
 - **注释&历史记录** - 你可以在此处向警报添加注释，并查看与警报关联的所有操作历史记录。
 
-    :::image type="content" source="../../media/defender-identity/comments-history.png" alt-text="&quot;注释&历史记录&quot;页" lightbox="../../media/defender-identity/comments-history.png":::
+    ![注释和历史记录。](../../media/defender-identity/comments-history.png)
 
 - **管理警报** - 如果选择" **管理警报**"，你将转到允许编辑的窗格：
   - **状态** - **可以选择"新建**"、 **"已解决"** 或 **"正在进行"**。
@@ -85,7 +85,7 @@ To see alerts from Defender for Identity， on the top-right select **Filter**�
 
     如果选择"管理警报"旁边的三个点，可以咨询威胁专家、将警报导出到  Excel 文件或 **链接到其他事件**。
 
-    :::image type="content" source="../../media/defender-identity/manage-alert.png" alt-text="&quot;管理警报&quot;选项" lightbox="../../media/defender-identity/manage-alert.png":::
+    ![管理警报。](../../media/defender-identity/manage-alert.png)
 
     > [!NOTE]
     > 在 Excel 文件中，现在有两个链接可用：View **in Microsoft Defender for Identity** 和 **View in Microsoft 365 Defender**。 每个链接都将你带到相关门户，并提供有关警报的信息。

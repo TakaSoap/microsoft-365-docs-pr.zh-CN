@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以启用 Word、Excel 和 PowerPoint 和 SharePoint OneDrive 中的敏感度标签支持。
-ms.openlocfilehash: 08c3daab9195e98c3b099255f1e7fb38a2324c33
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 12180dcc748764b1d73f6ad8a5c0ef7c77cd2b27
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320013"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499960"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -65,7 +65,7 @@ ms.locfileid: "63320013"
 
 如果您当前使用 SharePoint 信息权限管理 (IRM) 保护 SharePoint 中的文档，请务必查看此页上的 [SharePoint 信息权限管理 (IRM) ](#sharepoint-information-rights-management-irm-and-sensitivity-labels) 和敏感度标签部分。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 这些新功能仅适用于 [敏感度](sensitivity-labels.md) 标签。 如果当前具有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便你可以为上传的新文件启用这些功能。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。
 
@@ -190,11 +190,9 @@ ms.locfileid: "63320013"
 
 例如：创建并发布应用加密的新敏感度标签，它很快就会显示在用户的桌面应用中。 用户将此标签应用于文档，然后将它上载到SharePoint或OneDrive。 如果尚未为服务完成标签复制，则上载时不会将新功能应用于该文档。 因此，不会在搜索或电子数据展示中返回文档，并且文档无法通过 Office 网页版。
 
-以下更改在一小时内复制：新的和已删除的敏感度标签，以及包含策略中哪些标签的敏感度标签策略设置。
+有关标签计时详细信息，请参阅何时 [预期新](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect)标签和更改生效。
 
-以下更改在 24 小时内复制：更改现有标签的敏感度标签设置。
-
-由于新敏感度标签的复制延迟仅为 1 小时，因此您不太可能遇到示例中的方案。 但作为一项安全措施，我们建议首先向几个测试用户发布新标签，等待一小时，然后验证 SharePoint 和 OneDrive。 作为最后一步，通过向现有标签策略添加更多用户或将标签添加到标准用户的现有标签策略，使标签可供更多用户使用。 当标准用户看到标签时，它已同步到SharePoint OneDrive。
+作为一项安全措施，我们建议首先向几个测试用户发布新标签，至少等待一小时，然后验证 SharePoint 和 OneDrive。 至少等待一天，然后向现有标签策略添加更多用户，或向标准用户的现有标签策略添加标签，从而向更多用户提供标签。 当标准用户看到标签时，它已同步到SharePoint OneDrive。
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint信息权限管理 (IRM) 和敏感度标签
 
@@ -215,7 +213,6 @@ SharePoint信息权限管理 ([IRM) ](set-up-irm-in-sp-admin-center.md) 是一�
 - 如果启用了任何其他 IRM 库设置（包括阻止用户上载不支持 IRM 的文档），则强制执行这些设置。
 
 通过此行为，你可以确保所有 Office 和 PDF 文件在下载时都受到保护，即使它们未进行标记，也可以防止它们受到未经授权的访问。 但是，已上传的标记文件不会从新功能中获益。
-
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>按敏感度标签搜索文档
 
@@ -277,6 +274,6 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 ## <a name="next-steps"></a>后续步骤
 
-为 Office 和 SharePoint OneDrive 中的文件启用敏感度标签后，请考虑使用自动标记策略自动标记这些文件。 有关详细信息，请参阅自动 [向内容应用敏感度标签](apply-sensitivity-label-automatically.md)。
+为 Office 和 SharePoint OneDrive 中的文件启用敏感度标签后，请考虑使用自动标记策略自动标记这些文件。 有关详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
 
 需要与组织外的人员共享你的标记和加密文档吗？  请参阅[与外部用户共享加密文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。

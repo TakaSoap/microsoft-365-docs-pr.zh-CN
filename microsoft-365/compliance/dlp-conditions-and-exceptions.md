@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 了解 dlp 策略条件和例外
-ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 9b735d139950399fb80e9063e7d9fdd1176c2d2b
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63401102"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500048"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>DLP 策略条件、异常和操作
 
@@ -69,8 +69,8 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 
 |DLP 中的条件或例外|powerShell 中的条件/Microsoft 365参数|属性类型|说明|
 |---|---|---|---|
-|发件人为|condition： *From* <br/> exception： *ExceptIfFrom*|地址|由组织中指定的邮箱、邮件用户、邮件联系人或Microsoft 365组发送的邮件。|
-|发件人为以下组的成员 |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|地址|由指定通讯组、已启用邮件的安全组或通讯组的成员Microsoft 365的邮件。|
+|发件人为|condition： *From* <br/> exception： *ExceptIfFrom*|Addresses|由组织中指定的邮箱、邮件用户、邮件联系人或Microsoft 365组发送的邮件。|
+|发件人为以下组的成员 |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|Addresses|由指定通讯组、已启用邮件的安全组或通讯组的成员Microsoft 365的邮件。|
 |发件人 IP 地址为|condition： *SenderIPRanges*<br/> 例外： *ExceptIfSenderIPRanges*|IPAddressRanges|发件人的 IP 地址匹配指定的 IP 地址或位于指定的 IP 地址范围内的邮件。|
 |发件人地址包含词语|condition： *FromAddressContainsWords* <br/> exception： *ExceptIfFromAddressContainsWords*|Words|发件人电子邮件地址中包含指定词语的邮件。|
 |发件人地址与模式匹配|condition： *FromAddressMatchesPatterns* <br/> exception： *ExceptFromAddressMatchesPatterns*|模式|发件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。|
@@ -88,11 +88,11 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 
 |DLP 中的条件或例外|powerShell 中的条件/Microsoft 365参数|属性类型|说明|
 |---|---|---|---|
-|收件人为|condition： *SentTo* <br/> exception： *ExceptIfSentTo*|地址|其中一个收件人是组织中指定的邮箱、邮件用户或邮件联系人的邮件。 收件人可以在邮件的"收件人"**、"抄** 送"**或"密件** 抄送"字段中。|
+|收件人为|condition： *SentTo* <br/> exception： *ExceptIfSentTo*|Addresses|其中一个收件人是组织中指定的邮箱、邮件用户或邮件联系人的邮件。 收件人可以在邮件的"收件人"**、"抄** 送"**或"密件** 抄送"字段中。|
 |收件人域为|condition： *RecipientDomainIs* <br/> exception： *ExceptIfRecipientDomainIs*|DomainName|收件人电子邮件地址的域与指定值匹配的邮件。|
 |收件人地址包含字词|condition： *AnyOfRecipientAddressContainsWords* <br/> exception： *ExceptIfAnyOfRecipientAddressContainsWords*|Words|收件人电子邮件地址中包含指定词语的邮件。 <br/>**注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
 |收件人地址与模式匹配|condition： *AnyOfRecipientAddressMatchesPatterns* <br/> exception： *ExceptIfAnyOfRecipientAddressMatchesPatterns*|模式|收件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。 <br/> **注意**：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
-|发送到的|condition： *SentToMemberOf* <br/> exception： *ExceptIfSentToMemberOf*|地址|包含收件人的邮件，这些收件人是指定通讯组、已启用邮件的安全组或Microsoft 365组的成员。 组可以在邮件的" **收件人**" **、"抄** 送" **或"密件** 抄送"字段中。|
+|发送到的|condition： *SentToMemberOf* <br/> exception： *ExceptIfSentToMemberOf*|Addresses|包含收件人的邮件，这些收件人是指定通讯组、已启用邮件的安全组或Microsoft 365组的成员。 组可以在邮件的" **收件人**" **、"抄** 送" **或"密件** 抄送"字段中。|
 |收件人的指定属性包括以下任何词语 |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|首要属性： `ADAttribute` <p> 第二个属性： `Words`|收件人的指定的 Active Directory 属性包含任意的指定词语的邮件。 <p> 请注意， **Country** 属性需要两个字母的国家/地区代码值 (，例如，DE 表示德国) 。|
 |收件人的指定属性匹配这些文本模式 |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|首要属性： `ADAttribute` <p> 第二个属性： `Patterns`|收件人的指定的 Active Directory 属性包含与指定正则表达式匹配的文本模式的邮件。|
 |
@@ -122,7 +122,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |---|---|---|---|
 |附件受密码保护|condition： *DocumentIsPasswordProtected* <br/> exception： *ExceptIfDocumentIsPasswordProtected*|无|附件受密码保护的邮件（因而无法扫描）。 密码检测仅适用于Office文件.zip .7z 文件。|
 |附件的文件扩展名为|condition： *ContentExtensionMatchesWords* <br/> 例外： *ExceptIfContentExtensionMatchesWords*|Words|附件的文件扩展名匹配任意指定词语的邮件。|
-|无法扫描任何电子邮件附件的内容|condition： *DocumentIsUnsupported* <br/>exception： *ExceptIf DocumentIsUnsupported*|无|附件在本机无法被用户识别Exchange Online。|
+|无法扫描任何电子邮件附件的内容|condition： *DocumentIsUnsupported* <br/>exception： *ExceptIf DocumentIsUnsupported*|不适用|附件在本机无法被用户识别Exchange Online。|
 |任何电子邮件附件的内容未完成扫描|condition： *ProcessingLimitExceeded* <br/> 例外： *ExceptIfProcessingLimitExceeded*|无|规则引擎无法完成附件扫描的邮件。可以使用此条件创建规则，以协同工作来标识并处理无法完全扫描内容的邮件。|
 |文档名称包含单词|condition： *DocumentNameMatchesWords* <br/> exception： *ExceptIfDocumentNameMatchesWords*|Words|附件的文件名与任意指定词语匹配的邮件。|
 |文档名称与模式匹配|condition： *DocumentNameMatchesPatterns* <br/> exception： *ExceptIfDocumentNameMatchesPatterns*|模式|附件的文件名包含匹配指定正则表达式的文本模式的邮件。|
@@ -154,7 +154,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |重要性|condition： *WithImportance* <br/> exception： *ExceptIfWithImportance*|重要性|使用指定的重要性级别标记的邮件。|
 |内容字符集包含单词|condition： *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|具有任意指定字符集名称的邮件。|
 |具有发件人替代|condition： *HasSenderOverride* <br/> 例外： *ExceptIfHasSenderOverride*|无|发件人已选择覆盖数据丢失防护 (DLP) 策略的邮件。 有关 DLP 策略详细信息，请参阅 [了解数据丢失防护](./dlp-learn-about-dlp.md)|
-|邮件类型匹配|condition： *MessageTypeMatches* <br/> exception： *ExceptIfMessageTypeMatches*|MessageType|指定类型的邮件。|
+|邮件类型匹配|condition： *MessageTypeMatches* <br/> exception： *ExceptIfMessageTypeMatches*|MessageType|指定类型的邮件。 注意：可用邮件类型包括自动答复、自动转发、加密 (S/MIME) 、日历、权限控制的 (权限管理) 、语音邮件、已签名、已读回执和审批请求。 |
 |邮件大小大于或等于|condition： *MessageSizeOver* <br/> exception： *ExceptIfMessageSizeOver*|`Size`|总大小（邮件和附件）大于或等于指定值的邮件。 **注意**：在确定邮件流规则之前将对邮箱的邮件大小限制进行评估。 对于邮箱而言过大的邮件将被拒绝，然后此条件的规则才能对该邮件采取措施。|
 |
 
@@ -170,14 +170,14 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |---|---|---|---|
 |设置标头|SetHeader|第一个属性： *Header Name* </br> 第二个属性： *Header 值*|SetHeader 参数指定 DLP 规则在邮件头中添加或修改头字段和值的操作。 此参数使用语法"HeaderName：HeaderValue"。 可以指定用逗号分隔的多个标头名称和值对|
 |删除标头|RemoveHeader|首要属性：*MessageHeaderField*</br> 次要属性：*String*|RemoveHeader 参数指定 DLP 规则从邮件头中删除头字段的操作。 此参数使用语法"HeaderName"或"HeaderName：HeaderValue"。可以指定多个标头名称或标头名称以及用逗号分隔的值对|
-|将邮件重定向到特定用户|*RedirectMessageTo*|地址|将电子邮件重定向到指定的收件人。邮件不会传递给原始收件人，也不会向发件人或原始收件人发送通知。|
+|将邮件重定向到特定用户|*RedirectMessageTo*|Addresses|将电子邮件重定向到指定的收件人。邮件不会传递给原始收件人，也不会向发件人或原始收件人发送通知。|
 |将邮件转发给发件人的经理进行审批|适度|第一个属性 *：ModerateMessageByManager*</br> 第二个属性 *：Boolean*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法 @{ModerateMessageByManager = <$true $false> \|;|
 |将邮件转发给特定审批者进行审批|适度|第一个属性： *ModerateMessageByUser*</br>次要属性：*Addresses*|Moderate 参数指定向审查方发送电子邮件的 DLP 规则的操作。 此参数使用语法：@{ ModerateMessageByUser = @ ("emailaddress1"，"emailaddress2",..."emailaddressN") }|
 |添加收件人|AddRecipients|第一个属性： *Field*</br>次要属性：*Addresses*|将一个或多个收件人添加到邮件的"收件人/抄送/密件抄送"字段中。 此参数使用语法：@{<AddToRecipients \|CopyTo \|BlindCopyTo> = "emailaddress"}|
 |将发件人的经理添加为收件人|AddRecipients|第一个属性： *AddedManagerAction*</br>Second 属性： *Field*|将发件人的经理添加到邮件中作为指定收件人类型 (To、Cc、Bcc)，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用语法：@{AddManagerAsRecipientType = "<To \|Cc \|Bcc>"}|
-Prepend subject|PrependSubject|字符串|将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。|
+Prepend subject|PrependSubject|String|将指定的文本添加到邮件" Subject "字段的开头。考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。  </br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。|
 |应用 HTML 免责声明|ApplyHtmlDisclaimer|第一个属性： *Text*</br>Second 属性： *Location*</br>第三个属性 *：回退操作*|将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <Append \|Prepend>;FallbackAction = <Wrap \|Ignore \|Reject> }|
-|删除Office 365 邮件加密和权限保护|RemoveRMSTemplate|无|删除Office 365应用于电子邮件的加密|
+|删除Office 365 邮件加密和权限保护|RemoveRMSTemplate|不适用|删除Office 365应用于电子邮件的加密|
 |将邮件发送到托管隔离区 |_Quarantine_|无| 此操作当前处于公共 **预览阶段**。 在此阶段中，DLP 策略隔离的电子邮件将显示策略类型为 ExchangeTransportRule。</br> 将邮件发送到 EOP 中的隔离区。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](/microsoft-365/security/office-365-security/quarantine-email-messages)。|
 |
 
