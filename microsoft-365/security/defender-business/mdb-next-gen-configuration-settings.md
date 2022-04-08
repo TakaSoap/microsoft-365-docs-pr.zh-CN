@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666275"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714232"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>了解Microsoft Defender 商业版中的下一代配置设置
 
@@ -88,7 +88,7 @@ Defender for Business 中预配置了以下安全设置：
 | [扫描网络文件](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | 默认情况下，不启用 [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) ，并且不会扫描网络文件。 |
 | [扫描电子邮件](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | 默认情况下，不启用 [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) ，并且不会扫描电子邮件。 |
 | [ (0-90) 保留隔离恶意软件的天数](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | 默认情况下， [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) 此设置设置为零 (0) 天。 Artifacts隔离区不会自动删除。  |
-| [提交示例同意](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 默认情况下， [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) 等于自动发送安全示例。 安全示例的示例包括`.bat``.scr``.dll``.exe`不包含个人身份信息 (PII) 的文件。 如果文件确实包含 PII，则用户将收到一个请求，以允许继续提交示例。<br/><br/>[详细了解云保护和示例提交](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [提交示例同意](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | 默认情况下， [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) 设置为自动发送安全示例。 安全示例的示例包括`.bat``.scr``.dll``.exe`不包含个人身份信息 (PII) 的文件。 如果文件确实包含 PII，则用户将收到一个请求，以允许继续提交示例。<br/><br/>[详细了解云保护和示例提交](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [扫描可移动驱动器](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | 默认情况下， [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) 配置为扫描可移动驱动器，例如设备上的 USB 拇指驱动器。<br/><br/>[详细了解反恶意软件策略设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [每天运行快速扫描时间](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | 默认情况下， [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) 设置为凌晨 2：00。<br/><br/>[详细了解扫描设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)。   |
 | [在运行扫描之前检查签名更新](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | 默认情况下， [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) 配置为在运行防病毒/反恶意软件扫描之前检查安全智能更新。<br/><br/>[详细了解扫描设置](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)[和安全智能更新](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates)。   |

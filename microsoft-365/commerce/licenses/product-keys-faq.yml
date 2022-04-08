@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: 产品密钥常见问题
+  title: 产品密钥常见问题解答
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -11,193 +11,193 @@ metadata:
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
-  description: 产品密钥常见问题
-  ms.openlocfilehash: da5e623e2e8bf318217dfb26224037fa81ac4270
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: 产品密钥常见问题解答
+  ms.openlocfilehash: e42553a7ae588464481bc1573442016f8ce15b55
+  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63680489"
-title: 产品密钥常见问题
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715200"
+title: 产品密钥常见问题解答
 summary: ''
 sections:
-- name: 一般信息
+- name: 常规
   questions:
   - question: >
       什么是产品密钥？
     answer: >
-      产品密钥允许你使用你根据特定批量许可计划许可的软件产品。 产品密钥中列出的Microsoft 365 管理中心应仅用于批量许可产品，并且仅供您的组织使用。
+      通过产品密钥，可以使用根据特定批量许可计划许可的软件产品。 Microsoft 365 管理中心中列出的产品密钥应仅用于批量许可证产品，并且仅供组织使用。
 
 
-      Online Service Activation (OSA) key 是一种用于激活订阅订阅的Microsoft Online Services密钥。
+      联机服务激活 (OSA) 密钥是用于激活 Microsoft Online Services 订阅的一次性产品密钥。
 
 
-      有关详细信息，请参阅 [开放程序联机服务激活常见问题](/licensing/online-service-activation-faq)解答。
+      有关详细信息，请参阅 [打开程序的联机服务激活常见问题解答](/licensing/online-service-activation-faq)。
   - question: >
-      如何在产品密钥中查找Microsoft 365 管理中心？
-    answer: "1. 登录到 Microsoft 365 管理中心。 \n2. Go to **BillingYour** >  **productsVolume** >  **licensingDownloads** >  & keys > hover on product and select **View keys**.\n\n你将找到每个产品的产品密钥信息、 (批量许可密钥、密钥管理服务 (KMS) 和多次激活密钥 (MAK) ) 的类型以及已使用和可用的 MAK 激活数。\n\n选择 **\"下载所有产品密钥** \"，将许可证显示的密钥下载到本地驱动器。\n"
+      如何实现在Microsoft 365 管理中心中查找产品密钥？
+    answer: "1. 登录到 Microsoft 365 管理中心。 \n2. 转到 **BillingYour** >  **productsVolume** >  **licensingDownloads** >  &密钥>将鼠标悬停在产品上，然后选择 **\"查看密钥**\"。\n\n你会发现每个产品的产品密钥信息，许可类型 (批量许可密钥、密钥管理服务 (KMS) 和多个激活密钥 (MAK) ) 以及已用和可用 MAK 激活的数量。\n\n选择 **\"下载所有产品密钥** \"，将许可证显示的密钥下载到本地驱动器。\n"
   - question: >
-      如何查找产品SQL Server密钥？
+      如何实现找到SQL Server产品密钥？
     answer: >
-      the SQL license key is embedded in the software's activation wizard rather than displayed in the admin center and is detected automatically during installation. 有关详细信息，请参阅《[SQL Server安装指南](/sql/database-engine/install-windows/install-sql-server)》。
+      SQL许可证密钥嵌入到软件的激活向导中，而不是显示在管理中心中，并在安装过程中自动检测到。 有关详细信息，请参阅[SQL Server安装指南](/sql/database-engine/install-windows/install-sql-server)。
 
 
-      您还可以从管理中心下载 iso SQL文件来查找密钥>。\x64 folder > DefaultSetup.ini file. 请确保先备份任何现有版本，然后再安装或升级SQL版本。 如果在产品安装或联机服务激活期间需要解决技术问题的帮助，请通过提交技术支持请求与 Microsoft [技术支持部门联系](https://support.microsoft.com/oas)。
+      还可以通过从管理中心>下载SQL ISO 文件来查找密钥。\x64 文件夹> DefaultSetup.ini文件。 安装或升级SQL版本之前，请务必备份任何现有版本。 如果需要帮助排查产品安装或联机服务激活期间的技术问题，请通过提交 [技术支持请求](https://support.microsoft.com/oas)与 Microsoft 技术支持部门联系。
   - question: >
-      如何查找批量许可购买的产品密钥？
-    answer: "如果你的协议授权访问 > 需要密钥的产品，你可以找到这些密钥，只需访问计费 **你的** >  > 产品批量许可下载密钥&**密钥**。 \n\n但是，某些产品不需要产品密钥。 此信息在\"下载和密钥\"目录的产品说明中列出。\n\n若要确定你的产品是否要求密钥，请转到产品 [激活和密钥信息](https://licensingapps.microsoft.com/product-activation)。 在\"查找产品\"下，选择产品或搜索产品名称。\n"
+      如何实现找到批量许可购买的产品密钥？
+    answer: "如果协议授权访问需要密钥的产品，则可以通过转到 **BillingYour** >  **productsVolume** >  licensingDownloads  > **&密钥来查找这些密钥**。 \n\n但是，某些产品不需要产品密钥。 下载和密钥目录中的产品说明中列出了此信息。\n\n若要确定产品是否需要密钥，请转到 [产品激活和密钥信息](https://licensingapps.microsoft.com/product-activation)。 在\"查找产品\"下，选择产品或搜索产品名称。\n"
   - question: >
-      什么是设置密钥？
+      什么是安装密钥？
     answer: >
-      设置密钥用于每个产品/版本组合，以通过绕过激活来解锁产品。 可以通过两种方式之一获取安装密钥：
+      安装密钥用于每个产品/版本组合，通过绕过激活来解锁产品。 可以通过以下两种方式之一获取安装密钥：
 
-        - **实际实施** 对于通过实际实施获得的产品，安装密钥将打印在媒体标签上。
-        - **下载实施** 对于从管理中心下载获取的产品，安装密钥会显示在下载屏幕上，并可以附带以下文本：某些可供下载的产品需要安装密钥。 记下产品安装过程中所需的安装密钥。 有关安装密钥的更多信息，请参阅KMS[客户端设置密钥](/windows-server/get-started/kmsclientkeys)。
+        - **物理履行** 对于通过物理实现获取的产品，安装密钥将印在媒体袖子上。
+        - **下载履行** 对于从管理中心下载获取的产品，安装密钥会显示在下载屏幕上，并随附以下文本：一些可供下载的产品需要安装密钥。 请注意安装密钥，因为它在产品安装过程中是必需的。 有关设置密钥的详细信息，请参阅[KMS客户端设置密钥](/windows-server/get-started/kmsclientkeys)。
   - question: >
-      哪些因素决定了哪些产品密钥与我的协议相关联？
+      哪些内容决定了哪些产品密钥与我的协议相关联？
     answer: >
-      批量许可产品密钥针对 Microsoft 关系摘要中列出的每个许可 ID [提供](/licensing/license-faq)。 此关系摘要位于批量许可服务中心。 有关详细信息，请参阅 [什么是许可 ID](/licensing/license-faq#what-is-a-licensing-id)。 你可以拥有多个许可 ID：
+      为 [Microsoft 关系摘要](/licensing/license-faq)中列出的每个许可 ID 提供批量许可证产品密钥。 此关系摘要位于批量许可服务中心。 有关详细信息，请参阅 [什么是许可 ID](/licensing/license-faq#what-is-a-licensing-id)。 可以有多个许可 ID：
 
-        - 企业协议 (EA) 和 Select Plus 客户接收每个产品池的产品密钥 (系统、服务器和应用程序) 。
-        - Select Agreement customers receive product keys per product pool (Systems， Servers， and Applications) based on their purchasing forecasts.
-        - 打开许可证客户和开放式价值客户基于其许可证购买接收适用的产品密钥。
+        - 企业协议 (EA) 和 Select Plus 客户 (系统、服务器和应用程序) 接收每个产品池的产品密钥。
+        - 选择协议客户根据购买预测 (系统、服务器和应用程序) 接收每个产品池的产品密钥。
+        - 开放式许可证客户和 Open Value 客户根据其许可证购买情况接收适用的产品密钥。
 
-      有关详细信息，请参阅许可证 [摘要常见问题解答](/licensing/license-faq)。
+      有关详细信息，请参阅 [许可证摘要常见问题解答](/licensing/license-faq)。
 
 
       > [!NOTE]
 
-      > 所有客户都有权使用产品密钥进行重新映像处理和降级。 选择"加企业协议 (EA) "和"选择客户具有有限的培训和备份评估权限"。 有关详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
+      > 所有客户都有权使用产品密钥进行重新映像和降级。 选择 Plus，企业协议 (EA) ，而选择客户在培训和备备方面具有有限的评估权限。 有关详细信息，请参阅 [产品许可简报](/licensing/learn-more/volume-licensing-briefs)。
 - name: 批量激活
   questions:
   - question: >
-      什么是批量激活？
+      什么是卷激活？
     answer: >
-      批量激活是一个可配置的解决方案，可帮助自动执行和管理在运行批量许可Windows许可的操作系统的计算机上的产品激活过程。 批量激活还用于 Microsoft 的其他软件，包括Office许可协议下销售的套件，并支持批量激活。 有关更多信息，请参阅：
-        - [用于管理批量激活Office](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
-        - [批量激活Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
+      批量激活是一种可配置的解决方案，可帮助在运行Windows操作系统（根据批量许可计划许可）的计算机上自动执行和管理产品激活过程。 批量激活还与 Microsoft 的其他软件（包括Office套件）一起使用，这些软件根据批量许可协议销售，并且支持批量激活。 有关更多信息，请参阅：
+        - [用于管理Office的批量激活的工具](/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)
+        - [Windows 10的批量激活](/windows/deployment/volume-activation/volume-activation-windows-10)
 
-      批量激活仅适用于批量许可计划涵盖的系统，并严格用作激活工具。 它并不与许可证开票或计费关联。
+      批量激活仅适用于批量许可计划涵盖的系统，并严格用作激活工具。 它不与许可证票证或计费相关。
 
 
-      批量激活提供了两种完成批量激活的方法。 客户可以使用这两种关键类型中的任一种或两种来激活其组织的系统：
+      卷激活提供了两种完成卷激活的方法。 客户可以使用这两种或两种关键类型激活其组织中的系统：
         - 密钥管理服务 (KMS) 允许组织在其自己的网络中激活系统。
-        - MAK (多次激活密钥) 使用 Microsoft 托管激活服务一次激活系统。
+        - 多个激活密钥 (MAK) 使用 Microsoft 托管的激活服务一次性激活系统。
   - question: >
       什么是密钥管理服务 (KMS) ？
     answer: >
-      KMS是一项激活服务，通过该服务，组织无需连接到 Microsoft 进行产品激活，即可在其自己的网络中激活系统。 它不需要专用系统，并且可在提供其他服务的系统上共同托管。
+      KMS是一项激活服务，它允许组织通过无需单台计算机连接到 Microsoft 进行产品激活来激活其自己的网络中的系统。 它不需要专用系统，并且可以在提供其他服务的系统上共同托管。
 
 
-      KMS网络环境中需要最少数量的物理或虚拟计算机。 设置了这些最小值（称为激活阈值）以便客户可以轻松地Enterprise阈值。
+      KMS在网络环境中需要最少数量的物理计算机或虚拟计算机。 设置这些最小值（称为激活阈值）以便Enterprise客户轻松满足这些限制。
 
-        - 激活阈值Windows
-          - 您的组织必须至少具有 5 台计算机才能激活运行 Windows 服务器。
-          - 您的组织必须至少具有 25 台计算机才能激活运行 Windows。
-        - 激活阈值Office
-          - 你的组织必须至少有 5 台计算机运行版本的 Office 才能使用 KMS 激活已安装Office产品。
+        - Windows的激活阈值
+          - 组织必须至少有 5 台计算机才能激活Windows服务器运行的服务器。
+          - 组织必须至少有 25 台计算机才能激活运行Windows的客户端系统。
+        - Office的激活阈值
+          - 组织必须至少有 5 台运行Office版本的计算机才能使用KMS激活已安装的Office产品。
 
-      有关激活阈值详细信息，请参阅 [批量激活规划指南](/windows/deployment/volume-activation/volume-activation-windows-10)。
+      有关激活阈值的详细信息，请参阅 [批量激活规划指南](/windows/deployment/volume-activation/volume-activation-windows-10)。
   - question: >
-      什么是KMS密钥？
+      什么是KMS主密钥？
     answer: >
-      A KMS key is used to activate the KMS host computer with a Microsoft activation server and can activate up to 6 KMS hosts with 10 activations per host. 每台KMS主机可以激活无限数量的计算机。
+      KMS密钥用于使用 Microsoft 激活服务器激活KMS主机，并且最多可以激活 6 KMS主机，每个主机有 10 个激活。 每个KMS主机都可以激活无限数量的计算机。
   - question: >
-      为什么未KMS许可证客户Microsoft 365 管理中心密钥？
-    answer: "KMS密钥不再预分配给开放式协议，因为使用多次激活密钥 (MAK) 是首选激活方法。\n\nKSM 密钥可以例外分配给满足 Windows Server、OS 和 Office 的最低 KMS 激活阈值的 Open Office。 若要请求例外，请向 Microsoft 支持人员提交 Web 表单请求。\n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
+      为什么Microsoft 365 管理中心打开许可证客户没有显示KMS密钥？
+    answer: "KMS密钥不再预先分配给 Open 协议，因为使用多重激活密钥 (MAK) 是激活的首选方法。\n\n可以例外地将 KSM 密钥分配给满足Windows服务器、OS 和Office的最小KMS激活阈值的开放客户。 若要请求异常，请将 Web 表单请求提交到Microsoft 支持部门。\n\n若要请求异常，必须具有 VLSC 管理员、密钥管理员或密钥查看器权限，并提供以下信息：\n  \n  - 协议/注册号或许可证 ID 和授权。\n  - 产品名称 (包括版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
-      如果我需要其他主机KMS呢？
-    answer: "如果您需要其他 KMS激活超过 6 台 KMS 主机，请提交 Web 表单请求Microsoft 365 管理中心支持。 \n\n若要请求例外，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n  \n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
+      如果需要其他KMS主机，该怎么办？
+    answer: "如果需要激活超过 6 个KMS主机的其他KMS激活，请提交 Web 表单请求以Microsoft 365 管理中心支持。 \n\n若要请求异常，必须具有 VLSC 管理员、密钥管理员或密钥查看器权限，并提供以下信息：\n  \n  - 协议/注册号或许可证 ID 和授权。\n  - 产品名称 (包括版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
-      什么是 MAK 密钥 (多次) ？
+      MAK)  (多重激活密钥是什么？
     answer: >
-      MAK (多次激活密钥) 使用需要与 Microsoft 激活服务器连接的 Microsoft 托管激活服务一次激活系统。 激活计算机后，不再需要与 Microsoft 进行通信。
+      多个激活密钥 (MAK) 使用需要与 Microsoft 激活服务器连接的 Microsoft 托管激活服务一次性激活系统。 激活计算机后，不再需要与 Microsoft 进行通信。
 
 
-      **重要** 允许的 MAK 激活数基于批量许可协议。
+      **重要** 允许的 MAK 激活数量基于批量许可协议。
   - question: >
-      为什么提供的 MAK 激活数与所购买的许可证数不匹配？
+      为什么提供的 MAK 激活数量与我们购买的许可证数不匹配？
     answer: >
-      我们建议客户使用 KMS 激活 MAK (多次) 。 KMS是大型部署的首选激活方法。 许多因素决定了与每个 MAK 关联的激活数，包括购买的许可证、客户购买定价级别及其批量许可计划。
+      建议客户使用KMS激活 MAK)  (多个激活密钥。 KMS是大规模部署的首选激活方法。 许多因素决定了与每个 MAK 关联的激活次数，包括购买的许可证、客户购买定价级别及其批量许可计划。
 
 
-      产品可用的激活次数并不总是与购买的许可证数一致。 通常，如果需要重新安装和激活某些产品，将收到更多激活。 查看协议的许可摘要部分以查看许可证数量。
+      产品可用的激活数量不会始终与购买的许可证数匹配。 通常，如果需要重新安装并激活某些产品，则会收到更多激活。 查看协议的"许可摘要"部分，查看许可证数量。
   - question: >
-      如何请求提高 MAK 激活限制？
-    answer: "可通过 Web 表单请求增加 MAK 激活数量，并按例外情况授予。 对于加拿大和美国，提交 [批量许可支持请求](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f)。 对于所有其他国家/地区，提交支持 [Web 表单](/licensing/contact-us)。 \n\n若要请求 MAK 激活限制，您必须具有 VLSC 管理员、密钥管理员或密钥查看器权限并提供以下信息：\n\n  - 协议/注册号码或许可证 ID 和授权。\n  - 产品名称 (版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
+      如何实现请求提高 MAK 激活限制？
+    answer: "可以通过 Web 窗体请求增加 MAK 激活数量，并按异常授予。 对于加拿大和美国，提交[批量许可支持请求](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f)。 对于所有其他国家/地区，请提交 [支持 Web 表单](/licensing/contact-us)。 \n\n若要请求 MAK 激活限制，必须具有 VLSC 管理员、密钥管理员或密钥查看器权限，并提供以下信息：\n\n  - 协议/注册号或许可证 ID 和授权。\n  - 产品名称 (包括版本和版本) 。\n  - 产品密钥的最后 5 个字符。\n  - 所需的主机激活数。\n  - 业务理由或部署原因。\n"
   - question: >
-      如何使用 MAK 密钥激活多个激活密钥 (许可证) ？
+      如何实现使用多个激活密钥 (MAK) 激活许可证？
     answer: >
-      可以使用 MAK 通过两种方式之一激活许可证：
+      可以使用 MAK 通过以下两种方式之一激活许可证：
 
-        - MAK 独立激活 每台计算机使用 Web 或电话分别连接到 Microsoft 以完成激活。
-        - MAK 代理激活 一个集中激活请求代表多台计算机在线或通过电话连接到 Microsoft。 此方法使用 批量激活管理工具 (VAMT) ，它是使用WINDOWS安装工具包 (的一) 。 VAMT IT 专业人员能够使用 MAK 自动执行和集中管理批量激活过程，并检查 MAK 上的激活次数。
+        - MAK 独立激活每台计算机使用 Web 或电话单独连接到 Microsoft 以完成激活。
+        - MAK 代理激活一个集中式激活请求是代表多个计算机发出的，该计算机与 Microsoft 联机或电话单一连接。 此方法使用批量激活管理工具 (VAMT) ，这是WINDOWS自动安装工具包 (WAIK) 的一部分。 VAMT使 IT 专业人员能够使用 MAK 自动执行和集中管理批量激活过程，并包括对 MAK 上的激活次数的检查。
   - question: >
       什么是批量激活管理工具 (VAMT) ？
     answer: >
-      批量激活管理工具 (VAMT) 工具使网络管理员和其他 IT 专业人员可以自动执行并集中管理 Windows、Microsoft Office 和选择其他 Microsoft 产品的批量激活和零售激活过程。 VAMT使用多个激活密钥管理批量激活 (MAK) 或Windows 密钥管理服务 (KMS) 。 VAMT是一个标准的 Microsoft 管理控制台 (MMC) 管理单元，要求使用 Microsoft 管理控制台 (MMC) 3.0。
+      批量激活管理工具 (VAMT) 是一种工具，允许网络管理员和其他 IT 专业人员自动执行和集中管理Windows、Microsoft Office和选择其他 Microsoft 产品的批量和零售激活过程。 VAMT可以使用多个激活密钥 (MAK) 或Windows 密钥管理服务 (KMS) 来管理卷激活。 VAMT是一个标准的 Microsoft 管理控制台 (MMC) 管理单元，需要 Microsoft 管理控制台 (MMC) 3.0。
 
 
-      有关此VAMT的信息，请参阅：
+      有关VAMT的信息，请参阅：
 
         - [批量激活管理工具 (VAMT) 技术参考](/windows/deployment/volume-activation/volume-activation-management-tool)
-        - [使用工具管理批量激活管理工具 (VAMT) ](/previous-versions/tn-archive/ff686876(v=technet.10))
+        - [使用批量激活管理工具 (VAMT) 管理激活](/previous-versions/tn-archive/ff686876(v=technet.10))
         - 下载[批量激活管理工具 (VAMT) ](https://www.microsoft.com/download/details.aspx?id=11936)
   - question: >
-      关于将 Windows Server 用作 KMS 主机来激活客户端，我Windows什么？
-    answer: "如果使用 Windows 方法密钥管理服务 (KMS) 部署活动，请注意：\n  \n  - Windows Server 不支持作为KMS主机激活Windows。\n  - 需要Windows Server KMS 密钥才能获取修补程序，以允许激活Windows客户端。 有关最新修补程序，请参阅[配置 KMS 主计算机以激活批量许可版本的 Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office)。 \n\n如果使用 Windows Server 作为KMS主机，可以：\n  \n  - 将 KMS 主机升级到 Windows Server。\n  - 将计算机降级到 Windows Server 2003。\n  - 在KMS版计算机上运行Windows主机。\n  - 运行 Windows Server 虚拟机。\n"
+      我应该了解如何使用Windows服务器作为KMS主机来激活Windows客户端？
+    answer: "如果使用密钥管理服务 (KMS) 作为激活方法部署Windows，请注意：\n  \n  - Windows服务器不支持作为KMS主机激活Windows。\n  - 需要Windows服务器KMS密钥才能获取修补程序以允许激活Windows客户端计算机。 有关最新修补程序，请参阅[配置KMS主机以激活批量许可版本的Office](/deployoffice/vlactivation/configure-a-kms-host-computer-for-office)。 \n\n如果使用Windows服务器作为KMS主机，则可以：\n  \n  - 将KMS主机升级到Windows服务器。\n  - 将计算机降级到 Windows Server 2003。\n  - 在Windows卷版本计算机上运行KMS主机。\n  - 运行Windows服务器虚拟机。\n"
   - question: >
-      我应该了解哪些有关 Office、Project 和 Visio？
+      对于Office、Project和Visio的批量激活，我应该了解什么？
     answer: >
-      以下批量激活更改与Office、Project Visio：
+      以下批量激活更改与Office、Project和Visio相关：
         - Office KMS主机激活任何Office套件或应用程序。
-        - 只应Office KMS一个密钥并用于激活。
+        - 仅应安装一个Office KMS密钥并用于激活。
 
-      如果使用 Office 方法密钥管理服务 (KMS) 部署活动，请注意：
-        - 如果使用 Office Server 作为KMS服务器Windows，则不能KMS服务器。
-        - 修补程序不能用于允许激活Office客户端。
+      如果使用密钥管理服务 (KMS) 作为激活方法部署Office，请注意：
+        - 如果使用Windows服务器作为KMS主机，则无法使用KMS激活Office。
+        - 无法使用修补程序来激活Office客户端。
 
-      如果使用 Windows Server 2008 作为KMS主机，您可以：
-        - 将 KMS 主机升级到 Windows Server。
-        - 将计算机降级到旧版 Windows Server。
-        - 在KMS电脑上运行Windows主机。
-        - 在较Windows版本的 Windows Server 中运行 Windows 虚拟机。
+      如果使用 Windows Server 2008 作为KMS主机，则可以：
+        - 将KMS主机升级到Windows服务器。
+        - 将计算机降级到旧版Windows服务器。
+        - 在Windows电脑上运行KMS主机。
+        - 在较新版本的Windows服务器上运行Windows服务器虚拟机。
   - question: >
-      如何Windows 终端 RDS (远程桌面服务) ？
+      如何实现激活Windows 终端服务器和远程桌面服务 (RDS) ？
     answer: >
-      从 VLSC 下载服务器媒体后，可以使用产品激活向导激活它。 无需在 VLSC 中查找批量许可证密钥或产品设置密钥。 完成所有激活向导步骤会提示服务器通过 Internet 与 Microsoft 交换所连接以验证数据。 或者，对于脱机服务器，激活向导提供电话或 Web 激活。
+      从 VLSC 下载服务器媒体后，可以使用产品激活向导激活它。 无需在 VLSC 中找到批量许可证密钥或产品设置密钥。 完成所有激活向导步骤会提示服务器通过 Internet 与 Microsoft Clearing House 连接以验证数据。 或者，对于脱机服务器，激活向导提供电话或 Web 激活。
 
 
-      首先，为服务器分配远程桌面许可角色， (**StartAdministrative** >  **ToolsServer** >  Manager) 然后从远程桌面许可证管理器激活 RDS 服务。 选择 **"开始** > **管理** > 工具 **""远程桌面** 服务"，然后选择"**远程桌面/终端许可证管理器"**。
+      首先，为服务器分配远程桌面许可角色， (**StartAdministrative** >  Tools > **服务器管理器**) ，然后从远程桌面许可证管理器激活 RDS 服务。 选择 **StartAdministrative** >  **ToolsRemote** >  Desktop Services，然后选择 **远程桌面/终端许可证管理器**。
 
 
-      激活期间，会要求您选择"许可协议"和"协议编号"。 对于"开放许可证"客户，输入授权号码。 对于 MPSA，输入你的购买 (号码，而不是 MPSA 协议) 。 如果你不确定用于购买 CAL 许可证的许可证 ID 的程序类型，请转到 **VLSC 关系** 摘要并参考父 **计划** 列。
+      在激活期间，系统会要求你选择许可证计划和协议编号。 对于开放式许可证客户，请输入授权号码。 对于 MPSA，请输入购买帐号 (而不是 MPSA 协议编号) 。 如果不确定用于购买 CAL 许可证的许可证 ID 的程序类型，请转到 **VLSC 关系摘要** 并参考 **"父计划"** 列。
 
 
-      有关授权终端服务器的信息，请参阅 [终端服务器许可](/troubleshoot/windows-server/remote/terminal-server-licensing)。 若要了解如何安装远程桌面许可角色和激活许可证服务器，请参阅激活 [远程桌面服务](/windows-server/remote/remote-desktop-services/rds-activate-license-server) 许可证服务器和无法连接到  [RDS，因为没有可用的 RD 许可服务器](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server)。
+      有关许可终端服务器的信息，请参阅 [终端服务器许可](/troubleshoot/windows-server/remote/terminal-server-licensing)。 有关如何安装远程桌面许可角色和激活许可证服务器的信息，请参阅 [激活远程桌面服务许可证服务器](/windows-server/remote/remote-desktop-services/rds-activate-license-server) ，  [并且无法连接到 RDS，因为没有可用的 RD 许可服务器](/troubleshoot/windows-server/remote/cannot-connect-rds-no-license-server)。
   - question: >
-      同一所有权结构内的组织能否使用相同的密钥来部署产品？
+      同一所有制结构中的组织是否可以使用相同的密钥来部署产品？
     answer: >
-      许可证合规性和资产管理独立于密钥激活。 客户不必使用特定许可 ID 下提供的密钥， (、注册、关联或许可协议) 。 如果父组织有单独的协议，它可以使用同一密钥跨父和子组织部署产品。 这种灵活性使客户能够使用特定于协议/许可证的密钥或一组密钥集中管理部署映像。
+      许可证符合性和资产管理独立于密钥激活。 客户无需使用根据特定许可 ID 提供的密钥 (协议、注册、关联或许可证) 。 如果父组织有单个协议，则可以使用相同的密钥跨父组织和子组织部署产品。 借助这种灵活性，客户可以使用特定于协议/许可证的密钥或一组适用于所有人的密钥来集中管理其部署映像。
   - question: >
-      我能否使用批量许可证密钥来行使我的重新映像权限？
+      是否可以使用卷许可证密钥来行使重新成像权限？
     answer: >
-      是。 会向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权限，如果从批量许可介质制作的副本与原始许可产品相同，客户可以使用其协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，您可以在产品密钥页面上找到批量许可密钥，或者通过 Microsoft 激活中心请求 [密钥](https://licensingapps.microsoft.com/product-activation)。
+      是。 向所有 Microsoft 批量许可客户授予重新映像权限。 根据这些权利，如果批量许可媒体提供的副本与原始许可产品相同，则客户可以使用协议提供的媒体重新映像原始设备制造商 (OEM) 或完整打包产品 (FPP) 许可副本。 作为批量许可客户，可以在产品密钥页上找到批量许可证密钥，或通过 [Microsoft 激活中心](https://licensingapps.microsoft.com/product-activation)请求密钥。
 
 
       > [!NOTE]
 
-      > 如果你是开放许可客户，则必须购买至少一个要重新映像的产品单元，以获取对产品媒体的访问权限并接收产品密钥。
+      > 如果你是开放式许可证客户，则必须购买至少一个要重新映像的产品单元，以获取对产品媒体的访问权限并接收产品密钥。
 
 
-      有关重新映像权限详细信息，请参阅产品 [许可简介](/licensing/learn-more/volume-licensing-briefs)。
+      有关重新映像权限的详细信息，请参阅 [产品许可简报](/licensing/learn-more/volume-licensing-briefs)。
   - question: >
-      如何将密钥下载到本地文件？
-    answer: "该Microsoft 365 管理中心提供了一个选项，将产品密钥下载到本地文件供以后使用。 从下载和密钥页面下载产品密钥时，该文件包含与管理中心配置文件中的协议相关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的\"许可 ID\"视图中下载密钥，文件将仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可以在Excel或文本编辑器中打开，以便排序和查看密钥。 其中包括文件中包含的列：许可证 **ID**、**父** 计划、组织、**产品**、**产品** 密钥、**类型和** **MAK 激活-已用/可用**、席位和 OSA 状态。 \n\n若要在文件包中打开Excel，请完成以下步骤：\n  1. 打开 Microsoft Excel。\n  2. 选择 **\"FileOpen** > \"，然后选择下载的 CSV 文件。\n  3. 选择 **\"** 以 (分隔) \"，然后选择\"以制表符分隔 (以阻止在单个列中显示所有) 。\n  4. 选择 **“完成”**。 \n\nthe .CSV file opens in Excel and the data is displayed in separate columns.\n"
+      如何实现将密钥下载到本地文件？
+    answer: "Microsoft 365 管理中心提供了一个选项，用于将产品密钥下载到本地文件供以后使用。 从\"下载和密钥\"页下载产品密钥时，该文件包含与管理中心配置文件中的协议关联的所有批量许可证密钥。 但是，如果从\"关系摘要\"页上的许可 ID 视图下载密钥，则该文件仅包含与正在查看的许可 ID 关联的密钥。\n\n可下载的产品密钥文件采用制表符分隔格式，可在Excel或文本编辑器中打开以对密钥进行排序和查看。 这些是文件中包含的列： **许可证 ID**、 **父计划**、 **组织**、 **产品**、 **产品密钥**、 **类型** 和 **MAK 激活使用/可用、座位和 OSA 状态**。 \n\n若要在Excel中打开下载的文件，请完成以下步骤：\n  1. 打开 Microsoft Excel。\n  2. 选择 **FileOpen** > ，然后选择下载的 CSV 文件。\n  3. 在默认)  (选择带 **分隔** 符，然后选择 **选项卡分隔** (以防止在单列) 中显示所有数据。\n  4. 选择 **“完成”**。 \n\n.CSV文件在Excel中打开，数据显示在单独的列中。\n"
 - name: 支持
   questions:
   - question: >
-      如何联系支持人员？
+      如何实现联系支持人员？
     answer: >
-      Microsoft 365 管理中心客户可以通过电话或 Web 表单联系支持人员。 Microsoft 在 24 小时内响应 Web 表单提交。 若要联系支持人员，请参阅 [联系我们](/licensing/contact-us)。
-additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [下载常见问题解答](downloads-faq.yml)\n\n- [开放计划联机服务激活常见问题解答](online-service-activation-faq.yml)"
+      Microsoft 365 管理中心客户可以通过电话或 Web 表单联系支持人员。 Microsoft 在 24 小时内响应 Web 表单提交。 若要联系支持人员，请 [参阅"联系我们](/licensing/contact-us)"。
+additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [下载常见问题解答](downloads-faq.yml)\n\n- [开放程序的联机服务激活常见问题解答](online-service-activation-faq.yml)"

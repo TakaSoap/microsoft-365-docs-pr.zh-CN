@@ -1,7 +1,7 @@
 ---
-title: ASR 规则部署先决条件
+title: 攻击面减少 (ASR) 规则部署概述
 description: 提供有关部署攻击面减少 (ASR) 规则的概述和先决条件指导。
-keywords: 攻击面减少规则部署、ASR 部署、启用 asr 规则、配置 ASR、主机入侵防护系统、保护规则、防攻击规则、反攻击规则、攻击规则、感染预防规则、Microsoft Defender for Endpoint、配置 ASR 规则
+keywords: 攻击面减少规则部署、ASR 部署、启用 asr 规则、配置 ASR、主机入侵防护系统、保护规则、防攻击规则、反攻击规则、攻击规则、感染预防规则、Pertahanan Microsoft untuk Titik Akhir、配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,18 +20,16 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 0180bfcef9d478dcf8e334a180ea3df993585e00
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666407"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705529"
 ---
-# <a name="asr-rules-deployment-prerequisites"></a>ASR 规则部署先决条件
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>攻击面减少 (ASR) 规则部署概述
 
-## <a name="before-you-begin"></a>准备工作
-
-攻击面是组织容易受到网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能危及组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而减少攻击者的攻击方式。 配置攻击面减少 (ASR) 规则（Microsoft Defender for Endpoint中找到的许多安全功能之一）可提供帮助。
+攻击面是组织容易受到网络威胁和攻击的所有位置。 组织的攻击面包括攻击者可能危及组织设备或网络的所有位置。 减少攻击面意味着保护组织的设备和网络，从而减少攻击者的攻击方式。 配置攻击面减少 (ASR) 规则（Pertahanan Microsoft untuk Titik Akhir中找到的许多安全功能之一）可以提供帮助。
 
 ASR 规则针对某些软件行为，例如：
 
@@ -41,6 +39,8 @@ ASR 规则针对某些软件行为，例如：
 
 通过减少不同的攻击面，首先可以帮助防止攻击发生。
 
+## <a name="before-you-begin"></a>准备工作
+
 在初始准备过程中，必须了解要实施的系统的功能。 了解这些功能将有助于确定哪些 ASR 规则对于保护组织最为重要。 此外，在准备 ASR 部署时，必须注意几个先决条件。
 
 >[!IMPORTANT]
@@ -48,7 +48,7 @@ ASR 规则针对某些软件行为，例如：
 
 在开始之前，请查看 [攻击面减少](overview-attack-surface-reduction.md)和 [降低攻击面减少规则的概述 - 基础信息第 1 部分](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) 。 若要了解覆盖范围和潜在影响，请熟悉当前一组 ASR 规则：请参阅 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)。  熟悉 ASR 规则集时，请记下每个规则 GUID 映射：请参阅： [ASR 规则和 GUID 矩阵](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix)。
 
-ASR 规则只是Microsoft Defender for Endpoint中攻击面减少功能的一个功能。 本文档将更详细地介绍如何有效部署 ASR 规则，以阻止人为操作勒索软件和其他威胁等高级威胁。  
+ASR 规则只是Pertahanan Microsoft untuk Titik Akhir中攻击面减少功能的一个功能。 本文档将更详细地介绍如何有效部署 ASR 规则，以阻止人为操作勒索软件和其他威胁等高级威胁。  
 
 ### <a name="rules-by-category"></a>按类别排列的规则
 
@@ -74,9 +74,9 @@ ASR 规则只是Microsoft Defender for Endpoint中攻击面减少功能的一个
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM) 
 - Windows 10和Windows 11设备
-- Microsoft Defender for Endpoint E5 或 Windows E5 许可证
+- Pertahanan Microsoft untuk Titik Akhir E5 或 Windows E5 许可证
 
-若要充分利用 ASR 规则和报告，建议使用 Microsoft 365 Defender E5 或 Windows E5 许可证和 A5。 了解详细信息：[Microsoft Defender for Endpoint的最低要求](minimum-requirements.md)。
+若要充分利用 ASR 规则和报告，建议使用 Microsoft 365 Defender E5 或 Windows E5 许可证和 A5。 了解详细信息：[Pertahanan Microsoft untuk Titik Akhir的最低要求](minimum-requirements.md)。
 
 >[!Note]
 >有多种方法可配置 ASR 规则。 可以使用以下方式配置 ASR 规则：Microsoft Endpoint Manager (MEM) 、PowerShell、组策略、Microsoft System Center Configuration Manager (SCCM) 、MEM OMA-URI。
@@ -125,17 +125,17 @@ Microsoft Defender 防病毒与 Microsoft 云服务无缝配合使用。 这些�
 > :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="ASR 规则部署阶段" lightbox="images/asr-rules-deployment-phases.png":::
 
 >[!Note]
->对于使用非 Microsoft HIPS 并正在转换为Microsoft Defender for Endpoint攻击面减少规则的客户：Microsoft 建议客户与其 ASR 规则部署并行运行 HIPS 解决方案，直到从审核模式转移到阻止模式。 请记住，必须联系第三方防病毒供应商以获取排除建议。  
+>对于使用非 Microsoft HIPS 并正在转换为Pertahanan Microsoft untuk Titik Akhir攻击面减少规则的客户：Microsoft 建议客户在从审核模式转向阻止模式之前，与 ASR 规则部署并行运行 HIPS 解决方案。 请记住，必须联系第三方防病毒供应商以获取排除建议。  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[第 1 阶段：规划](attack-surface-reduction-rules-deployment-plan.md)
+[测试攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-test.md)
 
-[第 2 截断：测试](attack-surface-reduction-rules-deployment-test.md)
+[启用攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-implement.md)
 
-[第 3 阶段：实施](attack-surface-reduction-rules-deployment-implement.md)
+[操作攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[第 4 阶段：投入生产](attack-surface-reduction-rules-deployment-operationalize.md)
+[ASR) 规则引用 (攻击面减少](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>参考
 
@@ -155,7 +155,7 @@ Microsoft Defender 防病毒与 Microsoft 云服务无缝配合使用。 这些�
 
 [使用攻击面减少规则来避免感染恶意软件](attack-surface-reduction.md)
 
-[启用攻击面减少规则](enable-attack-surface-reduction.md)
+[启用攻击面减少规则 - 备用配置](enable-attack-surface-reduction.md)
 
 [攻击面减少规则参考](attack-surface-reduction-rules-reference.md)
 

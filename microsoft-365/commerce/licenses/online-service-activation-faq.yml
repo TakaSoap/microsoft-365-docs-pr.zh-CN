@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: 开放计划联机服务激活常见问题解答
+  title: 开放程序的联机服务激活常见问题解答
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -11,28 +11,28 @@ metadata:
   ms.service: o365-administration
   ms.custom: commerce_vl
   ms.localizationpriority: medium
-  description: 开放计划联机服务激活常见问题解答
-  ms.openlocfilehash: d123714434896c559473769af30106833db83eb0
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: 开放程序的联机服务激活常见问题解答
+  ms.openlocfilehash: 9bc7be1d04c28ad2f4a67e4bd6eb76461f7eb258
+  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63679975"
-title: 开放计划联机服务激活常见问题解答
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64713770"
+title: 开放程序的联机服务激活常见问题解答
 summary: ''
 sections:
-- name: 一般信息
+- name: 常规
   questions:
   - question: >
-      如何激活通过开放计划购买的联机服务 (开放、开放式值和开放式价值订阅) ？
+      如何实现激活通过 Open 程序 (打开、打开值和开放值订阅) 购买的联机服务？
     answer: >
       开放客户可以通过两种方式激活联机服务：
 
-      - 通过开放计划系列订购联机服务后，你将收到一封电子邮件，包含用于激活服务的链接和说明。
+      - 通过 Open 计划系列订购联机服务后，你将收到一封电子邮件，其中包含激活服务的链接和说明。
 
       或
 
-      - 从 [批量许可服务中心 (VLSC) ](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) 开放计划客户可以转到"联机服务激活"部分并选择要管理的许可证：
+      - 从 [批量许可服务中心 (VLSC) ](https://www.microsoft.com/Licensing/Servicecenter/default.aspx) 开放计划客户可以转到联机服务激活部分并选择要管理的许可证：
 
 
       1. 选择"管理激活"链接，然后选择"开始激活"。 将打开产品激活窗口并预填充密钥。
@@ -40,37 +40,37 @@ sections:
       2. 继续执行剩余的激活步骤以完成产品激活。
 
 
-      在批量许可联机服务激活网站的 48 小时内完成成功激活。
+      在批量许可联机服务激活网站上，成功激活在 48 小时内完成。
 
-      有关激活 Azure Microsoft Azure，请参阅入门[许可中的使用 Azure 进行托管](https://azure.microsoft.com/offers/ms-azr-0111p/)。
+      有关激活Microsoft Azure的信息，请参阅[公开许可中 Azure 的入门](https://azure.microsoft.com/offers/ms-azr-0111p/)。
   - question: >
-      我看不到 Azure 订单。 我该怎么办？
+      我看不到我的 Azure 订单。 我该怎么办？
     answer: >
-      Azure 订单通过密钥激活。 通过 VLSC 中的"下载和密钥"选项卡获取密钥，在"入门 [Azure"](https://azure.microsoft.com/offers/azure-open/)页面上输入密钥。
+      Azure 订单是通过密钥激活的。 通过 VLSC 中的"下载和密钥"选项卡获取密钥，并在["打开许可"页中使用 Azure](https://azure.microsoft.com/offers/azure-open/) 在入门中输入密钥。
   - question: >
-      什么是工作或学校帐户，为什么需要一个帐户来激活联机服务？
+      什么是工作或学校帐户，为什么我需要一个来激活联机服务？
     answer: >
-      工作或学校帐户供用户登录到组织Microsoft 服务。 登录通常使用 username@orgname.com 或 username@orgname.onmicrosoft.com 表单，其中 *orgname* 是组织的电子邮件域名。
+      工作或学校帐户用于用户登录到组织Microsoft 服务。 登录通常使用表单 username@orgname.com 或 username@orgname.onmicrosoft.com，其中 *orgname* 是其组织电子邮件域名。
   - question: >
-      我如何知道我的组织是否已有帐户？
-    answer: "与工作或学校帐户关联的组织名称取自你正在激活的服务的许可证 ID。 如果存在帐户，组织名称将预先填充在组织帐户设置中，并且已根据原始联机服务订单链接到您的组织。 注册过程将验证你的组织是否有帐户。 \n\n如果\" **公司\"** 的字段可用，则完成注册过程以登录并激活服务。 如果此字段不可用，则必须注册组织。 您必须是全局管理员才能为帐户注册组织。\n\n当你请求工作或学校帐户时，你的请求将发送给你的组织租户管理员，该管理员授予或拒绝你的注册请求。 登录 Microsoft VLSC Online 服务激活时，请使用此工作或学校帐户。\n"
+      如何实现知道我的组织是否已有帐户？
+    answer: "与工作或学校帐户关联的组织名称取自正在激活的服务的许可证 ID。 如果存在帐户，组织名称将预先填充在组织帐户设置中，并且已从原始联机服务订单链接到组织。 注册过程验证组织是否有帐户。 \n\n如果 **公司** 字段可用，请完成注册过程以登录并激活服务。 如果此字段不可用，则必须注册组织。 必须是注册帐户组织全局管理员。\n\n请求工作或学校帐户时，请求将发送给组织租户管理员，这些管理员会授予或拒绝你的注册请求。 登录到 Microsoft VLSC Online Service 激活时，请使用此工作或学校帐户。\n"
   - question: >
-      为什么激活门户在激活联机服务后将我注销？
-    answer: "在开放许可计划下激活联机服务时，将单独激活每个协议。 为了确保许可证不会在错误的租户上激活，每次激活均在单独的会话中进行处理。 \n"
+      激活在线服务后，激活门户为何会注销我？
+    answer: "在开放许可计划下激活联机服务时，每个协议将单独激活。 为了确保未在错误的租户上激活许可证，每次激活都会在单独的会话中处理。 \n"
   - question: >
-      联机服务激活对开放许可证购买如何工作？
+      联机服务激活如何适用于开放式许可证购买？
     answer: >
-      Microsoft Online Services协议已移动到无密钥处理激活模型。 订购 Open Online 服务后，您将收到一封电子邮件，包含用于激活服务的链接和说明。
+      Microsoft Online Services for Open Agreements 已迁移到无密钥处理激活模型。 订购 Open 联机服务 后，会收到一封电子邮件，其中包含激活服务的链接和说明。
   - question: >
-      如果我想将购买分配给不同的组织，该做什么？
+      如果要将购买分配给其他组织，该怎么办？
     answer: >
-      若要将产品分配给新组织，请完成注册步骤以创建新组织。 你可以从该位置分配你购买的任何席位或产品。
+      若要将产品分配给新组织，请执行注册步骤来创建新组织。 可以从那里分配购买的任何座位或产品。
   - question: >
-      我刚刚激活了联机服务。 为什么仍显示我需要在批量许可服务中心的"管理激活"页上激活服务？
+      我刚刚激活了我的联机服务。 为什么它仍然说我需要在批量许可服务中心的"管理激活"页上激活我的服务？
     answer: >
-      激活的服务最多可能需要 24 小时才能在"管理激活"页上显示为"已 **激活"** 状态。
+      激活的服务最多可能需要 24 小时才能在 **"管理激活**"**页上显示** 为"激活"状态。
   - question: >
-      如何联系支持人员？
+      如何实现联系支持人员？
     answer: >
-      有关支持的电话或 Web，请参阅 [联系我们](/licensing/contact-us)。 Microsoft 在 24 小时内响应 Web 表单提交。
+      有关电话或 Web 的支持，请 [参阅"联系我们](/licensing/contact-us)"。 Microsoft 在 24 小时内响应 Web 表单提交。
 additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [产品密钥常见问题解答](product-keys-faq.yml)\n\n- [下载常见问题解答](downloads-faq.yml)"

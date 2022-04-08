@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: 了解如何创建新的 onmicrosoft.com 域，并将其设置为新的回退域。
-ms.openlocfilehash: b6fd1f34b1a01eebe7c6717aa9c27fc91c387cd1
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 82eca45807405980043b00e8cfe5a221c52fa065
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64690522"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704835"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>在Microsoft 365中添加和替换 onmicrosoft.com 回退域
 
@@ -56,7 +56,7 @@ ms.locfileid: "64690522"
 - 将其分配为回退域
 
 > [!NOTE]
-> Microsoft 365环境中总共有五个 onmicrosoft.com 域。 添加后，当前无法删除它们。 
+> Microsoft 365环境中总共有五个 onmicrosoft.com 域。 添加后，无法删除它们。 
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -93,7 +93,7 @@ ms.locfileid: "64690522"
 > [!NOTE]
 > 在将回退域更改为新的 onmicrosoft.com 域之前，可能需要考虑更改 onmicrosoft.com SharePoint域。 创建其他 onmicrosoft 域并将其用作回退域不会对 SharePoint Online 执行重命名。 现有的SharePoint和OneDrive URL 将保持不变。  可以通过SharePoint[域重命名预览](/sharepoint/change-your-sharepoint-domain-name)版中提供的 PowerShell 步骤更改.onmicrosoft SharePoint域 (当前可供) 网站少于 1，000 个的租户使用。
 
-创建新的 onmicrsoft.com 域后，请执行以下操作将其更改为回退域。
+创建新的 onmicrosoft.com 域后，请执行以下操作将其更改为回退域。
 
 1. 在Microsoft 365 管理中心中，选择 **设置**，然后选择 **"域**"。 
 

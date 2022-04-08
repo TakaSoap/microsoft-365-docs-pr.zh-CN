@@ -1,7 +1,7 @@
 ---
-title: 实施攻击面减少 (ASR) 规则部署
+title: 启用攻击面减少 (ASR) 规则
 description: 提供实现攻击面减少规则部署的指导。
-keywords: 攻击面减少规则部署、ASR 部署、启用 asr 规则、配置 ASR、主机入侵防护系统、保护规则、防攻击规则、反攻击规则、攻击规则、感染预防规则、Microsoft Defender for Endpoint、配置 ASR 规则
+keywords: 攻击面减少规则部署、ASR 部署、启用 asr 规则、配置 ASR、主机入侵防护系统、保护规则、防攻击规则、反攻击规则、攻击规则、感染预防规则、Pertahanan Microsoft untuk Titik Akhir、配置 ASR 规则
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666957"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705507"
 ---
-# <a name="step-3-implement-asr-rules"></a>步骤 3：实现 ASR 规则
+# <a name="enable-attack-surface-reduction-asr-rules"></a>启用攻击面减少 (ASR) 规则
 
 实施攻击面减少 (ASR) 规则将第一个测试圈移动到已启用的功能状态。
 
@@ -38,7 +38,7 @@ ms.locfileid: "64666957"
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>步骤 1：将 ASR 规则从审核转换为阻止
 
 1. 在审核模式下确定所有排除项后，开始将某些 ASR 规则设置为"阻止"模式，从触发事件最少的规则开始。 请参阅" [启用攻击面减少规则](enable-attack-surface-reduction.md)"。
-2. 查看Microsoft 365 Defender门户中的报告页;请[参阅Microsoft Defender for Endpoint中的威胁防护报告](threat-protection-reports.md)。 另请查看 ASR 支持者的反馈。
+2. 查看Microsoft 365 Defender门户中的报告页;请参阅[Pertahanan Microsoft untuk Titik Akhir中的威胁防护报告](threat-protection-reports.md)。 另请查看 ASR 支持者的反馈。
 3. 根据需要优化排除项或创建新的排除项。
 4. 将有问题的规则切换回审核。
 
@@ -131,10 +131,12 @@ ms.locfileid: "64666957"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>此部署集合中的其他主题
 
-[ASR 规则部署先决条件](attack-surface-reduction-rules-deployment.md)
+[攻击面减少 (ASR) 规则部署概述](attack-surface-reduction-rules-deployment.md)
 
-[步骤 1：规划 ASR 规则部署](attack-surface-reduction-rules-deployment-plan.md)
+[计划攻击面减少 (ASR) 规则部署](attack-surface-reduction-rules-deployment-plan.md)
 
-[步骤 2：测试 ASR 规则](attack-surface-reduction-rules-deployment-test.md)
+[测试攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-test.md)
 
-[步骤 4：操作 ASR 规则](attack-surface-reduction-rules-deployment-operationalize.md)
+[操作攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[ASR) 规则引用 (攻击面减少](attack-surface-reduction-rules-reference.md)
