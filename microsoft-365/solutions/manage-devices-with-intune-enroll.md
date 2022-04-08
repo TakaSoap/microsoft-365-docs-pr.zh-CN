@@ -1,10 +1,10 @@
 ---
-title: 步骤 2. 使用 Intune 将设备注册到管理
+title: 步骤 2. 使用 Intune 将设备注册到管理中
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -18,22 +18,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651270"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704705"
 ---
-# <a name="step-2-enroll-devices-to-intune"></a>步骤 2. 将设备注册到Intune
+# <a name="step-2-enroll-devices-to-intune"></a>步骤 2. 将设备注册到 Intune
 
-有多种方法可保护终结点，终结点是通常用于指代组合实体(包括设备、应用和用户标识)的术语。 必须在应用和设备本身上持续、可靠地强制实施安全策略。 注册设备以Intune并注册云标识提供者（如Azure Active Directory）是一个很好的开端。
+有多种方法可保护终结点，终结点是通常用于指代组合实体(包括设备、应用和用户标识)的术语。 必须在应用和设备本身上持续、可靠地强制实施安全策略。 将设备注册到 Intune，并在云标识提供者 (如 Azure Active Directory) 处注册，这是一个很好的开始。
 
 无论设备是个人所有的 BYOD 设备，还是公司所有的完全托管的设备，都最好了解访问组织资源的终结点，从而确保仅允许运行正常且合规的设备。 这包括在终结点上运行的移动和桌面应用的运行状况和可信度。 你希望确保这些应用正常且合规，并防止通过恶意意图或意外方式将企业数据泄漏到使用者应用或服务。
 
 设备注册流程会在用户、设备和 Microsoft Intune 服务之间建立关系。 将 Microsoft Intune 用作独立服务便于使用单个基于 Web 的管理控制台以管理 Windows 电脑、macOS 和最热门的移动设备平台。
 
-本文建议将设备注册到Intune的方法。 有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/mem/intune/fundamentals/deployment-guide-enrollment)。
+本文建议使用方法将设备注册到 Intune。有关这些方法以及如何部署每个方法的详细信息，请参阅 [部署指南: 在 Microsoft Intune 中注册设备](/mem/intune/fundamentals/deployment-guide-enrollment)。
 
 ![管理设备的步骤](../media/devices/intune-mdm-steps-1.png#lightbox)
 
@@ -47,9 +47,9 @@ ms.locfileid: "64651270"
 
 ## <a name="ios-and-ipados-enrollment"></a>iOS 和 iPadOS 注册
 
-对于用户所有的(BYOD)设备，可以允许用户使用以下其中一种方法注册其个人设备以进行 Intune 管理。
+对于用户拥有的 (BYOD) 设备，可以让用户使用以下方法之一向 Intune 注册其个人设备。
 - 设备注册是你可能认为的典型 BYOD 注册。 它为管理员提供各种管理选项。
-- 用户注册是更简化的注册流程，为管理员提供设备管理选项子集。 此功能目前处于预览阶段。
+- 用户注册是更简化的注册过程，为管理员提供设备管理选项的子集。此功能目前为预览版。
 
 对于为其用户购买设备的组织，Intune 支持以下 iOS/iPadOS 公司所有的设备注册方法:
 - Apple 的自动设备注册 (ADE)
@@ -61,7 +61,7 @@ ms.locfileid: "64651270"
 
 ## <a name="android-enrollment"></a>Android 注册 
 
-有多种选项可用于 Android 注册，具体取决于设备类型、要支持的注册类型，以及正在使用的 Android 版本甚至是制造商(特别是 Samsung)等内容。 大多数组织为其最终用户使用 Android 工作配置文件，尤其是在 BYOD 方案中。 
+Android 注册有多个选项，具体取决于设备类型、想要支持的注册类型，以及正在使用的 Android 版本甚至制造商 (尤其是 Samsung)。大多数组织为其最终用户使用 Android Work 配置文件，尤其是在 BYOD 方案中。 
 
 使用 Android 工作配置文件后，最终用户的信息会清楚地与数据容器以及供工作和个人使用的单独应用分开。 对于用户来说，要注册设备并仍然维护其自身数据的隐私和企业数据的安全性，这是一种理想的方式。 
 

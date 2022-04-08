@@ -20,38 +20,32 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651402"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705225"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>步骤 6. 监视设备风险和对安全基线的符合性
 
 组织部署 Microsoft Defender for Endpoint 后，可以通过将 Microsoft Intune 与 Defender for Endpoint 集成来获得更深入的见解和设备保护。 对于移动设备，这包括监视设备风险作为访问条件的功能。 对于 Windows 设备，可以监视这些设备对安全基线的符合性。 
 
-注意：部署Microsoft Defender for Endpoint包括载入终结点。 有关为Microsoft 365容量载入设备的详细信息，请参阅[注册设备与载入设备](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)。  
+部署 Microsoft Defender for Endpoint 包括载入终结点。 如果使用 Intune 载入终结点 (推荐)，则已将 Microsoft Intune 连接到 Defender for Endpoint。 如果使用其他方法将终结点载入 Defender for Endpoint，请参阅 [在 Intune 中配置 Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection-configure) 以确保已在 Intune 和 Microsoft Defender for Endpoint 之间设置服务到服务连接。 
+
 
 ![Defender for Endpoint 和 Microsoft Intune 集成图示](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 在此图中：
 - Microsoft Defender for Endpoint 大大提高了设备威胁防护的复杂性。 
 - 虽然 Microsoft Intune 允许你设置应用保护策略和管理设备（包括配置更改），但 Defender for Endpoint 会持续监视设备是否存在威胁，并可以采取自动措施来修正攻击。 
-- 可以使用 Intune 将设备载入 Defender for Endpoint。 执行此操作时，还可让这些设备使用Microsoft 365合规性功能，包括终结点数据丢失防护 (DLP) 。
+- 可以将 Microsoft Intune 连接到 Defender for Endpoint，以监视设备风险以及安全基线的合规性。
 
 本文包括以下步骤：
-- 将 Microsoft Intune 连接到 Defender for Endpoint
 - 监视设备风险
 - 监视对安全基线的符合性
 
 如果尚未设置 Defender for Endpoint，请与威胁防护管理员协作[设置评估和试点环境](../security/defender/eval-defender-endpoint-overview.md)。 可以与试点组合作，试用本文中的功能。
-
-## <a name="connect-microsoft-intune-to-defender-for-endpoint"></a>将 Microsoft Intune 连接到 Defender for Endpoint
-
-配置 Microsoft Intune 与 Defender for Endpoint 的集成很简单。 使用本文：[在 Intune 中配置 Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection-configure)。 
-
-![将 Intune 连接到 Microsoft Defender for Endpoint](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
 
 ## <a name="monitor-device-risk-as-a-condition-for-access"></a>监视设备风险作为访问条件
 
@@ -81,10 +75,10 @@ ms.locfileid: "64651402"
 |步骤  |说明  |
 |---------|---------|
 |1     |查看关键概念并比较 Microsoft Defender for Endpoint 和 Windows Intune 安全基线。 <br><br>若要了解建议，请参阅[增加对 Microsoft Defender for Endpoint 安全基线的符合性](../security/defender-endpoint/configure-machines-security-baseline.md)。<br><br>请参阅[使用安全基线在 Intune 中配置 Windows 设备](/mem/intune/protect/security-baselines)查看可用安全基线列表以及如何避免冲突。         |
-|2     |  为 Intune 部署 Windows 安全基线设置。 如果遵循[第 5 步. 部署配置文件](manage-devices-with-intune-configuration-profiles.md)中的指导，则可能已完成此操作。        |
+|2     |  为 Intune 部署 Windows 安全基线设置。如果遵循 [步骤 5 中的指南操作部署配置文件 ](manage-devices-with-intune-configuration-profiles.md)，则可能已完成此操作。        |
 |3    |  为 Intune 部署 Defender for Endpoint 基线设置。 请参阅[管理 Microsoft Intune 中的安全基线配置文件](/mem/intune/protect/security-baselines-configure)，以创建配置文件并选择基线版本。<br><br>还可以按照此说明操作：[查看并分配 Microsoft Defender for Endpoint 安全基线](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)。     |
 |4     | 在 Defender for Endpoint 中，查看[设备配置管理上的安全基线卡](../security/defender-endpoint/configure-machines.md)。          |
-| | |
+
 
 ## <a name="next-steps"></a>后续步骤
 转到[第 7 步. 在终结点上使用信息保护功能实现 DLP](manage-devices-with-intune-dlp-mip.md)。

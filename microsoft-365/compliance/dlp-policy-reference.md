@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP 策略组件和配置参考
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d6bc24f313d1998979a460bcd41e87ccbe8abc5c
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704914"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713990"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>数据丢失防护策略参考
 
@@ -165,7 +165,7 @@ DLP 策略通过将敏感项匹配到敏感信息类型 (SIT) 、敏感度标签
 
 #### <a name="hosted-service-workloads"></a>托管服务工作负荷
 
-对于托管服务工作负荷（如 Exchange Online、SharePoint Online 和 OneDrive Entreprise），每个规则都按创建顺序分配优先级。 这意味着，创建的第一个规则具有优先级，创建的第二个规则具有第二个优先级，等等。 
+对于托管服务工作负荷（如 Exchange Online、SharePoint Online 和 OneDrive for Business），每个规则都按创建顺序分配优先级。 这意味着，创建的第一个规则具有优先级，创建的第二个规则具有第二个优先级，等等。 
   
 ![按优先级顺序排列的规则](../media/dlp-rules-in-priority-order.png)
 
@@ -202,8 +202,6 @@ DLP 策略通过将敏感项匹配到敏感信息类型 (SIT) 、敏感度标签
 - 规则 4：不强制执行
 
 会评估所有其他规则，但不会强制执行其操作。 审核日志将显示对文件应用的限制性最强的规则。 如果有多个规则匹配且限制性相同，则策略和规则优先级控制将在文件上应用的规则。
-
-对于终结点，可以针对特定包含条件集的单个规则中的所有受支持活动配置 DLP 执行的操作。
 
 ### <a name="conditions"></a>条件
 
@@ -378,7 +376,7 @@ SIT 具有预定义 [**的置信度级别**](https://www.microsoft.com/videoplay
 规则中可用的操作取决于已选择的位置。 如果只选择要应用到的策略的一个位置，则下面列出了可用操作。
 
 > [!IMPORTANT]
-> 对于SharePoint联机和OneDrive Entreprise位置，无论是否共享文档，在检测到敏感信息后，将立即主动阻止文档，而内部用户将继续有权访问文档。
+> 对于SharePoint联机和OneDrive for Business位置，无论是否共享文档，在检测到敏感信息后，将立即主动阻止文档，而内部用户将继续有权访问文档。
 
 #### <a name="exchange-location-actions"></a>Exchange位置操作
 
@@ -521,7 +519,7 @@ for where they are used/expected behavior-->
 
 当用户尝试对符合规则条件和异常的上下文中的敏感项执行操作时，可以通过用户通知电子邮件和上下文策略提示弹出窗口告知他们。 这些通知非常有用，因为它们可提高人们的认识，并帮助人们了解组织的 DLP 策略。
 
-例如，OneDrive Entreprise网站上包含个人身份信息 (PII) 并与来宾共享的Excel工作簿等内容。
+例如，OneDrive for Business网站上包含个人身份信息 (PII) 并与来宾共享的Excel工作簿等内容。
 
 ![消息栏在 Excel 2016 中显示策略提示](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -656,7 +654,7 @@ DLP 将事件信息馈送到其他Microsoft 365信息保护服务，例如[Micro
 
 ![每次规则匹配或聚合到更少的报表中时发送警报](../media/dlp-incident-reports-aggregation.png)
 
-DLP 扫描电子邮件的方式与SharePoint联机或OneDrive Entreprise项不同。 在 SharePoint Online 和 OneDrive for business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
+DLP 扫描电子邮件的方式与SharePoint联机或OneDrive for Business项不同。 在 SharePoint Online 和 OneDrive for business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
 
 ### <a name="additional-options"></a>其他选项
 

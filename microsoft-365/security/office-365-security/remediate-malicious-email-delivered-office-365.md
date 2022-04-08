@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威胁修正
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbb86061ddd7d94cf37a38d21d99d75eaaa44fae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 98b425c39cd12aea55714e9ade192e2e770b26cd
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704873"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714829"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
 
@@ -28,7 +28,7 @@ ms.locfileid: "64704873"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-修正意味着对威胁采取规定措施。 系统可以通过零小时自动清除 (ZAP) 或安全团队通过修正操作（例如 *移动到收件箱*、 *移动到垃圾* 邮件、 *移动到已删除的项*、 *软删除* 或 *硬删除*）来清理发送给组织的恶意电子邮件。 Pertahanan Microsoft untuk Office 365计划 2/E5 使安全团队能够通过手动和自动调查来修正电子邮件和协作功能中的威胁。
+修正意味着对威胁采取规定措施。 系统可以通过零小时自动清除 (ZAP) 或安全团队通过修正操作（例如 *移动到收件箱*、 *移动到垃圾* 邮件、 *移动到已删除的项*、 *软删除* 或 *硬删除*）来清理发送给组织的恶意电子邮件。 Microsoft Defender for Office 365计划 2/E5 使安全团队能够通过手动和自动调查来修正电子邮件和协作功能中的威胁。
 
 > [!NOTE]
 > 若要修正恶意电子邮件，安全团队需要分配给他们的 *搜索和清除* 角色。 角色分配是通过[Microsoft 365 Defender门户中的权限完成的](permissions-microsoft-365-security-center.md)。
@@ -42,10 +42,6 @@ ms.locfileid: "64704873"
 当安全团队使用资源管理器中的搜索和筛选功能手动识别威胁时，会进行 *手动搜寻*。 识别一组需要修正的电子邮件后，可以通过任何电子邮件视图 (*恶意软件*、 *网络钓鱼* 或 *所有电子邮件*) 触发手动电子邮件修正。
 
 :::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="按日期在Office 365资源管理器中手动搜寻的屏幕截图。":::
-
-*操作日志* 显示修正状态的详细信息，例如成功、失败和已在目标中。
-
-:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="操作中心显示修正状态的详细信息，例如成功、失败且已在目标中。":::
 
 安全团队可以通过多种方式使用资源管理器选择电子邮件：
 
@@ -72,7 +68,7 @@ ms.locfileid: "64704873"
 
 在资源管理器或高级搜寻中创建或通过自动调查创建的所有修正 (直接批准) 都显示在操作中心中。 通过"**操作"&"提交****操作中心**  -> **"选项卡** 下的左侧导航面板访问这些\>内容。 
 
-使用双重审批过程等待审批的手动操作 (1。 添加到由一名安全操作团队成员修正，2。 由另一个安全操作团队成员审查和批准) 仅在旧Defender pre Office 365操作中心 **审查** \> **操作中心** 中可见，而不是在事件/调查和统一行动中心中可见。
+使用双重审批过程等待审批的手动操作 (1。 添加到由一名安全操作团队成员修正，2。 由另一个安全操作团队成员审查和批准) 仅在旧的Defender for Office 365操作中心 **审查** \> **操作中心** 中可见，而不是在事件/调查和统一行动中心中可见。
 
 > [!NOTE]
 > 双重审批：仅在办公室操作中心  **查看** \> **操作中心中可用的操作**
@@ -83,12 +79,11 @@ ms.locfileid: "64704873"
 
 打开任何修正项目以查看有关它的详细信息，包括其修正名称、审批 ID、调查 ID、创建日期、说明、状态、操作源、操作类型、由状态决定。 它还打开一个侧窗格，其中包含操作详细信息、电子邮件群集详细信息、警报和事件详细信息。
 
-- *打开"调查"页* ，这将打开管理员调查，其中包含较少的详细信息和选项卡。 它显示了以下详细信息：相关警报、选择用于修正的实体、执行的操作、修正状态、实体计数、日志、操作审批者。 此调查跟踪管理员手动完成的调查，并包含管理员所选内容的详细信息，因此称为管理员操作调查。 无需对调查采取行动，并提醒其已处于批准状态。   
-- *电子邮件计数* 显示通过威胁资源管理器提交的电子邮件数。 这些电子邮件可以是可操作的或不可操作的。 
-- *操作日志* 显示修正状态的详细信息，例如成功/失败/已在目标中
+- *打开"调查"页* ，这将打开管理员调查，其中包含较少的详细信息和选项卡。 它显示了以下详细信息：相关警报、选择用于修正的实体、执行的操作、修正状态、实体计数、日志、操作审批者。 此调查跟踪管理员手动完成的调查，并包含管理员所选内容的详细信息，因此称为管理员操作调查。 无需对调查采取行动，并提醒其已处于批准状态。
+- *电子邮件计数* 显示通过威胁资源管理器提交的电子邮件数。 这些电子邮件可以是可操作的或不可操作的。
+- *操作日志* 显示修正状态的详细信息，例如成功、失败且已在目标中。
 
-  > [!div class="mx-imgBorder"]
-  > [![操作中心的屏幕截图，其中包含可操作且不可操作的威胁。](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="打开&quot;移动到收件箱&quot;选项的操作中心。":::
 
   - **可操作**：可以在以下云邮箱位置处理和移动以下云邮箱位置中的电子邮件：
     - Inbox
