@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 15b540f9993e8f2163f464379aca9496bec4cca7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 70f75fd5986a5d837e33b3caf0b7cb23239ddce5
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665373"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731583"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>带有Microsoft 365 Defender的事件响应
 
@@ -37,9 +37,6 @@ ms.locfileid: "64665373"
 
 **适用于：**
 - Microsoft 365 Defender
-
-> 想要体验 Microsoft 365 Defender？你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
->
 
 Microsoft 365 Defender中的事件是构成攻击事件的相关警报和关联数据的集合。
 

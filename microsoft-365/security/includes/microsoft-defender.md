@@ -5,12 +5,12 @@ author: dansimp
 ms.prod: m365-security
 ms.topic: include
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd348da0895a6cb341aecb7a386609a32d83cb82
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
-ms.translationtype: HT
+ms.openlocfilehash: f20ae3cbec03531ad39adfa99c41891722482ddf
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61112064"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731003"
 ---
-> [!IMPORTANT]
-> 改进的<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender 门户</a>现已推出。 此新体验将 Defender for Endpoint、Defender for Office 365、Microsoft 365 Defender 等引入 Microsoft 365 Defender 门户。 [了解新增功能](/microsoft-365/security/mtp/overview-security-center)。
+> [!NOTE]
+> 希望体验 Microsoft 365 Defender？ 详细了解如何[评估和试点Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab)。

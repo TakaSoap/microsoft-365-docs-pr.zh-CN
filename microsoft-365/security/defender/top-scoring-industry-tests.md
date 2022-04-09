@@ -15,19 +15,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c12a0dbb56e81c6b2c6d7953cff77e367f2e435d
-ms.sourcegitcommit: 40f89c46032ea33de25417106f39cbeebef5a049
+ms.openlocfilehash: a61590b614631b738198001a56e29096d4a7d957
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63419328"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731298"
 ---
 # <a name="top-scoring-in-industry-tests"></a>在行业测试中得分最高
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-> 想要体验 Microsoft 365 Defender？你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
->
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 技术在独立测试中一直取得高分，从而展示了其企业威胁防护功能的优势。 Microsoft 旨在公开这些测试分数的信息。 此页面汇总了结果并提供了分析。
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 67c3a596d1b0d7acec2925f39c2f6bd8025d7d4a
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 4083ffdf240664947b1d35e726a400f292b6d3bf
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62354908"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713484"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -101,6 +101,12 @@ Are you sure you want to install the modules from 'PSGallery'?
 
 回答“**是**”或“**全部是**”以继续安装。
 
+3.  运行此命令以导入模块：
+    
+    ```powershell
+    Import-Module  AzureAD
+    ```
+    
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅的 Azure AD
 
 :若要使用帐户名称和密码或者多重身份验证连接到 Microsoft 365 订阅的 Azure Active Directory (Azure AD)，请在 Windows PowerShell 命令提示符中运行这些命令之一。（不必进行提升。）

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0e90a1e8eed376fc267c044e54419e0de01934fd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 52c569d0f24050651b83e8ccdfa702b8e86617c3
+ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202581"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "64731474"
 ---
 # <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender数据安全和隐私
 
@@ -35,12 +35,12 @@ ms.locfileid: "60202581"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender在Microsoft Azure、英国和美国的中心数据中心运行。 服务收集的客户数据存储在 (a) 预配期间标识的租户地理位置中，或者 (b) 如果 Microsoft 365 Defender 使用另一个 Microsoft 联机服务处理此类数据，即该其他联机服务的数据存储规则定义的地理位置。
+Microsoft 365 Defender在欧盟、英国和美国的Microsoft Azure数据中心运作。 服务收集的客户数据将静态存储在 () 预配过程中标识的租户的地理位置中;如果Microsoft 365 Defender使用其他 Microsoft 联机服务处理此类数据，则 (b) ，即由该其他联机服务的数据存储规则定义的地理位置。
 
-假名形式的客户数据也可能存储在美国的中央存储和处理系统中。
+假名化表单中的客户数据也可能存储在美国中的中央存储和处理系统中。
 
 
-有关特定产品的数据存储和隐私信息详细信息，请参阅：
-- [Microsoft Defender for Endpoint 数据存储和隐私](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Microsoft Cloud App Security 数据安全和隐私](/cloud-app-security/cas-compliance-trust)
-- [Microsoft 365隐私、安全性和透明度](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+有关特定产品的数据存储和隐私信息的详细信息，请参阅：
+- [Microsoft Defender for Endpoint数据存储和隐私](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Defender for Cloud Apps数据安全和隐私](/cloud-app-security/cas-compliance-trust)
+- [Microsoft 365隐私、安全和透明度](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

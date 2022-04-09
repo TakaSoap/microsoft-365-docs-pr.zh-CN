@@ -23,12 +23,12 @@ ms.custom:
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 17a3a63dfb3faedb5ff213b24dd14abd57f55bb3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08d28a5586c92d0e439170807f750150d9fbe17c
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316921"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704770"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -97,14 +97,16 @@ ms.locfileid: "63316921"
 
 你将从管理中心域设置向导中获取有关 MX 记录的信息。
 
-在托管提供商的网站上，添加一条新的 MX 记录。
-请确保将字段设置为以下值：
+在托管提供商的网站上，添加一条新的 MX 记录。 请确保将字段设置为以下值：
 
 - 记录类型：`MX`
 - 优先级：设置为可用的最高值，通常为 `0`。
 - 主机名：`@`
 - 指向地址：从管理中心复制值并将其粘贴到此处。
-- TTL：`3600`（或提供商的默认值）
+- TTL：`3600`
+
+> [!NOTE]
+> Exchange Online 仅支持小于 6 小时（21，600 秒）的 TTL 值。
 
 保存记录，然后删除任何其他 MX 记录。
 

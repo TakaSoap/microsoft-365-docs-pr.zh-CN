@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c8df50c6970ed3404283d1911f884057e7db5747
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666869"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731176"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -40,9 +40,6 @@ ms.locfileid: "64666869"
 
 **适用于：**
 - Microsoft 365 Defender
-
-> 想要体验 Microsoft 365 Defender？你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
->
 
 Microsoft 365 Defender 是一款统一的漏洞前和漏洞后企业防御套件，结合检测、预防、调查和应急为一体，可针对终结点、标识、电子邮件和应用程序提供集成的保护，抵御复杂的攻击。
 

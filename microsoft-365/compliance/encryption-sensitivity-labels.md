@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac50568f9ce995f658e6b06c3a2b13b666211810
-ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
+ms.openlocfilehash: 0ec60e573d5c05c4a30e74f235ffae5983de03dc
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63512344"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705398"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -194,7 +194,7 @@ ms.locfileid: "63512344"
 
 - Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
     
-    在此选项支持的指定组中，在用户可以打开加密内容之前，Azure 信息保护服务将对每个 [用户单独进行身份验证](/azure/information-protection/prepare#azure-information-protection-requirements-for-user-accounts)。
+    尽管可以指定包含邮件联系人的组，以作为向组织外部的多个人员授予访问权限的便捷方法，但此配置当前存在已知问题。 有关详细信息，请参阅 [组中的邮件联系人对加密内容具有间歇性访问权限](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content)。
 
 - 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 

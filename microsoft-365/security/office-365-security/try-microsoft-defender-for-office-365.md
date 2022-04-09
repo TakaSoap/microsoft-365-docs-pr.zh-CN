@@ -1,6 +1,6 @@
 ---
-title: 尝试Microsoft Defender for Office 365
-description: ''
+title: 尝试评估Defender for Office 365
+description: 了解如何在不影响现有邮件流的情况下评估和尝试Microsoft Defender for Office 365的功能。
 keywords: ''
 f1.keywords:
 - NOCSH
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bfe484f8e644784c39fc039a10a7a7cf946cccd4
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ROBOTS: ''
+ms.openlocfilehash: 1db0a3ac8dc67c2ad439972341d28460d0f0a6bb
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651467"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731626"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>尝试Microsoft Defender for Office 365
 
