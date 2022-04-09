@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: Ent_O365
 description: 计划从 Office 2013 客户端和服务器升级，因为支持将于 2023 年 4 月 11 日结束。
-ms.openlocfilehash: 52bc9664831448f1583b8562bf8e8557f7f77739
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 3acce92a419382420b21dee64ce77c196eeb8a42
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731752"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737406"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2013-clients-and-servers"></a>可帮助你从 Office 2013 客户端和服务器升级的资源
 
@@ -32,7 +32,7 @@ ms.locfileid: "64731752"
 
 |产品|规划资源|
 |---|---|
-|Office 2013 (桌面应用) <br/>Project 2013<br/>Visio 2013|[计划从旧版Office升级到Microsoft 365 应用版](/deployoffice/endofsupport/plan-upgrade-older-versions-office)|
+|Office 2013 (桌面应用) <br/>Project 2013<br/>Visio 2013|[计划从旧版Office升级到Microsoft 365 应用版](/deployoffice/endofsupport/plan-upgrade-older-versions-office.md)|
 |Exchange Server 2013|[Exchange 2013 年终止支持路线图](exchange-2013-end-of-support.md)|
 |SharePoint Server 2013 <br/> SharePoint Foundation 2013|[从 2013 SharePoint升级](upgrade-from-sharepoint-2013.md)|
 |Project Server 2013|[Project服务器 2013 支持结束路线图](project-server-2013-end-of-support.md)|

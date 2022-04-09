@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: 在Microsoft Bookings中更改语言和时区设置。 如果在错误的时间创建了预订，则可能会为错误的时区设置Bookings。
-ms.openlocfilehash: 1f319ae91b635bf7c45542d2872c92763d1426f7
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: cb6735640f85456568f0d0492a265046ab127e9c
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715354"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746956"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>在Microsoft Bookings中设置语言和时区
 
@@ -23,7 +23,7 @@ ms.locfileid: "64715354"
 
 如果使用的是Microsoft Bookings并在错误的时间创建预订，则可能需要更改时区设置。 同样，如果某些预订的语言错误，则可能需要更改语言设置。
 
-Bookings有两个单独的语言和时区设置。 第一个设置控制预订日历的语言和时区，并使用登录用户的个人日历的Outlook 网页版设置进行设置。 第二个设置会影响客户使用的自助预订页面，并且使用仅控制该页面的语言和时区的"区域设置"页面进行设置。
+Bookings有两个单独的语言和时区设置。 第一个设置控制预订日历的语言和时区，并使用登录用户的个人日历的Outlook 网页版设置进行设置。 第二个设置会影响客户使用的自助预订页面，并且使用仅控制该页面的语言和时区的“区域设置”页面进行设置。
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>设置预订日历的语言和时区
 
@@ -33,11 +33,11 @@ Bookings有两个单独的语言和时区设置。 第一个设置控制预订�
 
 1. 登录到Microsoft 365，并在登陆页上选择Outlook磁贴 (如以下屏幕截图) 或Microsoft 365应用Launcher中所示。
 
-   ![Microsoft 365登陆页上Outlook磁贴的图像。](../media/bookings-outlook-tile.png)
+   :::image type="content" source="../media/bookings-outlook-tile.png" alt-text="Microsoft 365登陆页上的Outlook磁贴。":::
 
-1. 打开Outlook后，选择屏幕右上角的 **齿轮图标** 以打开个人和帐户设置，然后在 **设置** 面板搜索框中搜索"时区"。 该面板将更新以显示此帐户的当前个人语言和时区设置。 如上所述，此设置还控制预订日历的语言和时区。
+1. 打开Outlook后，选择屏幕右上角的 **齿轮图标** 以打开个人和帐户设置，然后在 **设置** 面板搜索框中搜索“时区”。 该面板将更新以显示此帐户的当前个人语言和时区设置。 如上所述，此设置还控制预订日历的语言和时区。
 
-1. 通过在"语言"或"当前时区"框中选择下拉箭头并选择所需的设置来更改语言 **或时区** 。
+1. 通过在“语言”或“当前时区”框中选择下拉箭头并选择所需的设置来更改语言 **或时区** 。
 
 1. 单击 **“保存”**。 设置面板关闭，Outlook 网页版重新启动，并应用新的语言和时区设置。
 
@@ -45,10 +45,10 @@ Bookings有两个单独的语言和时区设置。 第一个设置控制预订�
 
 1. 在Microsoft 365中，选择应用启动器，然后选择 **Bookings**。
 
-1. 在导航窗格中，选择 **"预订"页** ，然后选择 **"更改语言"和"时区设置**"。
+1. 在导航窗格中，选择 **“预订”页** ，然后选择 **“更改语言”和“时区设置**”。
 
    ![屏幕截图：更改语言和时区设置链接。](../media/bookings-region-language-timezone-settings.png)
 
-1. 选择语言和当前时区，然后选择"确定"。
+1. 选择语言和当前时区，然后选择 **“确定**”。
 
-   ![屏幕截图：语言和时区设置。](../media/bookings-region-timezone-settings.png)
+   :::image type="content" source="../media/bookings-region-timezone-settings-1.png" alt-text="语言和时区设置。":::

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: d44d70c50db5c086e24af575677d5d51e1b33357
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: dfdffc95c39d471e071db8f83e88b9ba67e143e8
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62049247"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731540"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>步骤 5. 在 Microsoft Intune 中部署设备配置文件
 
@@ -48,7 +48,7 @@ Microsoft Intune 包含可在组织中的不同设备上启用或禁用的设置
 
 稍后，在设置 Microsoft Defender for Endpoint 并连接 Intune 时，部署 Defender for Endpoint 基线。 本系列的下一篇文章对此主题进行了介绍：[第 6 步 - 监视设备风险和对安全基线的符合性](manage-devices-with-intune-monitor-risk.md)。
 
-请务必了解这些安全基线并不符合 CIS 或 NIST，但与它们的建议非常相似。 有关详细信息，请参阅 [Intune 安全基线是否符合 CIS 或 NIST](/mem/intune/protect/security-baselines)？
+请务必了解这些安全基线并不符合 CIS 或 NIST，但与它们的建议非常相似。 有关详细信息，请参阅 [Intune 安全基线是否符合 CIS 或 NIST？](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>自定义组织的配置文件
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。文件在合规性解决方案中可见 '
-ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: f32e84434258ff4b4c5ea6af24f69c607952b56a
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520774"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714540"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -53,6 +53,16 @@ Microsoft 终结点 DLP 使你能够审核和管理以下类型的活动，这�
 |复制到蓝牙设备|检测用户尝试将项目复制到未启用的蓝牙应用（如在终结点 DLP 设置中不允许的蓝牙 aps 列表中所定义）。|支持|不支持| 可审核且可限制|
 |创建项|当用户创建项目时，检测该项目|支持 | |可审核|
 |重命名项|当用户重命名一个项目时，检测该项目|支持 | |可审核|
+
+## <a name="best-practice-for-endpoint-dlp-policies"></a>终结点 DLP 策略的最佳做法
+
+假设你想要阻止包含信用卡号的所有项目离开财务部门用户的终结点。 我们建议：
+
+- 创建策略并将其范围限定到终结点和该用户组。
+- 在策略中创建一个规则，用于检测要保护的信息类型。 在这种情况下，**内容包含** 设置为*敏感信息类型**，然后选择 **信用卡**。
+- 将每个活动的操作设置为 **阻止**。
+
+有关设计 DLP 策略的更多指导，请参阅[制定数据丢失防护策略](dlp-policy-design.md)。
 
 ## <a name="monitored-files"></a>受监视的文件
 

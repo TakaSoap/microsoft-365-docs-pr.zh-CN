@@ -18,39 +18,39 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 有很多敏感信息类型可供您用于 DLP 策略。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
-ms.openlocfilehash: a3d2592af6b7692b5a5e634947deb811412b5650
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: 有许多敏感信息类型可供你在 DLP 策略中使用。 本文列出所有这些敏感信息类型，并显示 DLP 策略在检测每种类型时查找的内容。
+ms.openlocfilehash: 298b756a1cdfd63406992c18bf8281375f7f9370
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62903815"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746505"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
-本文列出了所有敏感信息类型实体定义。 每个定义都显示 DLP 策略查找以检测每种类型。 若要了解有关敏感信息类型的信息，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md)
+本文列出了所有敏感信息类型实体定义。 每个定义显示 DLP 策略用于检测每种类型的内容。 若要详细了解敏感信息类型，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md)
 
 > [!NOTE]
-> 置信度 (高/中/低) 精度 (1 到 100) 
-> - 低可信度：65 或以下
-> - 中等可信度：75
-> - 高可信度：85
+> 置信度级别 (高/中/低) 的映射，准确度数字 (数字值为 1 到 100) 
+> - 低置信度：65 或更低
+> - 中等置信度：75
+> - 高置信度：85
 
 
-## <a name="aba-routing-number"></a>ABA 路由号码
+## <a name="aba-routing-number"></a>ABA 路由编号
 
 ### <a name="format"></a>格式
 
-9 个数字，可能采用格式化或无格式模式
+可能采用格式化或未格式化模式的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-- 00-12、21-32、61-72 或 80 之间的两个数字
-- 两个数字
+- 范围 00-12、21-32、61-72 或 80 中的两位数
+- 两位数
 - 可选连字符
-- 四个数字
+- 四位数字
 - 可选连字符
-- 一个数字
+- a digit
 
 
 ### <a name="checksum"></a>校验和
@@ -59,11 +59,11 @@ ms.locfileid: "62903815"
 
 ### <a name="definition"></a>定义
 
-如果策略在 300 个字符的邻近度内检测到这种类型的敏感信息，则策略具有中等可信度：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则策略具有中等可信度：
 - 函数 Func_aba_routing 找到与该模式匹配的内容。
 - 找到 Keyword_ABA_Routing 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 Func_aba_routing 找到与该模式匹配的内容。
 
 ```xml
@@ -84,25 +84,25 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
 - aba number
-- aba#
-- aba
+- 阿坝#
+- 阿坝
 - abarouting#
 - abaroutingnumber
 - americanbankassociationrouting#
 - americanbankassociationroutingnumber
 - bankrouting#
 - bankroutingnumber
-- routing#
-- routing no
-- 路由号码
+- 路由#
+- 路由否
+- 路由编号
 - routing transit number
-- routing#
+- 路由#
 - RTN
 
 
 ## <a name="all-full-names"></a>所有全名
 
-所有全名都是捆绑的命名实体。 它检测来自所有受支持国家/地区的人员的完整姓名，包括澳大利亚、中国、日本、美国和欧盟国家/地区。 使用此 SIT 检测所有可能的全名匹配项。
+所有全名都是捆绑的命名实体。 它检测来自所有受支持国家/地区的人员的全名，其中包括澳大利亚、中国、日本、美国和欧盟国家。 使用此 SIT 检测所有可能的全名匹配项。
 
 ### <a name="format"></a>格式
 
@@ -114,19 +114,19 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="checksum"></a>校验和
 
-不正确。
+否。
 
 ### <a name="description"></a>说明
 
-此已命名实体 SIT 与用户以高可信度标识为名称的个人名称匹配。 例如，如果找到一个由给定名称组成的字符串，后跟一个系列名称，则使用高可信度进行匹配。 它使用三个主要资源：
+此命名实体 SIT 与人类将识别为具有高置信度的名称的个人名称匹配。 例如，如果找到一个由给定名称组成的字符串，后跟一个姓氏，则使用高置信度进行匹配。 它使用三个主要资源：
 
 -   给定名称的字典。
--   系列名称字典。
--   名称构成方式的模式。
+-   家喻户口的字典。
+-   名称形成方式的模式。
 
-这三个资源对于每个国家/地区是不同的。  字符串 *Olivia Wilson* 将触发匹配。 通常给定/系列名称的置信度比罕见名称高。 但是，模式还允许部分匹配。 如果找到字典中的给定名称，后跟不在字典中的系列名称，则触发部分匹配。 例如， *Tomas Richard* 将触发部分匹配。 部分匹配项的置信度较低。
+对于每个国家/地区，这三种资源是不同的。  *奥利维亚 · 威尔逊* 会触发匹配的字符串。 常用的给定/姓氏比更稀有的名称具有更高的置信度。 但是，该模式还允许部分匹配。 如果找到字典中的给定名称，后跟字典中不包含的姓氏，则会触发部分匹配。 例如， *托马斯·理查德* 将触发部分匹配。 部分匹配的置信度较低。
 
-此外，人们看到的作为名称指示的模式也以相应的可信度进行匹配。 与 *O. Wilson、**O.P. Wilson*、*O. P. Wilson*、*Wilson、O.P.* 或 *T. Richard， Jr.* 将是匹配项。
+此外，人类将被视为名称指示的模式也与适当的置信度相匹配。 像 *O. 威尔逊*， *O. p. 威尔逊*， *威尔逊博士*， *威尔逊， O. p.* 或 *小理查德* 将是比赛。
 
 ### <a name="supported-languages"></a>支持的语言
 
@@ -162,7 +162,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="all-medical-terms-and-conditions"></a>所有医疗条款和条件
 
-所有医疗条款和条件都是一个捆绑的命名实体，可检测医疗术语和医疗状况。 它仅检测英语术语。 使用此 SIT 检测所有可能的医疗条款和条件匹配项。
+所有医疗条款和条件都是一个捆绑的命名实体，用于检测医疗条款和医疗条件。 它仅检测英语术语。 使用此 SIT 检测医疗条款和条件的所有可能匹配项。
 
 ### <a name="format"></a>格式
 
@@ -178,31 +178,31 @@ Dictionary
 
 ### <a name="description"></a>说明
 
-此捆绑命名实体与涉及特选词典中的医疗状况的文本匹配。 每个受支持的语言有一个已选择词典。 这些词典来自许多国际医疗资源。 这些字典包含尽可能多的医疗条件，而不会面临大量误报的风险。 每个条目都包含通常写入单个条件以确保覆盖范围的不同形式，例如：
+此捆绑的命名实体与提及特选词典中存在的医疗条件的文本匹配。 每个受支持的语言都有一个特选字典。 这些词典来自许多国际医疗资源。 这些词典包括尽可能多的医疗条件，而不会冒大量误报的风险。 每个条目都包含通常写入单个条件以确保覆盖范围的不同表单，例如：
 
-- *TB*
-- *功能区*
-- *phthisis 为alis*
+- *结核病*
+- *结核*
+- *phthisis pulmonalis*
 
 ### <a name="contains"></a>Contains
 
-此捆绑命名实体 SIT 包含这些单独的 SIT。
+此捆绑的命名实体 SIT 包含这些单独的 SIT。
 
-- 检测词 
-- 企业类型
-- 动物
-- 通用名
-- 美国社会保险下残障评估中列出的残障人士
+- 血液测试术语 
+- 药物类型
+- 疾病
+- 泛型药物名称
+- 美国社会保障下残疾评估中列出的障碍
 - 实验室测试术语
 - 与医疗状况相关的生活方式
-- 医疗特长
-- 过程：一些程序
-- 品牌品牌名称
+- 医疗专科
+- 外科 手术
+- 品牌药物名称
 
 
 ## <a name="all-physical-addresses"></a>所有物理地址
 
-所有物理地址都是捆绑实体 SIT，可检测与来自所有受支持的国家/地区的物理地址相关的模式。
+所有物理地址都是捆绑实体 SIT，用于检测与所有受支持国家/地区的物理地址相关的模式。
 
 ### <a name="format"></a>格式
 
@@ -218,16 +218,16 @@ Dictionary
 
 ### <a name="description"></a>说明
 
-街道地址的匹配旨在匹配用户标识为街道地址的字符串。 为此，它使用几种主要资源：
+街道地址的匹配旨在匹配人类将识别为街道地址的字符串。 为此，它使用多个主要资源：
 
--   一个包含城市、国家/地区和地区的字典。
--   街道后缀字典，如"路"、街道或"街道"。
+-   定居点、县和地区的字典。
+-   街道后缀的字典，如道路、街道或大道。
 -   邮政编码的模式。
 -   地址格式的模式。
 
-资源对于每个国家/地区是不同的。 主要资源是给定国家/地区中使用的地址格式的模式。 选择不同的格式以确保匹配尽可能多的地址。 这些格式允许灵活性，例如，地址可以省略邮政编码，也可以省略街道名称，或者具有没有街道后缀的街道。 在所有情况下，此类匹配都用于提高匹配可信度。
+每个国家的资源都不同。 主要资源是在给定国家/地区使用的地址格式模式。 选择不同的格式以确保匹配尽可能多的地址。 这些格式允许灵活性，例如，地址可能会省略邮政编码或省略城镇名称或没有街道后缀的街道。 在所有情况下，此类匹配都用于提高比赛的信心。
 
-模式旨在匹配单个地址，而不是通用位置。 因此， *Redmond、WA 98052* 或 *Main Street、Albuquerque* 等字符串将不匹配。
+这些模式旨在匹配单个单个地址，而不是泛型位置。 因此， *像雷德蒙德、WA 98052* 或 *主街、阿尔伯克基* 这样的字符串将不匹配。
 
 ### <a name="contains"></a>Contains
 
@@ -304,20 +304,20 @@ Dictionary
 - 土耳其语
 
 
-## <a name="argentina-national-identity-dni-number"></a>阿根廷国家/ (DNI) 号码
+## <a name="argentina-national-identity-dni-number"></a>阿根廷国家标识 (DNI) 编号
 
 ### <a name="format"></a>格式
 
-带或不带句号的八个数字
+具有或不带句点的 8 位数字
 
 ### <a name="pattern"></a>模式
 
 八个数字：
-- 两个数字
-- 可选时间段
-- 三个数字
-- 可选时间段
-- 三个数字
+- 两位数
+- 可选周期
+- 三位数
+- 可选周期
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -325,7 +325,7 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_argentina_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_argentina_national_id 中的一个关键字。
 
@@ -350,7 +350,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - documento nacional de identidad
 - documento número
 - documento numero
-- registro nacional de las personas
+- registro nacional de las 角色
 - rnp
 
 
@@ -358,15 +358,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-11 个数字（带短划线）
+带短划线的 11 位数字
 
 ### <a name="pattern"></a>模式
 
-带破折号的 11 个数字：
-- 20、23、24、27、30、33 或 34 中的两个数字
-- 连字符 (-) 
-- 八个数字
-- 连字符 (-) 
+具有短划线的 11 位数字：
+- 20、23、24、27、30、33 或 34 中的两位数
+- 连字符 () 
+- 八位数字
+- 连字符 () 
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -375,12 +375,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_Argentina_Unique_Tax_Key` 查找与模式匹配的内容。
-- 找到 的 `Keyword_Argentina_Unique_Tax_Key` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_Argentina_Unique_Tax_Key` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_Argentina_Unique_Tax_Key` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 `Func_Argentina_Unique_Tax_Key` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数 `Func_Argentina_Unique_Tax_Key` 查找与模式匹配的内容。
 
 ```xml
     <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
@@ -399,39 +399,39 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
 
-- Clave Unica de Identificacion Tribut一
+- Clave Unica de Identificacion Tributaria
 - CUIT
-- 唯一的标识代码 
-- Clave Única de Identificación Tribut一
-- 唯一的树标识代码
+- 唯一的劳动识别代码 
+- Clave Única de Identificación Tributaria
+- 唯一的劳动标识码
 - CUIL
-- 唯一税务标识密钥
-- 唯一的位元标识密钥
-- 唯一的标识密钥
-- 唯一工作标识代码
-- 工作标识的唯一代码
-- 唯一工作标识密钥
+- 唯一的税务标识密钥
+- 唯一的劳动识别密钥
+- 劳工识别的唯一密钥
+- 唯一的工作标识代码
+- 唯一的工作代码标识
+- 唯一的工作标识密钥
 - 工作标识的唯一密钥
-- 唯一的税务识别代码
-- 税务识别的唯一密钥
-- 唯一人工标识代码
-- 唯一的人工标识代码
-- 唯一人工标识密钥
-- 唯一的人工标识密钥
-- tax ID
+- 唯一的税务标识代码
+- 税务标识的唯一密钥
+- 唯一的劳动标识码
+- 唯一的劳动标识代码
+- 唯一的劳动标识密钥
+- 劳动标识的唯一密钥
+- 税务 ID
 - taxID#
 - taxId
-- 一些
-- tax number
+- taxidnumber
+- 税号
 - tax no
-- tax#
-- tax#
-- 用户 ID
-- 用户编号
-- "不""不"。
-- 将#
-- 将#
-- tax identity
+- 税#
+- 税#
+- 纳税人 ID
+- 纳税人号码
+- 纳税人否
+- 纳税人#
+- 纳税人#
+- 税务标识
 - tax identification
 - Número de Identificación Fiscal
 - número de contribuyente
@@ -441,16 +441,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-具有或不带银行省/市/县分支机构号码的 6 到 10 个数字
+有或没有银行国家分行号码的 6 到 10 位数字
 
 ### <a name="pattern"></a>模式
 
-帐户号码是 6 到 10 个数字。
+帐户号为 6 到 10 位数字。
 
 澳大利亚银行州级分部编号：
-- 三个数字
+- 三位数
 - 连字符
-- 三个数字
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -458,12 +458,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式Regex_australia_bank_account_number查找与模式匹配的内容。
 - 找到 Keyword_australia_bank_account_number 中的一个关键字。
 - 正则表达式 Regex_australia_bank_account_number_bsb 找到与该模式匹配的内容。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_australia_bank_account_number查找与模式匹配的内容。
 
 - 找到 Keyword_australia_bank_account_number 中的一个关键字。
@@ -499,34 +499,34 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - bank details
 - banking information
 - full names
-- 系统
+- 国际 原子能 机构
 
 
-## <a name="australia-business-number"></a>澳大利亚商务号码
+## <a name="australia-business-number"></a>澳大利亚商业号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-带可选分隔符的 11 个数字
+具有可选分隔符的 11 位数字
 
 ### <a name="pattern"></a>模式
 
-带可选分隔符的 11 个数字：
+具有可选分隔符的 11 位数字：
 
-- 两个数字
+- 两位数
 - 可选连字符或空格
-- 三个数字
+- 三位数
 - 可选连字符或空格
-- 三个数字
+- 三位数
 - 可选连字符或空格
-- 三个数字
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -534,11 +534,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_australian_business_number查找与模式匹配的内容。
-- 找到来自Keywords_australian_business_number关键字。
+- 找到Keywords_australian_business_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_australian_business_number查找与模式匹配的内容。
 
 ```xml
@@ -557,38 +557,38 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
-- australia business no
-- 商务号码
-- abn#
+- 澳大利亚业务否
+- 业务编号
+- 荷兰#
 - businessid#
 - 业务 ID
-- abn
+- 荷兰
 - businessno#
 
 
 ## <a name="australia-company-number"></a>澳大利亚公司编号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九个数字（带分隔符）
+带分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-带分隔符的九个数字：
+带分隔符的 9 位数字：
 
-- 三个数字
-- 一个空格
-- 三个数字
-- 一个空格
-- 三个数字
+- 三位数
+- 空格
+- 三位数
+- 空格
+- 三位数
 
 
 ### <a name="checksum"></a>校验和
@@ -597,11 +597,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_Australian_Company_Number查找与模式匹配的内容。
-- 找到来自Keyword_Australian_Company_Number关键字。
+- 找到Keyword_Australian_Company_Number的关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数Func_Australian_Company_Number查找与模式匹配的内容。
 
 ```xml
@@ -620,16 +620,16 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
-- can
-- australia company no
-- australia company no#
-- 澳大利亚公司编号
+- 可以
 - 澳大利亚公司否
 - 澳大利亚公司否#
 - 澳大利亚公司编号
+- 澳大利亚公司 no
+- 澳大利亚公司 no#
+- 澳大利亚公司编号
 
 
-## <a name="australia-drivers-license-number"></a>澳大利亚驾驶证号码
+## <a name="australia-drivers-license-number"></a>澳大利亚驾驶执照号码
 
 ### <a name="format"></a>格式
 
@@ -640,17 +640,17 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 九个字母和数字：
 
 - 两个数字或字母 (不区分大小写) 
-- 两个数字
-- 五个数字或字母 (不区分大小写) 
+- 两位数
+- 五位数或字母 (不区分大小写) 
 
 或
 
 - 一到两个可选字母 (不区分大小写) 
-- 四到九个数字
+- 四到九位数字
 
 或
 
-- 九个数字或字母 (不区分大小写) 
+- 九位数或字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -658,7 +658,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_australia_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_australia_drivers_license_number 中的一个关键字。
 - 未找到 Keyword_australia_drivers_license_number_exclusions 中的关键字。
@@ -698,7 +698,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
-- Driver'Licences
+- 驾驶执照
 - Driver' Lic
 - Driver' Lics
 - Driver' Licence
@@ -730,7 +730,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Driver'Lic#
 - Driver'Lics#
 - Driver'Licence#
-- Driver'Licences#
+- 驾驶执照#
 - Driver' Lic#
 - Driver' Lics#
 - Driver' Licence#
@@ -746,7 +746,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
-- aaa
+- Aaa
 - DriverLicense
 - DriverLicenses
 - Driver License
@@ -756,7 +756,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Drivers License
 - Drivers Licenses
 - Driver'License
-- Driver'Licenses
+- 驱动程序许可证
 - Driver' License
 - Driver' Licenses
 - Driver'sLicense
@@ -772,7 +772,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Drivers License#
 - Drivers Licenses#
 - Driver'License#
-- Driver'Licenses#
+- 驱动程序许可证#
 - Driver' License#
 - Driver' Licenses#
 - Driver'sLicense#
@@ -793,7 +793,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 第一个数字范围为 2-6
 - 第九个数字是校验位
 - 第十个数字是问题数字
-- 第 11 个数字 (可选) 数字是单个号码
+- 第 11 位 (可选) 是单个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -801,7 +801,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_australian_medical_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_Australia_Medical_Account_Number 中的一个关键字。
 - 校验和通过。
@@ -829,7 +829,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - credit card loan
 - department of human services
 - local service
-- 一
+- 医疗
 
 
 ## <a name="australia-passport-number"></a>澳大利亚护照号码
@@ -840,8 +840,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-- 一个字母 (N、E、D、F、A、C、U、X) 后跟七个数字或
-- 两个字母 (PA、PB、PC、PD、PE、PF、PU、PW、PX、PZ) 后跟七个数字。
+- 一个字母 (N、E、D、F、A、C、U、X) 后跟七位数字或
+- 两个字母 (PA、PB、PC、PD、PE、PF、PU、PW、PX、PZ) 后跟七位数字。
 
 ### <a name="checksum"></a>校验和
 
@@ -849,12 +849,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_australia_passport_number` 与模式匹配的内容。
-- 找到 的 `Keyword_australia_passport_number` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_australia_passport_number` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_australia_passport_number` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 正则表达式查找 `Regex_australia_passport_number` 与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 正则表达式 `Regex_australia_passport_number` 查找与模式匹配的内容。
 
 ```xml
     <!-- Australia Passport Number -->
@@ -873,16 +873,16 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 - passport details
 - immigration and citizenship
 - commonwealth of australia
@@ -894,25 +894,25 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="australia-physical-addresses"></a>澳大利亚物理地址 
 
-未包的命名实体，检测与来自澳大利亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+未拆分的命名实体，检测与来自澳大利亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 中等
 
 
-## <a name="australia-tax-file-number"></a>澳大利亚税务文件编号
+## <a name="australia-tax-file-number"></a>澳大利亚税务文件号
 
 ### <a name="format"></a>格式
 
-八到九个数字
+8 到 9 位数字
 
 ### <a name="pattern"></a>模式
 
-通常用空格显示八到九个数字，如下所示：
-- 三个数字
-- 可选空格
-- 三个数字
-- 可选空格
+8 到 9 位数字通常显示空格，如下所示：
+- 三位数
+- 可选空间
+- 三位数
+- 可选空间
 - 两到三个数字，其中最后一个数字是一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -921,7 +921,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_australian_tax_file_number 找到与该模式匹配的内容。
 - 未找到 Keyword_Australia_Tax_File_Number 或 Keyword_number_exclusions 中的关键字。
 - 校验和通过。
@@ -951,15 +951,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - tfn
 
 
-## <a name="austria-drivers-license-number"></a>奥地利驾驶证号码
+## <a name="austria-drivers-license-number"></a>奥地利驾照号
 
 ### <a name="format"></a>格式
 
-八个数字（不含空格和分隔符）
+没有空格和分隔符的八位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -967,10 +967,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 正则表达式查找  `Regex_austria_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` 中的关键字。
+- 正则表达式  `Regex_austria_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_austria_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Austria Driver's License Number -->
@@ -996,49 +996,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -1046,46 +1046,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -1093,17 +1093,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -1114,30 +1114,30 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - fuhrerschein
 - führerschein
 - Führerscheine
-- Fhrerscheinnummer
-- Fhrerscheinnummern
+- Führerscheinnummer
+- Führerscheinnummern
 
 
 ## <a name="austria-identity-card"></a>奥地利身份证
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-字母、数字和特殊字符的 24 个字符组合
+字母、数字和特殊字符的 24 字符组合
 
 ### <a name="pattern"></a>模式
 
 24 个字符：
 
--  22 个字母 (不区分大小写) 数字、反斜杠、正斜杠或加号
+-  22 个字母 (不区分大小写的) 、数字、反斜杠、正斜杠或加号
 
-- 两个字母 (不区分大小写) 、数字、反斜杠、正斜杠、加号或等号
+- 两个字母 (不区分大小写的) 、数字、反斜杠、正斜杠、加号或等号
 
 ### <a name="checksum"></a>校验和
 
@@ -1145,10 +1145,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 正则表达式查找  `Regex_austria_eu_national_id_card` 与模式匹配的内容。
-- 找到 的  `Keywords_austria_eu_national_id_card` 关键字。
+- 正则表达式  `Regex_austria_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_austria_eu_national_id_card` 。
 
 ```xml
       <!-- Austria Identity Card -->
@@ -1166,22 +1166,22 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - 标识号
 - national id
-- personalaus一sich österreich
+- personalausweis republik österreich
 
 
 ## <a name="austria-passport-number"></a>奥地利护照号码
 
 ### <a name="format"></a>格式
 
-一个字母后跟一个可选空格和七个数字
+一个字母后跟一个可选空间和七位数字
 
 ### <a name="pattern"></a>模式
 
 一个字母、七个数字和一个空格的组合：
 
 - 一个字母 (不区分大小写) 
-- 一个 (可选) 
-- 七个数字
+- 一个空格 (可选) 
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -1189,14 +1189,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_austria_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_austria_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_austria_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_austria_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_austria_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Austria Passport Number -->
@@ -1226,16 +1226,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
 
@@ -1245,36 +1245,36 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reisep的sse
+- reisepässe
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="austria-physical-addresses"></a>奥地利物理地址
 
-此未解包的命名实体检测与来自奥地利的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自奥地利的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="austria-social-security-number"></a>奥地利社会保险号
+## <a name="austria-social-security-number"></a>奥地利社会保障号码
 
 ### <a name="format"></a>格式
 
-10 个数字，采用指定格式
+指定格式的 10 位数字
 
 ### <a name="pattern"></a>模式
 
 10 个数字：
 
-- 对应于序列号的三个数字
+- 对应于序列号的三位数字
 - 一个检查数字
-- 六个数字，对应于 DDMMYY (出生日期) 
+- 与 DDMMYY (的出生日期相对应的六位数字) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1282,12 +1282,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_austria_eu_ssn_or_equivalent` 查找与模式匹配的内容。
-- 找到 的  `Keywords_austria_eu_ssn_or_equivalent` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_austria_eu_ssn_or_equivalent` 查找与模式匹配的内容。
+- 找到一  `Keywords_austria_eu_ssn_or_equivalent` 个关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_austria_eu_ssn_or_equivalent` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_austria_eu_ssn_or_equivalent` 查找与模式匹配的内容。
 
 ```xml
       <!-- Austria Social Security Number -->
@@ -1310,26 +1310,26 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- 将 ssn
+- 奥地利 ssn
 - ehic number
 - ehic no
-- insurance code
+- 保险代码
 - insurancecode#
-- insurance number
-- insurance no
-- kr一nkassennummer
-- 一名或多名
+- 保险号码
+- 保险否
+- krankenkassennummer
+- krankenversicherung
 - socialsecurityno
 - socialsecurityno#
-- social security no
+- 社会保障否
 - social security number
 - social security code
 - sozialversicherungsnummer
 - sozialversicherungsnummer#
 - soziale sicherheit kein
 - sozialesicherheitkein#
-- ssn#
-- ssn
+- Ssn#
+- Ssn
 - versicherungscode
 - versicherungsnummer
 - zdravstveno zavarovanje
@@ -1339,17 +1339,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字，带可选连字符和正斜杠
+具有可选连字符和正斜杠的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字，带可选连字符和正斜杠：
+具有可选连字符和正斜杠的 9 位数字：
 
-- 两个数字
+- 两位数
 - 连字符 (可选) 
-- 三个数字
-- 可选参数， (正斜) 
-- 四个数字
+- 三位数
+- 正斜杠 (可选) 
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -1357,12 +1357,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_austria_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_austria_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_austria_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_austria_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数  `Func_austria_eu_tax_file_number` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数  `Func_austria_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1385,50 +1385,50 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - st.nr。
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
-- tax number
+- 锡#
+- 税号
 
 
 ## <a name="austria-value-added-tax"></a>奥地利增值税
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-11 字符字母数字模式
+11 个字符的字母数字模式
 
 ### <a name="pattern"></a>模式
 
-11 字符字母数字模式：
+11 个字符的字母数字模式：
 
 - A 或 a
 - T 或 t
-- 可选空格
+- 可选空间
 - U 或 u
-- 可选空格
-- 两个或三个数字
-- 可选空格
-- 四个数字
-- 可选空格
+- 可选空间
+- 两位或三位数字
+- 可选空间
+- 四位数字
+- 可选空间
 - 一个或两个数字
 
 ### <a name="checksum"></a>校验和
@@ -1437,11 +1437,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_Austria_Value_Added_Tax查找与模式匹配的内容。
-- 找到来自Keyword_Austria_Value_Added_Tax关键字。
+- 找到Keyword_Austria_Value_Added_Tax的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_Austria_Value_Added_Tax查找与模式匹配的内容。
 
 ```xml
@@ -1461,12 +1461,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
 - vat number
-- vat#
-- vat number
+- 增值税#
+- 奥地利增值税号
 - vat no.
 - vatno#
-- 增值税编号
-- vat
+- 增值税号
+- 奥地利桶
 - mwst
 - umsatzsteuernummer
 - mwstnummer
@@ -1481,14 +1481,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-字符串"DocumentDb"后跟以下模式中列出的字符和字符串。
+字符串“DocumentDb”后跟下面模式中所述的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"DocumentDb"
-- 3-200 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 大于符号 (>) 、等号 (=) 、引号 (") 或撇号 (') 
-- 86 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 字符串“DocumentDb”
+- 3-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 大于符号 (>) 、等号 (=) 、引号 (“) 或撇号 () 
+- 86 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任何组合
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1497,7 +1497,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureDocumentDBAuthKey查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -1517,40 +1517,40 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (从技术上讲，这种敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。) 
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 数据库连接字符串和 Azure SQL连接字符串
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 数据库连接字符串和Azure SQL连接字符串
 
 ### <a name="format"></a>格式
 
-字符串"Server"、"server"或"data source"，后跟以下模式中列出的字符和字符串，包括字符串"cloudapp.azure"。<!--no-hyperlink-->com"或"cloudapp.azure"。<!--no-hyperlink-->net"或"database.windows"。<!--no-hyperlink-->net"，字符串"Password"或"password"或"pwd"。
+字符串“Server”、“server”或“数据源”后跟下面模式中所述的字符和字符串，包括字符串“cloudapp.azure”。<!--no-hyperlink-->com“或”cloudapp.azure”。<!--no-hyperlink-->net“或”database.windows”。<!--no-hyperlink-->net“和字符串”Password“或”password“或”pwd”。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"Server"、"server"或"data source"
+- 字符串“Server”、“server”或“data source”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"cloudapp.azure"。<!--no-hyperlink-->com"、"cloudapp.azure"。<!--no-hyperlink-->net"或"database.windows"。<!--no-hyperlink-->net"
-- 1-300 位小写或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"Password"、"password"或"pwd"
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“cloudapp.azure。<!--no-hyperlink-->com“， ”cloudapp.azure.<!--no-hyperlink-->net“或”database.windows”。<!--no-hyperlink-->net”
+- 1-300 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“Password”、“password”或“pwd”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 一个或多个不是分号字符 (;) 、引号 (") 或撇 (字符) 
-- a semicolon (;) ， quotation mark (") ， or apostrophe (') 
+- 一个或多个不是分号的字符 (;) 、引号 (“) 或撇号 () 
+- 分号 (;) 、引号 (“) 或撇号 () 
 
 ### <a name="checksum"></a>校验和
 
@@ -1558,7 +1558,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -1578,39 +1578,39 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (从技术上讲，这种敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。) 
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT连接字符串
 
 ### <a name="format"></a>格式
 
-字符串"HostName"后跟模式中列出的字符和字符串，包括字符串"azure-devices"。<!--no-hyperlink-->net"和"SharedAccessKey"。
+字符串“HostName”后跟下面模式中所述的字符和字符串，包括字符串“azure-devices”。<!--no-hyperlink-->net“和”SharedAccessKey”。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"HostName"
+- 字符串“HostName”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"azure-devices"。<!--no-hyperlink-->net"
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"SharedAccessKey"
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“azure-devices。<!--no-hyperlink-->net”
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“SharedAccessKey”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 43 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 43 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1619,7 +1619,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureIoTConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -1639,30 +1639,30 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。
+此敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
 ## <a name="azure-publish-setting-password"></a>Azure 发布设置密码
 
 ### <a name="format"></a>格式
 
-字符串"userpwd="后跟字母数字字符串。
+字符串“userpwd=”后跟字母数字字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"userpwd="
-- 60 个小写字母或数字的任意组合
-- 引号 (") 
+- 字符串“userpwd=”
+- 60 个小写字母或数字的任何组合
+- 引号 (“) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1670,7 +1670,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzurePublishSettingPasswords查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -1691,34 +1691,34 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。
+此敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis 缓存连接字符串
 
 ### <a name="format"></a>格式
 
-字符串"redis.cache.windows"。<!--no-hyperlink-->net"，后跟以下模式中列出的字符和字符串，包括字符串"password"或"pwd"。
+字符串“redis.cache.windows。<!--no-hyperlink-->net“后跟下面模式中概述的字符和字符串，包括字符串”password“或”pwd”。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"redis.cache.windows"。<!--no-hyperlink-->net"
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"password"或"pwd"
+- 字符串“redis.cache.windows。<!--no-hyperlink-->net”
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“password”或“pwd”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 43 个字符（小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1727,7 +1727,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureRedisCacheConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -1747,34 +1747,34 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (从技术上讲，这种敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。) 
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
 ## <a name="azure-sas"></a>Azure SAS
 
 ### <a name="format"></a>格式
 
-字符串"sig"后跟以下模式中列出的字符和字符串。
+字符串“sig”后跟下面模式中所述的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"sig"
+- 字符串“sig”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 小写或大写字母、数字或百分号（以百分比表示）介于 43 到 53 个字符之间的任意组合 (%) 
-- 字符串"%3d"
-- 不是小写或大写字母、数字或百分号的任何字符 (%) 
+- 43-53 个字符之间的任意组合，这些字符是小写字母或大写字母、数字或百分比符号 (%) 
+- 字符串“%3d”
+- 任何不是小写或大写字母、数字或百分比符号的字符 (%) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1782,7 +1782,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureSAS查找与模式匹配的内容。
 
 ```xml
@@ -1798,22 +1798,22 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-字符串"EndPoint"后跟以下模式中列出的字符和字符串，包括字符串"servicebus.windows"。<!--no-hyperlink-->net"和"SharedAccesKey"。
+字符串“EndPoint”后跟下面模式中所述的字符和字符串，包括字符串“servicebus.windows”。<!--no-hyperlink-->net“和”SharedAccessKey”。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"EndPoint"
+- 字符串“EndPoint”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"servicebus.windows"。<!--no-hyperlink-->net"
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"SharedAccessKey"
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“servicebus.windows。<!--no-hyperlink-->net”
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“SharedAccessKey”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 43 个字符（小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1822,7 +1822,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureServiceBusConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -1842,37 +1842,37 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (从技术上讲，这种敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。) 
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
 ## <a name="azure-storage-account-key"></a>Azure 存储帐户密钥
 
 ### <a name="format"></a>格式
 
-字符串"DefaultEndpointsProtocol"后跟以下模式中列出的字符和字符串，包括字符串"AccountKey"。
+字符串“DefaultEndpointsProtocol”后跟下面模式中所述的字符和字符串，包括字符串“AccountKey”。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"DefaultEndpointsProtocol"
+- 字符串“DefaultEndpointsProtocol”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"AccountKey"
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“AccountKey”
 - 零到两个空格字符
 - 等号 (=) 
 - 零到两个空格字符
-- 小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 86 个字符（小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1881,7 +1881,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureStorageAccountKey查找与模式匹配的内容。
 - 正则表达式CEP_AzureEmulatorStorageAccountFilter找不到与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
@@ -1903,35 +1903,35 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (从技术上讲，这种敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。) 
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些) 
+ (从技术上讲，这种敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。) 
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
-## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户密钥) 
+## <a name="azure-storage-account-key-generic"></a>Azure 存储帐户密钥 (泛型) 
 
 ### <a name="format"></a>格式
 
-86 个小写或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
+86 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后面是下面模式中所述的字符。
 
 ### <a name="pattern"></a>模式
 
-- 从零到大于 symbol (>) 、撇号 (') 、等号 (=) 、引号 (") 或数字符号 (#) 
-- 小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
+- 0 到一个大于符号 (>) 、apostrophe (') 、等号 (=) 、引号 (“) ”或数字符号 (#) 
+- 86 个字符（小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1940,7 +1940,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_AzureStorageAccountKeyGeneric查找与模式匹配的内容。
 
 ```xml
@@ -1953,11 +1953,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ```
 
 
-## <a name="belgium-drivers-license-number"></a>比利时驾驶证号码
+## <a name="belgium-drivers-license-number"></a>比利时驾照号
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 10 个数字
+没有空格和分隔符的 10 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -1969,9 +1969,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_belgium_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或 `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_belgium_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从 `Keywords_eu_driver's_license_number` 中找到或 `Keywords_belgium_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1997,49 +1997,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -2047,46 +2047,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -2094,17 +2094,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -2124,19 +2124,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>比利时国家号码
+## <a name="belgium-national-number"></a>比利时国家编号
 
 ### <a name="format"></a>格式
 
-11 个数字加上可选的分隔符
+11 位数字加上可选分隔符
 
 ### <a name="pattern"></a>模式
 
 11 个数字加分隔符：
-- YY 格式的六个数字和两个可选句点。出生日期的 MM.DD
-- 点、短划线、空格中的可选分隔符
-- 三个连续的数字 (男性为奇数，即使对于男性) 
-- 点、短划线、空格中的可选分隔符
+- 格式为 YY 的六位数字和两个可选句点。MM.DD 的出生日期
+- 来自点、虚线、空格的可选分隔符
+- 对于男性来说，三个顺序数字 (奇数，即使是女性) 
+- 来自点、虚线、空格的可选分隔符
 - 两个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -2145,12 +2145,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_belgium_national_number 找到与该模式匹配的内容。
 - 找到 Keyword_belgium_national_number 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 Func_belgium_national_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -2172,27 +2172,27 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
 - belasting aantal
-- bnn#
-- bnn
+- 安娜#
+- 安娜
 - carte d'identité
-- identifiant national
+- 标识国家/
 - identifiantnational#
 - identificatie
-- identification
+- 识别
 - identifikation
 - identifikationsnummer
 - identifizierung
 - identité
-- identit一
-- identit一skaart
-- identity
-- inscription
-- national number
-- national register
+- identiteit
+- identiteitskaart
+- 身份
+- 题词
+- 国家编号
+- 国家注册
 - nationalnumber#
 - nationalnumber
-- nif#
-- nif
+- Nif#
+- Nif
 - numéro d'assuré
 - numéro de registre national
 - numéro de sécurité
@@ -2200,44 +2200,44 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - numéro d'immatriculation
 - numéro national
 - numéronational#
-- 个人 ID 号
-- personalaus一s
+- 个人 ID 编号
+- personalausweis
 - personalidnumber#
 - registratie
 - 注册
 - registrationsnumme
 - registrierung
 - social security number
-- ssn#
-- ssn
+- Ssn#
+- Ssn
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="belgium-passport-number"></a>比利时护照号码
 
 ### <a name="format"></a>格式
 
-两个字母后跟 6 个数字，没有空格或分隔符
+两个字母后跟六个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-两个字母，后跟六个数字
+两个字母，后跟六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2245,14 +2245,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
- DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_belgium_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date2` 格式为 DD MM YY 的日期或 `Keywords_eu_passport_date` 找到的 `Keywords_belgium_eu_passport_number` 关键字
+ 如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_belgium_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_belgium_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date2` 查找格式为 DD MM YY 的日期，或从 `Keywords_eu_passport_date` 中查找或 `Keywords_belgium_eu_passport_number` 找到关键字
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_belgium_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_belgium_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_belgium_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_belgium_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2284,16 +2284,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
@@ -2302,7 +2302,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Passeport carte
+- 传递端口点菜
 - Passeport livre
 - Pass-Nr
 - Passnummer
@@ -2310,44 +2310,44 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="belgium-physical-addresses"></a>比利时物理地址
 
-此未发包的命名实体检测与比利时的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自比利时的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="belgium-value-added-tax-number"></a>比利时增值税编号
+## <a name="belgium-value-added-tax-number"></a>比利时增值税号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-12 字符字母数字模式
+12 个字符的字母数字模式
 
 ### <a name="pattern"></a>模式
 
-12 字符字母数字模式：
+12 个字符的字母数字模式：
 
 - 字母 B 或 b
 - 字母 E 或 e
-- 数字 0
-- 从 1 到 9 的数字
-- 可选点或连字符或空格
-- 四个数字
-- 可选点或连字符或空格
-- 四个数字
+- a digit 0
+- 1 到 9 之间的数字
+- 可选点、连字符或空格
+- 四位数字
+- 可选点、连字符或空格
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2355,11 +2355,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_belgium_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_belgium_value_added_tax_number关键字。
+- 找到Keywords_belgium_value_added_tax_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_belgium_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -2379,35 +2379,35 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
-- n？ tva
+- nº tva
 - vat number
 - vat no
 - numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
-- btw
-- btw#
-- vat#
+- 顺便 说 一 句
+- 顺便 说 一 句#
+- 增值税#
 
 
-## <a name="blood-test-terms"></a>检测词
+## <a name="blood-test-terms"></a>血液测试术语
 
-此未解包的命名实体检测与检测相关的术语，例如 *hCG*。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
-
-### <a name="confidence-level"></a>置信度
-
-高
-
-## <a name="brand-medication-names"></a>品牌品牌名称
-
-此未解包的命名实体可检测品牌品牌的名称，如 *Tylenol*。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+此未拆卸的命名实体检测与血液测试相关的术语，如 *hCG*。 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
+## <a name="brand-medication-names"></a>品牌药物名称
 
-## <a name="brazil-cpf-number"></a>巴西 CPF 号码
+这个未拆卸的命名实体检测到泰 *诺等* 品牌药物的名称。 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
+
+### <a name="confidence-level"></a>置信度
+
+高
+
+
+## <a name="brazil-cpf-number"></a>巴西 CPF 编号
 
 ### <a name="format"></a>格式
 
@@ -2415,16 +2415,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-格式化：
-- 三个数字
-- a period
-- 三个数字
-- a period
-- 三个数字
+格式 化：
+- 三位数
+- 一个句点
+- 三位数
+- 一个句点
+- 三位数
 - 连字符
-- 两个数字是检查数字
+- 检查数字的两位数字
 
-无格式：
+未格式化：
 - 11 个数字，其中最后两个数字是校验位
 
 ### <a name="checksum"></a>校验和
@@ -2433,12 +2433,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_brazil_cpf 找到与该模式匹配的内容。
 - 找到 Keyword_brazil_cpf 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_brazil_cpf 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -2459,18 +2459,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
-- CPF
-- 标识
+- 公积金
+- 识别
 - 注册
 - 收入
 - Cadastro de Pessoas Físicas
-- 中年
+- Imposto
 - Identificação
 - Inscrição
 - Receita
 
 
-## <a name="brazil-legal-entity-number-cnpj"></a>CNPJ (巴西法律实体) 
+## <a name="brazil-legal-entity-number-cnpj"></a>巴西法律实体编号 (CNPJ) 
 
 ### <a name="format"></a>格式
 
@@ -2480,15 +2480,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 14 个数字，再加上分隔符：
 
-- 两个数字
-- a period
-- 三个数字
-- a period
-- 三个数字 (前八个数字是注册号码) 
+- 两位数
+- 一个句点
+- 三位数
+- 一个句点
+- 前八位数字 (三位数字是注册号) 
 - 正斜杠
-- 四位数分支号码
+- 四位数分支编号
 - 连字符
-- 两个数字是检查数字
+- 检查数字的两位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2496,12 +2496,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_brazil_cnpj 找到与该模式匹配的内容。
 - 找到 Keyword_brazil_cnpj 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_brazil_cnpj 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -2547,25 +2547,25 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-Registro Geral (旧格式) ：九个数字
+Registro Geral (旧格式) ：九位数字
 
-Registro de Identidade (RIC)  (新格式) ：11 个数字
+Registro de Identidade (RIC)  (新格式) ：11 位
 
 ### <a name="pattern"></a>模式
 
 Registro Geral（旧格式）：
-- 两个数字
-- a period
-- 三个数字
-- a period
-- 三个数字
+- 两位数
+- 一个句点
+- 三位数
+- 一个句点
+- 三位数
 - 连字符
-- 一个数字，是一个检查数字
+- 一位是复选数字的数字
 
-Registro de Identidade (RIC)  (新) ：
+Registro de Identidade (RIC)  (新格式) ：
 - 10 个数字
 - 连字符
-- 一个数字，是一个检查数字
+- 一位是复选数字的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2573,7 +2573,7 @@ Registro de Identidade (RIC)  (新) ：
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_brazil_rg 找到与该模式匹配的内容。
 - 找到 Keyword_brazil_rg 中的一个关键字。
 - 校验和通过。
@@ -2599,27 +2599,27 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - número de rregistro
 - registro de Iidentidade
 - registro geral
-- RG (关键字区分大小写) 
-- RIC (关键字区分大小写) 
+- RG (此关键字区分大小写) 
+- RIC (此关键字区分大小写) 
 
 
 ## <a name="brazil-physical-addresses"></a>巴西物理地址
 
-此未解包的命名实体检测与来自巴西的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自巴西的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
-## <a name="bulgaria-drivers-license-number"></a>保加利亚驾驶证号码
+## <a name="bulgaria-drivers-license-number"></a>保加利亚驾驶执照号码
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2627,9 +2627,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_bulgaria_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_bulgaria_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_bulgaria_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2655,49 +2655,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -2705,46 +2705,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -2752,17 +2752,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -2780,11 +2780,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2792,14 +2792,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_bulgaria_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_bulgaria_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_bulgaria_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_bulgaria_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_bulgaria_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2828,56 +2828,56 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
 - номер на паспорта
 - номер на паспорт
-- 均？
+- паспорт No
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="bulgaria-physical-addresses"></a>保加利亚物理地址
 
-此未解包的命名实体检测与保加利亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自保加利亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
-## <a name="bulgaria-uniform-civil-number"></a>保加利亚统一编号
-此敏感信息类型仅在：
+## <a name="bulgaria-uniform-civil-number"></a>保加利亚统一的民号
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 10 个数字
+没有空格和分隔符的 10 位数字
 
 ### <a name="pattern"></a>模式
 
-不带空格和分隔符的 10 个数字
+没有空格和分隔符的 10 位数字
 
-- 六个数字，对应于 YYMMDD (出生日期) 
-- 两个数字，对应于出生日期
-- 对应于性别的一个数字：男性的偶数位数和男性的奇数
+- 与 YYMMDD (的出生日期相对应的六位数字) 
+- 与出生顺序相对应的两位数字
+- 一个与性别对应的数字：男性的偶数和女性的奇数
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -2886,12 +2886,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_bulgaria_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_bulgaria_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_bulgaria_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_bulgaria_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_bulgaria_eu_national_id_card` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_bulgaria_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2914,33 +2914,33 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
-- bnn#
-- bnn
+- 安娜#
+- 安娜
 - bucn#
 - bucn
-- edinen grazhski nomer
+- edinen grazhdanski nomer
 - egn#
 - egn
 - identification number
 - national id
-- national number
+- 国家编号
 - nationalnumber#
 - nationalnumber
 - 个人 ID
 - personal no
-- 个人编号
+- 个人号码
 - personalidnumber#
 - social security number
-- ssn#
-- ssn
-- uniform uniform uniform id
-- uniform uniform uniform no
-- uniform uniform number
+- Ssn#
+- Ssn
+- 统一的民事 ID
+- 统一的民用否
+- 统一的民用号码
 - uniformcivilno#
 - uniformcivilno
 - uniformcivilnumber#
 - uniformcivilnumber
-- 唯一公民编号
+- 唯一的公民号码
 - егн#
 - егн
 - единен граждански номер
@@ -2950,8 +2950,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - лично не
 - национален номер
 - номер на гражданството
-- 2013 年 1 月 2 日
-- граждански граждански id
+- униформ id
+- униформ граждански id
 - униформ граждански не
 - униформ граждански номер
 - униформгражданскиid#
@@ -2962,18 +2962,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-7 个或 12 个数字
+7 或 12 位数字
 
 ### <a name="pattern"></a>模式
 
-加拿大银行帐号是 7 个或 12 个数字。
+加拿大银行帐号为 7 或 12 位数字。
 
 加拿大银行帐户的银行代号是：
-- 五个数字
+- 五位数字
 - 连字符
-- 三个数字 OR
-- 零"0"
-- 八个数字
+- 三位数 OR
+- 零“0”
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2981,12 +2981,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_canada_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_canada_bank_account_number 中的一个关键字。
 - 正则表达式 Regex_canada_bank_account_transit_number 找到与该模式匹配的内容。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_canada_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_canada_bank_account_number 中的一个关键字。
 
@@ -3032,7 +3032,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - direct deposit
 
 
-## <a name="canada-drivers-license-number"></a>加拿大驾驶证号码
+## <a name="canada-drivers-license-number"></a>加拿大驾驶执照号码
 
 ### <a name="format"></a>格式
 
@@ -3040,17 +3040,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-各种模式涵盖：
-- 省/市/市
+涵盖以下内容的各种模式：
+- 艾伯塔省
 - British Columbia
-- 马尼托巴
+- 马尼托巴省
 - New Brunswick
-- Newfoundland/Labrador
+- 纽芬兰/拉布拉多
 - Nova Scotia
-- On一
+- 安大略省
 - Prince Edward Island
-- 百里达
-- Saskatchewan
+- 魁北克
+- 萨斯喀彻温省
 
 ### <a name="checksum"></a>校验和
 
@@ -3058,7 +3058,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_[province_name]_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_[province_name]_drivers_license_name 中的一个关键字。
 - 找到 Keyword_canada_drivers_license 中的一个关键字。
@@ -3130,7 +3130,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - DL
 - DLS
-- CDL
+- 民盟
 - CDLS
 - DriverLic
 - DriverLics
@@ -3159,9 +3159,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Driver'Lic
 - Driver'Lics
 - Driver'License
-- Driver'Licenses
+- 驱动程序许可证
 - Driver'Licence
-- Driver'Licences
+- 驾驶执照
 - Driver' Lic
 - Driver' Lics
 - Driver' License
@@ -3196,10 +3196,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - identification #s
 - identification card
 - identification cards
-- identification
+- 识别
 - DL#
 - DLS#
-- CDL#
+- 民盟#
 - CDLS#
 - DriverLic#
 - DriverLics#
@@ -3228,9 +3228,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Driver'Lic#
 - Driver'Lics#
 - Driver'License#
-- Driver'Licenses#
+- 驱动程序许可证#
 - Driver'Licence#
-- Driver'Licences#
+- 驾驶执照#
 - Driver' Lic#
 - Driver' Lics#
 - Driver' License#
@@ -3250,17 +3250,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Driver's Licence#
 - Driver's Licences#
 - Permis de Conduire#
-- id#
-- ids#
+- Id#
+- Id#
 - idcard card#
 - idcard cards#
 - idcard#
 - identification card#
 - identification cards#
-- identification#
+- 识别#
 
 
-## <a name="canada-health-service-number"></a>加拿大卫生服务号码
+## <a name="canada-health-service-number"></a>加拿大健康服务号码
 
 ### <a name="format"></a>格式
 
@@ -3276,7 +3276,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_canada_health_service_number 找到与该模式匹配的内容。
 - 找到 Keyword_canada_health_service_number 中的一个关键字。
 
@@ -3302,20 +3302,20 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - speciality services
 - automobile accident
 - patient hospital
-- 一些
+- 心理医生
 - workers compensation
-- 残障
+- 残疾
 
 
 ## <a name="canada-passport-number"></a>加拿大护照号码
 
 ### <a name="format"></a>格式
 
-两个小写字母后跟六个数字
+两个大写字母，后跟六位数字
 
 ### <a name="pattern"></a>模式
 
-两个小写字母后跟六个数字
+两个大写字母，后跟六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3323,9 +3323,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_canada_passport_number 找到与该模式匹配的内容。
-- 找到来自Keyword_canada_passport_number或Keyword_passport关键字。
+- 找到Keyword_canada_passport_number或Keyword_passport的关键字。
 
 ```xml
 <!-- Canada Passport Number -->
@@ -3358,13 +3358,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Passport Number
 - Passport No
 - Passport #
-- Passport#
+- 护照#
 - PassportID
 - Passportno
 - passportnumber
 - パスポート
 - パスポート番号
-- パスポのNum
+- パスポートのNum
 - パスポート＃
 - Numéro de passeport
 - Passeport n °
@@ -3379,11 +3379,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3391,9 +3391,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
-- 至少找到了两个Keyword_canada_phin或Keyword_canada_provinces关键字。
+- 从Keyword_canada_phin或Keyword_canada_provinces中至少找到两个关键字。
 
 ```xml
 <!-- Canada PHIN -->
@@ -3431,14 +3431,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 百里达
+- 魁北克
 - Northwest Territories
-- On一
+- 安大略省
 - British Columbia
-- 省/市/市
-- Saskatchewan
-- 马尼托巴
-- Yukon
+- 艾伯塔省
+- 萨斯喀彻温省
+- 马尼托巴省
+- 育 空
 - Newfoundland and Labrador
 - New Brunswick
 - Nova Scotia
@@ -3448,7 +3448,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="canada-physical-addresses"></a>加拿大物理地址
 
-此未解包的命名实体检测与来自加拿大的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自加拿大的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -3459,18 +3459,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字（可选连字符或空格）
+具有可选连字符或空格的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-格式化：
-- 三个数字
+格式 化：
+- 三位数
 - 连字符或空格
-- 三个数字
+- 三位数
 - 连字符或空格
-- 三个数字
+- 三位数
 
-无格式：九个数字
+未格式化：9 位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3478,15 +3478,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_canadian_sin 找到与该模式匹配的内容。
-- 至少以下两种模式：
+- 以下至少两种模式：
     - 找到 Keyword_sin 中的一个关键字。
     - 找到 Keyword_sin_collaborative 中的一个关键字。
     - 函数 Func_eu_date 找到正确日期格式的日期。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_unformatted_canadian_sin 找到与该模式匹配的内容。
 - 找到 Keyword_sin 中的一个关键字。
 - 校验和通过。
@@ -3516,14 +3516,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - sin
 - social insurance
 - numero d'assurance sociale
-- sins
-- ssn
+- 罪
+- Ssn
 - ssns
 - social security
 - numero d'assurance social
 - national identification number
 - national id
-- sin#
+- 罪#
 - soc ins
 - social ins
 
@@ -3543,18 +3543,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-七到八个数字加上分隔符一个检查数字或字母
+七到八位数字加上一个复选数字或字母的分隔符
 
 ### <a name="pattern"></a>模式
 
-七到八个数字加分隔符：
-- 一到两个数字
-- 可选时间段
-- 三个数字
-- 可选时间段
-- 三个数字
+七到八位数字加上分隔符：
+- 一到两位数字
+- 可选周期
+- 三位数
+- 可选周期
+- 三位数
 - 短划线
-- 一个数字或 (不区分大小写) 一个数字或字母，这是一个检查数字
+- 一个数字或字母 (非区分大小写的) ，这是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3562,12 +3562,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_chile_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_chile_id_card 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_chile_id_card 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3595,30 +3595,30 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - national id
 - número de identificación nacional
 - rol único nacional
-- rol único tribu一
-- RUN
-- RUT
+- rol único tributario
+- 运行
+- 车辙
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol Unico Tribu一
-- RUN#
-- RUT#
+- Rol Unico Tributario
+- 运行#
+- 车辙#
 - nationaluniqueroleID#
 - nacional identidad
 - número identificación
 - identidad número
 - numero identificacion
 - identidad numero
-- 百分卡标识否。
-- 高能标识号
-- 百分卡标识#
+- 智利人身份否。
+- 智利标识号
+- 智利人身份#
 - 唯一税务注册表
-- 唯一的三元角色
+- 唯一支流角色
 - 唯一税务角色
-- 唯一的三元数
-- 唯一国家/区号
+- 唯一的支流编号
+- 唯一国家编号
 - 唯一的国家角色
-- 国家/地区唯一角色
+- 国家唯一角色
 - 智利标识否。
 - 智利标识号
 - 智利标识#
@@ -3635,10 +3635,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 18 个数字：
-- 六个数字，表示地址代码
-- 八个数字，格式为 YYYYMMDD，表示出生日期
-- 三个数字，表示订单代码
-- 一个数字，是一个检查数字
+- 作为地址代码的六位数字
+- YYYYMMDD 形式的八位数字，即出生日期
+- 作为订单代码的三位数字
+- 一位是复选数字的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3646,12 +3646,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_china_resident_id 找到与该模式匹配的内容。
 - 找到 Keyword_china_resident_id 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_china_resident_id 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3688,19 +3688,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-14 到 19 个数字，可以格式化或无格式 (ddddddd) 且必须通过 Luhn 测试。
+14 到 19 位数字，可以设置格式或未格式化 (dddddddddddddddddddd) ，并且必须通过 Luhn 测试。
 
 ### <a name="pattern"></a>模式
 
-检测来自全球所有主要品牌的卡，包括 Visa、MasterCard、Discover Card、JCB、American Express、名片、第二者卡、Rupay 和 China UnionPay。
+检测来自全球所有主要品牌的卡，包括Visa、万事达卡、发现卡、JCB、美国运通、礼品卡、食客卡、鲁帕伊和中国银联。
 
 ### <a name="checksum"></a>校验和
 
-是，Luhn 检查
+是的， 卢恩检查
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_credit_card 找到与该模式匹配的内容。
 - 下列其中一项为真：
     - 找到 Keyword_cc_verification 中的一个关键字。
@@ -3708,7 +3708,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
     - 函数 Func_expiration_date 找到正确日期格式的日期。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 Func_credit_card 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3748,8 +3748,8 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - cryptogramme
 - numéro de sécurité
 - numero de securite
-- kreditittenprüfnummer
-- kreditittenprufnummer
+- kreditkartenprüfnummer
+- kreditkartenprufnummer
 - prüfziffer
 - prufziffer
 - sicherheits Kode
@@ -3757,12 +3757,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- cod。 sicurezza
+- Cod。 sicurezza
 - cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- cod。 seg
+- Cod。 Seg
 - cod seg
 - código de segurança
 - codigo de seguranca
@@ -3774,7 +3774,7 @@ cód. segurança
 
 - cod. segurança
 
-- cód。 seguranca
+- cód. seguranca
 - cód segurança
 - cod seguranca
 - cod segurança
@@ -3798,11 +3798,11 @@ cód. segurança
 - data de expiracao
 - data em que expira
 - validade
-- valor
+- 勇气
 - vencimento
-- transaction
+- 交易
 - 事务编号
-- 参考编号
+- 引用编号
 - セキュリティコード
 - セキュリティ コード
 - セキュリティナンバー
@@ -3815,16 +3815,16 @@ cód. segurança
 - american express
 - americanexpress
 - americano espresso
-- Visa
-- mastercard
+- 签证
+- 万事 达
 - Master Card
-- mc
-- mastercards
+- Mc
+- 万事达卡
 - master cards
 - diner's Club
 - diners club
-- dinersc一
-- discover
+- dinersclub
+- 发现
 - discover card
 - discovercard
 - discover cards
@@ -3834,7 +3834,7 @@ cód. segurança
 - carte blanche
 - carteblanche
 - credit card
-- cc#
+- Cc#
 - cc#：
 - expiration date
 - exp date
@@ -3851,12 +3851,12 @@ cód. segurança
 - card numbers
 - creditcard
 - credit cards
-- creditcards
+- 信用卡
 - ccn
 - card holder
-- 将
+- 持 卡 人
 - card holders
-- 将
+- 持 卡 人
 - check card
 - checkcard
 - check cards
@@ -3878,11 +3878,11 @@ cód. segurança
 - 公司卡
 - 公司卡
 - 卡片类型
-- card account number
-- card 成员帐户
-- Cardmember Acct。
+- 卡片帐号
+- 卡成员帐户
+- Cardmember Acct.
 - card no.
-- card no
+- 卡号
 - card number
 - carte bancaire
 - carte de crédit
@@ -3891,23 +3891,23 @@ cód. segurança
 - numero de carte
 - nº de la carte
 - nº de carte
-- kreditkrte
+- kreditkarte
 - karte
 - karteninhaber
 - karteninhabers
-- kredititteninhaber
-- kredit功能teninstitut
-- kredittentyp
+- kreditkarteninhaber
+- kreditkarteninstitut
+- kreditkartentyp
 - eigentümername
 - kartennr
 - kartennummer
-- kreditittennummer
-- kreditkrten-nummer
+- kreditkartennummer
+- kreditkarten-nummer
 - carta di credito
 - carta credito
-- n. carta
+- n. 宪章
 - n carta
-- nr. carta
+- 星期日。 宪章
 - nr carta
 - numero carta
 - numero della carta
@@ -3949,17 +3949,17 @@ cód. segurança
 - numero de cartao
 - nº do cartão
 - nº do cartao
-- n？ do cartão
+- nº. do cartão
 - no do cartão
 - no do cartao
 - 不。 do cartão
 - no. do cartao
 
 - rupay
-- union pay
-- unionpay
-- 第二者
-- 第二方
+- 工会工资
+- 银联
+- 食客的
+- 食客
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3972,8 +3972,8 @@ cód. segurança
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
-- Visaカド
-- Visa カド
+- Visa カード
+- Visa カード
 - マスターカード
 - マスター カード
 - マスター
@@ -3993,15 +3993,15 @@ cód. segurança
 - 银联
 
 
-## <a name="croatia-drivers-license-number"></a>克罗地亚驾驶证号码
+## <a name="croatia-drivers-license-number"></a>克罗地亚驾照号
 
 ### <a name="format"></a>格式
 
-八个数字（不含空格和分隔符）
+没有空格和分隔符的八位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4009,10 +4009,10 @@ cód. segurança
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 正则表达式查找  `Regex_croatia_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或 `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` 中的关键字。
+- 正则表达式  `Regex_croatia_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从 `Keywords_eu_driver's_license_number` 中找到或 `Keywords_croatia_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -4038,49 +4038,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -4088,46 +4088,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -4135,38 +4135,38 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
 
-#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver s_license_number
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver's_license_number
 
-- voza-ka dozvola
-- vozazake dozvole
+- vozačka dozvola
+- vozačke dozvole
 
 
-## <a name="croatia-identity-card-number"></a>克罗地亚身份证号
+## <a name="croatia-identity-card-number"></a>克罗地亚身份证号码
 此实体包含在欧盟国家标识号敏感信息类型中。 它作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个连续的数字
+九个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4174,7 +4174,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_croatia_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_croatia_id_card 中的一个关键字。
 
@@ -4192,45 +4192,45 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstorski broj gragragraana
+- majstorski broj građana
 - master citizen number
 - nacionalni identifikacijski broj
 - national identification number
 - oib#
 - oib
 - osobna iskaznica
-- osobni id
+- osobni ID
 - osobni identifikacijski broj
 - 个人标识号
-- 一些项目
-- identzni identifikacijski broj
+- 波雷兹尼 · 布罗杰
+- porezni identifikacijski broj
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="croatia-passport-number"></a>克罗地亚护照号码
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4238,14 +4238,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_croatia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_croatia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_croatia_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_croatia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_croatia_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_croatia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_croatia_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Croatia Passport Number -->
@@ -4274,24 +4274,24 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- broj putov一
-- br. Putov一
-- br putov一
+- broj putovnice
+- Br。 Putovnice
+- br putovnice
 
-## <a name="croatia-personal-identification-oib-number"></a>克罗地亚个人标识 (OIB) 号
+## <a name="croatia-personal-identification-oib-number"></a>克罗地亚个人身份 (OIB) 编号
 
 ### <a name="format"></a>格式
 
@@ -4309,12 +4309,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_croatia_oib_number 找到与该模式匹配的内容。
-- 找到来自Keywords_croatia_eu_tax_file_number关键字。
+- 找到Keywords_croatia_eu_tax_file_number的关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_croatia_oib_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -4335,50 +4335,50 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstorski broj gragragraana
+- majstorski broj građana
 - master citizen number
 - nacionalni identifikacijski broj
 - national identification number
 - oib#
 - oib
 - osobna iskaznica
-- osobni id
+- osobni ID
 - osobni identifikacijski broj
 - 个人标识号
-- 一些项目
-- identzni identifikacijski broj
+- 波雷兹尼 · 布罗杰
+- porezni identifikacijski broj
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="croatia-physical-addresses"></a>克罗地亚物理地址
 
-此未解包的命名实体检测与克罗地亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与克罗地亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="cyprus-drivers-license-number"></a>塞浦路斯驾驶证号码
+## <a name="cyprus-drivers-license-number"></a>塞浦路斯驾驶者许可证编号
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 12 个数字
+没有空格和分隔符的 12 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -4390,9 +4390,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_cyprus_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_cyprus_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_cyprus_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4418,49 +4418,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -4468,46 +4468,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -4515,17 +4515,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -4539,16 +4539,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="cyprus-identity-card"></a>塞浦路斯身份证
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 10 个数字
+没有空格和分隔符的 10 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -4560,9 +4560,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_cyprus_eu_national_id_card` 与模式匹配的内容。
-- 找到 的  `Keywords_cyprus_eu_national_id_card` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_cyprus_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_cyprus_eu_national_id_card` 。
 
 ```xml
       <!-- Cyprus Identity Card -->
@@ -4578,11 +4578,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- id card number
+- ID 卡号
 - 标识卡号
-- kim且 karti
+- kimlik karti
 - national identification number
-- 个人 ID 号
+- 个人 ID 编号
 - ταυτοτητασ
 
 
@@ -4590,11 +4590,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-一个字母后跟 6-8 个数字，无空格或分隔符
+一个字母后跟 6-8 位数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-一个字母后跟六到八个数字
+一个字母后跟六到八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4602,14 +4602,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_cyprus_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_cyprus_eu_passport_date` DD/MM/YYYY 格式的日期或找到 `Keywords_cyprus_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_cyprus_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_cyprus_eu_passport_date` 查找格式为 DD/MM/YYYY 或关键字的 `Keywords_cyprus_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_cyprus_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_cyprus_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_cyprus_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4639,16 +4639,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
@@ -4659,43 +4659,43 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - διαβατήριο#
 - διαβατήριο
 - αριθμός διαβατηρίου
-- Pasaport Kimli以i
-- pasaport nu一起
-- Pasaport 否。
+- 帕萨波特·金利尼
+- pasaport numarası
+- 帕萨波特号
 - Αρ. Διαβατηρίου
 
 #### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
 
-- 到期时间
-- 颁发于
+- expires on
+- 在
 
 
 ## <a name="cyprus-physical-addresses"></a>塞浦路斯物理地址
 
-此未解包的命名实体检测与来自塞浦路斯的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+这个未拆卸的命名实体检测到与来自塞浦路斯的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 ## <a name="cyprus-tax-identification-number"></a>塞浦路斯税务标识号
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-指定模式中的八个数字和一个字母
+指定模式中的八位数字和一个字母
 
 ### <a name="pattern"></a>模式
 
-八个数字和一个字母：
+八位数字和一个字母：
 
-- "0"或"9"
-- 七个数字
+- “0”或“9”
+- 七位数字
 - 一个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -4704,12 +4704,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_cyprus_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_cyprus_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_cyprus_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_cyprus_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_cyprus_eu_tax_file_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_cyprus_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4729,46 +4729,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-- 税务识别代码
-- tax identification no
-- tax identification number
+- 税务标识代码
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tic#
-- tic
-- tin id
+- 旅游业 议会#
+- 旅游业 议会
+- tin ID
 - tin no
-- tin#
-- vergi kim且 kodu
-- vergi kim且 nu一ss
+- 锡#
+- vergi kimlik kodu
+- vergi kimlik numarası
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>捷克驾驶证号码
+## <a name="czech-drivers-license-number"></a>捷克驾照号
 
 ### <a name="format"></a>格式
 
-两个字母后跟六个数字
+两个字母后跟六位数字
 
 ### <a name="pattern"></a>模式
 
 八个字母和数字：
 
-- 字母"E" (不区分大小写) 
+- 字母“E” (不区分大小写) 
 - 一个字母
 - 空格 (可选) 
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4776,9 +4776,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_czech_republic_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_czech_republic_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_czech_republic_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4804,49 +4804,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -4854,46 +4854,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -4901,38 +4901,38 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver s_license_number
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver's_license_number
 
-- úidiúskú prúkaz
-- üidiidiské prükazy
-- ííslo íidiíského przukazu
-- íísla íidiískích príkaz≥
+- řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>捷克护照号码
 
 ### <a name="format"></a>格式
 
-八个数字，不带空格或分隔符
+不带空格或分隔符的 8 位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字，不带空格或分隔符
+不带空格或分隔符的 8 位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4940,14 +4940,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_czech_republic_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_czech_republic_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_czech_republic_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_czech_republic_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_czech_republic_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4977,28 +4977,28 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
 - cestovní pas
-- ííslo pasu
+- číslo pasu
 - cestovní pasu
 - passeport no
-- íísla pasu
+- čísla pasu
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
@@ -5006,19 +5006,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字，带可选正斜杠 (旧格式) 10 个数字，带可选正斜杠 (新格式) 
+具有可选正斜杠的 9 位数字 (旧格式) 10 位数字，其中有可选的正斜杠 (新格式) 
 
 ### <a name="pattern"></a>模式
 
-九个数字 (旧格式) ：
-- 六个数字，表示出生日期
-- 可选正斜杠
-- 三个数字
+旧格式 (9 位数字) ：
+- 表示出生日期的六位数字
+- 可选的正斜杠
+- 三位数
 
-10 个数字 (新格式) ：
-- 六个数字，表示出生日期
-- 可选正斜杠
-- 四个数字，其中最后一个数字是一个检查数字
+10 位数字 (新格式) ：
+- 表示出生日期的六位数字
+- 可选的正斜杠
+- 最后一位数字为复选数字的四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5026,13 +5026,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
 - 函数 Func_czech_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_czech_id_card 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
 - 函数Func_czech_id_card_new_format查找与模式匹配的内容。
 - 校验和通过。
@@ -5056,69 +5056,69 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
-- birth number
+- 出生编号
 - 捷克共和国 ID
 - czechidno#
-- daíové ííslo
-- identifíní ííslo
+- daňové číslo
+- identifikační číslo
 - identity no
 - 标识号
 - identityno#
 - identityno
-- insurance number
+- 保险号码
 - national identification number
 - nationalnumber#
-- national number
-- osobní ííslo
+- 国家编号
+- osobní číslo
 - personalidnumber#
-- 个人 ID 号
+- 个人 ID 编号
 - 个人标识号
-- 个人编号
-- pid#
+- 个人号码
+- Pid#
 - pid
-- pojiítíní ííslo
-- r以
+- pojištění číslo
+- rč
 - rodne cislo
-- rodné ííslo
-- ssn
-- ssn#
+- rodné číslo
+- Ssn
+- Ssn#
 - social security number
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 - 唯一标识号
 
 
 ## <a name="czech-republic-physical-addresses"></a>捷克共和国物理地址
 
-此未解包的命名实体检测与来自捷克共和国的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与捷克共和国的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
-## <a name="denmark-drivers-license-number"></a>丹麦驾驶证号码
+## <a name="denmark-drivers-license-number"></a>丹麦驾照号
 
 ### <a name="format"></a>格式
 
-八个数字（不含空格和分隔符）
+没有空格和分隔符的八位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5126,9 +5126,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_denmark_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_denmark_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_denmark_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -5154,49 +5154,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -5204,46 +5204,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -5251,36 +5251,36 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver s_license_number
 
-- kørekort
-- kørekortnummer
+- kérekort
+- kérekortnummer
 
 
 ## <a name="denmark-passport-number"></a>丹麦护照号码
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5288,14 +5288,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_denmark_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date2` 格式为 DD MM YY 的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_denmark_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_denmark_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_eu_passport_date2`查找格式为 DD MM YY 的日期或找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_denmark_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_denmark_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_denmark_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_denmark_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Denmark Passport Number -->
@@ -5326,16 +5326,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
@@ -5345,7 +5345,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
@@ -5358,9 +5358,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 10 个数字：
-- 六个数字，格式为 DDMMYY，表示出生日期
-- 可选空格或连字符
-- 四个数字，其中最后一个数字是一个检查数字
+- 格式为 DDMMYY 的六位数字，即出生日期
+- 可选空间或连字符
+- 最终数字为复选数字的四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5368,12 +5368,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Func_denmark_eu_tax_file_number查找与模式匹配的内容。
 - 找到 Keyword_denmark_id 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 正则表达式Func_denmark_eu_tax_file_number查找与模式匹配的内容。
 - 校验和通过。
 
@@ -5397,34 +5397,34 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 - centrale personregister
 - civilt registreringssystem
-- cpr
-- cpr#
-- gesundheitshete nummer
-- gesundheitsversicherungungte nummer
-- health card
+- Cpr
+- Cpr#
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
+- 运行状况卡
 - 健康保险卡号
 - 健康保险号码
 - identification number
 - identifikationsnummer
 - identifikationsnummer#
 - 标识号
-- kr一nkassennummer
+- krankenkassennummer
 - nationalid#
 - nationalnumber#
-- national number
+- 国家编号
 - personalidnumber#
 - personalidentityno#
-- 个人 ID 号
+- 个人 ID 编号
 - personnummer
 - personnummer#
-- reisekrankenversicherungsichtenummer
+- reisekrankenversicherungskartenummer
 - rejsesygesikringskort
-- ssn
-- ssn#
-- 用户 ID
-- 将 kode
-- 将 nummer
-- 将tenummer
+- Ssn
+- Ssn#
+- skat ID
+- skat kode
+- skat nummer
+- skattenummer
 - social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
@@ -5432,24 +5432,24 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- tax code
+- 税法
 - 旅行健康保险卡
 - uniqueidentityno#
-- tax number
-- tax registration number
+- 税号
+- 税务注册号
 - tax id
-- tax identification number
-- 已#
+- 税务标识号
+- taxid#
 - taxnumber#
 - tax no
 - taxno#
 - taxnumber
-- tax identification no
-- tin#
-- 一些#
-- 一些#
+- 税务标识否
+- 锡#
+- taxidno#
+- taxidnumber#
 - tax no#
-- tin id
+- tin ID
 - tin no
 - cpr.nr
 - cprnr
@@ -5468,34 +5468,34 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="denmark-physical-addresses"></a>丹麦物理地址
 
-此未解包的命名实体检测与来自丹麦的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自丹麦的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="diseases"></a>动物
+## <a name="diseases"></a>疾病
 
-此未解包的命名实体检测匹配花名（如花） *的文本*。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+这个未拆分的命名实体检测与疾病名称匹配的文本，如 *糖尿病*。 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="drug-enforcement-agency-dea-number"></a>管制局 (DEA) 号码
+## <a name="drug-enforcement-agency-dea-number"></a>缉毒局 (DEA) 号码
 
 ### <a name="format"></a>格式
 
-两个字母后跟七个数字
+两个字母后跟七位数字
 
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 一个字母 (可能) 不区分大小写：abcdefghjklmnprstux，这是一个注册表代码
-- 一个字母 (不区分大小写) ，即注册人姓氏或数字"9"的第一个字母
-- 七个数字，最后一个数字是检查数字
+- 一个字母 (不区分大小写) 从这组可能的字母：A/B/F/G/M/P/R，这是一个注册代码
+- 一个字母 (不区分大小写) ，这是注册人姓氏或数字'9'的第一个字母
+- 七位数字，最后一位是检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5503,12 +5503,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_dea_number 找到与该模式匹配的内容。
-- 找到的关键字来自`Keyword_dea_number`
+- 从中找到关键字`Keyword_dea_number`
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_dea_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -5536,24 +5536,24 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_dea_number"></a>Keyword_dea_number
 
-- dea
-- dea#
-- 一些强制执行管理
-- 犯罪管制机构
+- Dea
+- Dea#
+- 缉毒管理
+- 缉毒机构
 
 
-## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾驶证号码
+## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾照号
 
 ### <a name="format"></a>格式
 
-两个字母后跟六个数字
+两个字母后跟六位数字
 
 ### <a name="pattern"></a>模式
 
 两个字母和六个数字：
 
-- 字母"ET" (不区分大小写) 
-- 六个数字
+- 字母“ET” (不区分大小写) 
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5561,9 +5561,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_estonia_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_estonia_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_estonia_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5589,49 +5589,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -5639,46 +5639,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -5686,17 +5686,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -5704,20 +5704,20 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver s_license_number
 
 - permis de conduire
-- juhiadeade numbrid
+- juhilubade numbrid
 - juhiloa number
-- juhi一a
+- juhiluba
 
 
 ## <a name="estonia-passport-number"></a>爱沙尼亚护照号码
 
 ### <a name="format"></a>格式
 
-一个字母后跟七个数字，无空格或分隔符
+一个字母后跟七个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-一个字母后跟七个数字
+一个字母后跟七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5725,14 +5725,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_estonia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_estonia_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_estonia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_estonia_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_estonia_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Estonia Passport Number -->
@@ -5762,16 +5762,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
@@ -5779,30 +5779,30 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
-## <a name="estonia-personal-identification-code"></a>爱沙尼亚个人标识代码
+## <a name="estonia-personal-identification-code"></a>爱沙尼亚个人身份识别码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-11 个数字，不带空格和分隔符
+没有空格和分隔符的 11 位数字
 
 ### <a name="pattern"></a>模式
 
 11 个数字：
 
-- 一个数字，对应于性生活和出生日期的世纪 (奇数男性，偶数男性;1-2：19 世纪;3-4：20 世纪;5-6：21 世纪) 
-- 六个数字，对应于 YYMMDD (出生日期) 
-- 三个数字，对应于同一日期出生日期的分隔人的序列号
+- 一个数字，对应于性别和百年出生 (奇数男性，甚至数字女性：1-2：19世纪：3-4：20世纪：5-6：21 世纪) 
+- 与出生日期相对应的六位数字 (YYMMDD) 
+- 对应于同一日期出生的人的序列号的三位数字
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -5811,12 +5811,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_estonia_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_estonia_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_estonia_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_estonia_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_estonia_eu_national_id_card` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_estonia_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5840,40 +5840,40 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 - id-kaart
-- ik
+- 益
 - isikukood#
 - isikukood
-- maksu id
+- maksu ID
 - maksukohustuslase identifitseerimisnumber
 - maksunumber
 - national identification number
-- national number
+- 国家编号
 - 个人代码
-- 个人 ID 号
-- 个人标识代码
+- 个人 ID 编号
+- 个人标识码
 - 个人标识号
 - personalidnumber#
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="estonia-physical-addresses"></a>爱沙尼亚物理地址
 
-此未解包的命名实体检测与爱沙尼亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与爱沙尼亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -5888,7 +5888,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-复杂而可靠的模式
+复杂且可靠的模式
 
 ### <a name="checksum"></a>校验和
 
@@ -5896,7 +5896,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_eu_debit_card 找到与该模式匹配的内容。
 - 下列至少其中一项为真：
     - 找到 Keyword_eu_debit_card 中的一个关键字。
@@ -5930,7 +5930,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - card number
 - card no.
 - security number
-- cc#
+- Cc#
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
@@ -5958,8 +5958,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - card numbers
 - card type
 - cardano numerico
-- 将
-- 将
+- 持 卡 人
+- 持 卡 人
 - cardnumber
 - cardnumbers
 - carta bianca
@@ -5986,15 +5986,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - check cards
 - checkcard
 - checkcards
-- 一些
-- cirrus
-- cirrus-edc-ciostro
+- chekaart
+- 卷云
+- cirrus-edc-maestro
 - controlekaart
-- controlekekten
+- controlekaarten
 - credit card
 - credit cards
 - creditcard
-- creditcards
+- 信用卡
 - debetkaart
 - debetkaarten
 - debit card
@@ -6003,8 +6003,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - debitcards
 - debito automatico
 - diners club
-- dinersc一
-- discover
+- dinersclub
+- 发现
 - discover card
 - discover cards
 - discovercard
@@ -6014,7 +6014,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - eigentümername
 - european debit card
 - hoofdkaart
-- hoofdkdkdkten
+- hoofdkaarten
 - in viaggio
 - japanese card bureau
 - japanse kaartdienst
@@ -6030,21 +6030,21 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - karteninhabers
 - kartennr
 - kartennummer
-- kreditkrte
-- kreditkrten-nummer
-- kredititteninhaber
-- kredit功能teninstitut
-- kreditittennummer
-- kredittentyp
-- 将
+- kreditkarte
+- kreditkarten-nummer
+- kreditkarteninhaber
+- kreditkarteninstitut
+- kreditkartennummer
+- kreditkartentyp
+- 大师
 - Master Card
 - master cards
-- mastercard
-- mastercards
-- mc
+- 万事 达
+- 万事达卡
+- Mc
 - mister cash
 - n carta
-- carta
+- 宪章
 - no de tarjeta
 - no do cartao
 - no do cartão
@@ -6094,10 +6094,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - schede matrici
 - scoprono la scheda
 - scoprono le schede
-- 一个
+- 独奏
 - supporti di scheda
 - supporto di scheda
-- switch
+- 开关
 - tarjeta atm
 - tarjeta credito
 - tarjeta de atm
@@ -6111,7 +6111,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - scheda
 - v pay
 - v-pay
-- visa
+- 签证
 - visa plus
 - visa electron
 - visto
@@ -6142,10 +6142,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - codigo de seguranca
 - codigo de segurança
 - crittogramma
-- 加密报
+- 密码
 - cryptogramme
 - cv2
-- cvc
+- Cvc
 - cvc2
 - cvn
 - cvv
@@ -6164,8 +6164,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - issue no
 - issue number
 - kaartidentificatienummer
-- kreditittenprufnummer
-- kreditittenprüfnummer
+- kreditkartenprufnummer
+- kreditkartenprüfnummer
 - kwestieaantal
 - no. dell'edizione
 
@@ -6193,9 +6193,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - sicherheitsnummer
 - speldblok
 - veiligheid nr
-- 将igheidsaantal
-- 一个
-- 将igheidsnummer
+- veiligheidsaantal
+- veiligheidscode
+- veiligheidsnummer
 - verfalldatum
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -6217,10 +6217,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - espira
 - exp date
 - exp datum
-- expiration
-- expire
-- expires
-- expiry
+- 到期
+- 到期
+- 到期
+- 届满
 - fecha de expiracion
 - fecha de venc
 - gultig bis
@@ -6232,7 +6232,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - valable
 - validade
 - valido hasta
-- valor
+- 勇气
 - venc
 - vencimento
 - vencimiento
@@ -6243,9 +6243,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - válido hasta
 
 
-## <a name="eu-drivers-license-number"></a>欧盟驾驶证号码
+## <a name="eu-drivers-license-number"></a>欧盟驾照号
 
-这些实体在欧盟驾驶证号码中，是敏感信息类型。
+这些实体位于欧盟驱动程序的许可证编号中，是敏感信息类型。
 
 - [Austria（奥地利）](#austria-drivers-license-number)
 - [Belgium（比利时）](#belgium-drivers-license-number)
@@ -6264,7 +6264,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [意大利](#italy-drivers-license-number)
 - [拉脱维亚](#latvia-drivers-license-number)
 - [Lithuania（立陶宛）](#lithuania-drivers-license-number)
-- [亚明卡](#luxemburg-drivers-license-number)
+- [卢森堡](#luxemburg-drivers-license-number)
 - [马耳他](#malta-drivers-license-number)
 - [荷兰](#netherlands-drivers-license-number)
 - [波兰](#poland-drivers-license-number)
@@ -6274,12 +6274,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [斯洛文尼亚](#slovenia-drivers-license-number)
 - [西班牙](#spain-drivers-license-number)
 - [瑞典](#sweden-drivers-license-number)
-- [英国](#uk-drivers-license-number)
+- [英国。](#uk-drivers-license-number)
 
 
 ## <a name="eu-national-identification-number"></a>欧盟国家标识号
 
-这些实体在欧盟国家标识号中，是敏感信息类型。
+这些实体位于欧盟国家标识号中，是敏感信息类型。
 
 - [Austria（奥地利）](#austria-identity-card)
 - [Belgium（比利时）](#belgium-national-number)
@@ -6298,7 +6298,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [意大利](#italy-fiscal-code)
 - [拉脱维亚](#latvia-personal-code)
 - [Lithuania（立陶宛）](#lithuania-personal-code)
-- [亚明卡](#luxemburg-national-identification-number-natural-persons)
+- [卢森堡](#luxemburg-national-identification-number-natural-persons)
 - [马耳他](#malta-identity-card-number)
 - [荷兰](#netherlands-citizens-service-bsn-number)
 - [波兰](#poland-national-id-pesel)
@@ -6307,12 +6307,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [斯洛伐克](#slovakia-personal-number)
 - [斯洛文尼亚](#slovenia-unique-master-citizen-number)
 - [西班牙](#spain-dni)
-- [英国](#uk-national-insurance-number-nino)
+- [英国。](#uk-national-insurance-number-nino)
 
 
 ## <a name="eu-passport-number"></a>欧盟护照号码
 
-这些实体在欧盟护照号码中，是敏感信息类型。 这些实体在欧盟护照号码捆绑包中。
+这些实体位于欧盟护照号码中，是敏感信息类型。 这些实体位于欧盟护照号码捆绑包中。
 
 - [Austria（奥地利）](#austria-passport-number)
 - [Belgium（比利时）](#belgium-passport-number)
@@ -6331,7 +6331,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [意大利](#italy-passport-number)
 - [拉脱维亚](#latvia-passport-number)
 - [Lithuania（立陶宛）](#lithuania-passport-number)
-- [亚明卡](#luxemburg-passport-number)
+- [卢森堡](#luxemburg-passport-number)
 - [马耳他](#malta-passport-number)
 - [荷兰](#netherlands-passport-number)
 - [波兰](#poland-passport-number)
@@ -6344,9 +6344,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [美国/英国护照号码](#usuk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>欧盟社会保险号或等效标识
+## <a name="eu-social-security-number-or-equivalent-identification"></a>欧盟社会保障号码或等效标识
 
-这些实体是欧盟社会保险号或等效标识中的实体，是敏感信息类型。
+这些实体位于欧盟社会保险号或等效标识中，是敏感信息类型。
 
 - [Austria（奥地利）](#austria-social-security-number)
 - [Belgium（比利时）](#belgium-national-number)
@@ -6365,7 +6365,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="eu-tax-identification-number"></a>欧盟税务标识号
 
-这些实体在欧盟税务标识号敏感信息类型中。
+这些实体位于欧盟税务标识号敏感信息类型中。
 
 - [Austria（奥地利）](#austria-tax-identification-number)
 - [Belgium（比利时）](#belgium-national-number)
@@ -6384,7 +6384,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [意大利](#italy-fiscal-code)
 - [拉脱维亚](#latvia-personal-code)
 - [Lithuania（立陶宛）](#lithuania-personal-code)
-- [亚明卡](#luxemburg-national-identification-number-non-natural-persons)
+- [卢森堡](#luxemburg-national-identification-number-non-natural-persons)
 - [马耳他](#malta-tax-identification-number)
 - [荷兰](#netherlands-tax-identification-number)
 - [波兰](#poland-tax-identification-number)
@@ -6394,10 +6394,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [斯洛文尼亚](#slovenia-tax-identification-number)
 - [西班牙](#spain-tax-identification-number)
 - [瑞典](#sweden-tax-identification-number)
-- [英国](#uk-unique-taxpayer-reference-number)
+- [英国。](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>芬兰驾驶证号码
+## <a name="finland-drivers-license-number"></a>芬兰驾驶执照号码
 
 ### <a name="format"></a>格式
 
@@ -6405,11 +6405,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-10 个数字，包含连字符：
+包含连字符的 10 位数字：
 
-- 六个数字
+- 六位数字
 - 连字符
-- 三个数字
+- 三位数
 - 数字或字母
 
 ### <a name="checksum"></a>校验和
@@ -6418,9 +6418,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_finland_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_finland_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_finland_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6446,49 +6446,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -6496,46 +6496,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -6543,17 +6543,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -6564,19 +6564,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - ajokortti
 - permis de conduire
 - ajokortin numero
-- kuljettaja lic。
+- 库尔杰塔贾 · 利奇
 - körkort
-- krkortnummer
-- frare lic。
+- körkortnummer
+- förare lic.
 - ajokortit
 - ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>芬兰欧洲健康保险号码
+## <a name="finland-european-health-insurance-number"></a>芬兰欧洲医疗保险号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -6589,8 +6589,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 20 位数字：
 
-- 10 个数字 - 8024680246
-- 可选空格或连字符
+- 10 位数字 - 8024680246
+- 可选空间或连字符
 - 10 个数字
 
 ### <a name="checksum"></a>校验和
@@ -6599,9 +6599,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_Finland_European_Health_Insurance_Number查找与模式匹配的内容。
-- 找到来自Keyword_Finland_European_Health_Insurance_Number关键字。
+- 找到Keyword_Finland_European_Health_Insurance_Number的关键字。
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -6619,33 +6619,33 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - ehic#
 - ehic
 - finlandehicnumber#
-- finska sjukförsökringskort
-- health card
+- finska sjukförsäkringskort
+- 运行状况卡
 - 健康保险卡
 - 健康保险号码
-- hhlsokort
+- hälsokort
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförskring nummer
-- sjukförsökringskort
-- s一men sairausvakuutuskortti
+- sjukförsäkring nummer
+- sjukförsäkringskort
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
-## <a name="finland-national-id"></a>芬兰国家/区 ID
+## <a name="finland-national-id"></a>芬兰国家 ID
 
 ### <a name="format"></a>格式
 
-六个数字加一个字符，表示一世纪加三个数字加一个检查数字
+六位数字加上一个指示一个世纪加上三个数字加上一个复选数字的字符
 
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 六个数字，格式为 DDMMYY，表示出生日期
-- century marker (either '-'， '+' or 'a') 
-- 三位数的个人标识号
-- 一个数字或 (不区分大小写) 检查数字
+- 格式为 DDMMYY 的六位数字，即出生日期
+- 世纪标记 (“-”、“+”或“a”) 
+- 三位数个人标识号
+- 数字或字母 (不区分大小写) ，这是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6653,12 +6653,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_finnish_national_id查找与模式匹配的内容
-- 找到来自Keyword_finnish_national_id的关键字
+- 找到Keyword_finnish_national_id的关键字
 - 校验和传递
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_finnish_national_id查找与模式匹配的内容
 - 校验和传递
 
@@ -6689,36 +6689,36 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - identiteetti numero
 - 标识号
 - idnumber
-- 将linen henkilötunnus
-- 一节
-- national id card
-- national id no.
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
+- 国家身份证
+- 国家 ID 否。
 - 个人 ID
 - 个人标识代码
 - personalidnumber#
 - personbeteckning
 - personnummer
 - social security number
-- so一aliturvatunnus
+- sosiaaliturvatunnus
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 - tunnistenumero
 - tunnus numero
-- tunnusl一
+- tunnusluku
 - tunnusnumero
 - verokortti
 - veronumero
@@ -6731,12 +6731,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 此实体在欧盟护照号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
-九个字母和数字的组合
+9 个字母和数字的组合
 
 ### <a name="pattern"></a>模式
-九个字母和数字的组合：
+9 个字母和数字的组合：
 - 两个字母 (不区分大小写) 
-- 七个数字
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6744,14 +6744,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找 `Regex_finland_passport_number` 与模式匹配的内容。
-- 找到 或 `Keywords_eu_passport_number` `Keyword_finland_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式 `Regex_finland_passport_number` 查找与模式匹配的内容。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keyword_finland_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_finland_passport_number` 与模式匹配的内容。
-- 找到 或 `Keywords_eu_passport_number` `Keyword_finland_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_finland_passport_number` 查找与模式匹配的内容。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keyword_finland_passport_number` 找到关键字。
 
 ```xml
       <!-- Finland Passport Number -->
@@ -6780,45 +6780,45 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
 
 - suomalainen passi
 - passin numero
-- passin numero。#
+- passin numero.#
 - passin numero#
-- passin numero。
+- passin numero.
 - passi#
 - passi number
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="finland-physical-addresses"></a>芬兰物理地址
 
-此未解包的命名实体检测与来自芬兰的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与芬兰的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="france-drivers-license-number"></a>法国驾驶证号码
+## <a name="france-drivers-license-number"></a>法国驾照号
 
-此实体在欧盟驾驶证号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
+此实体在欧盟驱动程序的许可证编号敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
 
@@ -6834,9 +6834,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_french_drivers_license查找与模式匹配的内容。
-- 找到来自Keyword_french_drivers_license的关键字。
+- 找到Keyword_french_drivers_license的关键字。
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6859,49 +6859,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -6909,46 +6909,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -6956,17 +6956,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -6978,11 +6978,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>法国健康保险号码
+## <a name="france-health-insurance-number"></a>法国医疗保险号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -6996,10 +6996,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 21 位数字：
 
 - 10 个数字
-- 可选空格
+- 可选空间
 - 10 个数字
-- 可选空格
-- 一个数字
+- 可选空间
+- a digit
 
 
 ### <a name="checksum"></a>校验和
@@ -7008,9 +7008,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_France_Health_Insurance_Number查找与模式匹配的内容。
-- 找到来自Keyword_France_Health_Insurance_Number关键字。
+- 找到Keyword_France_Health_Insurance_Number的关键字。
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -7025,12 +7025,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- insurance card
+- 保险卡
 - carte vitale
 - carte d'assuré social
 
 
-## <a name="france-national-id-card-cni"></a>法国国家/ (CNI) 
+## <a name="france-national-id-card-cni"></a>法国国家身份证 (CNI) 
 
 ### <a name="format"></a>格式
 
@@ -7046,9 +7046,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 正则表达式 Regex_france_cni 找到与该模式匹配的内容。
-- 找到来自Keywords_france_eu_national_id_card关键字。
+- 找到Keywords_france_eu_national_id_card的关键字。
 
 ```xml
     <!-- France CNI -->
@@ -7067,13 +7067,13 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - card number
 - carte nationale d'identité
 - carte nationale d'idenite no
-- cni#
-- cni
+- Cni#
+- Cni
 - compte bancaire
 - national identification number
-- national identity
+- 国家标识
 - nationalidno#
-- numéro d'assurance mal一e
+- numéro d'assurance maladie
 - numéro de carte vitale
 
 
@@ -7083,14 +7083,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="format"></a>格式
 
-九个数字和字母
+九位数字和字母
 
 ### <a name="pattern"></a>模式
 
-九个数字和字母：
-- 两个数字
+九位数字和字母：
+- 两位数
 - 两个字母 (不区分大小写) 
-- 五个数字
+- 五位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -7098,14 +7098,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_fr_passport` 查找与模式匹配的内容。
-- 找到 或 `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date3` 格式为 DD MM YYYY 的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_fr_passport` 查找与模式匹配的内容。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keywords_france_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date3` 查找格式为 DD MM YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 `Func_fr_passport` 查找与模式匹配的内容。
-- 找到 或 `Keywords_eu_passport_number` `Keywords_france_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数 `Func_fr_passport` 查找与模式匹配的内容。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keywords_france_eu_passport_number` 找到关键字。
 
 
 ```xml
@@ -7136,16 +7136,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_france_eu_passport_number"></a>Keywords_france_eu_passport_number
 
@@ -7166,20 +7166,20 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="france-physical-addresses"></a>法国物理地址
 
-此未解包的命名实体检测与来自法国的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自法国的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="france-social-security-number-insee"></a>法国社会保险号码 (INSEE) 
+## <a name="france-social-security-number-insee"></a>法国社保号码 (INSEE) 
 
 ### <a name="format"></a>格式
 
@@ -7188,7 +7188,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 必须匹配两种模式之一：
-- 13 个数字，后跟一个空格，后跟两个数字<br/>
+- 13 位数字后跟一个空间，后跟两个数字<br/>
 或
 - 15 个连续的数字
 
@@ -7198,13 +7198,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_french_insee` 查找与模式匹配的内容。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_french_insee` 查找与模式匹配的内容。
 - 找到 Keyword_fr_insee 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数Func_french_insee或Func_fr_insee找到与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 函数Func_french_insee或Func_fr_insee查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -7246,8 +7246,8 @@ no. d'identité
 - no d'identite
 - 
 no. d'identite
-- ssn
-- ssn#
+- Ssn
+- Ssn#
 - sécurité sociale
 - securité sociale
 - securite sociale
@@ -7267,7 +7267,7 @@ no. d'identite
 
 13 位数字
 
-- 一个数字，必须为 0、1、2 或 3
+- 一个必须为 0、1、2 或 3 的数字
 - 一位数字
 - 一个空格（可选） 
 - 两位数字
@@ -7285,12 +7285,12 @@ no. d'identite
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_france_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_france_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_france_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_france_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_france_eu_tax_file_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_france_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7316,28 +7316,28 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - numéro d'identification fiscale
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
-## <a name="france-value-added-tax-number"></a>法国增值税编号
+## <a name="france-value-added-tax-number"></a>法国增值税号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -7351,14 +7351,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 13 个字符字母数字模式：
 
 - 两个字母 - FR (不区分大小写) 
-- 可选空格或连字符
+- 可选空间或连字符
 - 两个字母或数字
-- 可选空格、点、连字符或逗号
-- 三个数字
-- 可选空格、点、连字符或逗号
-- 三个数字
-- 可选空格、点、连字符或逗号
-- 三个数字
+- 可选空间、点、连字符或逗号
+- 三位数
+- 可选空间、点、连字符或逗号
+- 三位数
+- 可选空间、点、连字符或逗号
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -7366,11 +7366,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_france_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_france_value_added_tax_number关键字。
+- 找到Keywords_france_value_added_tax_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_france_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -7391,40 +7391,40 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - vat number
 - vat no
-- vat#
+- 增值税#
 - 增值税
-- siren identification no numéro d'identification taxe surur ajoutée
-- taxe 为 ajoutée
-- taxe sur laurur ajoutée
+- siren identity no numéro d'identity taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
 - n° tva
 - numéro de tva
 - numéro d'identification siren
 
 
-## <a name="generic-medication-names"></a>通用名
+## <a name="generic-medication-names"></a>泛型药物名称
 
-此未解包的命名实体可检测泛型类的名称，例如 *，用户* 名称。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+这个未拆卸的命名实体检测到非专利药物的名称，如 *对乙酰氨基苯。* 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="germany-drivers-license-number"></a>德国驾驶证号码
+## <a name="germany-drivers-license-number"></a>德国驾照号
 
-此敏感信息类型实体包含在欧盟驾驶证号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
+此敏感信息类型实体包含在欧盟驱动程序的许可证编号敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
 
-11 个数字和字母的组合
+11 位数字和字母的组合
 
 ### <a name="pattern"></a>模式
 
-11 个数字和字母 (不区分) 大小写：
+11 位数字和字母 (不区分大小写) ：
 - 数字或字母
-- 两个数字
-- 六个数字或字母
-- 一个数字
+- 两位数
+- 六位数字或字母
+- a digit
 - 数字或字母
 
 ### <a name="checksum"></a>校验和
@@ -7433,7 +7433,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_german_drivers_license 找到与该模式匹配的内容。
 - 找到 Keyword_german_drivers_license_number 中的一个关键字。
 - 校验和通过。
@@ -7452,8 +7452,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- ausstel一sdatum
-- ausstel一sort
+- ausstellungsdatum
+- ausstellungsort
 - ausstellende behöde
 - ausstellende behorde
 - ausstellende behoerde
@@ -7463,22 +7463,22 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein - 
+- fuhrerschein - 
+- fuehrerschein - 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
 - führerscheinnummerklasse
 - fuhrerscheinnummerklasse
 - fuehrerscheinnummerklasse
-- nr-fhrerschein
+- nr-führerschein
 - nr-fuhrerschein
 - nr-fuehrerschein
-- no-fhrerschein
+- no-führerschein
 - no-fuhrerschein
 - no-fuehrerschein
-- n-fhrerschein
+- n-führerschein
 - n-fuhrerschein
 - n-fuehrerschein
 - permis de conduire
@@ -7489,49 +7489,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -7539,46 +7539,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -7586,17 +7586,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dlno
 
 
@@ -7604,19 +7604,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-自 2010 年 11 月 1 日：九到十一个字母和数字
+自 2010 年 11 月 1 日起：9 到 11 个字母和数字
 
-从 1987 年 4 月 1 日到 2010 年 10 月 31 日：10 个数字
+1987 年 4 月 1 日至 2010 年 10 月 31 日：10 位数字
 
 ### <a name="pattern"></a>模式
 
 自 2010 年 11 月 1 日起：9 到 11 个字符的字母数字模式
 - 一个 L、M、N、P、R、T、V、W、X、Y (不区分大小写) 
-- 八个数字或字母，以 C、F、G、H、J、K、L、M、N、P、R、T、V、W、X、Y 和 Z (区分大小写) 
+- C、F、G、H、J、K、L、M、N、P、R、T、V、W、X、Y 和 Z 中的 8 位数字或字母 (不区分大小写) 
 - 可选检查数字
 - 可选 d/D
 
-从 1987 年 4 月 1 日到 2010 年 10 月 31 日：
+1987年4月1日至2010年10月31日：
 - 10 个数字
 
 ### <a name="checksum"></a>校验和
@@ -7625,17 +7625,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_german_id_card_with_check` 查找与模式匹配的内容。
-- 找到 的 `Keyword_germany_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_german_id_card_with_check` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_germany_id_card` 。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- `Regex_germany_id_card`正则表达式查找与 2010 年 9 (9 个字符模式匹配的内容，而不检查 2010 或 2010 年颁发的 10 个数字模式颁发的 2010) 。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_germany_id_card` 查找与模式 (9 个字符相匹配的内容，这些字符没有在 2010 年 2010 年) 颁发的 posy 2010 或 10 位数字模式下发出的复选数字。
 - 找到 Keyword_germany_id_card 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数 `Func_german_id_card_with_check` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数 `Func_german_id_card_with_check` 查找与模式匹配的内容。
 - 校验和通过。
 
 
@@ -7662,16 +7662,16 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
-- aus一s
+- ausweis
 - gpid
-- identification
+- 识别
 - identifikation
 - identifizierungsnummer
 - identity card
 - 标识号
 - id-nummer
 - 个人 ID
-- personalaus一s
+- personalausweis
 - persönliche id nummer
 - persönliche identifikationsnummer
 - persönliche-id-nummer
@@ -7685,8 +7685,8 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="pattern"></a>模式
 
-- 一个字母，C、F、G、H、J、K (不区分大小写) 
-- 八个数字或字母，以 C、F、G、H、J、K、L、M、N、P、R、T、V、W、X、Y 和 Z (区分大小写) 
+- C、F、G、H、J、K (个不区分大小写) 
+- C、F、G、H、J、K、L、M、N、P、R、T、V、W、X、Y 和 Z 中的 8 位数字或字母 (不区分大小写) 
 - 可选检查数字
 - 可选 d/D
 
@@ -7696,17 +7696,17 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_german_passport_checksum` 查找与模式匹配的内容。
-- 找到 或 `Keyword_german_passport` `Keywords_eu_passport_number_common` 中的关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_german_passport_checksum` 查找与模式匹配的内容。
+- 从 `Keyword_german_passport` 中找到或 `Keywords_eu_passport_number_common` 找到关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 该函数 `Func_german_passport` 查找与九个字符模式匹配的内容， (无检查数字和可选 d/D) 。
-- 找到 或 `Keyword_german_passport` `Keywords_eu_passport_number_common` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函 `Func_german_passport` 数查找与九个字符模式匹配的内容 (没有复选数字和可选的 d/D) 。
+- 从 `Keyword_german_passport` 中找到或 `Keywords_eu_passport_number_common` 找到关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数 `Func_german_passport_checksum` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数 `Func_german_passport_checksum` 查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -7744,27 +7744,27 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reisep的sse
+- reisepässe
 - passeport no.
 - passeport no
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 
 ## <a name="germany-physical-addresses"></a>德国物理地址
 
-此未解包的命名实体检测与来自德国的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测与来自德国的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -7775,7 +7775,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="format"></a>格式
 
-11 个数字，不带空格和分隔符
+没有空格和分隔符的 11 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -7796,12 +7796,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_germany_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_germany_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_germany_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_germany_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_germany_eu_tax_file_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_germany_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7821,35 +7821,35 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_germany_eu_tax_file_number"></a>Keywords_germany_eu_tax_file_number
 
 - identifikationsnummer
-- steuer id
+- steuer ID
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
-- zinn#
-- zinn
+- 锡#
+- 辛#
+- 辛
 - zinnnummer
 
 
 ## <a name="germany-value-added-tax-number"></a>德国增值税编号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -7860,16 +7860,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-11 字符字母数字模式：
+11 个字符的字母数字模式：
 
 - 字母 D 或 d
 - 字母 E 或 e
-- 可选空格
-- 三个数字
-- 可选空格或逗号
-- 三个数字
-- 可选空格或逗号
-- 三个数字
+- 可选空间
+- 三位数
+- 可选空间或逗号
+- 三位数
+- 可选空间或逗号
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -7877,11 +7877,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_germany_value_added_tax_number关键字。
+- 找到Keywords_germany_value_added_tax_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -7902,24 +7902,24 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - vat number
 - vat no
-- vat#
+- 增值税#
 - vat# mehrwertsteuer
 - mwst
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
 
-## <a name="greece-drivers-license-number"></a>希腊驾驶证号码
+## <a name="greece-drivers-license-number"></a>希腊驾驶执照号码
 
-此实体包含在欧盟驾驶证号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
+此实体包含在欧盟驱动程序的许可证编号敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -7927,9 +7927,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_greece_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_greece_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_greece_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7955,49 +7955,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -8005,46 +8005,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -8052,17 +8052,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -8071,12 +8071,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver s_license_number
 
 - δεια οδήγησης
-- Adeia odigisis
+- 阿迪娅·奥迪格西斯
 - Άδεια οδήγησης
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>希腊国民身份证
+## <a name="greece-national-id-card"></a>希腊国家身份证
 
 ### <a name="format"></a>格式
 
@@ -8100,11 +8100,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_greece_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_greece_id_card 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 正则表达式 Regex_greece_id_card 找到与该模式匹配的内容。
 
 ```xml
@@ -8124,10 +8124,10 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
-- greek id
-- 希腊语国家/区 ID
-- 希腊语个人 ID 卡
-- 希腊语政府 ID
+- 希腊 ID
+- 希腊国家 ID
+- 希腊人个人身份证
+- 希腊警察 ID
 - identity card
 - tautotita
 - ταυτότητα
@@ -8138,7 +8138,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="format"></a>格式
 
-两个字母后跟七个数字，无空格或分隔符
+两个字母后跟七个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
@@ -8150,14 +8150,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19 `Keywords_greece_eu_passport_date` 日) 或找到的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_greece_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_greece_eu_passport_date`查找格式为 DD MMM YY 的日期 (示例 - 8 月 28 日) 或找到关键字`Keywords_greece_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_greece_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_greece_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Greece Passport Number -->
@@ -8187,16 +8187,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
@@ -8207,30 +8207,30 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="greece-physical-addresses"></a>希腊物理地址
 
-此未解包的命名实体检测与来自希腊的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与希腊的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
-## <a name="greece-social-security-number-amka"></a>希腊社会保险号码 (AMKA) 
+## <a name="greece-social-security-number-amka"></a>希腊社会保障号码 (AMKA) 
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-11 个数字，不带空格和分隔符
+没有空格和分隔符的 11 位数字
 
 ### <a name="pattern"></a>模式
 
-- 六个数字作为出生日期 YYMMDD
+- 作为出生日期 YYMMDD 的六位数字
 - 四位数字
-- 一个检查数字
+- 检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -8238,12 +8238,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_greece_eu_ssn` 查找与模式匹配的内容。
-- 找到 的  `Keywords_greece_eu_ssn_or_equivalent` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_greece_eu_ssn` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_greece_eu_ssn_or_equivalent` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_greece_eu_ssn` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_greece_eu_ssn` 查找与模式匹配的内容。
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -8262,9 +8262,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
-- ssn
-- ssn#
-- social security no
+- Ssn
+- Ssn#
+- 社会保障否
 - socialsecurityno#
 - social security number
 - amka
@@ -8274,16 +8274,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="greece-tax-identification-number"></a>希腊税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的九位数字
 
 ### <a name="pattern"></a>模式
 
@@ -8295,10 +8295,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 正则表达式查找  `Regex_greece_eu_tax_file_number` 与模式匹配的内容。
-- 找到 的  `Keywords_greece_eu_tax_file_number` 关键字。
+- 正则表达式  `Regex_greece_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_greece_eu_tax_file_number` 。
 
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -8314,35 +8314,35 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
-- afm#
-- afm
-- a|a αριθμός
-- a
+- Afm#
+- Afm
+- aφμ|aφμ αριθμός
+- aφμ
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- tax registry no
-- tax registry number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- 税务注册表否
+- 税务注册表编号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
 - taxregistryno#
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
 
 
-## <a name="hong-kong-identity-card-hkid-number"></a>Hk Kong identity card (HKID) number
+## <a name="hong-kong-identity-card-hkid-number"></a>香港身份证 (HKID) 编号
 
 ### <a name="format"></a>格式
 
@@ -8352,8 +8352,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 8-9 个字母组合：
 - 1-2 个字母 (不区分大小写) 
-- 六个数字 
-- 最后一个字符（任意数字或字母 A）是校验位，两边可以选择加括号。
+- 六位数字
+- 可选空间
+- 检查字符 (任何数字或字母 A) （可选地括在括号中）
 
 ### <a name="checksum"></a>校验和
 
@@ -8361,12 +8362,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_hong_kong_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_hong_kong_id_card 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 Func_hong_kong_id_card 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -8388,12 +8389,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - hkid
-- hong kong identity card
+- 香港身份证
 - HKIDC
 - id card
 - identity card
-- hk identity card
-- hong kong id
+- hk 标识卡
+- 香港 ID
 - 香港身份證
 - 香港永久性居民身份證
 - 身份證
@@ -8426,11 +8427,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 香港特別行政區非永久性居民身分証
 
 
-## <a name="hungary-drivers-license-number"></a>匈牙利驾驶证号码
+## <a name="hungary-drivers-license-number"></a>匈牙利驾照号
 
 ### <a name="format"></a>格式
 
-两个字母后跟六个数字
+两个字母后跟六位数字
 
 ### <a name="pattern"></a>模式
 
@@ -8445,10 +8446,10 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 正则表达式查找  `Regex_hungary_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` 中的关键字。
+- 正则表达式  `Regex_hungary_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_hungary_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8473,49 +8474,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -8523,46 +8524,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -8570,17 +8571,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -8597,11 +8598,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-两个字母后跟 6 个或 7 个数字，没有空格或分隔符
+两个字母后跟六个或七个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-两个字母后跟六个或七个数字
+两个字母后跟六、七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -8609,14 +8610,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_hungary_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_hungary_eu_passport_date` DD MMM/MMM YY 格式的日期 (示例 - 01 MÁR/MAR 12 `Keywords_eu_passport_date`) 找到的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_hungary_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_hungary_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_hungary_eu_passport_date`查找格式为 DD MMM/MMM YY 的日期 (示例 - 01 MÁR/MAR 12) 或从中找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_hungary_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_hungary_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_hungary_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_hungary_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Hungary Passport Number -->
@@ -8645,16 +8646,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
@@ -8664,15 +8665,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
-## <a name="hungary-personal-identification-number"></a>匈牙利个人标识号
+## <a name="hungary-personal-identification-number"></a>匈牙利个人身份证号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -8685,9 +8686,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 11 个数字：
 
-- 一个数字，对应性别，1 表示男性，2 表示男性。 对于在 1900 以前生活的人或具有双重公民权的人，也可以申请其他号码。
-- 六个数字，分别与 YYMMDD (出生日期) 
-- 对应于序列号的三个数字
+- 一个数字，对应于性别，1 表示男性，2 表示女性。 1900年以前出生的公民或拥有双重公民身份的公民也可以有其他数字。
+- 与 YYMMDD (出生日期相对应的六位数字) 
+- 对应于序列号的三位数字
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -8696,14 +8697,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
-- 函数  `Func_hungary_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_hungary_eu_national_id_card` 关键字。
+- 该函数  `Func_hungary_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_hungary_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 函数  `Func_hungary_eu_national_id_card` 查找与模式匹配的内容。
+- 该函数  `Func_hungary_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8729,26 +8730,26 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - id number
 - identification number
 - sz ig
-- sz. ig.
+- 深圳。 ig.
 - sz.ig.
-- személyazonosító igazolv一y
-- személyi igazolvméy
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-physical-addresses"></a>匈牙利物理地址
 
-此未解包的命名实体检测与匈牙利的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自匈牙利的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="hungary-social-security-number-taj"></a>匈牙利社会保险号码 (TAJ) 
+## <a name="hungary-social-security-number-taj"></a>匈牙利社会保障号码 (泰姬) 
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的九位数字
 
 ### <a name="pattern"></a>模式
 
@@ -8760,14 +8761,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
-- 函数  `Func_hungary_eu_ssn_or_equivalent` 查找与模式匹配的内容。
-- 找到 的  `Keywords_hungary_eu_ssn_or_equivalent` 关键字。
+- 该函数  `Func_hungary_eu_ssn_or_equivalent` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_hungary_eu_ssn_or_equivalent` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 函数  `Func_hungary_eu_ssn_or_equivalent` 查找与模式匹配的内容。
+- 该函数  `Func_hungary_eu_ssn_or_equivalent` 查找与模式匹配的内容。
 
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8786,43 +8787,43 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- 匈牙利社会安全号码
+- 匈牙利社会保障号码
 - social security number
 - socialsecuritynumber#
 - hssn#
 - socialsecuritynno
 - hssn
-- taj
-- taj#
-- ssn
-- ssn#
-- social security no
+- 泰姬陵
+- 泰姬陵#
+- Ssn
+- Ssn#
+- 社会保障否
 - áfa
-- kázósségi adószám
-- által一os forgalmi adó szám
-- hozzáadott一ték adó
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
 - áfa szám
 - magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>匈牙利税收标识号
+## <a name="hungary-tax-identification-number"></a>匈牙利税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-10 个数字，无空格或分隔符
+没有空格或分隔符的 10 位数字
 
 ### <a name="pattern"></a>模式
 
 10 个数字：
 
-- 一个数字必须为"8"
+- 一个必须为“8”的数字
 - 八位数字
 - 一个检查数字
 
@@ -8832,14 +8833,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
-- 函数  `Func_hungary_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_hungary_eu_tax_file_number` 关键字。
+- 该函数  `Func_hungary_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_hungary_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 函数  `Func_hungary_eu_tax_file_number` 查找与模式匹配的内容。
+- 该函数  `Func_hungary_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8865,33 +8866,33 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- 匈牙利语（该文）
+- 匈牙利锡
 - hungatiantin#
-- 税务机构否
+- 税务机关否
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 - vat number
 
 
-## <a name="hungary-value-added-tax-number"></a>匈牙利增值税编号
+## <a name="hungary-value-added-tax-number"></a>匈牙利增值税号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -8905,8 +8906,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 10 个字符字母数字模式：
 
 - 两个字母 - HU 或 hu
-- 可选空格
-- 八个数字
+- 可选空间
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -8914,12 +8915,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
 - 函数Func_hungarian_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_hungarian_value_added_tax_number关键字。
+- 找到Keywords_hungarian_value_added_tax_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
 - 函数Func_hungarian_value_added_tax_number查找与模式匹配的内容。
 
@@ -8940,37 +8941,37 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
-- vat
-- 增值税编号
-- vat#
+- 增值税
+- 增值税号
+- 增值税#
 - vatno#
 - hungarianvatno#
 - tax no.
-- value added tax áfa
-- kázósségi adószám
-- által一os forgalmi adó szám
-- hozzáadott一ték adó
+- 增值税 áfa
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
 - áfa szám
 
 
 ## <a name="iceland-physical-addresses"></a>冰岛物理地址
 
-此未解包的命名实体检测与来自冰岛的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与冰岛物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
-## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>美国社会保险下残障评估中列出的障碍
+## <a name="impairments-listed-in-the-us-disability-evaluation-under-social-security"></a>社会保障下美国残疾评估中列出的障碍
 
-此未解包的命名实体检测美国社会保险下残障评估中列出的障碍名称，如听力 *障碍*。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+这个未拆卸的命名实体检测到美国社会保障下残疾评估中列出的损伤的名称，如 *肌肉萎缩*。 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="india-drivers-license-number"></a>印度驾驶证号码
+## <a name="india-drivers-license-number"></a>印度驾驶执照号码
 
 ### <a name="format"></a>格式
 
@@ -8979,13 +8980,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 15 个字母或数字：
-- 指示状态代码的两个字母
-- 可选空格或短划线
-- 指示城市代码的两个数字
-- 可选空格或短划线
-- 四个数字，表示问题年份
-- 可选空格或短划线
-- 七个数字
+- 两个指示状态代码的字母
+- 可选空间或短划线
+- 指示城市代码的两位数字
+- 可选空间或短划线
+- 指示问题年份的四位数字
+- 可选空间或短划线
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -8993,12 +8994,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找 `Regex_india_driving_license` 与模式匹配的内容。
-- 找到 的 `Keywords_eu_driver's_license_number_common` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式 `Regex_india_driving_license` 查找与模式匹配的内容。
+- 从中找到关键字 `Keywords_eu_driver's_license_number_common` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_india_driving_license` 与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_india_driving_license` 查找与模式匹配的内容。
 
 
 ```xml
@@ -9025,49 +9026,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -9075,46 +9076,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -9122,24 +9123,24 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
 
 
-## <a name="india-gst-number"></a>印度 GST 号码
+## <a name="india-gst-number"></a>印度 GST 编号
 
 ### <a name="format"></a>格式
 
@@ -9148,13 +9149,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 15 个字母或数字：
-- 表示有效状态代码的两个数字
-- 可选空格或短划线
-- 10 个字符，代表 PAN (的)  
+- 表示有效状态代码的两位数字
+- 可选空间或短划线
+- 表示永久帐号 (PAN) 的十个字符 
 - 一个字母或数字
-- 可选空格或短划线
-- 一个字母"z"或"Z"
-- 可选空格或短划线
+- 可选空间或短划线
+- 一个字母“z”或“Z”
+- 可选空间或短划线
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -9163,12 +9164,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_india_gst_number` 查找与模式匹配的内容。
-- 找到 的 `Keyword_india_gst_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_india_gst_number` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_india_gst_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 `Func_india_gst_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数 `Func_india_gst_number` 查找与模式匹配的内容。
 
 
 ```xml
@@ -9188,13 +9189,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_india_gst_number"></a>Keyword_india_gst_number
 
-- gst
+- Gst
 - gstin
 - 商品和服务税
 - 商品和服务税
 
 
-## <a name="india-permanent-account-number-pan"></a>PAN (印度永久) 
+## <a name="india-permanent-account-number-pan"></a>印度永久帐号 (PAN) 
 
 ### <a name="format"></a>格式
 
@@ -9204,10 +9205,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10 个字母或数字：
 - 三个字母 (不区分大小写) 
-- C、P、H、F、A、T、B、L、J、G (不区分大小写) 
-- 一个字母
+- C、P、H、F、A、T、B、L、J、G (中的字母不区分大小写) 
+- 字母
 - 四位数字
-- 字母是字母检查数字
+- 字母，是字母检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9215,11 +9216,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_india_permanent_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_india_permanent_account_number 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 正则表达式 Regex_india_permanent_account_number 找到与该模式匹配的内容。
 
 
@@ -9243,9 +9244,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
 - Permanent Account Number
-- PAN
+- 泛
 
-## <a name="india-unique-identification-aadhaar-number"></a>印度唯一 (Aadhaar) 号
+## <a name="india-unique-identification-aadhaar-number"></a>印度唯一标识 (Aadhaar) 编号
 
 ### <a name="format"></a>格式
 
@@ -9254,12 +9255,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 不为 0 或 1 的数字
+- 不是 0 或 1 的数字
 - 三位数字
 - 一个可选空格或短划线 
 - 四个数字
 - 一个可选空格或短划线 
-- 最后一个数字，即检查数字
+- 最终数字，即检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9267,12 +9268,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_india_aadhaar 找到与该模式匹配的内容。
 - 找到 Keyword_india_aadhar 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
 - 函数 Func_india_aadhaar 找到与该模式匹配的内容。
 - 校验和通过。
@@ -9300,7 +9301,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - uidai
 
 
-## <a name="india-voter-id-card"></a>印度身份证
+## <a name="india-voter-id-card"></a>印度选民身份证
 
 ### <a name="format"></a>格式
 
@@ -9310,7 +9311,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10 个字母或数字：
 - 三个字母
-- 七个数字
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9318,12 +9319,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_india_voter_id_card` 与模式匹配的内容。
-- 找到 的 `Keyword_india_voter_id_card` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_india_voter_id_card` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_india_voter_id_card` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 正则表达式查找 `Regex_india_voter_id_card` 与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 正则表达式 `Regex_india_voter_id_card` 查找与模式匹配的内容。
 
 
 ```xml
@@ -9343,17 +9344,17 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_india_voter_id_card"></a>Keyword_india_voter_id_card
 
-- 一个
+- 选民
 - voterid
-- 将card
+- 选民卡
 - voteridcard
-- 组照片标识卡
-- 一百万
+- 选举照片身份证
+- 史诗
 - ECI
-- commmision
+- 选举组合
 
 
-## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份证号码 (KTP) 号码
+## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份证 (KTP) 号
 
 ### <a name="format"></a>格式
 
@@ -9367,7 +9368,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 两位摄政统治区或城市代码 
 - 两位住宅小区代码 
 - 一个点（可选） 
-- 六个数字，格式为 DDMMYY，表示出生日期
+- 格式为 DDMMYY 的六位数字，即出生日期
 - 一个点（可选） 
 - 四个数字
 
@@ -9377,7 +9378,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
 - 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_indonesia_id_card 中的一个关键字。
@@ -9399,7 +9400,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Kartu Tanda Penduduk
 - Nomor Induk Kependudukan
 
-## <a name="international-banking-account-number-iban"></a>国际银行帐号 (IBAN) 
+## <a name="international-banking-account-number-iban"></a>国际银行帐户编号 (IBAN) 
 
 ### <a name="format"></a>格式
 
@@ -9417,65 +9418,65 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 每个国家/地区的格式稍有不同。IBAN 敏感信息类型涵盖这 60 个国家/地区：
 
 - ad
-- ae
-- al
-- at
+- Ae
+- 铝
+- 在
 - az
-- ba
+- 八
 - be
 - bg
-- bh
+- Bh
 - ch
-- cr
+- 铬
 - cy
-- cz
+- Cz
 - de
-- dk
+- Dk
 - do
-- ee
+- Ee
 - es
 - fi
 - fo
 - fr
-- gb
+- G b
 - ge
-- gi
+- Gi
 - gl
-- gr
+- Gr
 - hr
 - hu
-- ie
-- il
+- 即
+- I l
 - is
 - it
-- kw
+- 千瓦
 - kz
 - lb
-- li
+- 李
 - lt
-- lu
+- 路
 - lv
-- mc
+- Mc
 - md
 - me
 - mk
 - mr
 - mt
-- mu
+- 木
 - nl
 - 否
 - pl
 - pt
 - ro
-- rs
-- sa
+- Rs
+- Sa
 - se
-- si
+- 四
 - sk
-- sm
-- tn
+- Sm
+- Tn
 - tr
-- vg
+- Vg
 
 ### <a name="checksum"></a>校验和
 
@@ -9483,7 +9484,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 
 - 函数 Func_iban 找到与该模式匹配的内容。
 - 校验和通过。
@@ -9498,10 +9499,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
 
-## <a name="international-classification-of-diseases-icd-10-cm"></a>ICD-10-CM (国际) 
+## <a name="international-classification-of-diseases-icd-10-cm"></a>ICD-10-CM (疾病国际分类) 
 
 ### <a name="format"></a>格式
 
@@ -9509,7 +9510,7 @@ Dictionary
 
 ### <a name="pattern"></a>模式
 
-Keyword
+关键字
 
 ### <a name="checksum"></a>校验和
 
@@ -9517,12 +9518,12 @@ Keyword
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 找到来自Dictionary_icd_10_updated关键字。
-- 找到来自Dictionary_icd_10_codes关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 找到Dictionary_icd_10_updated的关键字。
+- 找到Dictionary_icd_10_codes的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 找到更新Dictionary_icd_10_关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 找到Dictionary_icd_10_更新的关键字。
 
 ```xml
       <!-- ICD-10 CM -->
@@ -9539,12 +9540,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-基于国际Dictionary_icd_10_updated分类、第十次修订、修订修改 ([ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604)) 。 此类型仅查找术语，而不是保险代码。
+Dictionary_icd_10_updated关键字词典中的任何术语，都基于 [国际疾病分类、第十修订、临床修改 (ICD-10-CM) ](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找术语，而不查找保险代码。
 
-基于国际Dictionary_icd_10_codes分类、第十次修订、修订修改 ([ICD-10-CM ](https://go.microsoft.com/fwlink/?linkid=852604)) 。 此类型仅查找保险代码，而不是说明。
+Dictionary_icd_10_codes关键字词典中的任何术语，都基于 [国际疾病分类、第十修订、临床修改 (ICD-10-CM) ](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找保险代码，而不是说明。
 
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>ICD-9-CM (国际) 
+## <a name="international-classification-of-diseases-icd-9-cm"></a>ICD-9-CM (疾病的国际分类) 
 
 ### <a name="format"></a>格式
 
@@ -9552,7 +9553,7 @@ Dictionary
 
 ### <a name="pattern"></a>模式
 
-Keyword
+关键字
 
 ### <a name="checksum"></a>校验和
 
@@ -9560,12 +9561,12 @@ Keyword
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 找到来自Dictionary_icd_9_updated关键字。
-- 找到来自Dictionary_icd_9_codes关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 找到Dictionary_icd_9_updated的关键字。
+- 找到Dictionary_icd_9_codes的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 找到来自Dictionary_icd_9_updated关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 找到Dictionary_icd_9_updated的关键字。
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -9581,19 +9582,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="keywords"></a>关键字
 
-基于国际Dictionary_icd_9_updated分类、第九次修订、修订修改和 [ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605) (关键字词典中的) 。 此类型仅查找术语，而不是保险代码。
+Dictionary_icd_9_updated关键字词典中的任何术语，都基于 [国际疾病分类、第九修订、临床修改 (ICD-9-CM) ](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找术语，而不查找保险代码。
 
-来自Dictionary_icd_9_codes关键字词典的任何术语，该词典基于国际医学分类、第九次修订、修改 ([ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605)) 。 此类型仅查找保险代码，而不是说明。
+Dictionary_icd_9_codes关键字词典中的任何术语，均以 [国际疾病分类、第九修订、临床修改 (ICD-9-CM) ](https://go.microsoft.com/fwlink/?linkid=852605)为基础。 此类型仅查找保险代码，而不是说明。
 
 ## <a name="ip-address"></a>IP 地址
 
 ### <a name="format"></a>格式
 
 #### <a name="ipv4"></a>IPv4：
-处理 IPv4 地址 (格式) 和未格式化 (IPv4) 模式的复杂模式
+在 IPv4 地址的格式化 () 和未格式化 (没有句点) 版本的复杂模式
 
 #### <a name="ipv6"></a>IPv6：
-包含带格式的 IPv6 号码的复杂 (包括冒号) 
+表示格式化 IPv6 数字的复杂模式 (包括冒号) 
 
 ### <a name="pattern"></a>模式
 
@@ -9603,15 +9604,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-对于 IPv6，如果在 300 个字符的邻近度内，DLP 策略会高可信度地检测到这种类型的敏感信息：
+对于 IPv6，如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_ipv6_address 找到与该模式匹配的内容。
 - 未找到 Keyword_ipaddress 中的关键字。
 
-对于 IPv4，如果在 300 个字符的邻近度内，DLP 策略会高可信度地检测到这种类型的敏感信息：
+对于 IPv4，如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_ipv4_address 找到与该模式匹配的内容。
 - 找到 Keyword_ipaddress 中的一个关键字。
 
-对于 IPv6，如果在 300 个字符的邻近度内，DLP 策略会高可信度地检测到这种类型的敏感信息：
+对于 IPv6，如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_ipv6_address 找到与该模式匹配的内容。
 - 未找到 Keyword_ipaddress 中的关键字。
 
@@ -9643,7 +9644,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- 此 (的 IP 关键字区分大小写) 
+- 此关键字的 IP (区分大小写) 
 - ip address
 - ip addresses
 - internet protocol
@@ -9654,7 +9655,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-处理 IPv4 地址 (格式) 和未格式化 (IPv4) 模式的复杂模式
+在 IPv4 地址的格式化 () 和未格式化 (没有句点) 版本的复杂模式
 
 ### <a name="pattern"></a>模式
 
@@ -9665,12 +9666,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找 `Regex_ipv4_address` 与模式匹配的内容。
-- 找到 的 `Keyword_ipaddress` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式 `Regex_ipv4_address` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_ipaddress` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_ipv4_address` 与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_ipv4_address` 查找与模式匹配的内容。
 
 
 ```xml
@@ -9701,7 +9702,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-包含带格式的 IPv6 号码的复杂 (包括冒号) 
+表示格式化 IPv6 数字的复杂模式 (包括冒号) 
 
 ### <a name="pattern"></a>模式
 
@@ -9712,12 +9713,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找 `Regex_ipv6_address` 与模式匹配的内容。
-- 找到 的 `Keyword_ipaddress` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式 `Regex_ipv6_address` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_ipaddress` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_ipv6_address` 与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_ipv6_address` 查找与模式匹配的内容。
 
 
 ```xml
@@ -9744,15 +9745,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - IP-כתובת ה
 
 
-## <a name="ireland-drivers-license-number"></a>爱尔兰驾驶证号码
+## <a name="ireland-drivers-license-number"></a>爱尔兰驾驶执照号码
 
 ### <a name="format"></a>格式
 
-六个数字后跟四个字母
+六位数字，后跟四个字母
 
 ### <a name="pattern"></a>模式
 
-六个数字和四个字母：
+六位数字和四个字母：
 
 - 六位数字
 - 四个字母 (不区分大小写) 
@@ -9763,10 +9764,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 
-- 正则表达式查找  `Regex_ireland_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` 中的关键字。
+- 正则表达式  `Regex_ireland_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_ireland_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -9792,49 +9793,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -9842,46 +9843,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -9889,17 +9890,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -9907,18 +9908,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver s_license_number
 
-- ceadúnas tiom在a
-- ceadúnais tiom一a
+- ceadúnas tiomána
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>爱尔兰护照号码
 
 ### <a name="format"></a>格式
 
-两个字母或数字后跟七个数字，无空格或分隔符
+两个字母或数字，后跟七个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-两个字母或数字后跟七个数字：
+两个字母或数字，后跟七位数字：
 
 - 两个数字或字母 (不区分大小写) 
 - 七个数字
@@ -9929,14 +9930,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_ireland_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_ireland_eu_passport_date` DD MMM/MMM YYYYY 格式的日期 (示例 - 01 BEA/MAY 1988 `Keywords_eu_passport_date`) 或找到的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_ireland_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_ireland_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_ireland_eu_passport_date`查找格式为 DD MMM/MMM YYYY 的日期 (示例 - 01 BEA/MAY 1988) 或从中找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_ireland_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_ireland_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_ireland_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_ireland_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Ireland Passport Number -->
@@ -9966,53 +9967,53 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passeport numero
 - uimhreacha pasanna
 - uimhir pas
-- uimhir 阶段
+- uimhir phas
 - uimhreacha pas
 - uimhir cárta
 - uimhir chárta
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
+## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 编号
 
 ### <a name="format"></a>格式
 
-2012 (2012 年 12 月 31) ：
-- 七个数字后跟 1-2 个字母
+旧格式 (到 2012 年 12 月 31 日) ：
+- 7 位数字，后跟 1-2 个字母
 
-2013 年 1 (1 月 1 日及之后的新) ：
-- 七个数字后跟两个字母
+新格式 (2013 年 1 月 1 日及) 后：
+- 七位数字后跟两个字母
 
 ### <a name="pattern"></a>模式
 
-2012 (2012 年 12 月 31) ：
-- 七个数字
+旧格式 (到 2012 年 12 月 31 日) ：
+- 七位数字
 - 一到两个字母 (不区分大小写) 
 
-2013 年 1 (1 月 1 日及之后的新) ：
-- 七个数字
-- 字母 (不区分大小写) 字母检查数字
-- A-I 或"W"范围中的可选字母
+新格式 (2013 年 1 月 1 日及) 后：
+- 七位数字
+- 字母 (不区分大小写) ，这是字母检查数字
+- A-I 或“W”范围内的可选字母
 
 ### <a name="checksum"></a>校验和
 
@@ -10020,12 +10021,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_ireland_pps 找到与该模式匹配的内容。
-- 找到来自Keywords_ireland_eu_national_id_card关键字。
+- 找到Keywords_ireland_eu_national_id_card的关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 Func_ireland_pps 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -10048,18 +10049,18 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 - 客户端标识服务
 - identification number
-- 个人 ID 号
+- 个人 ID 编号
 - 个人公共服务号码
 - 个人服务否
 - phearsanta seirbhíse poiblí
 - pps 否
-- pps number
+- pps 编号
 - pps num
 - pps 服务否
 - ppsn
 - ppsno#
 - ppsno
-- psp
+- Psp
 - 公共服务否
 - publicserviceno#
 - publicserviceno
@@ -10069,30 +10070,30 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - rsin
 - seirbhís aitheantais 客户端
 - uimh
-- uimhir aitheantais ch操作
+- uimhir aitheantais chánach
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="ireland-physical-addresses"></a>爱尔兰物理地址
 
-此未解包的命名实体检测与爱尔兰的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自爱尔兰的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -10107,14 +10108,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="pattern"></a>模式
 
-格式化：
-- 两个数字
+格式 化：
+- 两位数
 - 短划线
-- 三个数字
+- 三位数
 - 短划线
-- 八个数字
+- 八位数字
 
-无格式：
+未格式化：
 - 	13 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -10123,7 +10124,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_israel_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_israel_bank_account_number 中的一个关键字。
 
@@ -10153,11 +10154,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个连续的数字
+九个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -10165,7 +10166,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_israeli_national_id_number 找到与该模式匹配的内容。
 - 找到 Keyword_Israel_National_ID 中的一个关键字。
 - 校验和通过。
@@ -10199,14 +10200,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 -   identity no        
 -   identitynumber#
 -   标识号
--   identitynumber       
+-   israeliidentitynumber       
 -   个人 ID
--   unique id  
+-   unique ID  
 
 
-## <a name="italy-drivers-license-number"></a>意大利驾驶证号码
+## <a name="italy-drivers-license-number"></a>意大利驾照号码
 
-此类型实体包含在欧盟驾驶证号码敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
+此类型实体包含在欧盟驱动程序的许可证编号敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
 
@@ -10216,8 +10217,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10 个字母和数字的组合：
 - 一个字母 (不区分大小写) 
-- 字母"A"或"V" (不区分大小写) 
-- 七个数字
+- 字母“A”或“V” (不区分大小写) 
+- 七位数字
 - 一个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -10226,9 +10227,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找 `Regex_italy_drivers_license_number` 与模式匹配的内容。
-- 找到 或 `Keywords_eu_driver's_license_number` `Keyword_italy_drivers_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式 `Regex_italy_drivers_license_number` 查找与模式匹配的内容。
+- 从 `Keywords_eu_driver's_license_number` 中找到或 `Keyword_italy_drivers_license_number` 找到关键字。
 
 ```xml
     <!-- Italy Driver's license Number -->
@@ -10254,49 +10255,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -10304,46 +10305,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -10351,17 +10352,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -10376,9 +10377,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 
 ## <a name="italy-fiscal-code"></a>意大利财政代码
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -10390,12 +10391,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 字母和数字的 16 个字符组合：
-- 三个字母，对应于系列名称中的前三个辅音
-- 三个字母，分别对应名字中的第一个、第三个和第四个辅音
-- 两个数字，对应于出生日期的最后一个数字
-- 一个字母对应于出生日期月份中的字母-字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 为 A，十月为 R) 
-- 为区分性别，与当月中的一天对应的两个数字，40 个数字将添加到女士的出生日期
-- 四个数字，对应于特定的地区代码，该号码是此人的 (国家/地区代码用于国家/地区) 
+- 与姓氏中前三个辅音对应的三个字母
+- 与名字中的第一个、第三个和第四个辅音对应的三个字母
+- 与出生年份的最后一位数字对应的两位数字
+- 一个字母，对应于出生月份的字母 - 字母按字母顺序使用，但只使用字母 A 到 E，H，L，M，P，R 到 T 的字母 (所以，1 月是 A，10 月是 R) 
+- 两个数字，对应于出生月份的一天，以区分性别，40添加到妇女的出生日
+- 四个数字，对应于特定于该人出生地的市政当局的区号 (全国范围的代码用于外国) 
 - 一个奇偶校验数字
 
 ### <a name="checksum"></a>校验和
@@ -10404,12 +10405,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_italy_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_italy_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_italy_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_italy_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_italy_eu_national_id_card` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_italy_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Italy Fiscal Code -->
@@ -10428,52 +10429,52 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
-- codice 会计
+- codice fiscal
 - codice fiscale
-- codice id personale
+- codice ID personale
 - codice personale
-- 财务代码
+- fiscal code
 - numero certificato personale
-- numero di identific一one fiscale
+- numero di identificazione fiscale
 - numero id personale
 - numero personale
 - 个人证书编号
 - 个人代码
 - 个人 ID 代码
-- 个人 ID 号
+- 个人 ID 编号
 - personalcodeno#
-- tax code
+- 税法
 - tax id
-- tax identification no
-- tax identification number
-- tax identity number
+- 税务标识否
+- 税务标识号
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="italy-passport-number"></a>意大利护照号码
 
 ### <a name="format"></a>格式
 
-两个字母或数字后跟七个数字，无空格或分隔符
+两个字母或数字，后跟七个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-两个字母或数字后跟七个数字：
+两个字母或数字，后跟七位数字：
 
 - 两个数字或字母 (不区分大小写) 
-- 七个数字
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -10481,14 +10482,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_italy_eu_passport_date` 格式为 DD MMM/MMM YYYYY (示例 - 01 GEN/JAN 1988 `Keywords_eu_passport_date`) 或找到的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_italy_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_italy_eu_passport_date`查找格式为 DD MMM/MMM YYYY 的日期 (示例 - 01 GEN/JAN 1988) 或找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_italy_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_italy_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Italy Passport Number -->
@@ -10518,16 +10519,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
@@ -10541,39 +10542,39 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="italy-physical-addresses"></a>意大利物理地址
 
-此未解包的命名实体检测与来自意大利的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自意大利的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="italy-value-added-tax-number"></a>意大利增值税编号
+## <a name="italy-value-added-tax-number"></a>意大利增值税号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-带可选分隔符的 13 个字符字母数字模式
+具有可选分隔符的 13 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-带可选分隔符的 13 个字符字母数字模式：
+具有可选分隔符的 13 个字符字母数字模式：
 
-- I 或 i
+- 我或 i
 - T 或 t
-- 可选空格、点、连字符或逗号
+- 可选空间、点、连字符或逗号
 - 11 个数字
 
 ### <a name="checksum"></a>校验和
@@ -10582,11 +10583,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_italy_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_italy_value_added_tax_number关键字。
+- 找到Keywords_italy_value_added_tax_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_italy_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -10608,25 +10609,25 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - vat number
 - vat no
-- vat#
-- 一
-- 一#
+- 增值税#
+- iva
+- iva#
 
 
 ## <a name="japan-bank-account-number"></a>日本银行帐号
 
 ### <a name="format"></a>格式
 
-七个或八个数字
+七位或八位数字
 
 ### <a name="pattern"></a>模式
 
-bank account number：
-- 七个或八个数字
-- bank account branch code：
-- 四个数字
-- 一个空格或 (划线) 
-- 三个数字
+银行帐号：
+- 七位或八位数字
+- 银行帐户分支代码：
+- 四位数字
+- 空格或短划线 (可选) 
+- 三位数
 
 校验和
 
@@ -10634,14 +10635,14 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_jp_bank_account 找到与该模式匹配的内容。
 - 找到 Keyword_jp_bank_account 中的一个关键字。
 - 下列其中一项为真：
 - 函数 Func_jp_bank_account_branch_code 找到与该模式匹配的内容。
 - 找到 Keyword_jp_bank_branch_code 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_jp_bank_account 找到与该模式匹配的内容。
 - 找到 Keyword_jp_bank_account 中的一个关键字。
 
@@ -10716,7 +10717,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>日本驾驶证号码
+## <a name="japan-drivers-license-number"></a>日本驾照号
 
 ### <a name="format"></a>格式
 
@@ -10732,7 +10733,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_jp_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_jp_drivers_license_number 中的一个关键字。
 
@@ -10754,10 +10755,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverslicense
 - driver'slicense
 - driverslicenses
-- driver'slicenses
+- 驱动程序的切片
 - driverlicenses
-- dl#
-- dls#
+- Dl#
+- Dls#
 - lic#
 - lics#
 - 運転免許証
@@ -10771,27 +10772,27 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 運転免許証ナンバー
 - 運転免許ナンバー
 - 免許証ナンバー
-- 転証no
-- 転転no
-- 証no
-- 免
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
 - 運転経歴証明書番号
 - 運転経歴証明書
-- 転証No。
-- 転転no。
-- 証No。
-- 免。。
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
 - 運転免許証#
 - 運転免許#
 - 免許証#
 - 免許#
 
 
-## <a name="japan-my-number---corporate"></a>日本我的号码 - 公司
+## <a name="japan-my-number---corporate"></a>日本我的号码 - 企业
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -10804,7 +10805,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 13 位数字：
 
-- 一个数字，从 1 到 9
+- 一位数字，从 1 位到 9 位
 - 12 个数字
 
 ### <a name="checksum"></a>校验和
@@ -10813,11 +10814,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_japanese_my_number_corporate查找与模式匹配的内容。
-- 找到来自Keywords_japanese_my_number_corporate关键字。
+- 找到Keywords_japanese_my_number_corporate的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_japanese_my_number_corporate查找与模式匹配的内容。
 
 ```xml
@@ -10851,9 +10852,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="japan-my-number---personal"></a>日本我的号码 - 个人
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -10866,11 +10867,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 12 位数字：
 
-- 四个数字
-- 可选空格、点或连字符
-- 四个数字
-- 可选空格、点或连字符
-- 四个数字
+- 四位数字
+- 可选空间、点或连字符
+- 四位数字
+- 可选空间、点或连字符
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -10878,11 +10879,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_japanese_my_number_personal查找与模式匹配的内容。
-- 找到来自Keywords_japanese_my_number_personal关键字。
+- 找到Keywords_japanese_my_number_personal的关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数Func_japanese_my_number_personal查找与模式匹配的内容。
 
 ```xml
@@ -10902,7 +10903,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
-- my number
+- 我的号码
 - マイナンバー
 - 個人番号
 - 共通番号
@@ -10918,11 +10919,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="format"></a>格式
 
-两个字母后跟七个数字
+两个字母后跟七位数字
 
 ### <a name="pattern"></a>模式
 
-两个字母 (不区分大小写) 后跟七个数字
+两个字母 (不区分大小写) 后跟七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -10930,7 +10931,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_jp_passport 找到与该模式匹配的内容。
 - 找到 Keyword_jp_passport 中的一个关键字。
 
@@ -10948,7 +10949,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- Passport
+- 护照
 - Passport Number
 - Passport No.
 - Passport #
@@ -10957,14 +10958,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - パスポートナンバー
 - パスポート＃
 - パスポート#
-- パスポパスポパスポ。
+- パスポートNo.
 - 旅券番号
 - 旅券番号＃
 - 旅券番号♯
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>日本居民身份证号
+## <a name="japan-residence-card-number"></a>日本居住卡号
 
 ### <a name="format"></a>格式
 
@@ -10974,7 +10975,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 12 个字母和数字：
 - 两个字母 (不区分大小写) 
-- 八个数字
+- 八位数字
 - 两个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -10983,9 +10984,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_jp_residence_card_number查找与模式匹配的内容。
-- 找到来自Keyword_jp_residence_card_number关键字。
+- 找到Keyword_jp_residence_card_number的关键字。
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -11001,14 +11002,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- 居住地卡号
+- 居住卡号
 - 居住卡否
 - 居住卡#
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>日本居民注册号码
+## <a name="japan-resident-registration-number"></a>日本居民登记号
 
 ### <a name="format"></a>格式
 
@@ -11024,7 +11025,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_jp_resident_registration_number 找到与该模式匹配的内容。
 - 找到 Keyword_jp_resident_registration_number 中的一个关键字。
 
@@ -11063,9 +11064,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 7-12 位数字：
-- 四个数字
+- 四位数字
 - 连字符 (可选) 
-- 六个数字 OR
+- 6 位 OR
 - 7-12 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -11074,11 +11075,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_jp_sin 找到与该模式匹配的内容。
 - 找到 Keyword_jp_sin 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_jp_sin_pre_1997 找到与该模式匹配的内容。
 - 找到 Keyword_jp_sin 中的一个关键字。
 
@@ -11110,7 +11111,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- 険No。
+- 社会保険No.
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -11122,25 +11123,25 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="lab-test-terms"></a>实验室测试术语
 
-此未解包的命名实体可检测与实验室测试相关的术语，例如 *，为进行实验室测试的项*。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+此未拆卸的命名实体检测与实验室测试相关的术语，如 *胰岛素 C-peptide*。 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="latvia-drivers-license-number"></a>拉脱维亚驾驶证号码
+## <a name="latvia-drivers-license-number"></a>拉脱维亚驾驶执照号码
 
 ### <a name="format"></a>格式
 
-三个字母后跟六个数字
+三个字母后跟六位数字
 
 ### <a name="pattern"></a>模式
 
 三个字母和六个数字：
 
 - 三个字母 (不区分大小写) 
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11148,9 +11149,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_latvia_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_latvia_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_latvia_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -11176,49 +11177,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -11226,46 +11227,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -11273,17 +11274,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -11291,23 +11292,23 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver s_license_number
 
-- autovad的t个ja apliec以ba
-- autovad的t个ja apliec以bas
-- vad的tja apliec以ba
+- autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 
 ## <a name="latvia-passport-number"></a>拉脱维亚护照号码
 
 ### <a name="format"></a>格式
 
-两个字母或数字后跟七个数字，无空格或分隔符
+两个字母或数字，后跟七个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-两个字母或数字后跟七个数字：
+两个字母或数字，后跟七位数字：
 
 - 两个数字或字母 (不区分大小写) 
-- 七个数字
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11315,14 +11316,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_latvia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_latvia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_latvia_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_latvia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_latvia_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_latvia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_latvia_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Latvia Passport Number -->
@@ -11352,16 +11353,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
@@ -11374,7 +11375,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
@@ -11382,24 +11383,24 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-11 个数字和一个可选连字符
+11 位数字和可选连字符
 
 ### <a name="pattern"></a>模式
 
 旧格式
 
-11 个数字和连字符：
+11 位数字和连字符：
 
-- 六个数字，对应于 DDMMYY (出生日期) 
+- 与 DDMMYY (的出生日期相对应的六位数字) 
 - 连字符
-- 一个数字，对应于 19 世纪 ("0"、20 世纪对应"1"和"21 世纪") 
-- 四个数字，随机生成
+- 一个数字，与19世纪的出生 (“0”、20世纪的“1”和21世纪的“2”相对应) 
+- 四位数字，随机生成
 
 新格式
 
 11 个数字
 
-- 两个数字"32"
+- 两位数“32”
 - 九个数字
 
 ### <a name="checksum"></a>校验和
@@ -11408,12 +11409,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 找到与模式匹配的内容。
-- 找到 的  `Keywords_latvia_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_latvia_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 找到与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 查找与模式匹配的内容。
 
 ```xml
       <!-- Latvia Personal Code -->
@@ -11450,69 +11451,69 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - 管理编号
 - alvas nē
-- birth number
-- citizen number
-- 用户编号
-- 电子统计数字
-- 电子数字
-- 财务代码
-- 医疗保健用户数
-- id#
+- 出生编号
+- 公民编号
+- 民间编号
+- 电子人口普查号码
+- 电子号码
+- fiscal code
+- 医疗保健用户号
+- Id#
 - id-code
 - identification number
-- identifik以cijas numurs
+- identifikācijas numurs
 - id-number
-- individual number
+- 单个数字
 - latvija alva
-- nacionlais id
+- nacionālais id
 - national id
-- national identifying number
-- national identity number
+- 国家标识号
+- 国家标识号
 - national insurance number
-- national register number
+- 国家寄存器编号
 - nodokļa numurs
-- nodokļu ID
-- nodokļu identifik以cija numurs
+- nodokļu id
+- nodokļu identifikācija numurs
 - 个人证书编号
 - 个人代码
 - 个人 ID 代码
-- 个人 ID 号
-- 个人标识代码
+- 个人 ID 编号
+- 个人标识码
 - 个人标识符
 - 个人标识号
-- 个人编号
+- 个人号码
 - 个人数字代码
 - personalcodeno#
 - personas kods
-- 总体标识代码
+- 填充标识代码
 - 公共服务号码
 - registration number
 - 收入编号
 - social insurance number
 - social security number
-- 省税代码
+- 州税法
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
-- 用户编号
+- 锡#
+- 选民号码
 
 
 ## <a name="latvia-physical-addresses"></a>拉脱维亚物理地址
 
-此未解包的命名实体检测与拉脱维亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与拉脱维亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -11521,7 +11522,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="liechtenstein-physical-addresses"></a>列支敦士登物理地址
 
-此未解包的命名实体检测与列支敦士登的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。 
+此未拆卸的命名实体检测与列支敦士登的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。 
 
 ### <a name="confidence-level"></a>置信度
 
@@ -11530,22 +11531,22 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>与医疗状况相关的生活方式
 
-此未解包的命名实体会检测与可能导致医学状况（如医生）的生活方式相关的 *术语*。 它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+这个未拆卸的命名实体检测到与可能导致医疗状况（如 *吸烟*）的生活方式相关的术语。 它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="lithuania-drivers-license-number"></a>立陶宛驾驶证号码
+## <a name="lithuania-drivers-license-number"></a>立陶宛驾驶执照号码
 
 ### <a name="format"></a>格式
 
-八个数字（不含空格和分隔符）
+没有空格和分隔符的八位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11553,9 +11554,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_lithuania_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_lithuania_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_lithuania_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -11581,49 +11582,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -11631,46 +11632,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -11678,17 +11679,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -11696,31 +11697,31 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver s_license_number
 
-- vair一pažymėjimas
-- vair一pažymėjimo jo numeris
-- vair一pažymėjimo jo pažymėjimo num进行计算
+- vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
 
 ## <a name="lithuania-personal-code"></a>立陶宛个人代码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-11 个数字，不带空格和分隔符
+没有空格和分隔符的 11 位数字
 
 ### <a name="pattern"></a>模式
 
-11 个数字，不带空格和分隔符：
+没有空格和分隔符的 11 位数字：
 
-- 一个数字 (1-6) 对应于性别和出生日期的世纪
-- 六个数字，对应于出生日期 (YYMMDD) 
-- 三个数字，对应于出生日期的序列号
+- 一位数字 (1-6) ，对应于人的性别和出生世纪
+- 与 YYMMDD (的出生日期相对应的六位数字) 
+- 与出生日期的序列号对应的三位数字
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -11729,12 +11730,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_lithuania_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_lithuania_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_lithuania_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_lithuania_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_lithuania_eu_tax_file_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_lithuania_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Lithuania Personal Code -->
@@ -11759,33 +11760,33 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- citizen service number
-- mokesčių ID
-- mokesčių identif一vimas numeris
-- mokesčių identif一vimo numeris
+- 公民服务号码
+- mokesčių id
+- mokesčių identifikavimas numeris
+- mokesčių identifikavimo numeris
 - mokesčių numeris
 - national identification number
 - 个人代码
 - 个人数字代码
-- pilieio paslaugos numeris
+- piliečio paslaugos numeris
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
-- un则lus identif一vimo kodas
-- un则lus identif一vimo numeris
+- 锡#
+- unikalus identifikavimo kodas
+- unikalus identifikavimo numeris
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
@@ -11793,7 +11794,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="lithuania-physical-addresses"></a>立陶宛物理地址
 
-此未解包的命名实体检测与立陶宛的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与立陶宛的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -11804,11 +11805,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-八个数字或字母，无空格或分隔符
+没有空格或分隔符的八位数字或字母
 
 ### <a name="pattern"></a>模式
 
-八个数字或字母 (不区分大小写) 
+八位数字或字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -11816,14 +11817,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_lithuania_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date3` 格式为 DD MM YYYY 的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_lithuania_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_lithuania_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date3` 查找格式为 DD MM YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_lithuania_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_lithuania_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_lithuania_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_lithuania_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Lithuania Passport Number -->
@@ -11853,38 +11854,38 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
 - paso numeris
-- paso num一i
+- paso numeriai
 - paso nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
-## <a name="luxemburg-drivers-license-number"></a>百度达驾驶证号码
+## <a name="luxemburg-drivers-license-number"></a>卢森堡驾照号
 
 ### <a name="format"></a>格式
 
-6 个数字，不带空格和分隔符
+没有空格和分隔符的六位数字
 
 ### <a name="pattern"></a>模式
 
-六个数字
+六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11892,9 +11893,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_luxemburg_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_luxemburg_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_luxemburg_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11920,49 +11921,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -11970,46 +11971,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -12017,17 +12018,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -12036,20 +12037,20 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver s_license_number
 
 - fahrerlaubnis
-- Führerschhrin
+- Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a> (的自然人的) 
+## <a name="luxemburg-national-identification-number-natural-persons"></a>卢森堡国家身份证号码 (自然人) 
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-13 个数字，无空格或分隔符
+没有空格或分隔符的 13 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -12064,12 +12065,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_luxemburg_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_luxemburg_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_luxemburg_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_luxemburg_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_luxemburg_eu_tax_file_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_luxemburg_eu_tax_file_number` 查找与模式匹配的内容。
 
 
 ```xml
@@ -12093,29 +12094,29 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
-- eindeutige id
+- eindeutige ID
 - eindeutige id-nummer
 - eindeutigeid#
 - id personnelle
 - idpersonnelle#
 - idpersonnelle
 - 单个代码
-- individual id
-- 个人标识
-- 个人标识
-- numéro d'identification personnel
+- 单个 ID
+- 单个标识
+- 单个标识
+- numéro d'identification 人员
 - 个人 ID
 - 个人标识
 - 个人标识
 - personalidno#
 - personalidnumber#
 - persönliche identifikationsnummer
-- unique id
-- 唯一标识
+- unique ID
+- unique identity
 - uniqueidkey#
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>阿比塞卡 (非自然人的身份证号) 
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>卢森堡国家身份证号码 (非自然人) 
 
 ### <a name="format"></a>格式
 
@@ -12125,13 +12126,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 11 个数字
 
-- 两个数字
-- 可选空格
-- 三个数字
-- 可选空格
-- 三个数字
-- 可选空格
-- 两个数字
+- 两位数
+- 可选空间
+- 三位数
+- 可选空间
+- 三位数
+- 可选空间
+- 两位数
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -12140,12 +12141,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_luxemburg_eu_tax_file_number_non_natural` 查找与模式匹配的内容。
-- 找到 的  `Keywords_luxemburg_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_luxemburg_eu_tax_file_number_non_natural` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_luxemburg_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_luxemburg_eu_tax_file_number_non_natural` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_luxemburg_eu_tax_file_number_non_natural` 查找与模式匹配的内容。
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -12171,51 +12172,51 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - carte de sécurité sociale
 - étain non
 - étain#
-- identifiant d'imp与t
-- luxembourg tax identif一tiounsnummer
+- identifiant d'impôt
+- 卢森堡税务 identifikatiounsnummer
 - numéro d'étain
 - numéro d'identification fiscal luxembourgeois
 - numéro d'identification fiscale
 - social security
 - sozialunterstützung
 - sozialversécherung
-- sozialversicherungsaus以
-- steier id
+- sozialversicherungsausweis
+- steier ID
 - steier identifikatiounsnummer
 - steier nummer
-- steuer id
+- steuer ID
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
-- zinn#
-- zinn
+- 锡#
+- 辛#
+- 辛
 - zinnzahl
 
 
-## <a name="luxemburg-passport-number"></a>百里达护照号码
+## <a name="luxemburg-passport-number"></a>卢森堡护照号码
 
 ### <a name="format"></a>格式
 
-八个数字或字母，无空格或分隔符
+没有空格或分隔符的八位数字或字母
 
 ### <a name="pattern"></a>模式
 
-八个数字或字母 (不区分大小写) 
+八位数字或字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -12223,14 +12224,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_luxemburg_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date3` 格式为 DD MM YYYY 的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_luxemburg_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_luxemburg_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date3` 查找格式为 DD MM YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_luxemburg_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_luxemburg_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_luxemburg_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_luxemburg_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -12260,23 +12261,23 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
-- aus一snummer
-- 卢森堡传递
-- 卢森堡通道
+- ausweisnummer
+- 卢森堡通行证
+- 卢森堡传递端口
 - 卢森堡护照
-- 无通道
+- no de passeport
 - no-reisepass
 - nr-reisepass
 - numéro de passeport
@@ -12284,26 +12285,26 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - pass nr
 - passnummer
 - passeport nombre
-- reisep的sse
+- reisepässe
 - reisepass-nr
 - reisepassnummer
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
-## <a name="luxemburg-physical-addresses"></a>百里达物理地址
+## <a name="luxemburg-physical-addresses"></a>卢森堡物理地址
 
-此未解包的命名实体可检测与来自 Windowsemtu 的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自卢森堡的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="malaysia-identification-card-number"></a>马来西亚身份证号
+## <a name="malaysia-identification-card-number"></a>马来西亚身份证号码
 
 ### <a name="format"></a>格式
 
@@ -12312,12 +12313,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 六个数字，格式为 YYMMDD，表示出生日期
+- 格式为 YYMMDD 的六位数字，即出生日期
 - 划线 (可选) 
-- 双字母的出生日期位置代码
+- 双字母出生地代码
 - 划线 (可选) 
 - 三个随机数字
-- 一位数性别代码
+- 一位数的性别代码
 
 ### <a name="checksum"></a>校验和
 
@@ -12325,7 +12326,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_malaysia_id_card_number 找到与该模式匹配的内容。
 - 找到 Keyword_malaysia_id_card_number 中的一个关键字。
 
@@ -12346,45 +12347,45 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - 数字应用程序卡
 - i/c
-- i/c 否
-- ic
+- i/c no
+- Ic
 - ic no
 - id card
-- identification Card
+- 标识卡
 - identity card
 - k/p
 - k/p no
 - kad akuan diri
 - kad aplikasi digital
-- kadenalan（马来西亚）
-- kp
+- 卡德彭纳兰马来西亚
+- Kp
 - kp no
 - mykad
 - mykas
 - mykid
 - mypr
 - mytentera
-- malaysia identity card
-- 用户标识卡
+- 马来西亚身份证
+- 马来西亚身份证
 - nric
-- 个人标识卡
+- 个人身份证
 
 
-## <a name="malta-drivers-license-number"></a>马耳他驾驶证号码
+## <a name="malta-drivers-license-number"></a>马耳他驾驶执照号码
 
 ### <a name="format"></a>格式
 
-指定模式中两个字符和六个数字的组合
+指定模式中的两个字符和六个数字的组合
 
 ### <a name="pattern"></a>模式
 
 两个字符和六个数字的组合：
 
-- 两个字符 (数字或字母，不区分大小写) 
-- 可选 (空格) 
-- 三个数字
-- 可选 (空格) 
-- 三个数字
+- 两个字符 (数字或字母，而不是区分大小写的) 
+- 空格 (可选) 
+- 三位数
+- 空格 (可选) 
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -12392,9 +12393,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_malta_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_malta_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_malta_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Malta Driver's License Number -->
@@ -12420,49 +12421,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -12470,46 +12471,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -12517,17 +12518,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -12541,23 +12542,23 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="malta-identity-card-number"></a>马耳他身份证号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-七个数字后跟一个字母
+七位数字后跟一个字母
 
 ### <a name="pattern"></a>模式
 
-七个数字后跟一个字母：
+7 位数字后跟一个字母：
 
-- 七个数字
-- "M、G、A、P、L、H、B、Z"中的一个字母 (不区分大小写) 
+- 七位数字
+- “M、G、A、P、L、H、B、Z”中的一个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -12565,12 +12566,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_malta_eu_national_id_card` 与模式匹配的内容。
-- 找到 的  `Keywords_malta_eu_national_id_card` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_malta_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_malta_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 正则表达式查找  `Regex_malta_eu_national_id_card` 与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 正则表达式  `Regex_malta_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Malta Identity Card Number -->
@@ -12589,10 +12590,10 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- citizen service number
+- 公民服务号码
 - id tat-taxxa
-- identifjet numru tal-jett
-- kodiċi数字个人
+- identifika numru tal-biljett
+- kodiċi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
@@ -12609,11 +12610,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="format"></a>格式
 
-七个数字，不带空格或分隔符
+没有空格或分隔符的七位数字
 
 ### <a name="pattern"></a>模式
 
-七个数字
+七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12621,14 +12622,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_malta_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` 中的关键字。
-- 找到的关键字来自`Keywords_eu_passport_date`
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_malta_eu_passport_number` 找到关键字。
+- 从中找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_malta_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_malta_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_malta_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Malta Passport Number -->
@@ -12655,16 +12656,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
@@ -12674,13 +12675,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="malta-physical-addresses"></a>马耳他物理地址
 
-此未解包的命名实体检测与来自马耳他的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与马耳他物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -12691,22 +12692,22 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-对于马耳他语：
-- 指定模式中的七个数字和一个字母
+对于马耳他国民：
+- 指定模式中的七位数字和一个字母
 
-非马耳他语公民和马耳他语实体：
-- 九个数字
+非马耳他国民和马耳他实体：
+- 九位数字
 
 ### <a name="pattern"></a>模式
 
-马耳他语：七个数字和一个字母
+马耳他国民：七位数字和一个字母
 
-- 七个数字
+- 七位数字
 - 一个字母 (不区分大小写) 
 
-非马耳他公民和马耳他实体：9 个数字
+非马耳他国民和马耳他实体：9 位数字
 
-- 九个数字
+- 九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12714,12 +12715,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式或`Regex_malta_eu_tax_file_number``Regex_malta_eu_tax_file_number_non_maltese_national`查找与模式匹配的内容。
-- 找到 的  `Keywords_malta_eu_tax_file_number` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_malta_eu_tax_file_number`  或 `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_malta_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 正则表达式或`Regex_malta_eu_tax_file_number``Regex_malta_eu_tax_file_number_non_maltese_national`查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 正则表达式  `Regex_malta_eu_tax_file_number` 或 `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与模式匹配的内容。
 
 ```xml
       <!-- Malta Tax ID Number -->
@@ -12745,10 +12746,10 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- citizen service number
+- 公民服务号码
 - id tat-taxxa
-- identifjet numru tal-jett
-- kodiċi数字个人
+- identifika numru tal-biljett
+- kodiċi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
@@ -12757,34 +12758,34 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - numru tat-taxxa
 - 个人数字代码
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
 
-## <a name="medical-specialities"></a>医疗特殊性
+## <a name="medical-specialities"></a>医疗专科
 
-此未解包的命名实体可检测与医疗特殊性相关的术语，例如 *"真眼"*。  它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+此未拆卸的命名实体检测与医学专科（如 *皮肤科*）相关的术语。  它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
-## <a name="medicare-beneficiary-identifier-mbi-card"></a>一个 MBI (的) 标识符
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>医疗保险受益人标识符 (MBI) 卡
 
 ### <a name="format"></a>格式
 
@@ -12792,17 +12793,17 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="pattern"></a>模式
 
-- 1 到 9 之间的一个数字
+- 1 到 9 之间的一位数字
 - 一个字母，不包括 S、L、O、I、B、Z
-- 一个数字或字母，不包括 S、L、O、I、B、Z
-- 一个数字
+- 一位数字或字母（不包括 S、L、O、I、B、Z）
+- 一位数字
 - 可选连字符
 - 一个字母，不包括 S、L、O、I、B、Z
-- 一个数字或字母，不包括 S、L、O、I、B、Z
-- 一个数字
+- 一位数字或字母（不包括 S、L、O、I、B、Z）
+- 一位数字
 - 可选连字符
 - 两个字母，不包括 S、L、O、I、B、Z
-- 两个数字
+- 两位数
 
 ### <a name="checksum"></a>校验和
 
@@ -12810,12 +12811,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_mbi_card` 与模式匹配的内容。
-- 找到 的  `Keyword_mbi_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_mbi_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keyword_mbi_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_mbi_card` 与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_mbi_card` 查找与模式匹配的内容。
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
@@ -12836,14 +12837,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - mbi
 - mbi#
-- 一名收入#
-- 一个优势标识符
-- 一名受益者否
-- 一名收入者编号
-- 一名收入#
+- 医疗保险受益人#
+- 医疗保险受益人标识符
+- 医疗保险受益人 no
+- 医疗保险受益人号码
+- 医疗保险受益人#
 
 
-## <a name="mexico-unique-population-registry-code-curp"></a>墨西哥唯一总体注册表代码 (CURP) 
+## <a name="mexico-unique-population-registry-code-curp"></a>墨西哥唯一人口注册表代码 (CURP) 
 
 ### <a name="format"></a>格式
 
@@ -12852,12 +12853,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 四个字母 (不区分大小写) 
-- 六个数字，表示有效日期
+- 指示有效日期的六位数字
 - 字母 - H/h 或 M/m
-- 指示有效"墨西哥"状态代码的两个字母
+- 两个字母，指示有效的墨西哥州代码
 - 三个字母
 - 一个字母或数字
-- 一个数字
+- 一位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12865,12 +12866,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_mexico_population_registry_code` 查找与模式匹配的内容。
-- 找到 的  `Keyword_mexico_population_registry_code` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_mexico_population_registry_code` 查找与模式匹配的内容。
+- 从中找到关键字  `Keyword_mexico_population_registry_code` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_mexico_population_registry_code` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_mexico_population_registry_code` 查找与模式匹配的内容。
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -12891,8 +12892,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - Clave Única de Registro de Población
 - Clave Unica de Registro de Poblacion
-- 唯一填充注册表代码 
-- 唯一总体代码
+- 唯一的人口注册表代码 
+- 唯一的填充代码
 - CURP
 - 个人 ID
 - 唯一 ID
@@ -12902,27 +12903,27 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - uniqueidnumber
 - clave única
 - clave unica
-- clave 个人 Identidad
+- clave personal Identidad
 - personal Identidad Clave
 - ClaveÚnica
 - claveunica
 - clavepersonalIdentidad
 
 
-## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
+## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务 (BSN) 编号
 
 ### <a name="format"></a>格式
 
-包含可选空格的八个或九个数字
+包含可选空格的八位或九位数字
 
 ### <a name="pattern"></a>模式
 
-八个九个数字：
-- 三个数字
-- 可选 (空格) 
-- 三个数字
-- 可选 (空格) 
-- 2-3 个数字
+8-9 位数字：
+- 三位数
+- 空格 (可选) 
+- 三位数
+- 空格 (可选) 
+- 2-3 位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12930,7 +12931,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_netherlands_bsn 找到与该模式匹配的内容。
 - 找到 Keyword_netherlands_bsn 中的一个关键字。
 - 校验和通过。
@@ -12951,32 +12952,32 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - bsn#
 - bsn
-- servicenummer
-- citizen service number
-- person number
-- 个人编号
+- burgerservicenummer
+- 公民服务号码
+- 人员编号
+- 个人号码
 - 个人数字代码
-- 与人员相关的号码
+- 人员相关号码
 - persoonlijk nummer
 - persoonlijke numerieke 代码
-- persoonsgeoonden
+- persoonsgebonden
 - persoonsnummer
 - sociaal-fiscaal nummer
 - social-fiscal number
 - sofi
 - sofinummer
 - uniek identificatienummer
-- uniek identit一snummer
+- uniek identiteitsnummer
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
 
 
-## <a name="netherlands-drivers-license-number"></a>荷兰驾驶证号码
+## <a name="netherlands-drivers-license-number"></a>荷兰驾照编号
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 10 个数字
+没有空格和分隔符的 10 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -12988,9 +12989,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_netherlands_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_netherlands_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_netherlands_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -13016,49 +13017,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -13066,46 +13067,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -13113,17 +13114,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -13143,7 +13144,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个字母或数字，无空格或分隔符
+没有空格或分隔符的九个字母或数字
 
 ### <a name="pattern"></a>模式
 
@@ -13155,14 +13156,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYYY 格式的日期 (示例 - 26 MAA/MAR 2012) 
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_netherlands_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_netherlands_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_netherlands_eu_passport_date`查找格式为 DD MMM/MMM YYYY (示例 - 26 MAA/MAR 2012) 
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_netherlands_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_netherlands_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_netherlands_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Netherlands Passport Number -->
@@ -13189,16 +13190,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
@@ -13210,7 +13211,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="netherlands-physical-addresses"></a>荷兰物理地址
 
-此未解包的命名实体检测与荷兰物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测与来自荷兰的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -13219,20 +13220,20 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="netherlands-tax-identification-number"></a>荷兰税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格或分隔符
+没有空格或分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13240,12 +13241,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_netherlands_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_netherlands_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_netherlands_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_netherlands_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数  `Func_netherlands_eu_tax_file_number` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数  `Func_netherlands_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -13265,9 +13266,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- hollânske 税务识别
+- hollénske 税务标识
 - hulandes impuesto id number
-- hulandes impuesto identification
+- hulandes impuesto 标识
 - identificatienummer belasting
 - identificatienummer van belasting
 - impuesto 标识号
@@ -13277,35 +13278,35 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - nederlands belasting identificatienummer
 - nederlands belastingnummer
 - nederlandse belasting identificatie
-- netherlands tax identifications
-- 荷兰的税务标识
-- netherlands tin
-- 荷兰的 tin
+- 荷兰税务标识
+- netherland 的税务标识
+- 荷兰锡
+- netherland 的锡
 - tax id
-- tax identification no
-- tax identification number
-- tax identification tal
+- 税务标识否
+- 税务标识号
+- 税务标识 tal
 - tax no#
 - tax no
-- tax number
-- tax registration number
+- 税号
+- 税务注册号
 - tax tal
-- 已#
-- 一些#
-- 一些#
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
-## <a name="netherlands-value-added-tax-number"></a>荷兰增值税编号
+## <a name="netherlands-value-added-tax-number"></a>荷兰增值税号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -13316,15 +13317,15 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="pattern"></a>模式
 
-14 字符字母数字模式：
+14 个字符的字母数字模式：
 
 - N 或 n
 - L 或 l
-- 可选空格、点或连字符
-- 九个数字
-- 可选空格、点或连字符
+- 可选空间、点或连字符
+- 九位数字
+- 可选空间、点或连字符
 - B 或 b
-- 两个数字
+- 两位数
 
 ### <a name="checksum"></a>校验和
 
@@ -13332,11 +13333,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_netherlands_value_added_tax_number关键字。
+- 找到Keywords_netherlands_value_added_tax_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -13358,37 +13359,37 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - vat number
 - vat no
-- vat#
+- 增值税#
 - wearde tafoege tax getal
-- btw n与mer
+- btw nûmer
 - btw-nummer
 
 
 ## <a name="new-zealand-bank-account-number"></a>新西兰银行帐号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-带可选分隔符的 14 位到 16 位模式
+具有可选分隔符的 14 位到 16 位模式
 
 ### <a name="pattern"></a>模式
 
-带可选分隔符的 14 位到 16 位模式：
+具有可选分隔符的 14 位到 16 位模式：
 
-- 两个数字
+- 两位数
 - 可选连字符或空格
-- 三到四个数字
+- 三到四位数字
 - 可选连字符或空格
-- 七个数字
+- 七位数字
 - 可选连字符或空格
-- 两到三个数字
-- 选项连字符或空格
+- 2 到 3 位数字
+- 一个连字符或空格选项
 
 ### <a name="checksum"></a>校验和
 
@@ -13396,11 +13397,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
-- 找到来自Keywords_new_zealand_bank_account_number关键字。
+- 找到Keywords_new_zealand_bank_account_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
 
 ```xml
@@ -13421,17 +13422,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
 - account number
-- bank account
+- 银行帐户
 - bank_acct_id
 - bank_acct_branch
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>新西兰驾驶证号码
+## <a name="new-zealand-drivers-license-number"></a>新西兰驾驶执照号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -13445,7 +13446,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 八个字符字母数字模式
 
 - 两个字母
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13453,11 +13454,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
-- 找到来自Keywords_newzealand_driver_license_number关键字。
+- 找到Keywords_newzealand_driver_license_number的关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
 
 ```xml
@@ -13480,91 +13481,91 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - driverlicence
 - driverlicences
 - driver lic
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslicence
 - driverslicences
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's licence
-- driver's licences
+- 驾驶执照
 - driverlic#
 - driverlics#
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver licence#
-- driver licences#
+- 驱动程序 lics#
+- 驾驶执照#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驾驶执照#
+- 驾驶执照#
 - international driving permit
 - international driving permits
-- nz 汽车关联
-- 新西兰汽车关联
+- nz 汽车协会
+- 新西兰汽车协会
 
 
-## <a name="new-zealand-inland-revenue-number"></a>新西兰的收入数字
+## <a name="new-zealand-inland-revenue-number"></a>新西兰内陆收入数字
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-八个或九个数字（带可选分隔符）
+具有可选分隔符的八位或九位数字
 
 ### <a name="pattern"></a>模式
 
-八个或九个数字（带可选分隔符）
+具有可选分隔符的八位或九位数字
 
-- 两个或三个数字
-- 可选空格或连字符
-- 三个数字
-- 可选空格或连字符
-- 三个数字
+- 两位或三位数字
+- 可选空间或连字符
+- 三位数
+- 可选空间或连字符
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -13572,11 +13573,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
-- 找到来自Keywords_new_zealand_inland_revenue_number关键字。
+- 找到Keywords_new_zealand_inland_revenue_number的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
 
 ```xml
@@ -13596,15 +13597,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
-- 否。
-- ird 否#
+- ird 否。
+- ird no#
 - nz ird
 - 新西兰 ird
 - ird number
-- 一元收入数
+- 内陆收入数字
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>新西兰卫生服务局号码
+## <a name="new-zealand-ministry-of-health-number"></a>新西兰卫生部编号
 
 ### <a name="format"></a>格式
 
@@ -13612,8 +13613,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-- 三个字母 (不区分大小写) "I"和"O"除外
-- 四个数字
+- 除“I”和“O”外，三个字母 (不区分大小写) 
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13621,12 +13622,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_new_zealand_ministry_of_health_number 找到与该模式匹配的内容。
 - 找到 Keyword_nz_terms 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_new_zealand_ministry_of_health_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -13649,42 +13650,42 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - NHI
 - New Zealand
-- National Health Index
+- 国家健康指数
 - NHI#
-- National Health Index#
+- 国家健康指数#
 
 
 ## <a name="new-zealand-physical-addresses"></a>新西兰物理地址
 
-此未解包的命名实体检测与新西兰物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自新西兰的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="new-zealand-social-welfare-number"></a>新西兰社会电话号码
+## <a name="new-zealand-social-welfare-number"></a>新西兰社会福利号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
-- 三个数字
+- 三位数
 - 可选连字符
-- 三个数字
+- 三位数
 - 可选连字符
-- 三个数字
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -13692,11 +13693,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
-- 找到来自Keywords_newzealand_social_welfare_number关键字。
+- 找到Keywords_newzealand_social_welfare_number的关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
 
 ```xml
@@ -13717,10 +13718,10 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- 社交#
-- 社交#
-- social一号。
-- social 时号
+- 社会福利#
+- 社会福利#
+- 社会福利号
+- 社会福利号码
 - swn#
 
 
@@ -13733,8 +13734,8 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 ### <a name="pattern"></a>模式
 
 11 个数字：
-- 六个数字，格式为 DDMMYY，表示出生日期
-- 三位数个人号码
+- 格式为 DDMMYY 的六位数字，即出生日期
+- 三位数单个数字
 - 两个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -13743,12 +13744,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_norway_id_number 找到与该模式匹配的内容。
 - 找到 Keyword_norway_id_number 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_norway_id_numbe 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -13772,21 +13773,21 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- 标识
+- 识别
 - Personnummer
-- Fødselsnummer
+- Fédselsnummer
 
 
 ## <a name="norway-physical-addresses"></a>挪威物理地址
 
-此未解包的命名实体检测与挪威的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测与挪威的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="philippines-unified-multi-purpose-identification-number"></a>菲律宾统一的多用途标识号
+## <a name="philippines-unified-multi-purpose-identification-number"></a>菲律宾统一多用途标识号
 
 ### <a name="format"></a>格式
 
@@ -13795,11 +13796,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字
+- 四位数字
 - 连字符
-- 七个数字
+- 七位数字
 - 连字符
-- 一个数字
+- 一位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13807,7 +13808,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_philippines_unified_id 找到与该模式匹配的内容。
 - 找到 Keyword_philippines_id 中的一个关键字。
 
@@ -13831,21 +13832,21 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Pinag-isang Multi-Layunin ID
 
 
-## <a name="poland-drivers-license-number"></a>波兰驾驶证号码
+## <a name="poland-drivers-license-number"></a>波兰驾照编号
 
 ### <a name="format"></a>格式
 
-14 个数字，包含两个正斜杠
+包含两个正斜杠的 14 位数字
 
 ### <a name="pattern"></a>模式
 
-14 个数字和两个正斜杠：
+14 位数字和两个正斜杠：
 
-- 五个数字
+- 五位数字
 - 正斜杠
-- 两个数字
+- 两位数
 - 正斜杠
-- 七个数字
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13853,9 +13854,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_poland_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_poland_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_poland_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Poland Driver's License Number -->
@@ -13881,49 +13882,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -13931,46 +13932,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -13978,17 +13979,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -14008,7 +14009,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-三个字母 (不区分大小写) 后跟六个数字
+三个字母 (不区分大小写) 后跟六位数
 
 ### <a name="checksum"></a>校验和
 
@@ -14016,7 +14017,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_polish_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_polish_national_id_passport_number 中的一个关键字。
 - 校验和通过。
@@ -14035,7 +14036,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
-- ）Osobisty
+- Dowód osobisty
 - Numer dowodu osobistego
 - Nazwa i numer dowodu osobistego
 - Nazwa i nr dowodu osobistego
@@ -14045,7 +14046,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 
 
-## <a name="poland-national-id-pesel"></a>波兰国家/ (PESEL) 
+## <a name="poland-national-id-pesel"></a>波兰国家 ID (PESEL) 
 
 ### <a name="format"></a>格式
 
@@ -14053,8 +14054,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-- 六个数字，表示 YYMMDD 格式的出生日期
-- 四个数字
+- 以 YYMMDD 格式表示出生日期的六位数字
+- 四位数字
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -14063,12 +14064,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_pesel_identification_number 找到与该模式匹配的内容。
 - 找到 Keyword_pesel_identification_number 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_pesel_identification_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -14091,7 +14092,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - dowód osobisty
 - dowódosobisty
-- niepowtarzalny numer
+- niepowtarzalny 数值
 - niepowtarzalnynumer
 - nr.-pesel
 - nr-pesel
@@ -14106,11 +14107,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-两个字母和七个数字
+两个字母和七位数字
 
 ### <a name="pattern"></a>模式
 
-两个字母 (不区分大小写) 后跟七个数字
+两个字母 (不区分大小写) 后跟七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14118,19 +14119,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_polish_passport_number_v2` 查找与模式匹配的内容。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_polish_passport_number_v2` 查找与模式匹配的内容。
 - 校验和通过。
-- 找到 或 `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` 中的关键字。
-- 找到 的 `Keywords_eu_passport_date` 关键字。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keyword_polish_national_passport_number` 找到关键字。
+- 从中找到关键字 `Keywords_eu_passport_date` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 `Func_polish_passport_number_v2` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数 `Func_polish_passport_number_v2` 查找与模式匹配的内容。
 - 校验和通过。
-- 找到 或 `Keywords_eu_passport_number` `Keyword_polish_national_passport_number` 中的关键字。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keyword_polish_national_passport_number` 找到关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数 `Func_polish_passport_number_v2` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数 `Func_polish_passport_number_v2` 查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -14161,16 +14162,16 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keyword_polish_national_passport_number"></a>Keyword_polish_national_passport_number
 
@@ -14178,31 +14179,31 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - numery paszportów
 - numery paszportowe
 - nr paszportu
-- nr. paszportu
+- 星期日。 paszportu
 - nr paszportów
 - n° passeport
 - passeport n°
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="poland-physical-addresses"></a>波兰物理地址
 
-此未解包的命名实体检测与来自波兰的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自波兰的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="poland-regon-number"></a>波兰 REGON 号码
+## <a name="poland-regon-number"></a>波兰 REGON 编号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -14213,12 +14214,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="pattern"></a>模式
 
-九位数字或 14 位数字：
+9 位数字或 14 位数字：
 
-- 九个数字或
-- 九个数字
-- hyphen
-- 五个数字
+- 九位数字或
+- 九位数字
+- 字符
+- 五位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14226,11 +14227,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_polish_regon_number查找与模式匹配的内容。
-- 找到来自Keywords_polish_regon_number关键字。
+- 找到Keywords_polish_regon_number的关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数Func_polish_regon_number查找与模式匹配的内容。
 
 ```xml
@@ -14249,12 +14250,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
-- regon id
+- regon ID
 - 统计数字
 - 统计 ID
 - 统计否
 - regon number
-- reg一维#
+- regonid#
 - regonno#
 - 公司 ID
 - companyid#
@@ -14267,16 +14268,16 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ## <a name="poland-tax-identification-number"></a>波兰税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-11 个数字，无空格或分隔符
+没有空格或分隔符的 11 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -14288,9 +14289,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_poland_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_poland_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_poland_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_poland_eu_tax_file_number` 。
 
 
 ```xml
@@ -14307,28 +14308,28 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
-- nip#
-- nip
+- 咬#
+- 咬
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej#
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
-- vat id#
-- vat id
+- 锡#
+- vat ID#
+- vat ID
 - vat no
 - vat number
 - vatid#
@@ -14340,11 +14341,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-八个数字
+八位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14352,7 +14353,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_portugal_citizen_card 找到与该模式匹配的内容。
 - 找到 Keyword_portugal_citizen_card 中的一个关键字。
 
@@ -14370,44 +14371,44 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
-- 将 de identidade
+- bilhete de identidade
 - cartão de cidadão
-- citizen card
+- 公民卡
 - 文档编号
 - documento de identificação
 - id number
-- identification no
+- 标识否
 - identification number
-- identity card no
+- 标识卡否
 - 标识卡号
-- national id card
-- nic
+- 国家身份证
+- 网卡
 - número bi de portugal
-- número de identificação
+- número de identificação civil
 - número de identificação fiscal
 - número do documento
 - portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>葡萄牙驾驶证号码
+## <a name="portugal-drivers-license-number"></a>葡萄牙驾驶执照号码
 
 ### <a name="format"></a>格式
 
-两个模式 - 两个字母后跟 5-8 个数字（带特殊字符）
+两种模式 - 两个字母，后跟具有特殊字符的 5-8 位数字
 
 ### <a name="pattern"></a>模式
 
-模式 1：两个字母后跟 5/6 特殊字符：
+模式 1：两个字母，后跟具有特殊字符的 5/6：
 - 两个字母 (不区分大小写) 
 - 一个连字符 
-- 五个或六个数字
+- 五位或六位数字
 - 一个空格
 - 一位数字
 
-模式 2：一个字母后跟 6/8 个数字（带特殊字符）：
-- 一个字母 (不区分大小写) 
+模式 2：一个字母后跟 6/8 个具有特殊字符的数字：
+- 一封信 (不区分大小写) 
 - 一个连字符 
-- 六个或八个数字
+- 六位或八位数字
 - 一个空格
 - 一个数字
 
@@ -14418,9 +14419,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_portugal_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_portugal_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_portugal_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -14446,49 +14447,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -14496,46 +14497,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -14543,17 +14544,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -14561,15 +14562,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver s_license_number
 
-- cart cart cart de motorista
-- cart cart motorista
-- cart cart cart de habilitação
-- cart cart cart habilitação
+- carteira de motorista
+- carteira motorista
+- carteira de habilitação
+- carteira habilitação
 - número de licença
 - número licença
 - permissão de condução
 - permissão condução
-- 葡萄牙利cença condução
+- Licença condução 葡萄牙
 - carta de condução
 
 
@@ -14577,14 +14578,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-一个字母后跟 6 个数字，无空格或分隔符
+一个字母后跟六个数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-一个字母后跟六个数字：
+一个字母后跟六位数字：
 
 - 一个字母 (不区分大小写) 
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14592,14 +14593,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_portugal_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_portugal_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_portugal_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_portugal_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_portugal_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_portugal_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_portugal_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Portugal Passport Number -->
@@ -14629,39 +14630,39 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
 - número do passaporte
-- 葡萄牙语 passport
-- 葡萄牙语通道
+- 葡萄牙护照
+- 葡萄牙传递端口
 - 葡萄牙语 passaporte
-- passaporte n？
-- passeport n°
+- passaporte nº
+- passeport nº
 - números de passaporte
-- 葡萄牙语护照
+- 葡萄牙护照
 - número passaporte
 - números passaporte
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="portugal-physical-addresses"></a>葡萄牙物理地址
 
-此未解包的命名实体检测与来自葡萄牙的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与葡萄牙的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -14672,15 +14673,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-九个数字（带可选空格）
+具有可选空格的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-- 三个数字
-- 可选空格
-- 三个数字
-- 可选空格
-- 三个数字
+- 三位数
+- 可选空间
+- 三位数
+- 可选空间
+- 三位数
 
 ### <a name="checksum"></a>校验和
 
@@ -14688,12 +14689,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_portugal_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_portugal_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_portugal_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_portugal_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数  `Func_portugal_eu_tax_file_number` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数  `Func_portugal_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -14712,41 +14713,41 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
-- cpf#
-- cpf
-- nif#
-- nif
+- 公积金#
+- 公积金
+- Nif#
+- Nif
 - número de identificação fisca
 - numero fiscal
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
-## <a name="romania-drivers-license-number"></a>罗马尼亚驾驶证号码
+## <a name="romania-drivers-license-number"></a>罗马尼亚驾驶执照号码
 
 ### <a name="format"></a>格式
 
-一个字符后跟八个数字
+一个字符后跟八位数字
 
 ### <a name="pattern"></a>模式
 
-一个字符后跟八个数字：
-- 一个字母 (不区分大小写) 或数字
-- 八个数字
+一个字符后跟八位数字：
+- 一个字母 (不区分大小写的) 或数字
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14754,9 +14755,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_romania_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_romania_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_romania_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Romania Driver's License Number -->
@@ -14782,49 +14783,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -14832,46 +14833,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -14879,17 +14880,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -14908,11 +14909,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-八个或九个数字，不带空格和分隔符
+不带空格和分隔符的八位或九位数字
 
 ### <a name="pattern"></a>模式
 
-八个或九个数字
+八位或九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14920,14 +14921,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_romania_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_romania_eu_passport_date` DD MMM/MMM YY 格式的日期 (示例- 01 年 2 月/2 月 10) 或 `Keywords_eu_passport_date` 找到的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_romania_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_romania_eu_passport_date`查找格式为 DD MMM/MMM YY 的日期 (示例 - 01 FEB/FEB 10) 或从中找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_romania_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_romania_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_romania_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Romania Passport Number -->
@@ -14957,46 +14958,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-numnrrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
+numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="romania-personal-numeric-code-cnp"></a>罗马尼亚个人数字代码 (CNP) 
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 13 个数字
+没有空格和分隔符的 13 位数字
 
 ### <a name="pattern"></a>模式
 
-- 一个数字，从 1 到 9
-- 六个数字，表示 YYMMDD (出生日期) 
-- 两个数字，可以是 01-52 或 99
-- 四个数字
+- 1-9 之间的一位数字
+- 表示出生日期的六位数字 (YYMMDD) 
+- 两位数，可以是 01-52 或 99
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15004,12 +15005,12 @@ numnrrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_romania_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_romania_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_romania_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_romania_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_romania_eu_national_id_card` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_romania_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -15028,50 +15029,50 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
-- cnp#
-- cnp
+- Cnp#
+- Cnp
 - cod identificare personal
-- cod numeric personal
+- cod 数字个人
 - cod unic identificare
 - codnumericpersonal#
 - codul fiscal nr.
-- identificarea fiscalnr#
+- identificarea fiscală nr#
 - id-ul taxei
-- insurance number
+- 保险号码
 - insurancenumber#
-- national id#
+- 国家 ID#
 - national id
 - national identification number
-- numr identificare personal
-- numr identitate
-- num个个人 unic
-- numridentitate#
-- numridentitate
-- num个rpersonalunic#
-- num个rpersonalunic
-- num以ru de identificare fiscal的
-- num个rul de identificare fiscal器
+- număr identificare personal
+- număr identitate
+- număr personal unic
+- număridentitate#
+- număridentitate
+- numărpersonalunic#
+- numărpersonalunic
+- număru de identificare fiscală
+- numărul de identificare fiscală
 - 个人数字代码
-- pin#
-- pin
-- tax file no
+- 针#
+- 针
+- 税务文件否
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
@@ -15080,18 +15081,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="romania-physical-addresses"></a>罗马尼亚物理地址
 
-此未解包的命名实体检测与罗马尼亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+这个未拆卸的命名实体检测到与罗马尼亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="russia-passport-number-domestic"></a>俄罗斯护照号码国内
+## <a name="russia-passport-number-domestic"></a>俄罗斯国内护照号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -15104,11 +15105,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10 位数字：
 
-- 两个数字
-- 可选空格或连字符
-- 两个数字
-- 可选空格
-- 六个数字
+- 两位数
+- 可选空间或连字符
+- 两位数
+- 可选空间
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15116,9 +15117,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_Russian_Passport_Number_Domestic查找与模式匹配的内容。
-- 找到来自Keyword_Russian_Passport_Number关键字。
+- 找到Keyword_Russian_Passport_Number的关键字。
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -15136,40 +15137,40 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - passport number
 - passport no
-- passport#
-- passport id
+- 护照#
+- passport ID
 - passportno#
 - passportnumber#
 - паспорт нет
-- 均？
+- паспорт id
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт#
-- 均？#
+- паспортid#
 - номер паспорта
 - номерпаспорта#
 
 
 ## <a name="russia-passport-number-international"></a>俄罗斯护照号码国际
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九位数
+九位数字
 
 ### <a name="pattern"></a>模式
 
 九位数：
 
-- 两个数字
-- 可选空格或连字符
-- 七个数字
+- 两位数
+- 可选空间或连字符
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15177,9 +15178,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_Russian_Passport_Number_International查找与模式匹配的内容。
-- 找到来自Keyword_Russian_Passport_Number关键字。
+- 找到Keyword_Russian_Passport_Number的关键字。
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -15197,16 +15198,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - passport number
 - passport no
-- passport#
-- passport id
+- 护照#
+- passport ID
 - passportno#
 - passportnumber#
 - паспорт нет
-- 均？
+- паспорт id
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт#
-- 均？#
+- паспортid#
 - номер паспорта
 - номерпаспорта#
 
@@ -15227,7 +15228,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_saudi_arabia_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_saudi_arabia_national_id 中的一个关键字。
 
@@ -15253,7 +15254,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - الوطنية الهوية بطاقة رقم
 
 
-## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡国家注册身份证号码 (NRIC) 号码
+## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡国家注册身份证 (NRIC) 号码
 
 ### <a name="format"></a>格式
 
@@ -15262,8 +15263,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 - 九个字母和数字：
-- 字母"F"、"G"、"S"或"T" (不区分大小写) 
-- 七个数字
+- 字母“F”、“G”、“M”、“S”或“T” (不区分大小写) 
+- 七位数字
 - 字母检查数字
 
 ### <a name="checksum"></a>校验和
@@ -15272,12 +15273,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式 Regex_singapore_nric 找到与该模式匹配的内容。
 - 找到 Keyword_singapore_nric 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_singapore_nric 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -15303,23 +15304,23 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - NRIC
 - IC
 - Foreign Identification Number
-- FIN
+- 翅
 - 身份证
 - 身份證
 
 
-## <a name="slovakia-drivers-license-number"></a>斯洛伐克驾驶证号码
+## <a name="slovakia-drivers-license-number"></a>斯洛伐克驾驶执照号码
 
 ### <a name="format"></a>格式
 
-一个字符后跟七个数字
+一个字符后跟七位数字
 
 ### <a name="pattern"></a>模式
 
-一个字符后跟七个数字
+一个字符后跟七位数字
 
-- 一个字母 (不区分大小写) 或数字
-- 七个数字
+- 一个字母 (不区分大小写的) 或数字
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15327,9 +15328,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_slovakia_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_slovakia_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_slovakia_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -15355,49 +15356,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -15405,46 +15406,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -15452,17 +15453,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -15470,21 +15471,21 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver s_license_number
 
-- vodi的skk pre一z
-- vodi-ské pre一zy
-- vodizuského pre一zu
-- vodi个sk与 pre一zov
+- vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 
 ## <a name="slovakia-passport-number"></a>斯洛伐克护照号码
 
 ### <a name="format"></a>格式
 
-一个数字或字母后跟七个数字，无空格或分隔符
+八个或九个字符的字母数字模式
 
 ### <a name="pattern"></a>模式
 
-一个数字或字母 (不区分大小写) 后跟七个数字
+一个字母 (不区分大小写) 后跟七位数或两个字母， (不区分大小写) 后跟六、七个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15492,14 +15493,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_slovakia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_slovakia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_slovakia_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_slovakia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_slovakia_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_slovakia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_slovakia_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Slovakia Passport Number -->
@@ -15529,50 +15530,50 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- ííslo pasu
-- íísla pasov
-- pas 。
+- číslo pasu
+- čísla pasov
+- pas č.
 - Passeport n°
 - n° Passeport
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="slovakia-personal-number"></a>斯洛伐克个人号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九个或 10 个数字，包含可选反杠
+包含可选反斜杠的 9 位或 10 位数字
 
 ### <a name="pattern"></a>模式
 
-- 六个数字，表示出生日期
+- 表示出生日期的六位数字
 - 可选斜杠 (/) 
-- 三个数字
-- 一个可选检查数字
+- 三位数
+- 一个可选的检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15580,12 +15581,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_slovakia_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_slovakia_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_slovakia_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_slovakia_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数  `Func_slovakia_eu_national_id_card` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数  `Func_slovakia_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -15606,69 +15607,69 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 - azonosító szám
-- birth number
-- ííslo národnej identifíánej karty
-- ííslo obianského pre一zu
-- daíové ííslo
+- 出生编号
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
 - id number
-- identification no
+- 标识否
 - identification number
-- identifikaáná gam
-- identifíné ííslo
-- identity card no
+- identifikačná karta č
+- identifikačné číslo
+- 标识卡否
 - 标识卡号
-- národná identif一ná znaáka á
-- national number
+- národná identifikačná značka č
+- 国家编号
 - nationalnumber#
-- nemzeti személyazonosító igazolv一y
+- nemzeti személyazonosító igazolvány
 - personalidnumber#
-- r以
+- rč
 - rodne cislo
-- rodné ííslo
+- rodné číslo
 - social security number
-- ssn#
-- ssn
-- személyi igazolvlvy szám
-- személyi igazolvlvy száma
-- személy一zolvlvy szám
-- tax file no
+- Ssn#
+- Ssn
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
+- 税务文件否
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="slovakia-physical-addresses"></a>斯洛伐克物理地址
 
-此未解包的命名实体检测与斯洛伐克的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与斯洛伐克的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="slovenia-drivers-license-number"></a>斯洛文尼亚驾驶证号码
+## <a name="slovenia-drivers-license-number"></a>斯洛文尼亚驾照号
 
 ### <a name="format"></a>格式
 
-九个数字，不带空格和分隔符
+没有空格和分隔符的 9 位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15676,9 +15677,9 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_slovenia_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_slovenia_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_slovenia_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -15704,49 +15705,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -15754,46 +15755,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -15801,43 +15802,43 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver s_license_number
 
-- vozni-ko dovoljenje
-- vozninika         2013 许可证
-- vozninikih dovoljenj
-- 个tevilka voznininikega dovoljenja
-- 个tevilke voznininikih dovoljenj
+- vozniško dovoljenje
+- vozniška številka licence
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 
 ## <a name="slovenia-passport-number"></a>斯洛文尼亚护照号码
 
 ### <a name="format"></a>格式
 
-两个字母后跟七个数字，无空格或分隔符
+两个字母后跟七位数字，没有空格或分隔符
 
 ### <a name="pattern"></a>模式
 
-两个字母后跟七个数字：
+两个字母后跟七位数字：
 
-- 字母"P"
-- 一个小写字母
-- 七个数字
+- 字母“P”
+- 一个大写字母
+- 七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15845,14 +15846,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_slovenia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_slovenia_eu_passport_number` 找到关键字。
+- 正则表达式 `Regex_eu_passport_date1` 查找格式为 DD.MM.YYYY 或关键字的 `Keywords_eu_passport_date` 日期
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_slovenia_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_slovenia_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_slovenia_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -15882,35 +15883,35 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- 个tevilka potnega lista
+- številka potnega lista
 - potek veljavnosti
 - potni 列表#
 - datum rojstva
 - potni 列表
-- 个tevilke potnih listov
+- številke potnih listov
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="slovenia-physical-addresses"></a>斯洛文尼亚物理地址
 
-此未解包的命名实体检测与斯洛文尼亚的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与斯洛文尼亚的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -15919,21 +15920,21 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="slovenia-tax-identification-number"></a>斯洛文尼亚税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-八个数字，无空格或分隔符
+没有空格或分隔符的八位数字
 
 ### <a name="pattern"></a>模式
 
-- 一个数字，从 1 到 9
-- 六个数字
+- 1-9 之间的一位数字
+- 六位数字
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -15942,12 +15943,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_slovenia_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_slovenia_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_slovenia_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_slovenia_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数  `Func_slovenia_eu_tax_file_number` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数  `Func_slovenia_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -15966,49 +15967,49 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- dav-na    gamtevilka
-- identifikacijska       tevilka davka
-- gamtevilka dav的ne datoatoatoe
-- tax file no
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
+- 税务文件否
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
-## <a name="slovenia-unique-master-citizen-number"></a>斯洛文尼亚唯一主公民编号
+## <a name="slovenia-unique-master-citizen-number"></a>斯洛文尼亚唯一的主公民号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-不带空格或分隔符的 13 个数字
+没有空格或分隔符的 13 位数字
 
 ### <a name="pattern"></a>模式
 
-指定模式中的 13 个数字：
+指定模式中的 13 位数字：
 
-- 与出生日期对应的七个数字 (DDMMLLL) 其中"LLL"对应于出生日期的最后三个数字
-- 两个数字，对应于出生日期"50"
-- 三个数字，对应于同一天的人的性别和序列号的组合。 000-499（男性）和 500-999（针对男性）。
+- 与出生日期相对应的七位数字 (DDMMLLL) 其中“LLL”对应于出生年的最后三位数字
+- 与出生区域“50”相对应的两位数
+- 三个数字，对应于同一天出生的人的性别和序列号的组合。 男性为000-499，女性为500-999。
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -16017,12 +16018,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_slovenia_eu_national_id_card` 查找与模式匹配的内容。
-- 找到 的  `Keywords_slovenia_eu_national_id_card` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_slovenia_eu_national_id_card` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_slovenia_eu_national_id_card` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_slovenia_eu_national_id_card` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_slovenia_eu_national_id_card` 查找与模式匹配的内容。
 
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -16041,28 +16042,28 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena 2tevilka g一nega dr-avljana
-- em以o
-- enotna maticna 且tevilka obcana
+- edinstvena številka glavnega državljana
+- emšo
+- enotna maticna številka obcana
 - id card
 - identification number
-- identifikacijska      vilka
+- identifikacijska številka
 - identity card
-- nacionalna id
-- nacionalni potni list
+- nacionalna ID
+- nacionalni potni 列表
 - national id
 - osebna izkaznica
 - osebni koda
 - osebni ne
-- osebni ebtevilka
+- osebni številka
 - 个人代码
-- 个人编号
+- 个人号码
 - 个人数字代码
-- *tevilka dr-avljana
-- 唯一公民编号
+- številka državljana
+- 唯一的公民号码
 - 唯一 ID 号
 - 唯一标识号
-- unique master citizen number
+- 唯一的主公民号码
 - 唯一注册号
 - uniqueidentityno#
 - uniqueidentityno#
@@ -16077,10 +16078,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 六个数字，格式为 YYMMDD，表示出生日期
-- 四个数字
-- 单数字公民指示符
-- 数字"8"或"9"
+- 格式为 YYMMDD 的六位数字，即出生日期
+- 四位数字
+- 一位数的公民资格指标
+- 数字“8”或“9”
 - 一个数字，即校验和数字
 
 ### <a name="checksum"></a>校验和
@@ -16089,7 +16090,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_south_africa_identification_number 找到与该模式匹配的内容。
 - 找到 Keyword_south_africa_identification_number 中的一个关键字。
 - 校验和通过。
@@ -16110,10 +16111,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - Identity card
 - ID
-- 标识
+- 识别
 
 
-## <a name="south-korea-resident-registration-number"></a>韩国居民注册号码
+## <a name="south-korea-resident-registration-number"></a>韩国居民登记号码
 
 ### <a name="format"></a>格式
 
@@ -16122,11 +16123,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 六个数字，格式为 YYMMDD，表示出生日期
+- 格式为 YYMMDD 的六位数字，即出生日期
 - 连字符
-- 一个数字，由世纪和性别决定
-- 四位数的出生日期区域代码
-- 一个数字，用于区分前面数字完全相同的人
+- 由世纪和性别决定的一位数
+- 四位数的出生区域代码
+- 一个数字，用于区分前面的数字相同的人
 - 一个检查数字。
 
 ### <a name="checksum"></a>校验和
@@ -16135,12 +16136,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_south_korea_resident_number 找到与该模式匹配的内容。
 - 找到 Keyword_south_korea_resident_number 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_south_korea_resident_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -16170,24 +16171,24 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="spain-dni"></a>西班牙 DNI
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-八个数字后跟一个字符
+8 位数字后跟一个字符
 
 ### <a name="pattern"></a>模式
 
-七个数字后跟一个字符
+七位数字后跟一个字符
 
-- 八个数字
-- 可选空格或连字符
-- 一个检查 (不区分大小写) 
+- 八位数字
+- 可选空间或连字符
+- 一个复选信 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -16195,11 +16196,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。
-- 找到 的  `Keywords_spain_eu_national_id_card"` 关键字。
+- 从中找到关键字  `Keywords_spain_eu_national_id_card"` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。
 
 
@@ -16234,13 +16235,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - documento nacional de identidad
 - identidad único
 - identidadúnico#
-- insurance number
+- 保险号码
 - national identification number
-- national identity
+- 国家标识
 - nationalid#
 - nationalidno#
-- 一#
-- 一
+- 聂#
+- 聂
 - nienúmero#
 - número de identificación
 - número nacional identidad
@@ -16250,17 +16251,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - uniqueid#
 
 
-## <a name="spain-drivers-license-number"></a>西班牙驾驶证号码
+## <a name="spain-drivers-license-number"></a>西班牙驾照号
 
 ### <a name="format"></a>格式
 
-八个数字后跟一个字符
+8 位数字后跟一个字符
 
 ### <a name="pattern"></a>模式
 
-八个数字后跟一个字符：
+8 位数字后跟一个字符：
 
-- 八个数字
+- 八位数字
 - 一个数字或字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -16269,11 +16270,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` 中的关键字。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_spain_eu_driver's_license_number` 找到关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。
 
 ```xml
@@ -16313,49 +16314,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -16363,46 +16364,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -16410,34 +16411,34 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver s_license_number
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver's_license_number
 
 - permiso de conducción
 - permiso conducción
-- licencia de cond一r
-- licencia cond一r
-- permiso cond一r
-- permiso de cond一r
-- permisos de cond一r
-- permisos cond一r
-- carnet cond一r
-- carnet de cond一r
+- licencia de conducir
+- licencia conducir
+- permiso conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
+- carnet conducir
+- carnet de conducir
 - licencia de manejo
 - licencia manejo
 
@@ -16446,15 +16447,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-字母和数字的八字符或九字符组合，无空格或分隔符
+没有空格或分隔符的字母和数字的八个或九个字符的组合
 
 ### <a name="pattern"></a>模式
 
-字母和数字的八字符或九字符组合：
+字母和数字的八个或九个字符的组合：
 
-- 两个数字或字母
+- 两位数或两个字母
 - 一个数字或字母 (可选) 
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16462,14 +16463,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 正则表达式查找  `Regex_spain_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` 中的关键字。
-- 正则表达式查找 `Regex_spain_eu_passport_date` DD-MM-YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 正则表达式  `Regex_spain_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_spain_eu_passport_number` 找到关键字。
+- 正则表达式`Regex_spain_eu_passport_date`查找格式为 DD-MM-YYYY 的日期，或从中找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_spain_eu_passport_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_passport_number` `Keywords_spain_eu_passport_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_spain_eu_passport_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_passport_number` 中找到或 `Keywords_spain_eu_passport_number` 找到关键字。
 
 ```xml
       <!-- Spain Passport Number -->
@@ -16499,48 +16500,48 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
 - libreta pasaporte
 - número pasaporte
-- espa与 pasaporte
+- españa pasaporte
 - números de pasaporte
 - número de pasaporte
 - números pasaporte
 - pasaporte no
 - Passeport n°
 - n° Passeport
-- pasaporte 否。
+- pasaporte no.
 - pasaporte n°
 - 西班牙护照
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="spain-physical-addresses"></a>西班牙物理地址
 
-此未解包的命名实体检测与来自西班牙的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自西班牙的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="spain-social-security-number-ssn"></a>西班牙社会保险号码 (SSN) 
+## <a name="spain-social-security-number-ssn"></a>西班牙社保号码 (SSN) 
 
 
 ### <a name="format"></a>格式
@@ -16549,12 +16550,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-11-12 个数字：
-- 两个数字
-- 可选参数， (正斜) 
-- 七到八个数字
-- 可选参数， (正斜) 
-- 两个数字
+11-12 位数字：
+- 两位数
+- 正斜杠 (可选) 
+- 七到八位数字
+- 正斜杠 (可选) 
+- 两位数
 
 ### <a name="checksum"></a>校验和
 
@@ -16562,12 +16563,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_spanish_social_security_number 找到与该模式匹配的内容。
 - 校验和通过。
-- - 找到 的  `Keywords_spain_eu_ssn_or_equivalent` 关键字。
+- - 从中找到关键字  `Keywords_spain_eu_ssn_or_equivalent` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_spanish_social_security_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -16588,57 +16589,57 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- ssn
-- ssn#
+- Ssn
+- Ssn#
 - socialsecurityno
-- social security no
+- 社会保障否
 - social security number
 - número de la seguridad social
 
 
 ## <a name="spain-tax-identification-number"></a>西班牙税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-七个或八个数字以及指定模式中一个或两个字母
+指定模式中的七、八位数字和一两个字母
 
 ### <a name="pattern"></a>模式
 
 具有西班牙国家身份证的西班牙自然人：
 
-- 八个数字
-- 一个小写字母 (区分大小写) 
+- 八位数字
+- 一个大写字母 (区分大小写的) 
 
-没有西班牙国家身份证的非常驻 Spaniards
+没有西班牙国家身份证的非驻地西班牙人
 
-- 一个小写字母"L" (区分大小写) 
-- 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个大写字母“L” (区分大小写) 
+- 七位数字
+- 一个大写字母 (区分大小写的) 
 
-没有西班牙国家身份证的 14 岁以下的儿童的常驻 Spaniards：
+14岁以下的西班牙人没有西班牙国家身份证：
 
-- 一个小写字母"K" (区分大小写) 
-- 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个大写字母“K” (区分大小写) 
+- 七位数字
+- 一个大写字母 (区分大小写的) 
 
-具有一位用户标识号的百位用户
+持有外国人身份证号码的外国人
 
-- 一个小写字母，"X"、"Y"或"Z" (区分大小写) 
-- 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个大写字母，即“X”、“Y”或“Z” (区分大小写) 
+- 七位数字
+- 一个大写字母 (区分大小写的) 
 
-没有标识号的百分卡
+没有外国人身份证号码的外国人
 
-- 一个区分大小写的大写字母 ("M") 
-- 七个数字
-- 一个小写字母 (区分大小写) 
+- 一个大写字母，即“M” (区分大小写) 
+- 七位数字
+- 一个大写字母 (区分大小写的) 
 
 ### <a name="checksum"></a>校验和
 
@@ -16646,11 +16647,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与模式匹配的内容。
-- 找到 的  `Keywords_spain_eu_tax_file_number` 关键字。
+- 从中找到关键字  `Keywords_spain_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与模式匹配的内容。
 
 ```xml
@@ -16677,7 +16678,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
-- cif
+- Cif
 - cifid#
 - cifnúmero#
 - número de contribuyente
@@ -16687,41 +16688,41 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - spanishcifid
 - spanishcifno#
 - spanishcifno
-- tax file no
+- 税务文件否
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="sql-server-connection-string"></a>SQL Server连接字符串
 
 ### <a name="format"></a>格式
 
-字符串"用户 ID"、"用户 ID"、"uid"或"UserId"后跟以下模式中列出的字符和字符串。
+字符串“用户 ID”、“用户 ID”、“uid”或“UserId”后跟下面模式中所述的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串"用户 ID"、"用户 ID"、"uid"或"UserId"
-- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串"Password"或"pwd"，其中"pwd"的前面没有小写字母
+- 字符串“用户 ID”、“用户 ID”、“uid”或“UserId”
+- 1-200 个小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串“Password”或“pwd”，其中“pwd”前面没有小写字母
 - 等号 (=) 
-- 任何不是美元符号 ($) 、百分比符号 (%) 、大于符号 (>) 、符号为 (@) 、引号 (") 、分号 (;) 、左大括号 ([) 或左括号 ({) 
-- 7-128 个字符的任意组合，这些字符不是分号 (;) 、正斜杠 (/) 或引号 (") 
-- 分号 (;) 或引号 (") 
+- 任何不是美元符号的字符 ($) ，符号 (%) 百分比，大于符号 (>) ，在符号 (@) ，引号 (“) ，分号 (;) ，左大括号 ([) ，或左括号 ({) 
+- 不为分号的 7-128 个字符的任意组合 (;) 、正斜杠 (/) 或引号 (“) 
+- 分号 (;) 或引号 (“) 
 
 ### <a name="checksum"></a>校验和
 
@@ -16729,9 +16730,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式CEP_Regex_SQLServerConnectionString查找与模式匹配的内容。
-- 未找到CEP_GlobalFilter关键字。
+- 找不到CEP_GlobalFilter的关键字。
 - 正则表达式CEP_PasswordPlaceHolder找不到与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords找不到与模式匹配的内容。
 
@@ -16756,44 +16757,44 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - some-password
 - somepassword
 - secretPassword
-- 示例
+- 样品
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。
+此敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。
 
-- 密码或 pwd 后跟 0-2 个空格、一个等号 (=) 、0-2 个空格和一个星号 (*) -OR-
+- 密码或 pwd 后跟 0-2 个空格、等号 (=) 、0-2 个空格和星号 (*) -OR-
 - 密码或 pwd 后跟：
     - 等号 (=) 
     - 小于符号 (<) 
-    - 大写或小写字母、数字、星号 (*) 、连字符 (-) 、下划线 (_) 或空格字符的 1-200 个字符的任意组合
+    - 大写或小写字母、数字、星号 (*) 、连字符 () 、下划线 (_) 或空格字符的 1-200 个字符的任何组合
     - 大于符号 (>) 
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-此敏感信息类型使用正则表达式（而不是关键字列表）标识这些关键字。
+此敏感信息类型使用正则表达式而不是关键字列表来标识这些关键字。
 
 - contoso
 - fabrikam
 - northwind
-- 沙盒
+- 沙 箱
 - onebox
-- localhost
+- 本地 主机
 - 127.0.0.1
-- testacs。<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->net
+- testacs。<!--no-hyperlink-->Com
+- s-int.<!--no-hyperlink-->网
 
 
-## <a name="surgical-procedures"></a>过程：一些程序
+## <a name="surgical-procedures"></a>外科 手术
 
-此未解包的命名实体检测与过程相关的术语，如 *appendectomy*。  它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+此未拆卸的命名实体检测与外科手术相关的术语，如 *附录切除术*。  它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="sweden-drivers-license-number"></a>瑞典驾驶证号码
+## <a name="sweden-drivers-license-number"></a>瑞典驾照号
 
 ### <a name="format"></a>格式
 
@@ -16801,11 +16802,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-10 个数字，包含连字符：
+包含连字符的 10 位数字：
 
-- 六个数字
+- 六位数字
 - 连字符
-- 四个数字
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16813,9 +16814,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式查找  `Regex_sweden_eu_driver's_license_number` 与模式匹配的内容。
-- 找到 或  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` 中的关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 正则表达式  `Regex_sweden_eu_driver's_license_number` 查找与模式匹配的内容。
+- 从  `Keywords_eu_driver's_license_number` 中找到或 `Keywords_sweden_eu_driver's_license_number` 找到关键字。
 
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -16841,49 +16842,49 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -16891,46 +16892,46 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -16938,17 +16939,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
@@ -16959,17 +16960,17 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - ajokortti
 - permis de conducere
 - ajokortin numero
-- kuljettajat lic。
+- kuljettajat lic.
 - drivere lic.
 - körkort
-- numrul permisului de conducere
+- numărul permisului de conducere
 -  שאָפער דערלויבעניש נומער
-- frare lic。
+- förare lic.
 -  דריווערס דערלויבעניש
-- krkortsnummer
+- körkortsnummer
 
 
-## <a name="sweden-national-id"></a>瑞典国家/身份证号码
+## <a name="sweden-national-id"></a>瑞典国民 ID
 
 ### <a name="format"></a>格式
 
@@ -16978,10 +16979,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 10 或 12 位数字和可选的分隔符：
-- 两个数字 (可选) 
+- 可选)  (两位数
 - 采用日期格式 YYMMDD 的六位数字
-- 可选参数"-"或"+" () 
-- 四个数字
+- “-”或“+”的分隔符 (可选) 
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16989,13 +16990,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_swedish_national_identifier` 查找与模式匹配的内容。
-- 找到的关键字来自`Keywords_swedish_national_identifier`
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_swedish_national_identifier` 查找与模式匹配的内容。
+- 从中找到关键字`Keywords_swedish_national_identifier`
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 `Func_swedish_national_identifier` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数 `Func_swedish_national_identifier` 查找与模式匹配的内容。
 - 校验和通过。
 
 
@@ -17018,8 +17019,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 - id no
 - id number
-- id#
-- identification no
+- Id#
+- 标识否
 - identification number
 - identifikationsnumret#
 - identifikationsnumret
@@ -17031,18 +17032,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 个人 ID
 - personnummer#
 - personnummer
-- 将identifikationsnummer
+- skatteidentifikationsnummer
 
 
 ## <a name="sweden-passport-number"></a>瑞典护照号码
 
 ### <a name="format"></a>格式
 
-八个数字
+八位数字
 
 ### <a name="pattern"></a>模式
 
-八个连续的数字
+八个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -17050,14 +17051,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
-- 找到或 `Keywords_eu_passport_number` 找到 `Keyword_sweden_passport` 的关键字。
-- 正则表达式查找 `Regex_sweden_eu_passport_date` DD MMM/MMM YY (01 JAN/JAN 12 `Keywords_eu_passport_date`) 或找到关键字的日期。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keyword_sweden_passport` 找到关键字。
+- 正则表达式 `Regex_sweden_eu_passport_date` 查找格式为 DD MMM/MMM YY (01 JAN/JAN 12) 或找到关键字的 `Keywords_eu_passport_date` 日期。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
-- 找到或 `Keywords_eu_passport_number` 找到 `Keyword_sweden_passport` 的关键字。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keyword_sweden_passport` 找到关键字。
 
 
 ```xml
@@ -17088,21 +17089,21 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- 注册卡
-- g3 处理费用
+- 外星人注册卡
+- g3 处理费
 - 多个条目
 - Numéro de passeport
 - passeport n °
@@ -17113,23 +17114,23 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - passeportn °
 - passnummer
 - pass nr
-- visa visa
-- visa visas
+- 申根签证
+- 申根签证
 - 单个条目
 - sverige pass
 - visa requirements
-- visa processing
-- visa type
+- 签证处理
+- visa 类型
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- 发行日期
+- 问题日期
 - 到期日期
 
 
 ## <a name="sweden-physical-addresses"></a>瑞典物理地址
 
-此未解包的命名实体检测与瑞典的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与瑞典的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -17138,26 +17139,26 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="sweden-tax-identification-number"></a>瑞典税务标识号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-10 个数字和指定模式中的符号
+指定模式中的 10 位数字和符号
 
 ### <a name="pattern"></a>模式
 
-10 个数字和一个符号：
+10 位数字和一个符号：
 
-- 六个数字，对应于 YYMMDD (出生日期) 
+- 与 YYMMDD (的出生日期相对应的六位数字) 
 - 加号或减号
 - 使标识号唯一的三个数字，其中：
-  - 对于 1990 以前颁发的数字，第七位和第八位标识出生日期或出生日期的县
-  - 第九个位置的数字表示性别（男性为奇数或偶数）
+  - 对于1990年以前发放的数字，第七位和第八位数字确定该县出生或外国出生的人
+  - 第九位的数字指示男性甚至女性的性别
 - 一个检查数字
 
 ### <a name="checksum"></a>校验和
@@ -17166,12 +17167,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数  `Func_sweden_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_sweden_eu_tax_file_number` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数  `Func_sweden_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_sweden_eu_tax_file_number` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_sweden_eu_tax_file_number` 查找与模式匹配的内容。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_sweden_eu_tax_file_number` 查找与模式匹配的内容。
 
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -17194,45 +17195,45 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
-- 个人 ID 号
+- 个人 ID 编号
 - personnummer
-- 将 id nummer
-- 将 identifikation
-- alatebetalarens identifikationsnummer
+- skatt id nummer
+- skatt identifikation
+- skattebetalarens identifikationsnummer
 - sverige tin
-- tax file
+- 税务文件
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax number
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税号
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="swift-code"></a>SWIFT 代码
 
 ### <a name="format"></a>格式
 
-四个字母后跟 5-31 个字母或数字
+4 个字母后跟 5-31 个字母或数字
 
 ### <a name="pattern"></a>模式
 
-四个字母后跟 5-31 个字母或数字：
-- 四个字母银行 (不区分大小写) 
-- 可选空格
+4 个字母后跟 5-31 个字母或数字：
+- 四字母银行代码 (不区分大小写) 
+- 可选空间
 - 4-28 个字母或数字（基本银行账号 (BBAN)）
-- 可选空格
-- BBAN (一到三个字母或) 
+- 可选空间
+- BBAN) 的其余部分 (一到三个字母或数字
 
 ### <a name="checksum"></a>校验和
 
@@ -17240,7 +17241,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_swift 找到与该模式匹配的内容。
 - 找到 Keyword_swift 中的一个关键字。
 
@@ -17260,7 +17261,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - international organization for standardization 9362
 - iso 9362
 - iso9362
-- swift#
+- 迅速#
 - swiftcode
 - swiftnumber
 - swiftroutingnumber
@@ -17280,14 +17281,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - le numéro BIC
 - # <a name="bic"></a>BIC
 - code identificateur de banque
-- SWIFTコド
-- SWIFT 号
-- BIC 级
-- BICコド
-- SWIFT コド
-- SWIFT 号
-- BIC 活动号
-- BIC コド
+- SWIFT コード
+- SWIFT 番
+- BIC 番号
+- BIC コード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
@@ -17295,7 +17296,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="switzerland-physical-addresses"></a>瑞士物理地址
 
-此未解包的命名实体检测与来自瑞士的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自瑞士的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -17304,9 +17305,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="switzerland-ssn-ahv-number"></a>瑞士 SSN AHV 号码
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
@@ -17319,13 +17320,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 13 位数字：
 
-- 三个数字 - 756
+- 三位数 - 756
 - 可选点
-- 四个数字
+- 四位数字
 - 可选点
-- 四个数字
+- 四位数字
 - 可选点
-- 两个数字
+- 两位数
 
 ### <a name="checksum"></a>校验和
 
@@ -17333,11 +17334,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_swiss_social_security_number_ahv查找与模式匹配的内容。
-- 找到来自Keywords_swiss_social_security_number_ahv关键字。
+- 找到Keywords_swiss_social_security_number_ahv的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_swiss_social_security_number_ahv查找与模式匹配的内容。
 
 ```xml
@@ -17358,37 +17359,37 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
 - ahv
-- ssn
+- Ssn
 - pid
-- insurance number
+- 保险号码
 - personalidno#
 - social security number
-- 个人 ID 号
-- 个人标识号。
+- 个人 ID 编号
+- 个人标识否。
 - insuranceno#
 - uniqueidno#
 - 唯一标识号。
 - avs number
-- personal identity no versicherungsnummer
+- 个人身份没有 versicherungsnummer
 - identifikationsnummer
-- einzi一ige identitchtt nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
-- identification personnelle id
+- 标识人员 ID
 - numéro de sécurité sociale
 
 
-## <a name="taiwan-national-identification-number"></a>台湾国家/地区身份证号码
+## <a name="taiwan-national-identification-number"></a>台湾国家标识号
 
 ### <a name="format"></a>格式
 
-一个字母 (英文) 后跟九个数字
+一个英文字母 () 后跟九位数
 
 ### <a name="pattern"></a>模式
 
-一个字母 (英文) 后跟九个数字：
-- 一个字母 (英语，不区分大小写) 
-- 数字"1"或"2"
-- 八个数字
+一个字母 (英文) 后跟九位数：
+- 一个英文字母 (，不区分大小写) 
+- 数字“1”或“2”
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -17396,12 +17397,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_taiwanese_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_taiwanese_national_id 中的一个关键字。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_taiwanese_national_id 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -17442,16 +17443,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>格式
 
-- 生物识别护照号码：九个数字
-- 非生物识别护照号码：九个数字
+- 生物识别护照号码：9位数字
+- 非生物识别护照号码：九位数字
 
 ### <a name="pattern"></a>模式
 生物识别护照号码：
-- 字符"3"
-- 八个数字
+- 字符“3”
+- 八位数字
 
 非生物识别护照号码：
-- 九个数字
+- 九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -17459,7 +17460,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_taiwan_passport 找到与该模式匹配的内容。
 - 找到 Keyword_taiwan_passport 中的一个关键字。
 
@@ -17487,7 +17488,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Zhōnghuá Mínguó hùzhào
 
 
-## <a name="taiwan-resident-certificate-arctarc-number"></a>中国台湾居民证书 (ARC/TARC) 号码
+## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾居民证书 (ARC/TARC) 编号
 
 ### <a name="format"></a>格式
 
@@ -17497,7 +17498,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 10 个字母和数字
 - 两个字母 (不区分大小写) 
-- 八个数字
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -17505,7 +17506,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_taiwan_resident_certificate 找到与该模式匹配的内容。
 - 找到 Keyword_taiwan_resident_certificate 中的一个关键字。
 
@@ -17536,7 +17537,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 台灣地區居留證
 
 
-## <a name="thai-population-identification-code"></a>泰语总体标识代码
+## <a name="thai-population-identification-code"></a>泰国人口标识码
 
 ### <a name="format"></a>格式
 
@@ -17545,7 +17546,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 第一个数字不为零或九
+- 第一个数字不是零或九
 - 12 个数字
 
 ### <a name="checksum"></a>校验和
@@ -17554,11 +17555,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_Thai_Citizen_Id查找与模式匹配的内容。
-- 找到来自Keyword_Thai_Citizen_Id关键字。
+- 找到Keyword_Thai_Citizen_Id的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_Thai_Citizen_Id查找与模式匹配的内容。
 
 ```xml
@@ -17585,7 +17586,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 
-## <a name="turkey-national-identification-number"></a>土耳其国家/地区标识号
+## <a name="turkey-national-identification-number"></a>土耳其国家标识号
 
 ### <a name="format"></a>格式
 
@@ -17601,11 +17602,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数Func_Turkish_National_Id查找与模式匹配的内容。
-- 找到来自Keyword_Turkish_National_Id关键字。
+- 找到Keyword_Turkish_National_Id的关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数Func_Turkish_National_Id查找与模式匹配的内容。
 
 ```xml
@@ -17625,31 +17626,31 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
-- TC Kim且否
-- TC Kim且 nu一
-- Vat一2k nu一s
-- Vat一体车否
+- TC Kimlik No
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık no
 
 
 ## <a name="turkey-physical-addresses"></a>土耳其物理地址
 
-此未解包的命名实体检测与土耳其的物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与土耳其的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="types-of-medication"></a>企业类型
+## <a name="types-of-medication"></a>药物类型
 
-此未解包的命名实体将检测检测名称，例如 *"花"*。  它仅支持英语术语。 它还包含在捆绑为实体 SIT [](#all-medical-terms-and-conditions) 的所有医疗条款和条件中。
+这个未拆卸的命名实体检测药物名称，如 *胰岛素*。  它仅支持英语术语。 它还包含在“ [所有医疗条款和条件](#all-medical-terms-and-conditions) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 高
 
 
-## <a name="uk-drivers-license-number"></a>英国 driver's license number
+## <a name="uk-drivers-license-number"></a>英国。 驱动程序的许可证编号
 
 ### <a name="format"></a>格式
 
@@ -17658,11 +17659,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 18 个字母和数字：
-- 五个字母 (不区分大小写，) 数字"9"来表示字母。
-- 一个数字。
-- 日期格式 MMDDY 表示出生日期的五个数字。 如果驱动程序是男性，则第七个字符将递增 50;例如，51 到 62，而不是 01 到 12。
-- 两个字母 (不区分大小写) 或数字"9"来表示字母。
-- 五个数字。
+- 五个字母 (不区分大小写) 或数字“9”代替一个字母。
+- 一位数字。
+- 出生日期的日期格式为 MMDDY 的五位数字。 如果驱动程序为女性，则第七个字符递增 50;例如，51 到 62，而不是 01 到 12。
+- 两个字母 (不区分大小写) 或数字“9”代替一个字母。
+- 五位数字。
 
 ### <a name="checksum"></a>校验和
 
@@ -17670,13 +17671,13 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 `Func_uk_drivers_license` 查找与模式匹配的内容。
-- 找到 的 `Keywords_eu_driver's_license_number` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数 `Func_uk_drivers_license` 查找与模式匹配的内容。
+- 从中找到关键字 `Keywords_eu_driver's_license_number` 。
 - 校验和通过。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数 `Func_uk_drivers_license` 查找与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 该函数 `Func_uk_drivers_license` 查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -17703,49 +17704,49 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- 驾驶执照
+- 驾驶执照
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- drivers lic
-- drivers lics
+- 驱动程序 lic
+- 驱动程序 lics
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- 驱动程序许可证
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
-- driver'licences
-- driver' lic
-- driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- 驾驶执照
+- driver'lic
+- 驱动程序的 lics
+- 驱动程序的许可证
+- 驱动程序的许可证
+- 驾驶执照
+- 驾驶执照
 - driver'slic
-- driver'slics
+- 驱动程序的切片
 - driver'slicense
-- driver'slicenses
+- 驱动程序的切片
 - driver'slicence
 - driver'slicences
-- driver's lic
-- driver's lics
+- 驱动程序的 lic
+- 驱动程序的 lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
-- dl#
-- dls#
+- 驾驶执照
+- Dl#
+- Dls#
 - driverlic#
 - driverlics#
 - driverlicense#
@@ -17753,46 +17754,46 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
-- driver license#
-- driver licenses#
-- driver licences#
+- 驱动程序 lics#
+- 驾照#
+- 驱动程序许可证#
+- 驾驶执照#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- drivers lic#
-- drivers lics#
-- drivers license#
-- drivers licenses#
-- drivers licence#
-- drivers licences#
+- 驱动程序 lic#
+- 驱动程序 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
-- driver'licences#
-- driver' lic#
-- driver' lics#
-- driver' license#
-- driver' licenses#
-- driver' licence#
-- driver' licences#
+- 驾驶执照#
+- driver'lic#
+- 驱动程序的 lics#
+- 驱动程序的许可证#
+- 驱动程序的许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driver'slic#
-- driver'slics#
+- 驱动程序的切片#
 - driver'slicense#
-- driver'slicenses#
+- 驱动程序的切片#
 - driver'slicence#
 - driver'slicences#
-- driver's lic#
-- driver's lics#
-- driver's license#
-- driver's licenses#
-- driver's licence#
-- driver's licences#
+- 驱动程序的 lic#
+- 驱动程序的 lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驾驶执照#
+- 驾驶执照#
 - driving licence 
 - driving license
 - dlno#
@@ -17800,27 +17801,27 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv licence
-- driv licences
-- driver licen
-- drivers licen
-- 驱动程序的 licen
-- driving lic
-- driving licen
-- driving licenses
+- driv 许可证
+- driv 许可证
+- 驱动程序许可
+- 驱动程序许可
+- 驱动程序的许可证
+- 驾驶 lic
+- 驾驶许可
+- 驾驶许可证
 - driving licence
 - driving licences
-- driving permit
+- 驾驶许可证
 - dl no
 - dlno
 - dl number
 
 
-## <a name="uk-electoral-roll-number"></a>英国 roll roll number
+## <a name="uk-electoral-roll-number"></a>英国。 选举人名册编号
 
 ### <a name="format"></a>格式
 
-两个字母后跟 1-4 个数字
+两个字母后跟 1-4 位数字
 
 ### <a name="pattern"></a>模式
 
@@ -17832,7 +17833,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_uk_electoral 找到与该模式匹配的内容。
 - 找到 Keyword_uk_electoral 中的一个关键字。
 
@@ -17858,7 +17859,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - electoral roll
 
 
-## <a name="uk-national-health-service-number"></a>英国 national health service number
+## <a name="uk-national-health-service-number"></a>英国。 国家卫生服务号码
 
 ### <a name="format"></a>格式
 
@@ -17867,11 +17868,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="pattern"></a>模式
 
 10-17 位数字：
-- 3 个或 10 个数字
-- 一个空格
-- 三个数字
-- 一个空格
-- 四个数字
+- 3 位或 10 位数字
+- 空格
+- 三位数
+- 空格
+- 四位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -17879,7 +17880,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_uk_nhs_number 找到与该模式匹配的内容。
 - 下列其中一项为真：
     - 找到 Keyword_uk_nhs_number 中的一个关键字。
@@ -17906,7 +17907,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
 - national health service
-- nhs
+- Nhs
 - health services authority
 - health authority
 
@@ -17926,33 +17927,33 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Birth Date
 
 
-## <a name="uk-national-insurance-number-nino"></a>英国 NINO 保险号码 (NINO) 
+## <a name="uk-national-insurance-number-nino"></a>英国。 国家保险号码 (NINO) 
 
 此敏感信息类型实体包含在欧盟国家标识号敏感信息类型中。 它还作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>格式
 
-七个字符或九个字符，用空格或短划线分隔
+用空格或短划线分隔的七个字符或九个字符
 
 ### <a name="pattern"></a>模式
 
 两种可能的模式：
 
-- 两个字母 (有效 NINOs 仅使用此前缀中的某些字符，此模式对此进行验证;不区分大小写) 
-- 六个数字
-- "A"、B、C 或"D" (类似前缀，后缀中只允许某些字符;不区分大小写) 
+- 两个字母 (有效的 NINO 仅使用此前缀中的某些字符，此模式对此模式进行验证;不区分大小写) 
+- 六位数字
+- “A”、“B”、“C”或“D” (前缀一样，后缀中只允许某些字符;不区分大小写) 
 
 或
 
 - 两个字母
 - 空格或短划线
-- 两个数字
+- 两位数
 - 空格或短划线
-- 两个数字
+- 两位数
 - 空格或短划线
-- 两个数字
+- 两位数
 - 空格或短划线
-- "A"、"B"、"C"或"D"
+- “A”、“B”、“C”或“D”
 
 ### <a name="checksum"></a>校验和
 
@@ -17960,11 +17961,11 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_uk_nino 找到与该模式匹配的内容。
 - 找到 Keyword_uk_nino 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_uk_nino 找到与该模式匹配的内容。
 
 ```xml
@@ -17987,7 +17988,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - national insurance number
 - national insurance contributions
 - protection act
-- insurance
+- 保险
 - social security number
 - insurance application
 - medical application
@@ -17995,19 +17996,19 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - medical attention
 - social security
 - great britain
-- NI 数字
+- NI 编号
 - NI 否。
-- NI#
-- NI#
-- insurance#
+- 镍#
+- 镍#
+- 保险#
 - insurancenumber
-- nationalinsurance#
+- 国家保险#
 - nationalinsurancenumber
 
 
-## <a name="uk-physical-addresses"></a>英国 物理地址
+## <a name="uk-physical-addresses"></a>英国。 物理地址
 
-此未解包的命名实体检测与英国物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测与来自英国的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
@@ -18015,18 +18016,18 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 
 
-## <a name="uk-unique-taxpayer-reference-number"></a>英国 唯一的纳税参考编号
+## <a name="uk-unique-taxpayer-reference-number"></a>英国。 唯一的纳税人参考编号
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-不带空格和分隔符的 10 个数字
+没有空格和分隔符的 10 位数字
 
 
 ### <a name="pattern"></a>模式
@@ -18039,9 +18040,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数  `Func_uk_eu_tax_file_number` 查找与模式匹配的内容。
-- 找到 的  `Keywords_uk_eu_tax_file_number` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 该函数  `Func_uk_eu_tax_file_number` 查找与模式匹配的内容。
+- 从中找到关键字  `Keywords_uk_eu_tax_file_number` 。
 
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -18057,34 +18058,34 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
-- tax number
-- tax file
+- 税号
+- 税务文件
 - tax id
-- tax identification no
-- tax identification number
+- 税务标识否
+- 税务标识号
 - tax no#
 - tax no
-- tax registration number
-- 已#
-- 一些#
-- 一些#
+- 税务注册号
+- taxid#
+- taxidno#
+- taxidnumber#
 - taxno#
 - taxnumber#
 - taxnumber
-- tin id
+- tin ID
 - tin no
-- tin#
+- 锡#
 
 
 ## <a name="us-bank-account-number"></a>美国银行帐号
 
 ### <a name="format"></a>格式
 
-6-17 个数字
+6-17 位数字
 
 ### <a name="pattern"></a>模式
 
-6-17 个连续的数字
+6-17 个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -18092,7 +18093,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式 Regex_usa_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_usa_Bank_Account 中的一个关键字。
 
@@ -18139,7 +18140,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Debit Account No.
 
 
-## <a name="us-drivers-license-number"></a>美国驾驶证号码
+## <a name="us-drivers-license-number"></a>美国驾照号
 
 ### <a name="format"></a>格式
 
@@ -18147,9 +18148,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="pattern"></a>模式
 
-取决于州 -例如，纽约：
-- 9 个数字，格式为 ddd ddd ddd 将匹配。
-- 9 个数字（如 ddddddddd）不匹配。
+取决于州 - 例如，纽约：
+- 格式为 ddd ddd ddd 的 9 位数字将匹配。
+- 像 ddddddddddd 这样的九位数将不匹配。
 
 ### <a name="checksum"></a>校验和
 
@@ -18157,12 +18158,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_new_york_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_[state_name]_drivers_license_name 中的一个关键字。
 - 找到 Keyword_us_drivers_license 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 Func_new_york_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_[state_name]_drivers_license_name 中的一个关键字。
 - 找到 Keyword_us_drivers_license_abbreviations 中的一个关键字。
@@ -18192,20 +18193,21 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 - DL
 - DLS
-- CDL
+- 民盟
 - CDLS
 - ID
 - ID
 - DL#
 - DLS#
-- CDL#
+- 民盟#
 - CDLS#
 - ID#
-- ID#
+- Id#
 - ID number
 - ID numbers
 - LIC
 - LIC#
+- DLN
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
@@ -18228,7 +18230,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - Driver'Lic
 - Driver'Lics
 - Driver'License
-- Driver'Licenses
+- 驱动程序许可证
 - Driver' Lic
 - Driver' Lics
 - Driver' License
@@ -18267,7 +18269,7 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - Driver'Lic#
 - Driver'Lics#
 - Driver'License#
-- Driver'Licenses#
+- 驱动程序许可证#
 - Driver' Lic#
 - Driver' Lics#
 - Driver' License#
@@ -18288,32 +18290,32 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- state 缩写 (例如，"NY") 
-- 州名称 (例如，"New York") 
+- 状态缩写 (例如“NY”) 
+- 州名 (例如“纽约”) 
 
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>ITIN 中美国个人纳税 (标识号) 
+## <a name="us-individual-taxpayer-identification-number-itin"></a>美国个人纳税人身份证号码 (ITIN) 
 
 ### <a name="format"></a>格式
 
-九个数字，以"9"开头，包含"7"或"8"作为第四个数字，可选格式为空格或短划线
+以“9”开头并包含“7”或“8”作为第四位数字的 9 位数字，可选地采用空格或短划线格式
 
 ### <a name="pattern"></a>模式
 
-格式化：
-- 数字"9"
-- 两个数字
+格式 化：
+- 数字“9”
+- 两位数
 - 空格或短划线
-- "7"或"8"
-- 一个数字
+- “7”或“8”
+- a digit
 - 空格或短划线
-- 四个数字
+- 四位数字
 
-unformatted：
-- 数字"9"
-- 两个数字
-- "7"或"8"
-- 五个数字
+未格式化：
+- 数字“9”
+- 两位数
+- “7”或“8”
+- 五位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -18321,16 +18323,16 @@ unformatted：
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_formatted_itin 找到与该模式匹配的内容。
 - 找到 Keyword_itin 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_unformatted_itin 找到与该模式匹配的内容。
 - 找到 Keyword_itin 中的一个关键字。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
-- 函数Func_formatted_itin或Func_unformatted_itin找到与模式匹配的内容。
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
+- 函数Func_formatted_itin或Func_unformatted_itin查找与模式匹配的内容。
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -18356,34 +18358,34 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- 将
+- 纳税人
 - tax id
 - tax identification
 - itin
 - i.t.i.n.
-- ssn
-- tin
+- Ssn
+- 锡
 - social security
 - tax payer
 - itins
-- 已
+- taxid
 - individual taxpayer
 
 
 ## <a name="us-physical-addresses"></a>美国物理地址
 
-此未解包的命名实体检测美国物理地址相关的模式。 它还包含在捆绑了命名 [实体 SIT 的所有](#all-physical-addresses) 物理地址中。
+此未拆卸的命名实体检测到与来自美国的物理地址相关的模式。 它还包含在“ [所有物理地址](#all-physical-addresses) ”捆绑的命名实体 SIT 中。
 
 ### <a name="confidence-level"></a>置信度
 
 中
 
 
-## <a name="us-social-security-number-ssn"></a>SSN (美国社会保险) 
+## <a name="us-social-security-number-ssn"></a>SSN)  (美国社会保障号码
 
 ### <a name="format"></a>格式
 
-九个数字，可能采用格式化或无格式模式
+9 位数字，可能采用格式化或无格式化模式
 
 > [!NOTE]
 > 如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。
@@ -18402,17 +18404,17 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
-- 函数 `Func_ssn` 查找与模式匹配的内容。
-- 找到 的 `Keyword_ssn` 关键字。
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
+- 该函数 `Func_ssn` 查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_ssn` 。
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 函数 Func_unformatted_ssn 找到与模式匹配的内容。
-- 找到 的 `Keyword_ssn` 关键字。
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
+- 函数Func_unformatted_ssn'查找与模式匹配的内容。
+- 从中找到关键字 `Keyword_ssn` 。
 
-DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+DLP 策略在接近 300 个字符的情况下检测到此类敏感信息的置信度较低：
 - 函数 `Func_randomized_formatted_ssn` 或 `Func_randomized_unformatted_ssn` 查找与模式匹配的内容。
-- 找到 的 `Keyword_ssn` 关键字。
+- 从中找到关键字 `Keyword_ssn` 。
 
 
 ```xml
@@ -18441,11 +18443,11 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- SSA 号码
+- SSA 编号
 - social security number
-- social security#
-- social security#
-- social security no
+- 社会保障#
+- 社会保障#
+- 社会保障否
 - Social Security#
 - Soc Sec
 - SSN
@@ -18459,12 +18461,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="format"></a>格式
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
 - 一个字母或数字
-- 八个数字
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -18472,14 +18474,14 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，其可信度很高：
+如果在接近 300 个字符的情况下检测到此类敏感信息，则 DLP 策略具有很高的信心：
 - 函数 Func_usa_uk_passport 找到与该模式匹配的内容。
-- 找到 或 `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` 中的关键字。
-- 找到的关键字来自`Keywords_eu_passport_date`
+- 从 `Keywords_eu_passport_number` 中找到或 `Keywords_uk_eu_passport_number` 找到关键字。
+- 从中找到关键字`Keywords_eu_passport_date`
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 函数 Func_usa_uk_passport 找到与该模式匹配的内容。
-- 找到 或 `Keywords_eu_passport_number` `Keywords_uk_eu_passport_number` 中的关键字。
+- 从 `Keywords_eu_passport_number` 中找到或 `Keywords_uk_eu_passport_number` 找到关键字。
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -18506,39 +18508,39 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport#
-- passport#
+- 护照#
+- 护照#
 - passportid
-- passports
+- 护照
 - passportno
 - passport no
 - passportnumber
 - passport number
 - passportnumbers
-- passport numbers
+- 护照号码
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- british passport
+- 英国护照
 - uk passport
 
 
 ## <a name="ukraine-passport-domestic"></a>乌克兰护照国内
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -18546,9 +18548,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_Ukraine_Passport_Domestic查找与模式匹配的内容。
-- 找到来自Keyword_Ukraine_Passport_Domestic关键字。
+- 找到Keyword_Ukraine_Passport_Domestic的关键字。
 
 ```xml
       <!-- Ukraine Passport Domestic -->
@@ -18574,22 +18576,22 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ## <a name="ukraine-passport-international"></a>乌克兰护照国际
 
-此敏感信息类型仅在：
+此敏感信息类型仅可用于：
 - 数据丢失防护策略
-- 通信合规性策略
+- 通信符合性策略
 - 信息治理
 - 记录管理
 - Microsoft Defender for Cloud Apps
 
 ### <a name="format"></a>格式
 
-八字符字母数字模式
+八个字符的字母数字模式
 
 ### <a name="pattern"></a>模式
 
-八字符字母数字模式：
+八个字符的字母数字模式：
 - 两个字母或数字
-- 六个数字
+- 六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -18597,9 +18599,9 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="definition"></a>定义
 
-DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+如果 DLP 策略接近 300 个字符，则会检测到此类敏感信息：
 - 正则表达式Regex_Ukraine_Passport_International查找与模式匹配的内容。
-- 找到来自Keyword_Ukraine_Passport_International关键字。
+- 找到Keyword_Ukraine_Passport_International的关键字。
 
 ```xml
       <!-- Ukraine Passport International -->

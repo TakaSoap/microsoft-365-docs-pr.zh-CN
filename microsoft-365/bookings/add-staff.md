@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: 使用此页面可以创建员工列表并管理员工成员详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713924"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746782"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 > [!NOTE]
 > 本文可帮助你与最新版本的Microsoft Bookings交互。 以前的版本将在未来几个月内停用。
 
-Bookings中的"人员"页是创建人员配置列表和管理员工成员详细信息（例如姓名、电话号码和电子邮件地址）的位置。 还可以从此处为每个工作人员设置工作时间。
+Bookings中的“人员”页是创建人员配置列表和管理员工成员详细信息（例如姓名、电话号码和电子邮件地址）的位置。 还可以从此处为每个工作人员设置工作时间。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -34,11 +34,11 @@ Bookings中的"人员"页是创建人员配置列表和管理员工成员详细�
 
 1. 从主页中选择日历。 
 
-2. 在左窗格中转到"员工"选项，然后选择 **"添加新员工**"。
+2. 在左窗格中转到“员工”选项，然后选择 **“添加新员工**”。
 
-3. 从组织内添加员工时，请在 **"添加人员** "字段中键入其姓名，并在下拉菜单中显示时选择他们。 其他字段将自动填充。
+3. 从组织内添加员工时，请在 **“添加人员** ”字段中键入其姓名，并在下拉菜单中显示时选择他们。 其他字段将自动填充。
 
-    添加员工后，可以通过选择姓名旁边的 **x** 并编辑 **"添加人员**"字段来编辑所有Bookings通信中显示的名称。 如果希望员工为客户显示特定的标题或名称，例如将 Adele Vance 列为"MD 万斯博士"，则此操作非常有用。
+    添加员工后，可以通过选择姓名旁边的 **x** 并编辑 **“添加人员**”字段来编辑所有Bookings通信中显示的名称。 如果希望员工为客户显示特定的标题或名称，例如将 Adele Vance 列为“MD 万斯博士”，则此操作非常有用。
 
 4. 若要从组织外部添加员工，请手动填写其电子邮件和其他信息。
 
@@ -58,19 +58,19 @@ Bookings中的"人员"页是创建人员配置列表和管理员工成员详细�
 
     例如，如果一名工作人员在周三下午 3 点安排了团队会议或个人约会，Bookings将显示该工作人员在该时间段内不可预订。 该时间将在Bookings日历视图中显示为忙碌或试探性，如下面的示例所示。
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="Bookings日历的视图。":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="Bookings日历的视图。":::
 
 > [!IMPORTANT]
 > 我们强烈建议将此设置保留 (默认) 启用此设置，以避免双重预订，并优化员工的可用性。
 
-8. 选择 **"使用营业时间** "，将员工的所有可预订时间设置为仅在"业务信息"页的 **"营业时间** "部分中设置的营业时间内。
+8. 选择 **“使用营业时间** ”，将员工的所有可预订时间设置为仅在“业务信息”页的 **“营业时间** ”部分中设置的营业时间内。
 
     通过取消选中此框，可以为员工提供可预订的自定义时间，进一步限制时间。 这对于员工可能只在星期二和星期三的网站上，或者将早晨用于一种类型的约会，以及他们的下午用于其他类型的情况很有帮助。
 
     > [!NOTE]
     > Bookings Bookings日历中最多支持 100 名工作人员。
 
-## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使Bookings用户成为超级用户，而无需在Bookings中将其添加为"工作人员"
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使Bookings用户成为超级用户，而无需在Bookings中将其添加为“工作人员”
 
 你可能希望在Bookings中将人员添加到员工列表，而不向客户或客户提供。 一旦你使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱的管理员定义为具有对预订邮箱的完全访问权限和发送方式权限。
 

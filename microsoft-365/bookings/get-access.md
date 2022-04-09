@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 了解如何在Microsoft 365中获取对Bookings功能的访问权限。
-ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: fd81b64916b1798982470ad8e6aa6e28b0a14fdf
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714254"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746736"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>获取 Microsoft Bookings 访问权限
 
@@ -29,11 +29,11 @@ ms.locfileid: "64714254"
 
 首次使用[Bookings](https://outlook.office.com/bookings/onboarding)将创建日历并设置业务。
 
-1. 选择 **开始**，输入业务名称和业务类型，然后选择 **"创建日历**"。
+1. 选择 **开始**，输入业务名称和业务类型，然后选择 **“创建日历**”。
 
 1. 如果这不是你第一次访问此页面，则可以选择另一个预订日历或搜索另一个预订日历。
 
-2. 输入业务名称和业务类型，然后选择 **"继续**"。
+1. 输入业务名称和业务类型，然后选择 **“继续**”。
 
 现已准备好为组织设置Bookings。 可以使用此[链接](https://outlook.office.com/bookings/onboarding)从应用启动器或 office.com 访问Bookings页。 使用以下主题继续设置Bookings功能。
 

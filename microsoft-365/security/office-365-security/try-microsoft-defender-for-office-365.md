@@ -19,19 +19,19 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 1db0a3ac8dc67c2ad439972341d28460d0f0a6bb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 95cc11956dfe597b70f18954723f914e057193a6
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731626"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746701"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>尝试Microsoft Defender for Office 365
 
 > [!NOTE]
 > 本文所述的功能以预览版提供，在所有组织中不可用，并且可能会发生更改。
 
-Microsoft 365 Defender门户中的统一 **试** 用版门户为以前单独的试用版和评估Microsoft Defender for Office 365体验提供了一个入口点。 目的是在完全提交计划 2 之前，先试用 30 天Defender for Office 365计划 2 的功能。 但是，基于Microsoft 365组织的性质，评估体验存在差异：
+Microsoft 365 Defender门户中的统一 **试** 用版门户为以前单独的试用版和评估Microsoft Defender for Office 365体验提供了一个入口点。 目的是在完全提交计划 2 之前，先试用 Defender for Office 365 计划 2 的功能 90 天。 但是，基于Microsoft 365组织的性质，评估体验存在差异：
 
 - 你已有Microsoft 365邮箱，但目前使用的是第三方服务或设备以进行电子邮件保护。 在传递到Microsoft 365组织之前，来自 Internet 的邮件将流经保护服务。 Microsoft 365保护尽可能低， (它永远不会完全关闭;例如，恶意软件保护始终) 强制实施。
 
@@ -45,7 +45,7 @@ Microsoft 365 Defender门户中的统一 **试** 用版门户为以前单独的�
 
   在这些环境中，可以在 *审核* 模式或 *阻止模式* 下尝试Defender for Office 365。
 
-你被邀请在Microsoft 365 Defender门户<https://security.microsoft.com>中的各种Defender for Office 365功能位置开始试用。 开始试用的集中位置位于 **"试用版** "页 <https://security.microsoft.com/atpEvaluation>上。
+你被邀请在Microsoft 365 Defender门户<https://security.microsoft.com>中的各种Defender for Office 365功能位置开始试用。 开始试用的集中位置位于 **“试用版** ”页 <https://security.microsoft.com/atpEvaluation>上。
 
 本文的其余部分介绍了审核模式阻止模式、如何配置评估和其他详细信息之间的区别。
 
@@ -85,17 +85,17 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
 
 **注意**:
 
-- 保险箱链接会在邮件流中引爆 URL。 若要防止特定 URL 被引爆，请使用租户允许/阻止列表。 有关详细信息，请参阅 ["管理租户允许/阻止列表](tenant-allow-block-list.md)"。
+- 保险箱链接会在邮件流中引爆 URL。 若要防止特定 URL 被引爆，请使用租户允许/阻止列表。 有关详细信息，请参阅 [“管理租户允许/阻止列表](tenant-allow-block-list.md)”。
 - 保险箱链接不会包装电子邮件正文中的 URL 链接。
-- 本文后面的" [评估策略设置](#evaluation-policy-settings) "部分介绍了评估策略设置。
+- 本文后面的“ [评估策略设置](#evaluation-policy-settings) ”部分介绍了评估策略设置。
 
 ## <a name="set-up-an-evaluation-in-audit-mode"></a>在审核模式下设置评估
 
-1. 单击 **"开始评估**"。
+1. 单击 **“开始评估**”。
 
-2. 在" **打开保护** "对话框中，选择 **"否"，我只想要报告**，然后单击" **继续**"。
+2. 在“ **打开保护** ”对话框中，选择 **“否”，我只想要报告**，然后单击“ **继续**”。
 
-3. 在 **"选择要包含的用户** "对话框中，配置以下设置：
+3. 在 **“选择要包含的用户** ”对话框中，配置以下设置：
 
    - **所有用户**：这是默认和建议的选项。
    - **选择用户**：如果选择此选项，则需要选择评估适用于谁：
@@ -110,15 +110,15 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
    > [!NOTE]
    > 设置完评估后，可以更改这些选择。
 
-   完成后，单击 **"继续**"。
+   完成后，单击 **“继续**”。
 
-4. 在 **"帮助我们了解邮件流** "对话框中，配置以下选项：
+4. 在 **“帮助我们了解邮件流** ”对话框中，配置以下选项：
 
    - **与 Microsoft 共享数据**：默认情况下选择了此选项，但你可以根据需要清除复选框。
 
    - 根据对域的 MX 记录的检测，将自动选择以下选项之一：
 
-     - **我使用的是第三方和/或本地服务提供程序**：域点的 MX 记录，而不是Microsoft 365。 单击" **下一步**"后，此选择需要以下附加设置：
+     - **我使用的是第三方和/或本地服务提供程序**：域点的 MX 记录，而不是Microsoft 365。 单击“ **下一步**”后，此选择需要以下附加设置：
 
        1. 在第 **三方或本地设置** 对话框中，配置以下设置：
 
@@ -138,11 +138,11 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
 
             当第三方服务或设备位于Microsoft 365中时，针对连接器的增强筛选可以正确识别 Internet 消息的源，并大大提高 Microsoft 筛选堆栈的准确性 (特别是[欺骗智能](anti-spoofing-protection.md)，以及[威胁资源管理器](threat-explorer.md)和[自动调查&响应 (AIR) ) ](automated-investigation-response-office.md) 中的泄露后功能。
 
-          - **列出消息传递的每个网关 IP 地址**：仅当为 **选择第三方服务提供程序** 选择了 **"其他**"时，此设置才可用。 输入第三方保护服务或设备用于将邮件发送到Microsoft 365的 IP 地址的逗号分隔列表。
+          - **列出消息传递的每个网关 IP 地址**：仅当为 **选择第三方服务提供程序** 选择了 **“其他**”时，此设置才可用。 输入第三方保护服务或设备用于将邮件发送到Microsoft 365的 IP 地址的逗号分隔列表。
 
           完成后，请单击“**下一步**”。
 
-       2. 在 **"Exchange邮件流规则**"对话框中，确定是否需要Exchange Online邮件流规则 (也称为传输规则) ，该规则可跳过对来自第三方保护服务或设备的传入邮件的垃圾邮件筛选。
+       2. 在 **“Exchange邮件流规则**”对话框中，确定是否需要Exchange Online邮件流规则 (也称为传输规则) ，该规则可跳过对来自第三方保护服务或设备的传入邮件的垃圾邮件筛选。
 
           Exchange Online中可能已有 SCL=-1 邮件流规则，允许保护服务中的所有入站邮件绕过 (大多数) Microsoft 365筛选。 许多保护服务鼓励使用其服务的Microsoft 365客户使用此垃圾邮件置信度 (SCL) 邮件流规则方法。
 
@@ -150,21 +150,21 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
 
           为连接器启用增强筛选，而不使用 SCL=-1 规则从保护服务传入邮件，将大大提高 EOP 保护功能 [（如欺骗智能）的](anti-spoofing-protection.md)检测功能，并可能影响这些新检测到的消息的传递 (例如移动到垃圾邮件文件夹或隔离) 。 此影响仅限于 EOP 策略;如前所述，Defender for Office 365策略是在审核模式下创建的。
 
-          若要创建 SCL=-1 邮件流规则或查看现有规则，请单击页面上的 **"转到Exchange管理中心**"按钮。 有关详细信息，请参阅["使用邮件流规则"设置Exchange Online邮件中的垃圾邮件置信度级别 (SCL) ](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
+          若要创建 SCL=-1 邮件流规则或查看现有规则，请单击页面上的 **“转到Exchange管理中心**”按钮。 有关详细信息，请参阅[“使用邮件流规则”设置Exchange Online邮件中的垃圾邮件置信度级别 (SCL) ](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
-          完成后，单击 **"完成**"。
+          完成后，单击 **“完成**”。
 
-     - **我只使用Microsoft Exchange Online**：域的 MX 记录指向Microsoft 365。 无需进行任何配置，请单击 **"完成**"。
+     - **我只使用Microsoft Exchange Online**：域的 MX 记录指向Microsoft 365。 无需进行任何配置，请单击 **“完成**”。
 
-5. 设置评估时会显示进度对话框。 设置完成后，单击 **"完成**"。
+5. 设置评估时会显示进度对话框。 设置完成后，单击 **“完成**”。
 
 ## <a name="set-up-an-evaluation-in-blocking-mode"></a>在阻止模式下设置评估
 
-1. 单击 **"开始评估**"。
+1. 单击 **“开始评估**”。
 
-2. 在 **"打开保护** "对话框中，选择 **"是"，通过阻止威胁来保护我的组织**，然后单击" **继续**"。
+2. 在 **“打开保护** ”对话框中，选择 **“是”，通过阻止威胁来保护我的组织**，然后单击“ **继续**”。
 
-3. 在 **"选择要包含的用户** "对话框中，配置以下设置：
+3. 在 **“选择要包含的用户** ”对话框中，配置以下设置：
 
    - **所有用户**：这是默认和建议的选项。
    - **选择用户**：如果选择此选项，则需要选择评估适用于谁：
@@ -179,9 +179,9 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
    > [!NOTE]
    > 设置完评估后，可以更改这些选择。
 
-   完成后，单击 **"继续**"。
+   完成后，单击 **“继续**”。
 
-4. 设置评估时会显示进度对话框。 设置完成后，单击 **"完成**"。
+4. 设置评估时会显示进度对话框。 设置完成后，单击 **“完成**”。
 
 ## <a name="reporting-in-audit-mode"></a>审核模式下的报告
 
@@ -201,14 +201,14 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
 - 安全链接
 - 安全附件
 
-默认情况下，图表显示过去 30 天的数据，但可以通过单击 !["日历"图标来筛选日期范围。](../../media/m365-cc-sc-add-internal-icon.png) **30 天** ，并从以下小于 30 天的附加值中进行选择：
+默认情况下，图表显示过去 30 天的数据，但可以通过单击 ![“日历”图标来筛选日期范围。](../../media/m365-cc-sc-add-internal-icon.png) **30 天** ，并从以下小于 30 天的附加值中进行选择：
 
 - 24 小时
 - 7 天
 - 14 天
 - 自定义日期范围
 
-可以单击" ![下载"图标。](../../media/m365-cc-sc-download-icon.png) **下载** 以将图表数据下载到.csv文件。
+可以单击“ ![下载”图标。](../../media/m365-cc-sc-download-icon.png) **下载** 以将图表数据下载到.csv文件。
 
 ## <a name="required-permissions"></a>所需权限
 
@@ -315,7 +315,7 @@ Defender for Office 365通过提供全面的功能来帮助组织保护其企业
 |IsDefault|False|
 |IsEnabled|True|
 |LocalizedNotificationTextList|{}|
-|名称|"EvaluationPolicy"|
+|名称|“EvaluationPolicy”|
 |RecommendedPolicyType|评估|
 |ScanUrls|True|
 |TrackClicks|True|

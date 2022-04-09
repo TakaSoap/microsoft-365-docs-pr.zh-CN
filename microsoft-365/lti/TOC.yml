@@ -1,16 +1,24 @@
-- name: M365 Office LTI
+- name: Microsoft 365 LTI
   href: index.md
+- name: Microsoft OneLTI 管理
+  href: manage-microsoft-one-lti.md
 - name: 画布集成
   items:
-    - name: 将 Microsoft OneDrive LTI 与 Canvas 一同使用
+    - name: 将 Microsoft OneDrive LTI 与 Canvas 配合使用
       href: onedrive-lti.md
-    - name: 将Microsoft Teams与 Canvas 一同使用
+    - name: 将Microsoft Teams类与 Canvas 配合使用
       href: teams-classes-with-canvas.md
-    - name: 将Microsoft Teams与 Canvas 一同使用
+    - name: 将Microsoft Teams会议与 Canvas 配合使用
       href: teams-meetings-with-canvas.md
-- name: 百度集成
+- name: Blackboard 集成
   items:
-    - name: 将 Microsoft OneDrive LTI 与 Microsoft OneDrive 一起使用
+    - name: 将 Microsoft OneDrive LTI 与 Blackboard 配合使用
       href: onedrive-lti-blackboard.md
-    - name: 将Microsoft Teams类与具有"Learn 超"的类一同使用
+    - name: 将Microsoft Teams类与 Blackboard Learn Ultra 配合使用
       href: teams-classes-with-blackboard.md
+- name: Moodle 集成
+  items:
+    - name: 设置和配置 Moodle 插件
+      href: moodle-plugin-configuration.md
+    - name: 将Microsoft Teams类和会议与 Moodle 配合使用
+      href: teams-classes-meetings-with-moodle.md

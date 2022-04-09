@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: 了解文档理解模型与表单处理模型之间的主要区别。
-ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664626"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738407"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>文档理解和表单处理模型之间的差异 
 
@@ -85,6 +85,7 @@ ms.locfileid: "64664626"
 | 交易性成本 | AI 生成器点数。<br>可分批购买 1M 的积分。<br>购买 300 个以上的 SharePoint Syntex 许可证，即可获得 1M 积分。<br>1M 积分可以处理 2000 个文件页。<br>| 不适用 |
 | 容量 | 使用默认的 Power Platform 环境（支持 Dataverse 数据库的自定义环境）。 | 没有容量限制。|
 | 支持的语言| 对更多 [73 种语言的语言](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)支持。 | 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
+
 
 ## <a name="see-also"></a>另请参阅
 

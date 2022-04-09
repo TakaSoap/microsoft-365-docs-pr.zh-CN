@@ -7,14 +7,19 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: null
+search.appverid: ''
 ms.collection:
-  - enabler-strategic
-  - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
 ms.localizationpriority: medium
-description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中的文档SharePoint Syntex。
+description: 了解如何在 Microsoft SharePoint Syntex 中将已发布的模型应用到SharePoint文档库。
+ms.openlocfilehash: 6be3a1b0badaecf1196545c313adcce51f3d2b55
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738477"
 ---
-
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
 </br>
@@ -23,7 +28,7 @@ description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中
 
 </br>
 
-发布文档理解模型后，可以应用于 SharePoint 租户中的一个或多个Microsoft 365库。
+发布文档理解模型后，可以将其应用于Microsoft 365租户中的一个或多个SharePoint文档库。
 
 > [!NOTE]
 > 只能将模型应用到你有权访问的文档库。
@@ -31,13 +36,13 @@ description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中
 
 ## <a name="apply-your-model-to-a-document-library"></a>将模型应用到文档库
 
-要将模型应用到 SharePoint 文档库，请执行以下操作：
+若要将模型应用于SharePoint文档库：
 
-1. 在模型主页上的"将模型 **应用到库"磁贴上** ，选择" **应用模型"**。 或者，在 **应用模型的地方部分** ，选择 **+添加库**。
+1. 在模型主页上，在“ **将模型应用于库”磁** 贴上，选择 **“应用模型**”。 或者，在 **“应用模型的位置”** 部分中，选择 **“+添加库**”。
 
-    ![Screenshot of Where the model is applied section with the Add library option highlighted.](../media/content-understanding/apply-to-library.png)
+    ![“应用模型的位置”部分的屏幕截图，其中突出显示了“添加库”选项。](../media/content-understanding/apply-to-library.png)
 
-2. 然后，你可以选择包含要应用模型的文档库的 SharePoint 网站。 如果该网站未显示在列表中，请使用搜索框进行查找。
+2. 然后，你可以选择包含要应用模型的文档库的 SharePoint 网站。 如果网站未显示在列表中，请使用搜索框查找它。
 
     ![选择网站。](../media/content-understanding/site-search.png)
 
@@ -48,83 +53,89 @@ description: 了解如何将已发布的模型应用到 Microsoft SharePoint 中
 
     ![选择文档库。](../media/content-understanding/select-doc-library.png)
 
-4. 由于模型与内容类型相关联，因此在将模型应用到库时，它将添加内容类型及其视图，其中提取的标签以列显示。 默认情况下，此视图是库的默认视图。 但是，可以选择不作为默认视图，选择"高级"设置并清除"将 **这个新视图设置为默认视图"** 复选框。
+4. 由于模型与内容类型相关联，因此将模型应用于库时，它将添加内容类型，并使用提取的标签更新默认视图，这些标签显示为列。 但是，可以选择 **“高级”设置** ，以选择保留当前库视图或使用包含模型信息和文件缩略图的新视图。 如果选择保留当前库视图，则库视图菜单下仍可使用包含模型信息的新视图。
 
-    ![库视图。](../media/content-understanding/library-view.png)
+    ![显示库视图的高级设置的屏幕截图。](../media/content-understanding/library-view.png)
+
+    有关详细信息，请参阅本文后面 [的文档库中的“更改视图](#change-the-view-in-a-document-library) ”。
 
 5. 选择 **“添加”** 将模型应用到库中。
 
-6. 在模型主页上的"**应用** 模型位置"部分，应看到列出的SharePoint的名称。
+6. 在模型主页上的“**应用模型的位置**”部分中，应会看到列出了SharePoint网站的名称。
 
-7. 转到你的文档库，并确保你处于模型的文档库视图中。 选择 **"自动化** > **查看文档了解模型"**。
+7. 转到你的文档库，并确保你处于模型的文档库视图中。 选择 **AutomateView** >  **文档理解模型**。
 
-8. 在"**审阅模型和应用新模型"** 页上，选择"已应用"选项卡以查看应用于文档库的模型。
+8. 在 **“审阅模型”和“应用新模型”** 页上，选择“ **应用** ”选项卡以查看应用于文档库的模型。
 
-    ![Screenshot showing the Applied tab selected and the applied models.](../media/content-understanding/applied-models.png) 
+    ![屏幕截图显示了所选的“已应用”选项卡和应用的模型。](../media/content-understanding/applied-models.png) 
 
-9. 选择 **"** 查看模型详细信息"可查看有关模型的信息，例如模型说明、模型发布者以及模型是否将保留标签或敏感度标签应用于它分类的文件。
+9. 选择 **“查看模型详细信息** ”以查看有关模型的信息，例如模型说明、发布模型的人员，以及模型是否将保留或敏感度标签应用于其分类的文件。
 
 将模型应用到文档库之后，你可以开始将文档上传到网站并查看结果。
 
-模型标识具有模型关联内容类型的任何文件和文件夹，并列出它们在你的视图中。 如果您的模型有任何提取程序，则视图将显示您从每个文件或文件夹提取的数据的列。
+该模型标识具有模型关联内容类型的任何文件和文件夹，并在视图中列出这些文件和文件夹。 如果模型有任何提取器，视图会显示从每个文件或文件夹中提取的数据的列。
 
 > [!NOTE]
-> 如果将两个或多个文档理解模型应用于同一个库，则使用具有最高平均可信度分数的模型对上载的文件进行分类。 提取的实体将仅来自应用模型。 <br><br>如果将自定义表单处理模型和文档理解模型应用于同一个库，则使用文档理解模型和该模型的任何经过训练提取程序对文件进行分类。 如果存在与表单处理模型匹配的任何空列，则使用这些提取的值填充这些列。
+> 如果将两个或多个文档理解模型应用于同一库，则使用平均置信度分数最高的模型对上传的文件进行分类。 提取的实体将仅来自应用的模型。 <br><br>如果将自定义表单处理模型和文档理解模型应用于同一库，则使用文档理解模型和该模型的任何定型提取器对该文件进行分类。 如果有任何与表单处理模型匹配的空列，则将使用这些提取的值填充这些列。
 
 ## <a name="sync-changes-to-one-or-more-libraries"></a>将更改同步到一个或多个库
 
-将模型发布到多个文档库，然后更新模型（如添加或删除提取程序）时，需要将更新推送到已应用模型的所有库。
+将模型发布到多个文档库，然后更新模型（例如添加或删除提取器）时，需要将更新推送到已应用模型的所有库。
 
-同步所有已应用库的更改：
+同步对所有已应用库的更改：
 
-1. 在模型主页上的"应用模型 **的地方** "部分，选择" **全部同步"**。
+1. 在模型主页上的“ **应用模型的位置** ”部分中，选择 **“全部同步**”。
 
-    ![Screenshot showing the Where the model is applied section and the Sync all button highlighted.](../media/content-understanding/sync-all-button.png) 
+    ![屏幕截图显示了“应用模型的位置”部分，并突出显示了“同步所有”按钮。](../media/content-understanding/sync-all-button.png) 
 
-若要将更改同步到一个或仅选定的库：：
+若要同步对一个或唯一所选库的更改：
 
-1. 在模型主页上的" **应用** 模型的位置"部分，选择要应用更改的库。
+1. 在模型主页上的“ **应用模型的位置”** 部分中，选择要将更改应用到的库或库。
 
 2. 选择“**同步**”。
 
-    ![Screenshot showing the Where the model is applied section and the Sync button highlighted.](../media/content-understanding/sync-button.png) 
+    ![屏幕截图显示了“应用模型的位置”部分，并突出显示了“同步”按钮。](../media/content-understanding/sync-button.png) 
 
-## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>将模型应用到文档库中已有的文件和文件夹内容
+## <a name="apply-the-model-to-files-and-folder-content-already-in-the-document-library"></a>将模型应用于文档库中已有的文件和文件夹内容
 
-虽然应用的模型处理应用后上载到文档库的所有文件和文件夹内容，但您也可以执行以下操作，以在应用模型之前对文档库中已存在的文件和文件夹内容运行模型：
+虽然应用的模型处理在应用文档库后上传到文档库的所有文件和文件夹内容，但你也可以执行以下操作，在应用模型之前对文档库中已存在的文件和文件夹内容运行模型：
 
 1. 在文档库中，选择要由模型处理的文件和文件夹。
 
-2. 选择文件和文件夹后， **"分类和提取** "将显示在文档库功能区中。 选择 **“分类和提取”**。
+2. 选择文件和文件夹后， **分类和提取** 将显示在文档库功能区中。 选择 **“分类和提取”**。
 
-      ![显示"分类和提取"选项的屏幕截图。](../media/content-understanding/extract-classify.png) 
+      ![显示“分类和提取”选项的屏幕截图。](../media/content-understanding/extract-classify.png) 
 
-3. 所选的文件和文件夹将添加到队列中进行处理。
+3. 所选的文件和文件夹将添加到要处理的队列中。
 
     > [!NOTE]
-    > 你将收到一条消息，指示分类可能需要多久。 如果仅选择了文件，分类可能最多需要 30 分钟。 如果你已选择一个或多个文件夹，分类最多可能需要 24 小时。
+    > 你将收到一条消息，指示分类可能需要多长时间。 如果仅选择文件，分类可能需要长达 30 分钟的时间。 如果选择了一个或多个文件夹，分类可能需要长达 24 小时。
 
 ### <a name="classification-date-field"></a>分类日期字段
 
-当SharePoint Syntex文档理解模型 (或表单处理模型) 文档库时，分类日期字段将包含在库架构中。 默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段会使用完成日期时间戳进行更新。 
+将SharePoint Syntex文档理解模型 (或表单处理模型) 应用到文档库时，“**分类日期”** 字段将包含在库架构中。 默认情况下，此字段为空。 但是，当文档由模型处理和分类时，此字段将使用完成日期时间戳进行更新。 
 
-   ![显示"分类日期"列的文档库的屏幕截图。](../media/content-understanding/class-date-column.png) 
+   ![显示“分类日期”列的文档库的屏幕截图。](../media/content-understanding/class-date-column.png) 
 
-"分类 **日期**"字段由"当 [](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)文件由内容理解模型分类时"触发器使用，在模型处理完文件或文件夹的内容并更新了"分类日期"字段后，运行 Power Automate 流。
+“**分类日期”** 字段由 [**内容理解模型触发器对文件进行分类**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)，以便在模型处理完文件或文件夹的内容并更新了“**分类日期”** 字段后运行Power Automate流。
 
    ![Flow触发器。](../media/content-understanding/trigger.png)
 
-The **When a file is classified by a content understanding model** trigger can then be used to start a flow using any extracted information from the file or folder.
+**然后，当文件由内容理解模型** 触发器分类时，可以使用文件或文件夹中的任何提取的信息来启动流。
 
-例如，当使用分类日期标记模型时，您可以在 **SharePoint Syntex** 处理文件流后发送电子邮件，以通知用户新文件已由 SharePoint 文档库中的模型进行处理和分类。
+例如，当使用 **分类日期** 标记模型时，可以在 **SharePoint Syntex处理文件流后使用“发送电子邮件**”来通知用户新文件已由SharePoint文档库中的模型处理和分类。
 
-运行流：
+若要运行流，请执行以下操作：
 
-1. 选择文件，**然后选择"集成****Power Automate** >  > **创建流"**。
+1. 选择文件，然后选择“**集成** > **Power Automate** > **创建流**。
 
-2. 在"**创建流"** 面板上，选择"**处理文件SharePoint Syntex发送电子邮件。**
+2. 在 **“创建流**”面板上，选择 **SharePoint Syntex处理文件后发送电子邮件**。
 
-    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
+    ![显示突出显示“创建流面板和流”选项的屏幕截图。](../media/content-understanding/integrate-create-flow.png) 
+
+## <a name="change-the-view-in-a-document-library"></a>更改文档库中的视图
+
+[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
 
 ## <a name="see-also"></a>另请参阅
 

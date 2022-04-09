@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: cb85f5391a6ee6c25d4f82f6f6819132bb8d3b02
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 830149a1592aa2985b603d2e9f317250c7c2606a
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663041"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746521"
 ---
 # <a name="get-microsoft-defender-for-business"></a>获取Microsoft Defender 商业版
 
@@ -49,7 +49,7 @@ Microsoft 列出了有权销售产品/服务的解决方案提供商，包括Mic
 
 若要在区域中查找解决方案提供程序，请执行以下步骤：
 
-1. 转到 **"Microsoft 解决方案提供商** "页 ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)) 。
+1. 转到 **“Microsoft 解决方案提供商** ”页 ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)) 。
  
 2. 在搜索框中，填写你的位置和公司大小。 
 
@@ -74,16 +74,16 @@ Microsoft 列出了有权销售产品/服务的解决方案提供商，包括Mic
 
 1. 访问 [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview)。
 
-2. 选择 **"客户** "或 **"Microsoft 合作伙伴**"。
+2. 选择 **“客户** ”或 **“Microsoft 合作伙伴**”。
 
-3. 查看并接受Microsoft Defender 商业版预览协议的条款，然后选择 **"下一步**"。
+3. 查看并接受Microsoft Defender 商业版预览协议的条款，然后选择 **“下一步**”。
 
 4. 使用联系人信息填写表单。 
 
-   - 如果你是与 Microsoft 合作伙伴合作的客户，请在 **"其他** "框中填写合作伙伴的公司名称。 然后选择" **提交**"。
+   - 如果你是与 Microsoft 合作伙伴合作的客户，请在 **“其他** ”框中填写合作伙伴的公司名称。 然后选择" **提交**"。
    - 如果你是 Microsoft 合作伙伴，请务必指示你的合作关系类型以及你计划与之合作的客户的信息。
 
-5. 填写完窗体后，选择" **提交**"。
+5. 填写完窗体后，选择“ **提交**”。
 
 ## <a name="what-to-expect-after-applying"></a>应用后会发生什么
 
@@ -92,7 +92,7 @@ Microsoft 列出了有权销售产品/服务的解决方案提供商，包括Mic
 如果被接受，电子邮件将包含用于激活 Defender for Business 试用版的许可证代码。
 
 > [!IMPORTANT]
-> 如果你是合作伙伴，则在被接受预览版计划后，必须让每个客户完成本部分中所述的过程， [注册预览版计划](#sign-up-for-the-preview-program)。 确保客户在 **"其他** "框中指定你的 Microsoft 合作伙伴名称。
+> 如果你是合作伙伴，则在被接受预览版计划后，必须让每个客户完成本部分中所述的过程， [注册预览版计划](#sign-up-for-the-preview-program)。 确保客户在 **“其他** ”框中指定你的 Microsoft 合作伙伴名称。
 
 ## <a name="two-portals-for-setup"></a>用于设置的两个门户
 
@@ -115,27 +115,16 @@ Microsoft 列出了有权销售产品/服务的解决方案提供商，包括Mic
 
 3. 首次登录时，将转到Microsoft 365 管理中心 () [https://admin.microsoft.com/](https://admin.microsoft.com/) 。 请参阅[Microsoft 365 管理中心概述](../../admin/admin-overview/admin-center-overview.md)。
 
-4. 使用下列过程之一：
+4. 使用下列过程之一：<br/>
 
-   - 如果是首次设置Microsoft 365订阅，请选择 **"转到引导式设置**"并完成以下步骤：
-
-      a. 现在安装Office应用，或者选择 **"继续**"跳过此步骤。  (以后可以安装Office应用。) 
-
-      b. 如果你的公司有域，现在可以添加它 (建议) 此选项。 或者，现在可以选择使用默认 `.onmicrosoft.com` 域。
-
-      c. 添加用户并分配许可证。 列出的每个用户将自动分配许可证。 请参阅 ["添加用户"并同时分配许可证](../../admin/add-users/add-users.md)。
-
-   - 如果要将试用版添加到现有Microsoft 365租户，请按照以下步骤将新许可证分配给用户：
-
-      a. 转到Microsoft 365 管理中心 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) 并登录。
-
-      b. 在导航窗格中，选择 **UsersActive** >  用户。 查看用户列表。 
-
-      c. 若要分配许可证，请遵循向 [用户分配许可证中的](../../admin/manage/assign-licenses-to-users.md)指南。
+   | 应用场景 | Procedure |
+   |:---|:---|
+   | 您是第一次设置Microsoft 365订阅。 | 选择 **“转到引导式设置** ”并完成以下步骤：<br/><br/>1. 立即安装Office应用，或选择 **“继续**”跳过此步骤。  (以后可以安装Office应用。) <br/><br/>2. 如果你的公司有域，现在可以添加它 (建议) 此选项。 或者，现在可以选择使用默认 `.onmicrosoft.com` 域。<br/><br/>3. 添加用户并分配许可证。 列出的每个用户将自动分配许可证。 请参阅 [“添加用户”并同时分配许可证](../../admin/add-users/add-users.md)。 |
+   | 你要将试用版添加到现有Microsoft 365租户。 | 1. 转到Microsoft 365 管理中心 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) 并登录。<br/><br/>2. 在导航窗格中，选择 **UsersActive** >  用户。 查看用户列表。 <br/><br/>3. 若要分配许可证，请按照向 [用户分配许可证中的](../../admin/manage/assign-licenses-to-users.md)指南操作。 |
 
 
 ## <a name="next-steps"></a>后续步骤
 
-- [设置和配置Microsoft Defender 商业版](mdb-setup-configuration.md)。
+1. [在Microsoft Defender 商业版中使用安装向导](mdb-use-wizard.md)，或[查看 Defender for Business 的设置和配置过程](mdb-setup-configuration.md)。
 
-- [了解如何获取Microsoft Defender 商业版的帮助和支持](mdb-get-help.md)
+2. [了解如何在需要帮助的情况下获取 Defender for Business (的帮助和支持](mdb-get-help.md)) 

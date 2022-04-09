@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 03/15/2022
+ms.date: 04/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d7651e9ec4ec3cfbf3fe8e853b6de1de9e50dae1
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 76e47f1d4ebb7aa32c65f235ee9b2ede9a051a2d
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714672"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746593"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>将Microsoft Defender 商业版与Microsoft 365 商业高级版进行比较
 
@@ -87,9 +87,9 @@ Defender for Business 为中小型企业带来了 Defender for Endpoint 的企�
 | [下一代保护](../defender-endpoint/next-generation-protection.md) | 是 | 是 | 是 |
 | [终结点检测和响应](../defender-endpoint/overview-endpoint-detection-response.md) | 是 <sup>[[2](#fn2)]</sup> | 否 | 是 |
 | [自动调查和响应](../defender-endpoint/automated-investigations.md) | 是 <sup>[[2](#fn2)]</sup> | 否 | 是 |
-| [威胁搜寻](../defender-endpoint/advanced-hunting-overview.md) 和六个月的数据保留 | 否 | 否 | 是 |
+| [威胁搜寻](../defender-endpoint/advanced-hunting-overview.md) 和六个月的数据保留 <sup>[[3](#fn3)]</sup> | 否 | 否 | 是 |
 | [威胁分析](../defender-endpoint/threat-analytics.md) | 是 <sup>[[2](#fn2)]</sup> | 否 | 是 |
-| [跨平台支持](../defender-endpoint/minimum-requirements.md) <br/> (Windows、macOS、iOS 和 Android OS)  | 是 <sup>[[3](#fn3)]</sup> | 是 | 是 |
+| [跨平台支持](../defender-endpoint/minimum-requirements.md) <br/> (Windows、macOS、iOS 和 Android OS)  | 是 <sup>[[4](#fn4)]</sup> | 是 | 是 |
 | [Microsoft 威胁专家](../defender-endpoint/microsoft-threat-experts.md) | 否 | 否 | 是 |
 | 合作伙伴 API | 是 | 是 | 是 |
 | [Microsoft 365 Lighthouse集成](../../lighthouse/m365-lighthouse-overview.md) <br/> (查看客户租户之间的安全事件)  | 是 | 否 | 否 |
@@ -98,7 +98,9 @@ Defender for Business 为中小型企业带来了 Defender for Endpoint 的企�
 
  (<a id="fn2">2</a>) 这些功能针对中小型企业进行了优化。
 
- (<a id="fn3">3</a>) 在预览计划期间，Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 支持Windows客户端设备。
+ (<a id="fn3">3</a>) Defender for Business 中没有时间线选项卡。
+
+ (<a id="fn4">4</a>) 在预览计划期间，Microsoft 365 Defender 门户 () [https://security.microsoft.com](https://security.microsoft.com) 支持Windows客户端设备。
 
 ## <a name="next-steps"></a>后续步骤
 

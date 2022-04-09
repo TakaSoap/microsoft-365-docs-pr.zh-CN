@@ -96,6 +96,8 @@
           href: configure-global-settings-for-safe-links.md
         - name: 配置出站垃圾邮件筛选
           href: configure-the-outbound-spam-policy.md
+        - name: 配置和查看优先级帐户
+          href: configure-review-priority-account.md
         - name: 创建阻止发件人列表
           href: Create-block-sender-lists-in-office-365.md
         - name: 创建安全发件人列表

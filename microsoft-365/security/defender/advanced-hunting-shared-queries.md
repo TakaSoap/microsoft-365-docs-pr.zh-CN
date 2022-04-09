@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 21dbcdebbb640e15ef4023c0bf0cfdaf4739fdb7
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686942"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738502"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -36,7 +36,7 @@ ms.locfileid: "64686942"
 
 可以与同一个组织内的用户共享[高级搜寻](advanced-hunting-overview.md)查询。 还可以保存只能可供你访问的查询。 还可以找到在GitHub上公开共享的社区查询。 通过这些保存的查询，你可以快速执行特定的威胁搜寻方案，而无需从头开始编写查询。
 
-在高级搜寻中的"查询"选项卡下，可以找到 **共享查询**、**我的查询** 和 **Community查询的** 下拉菜单。 可以选择向下箭头以展开菜单。
+在高级搜寻中的“查询”选项卡下，可以找到 **共享查询**、**我的查询** 和 **Community查询的** 下拉菜单。 可以选择向下箭头以展开菜单。
 
 
 :::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender门户中的共享查询信息" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
@@ -68,15 +68,16 @@ ms.locfileid: "64686942"
 2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
 ## <a name="create-a-direct-link-to-a-query"></a>创建指向查询的直接链接
-若要生成直接在高级搜寻查询编辑器中打开查询的链接，请完成查询并选择 **"共享"链接**。
+若要生成直接在高级搜寻查询编辑器中打开查询的链接，请完成查询并选择 **“共享”链接**。
 
 ## <a name="access-community-queries-in-the-github-repo"></a>访问 GitHub 存储库中的社区查询  
 Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/Microsoft%20365%20Defender)中共享高级搜寻查询。 在发布之前，将查看对此存储库的贡献。 [免费加入 GitHub](https://github.com/)，即可参与。
 
-也可以在 **Community查询** 下拉列表中轻松找到这些查询。
+也可以在 **“Community查询**”下拉菜单中轻松找到这些查询。
 
 :::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="即将保存在Microsoft 365 Defender门户中的新查询" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
+Community查询分为 *“市场活动*”、“*收集*”、“*防御规避*”等文件夹。 有关查询的详细信息在查询本身中作为内联注释提供。 
 
 >[!tip]
 >此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 这些查询作为Microsoft 365 Defender[中威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
