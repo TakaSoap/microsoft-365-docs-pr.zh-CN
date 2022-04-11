@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738502"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761599"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -39,7 +39,7 @@ ms.locfileid: "64738502"
 在高级搜寻中的“查询”选项卡下，可以找到 **共享查询**、**我的查询** 和 **Community查询的** 下拉菜单。 可以选择向下箭头以展开菜单。
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender门户中的共享查询信息" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Microsoft 365 Defender门户中的共享查询、我的查询和Community查询" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -63,7 +63,7 @@ ms.locfileid: "64738502"
 ## <a name="delete-or-rename-a-query"></a>删除或重命名查询
 1. 选择要重命名或删除的查询右侧的三个点。
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="Microsoft 365 Defender门户中高级搜寻页中共享查询的选项" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="在Microsoft 365 Defender门户的高级搜寻页中重命名或删除查询" lightbox="../../media/advanced-hunting-del-save-query.png":::
 
 2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
@@ -75,7 +75,7 @@ Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://
 
 也可以在 **“Community查询**”下拉菜单中轻松找到这些查询。
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="即将保存在Microsoft 365 Defender门户中的新查询" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Community门户中由文件夹组织的 Microsoft 365 Defender查询" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
 Community查询分为 *“市场活动*”、“*收集*”、“*防御规避*”等文件夹。 有关查询的详细信息在查询本身中作为内联注释提供。 
 

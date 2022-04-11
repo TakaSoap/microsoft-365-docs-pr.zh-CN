@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用带有保留策略和保留标签策略的保存锁来帮助满足监管要求，并防范恶意管理员。
-ms.openlocfilehash: 64c2bb8f2718ce0da9d638b5b8b6bd4f89d33668
-ms.sourcegitcommit: f6fff04431d632db02e7bdbf12f691091a30efad
+ms.openlocfilehash: ac957475474e1d99dff541ac9a208ae5dc681217
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60432669"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761718"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>使用保留锁定来限制对保留策略和保留标签策略的更改
 
@@ -68,7 +68,7 @@ ms.locfileid: "60432669"
 3. 若要在策略上放置保存锁，请运行 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet，并将策略的名称和 *RestrictiveRetention* 参数设置为 true：
     
     ```powershell
-    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" -RestrictiveRetention $true
     ```
     
     例如：

@@ -19,41 +19,41 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
-description: 本文将了解如何使用本文中包含的模板之一创建 DLP Office 365。
-ms.openlocfilehash: 965e5198887ec64072efffd35ffa7739c90af6a4
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+description: 本文介绍如何使用Office 365中包含的模板之一创建 DLP 策略。
+ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62355018"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759094"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>通过模板创建 DLP 策略
 
-开始使用 DLP 策略的最简单、最常见的方法是使用 Microsoft 365 中心中包含的模板之一。 您可以按如下状态使用这些模板之一，或自定义规则以满足组织的特定合规性要求。
+开始使用 DLP 策略的最简单、最常见的方法是使用Microsoft 365合规中心中包含的模板之一。 可以按自己的方式使用其中一个模板，也可以自定义规则以满足组织的特定合规性要求。
 
-Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规和业务策略需求。 请参阅; [完整列表](dlp-policy-reference.md#policy-templates) 的策略模板。 
+Microsoft 365包含 40 多个现成的模板，可帮助你满足各种常见的法规和业务策略需求。 请参阅;完整列表的策略 [模板](dlp-policy-reference.md#policy-templates) 。 
 
-您可以通过修改模板的任何现有规则或添加新规则来微调模板。 例如，您可以将新的敏感信息类型添加到规则中，以及修改规则中的计数以使其更难以触发或更易于触发，使用户通过提供业务理由替代规则中的操作，或更改要向其发送通知和事件报告的用户。 对于许多常见的合规性方案来说，DLP 策略模板都是一个灵活的起点。
+可以通过修改模板的任何现有规则或添加新规则来微调模板。 例如，您可以将新的敏感信息类型添加到规则中，以及修改规则中的计数以使其更难以触发或更易于触发，使用户通过提供业务理由替代规则中的操作，或更改要向其发送通知和事件报告的用户。 对于许多常见的合规性方案来说，DLP 策略模板都是一个灵活的起点。
 
 您还可以选择不带有任何默认规则的自定义模板，从头开始配置您的 DLP 策略以满足组织的特定合规性要求。
 
 ## <a name="permissions"></a>权限
 
-创建 DLP 策略的合规性团队成员需要具有对合规中心的访问权限。 默认情况下，租户管理员将具有访问权限，可授予合规部官员和其他人员访问权限。 请按照下列步骤操作：
+创建 DLP 策略的合规性团队成员需要具有对合规中心的访问权限。 默认情况下，租户管理员具有访问权限，可以授予合规性官员和其他人员访问权限。 请按以下步骤操作：
   
 1. 在 Microsoft 365 中创建组并向其添加合规部主管。
     
 2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
 
-3. 创建角色组时，请使用" **选择** 角色"部分将以下角色添加到角色组： **DLP 合规性管理**。
+3. 创建角色组时，请使用 **“选择角色”** 部分将以下角色添加到角色组： **DLP 合规性管理**。
     
 4. 使用“**选择成员**”部分，将先前创建的 Microsoft 365 组添加到角色组中。
 
-使用" **仅查看 DLP 合规性管理** "角色创建具有 DLP 策略和 DLP 报告仅查看权限的角色组。
+使用 **“仅视图 DLP 合规性管理** ”角色创建具有 DLP 策略和 DLP 报表的仅限查看权限的角色组。
 
 有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
-创建和应用 DLP 策略时需要这些权限，才能不强制执行策略。
+创建和应用 DLP 策略而不强制实施策略需要这些权限。
 
 ### <a name="roles-and-role-groups-in-preview"></a>预览版中的角色和角色组
 
@@ -76,15 +76,15 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>从模板创建 DLP 策略
 
-1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心。</a>
+1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 合规中心</a>。
 
-2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
+2. 在合规中心\>左侧导航\>**解决方案** \> **数据丢失防护** \> **策略** \> **+ 创建策略**。
 
     ![创建策略按钮。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
-3. 选择 DLP 策略模板，用于保护"下一步"所需的敏感信息\>**类型**。
+3. 选择 **保护下一** 步所需的\>敏感信息类型的 DLP 策略模板。
 
-4. 将策略命名为"下 \>一 **步"**。
+4. 将策略命名为 **“下一**\>步”。
  
 <!--In this example, you'll select **Privacy** \> **U.S. Personally Identifiable Information (PII) Data** because it already includes most of the types of sensitive information that you want to protect - you'll add a couple later.
 
@@ -92,38 +92,38 @@ Microsoft 365包括 40 多个现成模板，可帮助你满足各种常见法规
 
     ![Page for choosing a DLP policy template.](../media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)-->
 
-5. 选择希望 DLP 策略保护的位置，并接受每个位置的默认范围或自定义范围。 请参阅 [作用域](dlp-policy-reference.md#locations) 选项的位置。
+5. 若要选择要保护 DLP 策略的位置，请接受每个位置的默认范围或自定义范围。 请参阅范围选项 [的位置](dlp-policy-reference.md#locations) 。
 
 6. 选择“\> **下一步**”。
  
 1. 执行下列操作之一：
 
-   - Choose **All locations in Office 365** \> **Next**.
-   - Choose **Let me choose specific locations** \> **Next**. 对于此示例，选择此。
+   - 选择“**Office 365下** 一\>步 **”中的所有位置**。
+   - 选择“让我选择 **下一步****的特定位置**\>”。 对于此示例，请选择此选项。
 
-   若要包含或排除整个位置（如所有Exchange或所有OneDrive帐户），请打开或关闭该位置的"状态"。
+   若要包括或排除整个位置，例如所有Exchange电子邮件或所有OneDrive帐户，请打开或关闭该位置的 **状态**。
 
-   若要仅包含SharePoint或OneDrive for Business帐户，请切换到"状态"，然后单击"包含"下的链接以选择特定网站或帐户。 将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
+   若要仅包含特定的SharePoint网站或OneDrive for Business帐户，请将 **状态** 切换为打开，然后单击 **“包括**”下的链接以选择特定的网站或帐户。 将策略应用到网站后，该策略中配置的规则将自动应用到该网站的所有子网站。
 
-   ![可以应用 DLP 策略的位置的选项。](../media/all-locations.png)
+   ![可应用 DLP 策略的位置的选项。](../media/all-locations.png)
 
-   本示例中，若要保护存储在所有 OneDrive for Business 帐户的敏感信息，请同时关闭 Exchange 电子邮件和 **SharePoint** 网站的"状态"，并保留 OneDrive **帐户** 的"**状态"。**
+   在此示例中，若要保护存储在所有OneDrive for Business帐户中的敏感信息，请关闭 **Exchange电子邮件** 和 **SharePoint网站** 的 **状态**，并为 **OneDrive帐户** 保留 **状态**。
 
-7. 从 **模板"下一步"中选择"查看并自定义默认设置** \> **"**。
+7. 从“**下一步**”模板\>中选择 **“查看”并自定义默认设置**。
 
-8. DLP 策略模板包含预定义的规则，这些规则具有对特定敏感信息类型进行检测和操作的条件与操作。 可以编辑、删除或关闭任何现有规则，也可以添加新规则。 完成后，单击"下一 **步"**。
+8. DLP 策略模板包含预定义的规则，这些规则具有对特定敏感信息类型进行检测和操作的条件与操作。 可以编辑、删除或关闭任何现有规则，或添加新规则。 完成后，单击 **“下一步**”。
 
-    ![在美国 PII 策略模板中扩展的规则。](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![美国 PII 策略模板中扩展的规则。](../media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
 
-9. 选择检测此内容何时在组织内部或组织外部共享（如果选择了以下任一位置）：
+9. 如果已选择下列任一位置，请选择在组织内部或组织外部共享此内容时进行检测：
     1. Exchange
     1. SharePoint
     1. OneDrive
     1. Teams聊天和频道消息 
 
-10. 选择 **下一步**。
+10. 选择“**下一步**”。
 
-11. 如果需要 **，可以在** "保护操作"页上自定义策略提示通知和通知电子邮件。 启用 **当内容与策略条件匹配时**，向用户显示策略提示，然后向用户发送电子邮件通知，然后选择"自定义 **提示和电子邮件"**。
+11. 如果需要，可以在 **“保护操作** ”页上自定义策略提示通知和通知电子邮件。 **启用内容与策略条件匹配时，向用户显示策略提示并发送电子邮件通知**，然后选择 **“自定义提示和电子邮件**”。
 12. 选择" **下一步**"。
 
 
@@ -215,7 +215,7 @@ Here are the different statuses and what they mean.
 
 |Status|Explanation|
 |---|---|
-|**Turning on…**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
+|**Turning on...**|The policy is being deployed to the content sources that it includes. The policy is not yet enforced on all sources.|
 |**Testing, with notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are sent to the specified recipients.|
 |**Testing, without notifications**|The policy is in test mode. The actions in a rule are not applied, but policy matches are collected and can be viewed by using the DLP reports. Notifications about policy matches are not sent to the specified recipients.|
 |**On**|The policy is active and enforced. The policy was successfully deployed to all its content sources.|

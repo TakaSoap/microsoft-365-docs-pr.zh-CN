@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 开始创建基于准确数据匹配的敏感信息类型。
+description: 开始创建基于数据匹配的敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a75650484368b6ccbaf6f6d39aeead133403f5b8
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 0f221ba0521a50f484bfb9a8d5030e33b495c495
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526272"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759736"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>基于精确数据匹配的敏感信息类型入门
 
-创建和使基于 EDM (的敏感信息类型) 完全匹配 (SIT) 是一个多阶段过程。 它们可用于数据丢失防护策略、电子数据展示和某些内容管理任务 本文概述了工作流以及每个阶段的过程链接
+创建和使 EDM (完全数据匹配) 基于敏感信息类型 (SIT) 可用是一个多阶段过程。 它们可用于数据丢失防护策略、电子数据展示和某些内容治理任务。本文概述了每个阶段的工作流和过程链接
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -39,7 +39,7 @@ ms.locfileid: "63526272"
 
 你必须是全局管理员、合规性管理员或 Exchange Online 管理员才能执行本文中描述的任务。 若要了解有关 DLP 权限的详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-有关 [完整许可信息，](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business) 请参阅数据丢失防护服务说明
+有关完整的许可信息，请参阅[数据丢失防护服务说明](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
 ## <a name="portal-links-for-your-subscription"></a>订阅门户链接
 
@@ -56,11 +56,11 @@ ms.locfileid: "63526272"
 
 |阶段|所需项|
 |---|---|
-|[阶段 1：导出基于准确数据匹配的敏感信息类型的源数据](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- 敏感数据的读取权限|
-|[阶段 2：为基于准确数据匹配的敏感信息类型创建架构](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 访问网站中的敏感信息类型Microsoft 365 管理中心 </br>- 通过安全[Microsoft 365 管理中心合规性 PowerShell 访问 &](/powershell/exchange/connect-to-scc-powershell) |
-|[阶段 3：哈希并上载敏感信息源表，以精确匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- 自定义安全组和用户帐户 </br>- **从一台计算机进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机和托管 EDM Upload代理 </br>- 从单独的计算机 **进行** 哈希和上载：本地管理员访问具有直接 Internet 访问权限的计算机，并托管 EDM Upload 代理以上载和本地管理员访问安全计算机以托管 EDM Upload 代理以哈希处理敏感信息源表 </br>- 对敏感信息源表文件的读取访问权限 </br> 架构文件 |
-|[阶段 4：创建准确数据匹配敏感信息类型/规则包](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- 访问 Microsoft 365 合规中心 |
-|[测试基于精确数据匹配的敏感信息类型](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - 访问 Microsoft 365 合规中心
+|[阶段 1：导出源数据以获取基于确切数据匹配的敏感信息类型](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- 敏感数据的读取权限|
+|[阶段 2：为基于数据匹配的敏感信息类型创建架构](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- 访问Microsoft 365 管理中心中的敏感信息类型向导 </br>- [通过安全&合规性 PowerShell 访问Microsoft 365 管理中心](/powershell/exchange/connect-to-scc-powershell) |
+|[阶段 3：哈希并上传敏感信息源表，以获取与敏感信息类型完全匹配的数据](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- 自定义安全组和用户帐户 </br>- **哈希并从一台计算机上传**：对具有直接 Internet 访问的计算机的本地管理员访问权限，以及托管 EDM Upload 代理 </br>- **从单独的计算机进行哈希和上传**：对具有直接 Internet 访问的计算机的本地管理员访问权限，并托管 EDM Upload代理，以便上传安全计算机和本地管理员访问，以托管 EDM Upload代理来哈希敏感信息源表 </br>- 读取对敏感信息源表文件的访问权限 </br> 架构文件 |
+|[阶段 4：创建与敏感信息类型/规则包完全匹配的数据](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- 访问Microsoft 365合规中心 |
+|[测试基于精确数据匹配的敏感信息类型](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - 访问Microsoft 365合规中心
 
 ## <a name="see-also"></a>另请参阅
 

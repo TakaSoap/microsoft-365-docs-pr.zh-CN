@@ -17,12 +17,12 @@ ms.custom: ''
 description: 了解如何识别组织中的关键人员，并添加优先级帐户标记，为他们提供额外的保护。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf7a21c03764f7dd55b7a63af5b4173606a78188
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: d48b1ec6c3ee0ba5f73d99b097303a8c989d545e
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731748"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759535"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>在Microsoft Defender for Office 365中配置和查看优先级帐户
 
@@ -62,13 +62,13 @@ Microsoft Defender for Office 365支持优先级帐户作为标记，这些标�
 
 威胁防护状态报告是一个单个视图，它汇集了有关恶意内容的信息以及Microsoft Defender for Office 365检测和阻止的恶意电子邮件的信息。 
 
-若要在Microsoft 365 Defender门户中查看报表，请转到 **"报** \> **表电子邮件"&协作** \> **电子邮件&协作报表**。 在 **"电子邮件&协作报告** "页上，查找 **威胁防护状态**，然后单击 **"查看详细信息**"。
+若要在Microsoft 365 Defender门户中查看报表，请转到 **“报** \> **表电子邮件”&协作** \> **电子邮件&协作报表**。 在 **“电子邮件&协作报告** ”页上，查找 **威胁防护状态**，然后选择 **“查看详细信息**”。 导航到 **垃圾邮件视图**、 **网络钓鱼视图** 或 **恶意软件视图**，然后使用筛选器图标选择 **“优先级帐户保护**”。
 
 ### <a name="threat-explorer"></a>威胁资源管理器 
 
 威胁资源管理器中的上下文筛选器可帮助搜索在检测消息时涉及优先级帐户保护的电子邮件。 这样，安全运营团队就可以查看此保护提供的值。 你仍然可以按优先级帐户标记筛选消息，以查找特定用户集的所有消息。 
 
-若要查看额外保护，请在Microsoft 365 Defender门户中转到 **"电子邮件&协作** \> **资源管理器**"，从下拉列表中选择 **"上下文**"，然后选中 **"优先级帐户保护**"旁边的复选框。 
+若要查看额外保护，请在Microsoft 365 Defender门户中转到 **“电子邮件&协作** \> **资源管理器**”，从下拉列表中选择 **“上下文**”，然后选中 **“优先级帐户保护**”旁边的复选框。 
 
 > [!div class="mx-imgBorder"]
 > ![威胁资源管理器中的上下文筛选器。](../../media/threat-explorer-context-filter.png)
@@ -77,7 +77,7 @@ Microsoft Defender for Office 365支持优先级帐户作为标记，这些标�
 
 电子邮件&**协作** \> **资源管理器** 的Microsoft 365 Defender门户<https://security.microsoft.com>中提供了电子邮件实体页面。 在 **资源管理器** 中，选择要调查的电子邮件的主题。 该邮件的电子邮件浮出控件顶部将显示一个金条。 选择此选项可查看新页面。
 
-实体页顶部的选项卡使你可以有效地调查电子邮件。 单击" **分析"** 选项卡。优先级帐户保护现已在 **威胁检测详细信息** 下列出。 
+实体页顶部的选项卡使你可以有效地调查电子邮件。 单击“ **分析”** 选项卡。优先级帐户保护现已在 **威胁检测详细信息** 下列出。 
 
 ## <a name="more-information"></a>更多信息
 

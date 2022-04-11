@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: 使用 Microsoft OneDrive Learning Tools Interoperability for Moodle 创建和管理Teams类和会议。
-ms.openlocfilehash: 0eacbd846d4582312f8936e57c4f630836d9264c
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: ff715720fc699e035a9adceae6c89e64ce907a7d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747381"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761661"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-moodle"></a>在 Moodle 中集成Microsoft Teams类和会议
 
@@ -31,7 +31,7 @@ ms.locfileid: "64747381"
 
 按照 [有关安装和配置 Moodle 插件的说明](moodle-plugin-configuration.md)操作。
 
-## <a name="register-microsoft-onelti-tools-for-use-in-moodle"></a>注册 Microsoft OneLTI 工具以在 Moodle 中使用
+## <a name="register-microsoft-teams-lti-for-use-in-moodle"></a>注册 Microsoft Teams LTI 以在 Moodle 中使用
 
 > [!IMPORTANT]
 > 执行此集成的人员应为 Moodle 管理员和Microsoft 365租户管理员。

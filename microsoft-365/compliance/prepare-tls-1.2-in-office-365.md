@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d2562e52c307fcf251b0b3030219aca68dc96a0a
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8e5664149ef571a8fed3a1aee433fa97c9ed8ca4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61374576"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760418"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中准备 TLS 1.2
 
@@ -30,18 +30,18 @@ ms.locfileid: "61374576"
 
 有关如何删除 TLS 1.0 和 1.1 依赖项的信息，请参阅以下白皮书：[解决 TLS 1.0 问题](https://www.microsoft.com/download/details.aspx?id=55266)。
 
-升级到 TLS 1.2 后，请确保 Azure Front Door 支持你使用加密套件。 Microsoft 365 Azure 前端在密码套件支持方面稍有不同。 有关详细信息，请参阅 Azure Front Door 支持的当前密码套件[是什么？。](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
+升级到 TLS 1.2 后，请确保使用的密码套件受 Azure Front Door 支持。 Microsoft 365和 Azure Front Door 在密码套件支持方面略有不同。 有关详细信息，请参阅 [Azure Front Door 支持的当前密码套件是什么？](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-)
 
 ## <a name="more-information"></a>更多信息
 
-自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于 Office 365 商业客户，TLS 1.0 和 1.1 的弃用将于 2020 年 10 月 15 日开始，并持续数周和数月推出。
+自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于我们的Office 365商业客户，TLS 1.0 和 1.1 的弃用将于 2020 年 10 月 15 日开始，并在接下来的几周和几个月内继续推出。
 
 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS1.2（或更高版本）以保持与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
 
   > [!NOTE]
-  > 对于 SMTP 入站邮件流，在 TLS 1.0 和 1.1 弃用后，我们将仅接受 TLS 1.2 连接。 但是，我们将继续接受未加密的 SMTP 连接，该连接没有任何 TLS。 尽管我们不建议在没有任何加密的情况下进行电子邮件传输。 
+  > 对于 SMTP 入站邮件流，在弃用 TLS 1.0 和 1.1 后，我们将仅接受 TLS 1.2 连接。 但是，我们将继续接受未加密且没有任何 TLS 的 SMTP 连接。 尽管我们不建议在不进行任何加密的情况下进行电子邮件传输。
 
-你需要更新通过 TLS 1.0 或 TLS 1.1 调用 Microsoft 365 API 的应用程序，以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用传输层安全性[ (TLS) 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+需要更新通过 TLS 1.0 或 TLS 1.1 调用Microsoft 365 API 的应用程序，以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅 [如何在客户端上启用传输层安全 (TLS) 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)。
 
 以下是已知的无法使用 TLS 1.2 的客户端。 更新这些客户端以确保对服务的访问不会间断。
 
@@ -75,12 +75,12 @@ ms.locfileid: "61374576"
 以下资源提供帮助确保客户端正在使用 TLS 1.2 或更高版本及禁用 TLS 1.0 和 1.1 的指导。
 
 - 对于连接到 Office 365 的 Windows 7 客户端，请确保 TLS 1.2 是 Windows WinHTTP 中的默认安全协议。 有关更多信息，请参阅 [KB 3140245 - 更新以在 Windows 的 WinHTTP 中启用 TLS 1.1 和 TLS 1.2 作为默认安全协议](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)。
-- [受 TLS 密码套件支持Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
+- [Office 365支持的 TLS 密码套件](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
 - 要通过删除 TLS 1.0 和 1.1 依赖项解决 TLS 使用弱点问题，请参阅 [Microsoft TLS 1.2 支持](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)。
 - [新的 IIS 功能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)可更加方便地在 [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) 和 [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) 上查找通过使用弱安全协议连接服务的客户端。
-- 获取有关如何解决 [TLS 1.0 问题的信息](https://www.microsoft.com/download/details.aspx?id=55266)。
+- 获取有关如何 [解决 TLS 1.0 问题的详细](https://www.microsoft.com/download/details.aspx?id=55266)信息。
 - 有关安全性方法的一般信息，请转到[Office 365 信任中心](https://www.microsoft.com/trustcenter/cloudservices/office365)。
-- 若要标识 SMTP 客户端使用的 TLS 版本，请参阅安全与合规中心中的 [SMTP 身份验证客户端&报告](../security/office-365-security/mfi-smtp-auth-clients-report.md)。
+- 若要标识 SMTP 客户端使用的 TLS 版本，请参阅 [安全&合规中心中的 SMTP 身份验证客户端见解和报告](../security/office-365-security/mfi-smtp-auth-clients-report.md)。
 - [准备 TLS 1.0/1.1 弃用 - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Exchange Server TLS 指南，第 1 部分：为 TLS 1.2 做好准备](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Exchange Server TLS 指南，第 2 部分：启用 TLS 1.2 并识别不使用它的客户端](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)

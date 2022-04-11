@@ -1,5 +1,5 @@
 ---
-title: 刷新精确的数据匹配信息源表文件
+title: 刷新确切的数据匹配信息源表文件
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 description: 刷新敏感信息源表文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525482"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760836"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>刷新准确数据匹配敏感信息源表文件 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>刷新与敏感信息源表文件完全匹配的数据 
 
-每 24 小时，您最多可以刷新敏感信息数据库 5 次。 您必须重新Hash and upload your sensitive information source table。
+每 24 小时最多可以刷新敏感信息数据库 5 次。 必须重新隐藏并上传敏感信息源表。
 
-1. 将敏感数据重新导出到应用程序（如 Microsoft Excel）以 .csv.tsv 格式或管道分隔 (|) 文件。 保持之前对文件进行哈希处理和上载时所使用的文件名和位置相同。 有关导出 [敏感数据和获取正确](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) 格式的详细信息，请参阅导出源数据，了解基于准确数据匹配的敏感信息类型。
+1. 将敏感数据重新导出到应用，例如Microsoft Excel，并将文件保存为.csv、.tsv 格式或管道 (|) 分隔格式。 保留之前哈希和上传文件时所用的文件名和位置。 请参阅， [导出源数据以获取基于确切数据匹配的敏感信息类型](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) ，了解有关导出敏感数据并使其采用正确格式的详细信息。
 
       > [!NOTE]
-      > 如果对敏感信息源 (文件 (字段名) 没有变化，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。 请参阅 [管理确切的数据匹配架构](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) ，了解编辑或删除架构的步骤。 请参阅创建 [精确数据匹配敏感信息类型/规则](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) 包，了解编辑或删除 EDM SIT/规则包的步骤。
+      > 如果敏感信息源表文件的结构 (字段名称) 没有更改，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。 请参阅，管理用于编辑或删除架构的步骤的 [确切数据匹配架构](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) 。 请参阅：为编辑或删除 EDM SIT [/规则包的步骤创建与敏感信息类型/规则包完全匹配的数据](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) 。
 
-2. 使用哈希 [中的过程并上载敏感信息源表，](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) 以精确匹配敏感信息类型，以上传敏感信息表源文件。
+2. 使用 [哈希中的过程，并上传敏感信息源表以获取与敏感信息类型完全匹配的精确数据](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) ，以便上传敏感信息表源文件。
 
-2. 可以使用任务 [计划程序自动](/windows/desktop/TaskSchd/task-scheduler-start-page) 执行哈希操作并上载敏感信息源表，以执行准确 [数据匹配敏感信息类型](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) 过程。 你可以使用多种方法来计划任务：
+3. 可以使用 [任务计划程序](/windows/desktop/TaskSchd/task-scheduler-start-page) 自动执行 [哈希操作，并上传敏感信息源表，以便完成与敏感信息类型过程完全匹配的数据](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) 。 你可以使用多种方法来计划任务：
 
    |方法|需执行的操作|
    |---|---|
@@ -47,7 +47,7 @@ ms.locfileid: "63525482"
 
 此部分包含一个示例 PowerShell 脚本，你可以使用该脚本来计划为数据创建哈希并上传哈希数据的任务：
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>在组合步骤中安排哈希和上载
+#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>在组合步骤中计划哈希和上传
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +82,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>将哈希和上载安排为单独的步骤
+#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>计划哈希和上传作为单独的步骤
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
