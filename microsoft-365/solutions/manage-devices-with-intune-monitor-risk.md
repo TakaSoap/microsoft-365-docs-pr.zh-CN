@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 9000a56bb0bf4819f4fc2e9bf7553a19772efe66
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: af165f3565e3601ac4e8118535af3913c2cb2af8
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730871"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737439"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>步骤 6. 监视设备风险和对安全基线的符合性
 
@@ -51,9 +51,9 @@ ms.locfileid: "64730871"
 
 部署 Microsoft Defender for Endpoint 后，可以利用威胁风险信号。 这允许你根据设备的风险评分阻止对设备的访问。 Microsoft 建议允许访问风险分数为中等或更低的设备。
 
-对于 Android 和 iOS/iPadOS，可以在应用保护策略 (APP) 中使用威胁信号。 有关配置此项的信息，请参阅[创建并分配应用保护策略以设置设备风险级别](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)。
+对于 Android 和 iOS/iPadOS，可以在应用保护策略 (APP) 中使用威胁信号。 有关配置此项的信息，请参阅[创建并分配应用保护策略以设置设备风险级别](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)。
 
-对于所有平台，可以在现有设备符合性策略中设置风险级别。请参阅 [创建条件访问策略](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy)。
+对于所有平台，可以在现有设备符合性策略中设置风险级别。请参阅 [创建条件访问策略](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy)。 
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>部署安全基线并监视对这些设置的符合性
 

@@ -406,7 +406,7 @@
 ### [终结点检测和响应]()
 #### [终结点检测和响应概述](overview-endpoint-detection-response.md)
 #### [安全操作仪表板](security-operations-dashboard.md)
-#### [提交可疑文件](admin-submissions-mde.md)
+#### [提交文件](admin-submissions-mde.md)
 #### [事件队列]()
 ##### [查看和组织事件队列](view-incidents-queue.md)
 ##### [管理事件](manage-incidents.md)

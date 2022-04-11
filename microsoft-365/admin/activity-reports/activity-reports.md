@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
-ms.openlocfilehash: c9d79b12d4a33282540274cf9f0688e071261469
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 224ed6ffb0fa44280f1b83d3a0f440d1a8571557
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679325"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738307"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -53,7 +53,7 @@ ms.locfileid: "63679325"
 
 ::: moniker-end
 
-2. 从某项服务（如电子邮件或 OneDrive）的一览式活动卡片中单击“**查看更多**”按钮以查看报表详细信息页。在此处，选项卡中提供了服务的不同报表。
+2. 从某项服务（如电子邮件或 OneDrive）的一览式活动卡片中单击“**查看更多**”按钮以查看报表详细信息页。在页面中，选项卡中提供了服务的不同报表。
 
    :::image type="content" alt-text="使用情况仪表板" source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::。
 
@@ -101,6 +101,7 @@ ms.locfileid: "63679325"
 |[SharePoint 活动](sharepoint-activity-ww.md)|是|是|是|是|是|
 |[Microsoft Teams 用户活动](microsoft-teams-user-activity-preview.md)|是|是|是|是|不适用[^2]|
 |[Microsoft Teams 设备使用情况](microsoft-teams-device-usage-preview.md)|是|是|是|是|不适用[^2]|
+|[Microsoft Teams 使用活动](microsoft-teams-usage-activity.md)|是|是|不适用|不适用|不适用|
 |[Yammer 活动](yammer-activity-report-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
 |[Yammer 设备使用情况](yammer-device-usage-report-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
 |[Yammer 组活动报告](yammer-groups-activity-report-ww.md)|是|是|不适用[^2]|不适用[^2]|不适用[^2]|
@@ -151,7 +152,7 @@ ms.locfileid: "63679325"
   
 3. 取消选中语句“**在所有报表中显示隐藏的用户、组和站点名称**”，然后保存更改。  
   
-这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置还适用于 [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) 和 [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) 和 [ Microsoft Teams 管理中心中的使用情况报告的Microsoft 365使用情况报告](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
+这些更改将在几分钟之后在报表仪表板中的报表上生效。 此设置还适用于 [Microsoft Graph](/graph/api/resources/report) 和 [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) 和 [ Microsoft Teams 管理中心中的使用情况报告的Microsoft 365使用情况报告](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)。 显示可识别的用户信息是 Microsoft 365 合规中心审核日志中的一个记录事件。   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>在用户帐户关闭后，用法数据会发生什么情况？
