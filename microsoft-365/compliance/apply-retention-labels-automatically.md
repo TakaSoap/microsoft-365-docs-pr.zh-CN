@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建自动标记保留策略，以便可以自动应用标签以保留所需的内容并删除不需要的内容
-ms.openlocfilehash: 2d141ef349c456b9e8397ea1c96a4e450eaa73fc
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500429"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64762004"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -239,7 +239,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
-请注意，最后一个示例使用的最佳做法是始终在关键字之间包含运算符。 两个关键字（或两个 property:value 表达式）之间的空格与使用 AND 相同。 通过始终添加运算符，可更轻松地看出此示例查询将仅识别包含所有这些关键字的内容，而不是包含任何关键字的内容。 如果打算识别包含任何关键字的内容，请指定 OR，而不是 AND。 如本示例所示，当你始终指定运算符时，正确解读查询更为简单。 
+请注意，最后一个示例使用的最佳做法是始终在关键字之间包含运算符。 两个关键字（或两个 property:value 表达式）之间的空格与使用 AND 时相同。 通过始终添加运算符，可更轻松地看出此示例查询将仅识别包含所有这些关键字的内容，而不是包含任何关键字的内容。 如果打算识别包含任何关键字的内容，请指定 OR，而不是 AND。 如本示例所示，当你始终指定运算符时，正确解读查询更为简单。 
 
 ##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 会议记录
 

@@ -21,12 +21,12 @@ description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 71b7bb5d5588f19ff4134c133377b3e9ca83c780
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319345"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759912"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -201,7 +201,7 @@ ms.locfileid: "63319345"
 
 4. 单击“**搜索**”以使用搜索条件运行搜索。
 
-   此时将加载搜索结果，片刻后将显示在新页面上。 完成搜索后会显示找到的结果数。 最多可显示 5,000 个事件（每次加载 150 个）。
+   此时将加载搜索结果，片刻后将显示在新页面上。 完成搜索后会显示找到的结果数。 最多可显示 5,000 个事件（每次加载 150 个）。 如果超过 50,000 个事件符合搜索条件，则仅显示返回的 50,000 个未排序事件。
 
    ![完成搜索后会显示结果数。](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -430,7 +430,7 @@ ms.locfileid: "63319345"
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
-|已访问文件|FileAccessed|用户或系统帐户访问文件。 用户访问文件后，在接下来的五分钟内，同一用户不会再次记录同一个文件的 FileAccessed 事件。|
+|已访问文件|FileAccessed|用户或系统账户可以访问文件。用户访问文件后，在接下来的五分钟内，同一用户不会再次记录同一个文件的 FileAccessed 事件。|
 |(无)|FileAccessedExtended|这与“已访问文件”(FileAccessed) 活动有关。如果一个用户长时间（至 3 小时）持续访问某一文件，则会记录下 FileAccessedExtended 事件。 <br/><br/> 记录 FileAccessedExtended 事件是为了减少持续访问文件时所记录的 FileAccessed 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileAccessed 记录的干扰，从而专注于初始（和更重要的）FileAccessed 事件。|
 |已更改文件的保留标签|ComplianceSettingChanged|保留标签已应用于文档或已从文档中删除。 手动或自动将保留标签应用于消息时触发此事件。|
 |已将记录状态更改为“已锁定”|LockRecord|将文档分类为记录的保留标签的记录状态为“已锁定”。 这意味着无法修改或删除文档。 仅至少分配有网站参与者权限的用户才能更改文档的记录状态。|
@@ -543,7 +543,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已更新列表项|ListItemUpdated|用户通过修改一个或多个属性更新了 SharePoint 列表项。|
 |已更新网站列|SiteColumnUpdated|用户通过修改一个或多个属性更新了 SharePoint 网站列。|
 |已更新网站内容类型|SiteContentTypeUpdated|用户通过修改一个或多个属性更新了网站内容类型。|
-|已查看列表项|ListItemViewed|用户已删除 SharePoint 列表项。 用户查看列表项后，在接下来的五分钟内，不会为同一用户对同一列表项再次记录 ListItemViewed 事件。|
+|已查看列表项|ListItemViewed|用户查看了某个 SharePoint 列表项。用户查看列表项后，在接下来的五分钟内，不会为同一用户对同一列表项再次记录 ListItemViewed 事件。|
 ||||
 
 ### <a name="sharing-and-access-request-activities"></a>共享和访问请求活动
@@ -761,7 +761,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |:-----|:-----|:-----|
 |向角色添加成员|向角色添加成员。|已向 Microsoft 365 中的管理员角色添加用户。|
 |已从目录角色删除用户|删除角色中的成员。|已从 Microsoft 365 中的管理员角色删除用户。|
-|设置公司联系人信息|设置公司联系人信息。|已为你的组织更新公司级别联系人首选项。 这包括由 Microsoft 365 发送的订阅相关电子邮件的电子邮件地址，以及有关服务的技术通知。|
+|设置公司联系人信息|设置公司联系人信息。|已为你的组织更新公司级别联系人首选项。这包括由 Microsoft 365 发送的订阅相关电子邮件的电子邮件地址，以及有关服务的技术通知。|
 ||||
 
 ### <a name="directory-administration-activities"></a>目录管理活动
