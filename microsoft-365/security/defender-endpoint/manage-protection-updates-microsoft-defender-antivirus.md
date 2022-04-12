@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 04cedfa951387274261c3a7a064cf11a4b97db62
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 076b445a6ac129c1debd7cba813798f51aa6f86b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731452"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789021"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>管理 Microsoft Defender 防病毒软件保护更新源
 
@@ -30,6 +30,10 @@ ms.locfileid: "64731452"
 
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender 防病毒
+
+**平台**
+- Windows
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -39,7 +43,7 @@ ms.locfileid: "64731452"
 - *从中* 下载更新的位置;和
 - 下载和应用更新 *时*。
 
-本文介绍如何指定应从何处下载更新 (这也称为回退顺序) 。 请参阅["管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)主题，以大致了解更新的工作原理，以及如何配置更新 (的其他方面，例如计划更新) 。
+本文介绍如何指定应从何处下载更新 (这也称为回退顺序) 。 请参阅[“管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)主题，以大致了解更新的工作原理，以及如何配置更新 (的其他方面，例如计划更新) 。
 
 > [!IMPORTANT]
 > Microsoft Defender 防病毒安全智能更新和平台更新通过Windows 更新传递，并且从 2019 年 10 月 21 日星期一开始，所有安全情报更新都将是 SHA-2 专用签名的。 必须更新设备以支持 SHA-2 才能更新安全智能。 若要了解详细信息，请参阅[针对 Windows 和 WSUS 的 2019 SHA-2 代码签名支持要求](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)。
@@ -65,7 +69,7 @@ ms.locfileid: "64731452"
 - [网络文件共享](#unc-share)
 - [Microsoft Defender 防病毒和其他 Microsoft 反恶意软件](https://www.microsoft.com/wdsi/defenderupdates)<sup>的安全智能更新 [[2](#fn1)]<sup></sup>
 
- (<a id="fn1">1</a>) Intune内部定义更新服务器 - 如果使用 SCCM/SUP 获取Microsoft Defender 防病毒的定义更新，并且需要访问客户端设备上阻止的Windows 更新，则可以转换为共同管理，并将终结点保护工作负载卸载到Intune。 在Intune中配置的反恶意软件策略中，有一个"内部定义更新服务器"选项，可将其配置为使用本地 WSUS 作为更新源。 这有助于控制官方 WU 服务器中的哪些更新已获得企业批准，还有助于代理和保存到官方Windows UPdates 网络的网络流量。
+ (<a id="fn1">1</a>) Intune内部定义更新服务器 - 如果使用 SCCM/SUP 获取Microsoft Defender 防病毒的定义更新，并且需要访问客户端设备上阻止的Windows 更新，则可以转换为共同管理，并将终结点保护工作负载卸载到Intune。 在Intune中配置的反恶意软件策略中，有一个“内部定义更新服务器”选项，可将其配置为使用本地 WSUS 作为更新源。 这有助于控制官方 WU 服务器中的哪些更新已获得企业批准，还有助于代理和保存到官方Windows UPdates 网络的网络流量。
 
  (<a id="fn1">2</a>) 你的策略和注册表可能将其列为MICROSOFT 恶意软件防护中心 (MMPC) 安全智能，其前名。
 
@@ -102,15 +106,15 @@ ms.locfileid: "64731452"
 
 ## <a name="use-group-policy-to-manage-the-update-location"></a>使用组策略管理更新位置
 
-1. 在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，然后单击 **"编辑**"。
+1. 在组策略管理计算机上，打开 [组策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，然后单击 **“编辑**”。
 
 2. 在 **组策略管理编辑器** 中转到 **计算机配置**。
 
-3. 单击 **"策略** "，然后单击 **"管理模板**"。
+3. 单击 **“策略** ”，然后单击 **“管理模板**”。
 
 4. 展开树以 **Windows组件** \> **Windows Defender** \> **签名更新** 并配置以下设置：
 
-   1. 双击" **定义用于下载安全智能更新设置的源顺序** "，并将选项设置为 **"已启用**"。
+   1. 双击“ **定义用于下载安全智能更新设置的源顺序** ”，并将选项设置为 **“已启用**”。
 
    2. 输入源的顺序，用单个管道分隔，例如： `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`如以下屏幕截图所示。
 
@@ -118,7 +122,7 @@ ms.locfileid: "64731452"
 
    3. 选择“确定”。 这将设置保护更新源的顺序。
 
-   4. 双击 **"定义文件共享"以下载安全智能更新** 设置，并将选项设置为 **"已启用**"。
+   4. 双击 **“定义文件共享”以下载安全智能更新** 设置，并将选项设置为 **“已启用**”。
 
    5. 指定文件共享源。 如果有多个源，请按应使用的顺序输入每个源，用单个管道分隔。 使用 [标准 UNC 表示法](/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) 来表示路径，例如： `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`. 如果未输入任何路径，则在 VM 下载更新时将跳过此源。
 
@@ -195,9 +199,9 @@ SignatureDefinitionUpdateFileSharesSource
 
 3. 从 [www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4) 下载 PowerShell 脚本。
 
-4. 单击 **"手动下载**"。
+4. 单击 **“手动下载**”。
 
-5. 单击 **"下载原始 nupkg 文件**"。
+5. 单击 **“下载原始 nupkg 文件**”。
 
 6. 提取文件。
 
@@ -274,12 +278,22 @@ SignatureDefinitionUpdateFileSharesSource
 10. 创建指向 (的共享 `C:\Temp\TempSigs` ，例如) `\\server\updates` 。
 
     > [!NOTE]
-    > 至少，经过身份验证的用户必须具有"读取"访问权限。 此要求也适用于域计算机、共享和 NTFS (安全) 。
+    > 至少，经过身份验证的用户必须具有“读取”访问权限。 此要求也适用于域计算机、共享和 NTFS (安全) 。
 
 11. 将策略中的共享位置设置为共享。
 
     > [!NOTE]
     > 请勿在路径中添加 x64 (或 x86) 文件夹。 mpcmdrun.exe进程会自动添加它。
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [在 macOS 上设置Microsoft Defender for Endpoint首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于Intune的Microsoft Defender 防病毒的 macOS 防病毒策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [在 Linux 上设置Microsoft Defender for Endpoint首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="related-articles"></a>相关文章
 

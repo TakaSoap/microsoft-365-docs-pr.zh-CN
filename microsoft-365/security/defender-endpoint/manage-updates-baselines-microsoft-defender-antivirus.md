@@ -15,22 +15,25 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 346f806129afc30ec5543c99bce3709af60cee73
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730631"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788471"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
 **适用于：**
 - [Microsoft Defender for Endpoint计划 1 和 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
+
+**平台**
+- Windows
 
 保持Microsoft Defender 防病毒最新对于确保设备拥有防范新的恶意软件和攻击技术所需的最新技术和功能至关重要。 确保更新防病毒保护，即使Microsoft Defender 防病毒处于[被动模式](microsoft-defender-antivirus-compatibility.md)下运行。 有两种类型的更新与保持Microsoft Defender 防病毒最新相关：
 
@@ -72,7 +75,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 > - 本文列出了广泛发布通道中包含的更改。 [请参阅此处的最新广泛频道版本](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。
 > - 若要详细了解逐步推出过程，并查看有关下一版本的详细信息，请参阅 [管理 Microsoft Defender 更新的逐步推出过程](manage-gradual-rollout.md)。
 > - 若要详细了解安全智能更新，请参阅[Microsoft Defender 防病毒和其他 Microsoft 反恶意软件的安全智能更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
-> - 如果要查找 Microsoft Defender 进程列表， **[请下载 mde-urls 工作簿](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**，然后选择 **Microsoft Defender Process** 工作表。 mde-urls 工作簿还列出了网络必须能够连接到的服务及其关联 URL，如["启用对代理服务器中Microsoft Defender for Endpoint服务 URL 的访问"中](configure-proxy-internet.md)所述。
+> - 如果要查找 Microsoft Defender 进程列表， **[请下载 mde-urls 工作簿](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**，然后选择 **Microsoft Defender Process** 工作表。 mde-urls 工作簿还列出了网络必须能够连接到的服务及其关联 URL，如[“启用对代理服务器中Microsoft Defender for Endpoint服务 URL 的访问”中](configure-proxy-internet.md)所述。
 
 ## <a name="monthly-platform-and-engine-versions"></a>每月平台和引擎版本
 
@@ -88,7 +91,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 <summary>2022 年 3 月 (平台：4.18.2203.5 |引擎：1.1.19100.5) </summary>
 
 &ensp;安全智能更新版本： **1.361.1449.0**<br/>
-&ensp;发布日期： **2022 年 3 月 7 日**<br/>
+&ensp;发布日期： **2022 年 4 月 7 日**<br/>
 &ensp;平台： **4.18.2203.5**<br/>
 &ensp;引擎： **1.1.19100.5**<br/>
 &ensp;支持阶段： **安全和关键更新**<br/>
@@ -96,7 +99,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 引擎版本：1.1.19100.5 <br/>
 安全智能更新版本：1.361.1449.0<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 为阻止Outlook加载项[的攻击面减少规则](attack-surface-reduction.md)添加了修复 
 - 添加了与短实时进程相关的 [行为监视](configure-protection-features-microsoft-defender-antivirus.md) 性能问题的修复 
@@ -121,7 +124,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 引擎版本：1.1.19000.8 <br/>
 安全智能更新版本：1.361.14.0 <br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 对检测和行为监视逻辑的改进
 - 修复了误报触发攻击面减少检测
@@ -150,7 +153,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 引擎版本：1.1.18900.2 <br/>
 安全智能更新版本：1.357.8.0 <br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 筛选性能中的行为监视改进
 - 强化到 TrustedInstaller
@@ -184,7 +187,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 引擎版本：1.1.18800.4 安全智能更新版本：1.355.2.0
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 提高了Exchange服务器上某些密集型方案的 CPU 使用效率
 - 在 Defender PowerShell 模块的Get-MpComputerStatus下添加了新的设备控制状态字段。 有关详细信息，请参阅[Microsoft Defender for Endpoint设备控制可移动存储 访问控制](device-control-removable-storage-access-control.md)。
@@ -210,7 +213,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 引擎版本：1.1.18700.4 安全智能更新版本：1.353.3.0
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 对文件传输协议 (FTP) 网络流量覆盖率的改进
 - 修复了如何减少在Windows Server 2016上运行的Exchange Server中的 Microsoft Defender CPU 使用率
@@ -232,7 +235,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 
 引擎版本：1.1.18600.4 安全智能更新版本：1.351.7.0
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - Microsoft Defender 防病毒引擎和平台更新的新延迟环。 选择加入此环的设备将收到延迟 48 小时的更新。 建议仅针对关键环境使用新的延迟环。 请参阅 [管理 Microsoft Defender 更新的逐步推出过程](manage-gradual-rollout.md)。
 - Microsoft Defender 更新逐步推出过程的改进
 
@@ -248,7 +251,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.18500.10**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - 对行为监视引擎的改进
 - 发布了[用于Microsoft Defender 防病毒的新性能分析器](tune-performance-defender-antivirus.md)
 - Microsoft Defender 防病毒针对加载恶意 DLL 进行强化
@@ -267,7 +270,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.18400.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - 为Windows可移植设备添加了设备控制支持
 - 默认情况下，对使用者启用可能不需要的应用程序 (PUA) 保护 (看到 [可能不需要的应用将被阻止](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)) 
 - 组策略对象托管系统的计划扫描将遵循用户配置的扫描时间
@@ -286,7 +289,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.18300.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - 用于管理 Microsoft Defender 更新逐步推出过程的新控件。 请参阅 [管理 Microsoft Defender 更新的逐步推出过程](manage-gradual-rollout.md)。
 - 对行为监视引擎的改进
 - 反恶意软件定义推出改进
@@ -304,7 +307,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.18200.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - 对[行为监视](client-behavioral-blocking.md)的改进
 - 修复了 [网络保护](network-protection.md) 通知筛选功能
 
@@ -320,7 +323,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.18100.5**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - 更多行为监视逻辑
 - 改进了内核模式密钥记录器检测
 - 添加了新控件以管理 [Microsoft Defender 更新](manage-gradual-rollout.md)的逐步推出过程
@@ -338,7 +341,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.18000.5**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 对行为监视引擎的改进
 - 扩展的网络暴力攻击缓解措施
@@ -356,7 +359,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17900.7**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 通过[篡改保护](prevent-changes-to-security-settings-with-tamper-protection.md)改进了服务恢复
 - 扩展篡改保护范围
@@ -373,7 +376,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17800.5**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - Shellcode 攻击检测改进
 - 提高凭据窃取尝试的可见性
@@ -393,7 +396,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17700.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 改进了 [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 状态支持日志记录
 
@@ -409,7 +412,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17600.5**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 特殊威胁类别的新说明
 - 改进了仿真功能
@@ -429,7 +432,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17500.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 在隔离区还原文件需要管理员权限
 - 现在支持 XML 格式的事件
@@ -455,7 +458,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17400.5**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 添加更多遥测事件
 - 改进了扫描事件遥测
@@ -479,7 +482,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17300.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 改进了 BITS 遥测
 - 改进了 Authenticode 代码签名证书验证
@@ -498,7 +501,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17200.2**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 指定[支持日志位置](./collect-diagnostic-data.md)的可能性
 - 在被动模式下跳过攻击性追赶扫描。
@@ -521,7 +524,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17100.2**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 改进了扫描事件的日志记录
 - 改进了用户模式故障处理。
@@ -544,7 +547,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.17000.2**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 - WDfilter 改进
 - 添加更多可操作的事件数据来攻击表面减少检测事件
 - 修复了诊断数据和 WMI 中的版本信息
@@ -567,7 +570,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.16900.4**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 添加到 [MpCmdRun](./command-line-arguments-microsoft-defender-antivirus.md) 的 CPU 限制选项
 - 改进诊断功能
@@ -592,7 +595,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 &ensp;引擎： **1.1.16800.2**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 
 ### <a name="known-issues"></a>已知问题
@@ -610,7 +613,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 引擎： **1.1.16700.2**<br/>
 &ensp;支持阶段： **技术升级支持仅 ()**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 修复了 WS2016 上包含Exchange的 BSOD
 - 将 TMP 重定向到网络路径时支持平台更新
@@ -641,7 +644,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 引擎： **1.1.17000.7**<br/>
 支持阶段： **无支持**<br/>
 
-### <a name="whats-new"></a>最近更新
+### <a name="whats-new"></a>新增功能
 
 - 修复了 MpCmdRun 跟踪级别
 - 修复了 WDFilter 版本信息
@@ -987,3 +990,13 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 |[管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) | 可以将保护更新设置为在启动时或某些云传送的保护事件之后下载。 |
 |[管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| 可以指定对移动设备和虚拟机特别有用的设置，例如是否应在电池电源上进行更新。 |
 | [Microsoft Defender for Endpoint EDR传感器的更新](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | 可以更新 2021 年发布的新Microsoft Defender for Endpoint统一解决方案包中包含的EDR传感器 (MsSense.exe) 。   |
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [在 macOS 上设置Microsoft Defender for Endpoint首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于Intune的Microsoft Defender 防病毒的 macOS 防病毒策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [在 Linux 上设置Microsoft Defender for Endpoint首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置Microsoft Defender for Endpoint](ios-configure-features.md)

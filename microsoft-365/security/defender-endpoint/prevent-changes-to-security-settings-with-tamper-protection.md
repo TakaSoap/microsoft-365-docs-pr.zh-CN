@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: bcdf933de412a8141f0abc208f06cc55609f12c5
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780250"
+ms.locfileid: "64788933"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -34,6 +34,10 @@ ms.locfileid: "64780250"
 
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender 防病毒
+
+**平台**
+- Windows
 
 篡改保护适用于运行以下Windows版本之一的设备：
 
@@ -312,6 +316,16 @@ Windows Server 2016，启用篡改保护时，设置应用将无法准确反映�
 `AlertInfo|where Title == "Tamper Protection bypass"`
 
 [查看有关篡改尝试的信息](#view-information-about-tampering-attempts)。
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [在 macOS 上设置Microsoft Defender for Endpoint首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于Intune的Microsoft Defender 防病毒的 macOS 防病毒策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [在 Linux 上设置Microsoft Defender for Endpoint首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="see-also"></a>另请参阅
 

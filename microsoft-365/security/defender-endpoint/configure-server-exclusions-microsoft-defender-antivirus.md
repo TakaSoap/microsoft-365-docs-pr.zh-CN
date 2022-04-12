@@ -1,9 +1,9 @@
 ---
-title: 在 Microsoft Defender 防病毒 服务器上配置Windows排除项
+title: 在Windows服务器上配置Microsoft Defender 防病毒排除项
 ms.reviewer: pahuijbr
 manager: dansimp
-description: Windows服务器包括基于服务器角色的自动排除项。 还可以添加自定义排除项。
-keywords: 排除项， 服务器， 自动排除项， 自动， 自定义， 扫描， Microsoft Defender 防病毒
+description: Windows服务器包含基于服务器角色的自动排除项。 还可以添加自定义排除项。
+keywords: 排除项，服务器，自动排除，自动，自定义，扫描，Microsoft Defender 防病毒
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,9 +16,14 @@ ms.topic: article
 ms.custom: nextgen
 ms.date: 02/04/2022
 ms.collection: M365-security-compliance
+ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789769"
 ---
-
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上配置Windows排除项
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>在Windows服务器上配置Microsoft Defender 防病毒排除项
 
 
 **适用于：**
@@ -26,25 +31,28 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
 
-Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上自动注册某些排除项，如指定的服务器角色所定义。 这些排除项不会显示在应用程序中显示的标准排除Windows 安全中心[列表中](microsoft-defender-security-center-antivirus.md)。
+**平台**
+- Windows
 
-除了服务器角色定义的自动排除项之外，还可以添加或删除自定义排除项。 为此，请参阅以下文章：
-- [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+Windows Server 2016和 Windows Server 2019 上的Microsoft Defender 防病毒会自动将你注册到指定的服务器角色定义的某些排除项中。 这些排除项不会显示在[Windows 安全中心应用](microsoft-defender-security-center-antivirus.md)中显示的标准排除列表中。
 
-## <a name="a-few-points-to-keep-in-mind"></a>需要记住的几点
+除了服务器角色定义的自动排除项外，还可以添加或删除自定义排除项。 为此，请参阅以下文章：
+- [基于文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [配置和验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+
+## <a name="a-few-points-to-keep-in-mind"></a>要记住的几点
 
 请记住以下要点：
 
-- 自定义排除项优先于自动排除项。
-- 自动排除项仅适用于 RTP 扫描 (实时) 保护。 在完整扫描、快速扫描或按需扫描过程中，自动排除项不适用。
-- 自定义排除项和重复排除项与自动排除项不冲突。
-- Microsoft Defender 防病毒部署映像服务和管理 (DISM) 工具来确定计算机上安装了哪些角色。
-- Windows Server 2012 R2 没有Microsoft Defender 防病毒可安装功能。 当你将这些服务器载入 Defender for Endpoint 时，你将安装Windows Defender 防病毒，并应用操作系统文件的默认排除项。 但是，服务器角色排除 (下面指定的) 不会自动应用，您应相应地配置这些排除项。 若要了解更多信息，请参阅[将Windows载入到 Microsoft Defender for Endpoint 服务](configure-server-endpoints.md)。
+- 自定义排除优先于自动排除。
+- 自动排除仅适用于实时保护 (RTP) 扫描。 在完全、快速或按需扫描期间，不遵守自动排除。
+- 自定义和重复排除与自动排除不冲突。
+- Microsoft Defender 防病毒使用部署映像服务和管理 (DISM) 工具来确定计算机上安装了哪些角色。
+- Windows Server 2012 R2 没有Microsoft Defender 防病毒作为可安装功能。 将这些服务器载入 Defender for Endpoint 时，将安装Windows Defender 防病毒，并应用操作系统文件的默认排除项。 但是，服务器角色的排除 (如下所述) 不会自动应用，并且应根据需要配置这些排除项。 若要了解详细信息，请参阅[将Windows服务器载入到Microsoft Defender for Endpoint服务](configure-server-endpoints.md)。
 
-本文概述了有关Microsoft Defender 防病毒或更高版本Windows Server 2016的排除项。
+本文概述了Microsoft Defender 防病毒Windows Server 2016或更高版本的排除项。
 
-由于Microsoft Defender 防病毒内置在Windows Server 2016中，因此会自动排除操作系统文件和服务器角色。 但是，您可以定义自定义排除项。 如有必要，还可以选择退出自动排除项。
+由于Microsoft Defender 防病毒内置于Windows Server 2016和更高版本中，因此操作系统文件和服务器角色的排除将自动发生。 但是，可以定义自定义排除项。 如有必要，还可以选择退出自动排除。
 
 本文包括以下几节：
 
@@ -52,42 +60,42 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 |节|说明|
 |---|---|
-|[Windows Server 2016或更高版本上的自动排除项](#automatic-exclusions-on-windows-server-2016-or-later)|介绍两种主要类型的自动排除项，并包括自动排除项的详细列表|
-|[选择退出自动排除项](#opting-out-of-automatic-exclusions)|包括描述如何选择退出自动排除项的重要注意事项和过程|
-|[定义自定义排除项](#defining-custom-exclusions)|提供用于定义自定义排除项的操作说明信息的链接|
+|[Windows Server 2016或更高版本上的自动排除项](#automatic-exclusions-on-windows-server-2016-or-later)|介绍两种主要类型的自动排除，并包含自动排除的详细列表|
+|[选择退出自动排除项](#opting-out-of-automatic-exclusions)|包括描述如何选择退出自动排除的重要注意事项和过程|
+|[定义自定义排除项](#defining-custom-exclusions)|提供用于定义自定义排除项的操作指南信息的链接|
 
 ## <a name="automatic-exclusions-on-windows-server-2016-or-later"></a>Windows Server 2016或更高版本上的自动排除项
 
-在Windows Server 2016或更高版本上，不应定义以下排除项：
+在Windows Server 2016或更高版本中，不应定义以下排除项：
 
 - 操作系统文件
 - 服务器角色和通过服务器角色添加的任何文件
 
-由于Microsoft Defender 防病毒内置，因此它不需要排除在 Windows Server 2016 或更高版本上的操作系统文件。 此外，在运行 Windows Server 2016 或更高版本并安装角色时，Microsoft Defender 防病毒包括服务器角色以及安装角色时添加的任何文件的自动排除项。
+由于内置Microsoft Defender 防病毒，因此在Windows Server 2016或更高版本上不需要操作系统文件的排除项。 此外，在运行Windows Server 2016或更高版本并安装角色时，Microsoft Defender 防病毒包括服务器角色的自动排除项以及安装角色时添加的任何文件。
 
-操作系统排除和服务器角色排除不会显示在应用程序中显示的标准排除Windows 安全中心[列表中](microsoft-defender-security-center-antivirus.md)。
+操作系统排除项和服务器角色排除项不会显示在[Windows 安全中心应用](microsoft-defender-security-center-antivirus.md)中显示的标准排除列表中。
 
 > [!NOTE]
-> 服务器角色和操作系统文件的自动排除项不适用于Windows Server 2012。 如果运行 R2 Windows Server 2012已载入 Defender for Endpoint，则自动排除项可能适用。  (请参阅[将Windows载入到 Microsoft Defender for Endpoint 服务](configure-server-endpoints.md)。) 
+> 服务器角色和操作系统文件的自动排除不适用于Windows Server 2012。 如果运行 Windows Server 2012 R2 的服务器载入 Defender for Endpoint，则可以应用自动排除。  (请参阅[Microsoft Defender for Endpoint服务的载入Windows服务器](configure-server-endpoints.md)。) 
 
 
-### <a name="the-list-of-automatic-exclusions"></a>自动排除项列表
+### <a name="the-list-of-automatic-exclusions"></a>自动排除列表
 
-以下各节包含随自动排除项文件路径和文件类型一起提供的排除项。
+以下部分包含使用自动排除文件路径和文件类型传递的排除项。
 
 #### <a name="default-exclusions-for-all-roles"></a>所有角色的默认排除项
 
-本节列出了 Windows Server 2016 Server 2019 Windows Server 2022 中所有Windows排除项。
+本部分列出了 Windows Server 2016、Windows Server 2019 和 Windows Server 2022 中所有角色的默认排除项。
 
 > [!NOTE]
-> 默认位置可能不同于本文中列出的位置。
+> 默认位置可能与本文中列出的位置不同。
 
-##### <a name="windows-tempedb-files"></a>Windows"temp.edb"文件
+##### <a name="windows-tempedb-files"></a>Windows“temp.edb”文件
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
-##### <a name="windows-update-files-or-automatic-update-files"></a>Windows更新文件或自动更新文件
+##### <a name="windows-update-files-or-automatic-update-files"></a>Windows 更新文件或自动更新文件
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -119,7 +127,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 ##### <a name="file-replication-service-frs-exclusions"></a>文件复制服务 (FRS) 排除项
 
-- 文件复制服务中的 (FRS) 工作文件夹。 FRS 工作文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
+- 文件复制服务中的文件 (FRS) 工作文件夹。 FRS 工作文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
 
   - `%windir%\Ntfrs\jet\sys\*\edb.chk`
   - `%windir%\Ntfrs\jet\*\Ntfrs.jdb`
@@ -129,7 +137,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
   - `%windir%\Ntfrs\*\Edb\*.log`
 
-- FRS 临时文件夹。 暂存文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
+- FRS 暂存文件夹。 暂存文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
 
   - `%systemroot%\Sysvol\*\Ntfrs_cmp*\`
 
@@ -137,10 +145,10 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
   - `%systemroot%\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\*\Ntfrs*\`
 
-- 分布式文件系统复制 (DFSR) 和工作文件夹。 这些文件夹由注册表项指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+- 分布式文件系统复制 (DFSR) 数据库和工作文件夹。 这些文件夹由注册表项指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > 有关自定义位置，请参阅 [选择退出自动排除](#opting-out-of-automatic-exclusions)项。
+  > 有关自定义位置，请参阅 [选择退出自动排除](#opting-out-of-automatic-exclusions)。
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
@@ -160,17 +168,17 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 - `%systemroot%\System32\dfsr.exe`
 - `%systemroot%\System32\dfsrs.exe`
 
-##### <a name="hyper-v-exclusions"></a>Hyper-V排除项
+##### <a name="hyper-v-exclusions"></a>Hyper-V 排除项
 
-下表列出了安装角色角色时自动提供的文件类型排除项、文件夹Hyper-V排除项。
+下表列出了安装 Hyper-V 角色时自动传递的文件类型排除项、文件夹排除项和进程排除项。
 
 <br><br/>
 
-|排除类型|具体信息|
+|排除类型|细节|
 |---|---|
 |文件类型|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
 |Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
-|进程|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
+|过程|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
 
 ##### <a name="sysvol-files"></a>SYSVOL 文件
 
@@ -187,7 +195,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="active-directory-exclusions"></a>Active Directory 排除项
 
-本节列出了在 AD DS 服务器中安装 Active Directory 域服务 (自动) 。
+本部分列出了安装ACTIVE DIRECTORY 域服务 (AD DS) 时自动传递的排除项。
 
 ##### <a name="ntds-database-files"></a>NTDS 数据库文件
 
@@ -220,7 +228,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="dhcp-server-exclusions"></a>DHCP 服务器排除项
 
-本节列出了安装 DHCP 服务器角色时自动提供的排除项。 DHCP 服务器文件位置由注册表项中的 *DatabasePath*、 *DhcpLogFilePath* 和 *BackupDatabasePath* 参数指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
+本部分列出了安装 DHCP 服务器角色时自动传递的排除项。 DHCP 服务器文件位置由注册表项中的 *DatabasePath*、 *DhcpLogFilePath* 和 *BackupDatabasePath* 参数指定 `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
 - `%systemroot%\System32\DHCP\*\*.pat`
@@ -230,7 +238,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="dns-server-exclusions"></a>DNS 服务器排除项
 
-本节列出了文件和文件夹排除项，以及安装 DNS 服务器角色时自动提供的进程排除项。
+本部分列出了文件和文件夹排除项以及安装 DNS 服务器角色时自动传递的进程排除项。
 
 ##### <a name="file-and-folder-exclusions-for-the-dns-server-role"></a>DNS 服务器角色的文件和文件夹排除项
 
@@ -243,9 +251,9 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 - `%systemroot%\System32\dns.exe`
 
-#### <a name="file-and-storage-services-exclusions"></a>文件和 存储 Services 排除项
+#### <a name="file-and-storage-services-exclusions"></a>文件和存储服务排除项
 
-本节列出了在安装 File 和 存储 Services 角色时自动提供的文件和文件夹排除项。 下面列出的排除项不包括群集角色的排除项。
+本部分列出了安装文件和存储服务角色时自动传递的文件和文件夹排除项。 下面列出的排除项不包括群集角色的排除项。
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
@@ -253,7 +261,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="print-server-exclusions"></a>打印服务器排除项
 
-本节列出了安装打印服务器角色时自动提供的文件类型排除项、文件夹排除项和进程排除项。
+本部分列出了安装打印服务器角色时自动传递的文件类型排除项、文件夹排除项和进程排除项。
 
 ##### <a name="file-type-exclusions"></a>文件类型排除项
 
@@ -272,7 +280,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="web-server-exclusions"></a>Web 服务器排除项
 
-本节列出了安装 Web 服务器角色时自动提供的文件夹排除项和进程排除项。
+本部分列出了安装 Web Server 角色时自动传递的文件夹排除项和进程排除项。
 
 ##### <a name="folder-exclusions"></a>文件夹排除
 
@@ -290,12 +298,12 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 ##### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>关闭 Sysvol\Sysvol 文件夹或 SYSVOL_DFSR\Sysvol 文件夹中的文件扫描
 
-或 文件夹`Sysvol\Sysvol``SYSVOL_DFSR\Sysvol`及所有子文件夹的当前位置是副本集根目录的文件系统重新分析目标。 和 `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` 文件夹默认使用以下位置：
+或`SYSVOL_DFSR\Sysvol`文件夹和所有子文件夹的`Sysvol\Sysvol`当前位置是副本集根的文件系统重新分析目标。 默认情况下，这些 `Sysvol\Sysvol` 文件夹和 `SYSVOL_DFSR\Sysvol` 文件夹使用以下位置：
 
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
-当前活动的路径 `SYSVOL` 由 NETLOGON 共享引用，并且可以通过以下子项中的 SysVol 值名称确定： `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
+NETLOGON 共享引用当前活动的 `SYSVOL` 路径，可由以下子项中的 SysVol 值名称确定： `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
 从此文件夹及其所有子文件夹中排除以下文件：
 
@@ -312,7 +320,7 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 #### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services排除项
 
-本部分列出了在 WSUS 角色中安装 Windows Server Update Services (时自动) 排除项。 WSUS 文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+本部分列出安装Windows Server Update Services (WSUS) 角色时自动传递的文件夹排除项。 WSUS 文件夹在注册表项中指定 `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
@@ -321,26 +329,26 @@ Microsoft Defender 防病毒在 Windows Server 2016 和 Windows Server 2019 上�
 
 ## <a name="opting-out-of-automatic-exclusions"></a>选择退出自动排除项
 
-在Windows Server 2016及更高版本中，安全智能更新提供的预定义排除项仅排除角色或功能的默认路径。 如果在自定义路径中安装了角色或功能，或者想要手动控制排除项集，请确保选择退出安全智能更新中提供的自动排除项。 但请记住，自动提供的排除项已针对 Windows Server 2016及更高版本进行优化。 请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)项，然后再定义排除列表。
+在Windows Server 2016及更高版本中，安全智能更新提供的预定义排除项仅排除角色或功能的默认路径。 如果在自定义路径中安装了角色或功能，或者想要手动控制排除集，请确保选择退出安全智能更新中提供的自动排除项。 但请记住，自动传递的排除项针对Windows Server 2016及更高版本进行了优化。 在定义排除列表之前，请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)项。
 
 > [!WARNING]
-> 选择退出自动排除可能会对性能产生不利影响，或会导致数据损坏。 自动提供的排除项针对 Windows Server 2016、Windows Server 2019 和 Windows Server 2022 角色进行了优化。
+> 选择退出自动排除可能会对性能产生负面影响，或导致数据损坏。 自动传递的排除项针对 Windows Server 2016、Windows Server 2019 和 Windows Server 2022 角色进行了优化。
 
-由于预定义排除 **仅排除默认** 路径，因此，如果将 NTDS 和 SYSVOL 文件夹移动到与原始路径不同的其他驱动器或路径，则必须手动添加排除项。 请参阅 [配置基于文件夹名称或文件扩展名的排除项列表](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)。
+由于预定义的排除项仅排除 **默认路径**，因此，如果将 NTDS 和 SYSVOL 文件夹移到与 *原始路径不同的* 另一个驱动器或路径，则必须手动添加排除项。 请参阅 [根据文件夹名称或文件扩展名配置排除列表](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)。
 
-可以使用组策略、PowerShell cmdlet 和 WMI 禁用自动排除列表。
+可以使用 组策略、PowerShell cmdlet 和 WMI 禁用自动排除列表。
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>使用组策略禁用 Windows Server 2016、Windows Server 2019 和 Windows Server 2022 上的自动排除列表
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-windows-server-2019-and-windows-server-2022"></a>使用组策略在 Windows Server 2016、Windows Server 2019 和 Windows Server 2022 上禁用自动排除列表
 
-1. 在组策略管理计算机上，打开 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))。 右键单击要配置的组策略对象，然后选择"编辑 **"**。
+1. 在组策略管理计算机上，打开 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))。 右键单击要配置的组策略对象，然后选择 **“编辑**”。
 
-2. 在" **组策略管理编辑器"** 中，转到" **计算机配置**"，然后选择" **管理模板"**。
+2. 在 **组策略管理编辑器** 转到 **计算机配置**，然后选择 **管理模板**。
 
-3. 展开树以 **Windows排除** \> **Microsoft Defender 防病毒** \> **组件**。
+3. 将树展开为Microsoft Defender 防病毒 **排除** 项 **Windows** \> **组件**\>。
 
-4. 双击关闭 **自动排除项**，将该选项设置为 **已启用**。 然后，选择“**确定**”。
+4. 双击 **“关闭自动排除”**，并将选项设置为 **“已启用**”。 然后，选择“**确定**”。
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>使用 PowerShell cmdlet 在 Windows 服务器上禁用自动排除列表
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server"></a>使用 PowerShell cmdlet 在Windows服务器上禁用自动排除列表
 
 使用以下 cmdlet：
 
@@ -350,12 +358,12 @@ Set-MpPreference -DisableAutoExclusions $true
 
 若要了解详细信息，请参阅以下资源：
 
-- [使用 PowerShell cmdlet 配置并运行Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
-- [将 PowerShell 与 Microsoft Defender 防病毒](/powershell/module/defender/)。
+- [使用 PowerShell cmdlet 配置和运行Microsoft Defender 防病毒](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
+- [将 PowerShell 与Microsoft Defender 防病毒配合使用](/powershell/module/defender/)。
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>使用 Windows Management Instruction (WMI) 禁用 Windows Server 上的自动排除项列表
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server"></a>使用 Windows 管理指令 (WMI) 在 Windows 服务器上禁用自动排除列表
 
-对以下 [属性MSFT_MpPreference类](/previous-versions/windows/desktop/defender/msft-mppreference)的 **Set** 方法：
+对以下属性使用 [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) 类的 **Set** 方法：
 
 ```WMI
 DisableAutoExclusions
@@ -369,14 +377,24 @@ DisableAutoExclusions
 
 如有必要，可以添加或删除自定义排除项。 为此，请参阅以下文章：
 
-- [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [基于文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [配置和验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [在 macOS 上设置Microsoft Defender for Endpoint首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于Intune的Microsoft Defender 防病毒的 macOS 防病毒策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [在 Linux 上设置Microsoft Defender for Endpoint首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="see-also"></a>另请参阅
 
-- [配置并验证扫描Microsoft Defender 防病毒排除项](configure-exclusions-microsoft-defender-antivirus.md)
-- [根据文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [配置和验证Microsoft Defender 防病毒扫描的排除项](configure-exclusions-microsoft-defender-antivirus.md)
+- [基于文件名、扩展名和文件夹位置配置和验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [配置和验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [自定义、启动和查看Microsoft Defender 防病毒扫描和修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

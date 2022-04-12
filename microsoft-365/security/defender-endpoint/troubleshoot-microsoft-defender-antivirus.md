@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c1fcf71aa91e944e36050dae85f0c31a316df344
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 6a9b346d4e423d46244eeedbb8136b91a165473a
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665439"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788559"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题
 
@@ -29,6 +29,10 @@ ms.locfileid: "64665439"
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender 防病毒
+
+**平台**
+- Windows
 
 如果遇到Microsoft Defender 防病毒问题，可以搜索本主题中的表以查找匹配问题和潜在解决方案。
 
@@ -61,9 +65,9 @@ Microsoft Defender 防病毒记录Windows事件日志中的事件 ID。
 
 1. 打开 **事件查看器**。
 2. 在控制台树中，展开 **应用程序和服务日志**，然后展开 **Microsoft**，然后 **Windows**，然后 **Windows Defender**。
-3. 双击 **"操作**"。
+3. 双击 **“操作**”。
 4. 在详细信息窗格中，查看单个事件的列表以查找事件。
-5. 单击该事件可在" **常规** "和" **详细信息** "选项卡下的下窗格中查看有关事件的特定详细信息。
+5. 单击该事件可在“ **常规** ”和“ **详细信息** ”选项卡下的下窗格中查看有关事件的特定详细信息。
 
 <table>
 <tr>
@@ -327,7 +331,7 @@ Microsoft Defender 防病毒记录Windows事件日志中的事件 ID。
 若要对此事件进行故障排除：
 <ol>
 <li>再次运行扫描。</li>
-<li>如果以相同的方式失败，请转到<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft 支持部门站点</a>，在<b>"搜索</b>"框中输入错误编号以查找错误代码。</li>
+<li>如果以相同的方式失败，请转到<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft 支持部门站点</a>，在<b>“搜索</b>”框中输入错误编号以查找错误代码。</li>
 <li>与 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft 技术支持部门</a>联系
 </li>
 </ol>
@@ -897,7 +901,7 @@ UACUser</dt>
 用户操作：
 </td>
 <td >
-不需要执行任何操作。 Microsoft Defender 防病毒可以对此威胁暂停并采取例行操作。 如果要手动删除威胁，请在Microsoft Defender 防病毒界面中单击<b>"清理计算机</b>"。
+不需要执行任何操作。 Microsoft Defender 防病毒可以对此威胁暂停并采取例行操作。 如果要手动删除威胁，请在Microsoft Defender 防病毒界面中单击<b>“清理计算机</b>”。
 </td>
 </tr>
 <tr>
@@ -1245,7 +1249,7 @@ Microsoft Defender 防病毒客户端由于严重问题而遇到此错误。 终
 
 如果此事件仍然存在：<ol>
 <li>再次运行扫描。</li>
-<li>如果以相同的方式失败，请转到<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft 支持部门站点</a>，在<b>"搜索</b>"框中输入错误编号以查找错误代码。</li>
+<li>如果以相同的方式失败，请转到<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft 支持部门站点</a>，在<b>“搜索</b>”框中输入错误编号以查找错误代码。</li>
 <li>与 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft 技术支持部门</a>联系
 </li>
 </ol>
@@ -2478,7 +2482,7 @@ Microsoft Defender 防病毒客户端引擎因意外错误而停止。
 若要对此事件进行故障排除：
 <ol>
 <li>再次运行扫描。</li>
-<li>如果以相同的方式失败，请转到<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft 支持部门站点</a>，在<b>"搜索</b>"框中输入错误编号以查找错误代码。</li>
+<li>如果以相同的方式失败，请转到<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft 支持部门站点</a>，在<b>“搜索</b>”框中输入错误编号以查找错误代码。</li>
 <li>与 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft 技术支持部门</a>联系
 </li>
 </ol>
@@ -2727,7 +2731,7 @@ Microsoft Defender 防病毒宽限期已过期。 禁用对病毒、间谍软件
 </tr><tr><td>解决方案</td><td>
 <ol>
 <li>更新定义。 任一：<ol>
-<li>单击Microsoft Defender 防病毒中<b>"更新</b>"选项卡上的"<b>更新定义</b>"按钮。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>或者，
+<li>单击Microsoft Defender 防病毒中<b>“更新</b>”选项卡上的“<b>更新定义</b>”按钮。 <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>或者，
 </li>
 <li>从<a href="https://aka.ms/wdsi">Microsoft 安全智能站点</a>下载最新定义。
 注意：从站点下载的定义文件的大小可以超过 60 MB，不应用作更新定义的长期解决方案。
@@ -3196,6 +3200,17 @@ Microsoft Defender 防病毒无法修正存档中检测到的威胁。 请考虑
 </td>
 </tr>
 </table>
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [在 macOS 上设置Microsoft Defender for Endpoint首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于Intune的Microsoft Defender 防病毒的 macOS 防病毒策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [在 Linux 上设置Microsoft Defender for Endpoint首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置Microsoft Defender for Endpoint](ios-configure-features.md)
+
 
 ## <a name="related-topics"></a>相关主题
 
