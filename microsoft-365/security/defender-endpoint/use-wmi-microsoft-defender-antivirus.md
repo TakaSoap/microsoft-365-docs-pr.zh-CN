@@ -1,7 +1,7 @@
 ---
-title: 使用 WMI Microsoft Defender 防病毒配置应用程序
-description: 了解如何使用 WMI 脚本Microsoft Defender 防病毒 Microsoft Defender for Endpoint 中的检索、修改和更新设置来配置和管理自定义设置。
-keywords: wmi， 脚本， windows management instrumentation， 配置
+title: 使用 WMI 配置Microsoft Defender 防病毒
+description: 了解如何使用 WMI 脚本在Microsoft Defender for Endpoint中检索、修改和更新设置来配置和管理Microsoft Defender 防病毒。
+keywords: wmi、脚本、Windows 管理检测、配置
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,14 +17,14 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c8057a971576d5511440ac009acd6eab55b302e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a525deb526f61f8500f42cc918380fdfa9c52861
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168362"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787616"
 ---
-# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 Windows Management Instrumentation (WMI) 配置和管理Microsoft Defender 防病毒
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>使用Windows管理检测 (WMI) 来配置和管理Microsoft Defender 防病毒
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,18 +32,32 @@ ms.locfileid: "61168362"
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- Microsoft Defender 防病毒
 
-Windows Management Instrumentation (WMI) 是一个脚本界面，可用于检索、修改和更新设置。
+**平台**
+- Windows
 
-有关 WMI 的更多信息，Microsoft 开发人员网络 [System Administration 库](/windows/win32/wmisdk/wmi-start-page)。
+Windows管理检测 (WMI) 是一个脚本接口，可用于检索、修改和更新设置。
 
-Microsoft Defender 防病毒具有许多特定的 WMI 类，这些类可用于执行与组策略和其他管理工具相同的大多数功能。 许多类都类似于 Defender [for Cloud PowerShell cmdlet。](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+在 [Microsoft 开发人员网络系统管理库](/windows/win32/wmisdk/wmi-start-page)中阅读有关 WMI 的详细信息。
 
-[MSDN Windows Defender WMIv2 提供程序](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)参考库列出了适用于 Microsoft Defender 防病毒 的可用 WMI 类，并包括示例脚本。
+Microsoft Defender 防病毒具有许多特定的 WMI 类，可用于执行与组策略和其他管理工具相同的大多数函数。 许多类类似于 [Defender for Cloud PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)。
 
-使用 WMI 所做的更改将影响部署或进行更改的终结点上的本地设置。 这意味着，使用组策略、Microsoft Endpoint Configuration Manager或Microsoft Intune部署策略可能会覆盖使用 WMI 所做的更改。 
+[MSDN Windows Defender WMIv2 提供程序参考库](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)列出了可用于Microsoft Defender 防病毒的 WMI 类，并包含示例脚本。
 
-你可以 [配置哪些设置可以使用本地策略覆盖本地覆盖](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
+使用 WMI 所做的更改将影响部署或进行更改的终结点上的本地设置。 这意味着，使用组策略、Microsoft Endpoint Configuration Manager或Microsoft Intune部署策略可以覆盖使用 WMI 所做的更改。 
+
+可以 [使用本地策略重写来配置可在本地重写哪些设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)。
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [在 macOS 上设置Microsoft Defender for Endpoint首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于Intune的Microsoft Defender 防病毒的 macOS 防病毒策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [在 Linux 上设置Microsoft Defender for Endpoint首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="related-topics"></a>相关主题
 

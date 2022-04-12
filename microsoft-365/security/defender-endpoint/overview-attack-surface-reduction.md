@@ -1,8 +1,8 @@
 ---
 title: '了解并使用攻击面减少 (ASR) '
 ms.reviewer: ''
-description: 了解Pertahanan Microsoft untuk Titik Akhir的攻击面减少功能。
-keywords: asr， 攻击面减少， 攻击面减少规则， Pertahanan Microsoft untuk Titik Akhir， microsoft defender， 防病毒， av， windows defender
+description: 了解Microsoft Defender for Endpoint的攻击面减少功能。
+keywords: asr， 攻击面减少， 攻击面减少规则， Microsoft Defender for Endpoint， microsoft defender， 防病毒， av， windows defender
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705070"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787701"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>了解并使用攻击面减少功能
 
@@ -35,6 +35,10 @@ ms.locfileid: "64705070"
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender 防病毒
+
+**平台**
+- Windows
 
 > [!TIP]
 > 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
@@ -76,7 +80,7 @@ ms.locfileid: "64705070"
 > - 组策略
 > - PowerShell cmdlet
 
-## <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>测试攻击面减少Pertahanan Microsoft untuk Titik Akhir
+## <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>测试攻击面减少Microsoft Defender for Endpoint
 
 作为组织安全团队的一部分，可以配置攻击面减少功能以在审核模式下运行，以了解其工作原理。 可以在审核模式下启用以下 ASR 安全功能：
 
@@ -122,13 +126,13 @@ ms.locfileid: "64705070"
 
 ## <a name="view-attack-surface-reduction-events"></a>查看攻击面减少活动
 
-查看事件查看器中的攻击面减少事件，以监视哪些规则或设置正常工作。 还可以确定任何设置是否过于"干扰"或影响日常工作流。
+查看事件查看器中的攻击面减少事件，以监视哪些规则或设置正常工作。 还可以确定任何设置是否过于“干扰”或影响日常工作流。
 
 评估功能时，查看事件很方便。 可以为功能或设置启用审核模式，然后查看如果完全启用这些功能或设置会发生什么情况。
 
 本部分列出了所有事件及其关联的功能或设置，并介绍了如何创建自定义视图以筛选到特定事件。
 
-如果有 E5 订阅[并使用Pertahanan Microsoft untuk Titik Akhir](microsoft-defender-endpoint.md)，请在Windows 安全中心中详细报告事件、块和警告。
+如果有 E5 订阅[并使用Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，请在Windows 安全中心中详细报告事件、块和警告。
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自定义视图查看攻击面减少功能
 
@@ -149,7 +153,7 @@ ms.locfileid: "64705070"
 3. 选择 **操作** \> **导入自定义视图...**
 
    > [!div class="mx-imgBorder"]
-   > ![突出显示"偶数查看器"窗口左侧的"导入自定义"视图的动画。](images/events-import.gif)
+   > ![突出显示“偶数查看器”窗口左侧的“导入自定义”视图的动画。](images/events-import.gif)
 
 4. 导航到提取所需自定义视图的 XML 文件的位置，然后选择它。
 
@@ -161,16 +165,16 @@ ms.locfileid: "64705070"
 
 1. 在"开始"菜单中键入 **事件查看器** 并打开Windows **事件查看器**。
 
-2. 在左侧面板的 **"操作"** 下，选择 **"创建自定义视图..."**
+2. 在左侧面板的 **“操作”** 下，选择 **“创建自定义视图...”**
 
    > [!div class="mx-imgBorder"]
-   > ![在事件查看器窗口上突出显示"创建自定义视图"选项的动画。](images/events-create.gif)
+   > ![在事件查看器窗口上突出显示“创建自定义视图”选项的动画。](images/events-create.gif)
 
-3. 转到"XML"选项卡， **并手动选择"编辑查询**"。 如果使用 XML 选项，则会看到一条警告，指出无法使用 **"筛选器"** 选项卡编辑查询。 选择“**是**”。
+3. 转到“XML”选项卡， **并手动选择“编辑查询**”。 如果使用 XML 选项，则会看到一条警告，指出无法使用 **“筛选器”** 选项卡编辑查询。 选择“**是**”。
 
 4. 粘贴要从 XML 部分筛选事件的功能的 XML 代码。
 
-5. 选择“**确定**”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为仅显示与该功能相关的事件。
+5. 选择“确定”。 为筛选器指定名称。 这将创建一个自定义视图，该视图筛选为仅显示与该功能相关的事件。
 
 #### <a name="xml-for-attack-surface-reduction-rule-events"></a>用于攻击面减少规则事件的 XML
 
@@ -231,8 +235,8 @@ ms.locfileid: "64705070"
 
 可以在Windows事件查看器中访问这些事件：
 
-1. 打开 **"开始"** 菜单并键入 **事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **应用程序和服务日志> Microsoft > Windows**，然后转到下表中"**提供程序/源**"下列出的文件夹。
+1. 打开 **“开始”** 菜单并键入 **事件查看器**，然后选择 **事件查看器** 结果。
+2. 展开 **应用程序和服务日志> Microsoft > Windows**，然后转到下表中“**提供程序/源**”下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找要查找的事件。
 
    ![显示使用事件查看器的动画。](images/event-viewer.gif)
@@ -294,14 +298,14 @@ ms.locfileid: "64705070"
 |:---|:---|
 | [基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 对Microsoft Edge使用容器隔离来帮助防范恶意网站。 |
 | [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控件，使应用程序必须赢得信任才能运行。 |
-| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 对密钥系统文件夹中的文件进行更改 (需要Microsoft Defender 防病毒)  |
-| [网络保护](network-protection.md) | 将保护扩展到组织的设备上的网络流量和连接。  (需要Microsoft Defender 防病毒)  |
+| [受控文件夹访问](controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件)  (需要Microsoft Defender 防病毒) 对密钥系统文件夹中的文件进行更改。 |
+| [网络保护](network-protection.md) | 将保护扩展到组织的设备上的网络流量和连接。  (需要Microsoft Defender 防病毒) 。 |
 | [漏洞保护](exploit-protection.md) | 帮助保护组织使用的操作系统和应用免受攻击。 攻击保护还适用于第三方防病毒解决方案。 |
 | [设备控制](device-control-report.md) | 通过监视和控制组织中设备上使用的媒体（如可移动存储和 USB 驱动器）来防止数据丢失。 |
-| [攻击面减少 (ASR) 规则部署指南](attack-surface-reduction-rules-deployment.md) | 介绍部署攻击面减少规则的概述信息和先决条件 |
-| [计划攻击面减少 (ASR) 规则部署](attack-surface-reduction-rules-deployment-plan.md) | 列出攻击面减少规则部署的建议步骤 |
+| [攻击面减少 (ASR) 规则部署指南](attack-surface-reduction-rules-deployment.md) | 介绍部署攻击面减少规则的概述信息和先决条件。 |
+| [计划攻击面减少 (ASR) 规则部署](attack-surface-reduction-rules-deployment-plan.md) | 列出了用于攻击面减少规则部署的建议步骤。 |
 | [测试攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-test.md) | 提供使用审核模式测试攻击面减少规则的步骤。 |
-| [启用攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-implement.md) | 显示将攻击面减少规则从测试 (审核) 模式转换为活动 (阻止) 模式的步骤 |
+| [启用攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-implement.md) | 显示将攻击面减少规则从测试 (审核) 模式转换为已启用的活动 (阻止) 模式的步骤。 |
 | [操作攻击面减少 (ASR) 规则](attack-surface-reduction-rules-deployment-operationalize.md) | 提供有关日常评审和维护活动的信息。 |
-| [ASR) 规则引用 (攻击面减少](attack-surface-reduction-rules-reference.md) | 提供有关每个攻击面减少规则的详细信息。 |
+| [攻击面减少 (ASR) 规则参考](attack-surface-reduction-rules-reference.md) | 提供有关每个攻击面减少规则的详细信息。 |
 | [攻击面减少规则](attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。 |
