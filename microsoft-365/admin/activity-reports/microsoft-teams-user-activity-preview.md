@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何获取Microsoft Teams用户活动报告并深入了解组织中的Teams活动。
-ms.openlocfilehash: dd2a507276077a808fcd5e0881eb26dfcd0a91ef
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738280"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781646"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理中心中的 Microsoft 365 报表 - Microsoft Teams 用户活动
 

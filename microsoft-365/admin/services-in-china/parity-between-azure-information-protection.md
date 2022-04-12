@@ -1,7 +1,7 @@
 ---
 title: 适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.author: sharik
 author: skjerland
 manager: scotv
@@ -10,18 +10,23 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
-  - Adm_NonTOC
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-  - MET150
-  - GEU150
-  - GEA150
+- MET150
+- GEU150
+- GEA150
 description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
 monikerRange: o365-21vianet
+ms.openlocfilehash: 3b4906844c76293a1163d17d77b009528ef32f12
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782888"
 ---
-
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 
 本文介绍了 Azure 信息保护 （AIP） 对由世纪互联运营的 Office 365 和商业产品/服务之间的差异，以及为中国&mdash;客户配置 AIP 的详细说明，包括如何安装 AIP 本地扫描仪和管理内容扫描作业。

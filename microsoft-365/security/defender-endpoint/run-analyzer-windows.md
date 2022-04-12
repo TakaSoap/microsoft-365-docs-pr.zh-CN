@@ -1,7 +1,7 @@
 ---
 title: 在 Windows 上运行客户端分析器
-description: 了解如何在终结点客户端分析器上运行 microsoft Defender Windows。
-keywords: 客户端分析器， 传感器疑难解答， 分析器， mdeanalyzer， windows
+description: 了解如何在Windows上运行Microsoft Defender for Endpoint客户端分析器。
+keywords: 客户端分析器，传感器故障排除，分析器，mdeanalyzer，windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467128"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783020"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>在 Windows 上运行客户端分析器
 
 **适用于：**
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. 将 [MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到Windows调查的客户端计算机。
+1. 将 [MDE 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到需要调查的Windows计算机。
 
 2. 提取计算机上MDEClientAnalyzer.zip的内容。
 
@@ -50,21 +50,21 @@ ms.locfileid: "64467128"
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
-除上述内容外，还有一个选项使用 [实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
+除了上述内容，还可以选择 [使用实时响应收集分析器支持日志](troubleshoot-collect-support-log.md)。
 
 > [!NOTE]
-> 在 Windows 10/11、Windows Server 2019/2022 或安装了新式统一解决方案的 Windows Server 2012R2/2016 [](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) `MDEClientAnalyzer.exe` 上，客户端分析器脚本将调用可执行文件，以运行对云服务 URL 的连接测试。
+> Windows 10/11、Windows服务器 2019/2022 或 Windows服务器 2012R2/2016 上安装了[新式统一解决方案](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)，客户端分析器脚本调用到调用`MDEClientAnalyzer.exe`以运行云服务 URL 连接测试的可执行文件。
 >
-> 在 Windows 8.1、Windows Server 2016 或任何之前的操作系统版本（其中 Microsoft Monitoring Agent (MMA) `MDEClientAnalyzerPreviousVersion.exe` 用于载入）上，客户端分析器脚本将调用可执行文件，以运行命令和控制 (CnC) URL 的连接测试，同时调用Microsoft Monitoring Agent网络`TestCloudConnection.exe`数据通道 URL 的连接工具。
+> 在Windows 8.1、Windows Server 2016或以前用于载入Microsoft Monitoring Agent (MMA) 的任何 OS 版本中，客户端分析器脚本会调用到调用`MDEClientAnalyzerPreviousVersion.exe`的可执行文件中，以运行命令和控制 (CnC) URL 的连接测试，同时调用到Microsoft Monitoring Agent网络数据通道 URL 的连接工具`TestCloudConnection.exe`。
 
 
-分析工具中包含的所有 PowerShell 脚本和模块都由 Microsoft 签名。
-如果文件已经过任何修改，则分析器应退出，并出现以下错误：
+分析器中包含的所有 PowerShell 脚本和模块都是 Microsoft 签名的。
+如果已以任何方式修改文件，则分析器应退出并出现以下错误：
 
 :::image type="content" source="images/sigerror.png" alt-text="客户端分析器错误" lightbox="images/sigerror.png":::
 
 
-如果显示此错误，则issuerInfo.txt输出将包含有关发生此错误的原因和受影响的文件的详细信息：
+如果显示此错误，则issuerInfo.txt输出将包含有关发生此错误的原因以及受影响的文件的详细信息：
 
 :::image type="content" source="images/issuerinfo.png" alt-text="颁发者信息" lightbox="images/issuerinfo.png":::
 
@@ -75,30 +75,30 @@ ms.locfileid: "64467128"
 
 
 
-## <a name="result-package-contents-on-windows"></a>结果包内容Windows
+## <a name="result-package-contents-on-windows"></a>Windows上的结果包内容
 
 > [!NOTE]
-> 捕获的确切文件可能会因以下因素而更改：
+> 捕获的确切文件可能会根据以下因素而变化：
 >
 > - 运行分析器的窗口的版本。
-> - 计算机上事件日志通道的可用性。
-> - 如果计算机尚未载入EDR， (感知的启动状态将) 。
-> - 如果分析器命令使用了高级疑难解答参数。
+> - 计算机上的事件日志通道可用性。
+> - 如果计算机尚未载入) ，则EDR传感器 (Sense 的开始状态将停止。
+> - 如果分析器命令使用了高级故障排除参数。
 
-默认情况下，解压缩MDEClientAnalyzerResult.zip文件将包含以下项目。
+默认情况下，未打包的MDEClientAnalyzerResult.zip文件将包含以下项。
 
 - MDEClientAnalyzer.htm
 
-  这是主要的 HTML 输出文件，其中包含计算机上运行的分析器脚本可以生成的结果和指导。
+  这是主要的 HTML 输出文件，其中将包含分析器脚本在计算机上运行可以生成的结果和指导。
 
 - SystemInfoLogs \[文件夹\]
   - AddRemovePrograms.csv
 
-    说明：从注册表收集的 x64 操作系统软件上安装的 x86 软件列表。
+    说明：从注册表收集的 x64 OS 软件上安装的 x86 软件的列表。
 
   - AddRemoveProgramsWOW64.csv
 
-    说明：从注册表收集的 x64 操作系统软件上安装的 x86 软件列表。
+    说明：从注册表收集的 x64 OS 软件上安装的 x86 软件的列表。
 
     - CertValidate.log
 
@@ -106,15 +106,15 @@ ms.locfileid: "64467128"
 
     - dsregcmd.txt
 
-      说明：运行 [dsregcmd 的输出](/azure/active-directory/devices/troubleshoot-device-dsregcmd)。 这将提供有关计算机Azure AD状态的详细信息。
+      说明：运行 [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd) 的输出。 这提供了有关计算机Azure AD状态的详细信息。
 
     - IFEO.txt
 
-      说明：计算机上 [配置的映像](/previous-versions/windows/desktop/xperf/image-file-execution-options) 文件执行选项的输出
+      说明：在计算机上配置的 [映像文件执行选项](/previous-versions/windows/desktop/xperf/image-file-execution-options) 的输出
 
     - MDEClientAnalyzer.txt
 
-      说明：这是详细的文本文件，其中显示分析器脚本执行的详细信息。
+      说明：这是详细文本文件，其中显示了分析器脚本执行的详细信息。
 
     - MDEClientAnalyzer.xml
 
@@ -122,23 +122,23 @@ ms.locfileid: "64467128"
 
     - RegOnboardedInfoCurrent.Json
 
-      说明：从注册表中以 JSON 格式收集的载入计算机信息。
+      说明：从注册表以 JSON 格式收集的载入计算机信息。
 
   - RegOnboardingInfoPolicy.Json
 
-    说明：从注册表中以 JSON 格式收集的载入策略配置。
+    说明：从注册表以 JSON 格式收集的载入策略配置。
 
     - SCHANNEL.txt
 
-      说明：有关 [应用于计算机（如](/windows-server/security/tls/manage-tls) 从注册表中收集）的 SCHANNEL 配置的详细信息。
+      说明：有关应用于从注册表收集的计算机的 [SCHANNEL 配置](/windows-server/security/tls/manage-tls) 的详细信息。
 
     - SessionManager.txt
 
-      说明：会话管理器特定设置从注册表中收集。
+      说明：从注册表收集特定于会话管理器的设置。
 
     - SSL_00010002.txt
 
-      说明：有关 [应用于从](/windows-server/security/tls/manage-tls) 注册表中收集的机器的 SSL 配置的详细信息。
+      说明：有关应用于从注册表收集的计算机的 [SSL 配置](/windows-server/security/tls/manage-tls) 的详细信息。
 
 - EventLogs [Folder]
 
@@ -156,7 +156,7 @@ ms.locfileid: "64467128"
 
   - OperationsManager.evtx
 
-    说明：导出 Microsoft Monitoring Agent 事件日志
+    说明：导出Microsoft Monitoring Agent事件日志
 
 
 

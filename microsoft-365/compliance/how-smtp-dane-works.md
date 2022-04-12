@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解基于 SMTP DNS 的命名实体身份验证 (DANE) 如何工作来保护邮件服务器之间的电子邮件通信。
-ms.openlocfilehash: 2af2a166ff73bbe7888ed9265ec8733105eb2007
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: b5f9337457556dda53b5b2f982480a4c2501fcc9
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759426"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782844"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>已命名实体的基于 SMTP DNS 的身份验证 (DANE) 的工作原理
 
@@ -196,8 +196,8 @@ TLS-RPT [https://datatracker.ietf.org/doc/html/rfc8460](https://datatracker.ietf
 
 这通常表示目标邮件服务器出现问题。 远程连接分析器正在测试连接的邮件服务器。 通常有两种生成此代码的方案：
 
-1.  目标邮件服务器根本不支持安全通信，必须使用纯非加密通信。
-2.  目标服务器配置不当，并忽略 STARTTLS 命令。
+1. 目标邮件服务器根本不支持安全通信，必须使用纯非加密通信。
+2. 目标服务器配置不当，并忽略 STARTTLS 命令。
 
 收到消息后：
 

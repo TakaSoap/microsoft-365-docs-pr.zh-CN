@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: f8f6865bc65662cbbfd5a9276d95abc405f5a64b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dfe5567edbe86279ad5a5b0645cb3ea6c54c1174
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664229"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783599"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -38,7 +38,7 @@ ms.locfileid: "64664229"
 
 [攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以危害设备和网络的操作。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 跨Windows版本的攻击面减少功能
 
@@ -93,7 +93,7 @@ ms.locfileid: "64664229"
 
 > [!IMPORTANT]
 > 排除文件或文件夹可能会严重减少 ASR 规则提供的保护。 将允许运行排除的文件，并且不会记录任何报表或事件。
-> 如果 ASR 规则检测到你认为不应检测到的文件，则应 [先使用审核模式来测试规则](evaluate-attack-surface-reduction.md)。
+> 如果 ASR 规则检测到你认为不应检测到的文件，则应 [先使用审核模式来测试规则](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit)。
 
 可以使用文件夹路径或完全限定的资源名称) 指定单个文件或文件夹 (，但不能指定排除项适用的规则。 仅当已排除的应用程序或服务启动时才应用排除项。 例如，如果为已运行的更新服务添加排除项，更新服务将继续触发事件，直到服务停止并重新启动。
 
@@ -129,64 +129,64 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 #### <a name="device-configuration-profiles"></a>设备配置文件
 
-1. 选择 **设备配置** \> **文件**。 选择现有的终结点保护配置文件或创建新的终结点保护配置文件。 若要创建新配置文件，请选择 **"创建配置文件** "并输入此配置文件的信息。 对于 **配置文件类型**，请选择 **"终结点保护**"。 如果已选择现有配置文件，请选择 **"属性**"，然后选择 **设置**。
+1. 选择 **设备配置** \> **文件**。 选择现有的终结点保护配置文件或创建新的终结点保护配置文件。 若要创建新配置文件，请选择 **“创建配置文件** ”并输入此配置文件的信息。 对于 **配置文件类型**，请选择 **“终结点保护**”。 如果已选择现有配置文件，请选择 **“属性**”，然后选择 **设置**。
 
-2. 在 **"终结点保护**"窗格中，选择 **Windows Defender攻击防护**，然后选择 **"攻击面减少**"。 为每个 ASR 规则选择所需的设置。
+2. 在 **“终结点保护**”窗格中，选择 **Windows Defender攻击防护**，然后选择 **“攻击面减少**”。 为每个 ASR 规则选择所需的设置。
 
-3. 在 **攻击面减少异常** 下，输入单个文件和文件夹。 还可以选择" **导** 入"以导入包含要从 ASR 规则中排除的文件和文件夹的 CSV 文件。 CSV 文件中的每个行的格式应如下所示：
+3. 在 **攻击面减少异常** 下，输入单个文件和文件夹。 还可以选择“ **导** 入”以导入包含要从 ASR 规则中排除的文件和文件夹的 CSV 文件。 CSV 文件中的每个行的格式应如下所示：
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
-4. 在三个配置窗格中选择 **"确定** "。 如果要创建新的终结点保护文件，请选择 **"创建** "，如果正在编辑现有终结点保护文件，请 **选择"保存** "。
+4. 在三个配置窗格中选择 **“确定** ”。 如果要创建新的终结点保护文件，请选择 **“创建** ”，如果正在编辑现有终结点保护文件，请 **选择“保存** ”。
 
 #### <a name="endpoint-security-policy"></a>终结点安全策略**
 
-1. 选择 **"终结点安全** \> **攻击面减少**"。 选择现有的 ASR 规则或创建新的 ASR 规则。 若要创建新策略，请选择 **"创建** 策略"并输入此配置文件的信息。 对于 **配置文件类型**，请选择 **攻击面减少规则**。 如果已选择现有配置文件，请选择 **"属性**"，然后选择 **设置**。
+1. 选择 **“终结点安全** \> **攻击面减少**”。 选择现有的 ASR 规则或创建新的 ASR 规则。 若要创建新策略，请选择 **“创建** 策略”并输入此配置文件的信息。 对于 **配置文件类型**，请选择 **攻击面减少规则**。 如果已选择现有配置文件，请选择 **“属性**”，然后选择 **设置**。
 
-2. 在 **"配置设置"** 窗格中，选择 **"攻击面减少** "，然后为每个 ASR 规则选择所需的设置。
+2. 在 **“配置设置”** 窗格中，选择 **“攻击面减少** ”，然后为每个 ASR 规则选择所需的设置。
 
-3. 在 **需要保护的其他文件夹列表** 下， **列出有权访问受保护文件夹的应用**， **以及从攻击面减少规则中排除文件和路径**，输入单个文件和文件夹。 还可以选择" **导** 入"以导入包含要从 ASR 规则中排除的文件和文件夹的 CSV 文件。 CSV 文件中的每个行的格式应如下所示：
+3. 在 **需要保护的其他文件夹列表** 下， **列出有权访问受保护文件夹的应用**， **以及从攻击面减少规则中排除文件和路径**，输入单个文件和文件夹。 还可以选择“ **导** 入”以导入包含要从 ASR 规则中排除的文件和文件夹的 CSV 文件。 CSV 文件中的每个行的格式应如下所示：
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
-4. 在三个配置窗格中选择 **"下一步** "，然后在创建新策略时选择 **"创建** "，如果正在编辑现有策略，则选择 **"保存** "。
+4. 在三个配置窗格中选择 **“下一步** ”，然后在创建新策略时选择 **“创建** ”，如果正在编辑现有策略，则选择 **“保存** ”。
 
 ### <a name="mem"></a>MEM
 
 可以使用 Microsoft Endpoint Manager (MEM) OMA-URI 来配置自定义 ASR 规则。 以下过程使用规则 [阻止滥用被利用的易受攻击的签名驱动程序](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) 作为示例。
 
-1. 打开 Microsoft Endpoint Manager (MEM) 管理中心。 在 **"主页** "菜单中，单击  **"设备**"，选择 **"配置文件**"，然后单击 **"创建配置文件**"。
+1. 打开 Microsoft Endpoint Manager (MEM) 管理中心。 在 **“主页** ”菜单中，单击  **“设备**”，选择 **“配置文件**”，然后单击 **“创建配置文件**”。
 
    > [!div class="mx-imgBorder"]
-   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="Microsoft Endpoint Manager管理中心门户中的&quot;创建配置文件&quot;页" lightbox="images/mem01-create-profile.png":::
+   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="Microsoft Endpoint Manager管理中心门户中的“创建配置文件”页" lightbox="images/mem01-create-profile.png":::
 
-2. 在 **"创建配置文件**"中，在以下两个下拉列表中，选择以下内容：
+2. 在 **“创建配置文件**”中，在以下两个下拉列表中，选择以下内容：
 
    - 在 **平台** 中，选择 **Windows 10及更高版本**
    - 在 **配置文件类型** 中，选择 **模板**
    - 如果已通过终结点安全性设置 ASR 规则，请在 **配置文件类型** 中选择 **设置目录**。
 
-   选择 **"自定义**"，然后选择 **"创建**"。
+   选择 **“自定义**”，然后选择 **“创建**”。
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="Microsoft Endpoint Manager管理中心门户中的规则配置文件属性" lightbox="images/mem02-profile-attributes.png":::
 
-3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **1 个基本信息** 中，在 **"名称**"中，键入模板的名称，在 **"说明** "中，可以键入说明 (可选) 。
+3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **1 个基本信息** 中，在 **“名称**”中，键入模板的名称，在 **“说明** ”中，可以键入说明 (可选) 。
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem03-1-basics.png" alt-text="Microsoft Endpoint Manager管理中心门户中的基本属性" lightbox="images/mem03-1-basics.png":::
 
-4. 单击“**下一步**”。 将打开步骤 **2 配置设置** 。 对于 OMA-URI 设置，请单击 **"添加**"。 现在将显示两个选项： **添加** 和 **导出**。
+4. 点击 **“下一步”**。 将打开步骤 **2 配置设置** 。 对于 OMA-URI 设置，请单击 **“添加**”。 现在将显示两个选项： **添加** 和 **导出**。
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Microsoft Endpoint Manager管理中心门户中的配置设置" lightbox="images/mem04-2-configuration-settings.png":::
 
-5. 再次单击 **"添加** "。 **"添加行 OMA-URI"设置** 打开。 在 **"添加行**"中，执行以下操作：
+5. 再次单击 **“添加** ”。 **“添加行 OMA-URI”设置** 打开。 在 **“添加行**”中，执行以下操作：
 
-   - 在 **"名称"** 中，键入规则的名称。
-   - 在 **"说明"** 中，键入简要说明。
+   - 在 **“名称”** 中，键入规则的名称。
+   - 在 **“说明”** 中，键入简要说明。
    - 在 **OMA-URI** 中，键入或粘贴要添加的规则的特定 OMA-URI 链接。 请参阅本文中的 MDM 部分，了解要用于此示例规则的 OMA-URI。 有关攻击面减少规则 GUIDS，请参阅主题中的 [按规则说明](attack-surface-reduction-rules-reference.md#per-rule-descriptions) ：攻击面减少规则。
-   - 在 **"数据"类型** 中，选择 **"字符串**"。
+   - 在 **“数据”类型** 中，选择 **“字符串**”。
    - 在 **Value** 中，键入或粘贴 GUID 值、 \= 符号和无空格的状态值 (_GUID=StateValue_) 。 其中：
 
      - 0：禁用 (禁用 ASR 规则) 
@@ -197,12 +197,12 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Microsoft Endpoint Manager管理中心门户中的 OMA URI 配置" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. 选择 **“保存”**。 **添加行** 关闭。 在 **"自定义**"中，选择 **"下一步**"。 在步骤 **3 作用域标记中**，范围标记是可选的。 执行下列操作之一：
+6. 选择“**保存**”。 **添加行** 关闭。 在 **“自定义**”中，选择 **“下一步**”。 在步骤 **3 作用域标记中**，范围标记是可选的。 执行下列操作之一：
 
-   - 选择 **"选择作用域"标记**，选择范围标记 (可选) ，然后选择 **"下一步**"。
-   - 或选择 **"下一步**"
+   - 选择 **“选择作用域”标记**，选择范围标记 (可选) ，然后选择 **“下一步**”。
+   - 或选择 **“下一步**”
 
-7. 在步骤 **4"分配**"中， **对于** 要应用此规则的组，请从以下选项中进行选择：
+7. 在步骤 **4“分配**”中， **对于** 要应用此规则的组，请从以下选项中进行选择：
 
    - **添加组**
    - **添加所有用户**
@@ -211,21 +211,21 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem06-4-assignments.png" alt-text="Microsoft Endpoint Manager管理中心门户中的分配" lightbox="images/mem06-4-assignments.png":::
 
-8. 在 **"已排除的组"** 中，选择要从此规则中排除的任何组，然后选择 **"下一步**"。
+8. 在 **“已排除的组”** 中，选择要从此规则中排除的任何组，然后选择 **“下一步**”。
 
 9. 在以下设置的步骤 **5 适用性规则** 中，执行以下操作：
 
-   - 在 **"规则**"中，**如果选择"分配配置文件**"，则 **选择"如果"不分配配置文件"，则选择"不分配配置文件**"
-   - 在 **"属性**"中，选择要将此规则应用到的属性
+   - 在 **“规则**”中，**如果选择“分配配置文件**”，则 **选择“如果”不分配配置文件“，则选择”不分配配置文件**”
+   - 在 **“属性**”中，选择要将此规则应用到的属性
    - 在 **Value** 中，输入适用的值或值范围
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Microsoft Endpoint Manager管理中心门户中的适用性规则" lightbox="images/mem07-5-applicability-rules.png":::
 
-10. 选择 **下一步**。 在步骤 **6"查看 + 创建**"中，查看所选和输入的设置和信息，然后选择 **"创建**"。
+10. 选择 **下一步**。 在步骤 **6“查看 + 创建**”中，查看所选和输入的设置和信息，然后选择 **“创建**”。
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="Microsoft Endpoint Manager管理中心门户中的&quot;审阅和创建&quot;选项" lightbox="images/mem08-6-review-create.png":::
+    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="Microsoft Endpoint Manager管理中心门户中的“审阅和创建”选项" lightbox="images/mem08-6-review-create.png":::
 
     > [!NOTE]
     > 规则处于活动状态，并在数分钟内生存。
@@ -269,15 +269,15 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 1. 在Microsoft Endpoint Configuration Manager中，转到 **资产和合规性** \> **Endpoint Protection Windows Defender** \> **攻击防护**。
 
-2. 选择 **"主** \> **创建攻击防护策略**"。
+2. 选择 **“主** \> **创建攻击防护策略**”。
 
-3. 输入名称和说明，选择 **"攻击面减少**"，然后选择 **"下一步**"。
+3. 输入名称和说明，选择 **“攻击面减少**”，然后选择 **“下一步**”。
 
-4. 选择哪些规则将阻止或审核操作，然后选择 **"下一步**"。
+4. 选择哪些规则将阻止或审核操作，然后选择 **“下一步**”。
 
-5. 查看设置，然后选择 **"下一步** "以创建策略。
+5. 查看设置，然后选择 **“下一步** ”以创建策略。
 
-6. 创建策略后，选择 **"关闭**"。
+6. 创建策略后，选择 **“关闭**”。
 
 ### <a name="group-policy"></a>组策略
 
@@ -290,7 +290,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 3. 展开树以 **Windows组件** \> **Microsoft Defender 防病毒Microsoft Defender 攻击防护** \>  \> **攻击面减少**。
 
-4. 选择 **"配置攻击面减少规则** "，然后选择 **"已启用**"。 然后，可以为选项部分中的每个规则设置单个状态。 选择 **"显示...** "，然后在 **"值名称** "列和 **"值** "列中输入所选状态中的规则 ID，如下所示：
+4. 选择 **“配置攻击面减少规则** ”，然后选择 **“已启用**”。 然后，可以为选项部分中的每个规则设置单个状态。 选择 **“显示...** ”，然后在 **“值名称** ”列和 **“值** ”列中输入所选状态中的规则 ID，如下所示：
 
    - 0：禁用 (禁用 ASR 规则) 
    - 1：阻止 (启用 ASR 规则) 
@@ -299,7 +299,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
    :::image type="content" source="images/asr-rules-gp.png" alt-text="组策略中的 ASR 规则" lightbox="images/asr-rules-gp.png":::
 
-5. 若要从 ASR 规则中排除文件和文件夹，请 **从攻击面减少规则设置中选择"排除文件和路径** "，并将选项设置为 **"已启用**"。 选择 **"显示"** ，然后在 **"值名称** "列中输入每个文件或文件夹。 在每个项的 **"值**"列中输入 **0**。
+5. 若要从 ASR 规则中排除文件和文件夹，请 **从攻击面减少规则设置中选择“排除文件和路径** ”，并将选项设置为 **“已启用**”。 选择 **“显示”** ，然后在 **“值名称** ”列中输入每个文件或文件夹。 在每个项的 **“值**”列中输入 **0**。
 
    > [!WARNING]
    > 请勿使用引号，因为值 **名称** 列或 **值** 列不支持引号。
@@ -307,14 +307,14 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 ### <a name="powershell"></a>PowerShell
 
 > [!WARNING]
-> 如果使用Intune、Configuration Manager或其他企业级管理平台管理计算机和设备，则管理软件将在启动时覆盖任何冲突的 PowerShell 设置。 若要允许用户使用 PowerShell 定义值，请在管理平台中使用规则的"用户定义"选项。
-> "用户定义"允许本地管理员用户配置规则。
-> 下图显示了"用户定义"选项设置。
+> 如果使用Intune、Configuration Manager或其他企业级管理平台管理计算机和设备，则管理软件将在启动时覆盖任何冲突的 PowerShell 设置。 若要允许用户使用 PowerShell 定义值，请在管理平台中使用规则的“用户定义”选项。
+> “用户定义”允许本地管理员用户配置规则。
+> 下图显示了“用户定义”选项设置。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-user-defined.png" alt-text="用于凭据安全性的&quot;启用&quot;选项" lightbox="images/asr-user-defined.png":::
+> :::image type="content" source="images/asr-user-defined.png" alt-text="用于凭据安全性的“启用”选项" lightbox="images/asr-user-defined.png":::
 
-1. 在"开始"菜单中键入 **powershell**，右键单击 **Windows PowerShell**，然后选择 **"以管理员身份运行**"。
+1. 在"开始"菜单中键入 **powershell**，右键单击 **Windows PowerShell**，然后选择 **“以管理员身份运行**”。
 
 2. 键入以下 cmdlet 之一。  (有关更多详细信息（如规则 ID.) ），请参阅[攻击面减少规则参考](attack-surface-reduction-rules-reference.md)
 

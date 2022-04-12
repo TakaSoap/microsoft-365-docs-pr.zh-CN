@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: '基本移动性和安全性常见问题解答 (常见问题) '
+  title: '常见问题解答 (常见问题解答) '
   f1.keywords:
   - NOCSH
   ms.author: kwekua
@@ -20,58 +20,58 @@ metadata:
   search.appverid:
   - MET150
   description: 有关基本移动性和安全性的常见问题。
-  ms.openlocfilehash: b7780c82cbb0519b0e6472d7eb26d92dd250c446
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 98dbb589f3464a0a34729d95e04975e7d8095e5c
+  ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63679303"
-title: '基本移动性和安全性常见问题解答 (常见问题) '
-summary: 本文包含有关基本移动性和安全性的常见问题，这是一项可帮助您管理并保护移动设备在 Microsoft 365。 如果找不到问题的答案，请通过在此页面上留下评论来告诉我们，以便我们考虑将你的问题添加到本文。
+  ms.lasthandoff: 04/12/2022
+  ms.locfileid: "64781108"
+title: '常见问题解答 (常见问题解答) '
+summary: 本文包含有关基本移动性和安全性的常见问题，该功能可帮助你在Microsoft 365中管理和保护移动设备。 如果找不到问题的答案，请通过在此页面上留下评论来告诉我们，以便我们考虑将你的问题添加到本文。
 sections:
 - name: 已忽略
   questions:
   - question: >
-      如何获取基本移动性和安全性？ 我在"管理"中看不到Microsoft 365 管理中心
+      如何获得基本的移动性和安全性？ 我在Microsoft 365 管理中心中看不到它
     answer: >
-      1.  通过进入"安全与合规"Office 365"&["激活基本移动性](https://protection.office.com/)和安全性。
+      1.  转到[Office 365安全性&合规性](https://protection.office.com/)页，激活基本移动性和安全性。
 
 
-      2.  转到"数据丢失防护">设备管理"。
+      2.  转到设备管理>数据丢失防护。
   - question: >
-      如何开始使用基本移动性和安全性中的设备管理？
-    answer: "基本移动性和安全性入门有四个步骤： \n\n1. 通过访问\"安全与合规\"Office 365激活&[功能和安全性](https://protection.office.com/)。\n\n2. 转到\"数据丢失防护\">\"设备>\"策略\"。\n    \n3. 创建设备管理策略，并应用于在安全组中设置的用户组。 建议首先将策略部署到小型测试组。 有关详细信息，请参阅在基本移动性 [和安全性中创建设备安全策略](create-device-security-policies.md)。\n\n4. 如果已应用了策略的用户尝试访问数据，系统会提示他们注册Microsoft 365。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)。\n\n有关详细信息，请参阅 [设置基本移动性和安全性](set-up.md)。\n"
+      如何开始在基本移动性和安全性中进行设备管理？
+    answer: "基本移动性和安全性有四个入门步骤： \n\n1. 通过转到[Office 365安全性&合规性](https://protection.office.com/)来激活基本移动性和安全性。\n\n2. 转到设备管理>设备策略>数据丢失防护。\n    \n3. 创建设备管理策略，并将其应用于在安全组中设置的用户组。 建议首先将策略部署到小型测试组。 有关详细信息，请参阅 [在基本移动性和安全性中创建设备安全策略](create-device-security-policies.md)。\n\n4. 在尝试访问Microsoft 365数据时，系统会提示应用策略的用户注册其设备。 有关详细信息，请参阅 [使用基本移动性和安全性注册移动设备](enroll-your-mobile-device.md)。\n\n有关详细信息，请参阅 [“设置基本移动性和安全性](set-up.md)”。\n"
   - question: >
-      我尝试设置基本移动性和安全性，但它似乎卡住。 服务Microsoft 365运行状况已显示"设置"一段时间。 我该如何操作？
+      我试图设置基本的移动性和安全性， 但它似乎停滞不前。 Microsoft 365服务运行状况已显示“预配”一段时间。 我该如何操作？
     answer: >
-      可能需要一些时间才能准备好服务。 预配完成后，你将看到"基本移动性和安全性"页。 如果已等待 24 小时，状态仍在预配中，请联系支持人员，我们将帮助找出问题是什么。
+      可能需要一些时间来为你准备服务。 预配完成后，你将看到“基本移动性和安全性”页面。 如果已等待 24 小时，并且状态仍在预配中，请联系支持部门，我们将帮助找出问题所在。
   - question: >
       如果设备注册失败，我该怎么办？
-    answer: "如果你在注册设备时遇到问题，请首先检查以下内容：\n\n- 确保设备尚未向另一个移动设备管理提供程序（如 Intune）注册。\n\n- 确保设备已设置为正确的日期和时间。\n\n- 在设备上切换到其他 WIFI 或手机网络。\n\n- 对于 Android 或 iOS 设备，卸载并重新安装Intune 公司门户应用。\n    \n如果注册仍无法工作，请参阅解决 [基本移动性和安全性问题](troubleshoot.md)。\n"
+    answer: "如果注册设备时遇到问题，请先检查以下内容：\n\n- 请确保设备尚未注册到另一个移动设备管理提供程序，例如Intune。\n\n- 确保设备设置为正确的日期和时间。\n\n- 切换到设备上其他 WIFI 或手机网络。\n\n- 对于 Android 或 iOS 设备，请卸载并重新安装设备上的Intune 公司门户应用。\n    \n如果注册仍然不起作用，请参阅 [基本移动性和安全性故障排除](troubleshoot.md)。\n"
   - question: >
-      Intune 与基本移动性和安全性之间有什么区别？
+      Intune与基本移动性和安全性有什么区别？
     answer: >
-      基本移动性和安全性由 Intune 服务托管。 它是 Intune 服务的一个子集，是一项额外的Microsoft 365，也是一个基于云的内置解决方案，用于管理组织中设备。 有关两种服务的并行比较，可帮助你确定使用 Intune 或 Microsoft 365 的基本移动性和安全性是否最适合你，请参阅在基本[移动性安全性和 Intune](choose-between-basic-mobility-and-security-and-intune.md) 之间选择。
+      基本移动性和安全性由Intune服务托管。 它是作为Microsoft 365的额外优势提供的Intune服务的子集，是一种内置的基于云的解决方案，用于管理组织中的设备。 有关这两项服务的并行比较，以帮助你确定是否最适合使用Intune或基本移动性和安全性Microsoft 365，请参阅[“基本移动安全性与Intune之间的选择](choose-between-basic-mobility-and-security-and-intune.md)”。
   - question: >
-      策略如何适用于基本移动性和安全性？ 如何设置它们？ 禁用它们？
+      策略如何适用于基本移动性和安全性？ 如何实现设置它们？ 禁用它们？
     answer: >
-      完成基本移动性和安全性的初始设置后，创建策略，并应用于安全与合规&组。 策略要求策略的用户在基本移动性和安全性中注册其设备，然后才能使用设备访问Microsoft 365数据。 您设置的策略决定了移动设备的设置，例如，必须重置密码多久或是否需要数据加密。 有关详细信息，请参阅在基本移动性和安全性中创建[设备](create-device-security-policies.md) 安全策略[Microsoft 365 合规中心。](../../compliance/microsoft-365-compliance-center.md)
+      完成基本移动性和安全性的初始设置后，创建策略并将其应用到安全&合规中心中的用户组。 策略要求策略的用户在设备可用于访问Microsoft 365数据之前，先将其设备注册到基本移动性和安全性中。 设置的策略决定了移动设备的设置，例如，必须重置密码的频率或是否需要数据加密。 有关详细信息，请参阅[在基本移动性和安全性和Microsoft 365 合规中心中创建设备安全](create-device-security-policies.md)[策略](../../compliance/microsoft-365-compliance-center.md)。
 
 
-      有关创建和部署设备策略的分步说明，请参阅在基本移动性和安全性中创建 [设备安全策略](create-device-security-policies.md)。
+      有关创建和部署设备策略的分步说明，请参阅 [“基本移动性和安全性”中的“创建设备安全策略](create-device-security-policies.md)”。
 
 
-      如果要将特定组的用户排除在不受策略影响之外，可以将组添加到排除组。
+      如果要排除特定用户组不受策略影响，可以将组添加到排除组。
   - question: >
-      我能否从Exchange ActiveSync管理切换到基本移动性和安全性Microsoft 365？
+      是否可以从Exchange ActiveSync设备管理切换到基本移动性和安全Microsoft 365？
     answer: >
-      如果您已经使用 Exchange ActiveSync策略来管理移动设备，可以按照设置基本移动性和安全性的步骤开始使用基本移动性和安全性。 有关详细信息，请参阅保护[用户和设备访问和](../../compliance/protect-access-to-data-and-services.md)[设置基本移动性和安全性](set-up.md)。
+      如果已使用Exchange ActiveSync策略来管理移动设备，则可以按照设置基本移动性和安全性的步骤开始使用基本移动性和安全性。 有关详细信息，请参阅 [“保护用户和设备访问](../../compliance/protect-access-to-data-and-services.md) ”并 [设置基本移动性和安全性](set-up.md)。
 
 
-      当您在基本移动性和安全性中创建的策略应用于用户组时，这些策略会覆盖 Exchange ActiveSync 移动设备邮箱策略以及之前在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange</a> 管理中心为这些用户创建的设备访问规则。
+      将基本移动性和安全性中创建的策略应用于用户组时，这些策略将替代之前在Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理中心</a>为这些用户创建的Exchange ActiveSync移动设备邮箱策略和设备访问规则。
 
 
-      在基本移动性和安全性中注册设备后，Exchange ActiveSync应用于该设备的任何移动设备邮箱策略或设备访问规则将被忽略。
+      在基本移动性和安全性中注册设备后，将忽略应用于设备的任何Exchange ActiveSync移动设备邮箱策略或设备访问规则。
   - question: >
-      我设置了基本移动性和安全性，但现在我想将其删除。 步骤是什么？
-    answer: 遗憾的是，设置基本移动性和安全性后，不能简单地"取消设置"基本移动性和安全性。 但是，可以通过从已创建的设备策略中删除用户安全组来为用户组删除它。 或者，可以通过删除设备策略来为所有人禁用它，以便它们未就位且未强制执行。 有关详细信息，请参阅 [关闭基本移动性和安全性](turn-off.md)。
+      我设置了基本的移动性和安全性，但现在我想删除它。 步骤是什么？
+    answer: 遗憾的是，设置后，不能简单地“取消预配”基本移动性和安全性。 但是，可以通过从创建的设备策略中删除用户安全组来为用户组删除它。 或者，可以通过删除设备策略来为每个人禁用它，这样它们就不会就位且不强制实施。 有关详细信息，请参阅 [“关闭基本移动性和安全性](turn-off.md)”。

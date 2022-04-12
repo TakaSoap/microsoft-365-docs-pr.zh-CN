@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06018eb69e369b06425c9db1f63f22ff97f15eac
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664471"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782822"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -60,6 +60,8 @@ ms.locfileid: "64664471"
 - [iOS 上的 Defender for Endpoint 中的新增功能](ios-whatsnew.md)
 - [Linux 上的 Defender for Endpoint 中的新增功能](linux-whatsnew.md)
 
+## <a name="march-2022"></a>2022 年 3 月
+- [更新了 Windows Server 2012 R2 和 Windows Server 2016) 的载入和功能奇偶校验](configure-server-endpoints.md)<br/> 新的统一解决方案包现已正式发布，通过删除依赖项和安装步骤，可以更轻松地载入服务器。 此外，此统一解决方案包还附带了许多新的功能改进。
 
 ## <a name="january-2022"></a>2022 年 1 月
 
@@ -105,7 +107,7 @@ ms.locfileid: "64664471"
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- [增量导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 此外，还添加 [了漏洞和安全配置](get-assessment-methods-properties.md) API 集合的导出评估。 <br> 与整个软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的整个快照）不同，增量导出 API 调用仅用于提取选定日期和当前日期 ("delta"API 调用) 之间发生的更改。 你将只获取有关新漏洞、固定漏洞和更新漏洞的特定信息，而不是每次都使用大量数据进行完整导出。 增量导出 API 调用还可用于计算不同的 KPI，例如"修复了多少漏洞"或"向组织添加了多少新漏洞"。
+- [增量导出软件漏洞评估](get-assessment-methods-properties.md#31-methods) API <br> 此外，还添加 [了漏洞和安全配置](get-assessment-methods-properties.md) API 集合的导出评估。 <br> 与整个软件漏洞评估 (JSON 响应) （用于按设备获取组织的软件漏洞评估的整个快照）不同，增量导出 API 调用仅用于提取选定日期和当前日期 (“delta”API 调用) 之间发生的更改。 你将只获取有关新漏洞、固定漏洞和更新漏洞的特定信息，而不是每次都使用大量数据进行完整导出。 增量导出 API 调用还可用于计算不同的 KPI，例如“修复了多少漏洞”或“向组织添加了多少新漏洞”。
 
 - [导出漏洞和安全配置评估](get-assessment-methods-properties.md) API <br> 添加按设备拉取危险和漏洞管理数据的 API 集合。 有不同的 API 调用来获取不同类型的数据：安全配置评估、软件清单评估和软件漏洞评估。 每个 API 调用都包含组织中设备的必要数据。
 
@@ -114,7 +116,7 @@ ms.locfileid: "64664471"
 - [设备发现](device-discovery.md) <br> 帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的进程更改。 使用载入设备，可以在网络中查找非托管设备并评估漏洞和风险。 然后，可以加入发现的设备，以降低与网络中具有非托管终结点相关的风险。
 
    > [!IMPORTANT]
-   > 从 2021 年 7 月 19 日开始，标准发现将是所有客户的默认模式。 可以通过"设置"页选择保留基本模式。
+   > 从 2021 年 7 月 19 日开始，标准发现将是所有客户的默认模式。 可以通过“设置”页选择保留基本模式。
 
 - [设备组定义](/microsoft-365/security/defender-endpoint/machine-groups) 现在可以包含每个条件的多个值。 可以将多个标记、设备名称和域设置为单个设备组的定义。
 
@@ -126,7 +128,7 @@ ms.locfileid: "64664471"
 
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [使用Microsoft 365 Defender门户管理篡改保护](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> 可以使用名为"*租户附加*"的方法管理Windows 10、Windows Server 2016、Windows服务器 2019 和 Windows Server 2022 上的篡改保护设置。
+- [使用Microsoft 365 Defender门户管理篡改保护](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> 可以使用名为“*租户附加*”的方法管理Windows 10、Windows Server 2016、Windows服务器 2019 和 Windows Server 2022 上的篡改保护设置。
 
 
 ## <a name="january-2021"></a>2021 年 1 月

@@ -19,14 +19,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性是Microsoft 365计划的一部分。
-ms.openlocfilehash: 0c1c61181d7e8bd5eb0ee000e29285c32a454692
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713836"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781174"
 ---
-# <a name="choose-between-basic-mobility-and-security-or-intune"></a>选择"基本移动性和安全性"或"Intune
+# <a name="choose-between-basic-mobility-and-security-or-intune"></a>选择“基本移动性和安全性”或“Intune
 
 [Microsoft Intune](/mem/intune/)是某些Microsoft 365计划中包含的独立产品，而基本移动性和安全性是Microsoft 365计划的一部分。
 
@@ -86,20 +86,20 @@ Microsoft Intune和内置的基本移动性和安全性都使你能够管理组�
 使用Intune有以下一组操作：
 
 - [Autopilot 重置](/mem/autopilot/windows-autopilot-reset)（仅限 Windows）
-- [Bitlocker 密钥恢复](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) 仅 (Windows) 
+- [Bitlocker 密钥恢复](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6)仅 (Windows) 
 - [使用擦除、停用或手动取消注册设备](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
-- [禁用激活锁](/mem/intune/remote-actions/device-activation-lock-disable)  仅 (iOS) 
-- [全新入门](/mem/intune/remote-actions/device-fresh-start) 仅 (Windows) 
-- [完全扫描](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) 仅 (Windows 10) 
-- [查找设备](/mem/intune/remote-actions/device-locate)  仅 (iOS) 
-- [丢失模式](/mem/intune/remote-actions/device-lost-mode)  (iOS 仅) -[快速扫描](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10仅) 
+- 仅) 禁用 iOS ([激活锁](/mem/intune/remote-actions/device-activation-lock-disable)
+- [刚开始](/mem/intune/remote-actions/device-fresh-start) (Windows仅) 
+- [完全扫描](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)（仅限 Windows 10）
+- [查找设备](/mem/intune/remote-actions/device-locate)（仅限 iOS）
+-  (iOS [的丢失模式](/mem/intune/remote-actions/device-lost-mode)仅) -[快速扫描](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10仅) 
 - [适用于 Android 的远程控制](/mem/intune/remote-actions/teamviewer-support)
 - [远程锁定](/mem/intune/remote-actions/device-remote-lock)
 - [重命名设备](/mem/intune/remote-actions/device-rename)
-- 仅)  (Windows[重置密码](/mem/intune/remote-actions/device-passcode-reset)[重启](/mem/intune/remote-actions/device-restart) 
+- [仅重置密码](/mem/intune/remote-actions/device-passcode-reset)[重启](/mem/intune/remote-actions/device-restart) (Windows) 
 - 仅[) 更新Windows Defender安全智能](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Windows
 - [WINDOWS 10 PIN 重置](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset)仅 (Windows) 
-- [发送自定义通知](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)  (Android、iOS、iPad OS) 
+-  (Android、iOS、iPad OS) [发送自定义通知](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)
 - [同步设备](/mem/intune/remote-actions/device-sync)
 
 有关Intune操作的详细信息，[请参阅Microsoft Intune文档](/mem/intune/)。

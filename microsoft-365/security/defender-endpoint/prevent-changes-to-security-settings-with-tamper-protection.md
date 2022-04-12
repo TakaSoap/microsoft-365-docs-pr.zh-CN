@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714958"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780250"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
@@ -48,7 +48,8 @@ ms.locfileid: "64714958"
 - Windows Server 2012 R2
 
 > [!NOTE]
-> Windows Server 2012 R2 中的篡改保护适用于使用新式统一解决方案包载入到Microsoft Defender for Endpoint的设备。 有关详细信息，请参阅[适用于 Windows Server 2012 R2 和 2016 预览版的现代统一解决方案中的新功能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)。
+> Windows Server 2012 R2 中的篡改保护适用于使用新式统一解决方案包载入的设备。 有关详细信息，请参阅[将Windows服务器载入到Microsoft Defender for Endpoint服务](/microsoft-365/security/defender-endpoint/configure-server-endpoints)。
+
 
 ## <a name="overview"></a>概述
 
@@ -171,10 +172,10 @@ ms.locfileid: "64714958"
  
 ### <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>使用 Configuration Manager 版本 2006 管理组织的篡改保护
 
-如果使用的是 [版本 2006 的 Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)，则可以在Windows 10、Windows 10 企业版多会话、Windows 11 Windows 11 企业版多会话上管理篡改保护设置，使用名为"*租户附加*"的方法Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 和 Windows Server 2022。 租户附加使你可以将仅本地Configuration Manager设备同步到Microsoft Endpoint Manager管理中心，然后将终结点安全配置策略传送到设备&本地集合。
+如果使用的是 [版本 2006 的 Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)，则可以在Windows 10、Windows 10 企业版多会话、Windows 11 Windows 11 企业版多会话上管理篡改保护设置，使用名为“*租户附加*”的方法Windows Server 2012 R2、Windows Server 2016、Windows Server 2019 和 Windows Server 2022。 租户附加使你可以将仅本地Configuration Manager设备同步到Microsoft Endpoint Manager管理中心，然后将终结点安全配置策略传送到设备&本地集合。
 
 > [!NOTE]
-> 该过程可用于将篡改保护扩展到运行Windows 10、Windows 10 企业版多会话、Windows 11、Windows 11 企业版多会话、Windows服务器 2019 和 Windows Server 2022 的设备。 请务必查看此过程中提到的资源中的先决条件和其他信息。
+> 该过程可用于将篡改保护扩展到运行Windows 10、Windows 10 企业版多会话、Windows 11、Windows 11 企业版多会话、Windows服务器 2019 和 Windows Server 2022 的设备。 请务必查看此过程中提到的资源中的先决条件和其他信息。 对于运行新式统一解决方案[版本 2203 Configuration Manager的 Windows Server 2012 R2](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203)。
 
 1. 设置租户附加。 若要了解详细信息，请参阅[开始：从管理中心创建和部署终结点安全策略](/mem/configmgr/tenant-attach/endpoint-security-get-started)。
 
@@ -205,15 +206,15 @@ ms.locfileid: "64714958"
 
 :::image type="content" source="images/tamperprotectionturnedon.png" alt-text="在Windows 10 家庭版中启用篡改保护" lightbox="images/tamperprotectionturnedon.png":::
 
-1. 选择 **"开始**"，然后开始键入 *"安全性*"。 在搜索结果中，选择 **Windows 安全中心**。
+1. 选择 **“开始**”，然后开始键入 *“安全性*”。 在搜索结果中，选择 **Windows 安全中心**。
 
 2. 选择 **病毒&威胁防护** \> **病毒&威胁防护设置**。
 
-3. 将 **篡改保护** 设置为 **"打开** "或 **"关闭**"。
+3. 将 **篡改保护** 设置为 **“打开** ”或 **“关闭**”。
 
-## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>是使用Windows Server 2016还是Windows版本 1709、1803 或 1809？
+## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>是使用 Windows Server 2012 R2、2016 还是Windows版本 1709、1803 或 1809？
 
-如果使用Windows Server 2016、Windows 10版本 1709、1803 或 [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)，则不会在Windows 安全中心应用中看到 **篡改保护**。 可以改用 PowerShell 来确定是否启用篡改保护。
+如果使用新式统一解决方案（Windows Server 2016版本 1709 Windows 10、1803 或 [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)）使用 Windows Server 2012 R2，则不会在Windows 安全中心应用中看到 **Tamper Protection**。 可以改用 PowerShell 来确定是否启用篡改保护。
 
 Windows Server 2016，启用篡改保护时，设置应用将无法准确反映实时保护的状态。
 
@@ -237,7 +238,7 @@ Windows Server 2016，启用篡改保护时，设置应用将无法准确反映�
 
 ## <a name="review-your-security-recommendations"></a>查看安全建议
 
-篡改防护与 [威胁&漏洞管理](next-gen-threat-and-vuln-mgt.md) 功能集成。 [安全建议](tvm-security-recommendation.md) 包括确保启用篡改保护。 例如，可以在 *篡改* 时进行搜索。 在结果中，可以选择 **"启用篡改保护"** 以了解详细信息并将其打开。
+篡改防护与 [威胁&漏洞管理](next-gen-threat-and-vuln-mgt.md) 功能集成。 [安全建议](tvm-security-recommendation.md) 包括确保启用篡改保护。 例如，可以在 *篡改* 时进行搜索。 在结果中，可以选择 **“启用篡改保护”** 以了解详细信息并将其打开。
 
 :::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="在Microsoft Defender 安全中心门户中启用篡改保护" lightbox="images/tamperprotectsecurityrecos.png":::
 
@@ -256,7 +257,7 @@ Windows Server 2016，启用篡改保护时，设置应用将无法准确反映�
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>篡改保护是否会影响Windows 安全中心应用中的非 Microsoft 防病毒注册？
 
-否。 非 Microsoft 防病毒产品/服务将继续向Windows 安全中心应用程序注册。
+不是。 非 Microsoft 防病毒产品/服务将继续向Windows 安全中心应用程序注册。
 
 ### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>如果Microsoft Defender 防病毒在设备上未处于活动状态，会发生什么情况？
 
@@ -296,7 +297,7 @@ Windows Server 2016，启用篡改保护时，设置应用将无法准确反映�
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>我是企业客户。 本地管理员是否可以更改其设备上的篡改保护？
 
-否。 本地管理员无法更改或修改篡改保护设置。
+不是。 本地管理员无法更改或修改篡改保护设置。
 
 ### <a name="what-happens-if-my-device-is-onboarded-with-microsoft-defender-for-endpoint-and-then-goes-into-an-off-boarded-state"></a>如果我的设备载入了Microsoft Defender for Endpoint，然后进入脱机状态，会发生什么情况？
 
@@ -304,7 +305,7 @@ Windows Server 2016，启用篡改保护时，设置应用将无法准确反映�
 
 ### <a name="if-the-status-of-tamper-protection-changes-are-alerts-shown-in-the-microsoft-365-defender-portal"></a>如果篡改保护的状态发生更改，警报是否显示在Microsoft 365 Defender门户中？
 
-是。 警报显示在 [https://security.microsoft.com](https://security.microsoft.com)**"警报**"下。
+是。 警报显示在 [https://security.microsoft.com](https://security.microsoft.com)**“警报**”下。
 
 安全运营团队还可以使用搜寻查询，如以下示例：
 

@@ -13,62 +13,62 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: 将Outlook、OneDrive Teams数据迁移到Microsoft 365 商业标准版
-ms.openlocfilehash: fcd3047014204c1115481dfd411be502a7409fb9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 将Outlook、OneDrive和Teams数据迁移到Microsoft 365 商业标准版
+ms.openlocfilehash: 7868212bbd3d96e71d606fb3df0071018ded1c31
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196157"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783394"
 ---
 # <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>将数据迁移到 Microsoft 365 商业标准版订阅
 
-按照本文中的步骤将你的OneDrive、Outlook Teams数据移动到你的Microsoft 365 商业标准版订阅。
+按照本文中的步骤将OneDrive、Outlook和Teams数据移动到Microsoft 365 商业标准版订阅。
 
 > [!IMPORTANT]
-> 你仍然可以将数据保留在你的个人帐户中。 一旦创建新的企业电子邮件帐户并迁移数据，你的个人帐户中的数据将不会过期。 可以将所有数据移动到新的业务帐户，也可以移动部分数据。 例如，可以将工作文档移动到业务帐户，但将个人家庭照片保留在你的个人帐户中。
+> 你仍然可以将数据保留在个人帐户中。 创建新的业务电子邮件帐户并迁移数据后，个人帐户中的数据将不会过期。 可以将所有数据移动到新的业务帐户，也可以移动部分数据。 例如，可以将工作文档移动到业务帐户，但将个人家庭照片保留在个人帐户中。
 
-## <a name="move-files-to-onedrive-for-business"></a>将文件OneDrive企业
+## <a name="move-files-to-onedrive-for-business"></a>将文件移到业务OneDrive
 
-本部分介绍如何将存储在你的个人Microsoft 365中的文件移动到你的Microsoft 365帐户。 将两OneDrive帐户同步到设备后，你可以轻松拖放两个文件夹之间的OneDrive文件夹。
+本部分介绍如何将存储在Microsoft 365个人帐户中的文件移动到Microsoft 365业务帐户。 将两个OneDrive帐户同步到设备后，可以轻松地在两个OneDrive文件夹之间拖放文件。
 
-1. 选择OneDrive通知区域中的"Windows"云图标，并确保你的OneDrive帐户已同步到设备。
+1. 在Windows通知区域中选择OneDrive白云图标，并确保OneDrive个人帐户同步到设备。
 
-    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="Screenshot： Select white cloud icon in the Windows notification area":::
-
-    > [!NOTE]
-    > 可能需要选择通知区域 **旁边的"显示** 隐藏图标"箭头，以查看OneDrive图标。 如果该图标未显示在通知区域中，OneDrive可能未运行。 选择 **"** 开始OneDrive，在搜索框中键入"OneDrive"，然后在搜索结果中选择"开始"。
-
-2. 若要添加新的业务帐户，请选择"帮助  >  **& 设置设置"。**
-
-    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="Screenshot： Select Help & 设置 to add an account":::
-
-3. 在 **设置** 中，选择"**帐户**  >  **""添加帐户"。**
-
-4. When OneDrive Setup starts， enter your new business account， and then select **Sign in**.
-
-    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="Screenshot： Enter your email address on the OneDrive set up page":::
+    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="屏幕截图：在Windows通知区域中选择白云图标":::
 
     > [!NOTE]
-    > 如果你之前没有设置OneDrive当前 Microsoft 365 个人帐户，请按照上述步骤在设备上设置个人帐户并同步文件，然后再移动到后续步骤。
+    > 可能需要选择通知区域旁边的 **“显示隐藏图标”** 箭头才能查看OneDrive图标。 如果该图标未显示在通知区域中，则OneDrive可能不会运行。 选择 **“开始”**，在搜索框中键入OneDrive，然后在搜索结果中选择OneDrive。
 
-### <a name="drag-and-drop-files-in-onedrive"></a>拖放文件OneDrive
+2. 若要添加新的业务帐户，请选择 **“帮助& 设置** > **设置**。
 
-将你的Microsoft 365帐户和业务帐户同步到设备后，你现在可以将文件从个人 OneDrive 文件夹移动到新的业务 OneDrive 文件夹。
+    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="屏幕截图：选择“帮助& 设置”以添加帐户":::
 
-1. 在文件资源管理器中，打开包含OneDrive同步的文件文件夹。
+3. 在 **设置** 中，选择 **AccountAdd** >  帐户。
 
-2. Select and drag the files you want from your OneDrive personal folder to your new OneDrive business folder.
+4. 启动OneDrive安装程序时，输入新的业务帐户，然后选择 **“登录**”。
 
-    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="Screenshot： Drag and drop files to you new OneDrive for business folder":::
+    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="屏幕截图：在“设置OneDrive页上输入电子邮件地址":::
 
-### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>有关将文件从个人OneDrive移动到OneDrive工作注意事项
+    > [!NOTE]
+    > 如果之前尚未使用当前Microsoft 365个人帐户设置OneDrive，请按照上述步骤在设备上设置个人帐户并同步文件，然后再转到后续步骤。
 
-- 如果要移动大量文件，建议分批移动文件，每个文件不超过 100 个。
+### <a name="drag-and-drop-files-in-onedrive"></a>在OneDrive中拖放文件
 
-- 从个人OneDrive移动到OneDrive的文件被识别为新文件，因此，这些文件不会保留元数据详细信息，如"修改者"和"修改者"。
+将Microsoft 365个人帐户和业务帐户同步到设备后，现在可以将文件从个人OneDrive文件夹移动到新业务OneDrive文件夹。
 
-- 如果之前在OneDrive共享文件，则需要在移动这些文件后，在OneDrive新文件中再次共享这些文件。 此外，共享这些文件后，建议您从文件中删除原始OneDrive。 这样，用户将无法引用之前与用户共享的文件的过期副本。
+1. 在文件资源管理器中，打开包含文件的同步OneDrive文件夹。
+
+2. 选择所需的文件并将其从OneDrive个人文件夹拖动到新的OneDrive业务文件夹。
+
+    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="屏幕截图：将文件拖放到新的业务OneDrive文件夹":::
+
+### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>有关将文件从个人OneDrive移动到工作OneDrive的说明
+
+- 如果要移动大量文件，建议将文件分批移动，每个文件不超过 100 个。
+
+- 从OneDrive个人移动到OneDrive工作的文件被识别为新文件，因此，这些文件不会保留元数据详细信息，例如“修改”和“修改者”。
+
+- 如果之前在OneDrive中共享文件，则需要在新OneDrive中再次共享这些文件，以便在移动后进行工作。 此外，共享这些文件后，建议从OneDrive中删除原始文件。 这样，用户将无法引用之前与他们共享的文件的过期副本。
 
 ## <a name="step-set-up-outlook-for-email"></a>观看：设置 Outlook，以使用电子邮件功能
 
@@ -112,23 +112,23 @@ ms.locfileid: "60196157"
 
 还可以使用 Exchange 管理中心导入每个人的电子邮件。 有关详细信息，请参阅[迁移多个电子邮件帐户](/Exchange/mailbox-migration/mailbox-migration)。
 
-## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>将数据从个人Microsoft Teams帐户移动到Teams帐户的新帐户
+## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>将数据从个人Microsoft Teams帐户移动到工作帐户的新Teams
 
 1. 打开 Microsoft Teams，选择个人资料图标，然后 **添加工作或学校帐户**。
 
-2. 按照步骤将新帐户添加到Teams工作。 有关详细信息[，请查看登录并开始Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937)登录。
+2. 按照步骤将新帐户添加到Teams进行工作。 有关详细信息，请查看[登录并开始使用Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937)。
 
 ### <a name="access-teams-chats"></a>访问Teams聊天
 
-当你开始使用Teams工作帐户时，你的数据将不会迁移。 查看旧聊天的最佳方法就是并行打开旧Teams帐户和新的工作帐户。 为此，选择帐户右上角的"ME"图标Teams选择要打开的帐户。 您可以开始与Teams一起使用新工作帐户。 请务必告诉与您聊天的其他用户使用新的工作帐户Teams联系您。
+开始将Teams与新工作帐户配合使用时，不会迁移数据。 查看旧聊天的最佳方式是并排打开旧Teams帐户和新工作帐户。 为此，可选择Teams右上角的 ME 图标并选择要打开的帐户。 可以开始将Teams与同事一起使用新工作帐户。 请务必告知与你聊天的其他用户，开始使用工作帐户的新Teams与你联系。
 
 ### <a name="microsoft-teams-meetings"></a>Microsoft Teams会议
 
-设置新的Microsoft Teams帐户后，可以在日历中重新创建Teams会议。 请记住，删除旧用户帐户中的原始Teams会议。 这将允许你访问更丰富的功能，例如，计划时日历可用性以及录制会议的功能。 只能从自己的日历中删除会议Teams日历，因此请确保让有会议的人知道你将重新创建会议。 在转换以将新的 Teams 帐户用于会议时，如果缺少应加入会议的人，请与他们联系以确保他们尚未加入旧会议链接。
+设置新的Microsoft Teams帐户后，可以在Teams日历中重新创建会议。 请记住删除旧Teams帐户中的原始会议。 这将允许你访问更丰富的功能 -例如，日程安排时的日历可用性，以及记录会议的功能。 只能从自己的Teams日历中删除会议，因此请确保你让与你会面的人员知道你将重新创建会议。 当你转换为为会议使用新的Teams帐户时，如果应参加会议的人员缺失，请与他们联系，以确保他们没有加入旧的会议链接。
 
 ### <a name="migrating-contacts"></a>迁移联系人
 
-若要将联系人从个人 Teams 帐户迁移，请查找联系人的电子邮件地址，将用户添加到新的 Teams 帐户进行工作。
+若要从个人Teams帐户迁移联系人，请查找联系人的电子邮件地址，并将用户添加到新的Teams帐户中进行工作。
 
 ## <a name="related-content"></a>相关内容
 

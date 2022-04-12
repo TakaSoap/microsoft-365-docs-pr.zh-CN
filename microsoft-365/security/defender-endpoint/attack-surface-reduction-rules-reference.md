@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 49ee543e68ed9f54b0009efeb90bddc9de29c091
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1eee7e482423e2292e9fe9db42333db481d44175
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761386"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783748"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻击面减少规则参考
 
@@ -45,7 +45,7 @@ ms.locfileid: "64761386"
 
 ## <a name="supported-operating-systems"></a>支持的操作系统 
 
-下表列出了当前发布到正式版的规则支持的操作系统。 规则按字母顺序列出。
+下表列出了当前发布到正式版的规则支持的操作系统。 此表中的规则按字母顺序列出。
 
 > [!Note]
 >
@@ -53,22 +53,22 @@ ms.locfileid: "64761386"
 >
 > Windows&nbsp; Server2012R2&nbsp;&nbsp; 和 Windows&nbsp; Server2016&nbsp; 中的攻击面减少规则适用于使用新式统一解决方案包载入的设备。 有关详细信息，请参阅[适用于 Windows Server 2012 R2 和 2016 预览版的现代统一解决方案中的新功能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)。
 
-| 规则名称|&nbsp;Windows 10 | &nbsp;Windows Server 2019 | &nbsp;Windows Server | &nbsp;Windows Server 2016 <sup>[[1， 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012R2&nbsp;<sup> [[1， 2](#fn1)]<sup></sup> |
+| 规则名称|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | <sup>Windows Server 2016 [[1， 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012 R2 <sup>[[1， 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [阻止滥用被利用的易受攻击的签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> 版本 1803 (半年频道) 或更高版本 |  Y | Y |
-| [阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y 版本 1809 或更高版本 | Y | Y |  Y | Y |
-| [阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y |  Y | Y |
-| [阻止从Windows本地安全机构子系统 (lsass.exe) 窃取凭据](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> 版本 1803 或更高版本 | Y  | Y |  Y | Y |
+| [阻止滥用被利用的易受攻击的签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> 版本 1803 (半年频道) 或更高版本 | Y | Y |
+| [阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes) | Y 版本 1809 或更高版本 | Y | Y | Y | Y |
+| [阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
+| [阻止从Windows本地安全机构子系统 (lsass.exe) 窃取凭据](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> 版本 1803 或更高版本 | Y | Y | Y | Y |
 | [阻止电子邮件客户端和 Webmail 中的可执行内容](#block-executable-content-from-email-client-and-webmail) | Y | Y | Y | Y | Y |
-| [阻止可执行文件运行，除非它们满足普遍性、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> 版本 1803 或更高版本 | Y | Y |  Y | Y |
-| [阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | Y | Y  | Y | Y | Y |
-| [阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y  | N | N |
+| [阻止可执行文件运行，除非它们满足普遍性、年龄或受信任的列表条件](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> 版本 1803 或更高版本 | Y | Y | Y | Y |
+| [阻止执行可能混淆的脚本](#block-execution-of-potentially-obfuscated-scripts) | Y | Y | Y | Y | Y |
+| [阻止 JavaScript 或 VBScript 启动下载的可执行内容](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y | N | N |
 | [阻止Office应用程序创建可执行内容](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
-| [阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y  | Y |  Y | Y |
+| [阻止Office应用程序将代码注入其他进程](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
 | [阻止Office通信应用程序创建子进程](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) <br> \*_不支持文件和文件夹排除项。_ | Y <br> 版本 1903 (内部版本 18362) 或更高版本 | Y | Y <br> 版本 1903 (内部版本 18362) 或更高版本 |  N | N |
-| [阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> 版本 1803 或更高版本 | Y | Y  |  Y | Y |
-| [阻止从 USB 运行的不受信任和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y |  Y | Y |
+| [通过 WMI 事件订阅阻止持久性](#block-persistence-through-wmi-event-subscription) <br> \*_不支持文件和文件夹排除项。_ | Y <br> 版本 1903 (内部版本 18362) 或更高版本 | Y | Y <br> 版本 1903 (内部版本 18362) 或更高版本 | N | N |
+| [阻止源自 PSExec 和 WMI 命令的进程创建](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> 版本 1803 或更高版本 | Y | Y | Y | Y |
+| [阻止从 USB 运行的不受信任和未签名的进程](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
 | [阻止来自Office宏的 Win32 API 调用](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
 | [对勒索软件使用高级保护](#use-advanced-protection-against-ransomware) | Y <br> 版本 1803 或更高版本 | Y | Y | Y | Y |
 
