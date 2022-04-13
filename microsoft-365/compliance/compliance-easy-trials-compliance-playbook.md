@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 合规中心解决方案试用版 playbook。
-ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679887"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759161"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>试用版 playbook: Microsoft 365 合规中心解决方案
 
@@ -93,6 +93,7 @@ ms.locfileid: "63679887"
 > 试用版最佳做法: 第 1 天
 
 [将所有合规性用户分配到通信合规性角色组](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
+
 ### <a name="step-2-enable-the-audit-log"></a>步骤 2: [启用审核日志](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
@@ -395,14 +396,13 @@ ms.locfileid: "63679887"
 
 ### <a name="more-information-auto-apply-retention-labels--disposition-review"></a>详细信息: 自动应用保留标签 + 处置评审
 
-**自动应用标签以保留所需内容...**
-保留标签在包含以下内容时可以自动应用于内容:
+**自动应用标记以保留所需内容...** 保留标签可以自动应用于包含以下信息的内容：
 
 - [特定类型敏感信息](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [指定与所创建的查询匹配的特定关键字或可搜索属性](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 - [可训练分类器的匹配项](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-**...然后，结束时进行安全处置。**
+**...然后在结束时对其进行安全处置。**
 
 在保留期结束时触发处置评审时，你选择的审阅者将收到一封电子邮件通知，告知他们需要审阅的内容。
 
@@ -434,6 +434,6 @@ ms.locfileid: "63679887"
 
 **包含的内容**: 有关产品层列出的 Microsoft 365 合规中心解决方案和功能的完整列表，请查看 [功能矩阵](https://go.microsoft.com/fwlink/?linkid=2139145)。
 
-**Microsoft 安全技术内容库**: 浏览此库以查找与你的需求相关的交互式指南和其他学习内容。[访问库](/security/content-library)。
+**Microsoft 安全技术内容库**: 浏览此库以查找与你的需求相关的交互式指南和其他学习内容。[访问库](/security)。
 
 **Microsoft 安全资源**: 从反恶意软件到零信任，获取所有满足组织安全需求的相关资源。[访问资源](/security/business/resources)。
