@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: ca88c57739c8734f9fcdb5d3356a44dc6a72faa5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 64e431b5d2ef01e85eff55f39f4436786f45664b
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271774"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64758588"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -110,7 +110,7 @@ Remove-Item $rawFile
 
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 通过文件创建关键字词典
 
-通常情况下，在需要创建大型字典时，可使用从某些其他来源导出的文件或列表中的关键字。 在这种情况下，将会创建一个关键字字典，其中包含将在外部电子邮件中筛选的不当语言的列表。 首先，必须[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+如果经常需要创建大型字典，则使用从其他某来源导出的文件或列表中的关键字。在此案例中，你将创建包含要在外部电子邮件中筛查的不当语言列表的关键字字典。首先，必须 [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
 
@@ -191,11 +191,11 @@ Get-DlpKeywordDictionary -Name "Diseases"
 > 除了中文/日语/双字节字符外，如果关键字/短语列表中还包含非中文/日语字词（如仅含英语的字词），建议创建两个字典/关键字列表。 一个针对包含中文/日语/双字节字符的关键字，另一个针对仅含英语的关键字。
 >
 > - 例如，如果要创建包含“Highly confidential”、“機密性が高い”和“机密的document”这三个短语的关键字字典/列表，则应创建两个关键字列表。
->     1. Highly confidential
->     2. “機密性が高い”、“机密的document”和“机密的 document”
+>   1. Highly confidential
+>   2. “機密性が高い”、“机密的document”和“机密的 document”
 >
 > 当使用双字节连字符或双字节句号创建 regex 时，请确保像在 regex 中转义连字符或句号一样转义这两个字符。以下是供参考的示例 regex：
 >
-> - `(?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}`
+> - `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > 建议在关键词列表中使用字符串匹配而不是单词匹配。
