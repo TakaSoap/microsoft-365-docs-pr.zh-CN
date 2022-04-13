@@ -11,13 +11,13 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: 了解如何执行关键的 Microsoft OneLTI 管理任务，包括删除、查看、编辑和故障排除。
-ms.openlocfilehash: 2b623be8467b50d1682a7bdc63ce603a3ad9a859
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+description: 了解如何执行关键的 Microsoft OneLTI 管理任务，包括查看、删除、编辑和故障排除。
+ms.openlocfilehash: 8b788028a453969f13c31bbe72962c1b7df955a6
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747350"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823455"
 ---
 # <a name="manage-microsoft-onelti-for-any-lms"></a>管理任何 LMS 的 Microsoft OneLTI
 
@@ -25,11 +25,21 @@ Microsoft OneLTI 与多个 LMS 集成，包括 Canvas、Blackboard 和 Moodle。
 
 在本文中，IT 管理员将找到有关关键 OneLTI 管理任务的说明。
 
-- [删除 LTI 注册](#delete-an-lti-registration)。
 - [查看 LTI 注册](#view-an-lti-registration)。
+- [删除 LTI 注册](#delete-an-lti-registration)。
 - [编辑 LTI 注册](#edit-an-lti-registration)。
 - [排查 OneLTI 的问题](#troubleshoot-issues-with-onelti)。
 - [报告 OneLTI 的问题](#report-problems-with-onelti)。
+
+## <a name="view-an-lti-registration"></a>查看 LTI 注册
+
+若要查看 LTI 注册的详细信息，请按照以下步骤操作。
+
+1. 访问 [Microsoft LTI 门户](https://lti.microsoft.com/)。
+2. 使用Microsoft 365管理员帐户登录。
+3. 在注册列表中，找到要查看的 LTI 注册。
+4. 选择列表旁边的 **“眼睛”图标** 。
+5. 将打开注册详细信息面板。
 
 ## <a name="delete-an-lti-registration"></a>删除 LTI 注册
 
@@ -42,23 +52,13 @@ Microsoft OneLTI 与多个 LMS 集成，包括 Canvas、Blackboard 和 Moodle。
 5. 在确认对话框中，选择 **“删除** ”以确认删除。
 6. 删除成功消息后，你将看到该消息。
 
-## <a name="view-an-lti-registration"></a>查看 LTI 注册
-
-若要查看 LTI 注册的详细信息，请按照以下步骤操作。
-
-1. 访问 [Microsoft LTI 门户](https://lti.microsoft.com/)。
-2. 使用Microsoft 365管理员帐户登录。
-3. 在注册列表中，找到要查看的 LTI 注册。
-4. 选择列表旁边的 **“眼睛”图标** 。
-5. 将打开注册详细信息面板。
-
 ## <a name="edit-an-lti-registration"></a>编辑 LTI 注册
 
 目前，我们不支持在添加现有 LTI 注册后对其进行编辑。
 
 若要更改 LTI 注册，需要：
 
-1. 删除现有注册。
+1. [删除现有注册](#delete-an-lti-registration)。
 2. 添加新注册。
 
 ## <a name="troubleshoot-issues-with-onelti"></a>排查 OneLTI 问题

@@ -17,18 +17,22 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b6eabc3527742b6cc7f06d23207db813b827e5f5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 352b60caa3af581a5d1162b1896b255bfcea873c
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62244579"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790231"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows 10 中的 Microsoft Defender 防病毒
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender 防病毒
+
+**平台**
+- Windows 
 
 Microsoft Defender 防病毒在 Windows 10 和 Windows 11 以及 Windows Server 的多个版本中提供。
 
@@ -88,6 +92,16 @@ Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 中下一代保�
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>获取防病毒/反恶意软件平台更新
 
 请务必确保 Microsoft Defender 防病毒或任何防病毒/反恶意软件解决方案保持最新。 Microsoft 定期发布更新，以帮助确保你的设备具有最新技术来防范新的恶意软件和攻击技术。 要了解详细信息，请参阅 [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)。
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [设置 macOS 上 Microsoft Defender for Endpoint 的首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于 Intune 的 Microsoft Defender 防病毒软件的 macOS 防病毒程序策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [设置 Linux 上 Microsoft Defender for Endpoint 的首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="see-also"></a>另请参阅
 

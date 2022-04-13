@@ -15,38 +15,38 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: 了解 Microsoft 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: 5c079d5cf5f093be2c942a53468494044913fbd7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: bda48f14b14840eed03d456ef66e7d86df890619
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170291"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64822785"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 多地理位置计划
 
-本指南面向跨国公司 (MNC) 的管理员，他们根据公司的经营情况，做好将 Microsoft 365 租户扩大到其他地理位置的准备，以满足数据驻留需求。
+本指南专为跨国公司 (跨国公司) 的管理员设计，他们准备根据公司的存在将其Microsoft 365租户扩展到其他地区，以满足数据驻留要求。
 
 在多地理位置配置中，Microsoft 365 租户由一个中心位置以及一个或多个附属位置组成。 这是一个跨多个地理位置的租户。 租户信息（包括地理位置）是在 Azure Active Directory (Azure AD) 中进行管控。
 
 下面是一些关键的多地理位置术语，有助于了解此配置的基本概念：
 
--   **租户** - 组织在 Microsoft 365 中的表示形式，通常有一个或多个关联域（例如，https://contoso.sharepoint.com)）。 
+- **租户** - 组织在 Microsoft 365 中的表示形式，通常有一个或多个关联域（例如，https://contoso.sharepoint.com)）。
 
--   **地理位置** - Microsoft 365 租户中可用于托管数据的地理位置。
+- **地理位置** - Microsoft 365 租户中可用于托管数据的地理位置。
 
--   **附属位置** - Microsoft 365 租户中已配置用于托管数据的其他地理位置。 多地理位置租户跨多个地理位置（例如，北美和欧洲）。
+- **附属位置** - Microsoft 365 租户中已配置用于托管数据的其他地理位置。 多地理位置租户跨多个地理位置（例如，北美和欧洲）。
 
--   **首选数据位置 (PDL)** - 存储各个用户的 Exchange 和 OneDrive 数据的地理位置。 这可以由管理员设置为已为租户配置的任何地理位置。 请注意，如果你更改已有 OneDrive 网站的用户的 PDL，用户的 OneDrive 数据不会自动移到新地理位置。 有关详细信息，请参阅[将 OneDrive 库移到其他地理位置](move-onedrive-between-geo-locations.md)。 如果用户有 Exchange 邮箱，邮箱会自动移到新首选数据位置。
+- **首选数据位置 (PDL)** - 存储各个用户的 Exchange 和 OneDrive 数据的地理位置。 这可以由管理员设置为已为租户配置的任何地理位置。 请注意，如果你更改已有 OneDrive 网站的用户的 PDL，用户的 OneDrive 数据不会自动移到新地理位置。 有关详细信息，请参阅[将 OneDrive 库移到其他地理位置](move-onedrive-between-geo-locations.md)。 如果用户有 Exchange 邮箱，邮箱会自动移到新首选数据位置。
 
 启用多地理位置需要四个关键步骤：
 
-1.  与你的帐户团队协作，_在 Microsoft 365 服务计划中添加多地理位置功能_。
+1. 与你的帐户团队协作，_在 Microsoft 365 服务计划中添加多地理位置功能_。
 
-2.  选择需要的附属位置并将其添加到租户。
+2. 选择需要的附属位置并将其添加到租户。
 
-3.  将用户的首选数据位置设置为所需的附属位置。 为用户预配的新 OneDrive 网站或 Exchange 邮箱会预配到用户的 PDL。
+3. 将用户的首选数据位置设置为所需的附属位置。 为用户预配的新 OneDrive 网站或 Exchange 邮箱会预配到用户的 PDL。
 
-4.  根据需要，将用户的现有 OneDrive 网站从中心位置迁移到首选数据位置。 （Exchange 邮箱在你设置用户的 PDL 时自动迁移。）
+4. 根据需要，将用户的现有 OneDrive 网站从中心位置迁移到首选数据位置。 （Exchange 邮箱在你设置用户的 PDL 时自动迁移。）
 
 若要详细了解如何执行每一步，请参阅[配置 Microsoft 365 多地理位置](multi-geo-tenant-configuration.md)。
 
@@ -61,9 +61,9 @@ ms.locfileid: "60170291"
 
 ## <a name="best-practices"></a>最佳做法
 
-建议在 Microsoft 365 中创建测试用户，以进行一些初始测试。 让生产用户上手使用 Microsoft 365 多地理位置前，你将使用此用户执行一些测试和验证步骤。
+建议在 Microsoft 365 中创建测试用户，以进行一些初始测试。 在你继续将生产用户载入到多地理位置Microsoft 365之前，我们将与此用户一起完成一些测试和验证步骤。
 
-使用测试用户完成测试后，选择一个试点组（可能来自 IT 部门），作为首个在新地理位置使用 OneDrive 和 Exchange 的组。 对于此第一个组，选择尚未拥有 OneDrive 的用户。 建议此初始组的用户数不超过五人，然后遵循批量推出方法逐渐扩大。
+完成与测试用户的测试后，选择一个试点组（或许来自 IT 部门）作为第一个在新地理位置使用OneDrive和Exchange。 对于此第一个组，选择尚未拥有 OneDrive 的用户。 建议此初始组的用户数不超过五人，然后遵循批量推出方法逐渐扩大。
 
 每个用户都应设置“*首选数据位置*”(PDL)，以便 Microsoft 365 可以确定在哪个地理位置预配 OneDrive。用户的首选数据位置必须与所选附属位置或中心位置相匹配。虽然 PDL 字段不是强制性的，但我们建议为所有用户设置一个 PDL。没有 PDL 的用户的工作负载将在中央位置进行预配。
 
@@ -73,7 +73,7 @@ ms.locfileid: "60170291"
 
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 
-阅读 [多地理位置环境的用户体验，](multi-geo-user-experience.md) 详细了解最终用户在多地理位置环境中的体验。
+阅读 [多地理位置环境中的用户体验](multi-geo-user-experience.md) ，详细了解最终用户在多地理位置环境中的体验。
 
 若要开始配置 Microsoft 365 多地理位置，请参阅[配置 Microsoft 365 多地理位置](multi-geo-tenant-configuration.md)。
 

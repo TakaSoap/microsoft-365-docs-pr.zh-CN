@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft Bookings 常见问题
+  title: Microsoft Bookings常见问题解答
   ms.author: kwekua
   author: kwekuako
   manager: scotv
@@ -8,305 +8,305 @@ metadata:
   ms.topic: faq
   ms.service: bookings
   ms.localizationpriority: medium
-  description: Microsoft Bookings 常见问题解答。
-  ms.openlocfilehash: 894296d09b4da5facc0301f85c4102a9965fab00
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  description: Microsoft Bookings常见问题解答。
+  ms.openlocfilehash: c904a60fafd980de7bc8559e5025538957fdd7b4
+  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63681493"
-title: Microsoft Bookings 常见问题
+  ms.lasthandoff: 04/13/2022
+  ms.locfileid: "64822807"
+title: Microsoft Bookings常见问题解答
 summary: ''
 sections:
-- name: 一般信息
+- name: 常规
   questions:
   - question: >
       什么是 Microsoft Bookings？
     answer: >
-      Microsoft Bookings 是一Microsoft 365应用程序，可轻松安排和管理约会。 Bookings 包括基于 Web 的预订日历，并且与 Outlook 集成，以优化员工的日历，让客户可以灵活地预订最适合他们的时间。 自动通知电子邮件可以减少无显示，并且组织通过减少重复的计划任务来节省时间。 Bookings 可帮助你轻松通过 Skype 或 Microsoft Teams 进行虚拟约会，并帮助你通过 Teams 中的 Bookings 应用管理日常日程安排。 通过自定义的内置功能，Bookings 旨在满足任何组织的多个部分的需求。
+      Microsoft Bookings是一个Microsoft 365应用，可轻松安排和管理约会。 Bookings包含基于 Web 的预订日历，并与Outlook集成以优化员工日历，使客户能够灵活地预订最适合他们的时间。 自动通知电子邮件可减少不显示，组织会减少重复性计划任务，从而节省时间。 Bookings可帮助你通过Skype或Microsoft Teams轻松进行虚拟约会，并帮助你通过Teams中的Bookings应用管理日常计划。 使用内置自定义功能，Bookings旨在满足任何组织多个部分的需求。
   - question: >
-      如何使用 Microsoft Bookings？
+      如何实现使用Microsoft Bookings？
     answer: >
-      Bookings 是一项在线服务，因此无需下载任何内容。 只需在 Web 体验中转到Microsoft 365选择器。 管理员还可使用 Bookings 配套应用，随时了解客户及其约会的最新信息。
+      Bookings是联机服务，因此无需下载任何内容。 只需转到Microsoft 365 Web 体验中的应用选择器即可。 管理员还可以使用Bookings配套应用随时了解有关客户及其约会的最新信息。
   - question: >
-      Who有权访问 Microsoft Bookings？
+      Who有权访问Microsoft Bookings？
     answer: >
-      默认情况下，预订可用于全球的 Microsoft 365 商业高级版、Microsoft 365 商业标准版、F1、F3、A3、A5、E3 和 E5 客户。 在由世纪Office 365中也可使用预订。
+      Bookings默认适用于全球Microsoft 365 商业高级版、Microsoft 365 商业标准版、F1、F3、A3、A5、E3 和 E5 客户。 Bookings也适用于由世纪互联运营的Office 365。
   - question: >
-      我的客户会看到我的个人日历还是商务日历？
+      我的客户会看到我的个人或商业日历吗？
     answer: >
-      对于您选择注册的服务、时间以及员工，您的客户将只看到联机发布的 Bookings 日历。
+      客户只会看到你为你选择注册的服务、时间和员工联机发布的Bookings日历。
   - question: >
-      如何更改"管理人员"下的可预订属性？
+      如何实现在“管理人员”下更改可预订属性？
     answer: >
-      添加员工后，他们将收到一封电子邮件以接受或拒绝该请求。 他们可以打开相同的电子邮件并选择"拒绝"，使其不可预订。 我们目前无法从应用内部切换此功能。
+      添加员工后，他们会收到一封电子邮件来接受或拒绝请求。 他们可以打开同一封电子邮件，然后选择“拒绝”以使其无法预订。 我们目前无法从应用内部切换此功能。
   - question: >
-      最终用户如何访问 Bookings 应用？
+      最终用户如何访问Bookings应用？
     answer: >
-      任何获得 Microsoft 365 商业高级版、Microsoft 365 商业标准版、A3、A5、E3、E5、F1、F3 许可或已添加为管理员或查看者角色中的员工的人员都可以在 Microsoft 365 Web 体验内访问应用选择器中的 Bookings。 还有一个适用于 iOS 和 Android 的配套应用。
+      获得Microsoft 365 商业高级版、Microsoft 365 商业标准版、A3、A5、E3、E5、F1、F3 或已添加为管理员或查看器角色中的工作人员成员的任何人都可以访问Microsoft 365 Web 体验中的应用选择器中的Bookings。 还有一个适用于 iOS 和 Android 的配套应用。
   - question: >
-      能否在我自己的网站中使用 Bookings？
+      是否可以在自己的网站中使用Bookings？
     answer: >
-      是。 我们提供了一种通过 iFrame 在网站中嵌入 Bookings 日历的方法。 链接嵌入代码位于 Bookings 应用内的 **Bookings** 页面选项卡中。
+      是。 我们提供了一种通过 iFrame 将Bookings日历嵌入网站的方法。 链接嵌入代码位于Bookings应用的 **Bookings页** 选项卡中。
   - question: >
-      即使我的企业没有网页，我能否使用 Bookings？
+      我可以使用Bookings，即使我没有网页为我的业务？
     answer: >
-      是。 我们在 Web 应用中的"预订页面"选项卡 **中提供一** 个指向你的预订页面的链接。 你只需将链接提供给客户或客户，他们将看到你的企业的最新可用性信息。 或者，可以在社交媒体中共享预订页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并仅限制对组织内部用户的访问权限来控制谁可以访问页面。
+      是。 我们会在 Web 应用的 **“预订”页** 选项卡中提供指向您的预订页面的链接。 只需向客户或客户端提供该链接，他们就会看到业务的最新可用性信息。 或者，可以在社交媒体上共享预订页面，甚至可以使用嵌入功能在 iFrame 中托管它。 还可以通过禁用直接搜索引擎索引并限制对组织内人员的访问来控制谁可以访问页面。
   - question: >
-      我们的 IT 部门是否可以控制最终用户是否可以访问 Bookings？
+      我们的 IT 部门能否控制最终用户是否可以访问Bookings？
     answer: >
-      默认情况下，预订在 Microsoft 365 商业高级版、Microsoft 365 商业标准版、M365 A3/A5 和 E3/E5 租户中可用，但管理员可以在 Microsoft 365 管理中心 如果他们选择关闭预订。 为此， [请按照以下说明操作](turn-bookings-on-or-off.md)。
+      默认情况下，Bookings在 Microsoft 365 商业高级版、Microsoft 365 商业标准版、M365 A3/A5 和 E3/E5 租户中可用，但如果管理员选择，则管理员可以在Microsoft 365 管理中心中将其关闭。 为此， [请按照以下说明操作](turn-bookings-on-or-off.md)。
 
 
-      如果客户希望禁用租户中某些符合条件的许可证对 Bookings 的访问，他们可以使用组策略来限制许可证，或者实施 OWA 邮箱策略来限制能够创建新的 Bookings 日历的用户。
+      如果客户想要为租户中的某些合格许可证禁用对Bookings的访问权限，他们可以使用组策略来限制许可证或实施 OWA 邮箱策略，该策略将限制谁能够创建新的Bookings日历。
 
 
-      如果使用 OWA 邮箱策略禁用对 Bookings 的访问，则所有用户都将拥有 Bookings 许可证，但是，当他们尝试访问该应用时，只有当他们是策略的一部分或已作为员工添加到现有 Bookings 日历时，他们才能成功。 此处 [的](turn-bookings-on-or-off.md) "仅允许所选用户创建 Bookings 日历"部分中的详细信息。
+      如果使用 OWA 邮箱策略禁用对Bookings的访问权限，则所有用户都将拥有Bookings许可证，但是当他们尝试访问应用时，仅当他们是策略的一部分或已作为工作人员添加到现有Bookings日历时，才会成功。 [“仅](turn-bookings-on-or-off.md)允许所选用户创建Bookings日历”部分中的详细信息。
   - question: >
-      Bookings 是否可自定义？
+      Bookings可自定义吗？
     answer: >
-      是的，Bookings 是可自定义的，可用于各种方案。 设置 Bookings 日历时，可以自定义基于 Web 的计划页的许多方面、业务信息、员工详细信息、服务类型和日程安排策略。
+      是的，Bookings是可自定义的，可用于各种方案。 设置Bookings日历时，可以自定义基于 Web 的计划页面的许多方面、业务信息、员工详细信息、服务类型和计划策略。
   - question: >
-      原始 Bookings Web 应用的所有功能是否可在 Microsoft Teams？
+      原始Bookings Web 应用的所有功能是否在Microsoft Teams中可用？
     answer: >
-      Bookings 的轻型版本现在作为应用中Teams。 有关详细信息，请参阅 Teams [中的 Bookings 应用概述](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)。 Web 应用中提供了深层链接功能，设置完成后，无需离开网站即可使用 Bookings Teams。 信息跨平台流动。
+      轻量版本的Bookings现已在Teams中作为应用提供。 有关它的详细信息，请参阅[Teams中的Bookings应用概述](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b)。 Web 应用中会弹出深度链接功能，安装后，无需离开Teams即可完成Bookings的日常使用。 信息跨平台流动。
   - question: >
-      Bookings 是小型企业产品/服务还是Enterprise两者？
-    answer: "对于各种行业的客户和小型企业Enterprise，Bookings 都是理想的解决方案。 用例包括：\n\n- 金融服务\n    - 一些\n    - banking and insurance services\n    - 税务归档\n\n- 人力资源 (HR) \n    - 候选人面试\n    - 载入\n    - 福利协助\n    - 培训和研讨会\n\n- 医疗\n    - patient 访问\n    - 提供程序到提供程序的协作\n    - insurance consults\n\n- 政府&公共部门\n    - 法院听审和试用\n    - 公共服务\n    - 部门约会\n\n- 教育-K-12\n    - 家长会\n    - 学校大会堂\n    - 学生访问\n\n- 教育 - 教育程度更高\n    - 办公时间\n    - 一些\n    - 学生服务\n    - 考试注册\n\n- 零售版\n    - 辅助购物\n    - 项目计划\n    - 设计服务\n\n- 常规Enterprise和小型企业需求\n    - 客户和客户端会议\n    - 技术支持\n    - 法律审阅\n    - facilities\n"
+      Bookings小型企业产品/服务还是Enterprise产品/服务？
+    answer: "Bookings是适用于不同行业Enterprise和小型企业客户的理想解决方案。 用例包括：\n\n- 金融服务\n    - 磋商\n    - 银行和保险服务\n    - 纳税申报\n\n- 人力资源 (人力资源) \n    - 候选人访谈\n    - 载入\n    - 福利援助\n    - 培训和研讨会\n\n- 医疗\n    - 患者访问\n    - 提供程序到提供程序的协作\n    - 保险咨询\n\n- 政府&公共部门\n    - 法庭听证会和审判\n    - 公共服务\n    - 部门约会\n\n- 教育--K-12\n    - 家长教师会议\n    - 学校市政厅\n    - 学生辅导员访问\n\n- 教育 -高教育\n    - 办公时间\n    - 辅导\n    - 学生服务\n    - 考试注册\n\n- 零售版\n    - 辅助购物\n    - 承包商计划\n    - 设计服务\n\n- 一般Enterprise和小型企业需求\n    - 客户和客户端会议\n    - 技术支持\n    - 法律审查\n    - 设施\n"
 - name: 定价和许可
   questions:
   - question: >
-      如何获取 Microsoft Bookings？
-    answer: "预订适用于以下订阅： \n- Office 365：A3、A5、E3、E5、F1、F3\n- Microsoft 365：A3、A5、E3、E5、F1、F3、Business Standard、Business 高级版。 可以将 Bookings 与 iOS 和 Android 配套应用一同使用。 Bookings 不作为独立应用提供。 Outlook Web App或Outlook 网页版或设置，以使用 Bookings，因为它将数据存储在 Outlook。\n\nBookings 许可证为产品提供完整功能，包括创建和管理日历。 当用户被添加为管理员或查看者角色中的员工时，它还使用户能够查看和编辑现有日历。\n"
+      如何实现Microsoft Bookings？
+    answer: "Bookings可用于以下订阅： \n- Office 365：A3、A5、E3、E5、F1、F3\n- Microsoft 365：A3、A5、E3、E5、F1、F3、Business Standard、Business 高级版。 可以将Bookings与 iOS 和 Android 配套应用配合使用。 Bookings不能作为独立应用使用。 必须启用Outlook Web App或Outlook 网页版才能使用Bookings，因为它在Outlook中存储数据。\n\nBookings许可证为产品提供完整的功能，包括创建和管理日历。 当将这些用户添加为管理员或查看者角色中的工作人员时，它还使用户能够查看和编辑现有日历。\n"
   - question: >
-      是否需要将我的电子邮件帐户从当前提供商迁移到Microsoft 365？
+      是否需要将电子邮件帐户从当前提供商迁移到Microsoft 365？
     answer: >
-      你可以保留你的当前提供商，但 Bookings 会向你的帐户中使用的电子邮件Microsoft 365通知。
+      可以保留当前提供商，但Bookings会将所有通知发送到Microsoft 365帐户中使用的电子邮件。
   - question: >
-      我的员工能否在没有帐户的情况下Microsoft 365 Bookings？
+      我的员工能否在没有Microsoft 365帐户的情况下使用Bookings？
     answer: >
-      是。 可以使用任何电子邮件添加员工，当有人与员工一起预订约会时，他们仍将收到电子邮件确认和日历邀请。
+      是。 你可以向员工添加任何电子邮件，当某人与他们预约时，他们仍会收到电子邮件确认和日历邀请。
   - question: >
-      我能否在同一帐户下创建多个 Bookings 日历Microsoft 365并切换它们？
+      是否可以在同一Microsoft 365帐户下创建多个Bookings日历并在它们之间切换？
     answer: >
-      是。 可以使用一个帐户创建和管理多个 Bookings 日历。 您可以使用 Bookings Web 应用中业务名称旁边的连接号在两者之间进行切换。
+      是。 可以使用一个帐户创建和管理多个Bookings日历。 可以使用Bookings Web 应用中业务名称旁边的关卡在它们之间切换。
 - name: 产品功能
   questions:
   - question: >
-      Bookings 日历在哪里显示在我的Microsoft 365租户中？
+      Bookings日历在Microsoft 365租户中显示在哪里？
     answer: >
-      每个新的 Bookings 日历在 Exchange 创建一个对应的邮箱，在 Azure Active Directory (AAD) 中创建一个相关条目，其中条目列为未授权用户。
+      每个新Bookings日历都会在Exchange中创建相应的邮箱，并在Azure Active Directory (AAD) 中创建一个相关条目，其中条目将作为未经许可的用户列出。
   - question: >
-      能否删除以前创建的 Bookings 日历？
+      是否可以删除之前创建的Bookings日历？
     answer: >
-      若要删除 Bookings 日历，您必须在日历中删除关联的Exchange。
+      若要删除Bookings日历，必须在Exchange中删除关联的邮箱。
   - question: >
-      如果我创建日历并且其他人可以访问 Bookings，他们能否查看我的日历？
+      如果我创建日历，而其他人有权访问Bookings，他们能否看到我的日历？
     answer: >
-      仅具有通过 Web 应用 () 创建 Bookings 日历的访问权限的人员是已添加为员工（以管理员或查看者角色）的人员。 租户管理员将能够查看 Exchange 和 AAD 中所有 Bookings 邮箱的列表。
+      唯一有权访问通过 Web 应用创建 Bookings ( () 的日历的人员是已作为“管理员”或“查看者”角色添加为工作人员的任何人。 租户管理员将能够在Exchange和AAD中查看所有Bookings邮箱的列表。
   - question: >
-      视频会议会议是否集成到 Bookings 应用中？
+      视频会议会议是否已集成到Bookings应用中？
     answer: >
-      使用客户端或客户端时，Bookings Skype Microsoft Teams会议。 可以在服务级别启用联机会议，选择" (Skype"或"Teams) "会议客户端将为已预订员工默认设置的会议客户端。 若要加入联机会议，每个新约会都将有一个附加到约会的唯一会议链接，此外，事件和确认电子邮件中还包括简单的加入选项。
+      使用Skype或Microsoft Teams客户端时，联机会议在Bookings中可用。 可以在服务级别启用联机会议，而选择 (Skype或Teams) 的会议客户端默认情况下将为已预订员工设置的会议客户端。 若要加入联机会议，每个新约会都会有一个附加到约会的唯一会议链接，此外，活动和确认电子邮件中还包含简单的联接选项。
   - question: >
-      计划策略如何工作？
+      计划策略的工作原理是什么？
     answer: >
-      名为 **"最长提前** 时间"的设置可提前确定 (可以预定) 的提前距离。 对于预订和取消，至少必须有 24 小时 (最短提前时间（以小时表示）和"最长) 提前时间"。 如果"最小提前期"设置为 0 小时，则最长提前期可以设置为一天，在这种情况下，这意味着客户可以取消预定直到它开始的时间，并且客户只能在第二天进行预订时安排预定。
+      名为 **“最大潜在顾客时间** ”的设置确定最远的提前 (以可以进行预订) 天为单位。 预订和取消必须至少 24 小时（ **最小提前时间** ） (最短提前时间（以小时为单位）) 和最长提前时间。 如果将最小提前时间设置为 0 小时，则最大提前时间可以设置为一天，在这种情况下，这意味着客户可以取消预订，直至预订开始之前，客户只能在第二天内安排预订。
 
 
-      :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="Bookings 中的日程安排":::
+      :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="在Bookings中进行计划":::
   - question: >
-      Bookings 如何跨时区工作？
+      Bookings如何跨时区工作？
     answer: >
-      默认情况下，所有时间都 (本地时区) 时区。 你为 Bookings 日历配置的任何设置（如工作时间）都将在此时区显示。 自助服务页面能够显示最终用户时区的所有约会时间，如果需要，可以将其关闭。如果 **"预订"页面** 选项卡上"始终显示业务时区中的时间段"保持未选中状态，则访问该页面的人将看到自己的本地时区中的时间段。
+      默认情况下，所有时间都在业务时区 (本地时区) 。 为Bookings日历配置的任何设置（如工作时间）都将显示在此时区中。 自助服务页面能够显示最终用户时区中的所有约会时间，可根据需要将其关闭。 如果“Bookings”页选项卡上始终 **显示业务时区中的时间段** 未选中，则访问该页面的用户将在自己的本地时区中看到时间段。
 
 
-      :::image type="content" source="media/bookings-faq-region.png" alt-text="预订区域及时区设置":::
+      :::image type="content" source="media/bookings-faq-region.png" alt-text="Bookings区域和时区设置":::
 
 
-      没有为 Bookings 中的员工设置时区的规定。 员工时区（即工作时间）将用业务时区表示。
+      没有预配设置Bookings中工作人员的时区。 员工时区，因此工作时间将在业务时区。
   - question: >
-      电子邮件通知能否作为租户域名发送？
+      是否可以将电子邮件通知作为租户域名发送？
     answer: >
-      电子邮件地址在设置级别进行控制Microsoft 365管理，并取决于其域配置设置。 有关详细信息，请参阅 [此处](/powershell/module/exchange/get-accepteddomain)。
+      电子邮件地址在Microsoft 365设置级别进行控制和管理，并取决于该处的域配置设置。 有关详细信息，请参阅 [此处](/powershell/module/exchange/get-accepteddomain)。
   - question: >
-      能否发送短信依赖于其他服务或特定配置？
+      发送短信的能力是否依赖于不同的服务或特定配置？
     answer: >
-      SMS messages are currently available in North America， and a Skype or Twilio account will be used for SMS delivery.
+      短信目前在北美中可用，并且将使用Skype或 Twilio 帐户进行短信传递。
   - question: >
-      预订约会如何显示在某个人的日历上？
+      Bookings约会如何显示在某人的日历上？
     answer: >
-      确认预订将发送给服务提供商和客户收件箱。 确认电子邮件包含 *.ics 文件附件，然后可以使用所有相关的约会详细信息添加到用户的日历。
+      预订的确认将发送到服务提供商和客户的收件箱。 确认电子邮件包含 *.ics 文件附件，然后可以将该附件添加到包含所有相关约会详细信息的用户日历中。
   - question: >
-      什么触发服务提供商或员工和客户电子邮件？
+      哪些触发服务提供商、员工和客户电子邮件？
     answer: >
-      根据 Bookings Web 应用中"服务"选项卡中的设置触发电子邮件。 客户在自助服务页面上或 Bookings Web 应用中的"日历"选项卡上进行预订将触发确认和/或提醒电子邮件。 如果有人通过确认电子邮件或 Web 应用中的"管理预订"按钮更改预订，也会发生同样的事件。 提醒电子邮件在约会之前的指定时间段发送，如 Bookings Web 应用中的"服务"选项卡中详述。
+      电子邮件是根据Bookings Web 应用中的“服务”选项卡中的设置触发的。 客户在自助服务页面或Bookings Web 应用中的“日历”选项卡上进行的预订将触发确认和/或提醒电子邮件。 当某人通过确认电子邮件或 Web 应用中的 **“管理预订** ”按钮更改预订时，也会发生同样的事情。 提醒电子邮件在约会前的指定时间段发送，如Bookings Web 应用中的“服务”选项卡中所述。
   - question: >
-      能否预订 1：许多而不是 1：1 的课堂风格约会？
+      是否可以预订 1：0 而不是 1：1 的课堂式约会？
     answer: >
-      是的，我们有一个组预订功能，允许多个用户在同一时间预订同一个约会 (例如用于健身课程) 。 此功能在此处进行了 [详细介绍](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)。
+      是的，我们有一个组预订功能，允许多人同时预订相同的约会 (如健身课程) 。 此 [处详细介绍了](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)此功能。
   - question: >
-      日历能否保持未发布状态 (面向公众) 但仍可供指定用户访问？
+      日历是否仍未发布 (不是面向公众的) 但仍可供指定用户访问？
     answer: >
-      是。 Web 应用中的"预订页面"选项卡上有一个复选框："需要我的Microsoft 365或Office 365 **帐户进行预订"**。 选中此复选框将自助服务页面访问权限限制为仅访问租户内的页面。 位于 Web 应用内以创建和管理的 Bookings 日历仅能由作为员工添加到具有管理员或查看者角色的人员访问。
+      是。 Web 应用的“预订”页选项卡上有一个复选框：**需要组织中的Microsoft 365或Office 365帐户才能预订**。 选中此复选框将自助服务页面访问限制为仅访问租户内的页面。 Web 应用中用于创建和管理的Bookings日历只能由作为工作人员添加到具有管理员或查看器角色的页面的人员访问。
 
 
-      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings 中的预订页面访问控制":::
+      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings中的预订页面访问控制":::
   - question: >
-      主页更新的频率如何？
+      主页更新的频率是多少？
     answer: >
-      每当加载 Web 应用时，都会检索链接到主页的最新数据。 有关 Bookings 跟踪的信息类型详细信息，请参阅此 [支持文章](metrics-and-activity-tracking.md)。
+      每当加载 Web 应用时，都会检索链接到主页的最新数据。 有关Bookings跟踪的信息类型的详细信息，请参阅此[支持文章](metrics-and-activity-tracking.md)。
   - question: >
-      能否关闭"请假"电子邮件通知？
+      是否可以关闭“休假”的电子邮件通知？
     answer: >
-      在 Bookings Web 应用中记录"请假"将始终触发向员工发送的通知电子邮件。 如果任何员工对通知感到困惑，我们建议你在 Time-Off 通知的注释或标题中添加更多详细信息，以更好地通知员工管理员方面发生的情况。
+      在Bookings Web 应用中录制休假将始终触发向员工发送通知电子邮件。 如果任何员工对通知感到困惑，建议在Time-Off通知的备注或标题中添加更多详细信息，以便更好地告知员工管理端发生的情况。
   - question: >
-      能否克隆或复制 Bookings 日历，并可以模板化它们以轻松缩放？
+      是否可以克隆或复制Bookings日历，并且是否可以将其模板化以方便缩放？
     answer: >
-      此过程将使用 Graph API 获取邮箱详细信息，然后使用这些详细信息创建新邮箱。 API 文档 [位于此处](/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+      此过程是使用图形 API获取邮箱详细信息，然后使用这些详细信息创建新的邮箱。 此 [处](/graph/api/resources/booking-api-overview?view=graph-rest-beta)提供了 API 文档。
   - question: >
-      Bookings 中提供了哪些报告？
+      Bookings中提供了哪些报告？
     answer: >
-      分配了管理员角色的所有 Bookings 员工都可以下载以选项卡分隔 (。TSV) 包含过去 120 天内进行的所有预订的文件。 可以在 中下载预订报告。"预订"页的"主页"选项卡中的 TSV 表单。 Bookings API 还可用于收集此数据，以便实现更多自定义和特定目的。
+      分配给管理员角色的所有Bookings人员都可以下载选项卡分隔值 (。TSV) 文件，其中包含过去 120 天内的所有预订。 可在其中下载Bookings报表。Bookings页的“开始”选项卡中的 TSV 窗体。 Bookings API 还可用于收集此数据，以实现更自定义和特定目的。
   - question: >
-      一次只能共享自助服务页面上的一个服务吗？
+      是否一次只能在自助服务页面上共享一项服务？
     answer: >
-      可以，您可以为每个服务创建单独的 Bookings 日历，也可以转到"服务"选项卡，编辑服务，在页面顶部，你将看到仅共享该特定服务的 URL 的选项。
+      是的，可以为每个服务创建单独的Bookings日历，也可以转到“服务”选项卡，编辑服务，在页面顶部，你将看到仅共享该特定服务的 URL 的选项。
   - question: >
-      哪些选项可用于嵌入这些预订约会的同意表单或披露？
+      哪些选项可用于为预订约会的人嵌入许可表单或披露？
     answer: >
-      我们建议启用"预订"页面中的"客户数据使用许可"复选框，并自定义文字以正确传达组织的披露或同意要求。 另一个选项是向服务添加一个自定义字段，其中包括指向同意表单的链接，并要求客户确认已完成表单，然后才能继续约会。 您还可以添加同意表单 URL 作为确认和提醒电子邮件中的另一条注释，但这不会阻止用户预订约会。
+      建议在“预订”页中启用 **“客户数据使用许可** ”复选框，并自定义字词以正确传达组织的披露或同意要求。 另一种选择是向服务添加一个自定义字段，其中包含指向同意表单的链接，并要求客户确认他们已完成表单，然后才能继续进行约会。 还可以在确认和提醒电子邮件中将同意表 URL 添加为另一个备注，但这不会阻止用户预订约会。
   - question: >
-      对自助服务预订页面上的员工选择功能可以进行哪些更改？
+      可以在自助预订页上对员工选择功能进行哪些更改？
     answer: >
-      客户能够在完全删除预订时选择特定员工，具体方法为从"预订"页面或"服务"部分取消选择"允许客户为预订选择特定人员"选项。 预订将基于员工的可用性，自动为预订随机分配可用员工。
+      客户在预订时选择特定员工的能力可以通过从“预订”页或“服务”部分中取消 **选择“允许客户为预订”选项选择特定人员来** 完全删除。 Bookings会根据员工的可用性，自动将可用员工随机分配到预订。
   - question: >
-      Bookings 可以支持许多并发预定请求和自助服务页面访问吗？
+      Bookings是否可以支持许多并发预订请求和自助服务页面访问？
     answer: >
-      预订可以一次支持大量访问者和预订。 如果页面遇到大量流量，用户将收到"服务器繁忙"错误。 在页面加载时和进行预订时更新约会可用性。 如果多个用户尝试一次预订同一约会，Bookings 将仅允许一个人预订该时间，并通知其他潜在客户，并提示他们查找其他时间。
+      预订一次可以支持大量的游客和预订。 如果页面遇到大量流量，用户将收到“服务器繁忙”错误。 在加载页面时以及预订时更新约会可用性。 如果一次有多人尝试预订相同的约会，Bookings只会让一个人预订该时间，并向其他潜在客户发送通知消息，并提示他们查找其他时间。
 - name: 隐私
   questions:
   - question: >
-      Bookings 数据存储在何处？
+      Bookings数据存储在哪里？
     answer: >
-      Bookings 是一Microsoft 365应用，这意味着所有数据存储在 Microsoft 365 平台和 Exchange。 Bookings 遵循 Microsoft 设置的所有数据存储策略，这些策略与所有应用Office策略相同。 Bookings 使用共享邮箱Exchange客户、员工、服务和约会详细信息。 共享邮箱的合规性策略Exchange也适用于 Bookings 邮箱。 所有客户 (包括当预订) 在 Bookings 中捕获并存储在应用内时客户提供的信息，因此存储在Exchange。 Microsoft Bookings 使用相同的策略Microsoft 365，可以在此处[找到这些策略。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+      Bookings是一个Microsoft 365应用，这意味着所有数据都存储在Microsoft 365平台和Exchange中。 Bookings遵循 Microsoft 设置的所有数据存储策略，这些策略与所有Office应用遵循的策略相同。 Bookings使用Exchange中的共享邮箱来存储客户、员工、服务和约会详细信息。 Exchange中共享邮箱的符合性策略也适用于Bookings邮箱。 所有客户数据 (包括客户在预订) 时提供的信息在Bookings中捕获并存储在应用中，因此存储在Exchange中。 Microsoft Bookings使用Microsoft 365使用的相同策略，你可以在此处找到[这些策略。](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
   - question: >
-      是否有一种方法可以集中管理所有用户的 Bookings 日历？
+      是否有一种方法可以集中管理所有用户的Bookings日历？
     answer: >
-      每个 Bookings 日历都是独立维护的。 除了单击主页上的"搜索"下拉列表，没有合并视图。
+      每个Bookings日历都是独立维护的。 除了在主页上单击“看门”后的搜索下拉列表之外，没有合并的视图。
   - question: >
-      如何对用户进行身份验证？
+      用户如何进行身份验证？
     answer: >
-      访问 Bookings Web 应用涉及通过常规身份验证Azure Active Directory (AAD) 身份验证。 通过网页链接，每个人都可以使用自助服务预订页面。 但是，当选中 **"需要我的Microsoft 365或 Office 365** 帐户来预订"设置时，页面将限制为仅在 Microsoft 365 租户 (使用 AAD 身份验证) 。
+      访问Bookings Web 应用涉及通过常规Azure Active Directory (AAD) 身份验证进行身份验证。 可以使用网页链接向所有人提供自助预订页面。 但是，如果选择 **“要求从组织Microsoft 365或Office 365帐户** 进行预订设置，则该页面将仅在使用AAD身份验证) 的Microsoft 365租户 (中使用。
 
 
-      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings 中的预订页面访问控制":::
+      :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings中的预订页面访问控制":::
   - question: >
       客户数据是否出于任何原因离开生产系统？
     answer: >
-      是的，由于 Bookings 是 Exchange 的一部分，我们允许客户下载他们有权访问的 Graph API 和 Exchange Web 服务 (EWS) API。
+      是的，由于Bookings是Exchange的一部分，因此我们允许Graph API 和 Exchange Web 服务 (EWS) API，以便客户下载他们有权访问的数据。
   - question: >
-      能否为客户回复自定义电子邮件地址？
+      是否能够自定义客户答复的电子邮件地址？
     answer: >
-      可以定义客户向哪个电子邮件地址发送答复。 此设置位于"业务信息 **"选项卡** 上。Bookings 邮箱名称本身也可在 Exchange中通过常用的Exchange邮箱重命名过程进行更改。
+      可以定义客户向其发送答复的电子邮件地址。 此设置位于 **“业务信息**”选项卡上。Bookings邮箱名称本身也可以在Exchange内通过通常的Exchange邮箱重命名过程进行更改。
   - question: >
-      我们希望客户在预订过程中接受我们的条款和条件。 这是否可行？
+      我们希望客户在预订过程中接受我们的条款和条件。 这有可能吗？
     answer: >
-      此功能已存在，用于符合 GDPR 要求。 "预订"页面的"发布详细信息"部分下有一个自定义许可字段。 只需选中该框并编写你自己的自定义同意消息，它将在自助服务页面上作为必填字段显示。 将记录客户授予同意的日期和时间。
+      此功能已针对 GDPR 符合性而存在。 “预订”页包含自定义许可字段，直接在发布详细信息部分下方。 只需选中该框并编写自己的自定义同意消息，它就会显示为自助服务页面上所需的字段。 将记录客户授予同意的日期和时间。
 
 
-      此部分不支持格式文本，但认为可以在业务信息部分下添加链接，并会显示在同意复选框正下方。
+      本部分不支持富文本，但认为链接可以添加到业务信息部分下，并且会显示在同意复选框正下方。
   - question: >
-      如何标识与 Bookings 关联的Exchange邮箱？
+      如何识别Exchange中Bookings关联的邮箱？
     answer: >
-      以下命令可用于检索所有 Bookings 邮箱以及有权访问这些邮箱的用户的信息。
+      以下命令可用于检索所有Bookings邮箱和有权访问它们的用户的信息。
 
 
       `Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize: Unlimited | Get-MailboxPermission |Select-Object Identity, User, AccessRights | Where-Object {($_.user -like '*@*')}`
 - name: 技术问题
   questions:
   - question: >
-      如果用户为包含联机会议的服务安排约会，如果他们将可选电子邮件地址字段留空，如何接收指向Microsoft Teams"链接？
+      如果用户计划由联机会议组成的服务的约会，如果将可选的电子邮件地址字段留空，他们如何接收到会议的Microsoft Teams链接？
     answer: >
-      如果系统没有客户的电子邮件信息，则确认邮件无法传递到客户，因此他们不会收到Teams链接。 解决方案是，将电子邮件地址设置为必填字段，您可以在 Bookings 的"服务"选项卡上这样做。 请记住，每当在 Bookings 中创建新服务时，客户电子邮件字段默认设置为必填字段。
+      如果系统没有客户的电子邮件信息，则无法将确认邮件传递给客户，因此他们不会收到Teams链接。 解决方案是将电子邮件地址设置为必需字段，可以在Bookings的“服务”选项卡上执行此操作。 请记住，每当在 Bookings 中创建新服务时，客户电子邮件字段默认设置为必需字段。
   - question: >
-      选择"任何人"或客户无法为约会选择员工时，如何为约会分配员工？
+      当选择“任何人”或客户没有能力为约会选择员工成员时，如何分配员工约会？
     answer: >
-      在这些方案中，在预订约会时可用的所有员工中，会随机分配员工。 目前，无法确保随机分配的约会在员工的所有成员中均等分配，或限制分配给每个员工成员的约会数。 如果有许多随机分配后需要跨员工完成负载平衡，可以在 Bookings 页面的"日历"选项卡中手动完成。
+      在这些情况下，从预订约会时可用的所有工作人员中随机分配工作人员。 目前无法确保在所有工作人员之间平等分配随机分配的约会，或限制分配给每个工作人员的任命数。 如果在完成多次随机分配后需要跨员工完成负载均衡，则可以在Bookings页的“日历”选项卡中手动完成。
   - question: >
-      如果用户之前已选择接收短信，如何选择不接收短信？
+      如果用户以前已选择加入，他们如何选择不接收短信？
     answer: >
-      当预订启用了短信的约会时，将提示客户每次预订时选中选择加入框。 客户还可以直接在短信提供商 (短信) 指示他们希望消息停止，然后不会向该电话号码发送其他文本。 如果客户选择不接收来自提供商的短信，而不是从 Bookings 本身接收短信，他们以后将不再收到短信，即使从 Bookings 页面选择接收短信。
+      预订启用短信的约会时，每次预订时，都会提示客户选中“选择加入”框。 客户还可以直接回复短信 (短信提供程序) 指示他们希望停止邮件，然后不会向该电话号码发送其他文本。 如果客户选择不接收来自提供商的短信，而不是从Bookings本身接收短信，他们将来将不再收到短信，即使从Bookings页面选择加入。
 - name: 疑难解答
   questions:
   - question: >
-      此员工的日历无法同步
+      无法同步此员工的日历
     answer: >
-      如果您收到错误"此员工的日历无法同步"，本节包含帮助您解决错误的多个疑难解答过程。
+      如果收到错误“无法同步此员工的日历”，则本部分包含多个故障排除过程，以帮助你解决该错误。
 
 
       > [!NOTE]
 
-      > 默认情况下，对于拥有订阅、订阅Microsoft 365 商业标准版、Microsoft 365 A3或Microsoft 365 A5启用预订。 对于已使用 E3 和 Office 365 企业版 E5 Office 365 企业版客户，也可使用预订，但默认情况下它已关闭。 若要开始，请参阅 [获取对 Microsoft Bookings 的访问权限](get-access.md)。 若要打开或关闭 Bookings，请参阅为组织打开 [或关闭 Bookings](turn-bookings-on-or-off.md)。
+      > 对于拥有Microsoft 365 商业标准版、Microsoft 365 A3或Microsoft 365 A5订阅的客户，默认情况下打开Bookings。 Bookings也适用于已Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下已关闭。 若要开始，请参阅[获取对Microsoft Bookings的访问权限](get-access.md)。 若要打开或关闭Bookings，请参阅为[组织打开或关闭Bookings](turn-bookings-on-or-off.md)。
 
 
-      如果要查找有关同步员工日历的信息，请参阅向 [Bookings 添加员工](add-staff.md)。 确保选中" **员工详细信息** "页面上的 **"日历上的事件影响可用性** "。
+      如果要查找有关同步员工日历的信息，请参阅[“将员工添加到Bookings](add-staff.md)。 请确保在 **“人员详细信息** ”页 **上检查日历上的事件影响可用性** 。
   - question: >
-      员工需要更改其日历权限
+      工作人员需要更改其日历权限
     answer: >
-      为了使 Bookings 与员工日历正确同步，每个员工必须共享其日历。 每个员工都必须按照这些说明共享自己的日历。
+      为了使Bookings与员工的日历正确同步，每个工作人员必须共享其日历。 每个工作人员必须按照这些说明共享自己的日历。
 
 
-      1. 登录到应用Microsoft 365，然后从 **应用Outlook** 选择"设置"。
+      1. 登录到Microsoft 365，然后从应用启动器中选择 **Outlook**。
 
          > [!div class="mx-imgBorder"]
-         > ![应用Outlook器中的图像](../media/bookings-applauncher-outlook.png)
+         > ![应用启动器中Outlook的图像](../media/bookings-applauncher-outlook.png)
 
-      1. 在页面顶部，选择" **共享日历** \> **"**。
+      1. 在页面顶部，选择 **“共享** \> **日历**”。
 
          ![日历共享菜单的图像](../media/bookings-share-calendar.png)
 
-      1. 在"**组织内部人员**"部分，选择"我的组织"旁边的下拉框，然后选择"我忙碌时 **可以查看"**。
+      1. 在 **组织内的“人员** ”部分中，选择 **“我的组织**”旁边的下拉框，然后选择 **“我忙的时候可以查看**”。
 
          > [!NOTE]
-         > 此设置与 Bookings 和贵组织中其他用户共享您的忙/闲信息。 它不包含任何其他信息，例如已安排的约会类型、安排约会的人或地点。
+         > 此设置与Bookings和组织中的其他用户共享你的闲/忙信息。 它不包括任何其他信息，例如你已安排的约会类型、你已安排约会的人员或位置。
 
          > [!div class="mx-imgBorder"]
-         > ![启用"我忙碌时可以查看"的日历共享屏幕的图像](../media/bookings-view-busy.png)
+         > ![启用“可以”查看的日历共享屏幕图像](../media/bookings-view-busy.png)
 
       1. 选择“**完成**”。
   - question: >
-      我们找不到组织的员工
+      我们无法在组织中找到员工
     answer: >
-      如果员工已离开公司，并且你已从 Microsoft 365 或 Office 365 组织中删除了他们，你仍然需要从 Bookings 中删除该用户，以便他们不会显示在日历中，并阻止客户预订与他们的约会。
+      如果员工已离开公司，并且你将其从Microsoft 365或Office 365组织中删除，则你仍需要将该用户从Bookings中删除，这样他们就不会出现在日历中，并阻止客户与他们预订约会。
 
 
-      1. 登录到"Microsoft 365"，然后转到 **"预订员工** \> **"**。
+      1. 登录到Microsoft 365，然后转到 **Bookings** \> **工作人员**。
 
 
-      1. 将鼠标光标悬停在员工姓名的上方。 **编辑****和删除** 图标显示在"编辑"列 **电话** 右侧。
+      1. 将鼠标光标悬停在员工姓名上。 **编辑** 和 **删除** 图标显示在 **电话** 列右侧。
 
 
-      1. 选择" **删除"** 图标。
+      1. 选择 **“删除”** 图标。
 
 
-      1. 在确认框中，选择"确定 **"**。
+      1. 在确认框中，选择 **“确定**”。
 
 
       > [!NOTE]
 
-      > 如果你有多个预订日历，则必须从所有预订日历中删除用户。
+      > 如果有多个预订日历，则必须从所有预订日历中删除用户。
 
 
-      若要检查是否拥有多个日历，请在左侧菜单中选择公司名称旁边的下拉箭头，然后选择"打开 **"**。 如果只有一个日历，则只能看到添加预订日历的选项。 本示例显示还有另一个名为"Contoso CO"的日历。
+      若要检查是否有多个日历，请在左侧菜单中选择公司名称旁边的下拉箭头，然后选择 **“打开**”。 如果只有一个日历，则只会看到添加预订日历的选项。 此示例显示有一个名为“Contoso CO”的第二个日历。
 
 
-      ![显示第二个日历的"选择日历"屏幕的图像](../media/bookings-choose-calendar.png)
+      ![显示第二个日历的“选择日历”屏幕的图像](../media/bookings-choose-calendar.png)
   - question: >
       有一个无法识别的同步错误
     answer: >
-      这是一个暂时性错误，通常由于 Internet 连接不稳定而发生。 这些问题通常在几分钟后自行解决。
+      这是一个暂时性错误，通常由于 Internet 连接不稳定而发生。 这些问题通常会在几分钟后自行解决。
 
 
-      如果长时间后仍看到此错误或经常看到此错误，请联系支持人员。
-additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [Microsoft Bookings 在企业博客中扩展可用性](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Microsoft Bookings 的工作原理视频](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [开始使用 Microsoft Bookings](get-access.md)\n\n- [打开或关闭 Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [单独或批量添加用户](../admin/add-users/add-users.md)\n\n- [向 Bookings 添加员工](add-staff.md)\n\n- [定义模板后实现自动化的 API 组件](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [用于显示的 Bookings 日历的 URL](https://outlook.office.com/bookings/calendar)\n\n- [预订合规性策略](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [定制并发布预订页面](customize-booking-page.md)\n\n- [租户邮箱配置](/powershell/module/exchange/get-accepteddomain)\n\n- [组预订](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [预订指标和活动跟踪](metrics-and-activity-tracking.md)\n\n- [M365 公共路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)"
+      如果在较长时间后仍看到此错误，或者经常看到此错误，请联系支持人员。
+additionalContent: "\n## <a name=\"additional-resources\"></a>其他资源\n\n- [Microsoft Bookings扩展企业博客中的可用性](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Microsoft Bookings工作原理视频](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [开始使用Microsoft Bookings](get-access.md)\n\n- [打开或关闭 Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [单独或批量添加用户](../admin/add-users/add-users.md)\n\n- [向 Bookings 添加员工](add-staff.md)\n\n- [定义模板后要自动执行的 API 组件](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [用于显示Bookings日历的 URL](https://outlook.office.com/bookings/calendar)\n\n- [Bookings合规性策略](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [定制并发布预订页面](customize-booking-page.md)\n\n- [租户邮箱配置](/powershell/module/exchange/get-accepteddomain)\n\n- [组Bookings](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Bookings指标和活动跟踪](metrics-and-activity-tracking.md)\n\n- [M365 公共路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)"

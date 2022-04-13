@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: 常见问题解答 (常见问题解答) 有关Microsoft 家用许可计划的常见问题解答。
   ms.date: 05/01/2021
-  ms.openlocfilehash: 3ab4bb4023b09184b349f9a64fbb4533644d64ed
-  ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+  ms.openlocfilehash: 8f9b3bb1e6bba0bb9b473962bbaf50653f733760
+  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64714408"
+  ms.lasthandoff: 04/13/2022
+  ms.locfileid: "64823907"
 title: 'Microsoft 家用许可计划常见问题解答 (常见问题解答) '
 summary: >
   批量许可客户在适用于企业的 Microsoft Store[网站上使用Microsoft 家用许可计划 (](https://go.microsoft.com/fwlink/?linkid=2139192) HUP) 。
@@ -33,14 +33,14 @@ summary: >
   所有其他客户都使用以下步骤访问 HUP：
 
 
-  - 在 Microsoft 管理中心，转到 **BillingYour** >  [**产品** 页面](https://go.microsoft.com/fwlink/p/?linkid=842054)，选择 **"权益**"选项卡，然后选择 **"HUP"** 选项卡。
+  - 在 Microsoft 管理中心，转到 **BillingYour** >  [**产品** 页面](https://go.microsoft.com/fwlink/p/?linkid=842054)，选择 **“权益**”选项卡，然后选择 **“HUP”** 选项卡。
 sections:
 - name: 已忽略
   questions:
   - question: >
       什么是Microsoft 家用许可计划？
     answer: >
-      Microsoft 家用许可计划 (HUP) 允许符合条件的公司的员工以折扣价购买 Microsoft 消费品。 可以通过访问 ["家庭使用计划"产品页](https://www.microsoft.com/home-use-program)来查看每个产品/服务的当前折扣。
+      Microsoft 家用许可计划 (HUP) 允许符合条件的公司的员工以折扣价购买 Microsoft 消费品。 可以通过访问 [“家庭使用计划”产品页](https://www.microsoft.com/home-use-program)来查看每个产品/服务的当前折扣。
   - question: >
       家庭使用计划在哪些市场提供？
     answer: "Microsoft 365 家庭版和个人订阅的折扣提供给全球符合条件的公司，但以下例外情况：\n\n- 黎巴嫩、澳门、俄罗斯和委内瑞拉：此产品/服务在这些市场不可用。\n- 中国和香港：这些市场提供为期一年的订阅。 对于中国，请访问[中国Microsoft 365](https://www.microsoftstore.com.cn/home-use-program/invite)。 对于香港，请以[折扣价参观购买Microsoft 365](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。\n- 日本：Microsoft 365 家庭版不可用。\n- 选择 Surface 设备和附件的折扣提供给选定市场中符合条件的公司。 \n"
@@ -61,7 +61,7 @@ sections:
   - question: >
       有哪些资源可用于帮助员工提升家庭使用计划权益？
     answer: >
-      使用" [家庭使用计划"](https://www.microsoft.com/home-use-program/resources) 主页上的资源来帮助你向员工推广该计划。 你将找到数字和可打印的传单、电子邮件和新闻稿中使用的措辞，以及有关如何最好地推广家庭使用计划的指南。
+      使用“ [家庭使用计划”](https://www.microsoft.com/home-use-program/resources) 主页上的资源来帮助你向员工推广该计划。 你将找到数字和可打印的传单、电子邮件和新闻稿中使用的措辞，以及有关如何最好地推广家庭使用计划的指南。
   - question: >
       符合条件的员工购买Microsoft 家用许可计划步骤是什么？
     answer: >
@@ -69,7 +69,7 @@ sections:
 
       2. **确认**  电子邮件将发送到其公司电子邮件地址收件箱，其中包含一个链接，用于验证其计划资格。
 
-      3. **登录** 经过身份验证后，他们通过提供与其个人电子邮件地址关联的 Microsoft 帐户开始购买过程，这样他们就可以根据组织的"家庭使用计划"权益查看可用产品的折扣。 有关详细信息，请参阅 [如何登录到 Microsoft 帐户](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
+      3. **登录** 经过身份验证后，他们通过提供与其个人电子邮件地址关联的 Microsoft 帐户开始购买过程，这样他们就可以根据组织的“家庭使用计划”权益查看可用产品的折扣。 有关详细信息，请参阅 [如何登录到 Microsoft 帐户](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
 
       4. **店** 购买在Microsoft Store中处理并完成。
   - question: >

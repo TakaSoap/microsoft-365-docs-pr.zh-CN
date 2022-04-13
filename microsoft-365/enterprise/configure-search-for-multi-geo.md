@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive）可以在多地理位置环境中返回结果。
-ms.openlocfilehash: d6d6895c6dc393bb1f28dff60dea996bf80aad5a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（如OneDrive）才能在多地理位置环境中返回结果。
+ms.openlocfilehash: a6f152a3f226befa8bc060dadd0eed1c0952523c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204175"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824917"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>为 Microsoft 365 多地理位置配置搜索
 
@@ -66,7 +66,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <thead>
 <tr class="header">
 <th align="left">功能</th>
-<th align="left">如何工作</th>
+<th align="left">运作方式</th>
 <th align="left">解决方法</th>
 </tr>
 </thead>
@@ -84,12 +84,12 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 <tr class="odd">
 <td align="left"></td>
 <td align="left">多地理位置搜索不支持数值精简的动态存储桶。</td>
-<td align="left">对 <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">数字精简条件使用"Discretize"</a> 参数。</td>
+<td align="left">对数值优化器使用 <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize”参数</a> 。</td>
 </tr>
 <tr class="even">
 <td align="left">文档 ID</td>
 <td align="left">如果正在开发依赖于文档 ID 的搜索驱动的应用程序，请注意，多地理位置环境中的文档 ID 对所有地理位置来说并不是唯一的，它们只对每个地理位置来说是唯一的。</td>
-<td align="left">我们添加了用于标识地理位置的列。 使用此列来实现唯一性。 此列名为"GeoLocationSource"。</td>
+<td align="left">我们添加了用于标识地理位置的列。 使用此列来实现唯一性。 此列名为“GeoLocationSource”。</td>
 </tr>
 <tr class="odd">
 <td align="left">结果数</td>
@@ -122,7 +122,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 </tr>
 <tr class="even">
 <td align="left">来宾</td>
-<td align="left">来宾仅从要搜索的地理位置获取结果。</td>
+<td align="left">来宾仅从正在搜索的地理位置获取结果。</td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 
 所有搜索客户端均使用现有 SharePoint Search REST API 与搜索索引进行交互。
 
-![显示搜索SHAREPOINT REST API 如何与搜索索引交互的关系图。](../media/configure-search-for-multi-geo-image1-1.png)
+![显示SharePoint搜索 REST API 如何与搜索索引交互的示意图。](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 搜索客户端使用查询属性 EnableMultiGeoSearch= true 来调用搜索 REST 终结点。
 2. 查询将被发送到租户中的所有地理位置。
@@ -151,11 +151,11 @@ Delve 源和个人资料卡片只能显示存储在中央位置中的文件预�
 
 3. 选择要设置的类别，单击右上角的 **“设置”** 齿轮图标，然后单击 **“编辑页面”**。搜索结果页将在编辑模式下打开。
 
-   ![编辑页面中的页面设置。](../media/configure-search-for-multi-geo-image2.png)
+   ![在设置中编辑页面选择。](../media/configure-search-for-multi-geo-image2.png)
 
 4. 在搜索结果 Web 部件中，将鼠标指针移动到 Web 部件的右上角，单击箭头，然后单击菜单上的“**编辑 Web 部件** ”。 搜索结果 Web 部件工具窗格在页面右上角的功能区下方打开。
 
-   ![编辑Web 部件选定内容。](../media/configure-search-for-multi-geo-image3.png)
+   ![编辑 Web 部件选择。](../media/configure-search-for-multi-geo-image3.png)
 
 5. 在 Web 部件工具窗格中的 **“设置”** 部分，在 **“结果控制设置”** 下，选择 **“显示多地理位置结果”**，获取搜索结果 Web 部件，以显示来自所有地理位置的结果。
 

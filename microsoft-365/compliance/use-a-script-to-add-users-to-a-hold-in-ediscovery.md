@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: 了解如何运行脚本，将网站& OneDrive for Business邮箱添加到与Microsoft 365 合规中心中电子数据展示案例关联的新保留。
-ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761232"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824479"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用脚本将用户添加到核心电子数据展示案例中的保留
 
@@ -47,7 +47,7 @@ ms.locfileid: "64761232"
 
 - 你必须是Microsoft 365 合规中心中的电子数据展示管理器角色组的成员，并且必须是SharePoint联机管理员才能在步骤 3 中运行脚本。 有关详细信息，请参阅[Office 365安全&合规中心分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
-- 最多可以将 1，000 个邮箱和 100 个网站添加到与Microsoft 365 合规中心中的电子数据展示案例关联的保留中。 假设要保留的每个用户都有一个OneDrive for Business站点，则可以使用本文中的脚本将最多 100 个用户添加到保留。
+- 最多可以将 1，000 个邮箱和 100 个网站添加到与Microsoft 365 合规中心中的核心电子数据展示案例关联的保留中。 假设要保留的每个用户都有一个OneDrive for Business站点，则可以使用本文中的脚本将最多 100 个用户添加到保留。
 
 - 请务必将步骤 2 中创建的用户列表和步骤 3 中的脚本保存到同一文件夹。 这样可以更轻松地运行脚本。
 

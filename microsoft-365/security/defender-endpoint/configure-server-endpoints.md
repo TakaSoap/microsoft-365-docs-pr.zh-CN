@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783724"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823841"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将Windows服务器载入到Microsoft Defender for Endpoint服务
 
@@ -183,7 +183,7 @@ Microsoft Defender for Endpoint与Microsoft Defender for Cloud无缝集成。 �
    > [!NOTE]
    > 在 Windows Server 2012R2 上，安装包将安装Microsoft Defender 防病毒并处于活动状态，除非将其设置为被动模式。 Windows Server 2016，Microsoft Defender 防病毒必须安装为功能 (请先查看[切换到 MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) 并完全更新，然后再继续安装。
    > 
-   > 如果运行的是非 Microsoft 反恶意软件解决方案，请确保在安装之前，在“[Defender Process”选项卡上将此 Microsoft Defender Process 列表中的](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)Microsoft Defender 防病毒 (排除项添加到非 Microsoft 解决方案) 。  还建议将非 Microsoft 安全解决方案添加到 Defender 防病毒排除列表。
+   > 如果运行的是非 Microsoft 反恶意软件解决方案，请确保在安装之前，在“[Defender Process”选项卡上将此 Microsoft Defender Process 列表中的](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)Microsoft Defender 防病毒 (排除项添加到非 Microsoft 解决方案) 。  还建议将非 Microsoft 安全解决方案添加到 Defender 防病毒排除列表。
 
 
 **安装包** 包含安装Microsoft Defender for Endpoint代理的 MSI 文件。

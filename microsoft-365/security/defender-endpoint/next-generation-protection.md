@@ -15,18 +15,23 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 71cfbfe44525d67362ad7acc2c9d063ef0bb9ffd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807400"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790341"
 ---
 # <a name="next-generation-protection-overview"></a>下一代保护概述
 
 **适用对象**
+
+- Microsoft Defender 防病毒
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+**平台**
+- Windows
 
 Microsoft Defender for Endpoint 包括加强网络安全外围的下一代保护。 下一代保护旨在捕获所有类型的新威胁。 除了 Microsoft Defender 防病毒，下一代保护服务还包括以下功能：
 
@@ -53,4 +58,15 @@ Microsoft Defender for Endpoint 包括加强网络安全外围的下一代保护
 有关如何配置下一代保护服务的信息，请参阅[配置 Microsoft Defender 防病毒功能](configure-microsoft-defender-antivirus-features.md)。
 
 > [!NOTE]
-> 在 Windows Server 中，配置和管理与在 Windows 客户端中大致相同。 但存在一些差异。 
+> 在 Windows Server 中，配置和管理与在 Windows 客户端中大致相同。但存在一些差异。 
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [设置 macOS 上 Microsoft Defender for Endpoint 的首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于 Intune 的 Microsoft Defender 防病毒软件的 macOS 防病毒程序策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [设置 Linux 上 Microsoft Defender for Endpoint 的首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
+

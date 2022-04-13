@@ -16,12 +16,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b193279f9891badc78e639776a57a366a0fa8109
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 67f23d31f50dc20e385f36d4ee4a941db14af7ef
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807076"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790671"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -29,6 +29,10 @@ ms.locfileid: "62807076"
 
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
+- Microsoft Defender 防病毒
+
+**平台**
+- Windows
 
 可能不需要的应用程序 (PUA) 用来指代一类软件，它们会导致计算机运行缓慢、显示意外广告，最糟的是，它还会安装其他意外的或不需要的软件。 PUA 不是病毒、恶意软件或其他威胁，但它可能会对终结点进行一些操作，对其性能或使用产生负面的影响。 *PUA* 这个术语也可以指那些由于某些不当行为，被 Microsoft Defender for Endpoint 评估为具有较差信誉的应用程序。
 
@@ -202,6 +206,16 @@ DeviceEvents
 有时文件被 PUA 保护错误阻止，或需要 PUA 的功能才能完成任务。 在这些情况下，可以将文件添加到排除列表。
 
 有关详细信息，请参阅 [扩展名和文件夹位置配置和验证排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [设置 macOS 上 Microsoft Defender for Endpoint 的首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于 Intune 的 Microsoft Defender 防病毒软件的 macOS 防病毒程序策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [设置 Linux 上 Microsoft Defender for Endpoint 的首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="see-also"></a>另请参阅
 

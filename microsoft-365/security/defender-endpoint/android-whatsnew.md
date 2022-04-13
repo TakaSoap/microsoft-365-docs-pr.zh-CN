@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 48d6ef27e71f89f6a81ac3c77ea17cf60dc90ee1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664559"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825181"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android 上Microsoft Defender for Endpoint的新增功能
 
@@ -31,9 +31,18 @@ ms.locfileid: "64664559"
 
 希望体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)。
 
+>[!NOTE]
+>1.0.3011.0302 以下版本不再支持 Microsoft Defender。 系统会要求用户升级到最新版本，以确保其设备的安全。
+若要更新，用户可以使用以下步骤：
+>1. 在工作配置文件中，转到托管 Play 应用商店。
+>2. 点击右上角的配置文件图标，然后选择“管理应用和设备”。
+>3. 在可用更新下找到 MDE，然后选择“更新”。
+>
+>如果遇到任何问题，请 [提交应用内反馈](/security/defender-endpoint/android-support-signin#send-in-app-feedback)。
+
 ## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender for Endpoint现在是 Play 商店中的 Microsoft Defender
 
-Microsoft Defender for Endpoint现已在游戏商店中作为 **Microsoft Defender** 提供。 通过此更新，该应用将作为预览版提供给 **美国区域中的使用者** - 根据你使用工作或个人帐户登录应用的方式，你将有权访问适用于Microsoft Defender for Endpoint的功能或适用于个人的 Microsoft Defender 功能。 有关更多详细信息，请参阅 [此博客](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) 。
+Microsoft Defender for Endpoint现已在游戏商店中作为 **Microsoft Defender** 提供。 通过此更新，该应用将作为预览版提供给 **美国区域中的使用者** - 根据你使用工作或个人帐户登录应用的方式，你将有权访问适用于Microsoft Defender for Endpoint的功能或适用于个人的 Microsoft Defender 功能。 有关更多详细信息，请参阅 [此博客](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) 。
 
 ## <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
@@ -46,12 +55,12 @@ Microsoft Defender for Endpoint现已在游戏商店中作为 **Microsoft Defend
 **这将如何影响你的组织：** 如果在运行 Android 11 或更高版本的设备上使用Microsoft Defender for Endpoint，并且更新了 Defender for Endpoint 以发布内部版本 1.0.3501.0301 或更高版本，这些更改将生效。
 
 > [!NOTE]
-> 管理员无法通过Microsoft Endpoint Manager将新的存储权限配置为"自动批准"。 用户需要采取措施来提供对此权限的访问权限。
+> 管理员无法通过Microsoft Endpoint Manager将新的存储权限配置为“自动批准”。 用户需要采取措施来提供对此权限的访问权限。
 
-- **用户体验：** 用户将收到一条通知，指示缺少应用安全权限。 如果用户拒绝此权限，"应用安全"功能将在设备上关闭。 如果用户不接受或拒绝权限，则在解锁设备或打开应用时，在获得批准之前，他们将继续收到提示。
+- **用户体验：** 用户将收到一条通知，指示缺少应用安全权限。 如果用户拒绝此权限，“应用安全”功能将在设备上关闭。 如果用户不接受或拒绝权限，则在解锁设备或打开应用时，在获得批准之前，他们将继续收到提示。
 
 > [!NOTE]
-> 如果你的组织正在预览"篡改保护"功能，并且用户在更新到最新版本后的 7 天内未授予新的存储权限，则用户可能会失去对公司资源的访问权限。
+> 如果你的组织正在预览“篡改保护”功能，并且用户在更新到最新版本后的 7 天内未授予新的存储权限，则用户可能会失去对公司资源的访问权限。
 
 **准备工作**：
 
@@ -59,9 +68,9 @@ Microsoft Defender for Endpoint现已在游戏商店中作为 **Microsoft Defend
 
 1. 点击 Defender for Endpoint 应用内通知或打开 Defender for Endpoint 应用。 用户将看到一个屏幕，其中列出了所需的权限。 存储权限旁边将缺少绿色复选标记。
 
-2. 点击 **"开始**"。
+2. 点击 **“开始**”。
 
-3. 点击" **允许访问"开关以管理所有文件。**
+3. 点击“ **允许访问”开关以管理所有文件。**
 
 4. 设备现在受到保护。
 

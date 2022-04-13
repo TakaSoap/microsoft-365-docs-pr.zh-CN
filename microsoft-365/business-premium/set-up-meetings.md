@@ -24,28 +24,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用 Microsoft Teams 设置联机Microsoft Teams。
-ms.openlocfilehash: cb19649da667c7c9317ca240162ac3e42e991806
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: 使用Microsoft Teams设置联机会议。
+ms.openlocfilehash: d945d5526e3cdd06bc0a7c7a80ef7cff0160d07d
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767760"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823093"
 ---
 # <a name="set-up-meetings"></a>设置会议
 
-会议Microsoft Teams包括音频、视频和共享。 由于他们联机，因此你始终可以有会议室 (会议室或投影仪！) ，即使你的员工分布在不同地理位置或远程工作。 Microsoft Teams会议是组织内外员工一起开会的一种很好的方法。 你无需是组织的成员，甚至不必拥有帐户来加入会议。 可以使用会议安排和运行联机Microsoft Teams。 会议期间，可以共享屏幕、共享文件、分配任务等。 政治宣传活动可以在会议中包括组织外部的员工、志愿者和来宾。 小型企业或做法可以与员工会面，或与客户或合作伙伴Microsoft Teams。
+Microsoft Teams中的会议包括音频、视频和共享。 由于他们处于联机状态，因此，即使员工在地理上分布或远程工作，你始终 (会议空间，而无需会议室或投影器！) 。 Microsoft Teams会议是与组织内外的员工聚在一起的好方法。 无需是组织成员，甚至无需拥有帐户即可加入会议。 可以使用Microsoft Teams安排和运行联机会议。 在会议期间，可以共享屏幕、共享文件、分配任务等。 政治活动可以包括组织外部的工作人员、志愿者和来宾参加会议。 小型公司或做法可以与其员工会面，或通过Microsoft Teams与客户或合作伙伴会面。
 
-[![一个会议中的两个用户示意图。](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![会议中两个用户的插图。](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
-下载 PDF 或 PowerPoint信息图[](https://go.microsoft.com/fwlink/?linkid=2078712)，快速[](https://go.microsoft.com/fwlink/?linkid=2079515)了解如何使用 Microsoft Teams 加入或主持联机Microsoft Teams。
+下载 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) 或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的信息图，快速了解如何加入或托管与Microsoft Teams的联机会议。
 
 ## <a name="best-practices"></a>最佳做法
 
-请遵循以下联机会议最佳做法：
+按照以下最佳做法进行联机会议：
 
-- 在会议期间安排联机Microsoft Teams。 你可以选择团队和频道，Teams自动邀请该团队或频道中的参与者。
-- 需要即席会议？ 如果进行一对一聊天，请选择"立即开会"，开始与正在聊天的人进行视频或音频通话。
+- 在Microsoft Teams中安排联机会议。 可以选择团队和频道，Teams会自动邀请该团队或频道中的参与者。
+- 需要即席会议？ 如果正在进行一对一聊天，请选择 **“立即开会** ”，与正在聊天的人员开始视频或音频通话。
 
 ## <a name="schedule-a-meeting"></a>安排会议
 
@@ -55,6 +55,6 @@ ms.locfileid: "62767760"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-详细了解会议Microsoft Teams：
+详细了解Microsoft Teams中的会议：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]

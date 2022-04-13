@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788471"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823303"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -75,7 +75,7 @@ Microsoft Defender 防病毒需要 [每月更新 (KB4052623)](https://support.mi
 > - 本文列出了广泛发布通道中包含的更改。 [请参阅此处的最新广泛频道版本](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info)。
 > - 若要详细了解逐步推出过程，并查看有关下一版本的详细信息，请参阅 [管理 Microsoft Defender 更新的逐步推出过程](manage-gradual-rollout.md)。
 > - 若要详细了解安全智能更新，请参阅[Microsoft Defender 防病毒和其他 Microsoft 反恶意软件的安全智能更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
-> - 如果要查找 Microsoft Defender 进程列表， **[请下载 mde-urls 工作簿](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**，然后选择 **Microsoft Defender Process** 工作表。 mde-urls 工作簿还列出了网络必须能够连接到的服务及其关联 URL，如[“启用对代理服务器中Microsoft Defender for Endpoint服务 URL 的访问”中](configure-proxy-internet.md)所述。
+> - 如果要查找 Microsoft Defender 进程列表， **[请下载 mde-urls 工作簿](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**，然后选择 **Microsoft Defender Process** 工作表。 mde-urls 工作簿还列出了网络必须能够连接到的服务及其关联 URL，如[“启用对代理服务器中Microsoft Defender for Endpoint服务 URL 的访问”中](configure-proxy-internet.md)所述。
 
 ## <a name="monthly-platform-and-engine-versions"></a>每月平台和引擎版本
 

@@ -1,5 +1,5 @@
 ---
-title: 试用或购买Microsoft 365商业版订阅
+title: 尝试或购买业务订阅Microsoft 365
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -21,111 +21,111 @@ ms.custom:
 - admindeeplinkMAC
 - adminvideo
 search.appverid: GEA150
-description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版。
+description: 注册Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版的 30 天免费试用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: d1a5c7bb96d93a195ee93893f59c71ff8080b6f6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d7ead35ebef6431a5e207e7114936d9724948755
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317956"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824215"
 ---
-# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
+# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>尝试或购买业务订阅Microsoft 365
 
-Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
+Microsoft 365企业版是一项订阅服务，可让你在 Microsoft 为你负责 IT 时在云中运行组织。 Microsoft 管理设备、防范实际威胁，并为组织提供最新的商业软件。 可以注册Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版的免费试用版订阅，并试用 30 天。
 
 > [!NOTE]
-> 注册免费试用版时，必须使用信用卡。 免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
+> 注册免费试用版时，必须使用信用卡。 在免费试用期结束时，试用订阅会自动转换为付费订阅。 你的信用卡要到试用期结束才会计费。
 
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **不接受由世纪Office 365中国国际信用卡运营** 的信用卡的支付选项。 您可以通过以下方式支付订阅费用：
+> 不接受中国国际信用卡 **中由世纪互联运营的Office 365支付选项**。 您可以通过以下方式支付订阅费用：
 >
 > - 发票
-> - 使用支付银联或中国银联的联机付款证明将采用 Fapiaos 的形式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
+> - 使用支付宝或中国银联支付证明的网上支付将以支付方式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
 
 ::: moniker-end
 
 ## <a name="before-you-begin"></a>准备工作
 
-无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+无需现有 Microsoft 帐户即可注册免费试用版。 对于本文中的所有其他过程，您必须是组织的全局或计费管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
-你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业应用版。
+你是新客户，但还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册免费试用订阅Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版。
 
-1. 转到"<a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365产品"网站</a>。
-2. 选择要注册的计划，例如Microsoft 365 商业标准版，向下滚动页面，然后选择"免费试用 **1 个月"**。
-3. 下一页上，按照步骤设置帐户。
-4. 注册过程可能需要几分钟才能完成。 \'完成后，你已准备好启动订阅的安装向导。 有关设置订阅的信息，请参阅下[一步。](#next-steps)
+1. 转到<a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365产品网站</a>。
+2. 选择要注册的计划，如 **Microsoft 365 商业标准版**，向下滚动页面，然后选择 **“免费试用”1 个月**。
+3. 在下一页上，按照步骤设置帐户。
+4. 注册过程可能需要几分钟才能完成。 \'完成后，即可为订阅启动安装向导。 有关设置订阅的详细信息，请参阅 [后续步骤](#next-steps)。
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>从免费试用版购买订阅
 
-在免费试用期结束时，试用版订阅将自动转换为付费订阅。 付费订阅默认为当前拥有的计划。 你可以按照购买其他订阅 [中的步骤购买其他计划](#buy-a-different-subscription)。
+在免费试用期结束时，试用订阅会自动转换为付费订阅。 付费订阅默认为你当前拥有的计划。 可以按照“ [购买其他订阅](#buy-a-different-subscription)”中的步骤购买其他计划。
 
-如果你想要在试用结束之前购买订阅，请使用以下步骤：
+如果要在试用期结束前购买订阅，请执行以下步骤：
 
-1. In the Microsoft 365 管理中心， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. 在 **"你的产品"** 页面上，找到要购买的订阅。
-3. 在" **许可证"** 部分，选择" **购买订阅"**。
-4. 选择订阅的每月或年度承诺，然后选择"签出 **"**。
-5. On the next page， verify the subscription， and select **Checkout**.
-6. 下一页上，验证 **"销售到** 地址"、"计费 **到** 信息"和" **按此顺序显示的项目"**。 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
-7. 完成后，\'选择接受 **协议&下订单**。
+1. 在 Microsoft 365 管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+2. 在 **“你的产品** ”页上，找到要购买的订阅。
+3. 在 **“许可证”** 部分中，选择 **“购买订阅**”。
+4. 选择订阅的每月或年度承诺，然后选择 **“签出**”。
+5. 在下一页上，验证订阅，然后选择 **“签出**”。
+6. 在下一页上，按 **此顺序** 验证 **已售地址**、**按信息计费** 和项。 如果需要进行任何更改，请选择适用部分旁边的 **“更改** ”。
+7. \'完成后，选择 **“接受协议”&放置顺序**。
 
 ## <a name="extend-your-trial"></a>延长试用期
 
-在购买之前，是否需要Microsoft 365试用适用于企业的功能？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
+购买之前，是否需要更多时间来试用Microsoft 365的特色？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在 **"产品** "选项卡上，选择要扩展的试用订阅。
-3. 在订阅详细信息页面上的"订阅 **和** 付款设置"部分，选择" **延长结束日期"**。
-4. 在 **"扩展结束日期"** 窗格中，查看扩展信息，如有必要，选择付款方式。 完成后，选择延长 **试用期**。
+2. 在 **“产品”** 选项卡上，选择要扩展的试用订阅。
+3. 在“订阅详细信息”页 **上的“订阅和付款设置”** 部分中，选择 **“延长结束日期**”。
+4. 在 **“扩展结束日期”** 窗格中，查看扩展信息，并在必要时选择付款方式。 完成后，选择 **“扩展”试用版**。
 
-准备好购买后，请参阅 [购买试用版](#buy-a-subscription-from-your-free-trial)。
+准备好购买时，请参阅 [“购买试用版](#buy-a-subscription-from-your-free-trial)”。
 
 ## <a name="cancel-your-free-trial-subscription"></a>取消免费试用版订阅
 
-如果你决定在免费试用期结束之前取消试用订阅，请转到Microsoft 365 管理中心并关闭[定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的一个月结束时自动过期，并且你的信用卡不会收费。
+如果决定在免费试用期结束前取消试用版订阅，请转到Microsoft 365 管理中心并[关闭定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 当你的月份结束时，试用版将自动过期，你的信用卡将不会收费。
 
 ## <a name="try-a-different-subscription"></a>尝试其他订阅
 
-如果你已有适用于Microsoft 365订阅，可以使用 Microsoft 365 管理中心尝试其他订阅。
+如果已有业务订阅Microsoft 365，则可以使用Microsoft 365 管理中心来尝试其他订阅。
 
-当你通过 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心] 添加</a>订阅时，新订阅将关联到与现有 (命名空间) 同一组织。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
+通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>]添加订阅时，新订阅与现有订阅 (域命名空间) 的组织关联。 通过此关联，可以更轻松地在订阅之间移动组织中的用户，或为其分配所需的其他产品的许可证。
 
-1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. 在 **"购买服务** "页上，可以看到可供组织使用的计划。 选择要Microsoft 365计划。
-3. On the next page， select **Get free trial**. 试用版为你提供 25 个用户许可证，为期一个月。
-4. 选择接收文本或呼叫，输入电话号码，然后选择" **给我发短信** "或" **致电我"**。
-5. 输入验证码，然后选择开始 **免费试用**。
-6. 在" **签出"页上** ，选择" **立即试用"**。
-7. 在" **订单收据"** 页上，选择"继续 **"**。
+1. 在管理中心，转到 **“计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a> ”页。
+2. 在“ **购买服务** ”页上，你将看到组织可用的计划。 选择要尝试的Microsoft 365计划。
+3. 在下一页上，选择 **“获取免费试用** 版”。 试用版提供 25 个用户许可证，为期一个月。
+4. 选择接收短信或呼叫，输入电话号码，然后选择 **“给我发短信** ”或 **“给我打电话**”。
+5. 输入验证码，然后选择 **“开始免费试用**”。
+6. 在 **“签出** ”页上，选择 **“立即试用**”。
+7. 在 **订单回执** 页上，选择 **“继续**”。
 
 ## <a name="buy-a-different-subscription"></a>购买其他订阅
 
-如果你已有适用于Microsoft 365订阅，可以浏览Microsoft 365 管理中心为组织购买其他订阅。
+如果已有业务订阅Microsoft 365，可通过Microsoft 365 管理中心为组织购买其他订阅。
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>观看：将用户移动到其他订阅
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-当用户更改角色时，他们可能需要其当前订阅中Microsoft 365 商业高级版的功能。 发生这种情况时，你可以添加包含这些功能的新订阅，并将许可证分配给需要它们的用户。
+当用户更改角色时，他们可能需要当前Microsoft 365 商业高级版订阅中不可用的功能。 发生这种情况时，可以添加包含这些功能的新订阅，并向需要这些功能的人员分配许可证。
 
 > [!NOTE]
 > 对于某些订阅，只能在购买或续订订阅后的有限时间段内取消。 如果取消时段已过，请在订阅期限结束时关闭定期计费以取消订阅。
 
-当你通过 Microsoft 365 管理中心 购买另一个<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>订阅时，新订阅将 (现有订阅) 同一组织。 这使在两次订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
+通过<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>购买另一个订阅时，新订阅与现有订阅 (域名空间) 的组织相关联。 这样可以更轻松地在订阅之间移动组织中的用户，或为其分配所需附加订阅的许可证。
 
-1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. 在"**购买服务**"页上，选择要购买的计划，选择"详细信息"，然后选择"购买 **"**。
-3. 输入所需的许可证数，然后选择是每月支付还是整年支付。 选择是否要将许可证自动分配给当前没有许可证的每个人。 然后选择" **现在签出"**。
-4. 查看定价信息，然后选择"下一 **步"**。
-5. 提供你的付款信息，然后选择下 **订单 转到** \> **管理员主页**。
+1. 在管理中心，转到 **“计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a> ”页。
+2. 在 **“购买服务** ”页上，选择要购买的计划，选择 **“详细信息**”，然后选择 **“购买**”。
+3. 输入所需的许可证数，并选择是每月付款还是全年付款。 选择是否要自动将许可证分配给当前没有许可证的所有人。 然后 **立即选择“签出**”。
+4. 查看定价信息，然后选择 **“下一步**”。
+5. 提供付款信息，然后选择 **“就地订单** \> **转到管理主页**”。
 
 > [!NOTE]
-> 你必须在 90 天宽限期到期后将用户从免费试用版订阅移动到新订阅。 通过执行此操作，可以保留数据、帐户和配置。 否则，将删除该信息。
+> 在试用版订阅过期后 90 天宽限期结束之前，必须将用户从免费试用版订阅移至新订阅。 通过执行此操作，可以保留数据、帐户和配置。 否则，将删除该信息。
 
 ::: moniker range="o365-21vianet"
 
@@ -145,20 +145,20 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ## <a name="next-steps"></a>后续步骤
 
-如果你有一个新帐户并且正在设置你的第一个订阅，可以使用引导式设置文章帮助你入门。
+如果你有一个新帐户并正在设置你的第一个订阅，则可以使用引导式设置文章来帮助你入门。
 
 - [设置 Microsoft 365 小型企业版](../admin/setup/setup-business-basic.md)
 - [安装 Microsoft 365 商业标准版](../admin/setup/setup-business-standard.md)
 - [设置 Microsoft 365 商业高级版](../business/set-up.md)
 - [Microsoft 365 商业应用版](../admin/setup/setup-apps-for-business.md)
 
-如果你已拥有订阅并且要添加新订阅，你可以将用户移动到该订阅。 若要了解如何，请参阅 [将用户移动到其他订阅](subscriptions/move-users-different-subscription.md)。
+如果已有订阅并正在添加新订阅，则可以将用户移动到该订阅。 若要了解如何操作，请参阅 [将用户移动到其他订阅](subscriptions/move-users-different-subscription.md)。
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365培训视频 (](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)视频) \
-[添加用户并同时分配许可证 (](../admin/add-users/add-users.md) 文章) \
+[Microsoft 365视频 (业务培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)) \
+[添加用户并同时分配许可证](../admin/add-users/add-users.md) (文章) \
 [向用户分配许可证](../admin/manage/assign-licenses-to-users.md)
 [升级到其他计划](subscriptions/upgrade-to-different-plan.md)（文章）\
-[购买或编辑适用于企业Microsoft 365加载项 (](buy-or-edit-an-add-on.md)文章) \
-[为订阅添加存储空间 (](add-storage-space.md) 文章) 
+[购买或编辑适用于企业的Microsoft 365的加](buy-or-edit-an-add-on.md)载项 (文章) \
+[为订阅添加存储空间](add-storage-space.md) (文章) 

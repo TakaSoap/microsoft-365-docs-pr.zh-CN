@@ -15,12 +15,12 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473224"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788097"
 ---
 # <a name="turn-on-block-at-first-sight"></a>打开“首次看到时阻止”
 
@@ -28,6 +28,10 @@ ms.locfileid: "64473224"
 
 - [Microsoft Defender for Endpoint 计划 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint 计划 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender 防病毒 
+
+**平台**
+- Windows
 
 此文章解释了名为“首次看到时阻止”的防病毒/防恶意软件功能，并介绍了如何为组织启用“首次看到时阻止”功能。
 
@@ -217,6 +221,15 @@ Microsoft Defender 防病毒使用多种检测和防护技术来提供准确、�
      > [!CAUTION]
      > 关闭“首次看到时阻止”会降低设备的保护级别。 我们不建议长期禁用“首次看到时阻止”。
 
+> [!TIP]
+> 如果要查找其他平台的防病毒相关信息，请参阅：
+> - [设置 macOS 上 Microsoft Defender for Endpoint 的首选项](mac-preferences.md)
+> - [Mac 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
+> - [适用于 Intune 的 Microsoft Defender 防病毒软件的 macOS 防病毒程序策略设置](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [设置 Linux 上 Microsoft Defender for Endpoint 的首选项](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [在 Android 功能上配置 Defender for Endpoint](android-configure.md)
+> - [在 iOS 功能上配置 Microsoft Defender for Endpoint](ios-configure-features.md)
 
 ## <a name="see-also"></a>另请参阅
 

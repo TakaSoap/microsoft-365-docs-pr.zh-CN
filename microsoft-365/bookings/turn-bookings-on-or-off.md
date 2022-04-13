@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 了解如何在Microsoft 365中获取对Microsoft Bookings的访问权限。
-ms.openlocfilehash: a2ab25b3b187ba45dfe460991b91e77d70a2bb70
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 28398faba7c21b6d3cce84063934268dad11fd64
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715266"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823071"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>打开或关闭 Microsoft Bookings
 
@@ -33,9 +33,9 @@ ms.locfileid: "64715266"
 
 1. 以全局管理员身份登录到Microsoft 365 管理中心。
 
-2. 在管理中心，转到  **设置** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**组织设置**</a>。
+2. 在管理中心，转到 **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**组织设置**</a>。
 
-3. 选中 **"允许组织使用Bookings** 为组织启用或禁用Bookings的复选框。
+3. 选中 **“允许组织使用Bookings** 为组织启用或禁用Bookings的复选框。
 
    > [!NOTE]
    > 关闭Bookings将禁用对服务的所有访问，包括创建和管理Bookings页。
@@ -72,7 +72,7 @@ ms.locfileid: "64715266"
 
 你可以要求组织中的员工在通过Bookings共享可用性信息之前选择加入，然后才能通过预订页面预订。
 
-启用此设置后，在预订日历中添加为工作人员的用户将收到一封电子邮件，其中包含" **批准/拒绝** 请求"链接。
+启用此设置后，在预订日历中添加为工作人员的用户将收到一封电子邮件，其中包含“ **批准/拒绝** 请求”链接。
 
 ## <a name="restrict-collection-of-customer-data"></a>限制客户数据的收集
 
@@ -84,9 +84,9 @@ ms.locfileid: "64715266"
 
 可以为单个用户禁用Bookings。
 
-1. 转到Microsoft 365 管理中心，然后选择 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>"。
+1. 转到Microsoft 365 管理中心，然后选择 **“用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**活动用户**</a>”。
 
-1. 选择所需的用户，然后选择 **"许可证"和"应用**"。
+1. 选择所需的用户，然后选择 **“许可证”和“应用**”。
 
 1. 展开 **应用** 并清除Microsoft Bookings复选框。
 

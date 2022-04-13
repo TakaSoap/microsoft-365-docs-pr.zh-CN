@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b515e50cf5ff22d77076017526f59ccd5f3779b7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7f77ca2f53e05291533395d3de5a860e9444732c
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782096"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824017"
 ---
 # <a name="insider-risk-management-policies"></a>预览体验计划风险管理策略
 
@@ -104,9 +104,9 @@ ms.locfileid: "64782096"
 
 保护医疗保健记录数据和防止滥用患者个人数据是医疗保健行业组织关注的一个重大问题。 这种滥用行为可能包括向未经授权的人泄露机密数据、欺诈性地修改患者记录或盗窃患者医疗保健记录。 防止因用户缺乏意识、疏忽或欺诈而滥用患者数据，也是满足《健康保险可移植性和问责法》 (HIPAA) 和《经济和临床健康健康信息技术 (HITECH) 法》的法规要求的关键组成部分。这两种行为都规定了保护患者健康信息 (PHI) 的要求。
 
-此策略模板为内部用户启用风险评分，这些用户检测到与现有电子医疗记录 (EMR) 系统上托管的记录相关联的可疑活动。 检测重点是未经授权的访问、查看、修改和导出患者数据。 需要在 [Microsoft Healthcare 连接器](import-healthcare-data.md) 或 [Epic](import-epic-data.md) 连接器 (配置连接器，以支持检测 EMR 系统中的访问、外泄或混淆活动。
+此策略模板为内部用户启用风险评分，这些用户检测到与现有电子医疗记录 (EMR) 系统上托管的记录相关联的可疑活动。 检测重点是未经授权的访问、查看、修改和导出患者数据。 需要配置 [Microsoft Healthcare 连接器](import-healthcare-data.md) 或 [Epic 连接器](import-epic-data.md) 的连接器，以支持检测 EMR 系统中的访问、外泄或混淆活动。
 
-使用此模板时，还必须配置Microsoft 365 HR 连接器，以便定期导入组织中用户的组织配置文件数据。 请参阅 HR 连接器导入数据 文章，了解为组织配置 Microsoft 365 HR 连接器的分步指导。
+使用此模板时，还必须配置Microsoft 365 HR 连接器，以便定期导入组织中用户的组织配置文件数据。 有关为组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[“设置连接器以导入 HR 数据](/microsoft-365/compliance/import-hr-data)”文章。
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>离职用户的安全策略违规活动(预览)
 

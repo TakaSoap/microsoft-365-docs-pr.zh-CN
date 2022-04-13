@@ -1,5 +1,5 @@
 ---
-title: 已知问题Microsoft 365 Lighthouse
+title: Microsoft 365 Lighthouse的已知问题
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -13,83 +13,83 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolib
-- M365-Lighthouse
+- M365-Lighthous
 search.appverid: MET150
-description: 有关托管服务提供商 (MSP) 使用Microsoft 365 Lighthouse，请参阅按功能区域列出 Lighthouse 的已知问题。
-ms.openlocfilehash: 3151937d4552da09c9cfd6808db2bad8bafbbc46
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+description: 有关托管服务提供商 (使用Microsoft 365 Lighthouse) MSP，请参阅 Lighthouse 的已知问题列表（按功能区域列出）。
+ms.openlocfilehash: 3be71d225f1aa9974bb73e3b2e9d421ea81e16fa
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594656"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824335"
 ---
-# <a name="known-issues-with-microsoft-365-lighthouse"></a>已知问题Microsoft 365 Lighthouse
+# <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse的已知问题
 
-本文列出了按功能区域Microsoft 365 Lighthouse已知问题。 有关 Lighthouse 的信息[，请参阅Microsoft 365 Lighthouse](m365-lighthouse-overview.md)。
+本文列出了按功能区域Microsoft 365 Lighthouse的已知问题。 有关 Lighthouse 的详细信息，请参阅[Microsoft 365 Lighthouse概述](m365-lighthouse-overview.md)。
 
 ## <a name="users"></a>用户
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **支持人员代理无法重置用户密码** | 托管服务提供商 (MSP) 支持代理组的成员的技术人员无法为客户租户中的用户重置密码。 当他们尝试重置用户的密码时，收到以下错误消息："你无权这样做。 [了解更多信息](m365-lighthouse-configure-portal-security.md)" | 若要解决权限问题，支持人员代理应通过使用 Microsoft 365 管理中心 或 Azure Active Directory。 |
+| **Helpdesk 代理无法重置用户密码** | 托管服务提供商 (MSP) 支持代理组成员的技术人员无法为客户租户中的用户重置密码。 当他们尝试重置用户的密码时，他们会收到以下错误消息：“你无权执行此操作。 [了解详细信息](m365-lighthouse-configure-portal-security.md)” | 若要解决权限问题，Helpdesk 代理应使用Microsoft 365 管理中心或Azure Active Directory重置密码。 |
 
 ## <a name="devices"></a>设备
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **将显示已删除的策略** | 在设备合规性策略从设备中删除Intune，它将暂时继续在 Lighthouse 中可见。 如果 MSP 技术人员尝试执行包含已删除策略的策略比较，则技术人员将收到以下错误："出现错误。 请刷新页面并重试。" | 若要解决错误，请从策略比较中清除已删除的策略，并仅比较现有策略。 |
+| **将显示已删除的策略** | 从Intune中删除设备符合性策略后，它将暂时在 Lighthouse 中继续可见。 如果 MSP 技术人员尝试执行包含已删除策略的策略比较，技术人员会收到以下错误：“出现问题。 请刷新页面，然后重试。 | 若要解决此错误，请从策略比较中清除已删除的策略，并仅比较现有策略。 |
 
 ## <a name="threat-management"></a>威胁管理
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **威胁名称缺失** | 当 MSP 技术人员从"威胁管理"页查看威胁列表时，某些威胁可能缺少威胁的名称。 当最近从计算机中删除检测到威胁的设备时，Intune。 | 此问题将在 48 小时内解决。 无需其他步骤。 |
+| **缺少威胁名称** | 当 MSP 技术人员从威胁管理页查看威胁列表时，某些威胁可能缺少威胁的名称。 当最近从Intune中删除检测到威胁的设备时，将发生这种情况。 | 此问题将在 48 小时内解决。 无需执行其他步骤。 |
 
 ## <a name="baselines"></a>基线
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **比较阻止旧版身份验证和 MFA 部署步骤时发生冲突的设置** | 如果客户租户已部署阻止旧版身份验证和 MFA 部署步骤之一，则比较测试会错误地将这些设置描述为冲突。 | 无需任何解决方法。 设置实际上不会发生冲突，并且客户租户中的用户不会受到影响。 |
+| **比较块旧式身份验证和 MFA 部署步骤时出现冲突的设置** | 如果客户租户已部署阻止旧式身份验证和 MFA 部署步骤之一，则比较测试会错误地将这些设置描述为冲突。 | 无需解决方法。 这些设置实际上不会发生冲突，客户租户中的用户也不会受到影响。 |
 
 ## <a name="windows-365"></a>Windows 365
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **重试设置错误** | MSP 技术人员在尝试重试预配云电脑时收到"你无权这样做"错误消息。 | 若要解决此问题，请登录到客户租户，然后从 Microsoft Endpoint Manger 管理中心重新预配云电脑。 有关说明，请参阅 [重新设置云电脑](/windows-365/enterprise/reprovision-cloud-pc)。 |
+| **重试预配错误** | 尝试重试云电脑预配时，MSP 技术人员会收到“你无权执行此操作”错误消息。 | 若要解决此问题，请登录到客户租户，然后从 Microsoft Endpoint Manger 管理中心重新预配云电脑。 有关说明，请参阅 [重新预配云电脑](/windows-365/enterprise/reprovision-cloud-pc)。 |
 
 ## <a name="audit-logs"></a>审核日志
 
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 |--|--|--|
-| **审核日志中未列出停用和重新激活操作** | 当前在 Lighthouse 的"审核日志"页上未报告以下活动： <ul><li>名称：offboardTenant \| 操作：停用客户</li> <li>名称：resetTenantOnboardingStatus \| 操作：反应客户</li></ul> | 没有解决方法，但我们正在努力修复此问题。 在服务中部署修复后，这些活动将显示在审核日志中。 |
-| **筛选器未显示所有用户** | 当 MSP 技术人员尝试使用"启动者"进行筛选时，筛选器下不会完全显示所有用户主体名称 (UPN) （对应于启动生成审核日志的操作的技术人员的电子邮件 ID）的列表。<br><br>请注意，审核日志本身将完全显示;仅影响使用 **Initiated By 筛选** 它们的能力。 | 没有解决方法，但我们正在努力修复此问题。 在服务中部署修复后，筛选器将恢复其预期行为，即显示要筛选的 UPN 的完整列表。 |
+| **审核日志中未列出停用和重新激活操作** | Lighthouse 中的“审核日志”页当前未报告以下活动： <ul><li>名称：offboardTenant \| 操作：停用客户</li> <li>名称：resetTenantOnboardingStatus \| 操作：反应客户</li></ul> | 没有解决方法，但我们正在努力修复。 在服务中部署修补程序后，这些活动将显示在审核日志中。 |
+| **筛选器未显示所有用户** | 当 MSP 技术人员尝试使用 **“发起** 者”进行筛选时，筛选器下不会完全显示所有用户主体名称 (UPN) （与发起生成审核日志的操作的技术人员的电子邮件 ID 相对应）的列表。<br><br>请注意，审核日志本身将完全显示;仅影响使用 **“发起** 者”筛选它们的功能。 | 没有解决方法，但我们正在努力修复。 在服务中部署修补程序后，筛选器将还原为其预期行为 - 显示要筛选的 UPN 的完整列表。 |
 
-## <a name="delegated-admin-privilegesdap"></a>DAP (委派管理员) 
+## <a name="delegated-admin-privileges-dap"></a>委派的管理员权限 (DAP) 
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **更改 DAP 角色时权限延迟** | 如果将 MSP 技术人员添加到管理员代理组或支持人员代理组，则反映 Lighthouse 内的适当权限可能会存在延迟。 | 该问题将在 30 分钟内解决。 无需其他步骤。 |
+| **更改 DAP 角色时的权限延迟** | 如果将 MSP 技术人员添加到管理员代理或 Helpdesk 代理组或从中删除，则在 Lighthouse 中反映相应权限可能会出现延迟。 | 此问题将在 30 分钟内解决。 无需执行其他步骤。 |
 
-## <a name="granular-delegated-admin-privilegesgdap"></a>GDAP 策略的 (委派管理员) 
+## <a name="granular-delegated-admin-privileges-gdap"></a>GDAP)  (粒度委派的管理员权限
 
 > [!NOTE]
-> GDAP 目前处于公共[](/partner-center/announcements/2022-february#6) (预览版) ，以允许合作伙伴在 GDAP 公开发布之前分配具体权限。
+> GDAP 目前处于 [技术预览](/partner-center/announcements/2022-february#6) (公共预览版) 允许合作伙伴在 GDAP 正式发布之前分配精细权限。
 
-目前，需要 DAP 才能将客户载入到 Lighthouse。 我们还建议与客户建立 GDAP，以实现更安全的委派访问。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先用于这两种模型都适合的客户。 很快，仅具有 GDAP (且没有 DAP) 客户将能够载入 Lighthouse。<br><br>
+目前，需要 DAP 才能将客户加入 Lighthouse。 我们还建议与客户建立 GDAP，以实现更安全的委派访问。 虽然 DAP 和 GDAP 共存，但 GDAP 将优先于两个模型所在的客户。 很快，只有 GDAP (且没有 DAP) 的客户将能够加入 Lighthouse。<br><br>
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **Lighthouse 中各种 GDAP 权限问题** | 某些 GDAP 角色本身不会像在单租户体验中一样授予对 Lighthouse 中客户数据的访问权限级别。 如果将以下任何角色 (分配给 MSP 技术人员，而不是与分配给 MSP) 的其他 GDAP 角色不一起分配，他们可能会遇到错误，包括：<ul><li>GDAP 安全管理员无法在 Lighthouse 内查看有风险的用户、消除风险或确认受到威胁的用户。</li><li>GDAP 安全读者无法在 Lighthouse 内查看有风险的用户。</li><li>GDAP 全局管理员在尝试在 Lighthouse 内查看服务运行状况时看到一条错误消息。</li><li>GDAP 全局管理员在 Lighthouse 内部署部署计划步骤时遇到问题。</li></ul> | 解决方法是，根据 MSP 技术人员所需的客户数据访问级别，将 GDAP 角色组合分配给他们。 有关使用 Lighthouse 的推荐 GDAP 角色的列表，请参阅 Overview [of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md)。<br><br>对于即使 GDAP 全局管理员权限也不允许在 Lighthouse 中使用功能的问题，解决方法是从客户租户访问相应的管理中心来管理客户 (例如，从客户租户访问 Microsoft 365 管理中心 以检查服务运行状况) 。 有关如何修改 GDAP 关系的说明，请参阅获取管理客户服务的细化管理员 [权限 - 合作伙伴中心](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)。 |
+| **Lighthouse 中的各种 GDAP 权限问题** | 某些 GDAP 角色本身不会像在单租户体验中那样授予对 Lighthouse 中客户数据的相同级别的访问权限。 如果将以下任一角色单独分配 (，则这些角色不是与其他 GDAP 角色结合使用，) 给 MSP 技术人员，则可能会遇到错误，包括：<ul><li>GDAP 安全管理员无法查看风险用户、消除风险或确认 Lighthouse 中遭到入侵的用户。</li><li>GDAP 安全读取器无法在 Lighthouse 中查看有风险的用户。</li><li>在 Lighthouse 中尝试查看服务运行状况时，GDAP 全局管理员会看到错误消息。</li><li>GDAP 全局管理员在 Lighthouse 中部署部署计划步骤时遇到问题。</li></ul> | 解决方法是根据对客户数据的访问级别，将 GDAP 角色的组合分配给 MSP 技术人员。 有关建议使用 Lighthouse 的 GDAP 角色的列表，请参阅[Microsoft 365 Lighthouse中的权限概述](m365-lighthouse-overview-of-permissions.md)。<br><br>对于即使 GDAP 全局管理员权限也不允许在 Lighthouse 中使用功能的问题，解决方法是从客户租户访问相应的管理中心来管理客户 (例如，从客户租户访问Microsoft 365 管理中心以检查服务运行状况) 。 有关如何修改 GDAP 关系的说明，请参阅 [获取管理客户服务的精细管理员权限 - 合作伙伴中心](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)。 |
 
 ## <a name="localization"></a>本地化
 
-| 问题 | Description | 解决方案 |
+| 问题 | 说明 | 解决方案 |
 | ---------------- | ---------------- | ---------------- |
-| **翻译问题** | 当用户的浏览器语言或他们位于 Lighthouse 的语言选择是英语外的任何内容时，用户可能会遇到语言翻译问题。 | 若要最大程度地减少 Lighthouse 中的翻译问题，请确保浏览器的语言选择与 Lighthouse 门户中语言设置的语言选择相匹配。 若要在"灯楼"中更改语言选择，请登录到"Lighthouse"并选择页面顶部的齿轮图标以打开"门户设置"页面，选择"语言 **+** 区域"，然后选择相应的语言和区域格式。 |
+| **翻译问题** | 当浏览器的语言或 Lighthouse 中的语言选择是英语以外的任何内容时，用户可能会遇到语言翻译问题。 | 若要最大程度地减少 Lighthouse 中的翻译问题，请确保浏览器的语言选择与 Lighthouse 门户中的语言设置匹配。 若要更改 Lighthouse 中的语言选择，请登录 Lighthouse，然后选择页面顶部的齿轮图标以打开门户设置页，选择 **“语言 + 区域**”，然后选择适当的语言和区域格式。 |
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365 Lighthouse常见问题](m365-lighthouse-faq.yml) (文章) \
-[排查并解决本文](m365-lighthouse-troubleshoot.md)中的问题Microsoft 365 Lighthouse (错误消息) \
-[获取本文中有关 Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (的帮助) 
+[Microsoft 365 Lighthouse常见问题解](m365-lighthouse-faq.yml)答 (文章) \
+[排查和解决Microsoft 365 Lighthouse (文章) \ 中的问题和错误消息](m365-lighthouse-troubleshoot.md)
+[获取Microsoft 365 Lighthouse (文章的帮助和支持](m365-lighthouse-get-help-and-support.md)) 

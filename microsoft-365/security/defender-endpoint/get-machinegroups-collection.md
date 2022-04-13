@@ -1,7 +1,7 @@
 ---
 title: 获取 RBAC 计算机组集合 API
-description: 了解如何使用获取 KB 集合 API 在 Microsoft Defender for Endpoint 中检索 RBAC 设备组的集合。
-keywords: api， 图形 api， 受支持的 api， 获取， RBAC， 组
+description: 了解如何使用 Get KB 集合 API 检索Microsoft Defender for Endpoint中的 RBAC 设备组集合。
+keywords: api， 图形 api， 支持的 api， get， RBAC， 组
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 699a7e2738f1e0c89977bd152832f45935a06387
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 528b80b3c40fd7df853190788abb347ed90a82e4
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61167474"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825159"
 ---
 # <a name="get-kb-collection-api"></a>获取 KB 集合 API
 
@@ -41,21 +41,21 @@ ms.locfileid: "61167474"
 
 检索 RBAC 设备组的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET /testwdatppreview/machinegroups
+GET https://graph.microsoft.com/testwdatppreview/machinegroups
 ```
 
 ## <a name="request-headers"></a>请求标头
 
 标头|值
 :---|:---
-Authorization | Bearer {token}。 必需。
+Authorization | 持有者 {token}。 **必需**。
 内容类型 | application/json
 
 ## <a name="request-body"></a>请求正文
@@ -80,8 +80,8 @@ Content-type: application/json
 ### <a name="response-example"></a>响应示例
 
 下面是一个响应示例。
-字段 ID 包含设备组 **ID，** 并且等于设备信息中的字段 **rbacGroupId。**
-只有 **对于尚未** 分配到任何组的所有设备的一个组，取消分组的字段才为 true。 像往常一样，此组的名称为"UnassignedGroup"。
+字段 ID 包含设备组 **ID** ，等于设备信息中的字段 **rbacGroupId** 。
+对于尚未分配给任何组的所有设备，字段 **未分组** 仅适用于一个组。 此组照常命名为“UnassignedGroup”。
 
 ```http
 HTTP/1.1 200 OK
